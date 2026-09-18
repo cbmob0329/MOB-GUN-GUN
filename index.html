@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#101e27">
+  <title>MOB GUN GUN — 草原 1-1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+<main id="game" aria-label="MOB GUN GUN 草原1-1">
+  <canvas id="canvas" aria-label="ゲーム画面"></canvas>
+  <header class="hud">
+    <div class="area"><span>AREA</span><strong>草原 <b>1-1</b></strong></div>
+    <div class="status"><div class="wallet"><span><i class="coin-icon">●</i> COIN <b id="coins">0</b></span><span><i class="diamond">◆</i> DIAMOND <b>0</b></span><span><i class="ruby">◆</i> RUBY <b>0</b></span></div>
+      <div class="health"><span>HP</span><div class="hp-track"><div id="hp-fill"></div></div><b id="hp-text">50 / 50</b></div>
+    </div>
+    <div class="route"><span>GREENWAY / 01</span><div><i id="progress"></i></div></div>
+    <button id="pause" aria-label="一時停止">Ⅱ</button>
+  </header>
+  <div id="hint">右へ進もう <b>→</b></div>
+  <div id="stick-zone" aria-label="移動スティック"><div id="stick"><span class="stick-arrows">＋</span><div id="stick-knob"></div></div><span class="stick-label">MOVE <i>•</i> WALK / RUN</span></div>
+  <div class="actions"><div class="skills"><button class="skill" data-skill="0" aria-label="スキル1 準備中"><span>ϟ</span><small>01 / LOCK</small></button><button class="skill" data-skill="1" aria-label="スキル2 準備中"><span>✦</span><small>02 / LOCK</small></button><button class="skill" data-skill="2" aria-label="スキル3 準備中"><span>◇</span><small>03 / LOCK</small></button></div><div class="buttons"><button id="shoot"><span>⌖</span>SHOOT</button><button id="jump"><span>↑</span>JUMP</button></div></div>
+  <div class="keyboard-help">A D / ← → 移動 <em>SHIFT ダッシュ</em> SPACE ジャンプ <em>J 射撃</em></div>
+  <div class="brand">MOB <span>GUN GUN</span></div>
+  <section id="overlay" class="overlay"><div class="modal"><span class="eyebrow">MOB GUN GUN / GREENWAY</span><h1 id="modal-title">草原へ、飛び出せ。</h1><p id="modal-copy">移動・ジャンプ・射撃で、草原の先へ。</p><div id="instructions"><span>左スティック<br><b>軽く倒して歩く、深く倒して走る</b></span><span>JUMP ＋ SHOOT<br><b>走りながら、空中でも撃てる</b></span></div><button id="start" disabled>LOADING…</button><small id="load-status">素材を読み込んでいます</small></div></section>
+  <div id="rotate"><div>↻</div><strong>横画面でプレイしてください</strong><span>スマートフォンを横にすると冒険が始まります。</span></div>
+</main>
+</body>
+</html>
