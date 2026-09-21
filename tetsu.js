@@ -9,7 +9,7 @@ const tetsuBody={
  CS:[[0,1,.31],[.23,1,.39],[0,.78,.32],[.27,1,.34],[0,.93,.34],[.13,.96,.43],[0,.97,.29],[0,1,.32]],
  WK:Array.from({length:7},()=>[0,1,.39]),
  NA:[[0,1,.37],[.18,1,.54],[0,1,.32],[0,.98,.31],[0,1,.32],[0,1,.38]],
- HS:[[0,1,.38],[.03,1,.65],[.17,1,.65],[0,1,.32],[0,1,.32],[0,1,.32]],
+ HS:[[0,1,.36],[0,.89,.42],[.03,1,.66],[.24,.85,.48],[0,.93,.62],[.10,.92,.43]],
  HSP:[[0,1,.33],[0,1,.68],[0,1,.69],[0,1,.72],[0,1,.72],[0,1,.72],[.1,1,.68],[0,1,.62]],
  JS:[[0,1,.35],[0,1,.34],[0,.83,.36],[.05,1,.68],[.25,1,.65],[.30,.88,.39],[.49,1,.34],[0,.98,.34]],
  PS:[[0,1,.33],[.12,1,.37],[.12,1,.37],[.08,.95,.47],[.12,1,.33],[.20,1,.32],[.22,1,.56],[0,1,.60]]
@@ -45,6 +45,7 @@ function updateCharacterUI(){
  updateHUD();
 }
 function startTetsuAction(type){tetsuAction={type,age:0,dir:player.dir,hit:new Map(),queued:false,ghostClock:0};comboWindow=0;}
+function tetsuGravity(){return tetsuAction?.type==='combo'&&tetsuAction.lifted&&tetsuAction.age<.48?600:CONFIG.gravity;}
 function tetsuAttack(){
  if(selectedCharacter!=='tetsu'||state!=='playing')return;
  if(tetsuAction){if(tetsuAction.type==='normal')tetsuAction.queued=true;return;}
@@ -55,7 +56,7 @@ function castTetsu(index){
  if(index===1){const target=enemies.filter(e=>e.death<0&&Math.abs(e.x-player.x)<650).sort((a,b)=>Math.abs(a.x-player.x)-Math.abs(b.x-player.x))[0];if(target)player.dir=Math.sign(target.x-player.x)||player.dir;}
  startTetsuAction(['mob','dash','ultimate'][index]);tetsuCooldowns[index]=TETSU.cooldowns[index];
 }
-function launchEnemy(e,vx,vy,spin=0){e.launch={vx,vy,spin,angle:0,floor:e.y};e.knock=0;}
+function launchEnemy(e,vx,vy,spin=0){e.launch={vx,vy,spin,angle:0,floor:e.launch?.floor??e.y};e.knock=0;if(e.type==='miira'){e.attackAge=-1;e.attackCooldown=MIIRA.cooldown;}}
 function tetsuHit(a,phase,x,y,w,h,damage,launch){
  if(!a.hit.has(phase))a.hit.set(phase,new Set());const hit=a.hit.get(phase);
  for(const e of enemies){if(e.death>=0||hit.has(e)||Math.abs(e.x-x)>w/2+e.w/2||e.y<y-h/2||e.y-e.h>y+h/2)continue;
@@ -69,7 +70,11 @@ function updateTetsu(dt){
  for(const g of tetsuGhosts)g.life-=dt;tetsuGhosts=tetsuGhosts.filter(g=>g.life>0);
  const a=tetsuAction;if(!a)return;a.age+=dt;const p=player,t=a.age,x=p.x+a.dir*65,y=p.y-42;
  if(a.type==='normal'&&t>=.12&&t<.33)tetsuHit(a,0,x,y,115,95,TETSU.normal);
- if(a.type==='combo'&&t>=.12&&t<.40)tetsuHit(a,0,x,y,145,105,TETSU.combo,[260,-240]);
+ if(a.type==='combo'){
+  if(t>=.16&&!a.lifted){a.lifted=true;p.vy=-150;p.grounded=false;p.coyote=0;}
+  if(a.lifted&&p.grounded&&a.landedAt===undefined){a.landedAt=t;burst(p.x+a.dir*35,p.y-3,10,'#bfe8ff');}
+  if(a.landedAt!==undefined&&t-a.landedAt<.16)tetsuHit(a,0,x,y,145,105,TETSU.combo,[220,-190]);
+ }
  if(a.type==='air'&&t>=.08&&t<.55)tetsuHit(a,0,p.x+a.dir*40,p.y-20,150,145,TETSU.air,[180,-650]);
  if(a.type==='mob'&&t>=.16&&t<.88){const phase=Math.min(3,Math.floor((t-.16)/.18));tetsuHit(a,phase,p.x+a.dir*155,y-15,290,190,TETSU.mob[phase],phase===3?[850,-660]:null);if(phase===3&&!a.finisher){a.finisher=true;for(const targets of a.hit.values())for(const e of targets)launchEnemy(e,a.dir*850,-660);}}
  if(a.type==='dash'&&t>=.08&&t<.56){
@@ -78,7 +83,7 @@ function updateTetsu(dt){
   a.ghostClock-=dt;if(a.ghostClock<=0){a.ghostClock=.045;tetsuGhosts.push({x:p.x+a.dir*85,y:p.y,dir:a.dir,frame:tetsuPose(),life:.18});}
  }
  if(a.type==='ultimate'&&t>=1.1&&t<1.78)tetsuHit(a,0,p.x+a.dir*140,y,320,220,TETSU.ultimate,[1050,-1150,19]);
- const duration={normal:.42,combo:.50,air:.60,mob:1.0,dash:.72,ultimate:2.12}[a.type];
+ const duration={normal:.42,combo:a.landedAt===undefined?Infinity:a.landedAt+.20,air:.60,mob:1.0,dash:.72,ultimate:2.12}[a.type];
  if(t>=duration){tetsuAction=null;if(a.type==='normal'){if(a.queued)startTetsuAction('combo');else comboWindow=.22;}}
 }
 function tetsuPose(){
@@ -86,6 +91,7 @@ function tetsuPose(){
  if(a){const t=a.age;group={normal:'NA',combo:'HS',air:'JS',mob:'CS',dash:'HSP',ultimate:'PS'}[a.type];
   if(a.type==='ultimate')i=t<.1?0:t<1.1?1+Math.floor((t-.1)/.05)%2:t<1.26?3:t<1.42?4:t<1.82?5:t<1.97?6:7;
   else if(a.type==='air')i=3+Math.min(4,Math.floor(t/.12));
+  else if(a.type==='combo')i=a.landedAt!==undefined?5:t<.10?0:t<.20?1:t<.28?2:t<.42?3:4;
   else i=Math.min(tetsuFrames[group].length-1,Math.floor(t/({normal:.07,combo:.0834,mob:.125,dash:.09}[a.type])));
  }else if(!player.grounded){group='JS';i=player.jumpAge<.1?0:player.vy<0?1:2;}
  else if(Math.abs(player.vx)>1){group=running?'HSP':'WK';i=running?1+Math.floor(player.anim*14)%3:Math.floor(player.anim*10)%7;}
@@ -104,6 +110,6 @@ function drawTetsuEffects(){
  for(const f of tetsuEffects)drawTetsuEffect(f.first,Math.min(f.count-1,Math.floor(f.age/f.duration*f.count)),f.x,f.y,f.size,f.dir);
  const a=tetsuAction;if(!a)return;const t=a.age,p=player;
  if(a.type==='mob'&&t>=.16&&t<.88){const i=Math.min(3,Math.floor((t-.16)/.18));drawTetsuEffect(8,i,p.x+a.dir*155,p.y-57,i===3?330:290,a.dir);}
- if(a.type==='dash'&&t>=.08&&t<.64)drawTetsuEffect(4,Math.min(7,Math.floor((t-.08)/.07)),p.x+a.dir*100,p.y-45,220,a.dir);
+ if(a.type==='dash'&&t>=.08&&t<.64)drawTetsuEffect(4,Math.min(3,Math.floor((t-.08)/.14)),p.x+a.dir*100,p.y-45,220,a.dir);
  if(a.type==='ultimate'&&t>=1.1&&t<1.9)drawTetsuEffect(12,Math.min(3,Math.floor((t-1.1)/.2)),p.x+a.dir*140,p.y-60,340,a.dir);
 }

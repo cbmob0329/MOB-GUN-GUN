@@ -15,7 +15,7 @@ async function main(){
  const result=await page.evaluate(()=>{
   const check=(v,m)=>{if(!v)throw Error(m);},step=n=>{for(let i=0;i<n;i++)tick(1/120);};
   const setup=(offset=95,hp=1000)=>{reset();state='playing';platforms=[];player.x=500;player.inv=100;const e={...enemies[0],x:500+offset,home:500+offset,hp,maxHP:hp,type:'tank',w:62,h:65,range:1000};enemies=[e];return e;};
-  let e=setup();tetsuAttack();step(18);check(e.hp===982,'normal damage');tetsuAttack();step(100);check(e.hp===954,'combo damage');check(!tetsuAction,'combo complete');
+  let e=setup();tetsuAttack();step(18);check(e.hp===982,'normal damage');tetsuAttack();step(150);check(e.hp===954,'combo damage');check(!tetsuAction,'combo complete');
   e=setup();pointers.shoot.add(1);step(100);check(e.hp===1000,'hold must not repeat');
   e=setup(60);player.grounded=false;startTetsuAction('air');step(20);check(e.hp===970&&e.launch&&e.launch.vy<0,'air launch');check(tetsuEffects.length===1,'air impact once');
   e=setup(150);const other={...e,x:690,home:690};enemies.push(other);castTetsu(0);step(108);check(e.hp===916&&other.hp===916,'MOB total 84');check(e.launch&&other.launch,'MOB launches all');check(tetsuCooldowns[0]>5,'cooldown');
