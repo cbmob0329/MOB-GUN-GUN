@@ -1,0 +1,6 @@
+01_Walk FIX v2
+- Re-extracted with strict per-frame x boundaries.
+- No connected-component reassignment.
+- Neighboring poses are hard-clipped out, so frame_05/frame_07 cannot contain another full pose.
+- All frames: 640x640 transparent PNG.
+- Keep identical pivot/origin in Astra.
