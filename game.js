@@ -3,7 +3,7 @@
 const CONFIG = Object.freeze({
   width:1280, height:720, worldWidth:21800, groundY:548,
   walkSpeed:190, dashSpeed:340, jumpForce:640, gravity:1800,
-  shootInterval:0.18, bulletSpeed:1050, bulletDamage:12, maxHP:50,
+  shootInterval:0.20, magazineSize:8, reloadDuration:.5, bulletSpeed:1050, bulletDamage:12, maxHP:50,
   playerHeight:88, playerColliderWidth:34, playerColliderHeight:65,
   invincibility:1.25, coyoteTime:0.10, jumpBuffer:0.13,
   skills:{trick:{maxCharge:3,minRadius:18,maxRadius:58,minMultiplier:3,maxMultiplier:10,cooldown:8,minCooldown:5,cooldownReduction:0,speed:850,splashRatio:.5,splashRadius:125},
@@ -24,13 +24,13 @@ const skillButtons=[...document.querySelectorAll('.skill')];
 function resize(){const d=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(W*d);canvas.height=Math.round(H*d);ctx.setTransform(d,0,0,d,0,0);}
 window.addEventListener('resize',()=>{resize();if(innerHeight>innerWidth&&state==='playing')pause();});resize();
 function loadImage(src){return new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error(src));img.src=src;});}
-Promise.all([loadTetsu(),loadMiira(),loadImage('stage/001.png').then(i=>assets.background=i),loadImage('atk/001.png').then(i=>assets.bullet=i),loadImage('atk/002.png').then(i=>assets.lightning=i),...Array.from({length:32},(_,n)=>loadImage(`denden/${String(n+1).padStart(3,'0')}.png`).then(i=>sprites[n]=i)),...Array.from({length:32},(_,n)=>loadImage(`skill/${String(n+1).padStart(3,'0')}.png`).then(i=>skillSprites[n]=i))]).then(()=>{state='ready';$('start').disabled=false;$('start').textContent='START RUN →';$('load-status').textContent='AREA 1-1 • 草原 / 約1〜2分';reset();updateCharacterUI();}).catch(e=>{$('modal-title').textContent='画像を読み込めませんでした';$('modal-copy').textContent=`${e.message} を確認してください。`;$('load-status').textContent='ページを再読み込みしてください';});
+Promise.all([loadTetsu(),loadMiira(),loadImage('stage/001.png').then(i=>assets.background=i),loadImage('atk/001.png').then(i=>assets.bullet=i),loadImage('atk/002.png').then(i=>assets.lightning=i),...Array.from({length:32},(_,n)=>loadImage(`denden/${String(n+1).padStart(3,'0')}.png`).then(i=>sprites[n]=i)),...Array.from({length:32},(_,n)=>loadImage(`skill/${String(n+1).padStart(3,'0')}.png`).then(i=>skillSprites[n]=i))]).then(()=>{state='ready';$('start').disabled=false;$('start').textContent='START RUN →';$('load-status').textContent='AREA 1-1 • 草原 / 約2〜3分';reset();updateCharacterUI();}).catch(e=>{$('modal-title').textContent='画像を読み込めませんでした';$('modal-copy').textContent=`${e.message} を確認してください。`;$('load-status').textContent='ページを再読み込みしてください';});
 function reset(){
   resetTetsu();dirtBalls=[];
-  player={x:140,y:CONFIG.groundY,vx:0,vy:0,dir:1,hp:CONFIG.maxHP,grounded:true,coyote:0,jumpsUsed:0,jumpAge:0,shotAge:10,inv:0,red:0,knock:0,anim:0};
+  player={x:140,y:CONFIG.groundY,vx:0,vy:0,dir:1,hp:CONFIG.maxHP,grounded:true,coyote:0,jumpsUsed:0,jumpAge:0,shotAge:10,inv:0,red:0,knock:0,anim:0,ammo:CONFIG.magazineSize,reload:0};
   camera=elapsed=collected=kills=shootClock=jumpRequest=0; bullets=[];particles=[];popups=[];coins=[];platforms=[];enemies=[];clearInput();
   skillState={charging:false,charge:0,cooldowns:[0,0],releaseAge:10,thunderAge:10,thunderLeft:0,waveClock:0,wave:0};energyShots=[];explosions=[];lightning=[];
-  // A safe ground route and optional elevated coin routes; no blind lethal pits.
+  // Base route; resetWorld installs visible terrain features and fall recovery.
   for(let section=0;section<10;section++){
     const x=750+section*2000;
     platforms.push({x,y:490,w:180,h:58,solid:true},{x:x+285,y:422,w:240,h:30},{x:x+650,y:350,w:210,h:30},{x:x+1040,y:447,w:250,h:30});
@@ -43,7 +43,7 @@ function reset(){
   addEnemy('patrol',1520);addEnemy('chase',2510);
   for(let s=1;s<10;s++){let x=750+s*2000;addEnemy('patrol',x+500);addEnemy(s%3===0?'tank':'chase',x+1340);if(s>=4)addEnemy('patrol',x+1710);}
   for(let section=0;section<10;section++)for(const offset of [380,600,860,1110,1470,1750])addEnemy('miira',750+section*2000+offset,CONFIG.groundY,95);
-  addEnemy('tank',21200);hintTimer=0;updateHUD();
+  addEnemy('tank',21200);resetWorld();hintTimer=0;updateHUD();
 }
 function clearInput(){keys.clear();axis=0;running=false;stickPointer=null;stickOrigin=null;for(const group of Object.values(pointers))group.clear();chargeSources.clear();skillState.charging=false;skillState.charge=0;for(const b of skillButtons)b.classList.remove('pressed');$('shoot').classList.remove('pressed');$('jump').classList.remove('pressed');$('stick').style.left='';$('stick').style.top='';$('stick-knob').style.transform='';jumpRequest=0;}
 function modal(title,copy,button){$('character-select').hidden=state==='paused';$('modal-title').textContent=title;$('modal-copy').textContent=copy;$('instructions').hidden=true;$('instructions').style.display='none';$('start').textContent=button;$('load-status').textContent='MOB GUN GUN • AREA 1-1';$('overlay').hidden=false;clearInput();}
@@ -77,17 +77,17 @@ function releaseEnergy(){const c=CONFIG.skills.trick,t=clamp(skillState.charge/c
   skillState.releaseAge=0;skillState.cooldowns[0]=skillCooldown('trick');
 }
 function castThunder(){if(state!=='playing'||skillState.cooldowns[1]>0)return;chargeSources.clear();skillState.charging=false;skillState.charge=0;skillButtons[0].classList.remove('pressed');player.vx=0;player.knock=0;jumpRequest=0;skillState.thunderLeft=CONFIG.skills.thunder.duration;skillState.thunderAge=0;skillState.waveClock=0;skillState.wave=0;skillState.cooldowns[1]=skillCooldown('thunder');}
-function hitEnemy(e,damage,dir=1){if(e.death>=0)return;e.hp=Math.max(0,e.hp-damage);e.flash=.1;e.knock=dir*110;burst(e.x,e.y-e.h/2);if(e.hp===0){e.death=0;kills++;burst(e.x,e.y-e.h/2,12);}}
+function hitEnemy(e,damage,dir=1){if(e.type==='crate'){damageCrate(e,damage);return;}if(e.death>=0)return;e.hp=Math.max(0,e.hp-damage);e.flash=.1;e.knock=dir*110;burst(e.x,e.y-e.h/2);if(e.hp===0){e.death=0;kills++;burst(e.x,e.y-e.h/2,12);}}
 function explodeEnergy(shot,direct){explosions.push({x:shot.x,y:shot.y,age:0,r:CONFIG.skills.trick.splashRadius});burst(shot.x,shot.y,20,'#8be9ff');
-  for(const e of enemies){if(e===direct||e.death>=0)continue;const dx=Math.max(0,Math.abs(e.x-shot.x)-e.w/2),dy=Math.max(e.y-e.h-shot.y,shot.y-e.y,0);if(Math.hypot(dx,dy)<=CONFIG.skills.trick.splashRadius)hitEnemy(e,shot.damage*CONFIG.skills.trick.splashRatio,Math.sign(e.x-shot.x)||shot.dir);}
+  for(const e of combatTargets()){if(e===direct||e.death>=0)continue;const dx=Math.max(0,Math.abs(e.x-shot.x)-e.w/2),dy=Math.max(e.y-e.h-shot.y,shot.y-e.y,0);if(Math.hypot(dx,dy)<=CONFIG.skills.trick.splashRadius)hitEnemy(e,shot.damage*CONFIG.skills.trick.splashRatio,Math.sign(e.x-shot.x)||shot.dir);}
 }
 function updateSkills(dt){const s=skillState,c=CONFIG.skills.thunder;s.releaseAge+=dt;s.thunderAge+=dt;for(let i=0;i<2;i++)s.cooldowns[i]=Math.max(0,s.cooldowns[i]-dt);if(s.charging)s.charge=Math.min(CONFIG.skills.trick.maxCharge,s.charge+dt);
   for(const shot of energyShots){const old=shot.x;shot.age+=dt;shot.life-=dt;shot.x+=shot.dir*CONFIG.skills.trick.speed*dt;
-    const targets=enemies.filter(e=>e.death<0&&Math.max(old,shot.x)+shot.r>=e.x-e.w/2&&Math.min(old,shot.x)-shot.r<=e.x+e.w/2&&shot.y+shot.r>=e.y-e.h&&shot.y-shot.r<=e.y).sort((a,b)=>shot.dir*(a.x-b.x));
+    const targets=combatTargets().filter(e=>e.death<0&&Math.max(old,shot.x)+shot.r>=e.x-e.w/2&&Math.min(old,shot.x)-shot.r<=e.x+e.w/2&&shot.y+shot.r>=e.y-e.h&&shot.y-shot.r<=e.y).sort((a,b)=>shot.dir*(a.x-b.x));
     if(targets.length){const e=targets[0];shot.x=e.x-shot.dir*e.w/2;hitEnemy(e,shot.damage,shot.dir);explodeEnergy(shot,e);shot.life=0;}}
   energyShots=energyShots.filter(s=>s.life>0&&s.x>camera-250&&s.x<camera+W+250);
   if(s.thunderLeft>0){s.thunderLeft=Math.max(0,s.thunderLeft-dt);s.waveClock-=dt;if(s.waveClock<=0&&s.thunderLeft>.48){s.waveClock+=c.minInterval+Math.random()*(c.maxInterval-c.minInterval);lightning.push({x:camera+20+Math.random()*(W-40),y:-20-Math.random()*100,speed:c.fallSpeed*(.95+Math.random()*.2),life:.6,hit:new Set()});s.wave++;}}
-  for(const bolt of lightning){const oldY=bolt.y;bolt.y+=(bolt.speed||c.fallSpeed)*dt;bolt.life-=dt;for(const e of enemies){if(e.death<0&&!bolt.hit.has(e)&&Math.abs(e.x-bolt.x)<=e.w/2+22&&bolt.y>=e.y-e.h&&oldY-125<=e.y){bolt.hit.add(e);hitEnemy(e,CONFIG.bulletDamage*c.multiplier,Math.sign(e.x-player.x)||1);}}if(oldY<CONFIG.groundY&&bolt.y>=CONFIG.groundY)burst(bolt.x,CONFIG.groundY-5,4,'#fff397');}
+  for(const bolt of lightning){const oldY=bolt.y;bolt.y+=(bolt.speed||c.fallSpeed)*dt;bolt.life-=dt;for(const e of combatTargets()){if(e.death<0&&!bolt.hit.has(e)&&Math.abs(e.x-bolt.x)<=e.w/2+22&&bolt.y>=e.y-e.h&&oldY-125<=e.y){bolt.hit.add(e);hitEnemy(e,CONFIG.bulletDamage*c.multiplier,Math.sign(e.x-player.x)||1);}}if(oldY<CONFIG.groundY&&bolt.y>=CONFIG.groundY)burst(bolt.x,CONFIG.groundY-5,4,'#fff397');}
   lightning=lightning.filter(b=>b.life>0&&b.y<CONFIG.groundY+160);for(const ex of explosions)ex.age+=dt;explosions=explosions.filter(ex=>ex.age<.4);
 }
 function updateSkillHUD(){if(selectedCharacter==='tetsu'){skillButtons.forEach((b,i)=>{const cd=tetsuCooldowns[i];b.classList.toggle('cooling',cd>0);b.classList.remove('charging');b.setAttribute('aria-disabled',String(cd>0||!!tetsuAction));b.querySelector('small').textContent=cd>0?`${cd.toFixed(1)}s`:`0${i+1} READY`;});return;}for(let i=0;i<2;i++){const b=skillButtons[i],cd=skillState.cooldowns[i],charging=i===0&&skillState.charging;
@@ -95,28 +95,34 @@ function updateSkillHUD(){if(selectedCharacter==='tetsu'){skillButtons.forEach((
 for(const e of ['contextmenu','dragstart','selectstart','gesturestart','gesturechange','gestureend','dblclick'])document.addEventListener(e,x=>x.preventDefault(),{passive:false});
 document.addEventListener('touchmove',e=>e.preventDefault(),{passive:false});
 function burst(x,y,n=8,color='#ffd666'){for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,s=45+Math.random()*180;particles.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-35,life:.15+Math.random()*.22,max:.4,color:i%3===0?'#fffbe9':color,r:2+Math.random()*3});}}
-function fire(){const p=player;bullets.push({x:p.x+p.dir*36,y:p.y-37,dir:p.dir,life:1.6});p.shotAge=0;shootClock=CONFIG.shootInterval;burst(p.x+p.dir*43,p.y-37,3);}
+function fire(){const p=player;if(p.reload>0||p.ammo<=0)return;p.ammo--;if(p.ammo===0)p.reload=CONFIG.reloadDuration;bullets.push({x:p.x+p.dir*36,y:p.y-37,dir:p.dir,life:1.6});p.shotAge=0;shootClock=CONFIG.shootInterval;burst(p.x+p.dir*43,p.y-37,3);}
 function damagePlayer(enemy,amount=CONFIG.enemies[enemy.type].damage){if(player.inv>0)return;player.hp=Math.max(0,player.hp-amount);player.inv=CONFIG.invincibility;player.red=.2;player.knock=(player.x<enemy.x?-1:1)*220;player.vy=-160;player.grounded=false;burst(player.x,player.y-35,8,'#ff7373');if(player.hp===0){state='dead';modal('もう一度、草原へ。',`COIN ${collected} / 撃破 ${kills}体`,'RETRY');}}
 function tick(dt){
   if(state!=='playing')return;elapsed+=dt;const p=player;p.anim+=dt;p.shotAge+=dt;p.inv=Math.max(0,p.inv-dt);p.red=Math.max(0,p.red-dt);shootClock=Math.max(0,shootClock-dt);jumpRequest=Math.max(0,jumpRequest-dt);
+  if(p.reload>0){p.reload=Math.max(0,p.reload-dt);if(p.reload<1e-8){p.reload=0;p.ammo=CONFIG.magazineSize;}}
   const keyboard=(keys.has('KeyD')||keys.has('ArrowRight')?1:0)-(keys.has('KeyA')||keys.has('ArrowLeft')?1:0);
   const a=keyboard?keyboard*(keys.has('ShiftLeft')||keys.has('ShiftRight')?1:.55):axis, magnitude=Math.abs(a);
   // Hysteresis prevents threshold chatter between walking and running.
   if(running?magnitude<.64:magnitude>.76)running=!running;
   const locked=selectedCharacter==='tetsu'?!!tetsuAction:thunderLocked();if(locked){jumpRequest=0;p.knock=0;}
   const move=!locked&&magnitude>.35?Math.sign(a):0;p.vx=move*(running?CONFIG.dashSpeed:CONFIG.walkSpeed);if(move)p.dir=move;if(tetsuAction?.type==='dash'&&tetsuAction.age>=.08&&tetsuAction.age<.56)p.vx=tetsuAction.dir*1000;
+  if(tetsuAction?.type==='combo'&&tetsuAction.landedAt===undefined&&tetsuAction.age<.65)p.vx=tetsuAction.dir*90;
+  if(tetsuAction?.type==='air'&&tetsuAction.landedAt===undefined&&tetsuAction.age>=.06)p.vy=Math.max(p.vy,1150);
   if(p.grounded)p.coyote=CONFIG.coyoteTime;else p.coyote=Math.max(0,p.coyote-dt);
   if(jumpRequest>0&&!locked&&(p.coyote>0||p.jumpsUsed<2)){p.jumpsUsed=p.coyote>0?1:Math.max(1,p.jumpsUsed)+1;p.vy=-CONFIG.jumpForce;p.grounded=false;p.coyote=0;p.jumpAge=0;jumpRequest=0;burst(p.x,p.y-4,p.jumpsUsed===2?10:5,'#d6e7a4');}
   if(!p.grounded)p.jumpAge+=dt;
-  const oldX=p.x,oldY=p.y;p.x=clamp(p.x+(p.vx+p.knock)*dt,24,CONFIG.worldWidth-35);p.knock*=Math.exp(-9*dt);
+  const wasGrounded=p.grounded,oldX=p.x;let oldY=p.y;p.x=clamp(p.x+(p.vx+p.knock)*dt,24,CONFIG.worldWidth-35);p.knock*=Math.exp(-9*dt);
   const half=CONFIG.playerColliderWidth/2;
-  for(const platform of platforms){if(!platform.solid||oldY<=platform.y+1||p.y-CONFIG.playerColliderHeight>=platform.y+platform.h)continue;if(p.x+half>platform.x&&p.x-half<platform.x+platform.w){if(oldX+half<=platform.x)p.x=platform.x-half;else if(oldX-half>=platform.x+platform.w)p.x=platform.x+platform.w+half;}}
+  oldY=resolveStageSides(p,oldX,oldY,wasGrounded);
   p.vy+=(selectedCharacter==='tetsu'?tetsuGravity():CONFIG.gravity)*dt;p.y+=p.vy*dt;p.grounded=false;
-  let landing=CONFIG.groundY;for(const platform of platforms)if(p.x+half>platform.x&&p.x-half<platform.x+platform.w&&oldY<=platform.y+.5&&p.y>=platform.y&&p.vy>=0)landing=Math.min(landing,platform.y);
-  if(p.y>=landing&&p.vy>=0){p.y=landing;p.vy=0;p.grounded=true;p.jumpsUsed=0;}
-  if(selectedCharacter!=='tetsu'&&!locked&&(pointers.shoot.size||keys.has('KeyJ'))&&shootClock<=0)fire();
+  const landing=stageLandingHeight(p,oldY,wasGrounded);
+  if((p.y>=landing||(wasGrounded&&Math.abs(landing-oldY)<=26))&&p.vy>=0){p.y=landing;p.vy=0;p.grounded=true;p.jumpsUsed=0;onTetsuLanding();onStageLanding();}
+  if(selectedCharacter!=='tetsu'&&!locked&&(pointers.shoot.size||keys.has('KeyJ'))&&shootClock<=1e-8)fire();
   for(const e of enemies){e.flash=Math.max(0,e.flash-dt);if(e.launch){const f=e.launch;e.x=clamp(e.x+f.vx*dt,24,CONFIG.worldWidth-24);e.y+=f.vy*dt;f.vy+=CONFIG.gravity*dt;f.vx*=Math.exp(-1.3*dt);f.angle+=f.spin*dt;if(e.death>=0&&e.type!=='miira')e.death+=dt;if(e.y>=f.floor&&f.vy>0){e.y=f.floor;e.home=e.x;e.launch=null;}continue;}if(e.death>=0){e.death+=dt;continue;}if(Math.abs(e.x-p.x)>1000)continue;if(e.type==='miira'){updateMiira(e,dt);continue;}const c=CONFIG.enemies[e.type];if(e.type==='chase'&&Math.abs(e.x-p.x)<470)e.dir=Math.sign(p.x-e.x)||e.dir;else if(e.x<e.home-e.range)e.dir=1;else if(e.x>e.home+e.range)e.dir=-1;e.x+=e.dir*c.speed*dt+e.knock*dt;e.knock*=Math.exp(-10*dt);e.x=clamp(e.x,e.home-e.range-80,e.home+e.range+80);if(Math.abs(p.x-e.x)<half+e.w*.42&&p.y>e.y-e.h&&p.y-CONFIG.playerColliderHeight<e.y)damagePlayer(e);}
-  for(const b of bullets){const previous=b.x;b.x+=b.dir*CONFIG.bulletSpeed*dt;b.life-=dt;for(const e of enemies){if(e.death>=0||b.life<=0)continue;if(Math.max(previous,b.x)>=e.x-e.w/2&&Math.min(previous,b.x)<=e.x+e.w/2&&b.y>e.y-e.h-4&&b.y<e.y+3){e.hp=Math.max(0,e.hp-CONFIG.bulletDamage);e.flash=.1;e.knock=b.dir*110;b.life=0;burst(clamp(b.x,e.x-e.w/2,e.x+e.w/2),b.y);if(e.hp===0){e.death=0;kills++;burst(e.x,e.y-e.h/2,12);}}}}
+  for(const b of bullets){const previous=b.x;b.x+=b.dir*CONFIG.bulletSpeed*dt;b.life-=dt;
+    const targets=combatTargets().filter(e=>e.death<0&&Math.max(previous,b.x)>=e.x-e.w/2&&Math.min(previous,b.x)<=e.x+e.w/2&&b.y>e.y-e.h-4&&b.y<e.y+3).sort((a,c)=>b.dir*(a.x-c.x));
+    if(b.life>0&&targets.length){hitEnemy(targets[0],CONFIG.bulletDamage,b.dir);b.life=0;}
+  }
   if(state==='playing'){updateDirtBalls(dt);if(selectedCharacter==='tetsu')updateTetsu(dt);else updateSkills(dt);}
   bullets=bullets.filter(b=>b.life>0&&b.x>camera-240&&b.x<camera+W+240);enemies=enemies.filter(e=>e.death<(e.type==='miira'?miiraDeathDuration():.6)||e.launch);
   for(const c of coins)if(!c.taken&&Math.abs(p.x-c.x)<half+15&&c.y>p.y-CONFIG.playerColliderHeight-12&&c.y<p.y+12){c.taken=true;collected++;popups.push({x:c.x,y:c.y,life:.6});burst(c.x,c.y,5);}
@@ -126,9 +132,10 @@ function tick(dt){
   const screenX=p.x-camera;let target=camera;if(screenX>W*.39)target=p.x-W*.39;else if(screenX<W*.27)target=p.x-W*.27;camera=clamp(camera+(target-camera)*(1-Math.exp(-7*dt)),0,CONFIG.worldWidth-W);
   if(hintTimer>0)hintTimer-=dt;else $('hint').textContent=p.x<650?'右へ進もう → スティックを深く倒すとダッシュ':p.x<1600?'段差はジャンプ！ 上のコインも集めよう':p.x>20400?'最後のゴロイワを突破して、GOALへ →':selectedCharacter==='tetsu'?'ATK 2回で連撃 / 空中ATKで茄子落とし':'草原の先へ → 移動中も空中も SHOOT';
   if(p.x>=CONFIG.worldWidth-180&&state==='playing'){state='clear';modal('AREA 1-1 CLEAR!',`COIN ${collected} / 撃破 ${kills}体 / ${Math.floor(elapsed/60)}:${String(Math.floor(elapsed%60)).padStart(2,'0')}`,'RETRY');}
+  if(state==='playing')updateWorld(dt);
   updateHUD();
 }
-function updateHUD(){if(!player)return;$('coins').textContent=collected;$('hp-text').textContent=`${player.hp} / ${CONFIG.maxHP}`;$('hp-fill').style.width=`${player.hp/CONFIG.maxHP*100}%`;$('progress').style.width=`${player.x/CONFIG.worldWidth*100}%`;updateSkillHUD();}
+function updateHUD(){if(!player)return;$('ammo').hidden=selectedCharacter!=='denden';$('ammo').textContent=player.reload>0?`RELOAD ${player.reload.toFixed(1)}s`:`AMMO ${player.ammo} / ${CONFIG.magazineSize}`;$('ammo').classList.toggle('reloading',player.reload>0);$('coins').textContent=collected;$('hp-text').textContent=`${player.hp} / ${CONFIG.maxHP}`;$('hp-fill').style.width=`${player.hp/CONFIG.maxHP*100}%`;$('progress').style.width=`${player.x/CONFIG.worldWidth*100}%`;updateSkillHUD();}
 function rounded(x,y,w,h,r,color){ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();}
 function text(str,x,y,size,color='#fff4d6',align='center'){ctx.font=`800 ${size}px Arial, sans-serif`;ctx.fillStyle=color;ctx.textAlign=align;ctx.fillText(str,x,y);}
 function drawBackground(){ctx.fillStyle='#56c1df';ctx.fillRect(0,0,W,H);if(assets.background){const bw=1280,bh=853.33,scroll=camera*.18,first=Math.floor(scroll/bw);for(let n=first;n<=first+1;n++){ctx.save();ctx.translate(n*bw-scroll,0);if(n%2){ctx.translate(bw,0);ctx.scale(-1,1);}ctx.drawImage(assets.background,0,-170,bw,bh);ctx.restore();}}ctx.fillStyle='#a5dc811c';ctx.fillRect(0,0,W,548);}
@@ -155,7 +162,7 @@ function drawSkills(){if(selectedCharacter==='tetsu'){drawTetsuEffects();return;
   ctx.save();ctx.beginPath();ctx.rect(0,0,W,CONFIG.groundY+8);ctx.clip();for(const b of lightning){const img=assets.lightning,h=155,w=h*img.width/img.height;ctx.globalAlpha=.85;ctx.drawImage(img,b.x-camera-w/2,b.y-h,w,h);}ctx.restore();
   if(thunderLocked()){ctx.save();ctx.strokeStyle='#fff398';ctx.lineWidth=2;for(let n=0;n<3;n++){const x=p.x-camera-45+n*38,y=p.y-90;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+Math.sin(elapsed*40+n)*9,y+23);ctx.lineTo(x-8,y+35);ctx.lineTo(x+8,y+57);ctx.stroke();}ctx.restore();}
 }
-function draw(){drawBackground();ground();if(!player)return;for(const p of platforms)drawPlatform(p);for(const c of coins){if(c.taken||c.x<camera-30||c.x>camera+W+30)continue;const x=c.x-camera,y=c.y+Math.sin(elapsed*3+c.x)*3;ctx.fillStyle='#9d6b20';ctx.beginPath();ctx.ellipse(x,y,11,14,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#ffdb60';ctx.beginPath();ctx.ellipse(x,y-1,8.5,11,0,0,Math.PI*2);ctx.fill();text('·',x,y+5,22,'#a76e22');}for(const e of enemies)drawEnemy(e);const gx=CONFIG.worldWidth-180-camera;if(gx<W+100){rounded(gx,300,8,248,3,'#e9e6c3');rounded(gx+8,306,140,59,4,'#183c3e');text('GOAL',gx+77,345,26,'#ffda69');rounded(gx-45,540,100,8,3,'#f5d46e');}drawPlayer();drawDirtBalls();for(const b of bullets){ctx.save();ctx.translate(b.x-camera,b.y);ctx.scale(b.dir,1);ctx.drawImage(assets.bullet,-14,-6,28,12);ctx.restore();}for(const f of particles){ctx.globalAlpha=clamp(f.life/.15,0,1);ctx.fillStyle=f.color;ctx.fillRect(f.x-camera-f.r/2,f.y-f.r/2,f.r,f.r);}ctx.globalAlpha=1;for(const f of popups){ctx.globalAlpha=f.life/.6;text('+1',f.x-camera,f.y,20,'#ffe78b');}ctx.globalAlpha=1;}
+function draw(){drawBackground();ground();drawWorld();if(!player)return;for(const p of platforms)drawPlatform(p);for(const c of coins){if(c.taken||c.x<camera-30||c.x>camera+W+30)continue;const x=c.x-camera,y=c.y+Math.sin(elapsed*3+c.x)*3;ctx.fillStyle='#9d6b20';ctx.beginPath();ctx.ellipse(x,y,11,14,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#ffdb60';ctx.beginPath();ctx.ellipse(x,y-1,8.5,11,0,0,Math.PI*2);ctx.fill();text('·',x,y+5,22,'#a76e22');}for(const e of enemies)drawEnemy(e);const gx=CONFIG.worldWidth-180-camera;if(gx<W+100){rounded(gx,300,8,248,3,'#e9e6c3');rounded(gx+8,306,140,59,4,'#183c3e');text('GOAL',gx+77,345,26,'#ffda69');rounded(gx-45,540,100,8,3,'#f5d46e');}drawPlayer();drawDirtBalls();drawWorldEffects();drawArenaGates();for(const b of bullets){ctx.save();ctx.translate(b.x-camera,b.y);ctx.scale(b.dir,1);ctx.drawImage(assets.bullet,-14,-6,28,12);ctx.restore();}for(const f of particles){ctx.globalAlpha=clamp(f.life/.15,0,1);ctx.fillStyle=f.color;ctx.fillRect(f.x-camera-f.r/2,f.y-f.r/2,f.r,f.r);}ctx.globalAlpha=1;for(const f of popups){ctx.globalAlpha=f.life/.6;text('+1',f.x-camera,f.y,20,'#ffe78b');}ctx.globalAlpha=1;}
 function loop(time){const dt=Math.min((time-lastTime)/1000||0,.05);lastTime=time;accumulator+=dt;while(accumulator>=1/120){tick(1/120);accumulator-=1/120;}draw();if(player)drawSkills();requestAnimationFrame(loop);}requestAnimationFrame(loop);
 
 for(const button of document.querySelectorAll('[data-character]'))button.onclick=()=>selectCharacter(button.dataset.character);

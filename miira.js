@@ -55,7 +55,7 @@ function segmentHitsBox(x,y,nx,ny,left,top,right,bottom){
 function updateDirtBalls(dt){
  for(const b of dirtBalls){
   const x=b.x,y=b.y;b.x+=b.vx*dt;b.y+=b.vy*dt+.5*MIIRA.ballGravity*dt*dt;b.vy+=MIIRA.ballGravity*dt;b.life-=dt;b.angle+=dt*8;
-  const terrain=b.y+b.r>=CONFIG.groundY||platforms.some(p=>segmentHitsBox(x,y,b.x,b.y,p.x-b.r,p.y-b.r,p.x+p.w+b.r,p.y+p.h+b.r));
+  const terrain=b.y+b.r>=groundAt(b.x)||[...stageSurfaces(),...arenaGateBoxes()].some(p=>segmentHitsBox(x,y,b.x,b.y,p.x-b.r,p.y-b.r,p.x+p.w+b.r,p.y+p.h+b.r));
   const hit=!terrain&&segmentHitsBox(x,y,b.x,b.y,player.x-CONFIG.playerColliderWidth/2-b.r,player.y-CONFIG.playerColliderHeight-b.r,player.x+CONFIG.playerColliderWidth/2+b.r,player.y+b.r);
   if(hit)damagePlayer({type:'miira',x:b.x},MIIRA.ballDamage);
   if(terrain||hit){b.life=0;burst(b.x,Math.min(b.y,CONFIG.groundY-3),7,'#b38b58');}
