@@ -106,10 +106,11 @@ function tick(dt){
   if(running?magnitude<.64:magnitude>.76)running=!running;
   const locked=selectedCharacter==='nyoro'?!!nyoroAction:selectedCharacter==='tetsu'?!!tetsuAction:thunderLocked()||!!thunderBullet;if(locked){jumpRequest=0;p.knock=0;}
   const move=!locked&&magnitude>.35?Math.sign(a):0;p.vx=move*(running?CONFIG.dashSpeed:CONFIG.walkSpeed);if(selectedCharacter==='denden'&&(pointers.shoot.size||keys.has('KeyJ'))&&p.reload===0)p.vx*=.65;if(move)p.dir=move;if(tetsuAction?.type==='dash'&&tetsuAction.age>=.08&&tetsuAction.age<.56)p.vx=tetsuAction.dir*1000;
+  if(nyoroAction?.type==='normal'||nyoroAction?.type==='upper')p.vx=nyoroAction.dir*(nyoroAction.type==='normal'?105:120);
   if(tetsuAction?.type==='normal')p.vx=tetsuAction.dir*140;if(tetsuAction?.type==='combo'&&tetsuAction.landedAt===undefined&&tetsuAction.age<.75)p.vx=tetsuAction.dir*175;
   if(tetsuAction?.type==='air'&&tetsuAction.landedAt===undefined&&tetsuAction.age>=.06)p.vy=Math.max(p.vy,1150);
   if(p.grounded)p.coyote=CONFIG.coyoteTime;else p.coyote=Math.max(0,p.coyote-dt);
-  if(selectedCharacter==='nyoro'&&jumpRequest>0&&!locked&&p.coyote<=0&&p.jumpsUsed<2){nyoroGlide=true;p.jumpsUsed=2;jumpRequest=0;p.vy=Math.max(p.vy,0);}
+  if(selectedCharacter==='nyoro'&&jumpRequest>0&&!locked&&!p.grounded&&p.coyote<=0){if(!nyoroGlideUsed){nyoroGlide=true;nyoroGlideUsed=true;p.jumpsUsed=2;p.vy=Math.max(p.vy,0);}jumpRequest=0;}
   if(jumpRequest>0&&!locked&&(p.coyote>0||(selectedCharacter!=='nyoro'&&p.jumpsUsed<2))){p.jumpsUsed=p.coyote>0?1:Math.max(1,p.jumpsUsed)+1;p.vy=selectedCharacter==='nyoro'?-NYORO.jumpForce:-CONFIG.jumpForce;p.grounded=false;p.coyote=0;p.jumpAge=0;jumpRequest=0;pinkJump(p.vy);burst(p.x,p.y-4,p.jumpsUsed===2?10:5,'#d6e7a4');}
   if(!p.grounded)p.jumpAge+=dt;
   const wasGrounded=p.grounded,oldX=p.x;let oldY=p.y;p.x=clamp(p.x+(p.vx+p.knock)*dt,24,CONFIG.worldWidth-35);p.knock*=Math.exp(-9*dt);
@@ -117,7 +118,7 @@ function tick(dt){
   oldY=resolveStageSides(p,oldX,oldY,wasGrounded);
   p.vy+=(nyoroGlide?160:selectedCharacter==='tetsu'?tetsuGravity():CONFIG.gravity)*dt;if(nyoroGlide)p.vy=Math.min(p.vy,95);p.y+=p.vy*dt;p.grounded=false;
   const pinkFloor=pinkLandingHeight(p,oldY),landing=Math.min(stageLandingHeight(p,oldY,wasGrounded),pinkFloor);
-  if((p.y>=landing||(wasGrounded&&Math.abs(landing-oldY)<=26))&&p.vy>=0){p.y=landing;p.vy=0;p.grounded=true;p.jumpsUsed=0;nyoroGlide=false;onTetsuLanding();if(landing===pinkFloor)bounceOnPink();else onStageLanding();}
+  if((p.y>=landing||(wasGrounded&&Math.abs(landing-oldY)<=26))&&p.vy>=0){p.y=landing;p.vy=0;p.grounded=true;p.jumpsUsed=0;nyoroGlide=false;nyoroGlideUsed=false;onTetsuLanding();if(landing===pinkFloor)bounceOnPink();else onStageLanding();}
   if(selectedCharacter==='denden'&&!locked&&(pointers.shoot.size||keys.has('KeyJ'))&&shootClock<=1e-8)fire();
   for(const e of enemies){e.stun=Math.max(0,(e.stun||0)-dt);e.electric=Math.max(0,(e.electric||0)-dt);e.flash=Math.max(0,e.flash-dt);if(e.dropping){e.dropping.vy+=1600*dt;e.y+=e.dropping.vy*dt;if(e.y>=CONFIG.groundY){e.y=CONFIG.groundY;e.dropping=null;burst(e.x,e.y,6,'#cbb693');}continue;}if(e.launch){const f=e.launch;e.x=clamp(e.x+f.vx*dt,24,CONFIG.worldWidth-24);e.y+=f.vy*dt;f.vy+=CONFIG.gravity*dt;f.vx*=Math.exp(-1.3*dt);f.angle+=f.spin*dt;if(e.death>=0&&e.type!=='miira')e.death+=dt;if(e.y>=f.floor&&f.vy>0){e.y=f.floor;e.home=e.x;e.launch=null;}continue;}if(e.death>=0){e.death+=dt;continue;}if(e.stun>0)continue;if(Math.abs(e.x-p.x)>1000)continue;if(e.type==='miira'){updateMiira(e,dt);continue;}const c=CONFIG.enemies[e.type];if(e.type==='chase'&&Math.abs(e.x-p.x)<470)e.dir=Math.sign(p.x-e.x)||e.dir;else if(e.x<e.home-e.range)e.dir=1;else if(e.x>e.home+e.range)e.dir=-1;e.x+=e.dir*c.speed*dt+e.knock*dt;e.knock*=Math.exp(-10*dt);e.x=clamp(e.x,e.home-e.range-80,e.home+e.range+80);if(Math.abs(p.x-e.x)<half+e.w*.42&&p.y>e.y-e.h&&p.y-CONFIG.playerColliderHeight<e.y)damagePlayer(e);}
   for(const b of bullets){const previous=b.x;b.x+=b.dir*CONFIG.bulletSpeed*dt;b.life-=dt;if(b.bomb&&b.life<=0)explodeBomb(b);

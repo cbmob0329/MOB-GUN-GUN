@@ -24,7 +24,7 @@ function combatTargets(){return [...enemies,...crates.filter(c=>c.death<0)];}
 function damageCrate(c,damage){if(c.death>=0)return;c.hp=Math.max(0,c.hp-damage);c.flash=.12;if(c.hp===0){c.death=0;burst(c.x,c.y-24,16,'#cf9b58');dorayaki.push({x:c.x,y:c.y-50,baseY:c.y-20,vy:-160,age:0});}}
 function groundAt(x){return gaps.some(g=>x>g.x&&x<g.x+g.w)?Infinity:CONFIG.groundY;}
 function bridgeY(b,x){return b.y+20*Math.sin(clamp((x-b.x)/b.w,0,1)*Math.PI);}
-function stageSurfaces(){return [...platforms,...crumbles.filter(c=>!c.gone),...(nyoroSummon?[nyoroSummon]:[])];}
+function stageSurfaces(){return [...platforms,...crumbles.filter(c=>!c.gone)];}
 function arenaForPlayer(){return arenas.find(a=>a.state==='closing'||a.state==='fighting'||a.state==='opening');}
 function arenaGateBoxes(){return arenas.filter(a=>!['idle','cleared'].includes(a.state)).flatMap(a=>[a.x+25,a.right-25].map(x=>({x:x-52,y:88,w:104,h:460})));}
 function resolveStageSides(p,oldX,oldY,wasGrounded){
@@ -43,6 +43,7 @@ function stageLandingHeight(p,oldY,wasGrounded){
  for(const q of stageSurfaces())if(p.x+half>q.x&&p.x-half<q.x+q.w&&p.vy>=0&&((oldY<=q.y+.5&&p.y>=q.y)||((q.type==='stair'||q.type==='crumble')&&wasGrounded&&Math.abs(q.y-oldY)<=26)))landing=Math.min(landing,q.y);
  for(const r of ramps){if(p.x<r.x||p.x>r.x+r.w)continue;const y=r.y+(r.endY-r.y)*(p.x-r.x)/r.w;if(p.vy>=0&&((oldY<=y+8&&p.y>=y)||(wasGrounded&&Math.abs(oldY-y)<12)))landing=Math.min(landing,y);}
  for(const b of bridges){if(p.x<b.x||p.x>b.x+b.w)continue;const y=bridgeY(b,p.x);if(p.vy>=0&&((oldY<=y+2&&p.y>=y)||(wasGrounded&&Math.abs(oldY-y)<6)))landing=Math.min(landing,y);}
+ const roof=summonRoofY(p.x);if(p.vy>=0&&((oldY<=roof+1&&p.y>=roof)||(wasGrounded&&Math.abs(oldY-roof)<=26)))landing=Math.min(landing,roof);
  return landing;
 }
 function onStageLanding(){

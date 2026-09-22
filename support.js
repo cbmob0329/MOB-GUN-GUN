@@ -12,8 +12,8 @@ async function loadSupport(){await Promise.all([
  ...Array.from({length:8},(_,i)=>trimFrame(`denden/${String(i+33).padStart(3,'0')}.png`).then(img=>dendenBulletFrames[i]=img)),
  ...Array.from({length:4},(_,i)=>trimFrame(`skill/${String(i+33).padStart(3,'0')}.png`).then(img=>thunderBurstFrames[i]=img))
 ]);}
-function resetSupport(){pink={x:player.x-65,y:player.y,vx:0,vy:0,dir:1,grounded:true,enabled:true,age:0,cooldown:0,attack:null,assist:0,recall:0,lastTap:-Infinity};thunderBullet=null;thunderBulletCooldown=0;thunderBursts=[];}
-function supportFloorAt(x,fromY){let y=groundAt(x);for(const q of stageSurfaces())if(x>=q.x&&x<=q.x+q.w&&q.y>=fromY)y=Math.min(y,q.y);for(const r of ramps)if(x>=r.x&&x<=r.x+r.w){const h=r.y+(r.endY-r.y)*(x-r.x)/r.w;if(h>=fromY)y=Math.min(y,h);}for(const b of bridges)if(x>=b.x&&x<=b.x+b.w){const h=bridgeY(b,x);if(h>=fromY)y=Math.min(y,h);}return y;}
+function resetSupport(){pink={x:player.x-65,y:player.y,vx:0,vy:0,dir:1,grounded:true,enabled:true,age:0,cooldown:0,attack:null,assist:0,recall:0,lastTap:-Infinity,wanderDir:1,wanderClock:0};thunderBullet=null;thunderBulletCooldown=0;thunderBursts=[];}
+function supportFloorAt(x,fromY){let y=groundAt(x);const roof=summonRoofY(x);if(roof>=fromY)y=Math.min(y,roof);for(const q of stageSurfaces())if(x>=q.x&&x<=q.x+q.w&&q.y>=fromY)y=Math.min(y,q.y);for(const r of ramps)if(x>=r.x&&x<=r.x+r.w){const h=r.y+(r.endY-r.y)*(x-r.x)/r.w;if(h>=fromY)y=Math.min(y,h);}for(const b of bridges)if(x>=b.x&&x<=b.x+b.w){const h=bridgeY(b,x);if(h>=fromY)y=Math.min(y,h);}return y;}
 function castThunderBullet(){if(state!=='playing'||selectedCharacter!=='denden'||thunderBullet||thunderBulletCooldown>0||skillState.charging||thunderLocked())return;thunderBullet={age:0,x:player.x,y:player.y,dir:player.dir,next:0};thunderBulletCooldown=SUPPORT.bulletCooldown;}
 function updateThunderBullet(dt){
  thunderBulletCooldown=Math.max(0,thunderBulletCooldown-dt);
@@ -33,17 +33,31 @@ function commandPink(){if(state!=='playing'||!pink?.enabled)return;if(elapsed-pi
 function activatePink(){if(state!=='playing'||!pink?.enabled||pink.assist>0)return;pink.assist=SUPPORT.assistDuration;pink.attack=null;pink.vx=0;}
 function pinkLandingHeight(p,oldY){if(!pink?.enabled||pink.assist<=0||!pink.grounded||p.vy<0)return Infinity;const y=pink.y-84;return Math.abs(p.x-pink.x)<48&&oldY<=y+1&&p.y>=y?y:Infinity;}
 function bounceOnPink(){player.vy=-WORLD.trampolineSpeed;player.grounded=false;player.coyote=0;player.jumpsUsed=0;player.jumpAge=0;burst(player.x,player.y,14,'#ffaddc');}
+function pinkSafeFloor(x,y){
+ if(crumbles.some(c=>x>=c.x&&x<=c.x+c.w&&(c.gone||(c.timer>=0&&WORLD.collapseDelay-c.timer<.22))))return Infinity;
+ return supportFloorAt(x,y-25);
+}
+function avoidPinkHazards(dt){
+ const p=pink;if(p.hopTarget!==undefined){p.vx=clamp((p.hopTarget-p.x)/dt,-400,400);if(p.grounded&&Math.abs(p.x-p.hopTarget)<2){p.hopTarget=undefined;p.vx=0;}return;}
+ if(!p.grounded||Math.abs(p.vx)<1)return;
+ const dir=Math.sign(p.vx),ahead=p.x+dir*(22+Math.abs(p.vx)*.10),floor=pinkSafeFloor(ahead,p.y);
+ if(Number.isFinite(floor)&&floor<=p.y+55)return;
+ // Jump only if there is a reachable, intact landing; otherwise wait on this bank.
+ for(let d=90;d<=250;d+=16){const x=p.x+dir*d,y=pinkSafeFloor(x,p.y);if(Number.isFinite(y)&&Math.abs(y-p.y)<60&&Number.isFinite(pinkSafeFloor(x+dir*24,p.y))&&Number.isFinite(pinkSafeFloor(x-dir*24,p.y))){p.hopTarget=x;p.vx=dir*400;pinkJump(-CONFIG.jumpForce);return;}}
+ p.vx=0;p.attack=null;p.wanderDir=-dir;
+}
 function updatePink(dt){
- if(!pink?.enabled)return;const p=pink;p.age+=dt;p.recall=Math.max(0,(p.recall||0)-dt);p.cooldown=Math.max(0,p.cooldown-dt);p.assist=Math.max(0,p.assist-dt);
- if(Math.abs(p.x-player.x)>1100||p.y>H+160){p.x=player.x-player.dir*240;p.y=player.y;p.vy=0;p.grounded=player.grounded;p.attack=null;}
+ if(!pink?.enabled)return;const p=pink;p.age+=dt;p.wanderClock=(p.wanderClock||0)-dt;if(p.wanderClock<=0){p.wanderClock=1.8;p.wanderDir=-(p.wanderDir||-1);}p.recall=Math.max(0,(p.recall||0)-dt);p.cooldown=Math.max(0,p.cooldown-dt);p.assist=Math.max(0,p.assist-dt);
+ if(Math.abs(p.x-player.x)>1100||p.y>H+160){let safeX=player.x-player.dir*240;for(let d=160;d>=0;d-=20){const x=clamp(player.x-player.dir*d,24,CONFIG.worldWidth-24);if(Number.isFinite(pinkSafeFloor(x,player.y))){safeX=x;break;}}p.x=clamp(safeX,24,CONFIG.worldWidth-24);p.y=player.y;p.hopTarget=undefined;p.vy=0;p.grounded=player.grounded;p.attack=null;}
  const target=enemies.filter(e=>e.death<0&&Math.abs(e.x-player.x)<620&&Math.abs(e.y-p.y)<90&&!e.dropping).sort((a,b)=>Math.abs(a.x-p.x)-Math.abs(b.x-p.x))[0];
  if(p.assist<=0&&p.recall<=0&&!p.attack&&p.cooldown===0&&target&&Math.abs(target.x-p.x)<95){p.attack={age:0,dir:Math.sign(target.x-p.x)||p.dir,hit:new Set()};p.cooldown=SUPPORT.pinkCooldown;}
- let goal=p.recall>0?player.x-player.dir*95:Math.abs(player.x-p.x)>300?player.x-player.dir*240:p.x;if(target&&p.recall<=0&&p.assist<=0)goal=target.x-Math.sign(target.x-p.x)*45;
+ let goal=p.recall>0?player.x-player.dir*95:Math.abs(player.x-p.x)>300?player.x-player.dir*220:player.x-player.dir*150+(p.wanderDir||1)*45;if(target&&p.recall<=0&&p.assist<=0)goal=target.x-Math.sign(target.x-p.x)*45;
  const delta=goal-p.x;p.vx=p.assist>0?0:p.attack?p.attack.dir*(p.attack.age>.12&&p.attack.age<.30?110:0):Math.abs(delta)>12?Math.sign(delta)*(Math.abs(delta)>180?440:running?CONFIG.dashSpeed:CONFIG.walkSpeed):0;
+ avoidPinkHazards(dt);
  if(p.attack)p.dir=p.attack.dir;else if(Math.abs(p.vx)>1)p.dir=Math.sign(p.vx);else p.dir=player.dir;
  if(p.assist<=0&&p.grounded&&(player.y<p.y-45||platforms.some(q=>q.solid&&q.type!=='stair'&&p.dir*(q.x+q.w/2-p.x)>0&&Math.abs(q.x+q.w/2-p.x)<q.w/2+25)))pinkJump(-CONFIG.jumpForce);
  const wasGrounded=p.grounded,oldX=p.x;let oldY=p.y;p.x=clamp(p.x+p.vx*dt,24,CONFIG.worldWidth-24);oldY=resolveStageSides(p,oldX,oldY,wasGrounded);p.vy+=CONFIG.gravity*dt;p.y+=p.vy*dt;p.grounded=false;const floor=stageLandingHeight(p,oldY,wasGrounded);
- if(p.vy>=0&&(p.y>=floor||(wasGrounded&&Math.abs(floor-oldY)<=26))){p.y=floor;p.vy=0;p.grounded=true;}
+ if(p.vy>=0&&(p.y>=floor||(wasGrounded&&Math.abs(floor-oldY)<=26))){p.y=floor;p.vy=0;p.grounded=true;if(p.hopTarget!==undefined&&Math.abs(p.x-p.hopTarget)<35)p.hopTarget=undefined;}
  if(p.attack){const a=p.attack;a.age+=dt;if(a.age>=.17&&a.age<.36)for(const e of enemies){if(e.death>=0||a.hit.has(e)||Math.abs(e.x-(p.x+a.dir*35))>70||Math.abs(e.y-p.y)>85)continue;a.hit.add(e);hitEnemy(e,SUPPORT.pinkDamage,a.dir);launchEnemy(e,a.dir*120,-100);}if(a.age>=.56)p.attack=null;}
 }
 function drawPink(){
