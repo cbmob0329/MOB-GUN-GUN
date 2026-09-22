@@ -10,11 +10,11 @@ async function main(){
  await page.goto(`http://127.0.0.1:${server.address().port}`);await page.waitForFunction(()=>state==='ready');await page.locator('[data-character="tetsu"]').click();
  assert.equal(await page.locator('[data-character="tetsu"]').getAttribute('aria-pressed'),'true');await page.screenshot({path:path.join(process.env.TEMP,'tetsu-title-'+mobile+'.png')});await page.locator('#start').click();
  if(mobile){await page.locator('#shoot').tap();await page.locator('#shoot').tap();}else{await page.keyboard.press('j');await page.keyboard.press('j');}await page.waitForFunction(()=>tetsuAction?.type==='combo');
- await page.evaluate(()=>{reset();state='playing';});if(mobile){await page.locator('#jump').tap();await page.waitForTimeout(80);await page.locator('#shoot').tap();}else{await page.keyboard.press('Space');await page.waitForTimeout(80);await page.keyboard.press('j');}assert.equal(await page.evaluate(()=>tetsuAction?.type),'air');
- for(let i=0;i<3;i++){await page.evaluate(()=>{reset();state='playing';});if(mobile)await page.locator(`[data-skill="${i}"]`).tap();else await page.keyboard.press(String(i+1));assert.equal(await page.evaluate(()=>tetsuAction?.type),['mob','dash','ultimate'][i]);}
+ await page.evaluate(()=>{reset();pink.enabled=false;state='playing';});if(mobile){await page.locator('#jump').tap();await page.waitForTimeout(80);await page.locator('#shoot').tap();}else{await page.keyboard.press('Space');await page.waitForTimeout(80);await page.keyboard.press('j');}assert.equal(await page.evaluate(()=>tetsuAction?.type),'air');
+ for(let i=0;i<3;i++){await page.evaluate(()=>{reset();pink.enabled=false;state='playing';});if(mobile)await page.locator(`[data-skill="${i}"]`).tap();else await page.keyboard.press(String(i+1));assert.equal(await page.evaluate(()=>tetsuAction?.type),['mob','dash','ultimate'][i]);}
  const result=await page.evaluate(()=>{
   const check=(v,m)=>{if(!v)throw Error(m);},step=n=>{for(let i=0;i<n;i++)tick(1/120);};
-  const setup=(offset=95,hp=1000)=>{reset();state='playing';platforms=[];player.x=500;player.inv=100;const e={...enemies[0],x:500+offset,home:500+offset,hp,maxHP:hp,type:'tank',w:62,h:65,range:1000};enemies=[e];return e;};
+  const setup=(offset=95,hp=1000)=>{reset();pink.enabled=false;state='playing';platforms=[];player.x=500;player.inv=100;const e={...enemies[0],x:500+offset,home:500+offset,hp,maxHP:hp,type:'tank',w:62,h:65,range:1000};enemies=[e];return e;};
   let e=setup();tetsuAttack();step(18);check(e.hp===982,'normal damage');tetsuAttack();step(150);check(e.hp===954,'combo damage');check(!tetsuAction,'combo complete');
   e=setup();pointers.shoot.add(1);step(100);check(e.hp===1000,'hold must not repeat');
   e=setup(60);player.grounded=false;startTetsuAction('air');step(20);check(e.hp===970&&e.launch&&e.launch.vy<0,'air launch');check(tetsuEffects.length===1,'air impact once');
@@ -28,7 +28,7 @@ async function main(){
   for(const [group,frames] of Object.entries(tetsuFrames))for(const f of frames){check(f.w>0&&f.h>0&&Number.isFinite(f.scale),'valid trim');if(group!=='SKILL')check(f.scale*f.h<220,'sprite size');}
   setup();castTetsu(0);step(87);return {normal:18,combo:28,air:30,mob:84,dash:54,ultimate:96};
  });
- await page.screenshot({path:path.join(process.env.TEMP,'tetsu-mob-'+mobile+'.png')});await page.evaluate(()=>{state='dead';modal('RETRY','test','RETRY');});await page.locator('[data-character="denden"]').click();await page.locator('#start').click();assert.equal(await page.evaluate(()=>selectedCharacter),'denden');assert.equal(await page.locator('[data-skill="2"] small').textContent(),'03 LOCK');assert.deepEqual(errors,[]);console.log(mobile?'TOUCH':'KEYBOARD',result);await context.close();
+ await page.screenshot({path:path.join(process.env.TEMP,'tetsu-mob-'+mobile+'.png')});await page.evaluate(()=>{state='dead';modal('RETRY','test','RETRY');});await page.locator('[data-character="denden"]').click();await page.locator('#start').click();assert.equal(await page.evaluate(()=>selectedCharacter),'denden');assert.equal(await page.locator('[data-skill="2"] small').textContent(),'03 READY');assert.deepEqual(errors,[]);console.log(mobile?'TOUCH':'KEYBOARD',result);await context.close();
  }}finally{await browser.close();server.close();}
 }
 main().catch(e=>{console.error(e);server.close();process.exitCode=1;});

@@ -6,7 +6,7 @@ function resetWorld(){
  ramps=[{x:5000,w:400,y:548,endY:420}];
  crumbles=Array.from({length:6},(_,i)=>({x:7600+i*90,y:532,w:90,h:16,type:'crumble',timer:-1,gone:false,restore:0}));
  trampolines=[{x:6500,y:548,w:100,pulse:0},{x:14500,y:548,w:100,pulse:0}];
- arenas=[9500,17100].map((x,i)=>({id:i,x,right:x+1050,state:'idle',age:0,wave:0,spawned:0,waves:3,perWave:8,clock:0}));
+ arenas=[9500,17100].map((x,i)=>({id:i,x,right:x+1050,state:'idle',age:0,wave:0,spawned:0,waves:3,perWave:16,clock:0}));
  // Clear deliberate feature zones so generated ledges cannot hide a gap or arena.
  const zones=[[3500,4300],[4950,6000],[6400,7100],[7500,8250],...arenas.map(a=>[a.x-100,a.right+100])];
  platforms=platforms.filter(p=>!zones.some(([l,r])=>p.x+p.w>l&&p.x<r));
@@ -53,22 +53,22 @@ function onStageLanding(){
 function landingEffect(x,y){worldEffects.push({kind:'impact',x,y,age:0,duration:.42});burst(x,y-3,24,'#bb85ff');}
 function respawnFromFall(){
  const p=player;p.hp=Math.max(1,Math.ceil(p.hp/2));p.x=checkpoint.x;p.y=checkpoint.y;p.vx=p.vy=p.knock=0;p.grounded=true;p.jumpsUsed=0;p.inv=2;p.red=0;
- tetsuAction=null;comboWindow=0;clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
+ tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
  for(const c of crumbles){c.gone=false;c.timer=-1;c.restore=0;}
  worldEffects.push({kind:'respawn',x:p.x,y:p.y-35,age:0,duration:.65});hintTimer=2;$('hint').textContent='落下！ HPが半分になって安全地点へ復帰';
 }
 function spawnArenaEnemy(a,side,index){
- const type=index%4===3?'chase':'miira',c=CONFIG.enemies[type],x=side<0?a.x+120:a.right-120;
- const e={type,x,y:CONFIG.groundY,home:(a.x+a.right)/2,dir:-side,hp:c.hp,maxHP:c.hp,w:46,h:type==='miira'?MIIRA.height:46,flash:0,knock:0,death:-1,range:400,phase:a.spawned+index,arenaId:a.id,attackCooldown:.9+(index%3)*.25,attackAge:-1};enemies.push(e);burst(x,e.y-15,12,'#cbb693');
+ const type=index%4===3?'chase':'miira',c=CONFIG.enemies[type],x=side===0?a.x+220+(index*137)%610:side<0?a.x+120:a.right-120;
+ const e={type,x,y:CONFIG.groundY,home:(a.x+a.right)/2,dir:-side,hp:c.hp,maxHP:c.hp,w:46,h:type==='miira'?MIIRA.height:46,flash:0,knock:0,death:-1,range:400,phase:a.spawned+index,arenaId:a.id,attackCooldown:.9+(index%3)*.25,attackAge:-1};if(side===0){e.y=-60-(index%3)*65;e.dropping={vy:0};e.dir=Math.sign(player.x-x)||1;}enemies.push(e);burst(x,e.y-15,12,'#cbb693');
 }
 function updateArenas(dt){
  for(const a of arenas){
-  if(a.state==='idle'&&player.x>a.x+150&&player.x<a.right-100){a.state='closing';a.age=0;checkpoint={x:a.x+200,y:CONFIG.groundY};for(const e of enemies)if(e.death<0&&e.x>a.x&&e.x<a.right){e.arenaId=a.id;e.home=(a.x+a.right)/2;e.range=400;}hintTimer=2;$('hint').textContent='包囲された！ 左右から来る敵を全滅させよう';}
+  if(a.state==='idle'&&player.x>a.x+150&&player.x<a.right-100){a.state='closing';a.age=0;checkpoint={x:a.x+200,y:CONFIG.groundY};for(const e of enemies)if(e.death<0&&e.x>a.x&&e.x<a.right){e.arenaId=a.id;e.home=(a.x+a.right)/2;e.range=400;}hintTimer=2;$('hint').textContent='包囲された！ 敵の増援が来る';}
   if(a.state==='idle'||a.state==='cleared')continue;a.age+=dt;
   if(a.state==='closing'&&a.age>=.65){a.state='fighting';a.age=0;burst(a.x+25,548,25,'#aaa590');burst(a.right-25,548,25,'#aaa590');}
   if(a.state==='fighting'){
    a.clock-=dt;const alive=enemies.some(e=>e.arenaId===a.id&&e.death<0);
-   if(a.spawned<(a.wave+1)*a.perWave&&a.clock<=0){spawnArenaEnemy(a,-1,a.spawned);spawnArenaEnemy(a,1,a.spawned+1);a.spawned+=2;a.clock=.38;}
+   if(a.spawned<(a.wave+1)*a.perWave&&a.clock<=0){for(const side of [-1,1,0]){if(a.spawned>=(a.wave+1)*a.perWave)break;spawnArenaEnemy(a,side,a.spawned);a.spawned++;}a.clock=.22;}
    else if(a.spawned===(a.wave+1)*a.perWave&&!alive){if(a.wave+1<a.waves){a.wave++;a.clock=1.0;}else{a.state='opening';a.age=0;hintTimer=2;$('hint').textContent='全滅達成！ 道が開いた →';}}
   }
   if(a.state==='opening'&&a.age>=.7)a.state='cleared';
@@ -92,8 +92,8 @@ function updateWorld(dt){
 function drawWorld(){
  for(const g of gaps){const x=g.x-camera;rounded(x,548,g.w,172,0,'#182d38');ctx.fillStyle='#0c1c2c';ctx.fillRect(x+12,575,g.w-24,145);text('↓',x+g.w/2,675,28,'#567285');}
  for(const r of ramps){const x=r.x-camera;ctx.fillStyle='#776443';ctx.beginPath();ctx.moveTo(x,r.y);ctx.lineTo(x+r.w,r.endY);ctx.lineTo(x+r.w,548);ctx.closePath();ctx.fill();ctx.strokeStyle='#b1d46a';ctx.lineWidth=8;ctx.beginPath();ctx.moveTo(x,r.y);ctx.lineTo(x+r.w,r.endY);ctx.stroke();}
- for(const b of bridges){const x=b.x-camera;ctx.strokeStyle='#bba775';ctx.lineWidth=4;for(const offset of [-55,-35]){ctx.beginPath();for(let i=0;i<=24;i++){const px=b.x+b.w*i/24,y=bridgeY(b,px)+offset;if(!i)ctx.moveTo(px-camera,y);else ctx.lineTo(px-camera,y);}ctx.stroke();}for(let i=0;i<24;i++){const px=b.x+i*b.w/24,y=bridgeY(b,px);rounded(px-camera,y,b.w/24-3,12,2,'#ae8350');if(i%2===0){ctx.beginPath();ctx.moveTo(px-camera,y-52);ctx.lineTo(px-camera,y);ctx.stroke();}}for(const px of [x,x+b.w])rounded(px-4,b.y-80,8,99,3,'#765738');text('吊り橋',x+b.w/2,b.y-85,18);}
- for(const c of crumbles){if(c.gone)continue;const shake=c.timer>=0?Math.sin(elapsed*65)*2:0;rounded(c.x-camera+shake,c.y,c.w-3,c.h,3,c.timer<0?'#b4a17d':'#e6aa62');ctx.strokeStyle='#5e5243';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(c.x-camera+25,c.y);ctx.lineTo(c.x-camera+42,c.y+8);ctx.lineTo(c.x-camera+36,c.y+16);ctx.stroke();}for(const g of gaps.slice(1))text('崩れる床 — 止まらず進もう',g.x-camera+g.w/2,475,18);
+ for(const b of bridges){const x=b.x-camera;ctx.strokeStyle='#bba775';ctx.lineWidth=4;for(const offset of [-55,-35]){ctx.beginPath();for(let i=0;i<=24;i++){const px=b.x+b.w*i/24,y=bridgeY(b,px)+offset;if(!i)ctx.moveTo(px-camera,y);else ctx.lineTo(px-camera,y);}ctx.stroke();}for(let i=0;i<24;i++){const px=b.x+i*b.w/24,y=bridgeY(b,px);rounded(px-camera,y,b.w/24-3,12,2,'#ae8350');if(i%2===0){ctx.beginPath();ctx.moveTo(px-camera,y-52);ctx.lineTo(px-camera,y);ctx.stroke();}}for(const px of [x,x+b.w])rounded(px-4,b.y-80,8,99,3,'#765738');}
+ for(const c of crumbles){if(c.gone)continue;const shake=c.timer>=0?Math.sin(elapsed*65)*2:0;rounded(c.x-camera+shake,c.y,c.w-3,c.h,3,c.timer<0?'#b4a17d':'#e6aa62');ctx.strokeStyle='#5e5243';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(c.x-camera+25,c.y);ctx.lineTo(c.x-camera+42,c.y+8);ctx.lineTo(c.x-camera+36,c.y+16);ctx.stroke();}
  for(const t of trampolines){const x=t.x-camera,y=t.y;ctx.strokeStyle='#d9dbb3';ctx.lineWidth=4;for(let i=10;i<t.w;i+=20){ctx.beginPath();ctx.moveTo(x+i,y+17);ctx.lineTo(x+i+7,y+10);ctx.lineTo(x+i,y+4);ctx.stroke();}rounded(x,y-5+t.pulse*15,t.w,9,4,'#62e1bf');text('↑',x+t.w/2,y-22,28,'#aaffdd');}
  for(const c of crates){if(c.death>=0)continue;const x=c.x-camera;rounded(x-c.w/2,c.y-c.h,c.w,c.h,4,c.flash>0?'#fff2b3':'#bb8749');ctx.strokeStyle='#704a29';ctx.lineWidth=4;ctx.strokeRect(x-20,c.y-44,40,40);ctx.beginPath();ctx.moveTo(x-18,c.y-42);ctx.lineTo(x+18,c.y-6);ctx.moveTo(x+18,c.y-42);ctx.lineTo(x-18,c.y-6);ctx.stroke();text('焼',x,c.y-17,19,'#fff0bd');}
  for(const d of dorayaki){const x=d.x-camera,y=d.y+Math.sin(d.age*4)*3;ctx.fillStyle='#ffefac33';ctx.beginPath();ctx.arc(x,y,25,0,Math.PI*2);ctx.fill();for(const [offset,color] of [[5,'#bb7738'],[1,'#583126'],[-4,'#e9b660']]){ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(x,y+offset,17,7,0,0,Math.PI*2);ctx.fill();}ctx.fillStyle='#ffdc89';ctx.beginPath();ctx.ellipse(x-4,y-6,6,2,0,0,Math.PI*2);ctx.fill();}

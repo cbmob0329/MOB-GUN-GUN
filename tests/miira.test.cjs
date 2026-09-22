@@ -9,7 +9,7 @@ async function main(){
   const context=await browser.newContext({viewport:mobile?{width:844,height:390}:{width:1280,height:720},isMobile:mobile,hasTouch:mobile});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(`http://127.0.0.1:${server.address().port}`);await page.waitForFunction(()=>state==='ready');await page.locator('[data-character="tetsu"]').click();await page.locator('#start').click();
   const report=await page.evaluate(()=>{
    const check=(v,m)=>{if(!v)throw Error(m);},step=n=>{for(let i=0;i<n;i++)tick(1/120);};
-   const setup=()=>{reset();state='playing';platforms=[];coins=[];player.x=500;const e=enemies.find(e=>e.type==='miira');enemies=[e];Object.assign(e,{x:750,home:750,attackCooldown:0,attackAge:-1});return e;};
+   const setup=()=>{reset();pink.enabled=false;state='playing';platforms=[];coins=[];player.x=500;const e=enemies.find(e=>e.type==='miira');enemies=[e];Object.assign(e,{x:750,home:750,attackCooldown:0,attackAge:-1});return e;};
    reset();check(enemies.filter(e=>e.type==='miira').length===60,'60 mummies');check(enemies.length===87,'87 total enemies');
    let e=setup();step(1);check(e.attackAge===0,'windup');step(37);check(!dirtBalls.length,'no early ball');step(1);check(dirtBalls.length===1&&miiraPose(e)===miiraFrames.at[3],'release at 004');const ball=dirtBalls[0],startY=ball.y;step(18);check(ball.y<startY&&ball.vy<0,'ball rises');step(60);check(player.hp===47,'ball hit damage 3');check(!dirtBalls.includes(ball),'ball removed on hit');step(120);check(!dirtBalls.length,'throw cooldown');
    e=setup();e.attackCooldown=10;step(24);check(e.x<750&&miiraFrames.wa.includes(miiraPose(e)),'walk uses wa');
@@ -22,7 +22,7 @@ async function main(){
    e=setup();platforms=[{x:400,y:420,w:350,h:25}];player.y=420;e.y=420;e.x=e.home=585;e.hp=e.maxHP=1000;e.attackCooldown=100;startTetsuAction('combo');step(130);check(player.y===420&&player.grounded&&e.hp===972,'landing slash on platform');
    setup();enemies=[];const original=drawTetsuEffect,seen=[];drawTetsuEffect=(first,index)=>seen.push(first+index);castTetsu(1);for(let i=0;i<80;i++){step(1);drawTetsuEffects();}drawTetsuEffect=original;check(JSON.stringify([...new Set(seen)])==='[4,5,6,7]','dash uses only 05-08');
    for(const frames of Object.values(miiraFrames))for(const f of frames)check(f.w===f.img.width&&f.h===f.img.height&&f.w>0&&f.h>0,'trimmed render cache');
-   reset();state='playing';player.x=1500;camera=1100;player.inv=100;step(25);return {mummies:60,total:87,ballDamage:3,floatHeight:maxLift,comboDamage:28};
+   reset();pink.enabled=false;state='playing';player.x=1500;camera=1100;player.inv=100;step(25);return {mummies:60,total:87,ballDamage:3,floatHeight:maxLift,comboDamage:28};
   });
   await page.screenshot({path:path.join(process.env.TEMP,`miira-stage-${mobile}.png`)});
   if(!mobile){

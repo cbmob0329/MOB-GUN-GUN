@@ -9,6 +9,7 @@
   <script src="tetsu.js" defer></script>
   <script src="miira.js" defer></script>
   <script src="world.js" defer></script>
+  <script src="support.js" defer></script>
   <script src="game.js" defer></script>
 </head>
 <body>
@@ -24,8 +25,8 @@
   </header>
   <div id="hint">右へ進もう <b>→</b></div>
   <div id="stick-zone" aria-label="移動スティック"><div id="stick"><span class="stick-arrows">＋</span><div id="stick-knob"></div></div><span class="stick-label">MOVE <i>•</i> WALK / RUN</span></div>
-  <div id="ammo" role="status">AMMO 8 / 8</div><div class="actions"><div class="skills"><button class="skill" data-skill="0" aria-label="トリック・ザ・デンデン：長押しで溜め、離して発射" title="トリック・ザ・デンデン / 1を長押しして離す"><img src="skill/017.png" alt=""><small>01 HOLD</small></button><button class="skill" data-skill="1" aria-label="サンダーボルト" title="サンダーボルト / 2"><img src="atk/002.png" alt=""><small>02 READY</small></button><button class="skill" data-skill="2" aria-label="スキル3 準備中"><span>◇</span><small>03 LOCK</small></button></div><div class="buttons"><button id="shoot"><span>⌖</span>SHOOT</button><button id="jump"><span>↑</span>JUMP</button></div></div>
-  <div class="keyboard-help">A D 移動 <em>SHIFT ダッシュ</em> SPACE ジャンプ <em>J 射撃</em> 1 長押し / 2 雷</div>
+  <button id="pink-tap" aria-label="モブピンク：シールド・トランポリン（R）" title="シールド・トランポリン / R" hidden></button><div id="ammo" role="status">AMMO 8 / 8</div><div class="actions"><div class="skills"><button class="skill" data-skill="0" aria-label="トリック・ザ・デンデン：ワンタップで自動発射" title="トリック・ザ・デンデン / 1"><img src="skill/017.png" alt=""><small>01 READY</small></button><button class="skill" data-skill="1" aria-label="サンダーボルト" title="サンダーボルト / 2"><img src="atk/002.png" alt=""><small>02 READY</small></button><button class="skill" data-skill="2" aria-label="デンデン・サンダー・バレット"><img src="skill/035.png" alt=""><small>03 READY</small></button></div><div class="buttons"><button id="shoot"><span>⌖</span>SHOOT</button><button id="jump"><span>↑</span>JUMP</button></div></div>
+  <div class="keyboard-help">A D 移動 <em>SHIFT ダッシュ</em> SPACE ジャンプ <em>J 射撃</em> 1 自動発射 / 2 雷 / 3 雷弾 / R 支援</div>
   <div class="brand">MOB <span>GUN GUN</span></div>
   <section id="overlay" class="overlay"><div class="modal"><span class="eyebrow">MOB GUN GUN / GREENWAY</span><h1 id="modal-title">草原へ、飛び出せ。</h1><p id="modal-copy">キャラクターを選んで、草原の先へ。</p><div id="character-select"><div class="character-options"><button data-character="denden" aria-pressed="true">デンデン <small>GUNNER</small></button><button data-character="tetsu" aria-pressed="false">モブテツ <small>SWORD</small></button></div><p id="character-copy"></p></div><div id="instructions"><span>左スティック<br><b>軽く倒して歩く、深く倒して走る</b></span><span>JUMP ＋ SHOOT<br><b>走りながら、空中でも撃てる</b></span></div><button id="start" disabled>LOADING…</button><small id="load-status">素材を読み込んでいます</small></div></section>
   <div id="rotate"><div>↻</div><strong>横画面でプレイしてください</strong><span>スマートフォンを横にすると冒険が始まります。</span></div>

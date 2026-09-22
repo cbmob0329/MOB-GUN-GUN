@@ -12,7 +12,7 @@ async function main(){await new Promise(r=>server.listen(0,'127.0.0.1',r));const
    const arena=arenaForPlayer(),targets=combatTargets().filter(e=>e.death<0&&(arena?e.arenaId===arena.id:e.x>=player.x-40)&&Math.abs(e.x-player.x)<850).sort((a,b)=>Math.abs(a.x-player.x)-Math.abs(b.x-player.x));const target=targets[0],distance=target?Math.abs(target.x-player.x):Infinity,dir=target?Math.sign(target.x-player.x)||player.dir:1;
    keys.clear();axis=arena?(target?dir*(distance>170?1:.55):0):1;
    if(character==='denden'){
-    keys.add('KeyJ');if(target&&distance<260&&player.grounded)axis=player.dir===dir?0:dir*.55;if(target&&distance<700){if(skillState.cooldowns[1]===0&&(arena||targets.length>=3))castThunder();if(skillState.cooldowns[0]===0&&!skillState.charging)beginCharge('route');if(skillState.charging&&skillState.charge>.35)endCharge('route',true);}
+    keys.add('KeyJ');if(target&&distance<260&&player.grounded)axis=player.dir===dir?0:dir*.55;if(target&&distance<700){if(skillState.cooldowns[1]===0&&(arena||targets.length>=3))castThunder();if(skillState.cooldowns[0]===0&&!skillState.charging)beginCharge('route');if(thunderBulletCooldown===0&&distance<550)castThunderBullet();}
    }else if(target&&!tetsuAction){
     if(distance<260&&tetsuCooldowns[0]===0)castTetsu(0);
     else if(distance<400&&tetsuCooldowns[1]===0)castTetsu(1);
@@ -24,7 +24,7 @@ async function main(){await new Promise(r=>server.listen(0,'127.0.0.1',r));const
    tick(1/120);
   }
   return {character,state,x:player.x,hp:player.hp,seconds:elapsed,kills,arenas:arenas.map(a=>({state:a.state,spawned:a.spawned})),frames};
- },character);console.log(result);assert.equal(result.state,'clear');assert(result.arenas.every(a=>a.state==='cleared'&&a.spawned===24));
+ },character);console.log(result);assert.equal(result.state,'clear');assert(result.arenas.every(a=>a.state==='cleared'&&a.spawned===48));
  }
  }finally{await browser.close();server.close();}}
 main().catch(e=>{console.error(e);server.close();process.exitCode=1;});
