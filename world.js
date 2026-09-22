@@ -24,7 +24,7 @@ function combatTargets(){return [...enemies,...crates.filter(c=>c.death<0)];}
 function damageCrate(c,damage){if(c.death>=0)return;c.hp=Math.max(0,c.hp-damage);c.flash=.12;if(c.hp===0){c.death=0;burst(c.x,c.y-24,16,'#cf9b58');dorayaki.push({x:c.x,y:c.y-50,baseY:c.y-20,vy:-160,age:0});}}
 function groundAt(x){return gaps.some(g=>x>g.x&&x<g.x+g.w)?Infinity:CONFIG.groundY;}
 function bridgeY(b,x){return b.y+20*Math.sin(clamp((x-b.x)/b.w,0,1)*Math.PI);}
-function stageSurfaces(){return [...platforms,...crumbles.filter(c=>!c.gone)];}
+function stageSurfaces(){return [...platforms,...crumbles.filter(c=>!c.gone),...(nyoroSummon?[nyoroSummon]:[])];}
 function arenaForPlayer(){return arenas.find(a=>a.state==='closing'||a.state==='fighting'||a.state==='opening');}
 function arenaGateBoxes(){return arenas.filter(a=>!['idle','cleared'].includes(a.state)).flatMap(a=>[a.x+25,a.right-25].map(x=>({x:x-52,y:88,w:104,h:460})));}
 function resolveStageSides(p,oldX,oldY,wasGrounded){
@@ -53,7 +53,7 @@ function onStageLanding(){
 function landingEffect(x,y){worldEffects.push({kind:'impact',x,y,age:0,duration:.42});burst(x,y-3,24,'#bb85ff');}
 function respawnFromFall(){
  const p=player;p.hp=Math.max(1,Math.ceil(p.hp/2));p.x=checkpoint.x;p.y=checkpoint.y;p.vx=p.vy=p.knock=0;p.grounded=true;p.jumpsUsed=0;p.inv=2;p.red=0;
- tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
+ cancelNyoro();tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
  for(const c of crumbles){c.gone=false;c.timer=-1;c.restore=0;}
  worldEffects.push({kind:'respawn',x:p.x,y:p.y-35,age:0,duration:.65});hintTimer=2;$('hint').textContent='落下！ HPが半分になって安全地点へ復帰';
 }

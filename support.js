@@ -12,7 +12,7 @@ async function loadSupport(){await Promise.all([
  ...Array.from({length:8},(_,i)=>trimFrame(`denden/${String(i+33).padStart(3,'0')}.png`).then(img=>dendenBulletFrames[i]=img)),
  ...Array.from({length:4},(_,i)=>trimFrame(`skill/${String(i+33).padStart(3,'0')}.png`).then(img=>thunderBurstFrames[i]=img))
 ]);}
-function resetSupport(){pink={x:player.x-65,y:player.y,vx:0,vy:0,dir:1,grounded:true,enabled:true,age:0,cooldown:0,attack:null,assist:0};thunderBullet=null;thunderBulletCooldown=0;thunderBursts=[];}
+function resetSupport(){pink={x:player.x-65,y:player.y,vx:0,vy:0,dir:1,grounded:true,enabled:true,age:0,cooldown:0,attack:null,assist:0,recall:0,lastTap:-Infinity};thunderBullet=null;thunderBulletCooldown=0;thunderBursts=[];}
 function supportFloorAt(x,fromY){let y=groundAt(x);for(const q of stageSurfaces())if(x>=q.x&&x<=q.x+q.w&&q.y>=fromY)y=Math.min(y,q.y);for(const r of ramps)if(x>=r.x&&x<=r.x+r.w){const h=r.y+(r.endY-r.y)*(x-r.x)/r.w;if(h>=fromY)y=Math.min(y,h);}for(const b of bridges)if(x>=b.x&&x<=b.x+b.w){const h=bridgeY(b,x);if(h>=fromY)y=Math.min(y,h);}return y;}
 function castThunderBullet(){if(state!=='playing'||selectedCharacter!=='denden'||thunderBullet||thunderBulletCooldown>0||skillState.charging||thunderLocked())return;thunderBullet={age:0,x:player.x,y:player.y,dir:player.dir,next:0};thunderBulletCooldown=SUPPORT.bulletCooldown;}
 function updateThunderBullet(dt){
@@ -29,15 +29,16 @@ function drawDendenBulletPose(){const a=thunderBullet;if(!a)return false;const i
 function stunNearby(){for(const e of enemies)if(e.death<0&&Math.abs(e.x-player.x)<230&&Math.abs(e.y-player.y)<150){e.stun=Math.max(e.stun||0,.18);e.attackAge=-1;e.knock=0;}}
 function drawEnemyStatus(e){if(e.death>=0&&!e.launch)return;const x=e.x-camera,y=e.y-e.h/2;if(e.electric>0){ctx.strokeStyle='#b5faff';ctx.lineWidth=2;for(let i=0;i<3;i++){ctx.beginPath();ctx.moveTo(x-25+i*20,y-28);ctx.lineTo(x-32+i*20+Math.sin(elapsed*60+i)*5,y-8);ctx.lineTo(x-18+i*20,y+6);ctx.lineTo(x-25+i*20,y+27);ctx.stroke();}}else if(e.stun>0)for(let i=0;i<3;i++)text('✦',x+Math.cos(elapsed*7+i*2.1)*22,y-e.h*.6+Math.sin(elapsed*7+i*2.1)*5,13,'#fff198');}
 function pinkJump(velocity){if(!pink?.enabled||pink.assist>0)return;pink.vy=velocity;pink.grounded=false;}
+function commandPink(){if(state!=='playing'||!pink?.enabled)return;if(elapsed-pink.lastTap<.32){pink.lastTap=-Infinity;pink.recall=0;activatePink();}else{pink.lastTap=elapsed;pink.recall=3;pink.assist=0;pink.attack=null;}}
 function activatePink(){if(state!=='playing'||!pink?.enabled||pink.assist>0)return;pink.assist=SUPPORT.assistDuration;pink.attack=null;pink.vx=0;}
 function pinkLandingHeight(p,oldY){if(!pink?.enabled||pink.assist<=0||!pink.grounded||p.vy<0)return Infinity;const y=pink.y-84;return Math.abs(p.x-pink.x)<48&&oldY<=y+1&&p.y>=y?y:Infinity;}
 function bounceOnPink(){player.vy=-WORLD.trampolineSpeed;player.grounded=false;player.coyote=0;player.jumpsUsed=0;player.jumpAge=0;burst(player.x,player.y,14,'#ffaddc');}
 function updatePink(dt){
- if(!pink?.enabled)return;const p=pink;p.age+=dt;p.cooldown=Math.max(0,p.cooldown-dt);p.assist=Math.max(0,p.assist-dt);
- if(Math.abs(p.x-player.x)>700||p.y>H+160){p.x=player.x-player.dir*65;p.y=player.y;p.vy=0;p.grounded=player.grounded;p.attack=null;}
- const target=enemies.filter(e=>e.death<0&&Math.abs(e.x-player.x)<260&&Math.abs(e.y-p.y)<90&&!e.dropping).sort((a,b)=>Math.abs(a.x-player.x)-Math.abs(b.x-player.x))[0];
- if(p.assist<=0&&!p.attack&&p.cooldown===0&&target&&Math.abs(target.x-p.x)<95){p.attack={age:0,dir:Math.sign(target.x-p.x)||p.dir,hit:new Set()};p.cooldown=SUPPORT.pinkCooldown;}
- let goal=player.x-player.dir*65;if(target&&Math.abs(target.x-p.x)<190&&Math.abs(player.x-p.x)<180&&p.assist<=0)goal=target.x-Math.sign(target.x-p.x)*45;
+ if(!pink?.enabled)return;const p=pink;p.age+=dt;p.recall=Math.max(0,(p.recall||0)-dt);p.cooldown=Math.max(0,p.cooldown-dt);p.assist=Math.max(0,p.assist-dt);
+ if(Math.abs(p.x-player.x)>1100||p.y>H+160){p.x=player.x-player.dir*240;p.y=player.y;p.vy=0;p.grounded=player.grounded;p.attack=null;}
+ const target=enemies.filter(e=>e.death<0&&Math.abs(e.x-player.x)<620&&Math.abs(e.y-p.y)<90&&!e.dropping).sort((a,b)=>Math.abs(a.x-p.x)-Math.abs(b.x-p.x))[0];
+ if(p.assist<=0&&p.recall<=0&&!p.attack&&p.cooldown===0&&target&&Math.abs(target.x-p.x)<95){p.attack={age:0,dir:Math.sign(target.x-p.x)||p.dir,hit:new Set()};p.cooldown=SUPPORT.pinkCooldown;}
+ let goal=p.recall>0?player.x-player.dir*95:Math.abs(player.x-p.x)>300?player.x-player.dir*240:p.x;if(target&&p.recall<=0&&p.assist<=0)goal=target.x-Math.sign(target.x-p.x)*45;
  const delta=goal-p.x;p.vx=p.assist>0?0:p.attack?p.attack.dir*(p.attack.age>.12&&p.attack.age<.30?110:0):Math.abs(delta)>12?Math.sign(delta)*(Math.abs(delta)>180?440:running?CONFIG.dashSpeed:CONFIG.walkSpeed):0;
  if(p.attack)p.dir=p.attack.dir;else if(Math.abs(p.vx)>1)p.dir=Math.sign(p.vx);else p.dir=player.dir;
  if(p.assist<=0&&p.grounded&&(player.y<p.y-45||platforms.some(q=>q.solid&&q.type!=='stair'&&p.dir*(q.x+q.w/2-p.x)>0&&Math.abs(q.x+q.w/2-p.x)<q.w/2+25)))pinkJump(-CONFIG.jumpForce);

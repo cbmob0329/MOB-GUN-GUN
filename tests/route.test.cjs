@@ -5,7 +5,7 @@ const root=path.resolve(__dirname,'..');
 const server=http.createServer((req,res)=>{const file=path.join(root,decodeURIComponent(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}fs.readFile(file,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':({'.html':'text/html','.js':'text/javascript','.css':'text/css','.png':'image/png'})[path.extname(file)]||'text/plain'});res.end(e?'Not found':b);});});
 async function main(){await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await chromium.launch({headless:true,channel:process.env.BROWSER_CHANNEL||'msedge'});try{
  const page=await browser.newPage({viewport:{width:1280,height:720}});await page.goto(`http://127.0.0.1:${server.address().port}`);await page.waitForFunction(()=>state==='ready');
- for(const character of ['denden','tetsu']){
+ for(const character of (process.env.CHARACTER?[process.env.CHARACTER]:['denden','tetsu','nyoro'])){
  const result=await page.evaluate(character=>{
   selectedCharacter=character;reset();state='playing';updateCharacterUI();let frames=0;
   for(;frames<120*360&&state==='playing';frames++){
@@ -13,6 +13,8 @@ async function main(){await new Promise(r=>server.listen(0,'127.0.0.1',r));const
    keys.clear();axis=arena?(target?dir*(distance>170?1:.55):0):1;
    if(character==='denden'){
     keys.add('KeyJ');if(target&&distance<260&&player.grounded)axis=player.dir===dir?0:dir*.55;if(target&&distance<700){if(skillState.cooldowns[1]===0&&(arena||targets.length>=3))castThunder();if(skillState.cooldowns[0]===0&&!skillState.charging)beginCharge('route');if(thunderBulletCooldown===0&&distance<550)castThunderBullet();}
+   }else if(character==='nyoro'){
+    if(target&&!nyoroAction){if(distance<600&&nyoroCooldowns[0]===0)castNyoro(0);else if(distance<550&&nyoroCooldowns[1]===0)castNyoro(1);else if(distance<240&&nyoroCooldowns[2]===0)castNyoro(2);else if(distance<125)nyoroAttack();}else if(nyoroAction?.type==='normal')nyoroAttack();if(!nyoroAction&&target&&distance<250){if(player.grounded)jumpRequest=CONFIG.jumpBuffer;else if(player.vy>=0&&player.jumpsUsed===1)jumpRequest=CONFIG.jumpBuffer;}
    }else if(target&&!tetsuAction){
     if(distance<260&&tetsuCooldowns[0]===0)castTetsu(0);
     else if(distance<400&&tetsuCooldowns[1]===0)castTetsu(1);

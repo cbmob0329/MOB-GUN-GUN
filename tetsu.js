@@ -34,14 +34,15 @@ function selectCharacter(character){
  selectedCharacter=character;reset();updateCharacterUI();
 }
 function updateCharacterUI(){
- const isTetsu=selectedCharacter==='tetsu';
+ const isTetsu=selectedCharacter==='tetsu',isNyoro=selectedCharacter==='nyoro';
  for(const b of document.querySelectorAll('[data-character]'))b.setAttribute('aria-pressed',String(b.dataset.character===selectedCharacter));
- $('shoot').innerHTML=isTetsu?'<span>⚔</span>ATK':'<span>⌖</span>SHOOT';
+ $('shoot').innerHTML=(isTetsu||isNyoro)?'<span>⚔</span>ATK':'<span>⌖</span>SHOOT';
  document.querySelector('.keyboard-help').textContent=isTetsu?'A D 移動 / SHIFT ダッシュ / SPACE ジャンプ / J 攻撃・2回で連撃 / 1・2・3 スキル':'A D 移動 / SHIFT ダッシュ / SPACE ジャンプ / J 射撃 / 1 自動溜め撃ち / 2 雷 / 3 雷弾 / R 支援';
  const names=isTetsu?['MOB斬り','モブテツ一閃','スキル3・超吹き飛ばし']:['トリック・ザ・デンデン：ワンタップ','サンダーボルト','デンデン・サンダー・バレット'];
  skillButtons.forEach((b,i)=>{b.title=names[i];b.setAttribute('aria-label',names[i]);b.style.opacity='1';b.innerHTML=`<img src="${isTetsu?'tetsu/SKILL/'+['12','08','16'][i]+'.png':['skill/017.png','atk/002.png','skill/035.png'][i]}" alt=""><small></small>`;});
- $('character-copy').textContent=isTetsu?'モブテツ｜ATK 2回で連撃・空中ATKで茄子落とし。1：MOB斬り / 2：一閃 / 3：超吹き飛ばし':'デンデン｜8発で自動リロード（0.5秒）。1：自動溜め撃ち / 2：落雷 / 3：雷弾';
+ $('character-copy').textContent=isTetsu?'モブテツ｜ATK 2回で連撃・空中ATKで茄子落とし。1：MOB斬り / 2：一閃 / 3：超吹き飛ばし':'デンデン｜8発で自動リロード（1秒・最後は雷ボム）。1：自動溜め撃ち / 2：落雷 / 3：雷弾';
  document.querySelector('#instructions span:last-child').innerHTML=isTetsu?'JUMP ＋ ATK<br><b>空中でモブテツ流茄子落とし</b>':'JUMP ＋ SHOOT<br><b>走りながら、空中でも撃てる</b>';
+ if(isNyoro){const names=['ヒノフルカヨウ','炎列・大隕石','炎の召喚'];skillButtons.forEach((b,i)=>{b.title=names[i];b.setAttribute('aria-label',names[i]);b.innerHTML=`<img src="nyoro/${['04','05','237'][i]}.png" alt=""><small></small>`;});$('character-copy').textContent='モブニョロ｜ATK 2回で炎アッパー。空中で再ジャンプすると滑空＆火の雨。1：ヒノフルカヨウ / 2：大隕石 / 3：炎の足場';document.querySelector('.keyboard-help').textContent='A D 移動 / SHIFT ダッシュ / SPACE ジャンプ・再入力で滑空 / J 連撃 / 1・2・3 スキル / R 集合・2回で支援';document.querySelector('#instructions span:last-child').innerHTML='JUMP → JUMP<br><b>滑空しながら小さな炎を落とす</b>';}
  updateHUD();
 }
 function startTetsuAction(type){tetsuAction={type,age:0,dir:player.dir,hit:new Map(),queued:false,ghostClock:0};comboWindow=0;if(type==='ultimate')stunNearby();}
