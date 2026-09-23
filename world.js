@@ -35,6 +35,7 @@ function resolveStageSides(p,oldX,oldY,wasGrounded){
    if(oldX+half<=platform.x)p.x=platform.x-half;else if(oldX-half>=platform.x+platform.w)p.x=platform.x+platform.w+half;
   }
  }
+ if(bossLocked())p.x=clamp(p.x,bossRoom.x+96,bossRoom.right-96);
  const arena=arenaForPlayer();if(arena)p.x=clamp(p.x,arena.x+96,arena.right-96);
  return oldY;
 }
@@ -54,7 +55,7 @@ function onStageLanding(){
 function landingEffect(x,y){worldEffects.push({kind:'impact',x,y,age:0,duration:.42});burst(x,y-3,24,'#bb85ff');}
 function respawnFromFall(){
  const p=player;p.hp=Math.max(1,Math.ceil(p.hp/2));p.x=checkpoint.x;p.y=checkpoint.y;p.vx=p.vy=p.knock=0;p.grounded=true;p.jumpsUsed=0;p.inv=2;p.red=0;
- cancelNyoro();tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
+ cancelNyoro();miraAction=null;miraShots=[];giantThunder=null;groundBolts=[];tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
  for(const c of crumbles){c.gone=false;c.timer=-1;c.restore=0;}
  worldEffects.push({kind:'respawn',x:p.x,y:p.y-35,age:0,duration:.65});hintTimer=2;$('hint').textContent='落下！ HPが半分になって安全地点へ復帰';
 }
@@ -88,7 +89,7 @@ function updateWorld(dt){
  for(const d of dorayaki){d.age+=dt;d.vy+=550*dt;d.y=Math.min(d.baseY,d.y+d.vy*dt);if(d.y===d.baseY)d.vy=0;if(player.hp<CONFIG.maxHP&&Math.abs(player.x-d.x)<35&&d.y>player.y-CONFIG.playerColliderHeight-10&&d.y<player.y+10){const healed=Math.min(WORLD.heal,CONFIG.maxHP-player.hp);player.hp+=healed;d.taken=true;worldEffects.push({kind:'heal',x:d.x,y:d.y,amount:healed,age:0,duration:.8});burst(d.x,d.y,10,'#9ced86');}}
  dorayaki=dorayaki.filter(d=>!d.taken);for(const f of worldEffects)f.age+=dt;worldEffects=worldEffects.filter(f=>f.age<f.duration);
  if(player.y>H+180){respawnFromFall();return;}
- if(player.grounded&&Math.abs(player.y-CONFIG.groundY)<.5&&!arenaForPlayer()&&!gaps.some(g=>player.x>g.x-100&&player.x<g.x+g.w+100)&&!trampolines.some(t=>Math.abs(player.x-t.x)<140))checkpoint={x:player.x,y:player.y};
+ if(player.grounded&&Math.abs(player.y-CONFIG.groundY)<.5&&!arenaForPlayer()&&!bossLocked()&&!gaps.some(g=>player.x>g.x-100&&player.x<g.x+g.w+100)&&!trampolines.some(t=>Math.abs(player.x-t.x)<140))checkpoint={x:player.x,y:player.y};
 }
 function drawWorld(){
  for(const g of gaps){const x=g.x-camera;rounded(x,548,g.w,172,0,'#182d38');ctx.fillStyle='#0c1c2c';ctx.fillRect(x+12,575,g.w-24,145);text('↓',x+g.w/2,675,28,'#567285');}

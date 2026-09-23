@@ -8,3 +8,5 @@
 #ammo{position:absolute;right:4%;top:19%;bottom:auto;padding:.45cqw .8cqw;border:1px solid #d9c583;border-radius:5px;background:#17323cdd;color:#ffe598;font-size:1cqw;font-weight:800;pointer-events:none}#ammo[hidden]{display:none}#ammo.reloading{color:#a4eeff;border-color:#8cdae9}
 
 #pink-tap{position:absolute;width:6.25%;height:12.5%;background:transparent;z-index:3;border-radius:40%;padding:0}#pink-tap[hidden]{display:none}#pink-tap:focus-visible{outline:2px solid #ffb4e0}#hint[hidden]{display:none}
+
+.character-options button[hidden],.skill[hidden]{display:none}#title-settings{font-size:1cqw;text-align:left;margin:.5cqw 0}#title-settings summary{cursor:pointer;color:#f4d98f}#admin-form{display:flex;align-items:center;gap:.6cqw;flex-wrap:wrap;padding:.6cqw 0}#admin-code{width:8cqw;font-size:1.2cqw;padding:.5cqw;color:#fff;background:#15333d;border:1px solid #89a6ad;border-radius:5px}#admin-form button{font-size:1cqw;padding:.5cqw .8cqw;border-radius:5px;background:#486677}#admin-status{font-size:.9cqw;color:#ffe2ab}

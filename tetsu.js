@@ -31,6 +31,7 @@ async function loadTetsu(){
 function resetTetsu(){tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];tetsuCooldowns=[0,0,0];comboWindow=0;}
 function selectCharacter(character){
  if(state==='playing'||state==='paused'||state==='loading')return;
+ if(character==='miramob'&&!adminUnlocked)return;
  selectedCharacter=character;reset();updateCharacterUI();
 }
 function updateCharacterUI(){
@@ -39,10 +40,11 @@ function updateCharacterUI(){
  $('shoot').innerHTML=(isTetsu||isNyoro)?'<span>⚔</span>ATK':'<span>⌖</span>SHOOT';
  document.querySelector('.keyboard-help').textContent=isTetsu?'A D 移動 / SHIFT ダッシュ / SPACE ジャンプ / J 攻撃・2回で連撃 / 1・2・3 スキル':'A D 移動 / SHIFT ダッシュ / SPACE ジャンプ / J 射撃 / 1 自動溜め撃ち / 2 雷 / 3 雷弾 / R 支援';
  const names=isTetsu?['MOB斬り','モブテツ一閃','スキル3・超吹き飛ばし']:['トリック・ザ・デンデン：ワンタップ','サンダーボルト','デンデン・サンダー・バレット'];
- skillButtons.forEach((b,i)=>{b.title=names[i];b.setAttribute('aria-label',names[i]);b.style.opacity='1';b.innerHTML=`<img src="${isTetsu?'tetsu/SKILL/'+['12','08','16'][i]+'.png':['skill/017.png','atk/002.png','skill/035.png'][i]}" alt=""><small></small>`;});
+ skillButtons.forEach((b,i)=>{b.hidden=false;b.title=names[i];b.setAttribute('aria-label',names[i]);b.style.opacity='1';b.innerHTML=`<img src="${isTetsu?'tetsu/SKILL/'+['12','08','16'][i]+'.png':['skill/017.png','skill/86.png','skill/035.png'][i]}" alt=""><small></small>`;});
  $('character-copy').textContent=isTetsu?'モブテツ｜ATK 2回で連撃・空中ATKで茄子落とし。1：MOB斬り / 2：一閃 / 3：超吹き飛ばし':'デンデン｜8発で自動リロード（1秒・最後は雷ボム）。1：自動溜め撃ち / 2：落雷 / 3：雷弾';
  document.querySelector('#instructions span:last-child').innerHTML=isTetsu?'JUMP ＋ ATK<br><b>空中でモブテツ流茄子落とし</b>':'JUMP ＋ SHOOT<br><b>走りながら、空中でも撃てる</b>';
- if(isNyoro){const names=['ヒノフルカヨウ','炎列・大隕石','炎の召喚'];skillButtons.forEach((b,i)=>{b.title=names[i];b.setAttribute('aria-label',names[i]);b.innerHTML=`<img src="nyoro/${['04','05','237'][i]}.png" alt=""><small></small>`;});$('character-copy').textContent='モブニョロ｜ATK 2回で炎アッパー。空中で再ジャンプすると滑空＆火の雨。1：ヒノフルカヨウ / 2：大隕石 / 3：炎の足場';document.querySelector('.keyboard-help').textContent='A D 移動 / SHIFT ダッシュ / SPACE ジャンプ・再入力で滑空 / J 連撃 / 1・2・3 スキル / R 集合・2回で支援';document.querySelector('#instructions span:last-child').innerHTML='JUMP → JUMP<br><b>滑空しながら小さな炎を落とす</b>';}
+ if(isNyoro){const names=['ヒノフルカヨウ','炎列・大隕石','炎の召喚'];skillButtons.forEach((b,i)=>{b.hidden=false;b.title=names[i];b.setAttribute('aria-label',names[i]);b.innerHTML=`<img src="nyoro/${['04','05','237'][i]}.png" alt=""><small></small>`;});$('character-copy').textContent='モブニョロ｜ATK 2回で炎アッパー。空中で再ジャンプすると滑空＆火の雨。1：ヒノフルカヨウ / 2：大隕石 / 3：炎の足場';document.querySelector('.keyboard-help').textContent='A D 移動 / SHIFT ダッシュ / SPACE ジャンプ・再入力で滑空 / J 連撃 / 1・2・3 スキル / R 集合・2回で支援';document.querySelector('#instructions span:last-child').innerHTML='JUMP → JUMP<br><b>滑空しながら小さな炎を落とす</b>';}
+ if(selectedCharacter==='miramob'){$('shoot').innerHTML='<span>⚔</span>ATK';const names=['ゆらゆら四連斬','髑髏大爆発'];skillButtons.forEach((b,i)=>{b.hidden=i===2;if(i<2){b.title=names[i];b.setAttribute('aria-label',names[i]);b.innerHTML=`<img src="enemy/miramob/${i===0?'38':'43'}.png" alt=""><small></small>`;}});document.querySelector('#instructions span:last-child').innerHTML='ATK ＋ SKILL<br><b>紫の爪斬りと髑髏の魔法</b>';$('character-copy').textContent='ミラモブ｜管理者プレイ。ATK：紫の爪斬り / 1：四連斬 / 2：溜めて髑髏大爆発';document.querySelector('.keyboard-help').textContent='A D 移動 / SHIFT ダッシュ / SPACE ジャンプ / J 爪斬り / 1 四連斬 / 2 髑髏大爆発';}
  updateHUD();
 }
 function startTetsuAction(type){tetsuAction={type,age:0,dir:player.dir,hit:new Map(),queued:false,ghostClock:0};comboWindow=0;if(type==='ultimate')stunNearby();}
@@ -55,10 +57,9 @@ function tetsuAttack(){
 }
 function castTetsu(index){
  if(state!=='playing'||tetsuAction||tetsuCooldowns[index]>0)return;
- if(index===1){const target=enemies.filter(e=>e.death<0&&Math.abs(e.x-player.x)<650).sort((a,b)=>Math.abs(a.x-player.x)-Math.abs(b.x-player.x))[0];if(target)player.dir=Math.sign(target.x-player.x)||player.dir;}
  startTetsuAction(['mob','dash','ultimate'][index]);tetsuCooldowns[index]=TETSU.cooldowns[index];
 }
-function launchEnemy(e,vx,vy,spin=0){if(e.type==='crate')return;const floor=e.dropping?CONFIG.groundY:e.launch?.floor??e.y;e.dropping=null;e.launch={vx,vy,spin,angle:0,floor};e.knock=0;if(e.type==='miira'){e.attackAge=-1;e.attackCooldown=MIIRA.cooldown;}}
+function launchEnemy(e,vx,vy,spin=0){if(e.type==='crate')return;if(e.type==='miramob'){e.stun=Math.max(e.stun||0,.18);e.x+=Math.sign(vx)*8;return;}const floor=e.dropping?CONFIG.groundY:e.launch?.floor??e.y;e.dropping=null;e.launch={vx,vy,spin,angle:0,floor};e.knock=0;if(e.type==='miira'){e.attackAge=-1;e.attackCooldown=MIIRA.cooldown;}}
 function tetsuHit(a,phase,x,y,w,h,damage,launch){
  if(!a.hit.has(phase))a.hit.set(phase,new Set());const hit=a.hit.get(phase);
  for(const e of combatTargets()){if(e.death>=0||hit.has(e)||Math.abs(e.x-x)>w/2+e.w/2||e.y<y-h/2||e.y-e.h>y+h/2)continue;

@@ -10,9 +10,9 @@ function castNyoro(i){if(state!=='playing'||selectedCharacter!=='nyoro'||nyoroAc
 function burnEnemy(e){if(e.type==='crate'||e.death>=0)return;e.burn=Math.max(e.burn||0,1.2);e.burnClock??=.4;}
 function flameHit(x,y,r,damage,dir=1,launch=false){for(const e of combatTargets()){if(e.death>=0)continue;const dx=Math.max(0,Math.abs(e.x-x)-e.w/2),dy=Math.max(e.y-e.h-y,y-e.y,0);if(Math.hypot(dx,dy)>r)continue;hitEnemy(e,damage,dir);burnEnemy(e);if(launch)launchEnemy(e,dir*170,-820,5);}}
 function addFire(kind,x,y,owner=null){
- const dir=owner?.dir||player.dir,vy=kind==='ember'?180:570,vx=kind==='ember'?0:dir*(kind==='meteor'?340:250),floor=supportFloorAt(x,player.y-10),distance=Math.max(50,(Number.isFinite(floor)?floor:CONFIG.groundY)-y),time=(-vy+Math.sqrt(vy*vy+1600*distance))/800;
+ const dir=owner?.dir||player.dir,vy=kind==='ember'?180:380,vx=kind==='ember'?0:dir*(kind==='meteor'?780:600),gravity=kind==='ember'?800:550,floor=supportFloorAt(x,player.y-10),distance=Math.max(50,(Number.isFinite(floor)?floor:CONFIG.groundY)-y),time=(-vy+Math.sqrt(vy*vy+2*gravity*distance))/gravity;
  // x is the intended landing point; start upwind so the diagonal remains aimed.
- nyoroShots.push({kind,x:x-vx*time,y,age:0,vx,vy,owner,life:4});
+ nyoroShots.push({kind,x:x-vx*time,y,age:0,vx,vy,gravity,owner,life:4});
 }
 function updateNyoro(dt){
  nyoroCooldowns=nyoroCooldowns.map(c=>Math.max(0,c-dt));nyoroCombo=Math.max(0,nyoroCombo-dt);
@@ -20,7 +20,7 @@ function updateNyoro(dt){
  if(nyoroGlide){nyoroFireClock-=dt;if(nyoroFireClock<=0){nyoroFireClock=.28;addFire('ember',clamp(player.x+player.dir*90+(Math.random()-.5)*200,20,CONFIG.worldWidth-20),Math.min(-45,player.y-400));}}else nyoroFireClock=0;
  const a=nyoroAction;if(a){a.age+=dt;const t=a.age;
   if(a.type==='normal'||a.type==='upper'){
-   if(t>=.16&&!a.struck){a.struck=true;if(a.type==='normal')tetsuHit(a,0,player.x+a.dir*65,player.y-40,150,105,NYORO.normal);else{nyoroFX.push({x:player.x,y:player.y,dir:a.dir,r:165,age:0,kind:'groundWave',hit:new Set()});}}
+   if(t>=.16&&!a.struck){a.struck=true;if(a.type==='normal')tetsuHit(a,0,player.x+a.dir*65,player.y-40,150,105,NYORO.normal);else{nyoroFX.push({x:player.x,y:player.y,dir:a.dir,r:245,age:0,kind:'groundWave',hit:new Set()});}}
    if(t>=(a.type==='normal'?.44:.58)){nyoroAction=null;if(a.type==='normal'){nyoroCombo=.28;if(a.queued)nyoroAttack();}}
   }else if(a.type==='rain'){
    while(a.spawned<5&&t>=.12+a.spawned*.20){a.spawned++;const targets=enemies.filter(e=>e.death<0&&Math.abs(e.x-player.x)<420);const target=targets.length?targets[Math.floor(Math.random()*targets.length)]:null;addFire('rain',clamp(target?target.x+(Math.random()-.5)*70:player.x+(Math.random()-.5)*800,30,CONFIG.worldWidth-30),Math.min(-80,player.y-620),a);}
@@ -34,8 +34,8 @@ function updateNyoro(dt){
    if(t>=1.55)nyoroAction=null;
   }
  }
- for(const s of nyoroShots){const old=s.y,oldX=s.x;s.age+=dt;s.life-=dt;s.vy+=800*dt;s.x+=s.vx*dt;s.y+=s.vy*dt;const radius=s.kind==='ember'?13:s.kind==='rain'?32:60;const target=combatTargets().find(e=>e.death<0&&Math.max(oldX,s.x)+radius>=e.x-e.w/2&&Math.min(oldX,s.x)-radius<=e.x+e.w/2&&s.y+radius>=e.y-e.h&&old-radius<=e.y);const floor=supportFloorAt(s.x,old-radius);
-  if(target||(Number.isFinite(floor)&&s.y+radius>=floor)){s.y=target?Math.min(s.y,target.y-20):floor;const r=s.kind==='ember'?28:s.kind==='rain'?70:245;flameHit(s.x,s.y,r,s.kind==='ember'?NYORO.ember:s.kind==='rain'?NYORO.rain:NYORO.meteor,Math.sign(s.x-player.x)||1);nyoroFX.push({x:s.x,y:s.y,r,age:0,kind:s.kind==='meteor'?'explosion':'flame'});burst(s.x,s.y, s.kind==='meteor'?45:10,'#ff782d');s.life=0;}
+ for(const s of nyoroShots){const old=s.y,oldX=s.x;s.age+=dt;s.life-=dt;s.vy+=s.gravity*dt;s.x+=s.vx*dt;s.y+=s.vy*dt;const radius=s.kind==='ember'?13:s.kind==='rain'?32:60;const target=combatTargets().find(e=>e.death<0&&Math.max(oldX,s.x)+radius>=e.x-e.w/2&&Math.min(oldX,s.x)-radius<=e.x+e.w/2&&s.y+radius>=e.y-e.h&&old-radius<=e.y);const floor=supportFloorAt(s.x,old-radius);
+  if(target||(Number.isFinite(floor)&&s.y+radius>=floor)){s.y=target?Math.min(s.y,target.y-20):floor;const r=s.kind==='ember'?28:s.kind==='rain'?70:245;flameHit(s.x,s.y,r,s.kind==='ember'?NYORO.ember:s.kind==='rain'?NYORO.rain:NYORO.meteor,Math.sign(s.x-player.x)||1);nyoroFX.push({x:s.x,y:s.y,r,age:0,kind:s.kind==='ember'?'flame':'explosion'});burst(s.x,s.y, s.kind==='meteor'?45:10,'#ff782d');s.life=0;}
  }
  nyoroShots=nyoroShots.filter(s=>s.life>0&&s.y<H+150);for(const f of nyoroFX){f.age+=dt;if(f.kind==='groundWave'){
   const reach=Math.min(1,f.age/.30)*f.r;
@@ -80,7 +80,10 @@ function drawNyoro(){const a=nyoroAction,t=a?.age||0;let n=1;if(a){n=a.type==='n
 }
 function drawSummon(){const s=nyoroSummon;if(!s)return;const n=s.age<.5?235+Math.min(2,Math.floor(s.age/.167)):237+Math.floor(s.age*12)%2;const f=nyoroFrames[n];if(!f)return;const shake=s.age>.5?Math.sin(elapsed*38)*2:0;ctx.save();ctx.beginPath();ctx.rect(s.x-camera-5,s.y,s.w+10,s.h);ctx.clip();ctx.drawImage(f,s.x-camera+shake,s.y,s.w,s.w*f.height/f.width);ctx.restore();}
 function drawNyoroEffects(){for(const s of nyoroShots){if(s.kind==='ember'){fireSprite(Math.floor(s.age*12)%3,s.x,s.y,28);continue;}const f=nyoroFire[s.kind==='rain'?3:4],size=s.kind==='rain'?92:190,k=size/Math.max(f.width,f.height);ctx.save();ctx.translate(s.x-camera,s.y);ctx.scale(s.vx>0?-1:1,1);ctx.drawImage(f,-f.width*k/2,-f.height*k/2,f.width*k,f.height*k);ctx.restore();}for(const e of enemies)if(e.burn>0&&e.death<0)fireSprite(Math.floor(elapsed*12)%3,e.x,e.y-20,35);if(pink?.burn>0){fireSprite(Math.floor(elapsed*12)%3,pink.x,pink.y-20,32);}
- for(const f of nyoroFX){ctx.save();ctx.globalAlpha=Math.max(0,1-f.age/(f.kind==='explosion'?1.1:.55));if(f.kind==='explosion'){for(let i=0;i<12;i++){const a=i*2.4;ctx.fillStyle=i%2?'#ffffff':'#eaf5ff';ctx.strokeStyle='#c8dce8';ctx.lineWidth=2;ctx.beginPath();ctx.arc(f.x-camera+Math.cos(a)*f.r*f.age,f.y-30+Math.sin(a)*f.r*f.age*.5-f.age*60,25+f.age*40,0,Math.PI*2);ctx.fill();ctx.stroke();}}else if(f.kind==='groundWave'){
+ for(const f of nyoroFX){ctx.save();ctx.globalAlpha=Math.max(0,1-f.age/(f.kind==='explosion'?1.1:.55));if(f.kind==='explosion'){
+  const t=f.age/1.1;ctx.fillStyle='#fff3b5';ctx.beginPath();ctx.arc(f.x-camera,f.y-25,Math.max(0,1-t)*f.r*.7,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#ffcb54';ctx.lineWidth=7*(1-t)+1;ctx.beginPath();ctx.ellipse(f.x-camera,f.y,30+t*f.r*1.25,10+t*f.r*.24,0,0,Math.PI*2);ctx.stroke();
+  for(let i=0;i<14;i++){const a=Math.PI+i*Math.PI/13,r=f.r*(.35+t);ctx.strokeStyle=i%2?'#fff5cf':'#ff7d25';ctx.lineWidth=4*(1-t)+1;ctx.beginPath();ctx.moveTo(f.x-camera+Math.cos(a)*r*.6,f.y+Math.sin(a)*r*.6);ctx.lineTo(f.x-camera+Math.cos(a)*r,f.y+Math.sin(a)*r);ctx.stroke();}
+  for(let i=0;i<12;i++){const a=i*2.4;ctx.fillStyle=i%2?'#ffffff':'#eaf5ff';ctx.strokeStyle='#c8dce8';ctx.lineWidth=2;ctx.beginPath();ctx.arc(f.x-camera+Math.cos(a)*f.r*f.age,f.y-30+Math.sin(a)*f.r*f.age*.5-f.age*60,25+f.age*40,0,Math.PI*2);ctx.fill();ctx.stroke();}}else if(f.kind==='groundWave'){
   const reach=Math.min(1,f.age/.30)*f.r;
   for(let i=0;i<8;i++){const distance=reach*i/7,x=f.x+f.dir*distance,y=supportFloorAt(x,f.y-60);if(!Number.isFinite(y))continue;const img=nyoroFire[(Math.floor(f.age*16)+i)%3],w=48,h=20+Math.sin(i/7*Math.PI)*13;ctx.drawImage(img,x-camera-w/2,y-h,w,h);}
  }else if(f.kind==='aura'){for(let i=0;i<7;i++)fireSprite(Math.floor(elapsed*12+i)%3,f.x+Math.cos(i*Math.PI*2/7)*f.r*.65,f.y+Math.sin(i*Math.PI*2/7)*40,48);}else fireSprite(Math.floor(f.age*12)%3,f.x,f.y-15,f.r*1.4);ctx.restore();}

@@ -21,7 +21,7 @@ async function main(){
   e=setup(150);const other={...e,x:690,home:690};enemies.push(other);castTetsu(0);step(108);check(e.hp===916&&other.hp===916,'MOB total 84');check(e.launch&&other.launch,'MOB launches all');check(tetsuCooldowns[0]>5,'cooldown');
   e=setup(150,24);castTetsu(0);step(105);check(e.death>=0&&e.launch,'MOB launches early kills');
   e=setup(270);castTetsu(1);step(74);check(e.hp===946,'dash and ghost 54');check(player.x>900,'dash moves');
-  e=setup(-270);castTetsu(1);check(player.dir===-1,'target left');step(74);check(e.hp===946,'left dash');
+  e=setup(-270);player.dir=-1;castTetsu(1);check(player.dir===-1,'retain left facing');step(74);check(e.hp===946,'left dash');
   e=setup(150);castTetsu(2);step(120);check(e.hp===1000,'charge no early damage');check(tetsuPose()===tetsuFrames.PS[1]||tetsuPose()===tetsuFrames.PS[2],'alternating charge');step(18);check(e.hp===904&&e.launch.spin===19,'ultimate 96 spin');step(50);check(tetsuPose()===tetsuFrames.PS[5],'long frame 006');step(100);check(!tetsuAction,'recovery');
   e=setup(150,24);castTetsu(2);step(190);check(enemies.includes(e)&&e.launch&&e.launch.angle>0,'dead flight');step(300);check(!enemies.includes(e),'dead cleanup');
   setup();castTetsu(0);const cd=tetsuCooldowns[0];pause();step(120);check(tetsuCooldowns[0]===cd,'pause freezes');check(document.getElementById('character-select').hidden,'pause hides selector');resume();reset();check(!tetsuAction&&!tetsuEffects.length&&!tetsuGhosts.length&&tetsuCooldowns.every(x=>x===0),'reset');
