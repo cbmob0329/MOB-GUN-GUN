@@ -10,3 +10,14 @@
 #pink-tap{position:absolute;width:6.25%;height:12.5%;background:transparent;z-index:3;border-radius:40%;padding:0}#pink-tap[hidden]{display:none}#pink-tap:focus-visible{outline:2px solid #ffb4e0}#hint[hidden]{display:none}
 
 .character-options button[hidden],.skill[hidden]{display:none}#title-settings{font-size:1cqw;text-align:left;margin:.5cqw 0}#title-settings summary{cursor:pointer;color:#f4d98f}#admin-form{display:flex;align-items:center;gap:.6cqw;flex-wrap:wrap;padding:.6cqw 0}#admin-code{width:8cqw;font-size:1.2cqw;padding:.5cqw;color:#fff;background:#15333d;border:1px solid #89a6ad;border-radius:5px}#admin-form button{font-size:1cqw;padding:.5cqw .8cqw;border-radius:5px;background:#486677}#admin-status{font-size:.9cqw;color:#ffe2ab}
+
+/* Party portraits replace the area badge without overlapping the health HUD. */
+.hud{gap:.8cqw}.hud>.area{display:none}.hud>.status{width:36cqw}.hud>.route{width:13cqw}
+#party{display:flex;gap:.45cqw;pointer-events:auto;flex-shrink:0}
+.party-slot{position:relative;width:max(5.6cqw,44px);aspect-ratio:1;padding:0;overflow:hidden;border:2px solid #647681;border-radius:7px;background:#182b3dee;color:#fff4de;box-shadow:0 3px 0 #092029;isolation:isolate}
+.party-slot canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.party-name{position:absolute;top:0;left:0;right:0;background:#11202bb8;font-size:max(.64cqw,6px);font-weight:900;white-space:nowrap}
+.party-slot small{position:absolute;bottom:0;left:0;right:0;padding:2px 0;background:#101e2bec;font-size:max(.66cqw,7px);font-weight:900;white-space:nowrap}
+.party-slot.active{border-color:#ffd96c;box-shadow:0 0 0 1px #ffd96c88}.party-slot.ready{border-color:#b7ffca;animation:party-ready 1.2s ease-in-out infinite}.party-slot.down canvas{filter:grayscale(1);opacity:.35}.party-slot.down small{color:#ffb4ac}.party-slot:disabled{cursor:default}
+@keyframes party-ready{50%{border-color:#fff4b0;box-shadow:0 0 12px #a9ffbabb,inset 0 0 10px #bdffc444}}
+@media(prefers-reduced-motion:reduce){.party-slot.ready{animation:none;box-shadow:0 0 8px #a9ffba99}}

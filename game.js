@@ -43,7 +43,7 @@ function reset(){
   addEnemy('patrol',1520);addEnemy('chase',2510);
   for(let s=1;s<10;s++){let x=750+s*2000;addEnemy('patrol',x+500);addEnemy(s%3===0?'tank':'chase',x+1340);if(s>=4)addEnemy('patrol',x+1710);}
   for(let section=0;section<10;section++)for(const offset of [380,600,860,1110,1470,1750])addEnemy('miira',750+section*2000+offset,CONFIG.groundY,95);
-  addEnemy('tank',21200);resetWorld();resetSupport();resetMira();giantThunder=null;groundBolts=[];hintTimer=0;updateHUD();
+  addEnemy('tank',21200);resetWorld();resetSupport();resetMira();giantThunder=null;groundBolts=[];hintTimer=0;resetParty();updateHUD();
 }
 function clearInput(){keys.clear();axis=0;running=false;stickPointer=null;stickOrigin=null;for(const group of Object.values(pointers))group.clear();chargeSources.clear();for(const b of skillButtons)b.classList.remove('pressed');$('shoot').classList.remove('pressed');$('jump').classList.remove('pressed');$('stick').style.left='';$('stick').style.top='';$('stick-knob').style.transform='';jumpRequest=0;}
 function modal(title,copy,button){$('character-select').hidden=state==='paused';$('modal-title').textContent=title;$('modal-copy').textContent=copy;$('instructions').hidden=true;$('instructions').style.display='none';$('start').textContent=button;$('load-status').textContent='MOB GUN GUN • AREA 1-1';$('overlay').hidden=false;clearInput();}
@@ -94,9 +94,9 @@ for(const e of ['contextmenu','dragstart','selectstart','gesturestart','gesturec
 document.addEventListener('touchmove',e=>e.preventDefault(),{passive:false});
 function burst(x,y,n=8,color='#ffd666'){for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,s=45+Math.random()*180;particles.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-35,life:.15+Math.random()*.22,max:.4,color:i%3===0?'#fffbe9':color,r:2+Math.random()*3});}}
 function fire(){const p=player;if(p.reload>0||p.ammo<=0)return;p.ammo--;if(p.ammo===0)p.reload=CONFIG.reloadDuration;bullets.push({x:p.x+p.dir*36,y:p.y-37,dir:p.dir,bomb:p.ammo===0,life:1.6});p.shotAge=0;shootClock=CONFIG.shootInterval;burst(p.x+p.dir*43,p.y-37,3);}
-function damagePlayer(enemy,amount=CONFIG.enemies[enemy.type].damage){if(player.inv>0)return;if((selectedCharacter==='tetsu'&&tetsuAction)||(selectedCharacter==='nyoro'&&nyoroAction?.type==='rain')||(selectedCharacter==='miramob'&&miraSpecial(miraAction)))amount=Math.max(1,Math.ceil(amount*.5));player.hp=Math.max(0,player.hp-amount);player.inv=CONFIG.invincibility;player.red=.2;player.knock=(player.x<enemy.x?-1:1)*220;player.vy=-160;player.grounded=false;burst(player.x,player.y-35,8,'#ff7373');if(player.hp===0){state='dead';modal('もう一度、草原へ。',`COIN ${collected} / 撃破 ${kills}体`,'RETRY');}}
+function damagePlayer(enemy,amount=CONFIG.enemies[enemy.type].damage){if(player.inv>0)return;if((selectedCharacter==='tetsu'&&tetsuAction)||(selectedCharacter==='nyoro'&&nyoroAction?.type==='rain')||(selectedCharacter==='miramob'&&miraSpecial(miraAction)))amount=Math.max(1,Math.ceil(amount*.5));player.hp=Math.max(0,player.hp-amount);player.inv=CONFIG.invincibility;player.red=.2;player.knock=(player.x<enemy.x?-1:1)*220;player.vy=-160;player.grounded=false;burst(player.x,player.y-35,8,'#ff7373');if(player.hp===0)partyDefeated();}
 function tick(dt){
-  if(state!=='playing')return;if(bossIntro()){elapsed+=dt;updateBossRoom(dt);updateHUD();return;}elapsed+=dt;const p=player;p.anim+=dt;p.shotAge+=dt;p.inv=Math.max(0,p.inv-dt);p.red=Math.max(0,p.red-dt);shootClock=Math.max(0,shootClock-dt);jumpRequest=Math.max(0,jumpRequest-dt);
+  if(state!=='playing')return;if(bossIntro()){elapsed+=dt;updateBossRoom(dt);updateHUD();return;}updateParty(dt);elapsed+=dt;const p=player;p.anim+=dt;p.shotAge+=dt;p.inv=Math.max(0,p.inv-dt);p.red=Math.max(0,p.red-dt);shootClock=Math.max(0,shootClock-dt);jumpRequest=Math.max(0,jumpRequest-dt);
   if(p.reload>0){p.reload=Math.max(0,p.reload-dt);if(p.reload<1e-8){p.reload=0;p.ammo=CONFIG.magazineSize;}}
   const keyboard=(keys.has('KeyD')||keys.has('ArrowRight')?1:0)-(keys.has('KeyA')||keys.has('ArrowLeft')?1:0);
   const a=keyboard?keyboard*(keys.has('ShiftLeft')||keys.has('ShiftRight')?1:.55):axis, magnitude=Math.abs(a);
@@ -104,7 +104,7 @@ function tick(dt){
   if(running?magnitude<.64:magnitude>.76)running=!running;
   const locked=selectedCharacter==='miramob'?!!miraAction:selectedCharacter==='nyoro'?!!nyoroAction:selectedCharacter==='tetsu'?!!tetsuAction:thunderLocked()||!!thunderBullet;if(locked){jumpRequest=0;p.knock=0;}
   const move=!locked&&magnitude>.35?Math.sign(a):0;p.vx=move*(running?CONFIG.dashSpeed:CONFIG.walkSpeed);if(selectedCharacter==='denden'&&(pointers.shoot.size||keys.has('KeyJ'))&&p.reload===0)p.vx*=.65;if(move)p.dir=move;if(tetsuAction?.type==='dash'&&tetsuAction.age>=.08&&tetsuAction.age<.56)p.vx=tetsuAction.dir*1000;
-  if(miraAction?.type==='normal')p.vx=miraAction.dir*90;
+  if(miraAction?.type==='normal')p.vx=miraAction.dir*90;if(partyEntry?.id==='nyoro'&&partyEntry.age<.8&&!locked&&magnitude<=.35)p.vx=p.dir*115;
   if(nyoroAction?.type==='normal'||nyoroAction?.type==='upper')p.vx=nyoroAction.dir*(nyoroAction.type==='normal'?105:120);
   if(tetsuAction?.type==='normal')p.vx=tetsuAction.dir*140;if(tetsuAction?.type==='combo'&&tetsuAction.landedAt===undefined&&tetsuAction.age<.75)p.vx=tetsuAction.dir*175;
   if(tetsuAction?.type==='air'&&tetsuAction.landedAt===undefined&&tetsuAction.age>=.06)p.vy=Math.max(p.vy,1150);
@@ -133,10 +133,10 @@ function tick(dt){
   const screenX=p.x-camera;let target=camera;if(screenX>W*.39)target=p.x-W*.39;else if(screenX<W*.27)target=p.x-W*.27;camera=clamp(camera+(target-camera)*(1-Math.exp(-7*dt)),0,CONFIG.worldWidth-W);
   if(hintTimer>0)hintTimer-=dt;$('hint').hidden=hintTimer<=0;
   if(p.x>=CONFIG.worldWidth-180&&state==='playing'&&bossRoom?.state==='cleared'){state='clear';modal('AREA 1-1 CLEAR!',`COIN ${collected} / 撃破 ${kills}体 / ${Math.floor(elapsed/60)}:${String(Math.floor(elapsed%60)).padStart(2,'0')}`,'RETRY');}
-  if(state==='playing'){updateWorld(dt);updatePink(dt);updateBossRoom(dt);}
+  if(state==='playing'){resolvePartyDefeat();updateWorld(dt);updatePink(dt);updateBossRoom(dt);}
   updateHUD();
 }
-function updateHUD(){if(!player)return;$('ammo').hidden=selectedCharacter!=='denden'||player.reload>0;$('ammo').textContent=player.reload>0?`RELOAD ${player.reload.toFixed(1)}s`:`AMMO ${player.ammo} / ${CONFIG.magazineSize}`;$('ammo').classList.toggle('reloading',player.reload>0);$('coins').textContent=collected;$('hp-text').textContent=`${player.hp} / ${CONFIG.maxHP}`;$('hp-fill').style.width=`${player.hp/CONFIG.maxHP*100}%`;$('progress').style.width=`${player.x/CONFIG.worldWidth*100}%`;updateSkillHUD();}
+function updateHUD(){if(!player)return;updatePartyHUD();$('ammo').hidden=selectedCharacter!=='denden'||player.reload>0;$('ammo').textContent=player.reload>0?`RELOAD ${player.reload.toFixed(1)}s`:`AMMO ${player.ammo} / ${CONFIG.magazineSize}`;$('ammo').classList.toggle('reloading',player.reload>0);$('coins').textContent=collected;$('hp-text').textContent=`${player.hp} / ${CONFIG.maxHP}`;$('hp-fill').style.width=`${player.hp/CONFIG.maxHP*100}%`;$('progress').style.width=`${player.x/CONFIG.worldWidth*100}%`;updateSkillHUD();}
 function rounded(x,y,w,h,r,color){ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();}
 function text(str,x,y,size,color='#fff4d6',align='center'){ctx.font=`800 ${size}px Arial, sans-serif`;ctx.fillStyle=color;ctx.textAlign=align;ctx.fillText(str,x,y);}
 function drawBackground(){ctx.fillStyle='#56c1df';ctx.fillRect(0,0,W,H);if(assets.background){const bw=1280,bh=853.33,scroll=camera*.18,first=Math.floor(scroll/bw);for(let n=first;n<=first+1;n++){ctx.save();ctx.translate(n*bw-scroll,0);if(n%2){ctx.translate(bw,0);ctx.scale(-1,1);}ctx.drawImage(assets.background,0,-170,bw,bh);ctx.restore();}}ctx.fillStyle='#a5dc811c';ctx.fillRect(0,0,W,548);}
@@ -167,7 +167,7 @@ function drawSkills(){drawNyoroEffects();drawBombs();if(selectedCharacter==='nyo
   if(thunderLocked()){ctx.save();ctx.strokeStyle='#fff398';ctx.lineWidth=2;for(let n=0;n<3;n++){const x=p.x-camera-45+n*38,y=p.y-90;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+Math.sin(elapsed*40+n)*9,y+23);ctx.lineTo(x-8,y+35);ctx.lineTo(x+8,y+57);ctx.stroke();}ctx.restore();}
 }
 function draw(){drawBackground();ground();drawBossAtmosphere();drawWorld();if(!player)return;for(const p of platforms)drawPlatform(p);for(const c of coins){if(c.taken||c.x<camera-30||c.x>camera+W+30)continue;const x=c.x-camera,y=c.y+Math.sin(elapsed*3+c.x)*3;ctx.fillStyle='#9d6b20';ctx.beginPath();ctx.ellipse(x,y,11,14,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#ffdb60';ctx.beginPath();ctx.ellipse(x,y-1,8.5,11,0,0,Math.PI*2);ctx.fill();text('·',x,y+5,22,'#a76e22');}drawSummon();for(const e of enemies){drawEnemy(e);drawEnemyStatus(e);}const gx=CONFIG.worldWidth-180-camera;if(gx<W+100){rounded(gx,300,8,248,3,'#e9e6c3');rounded(gx+8,306,140,59,4,'#183c3e');text('GOAL',gx+77,345,26,'#ffda69');rounded(gx-45,540,100,8,3,'#f5d46e');}drawPink();drawPlayer();drawReload();drawDirtBalls();drawWorldEffects();drawArenaGates();for(const b of bullets){ctx.save();ctx.translate(b.x-camera,b.y);ctx.scale(b.dir,1);if(b.bomb){ctx.shadowColor='#92f5ff';ctx.shadowBlur=15;ctx.fillStyle='#ffe16b';ctx.beginPath();ctx.arc(0,0,10,0,Math.PI*2);ctx.fill();text('ϟ',0,5,17,'#32738f');}else ctx.drawImage(assets.bullet,-14,-6,28,12);ctx.restore();}for(const f of particles){ctx.globalAlpha=clamp(f.life/.15,0,1);ctx.fillStyle=f.color;ctx.fillRect(f.x-camera-f.r/2,f.y-f.r/2,f.r,f.r);}ctx.globalAlpha=1;for(const f of popups){ctx.globalAlpha=f.life/.6;text('+1',f.x-camera,f.y,20,'#ffe78b');}ctx.globalAlpha=1;}
-function loop(time){const dt=Math.min((time-lastTime)/1000||0,.05);lastTime=time;accumulator+=dt;while(accumulator>=1/120){tick(1/120);accumulator-=1/120;}draw();if(player){drawSkills();drawMiraEffects();drawBossRoom();}requestAnimationFrame(loop);}requestAnimationFrame(loop);
+function loop(time){const dt=Math.min((time-lastTime)/1000||0,.05);lastTime=time;accumulator+=dt;while(accumulator>=1/120){tick(1/120);accumulator-=1/120;}draw();if(player){drawSkills();drawMiraEffects();drawBossRoom();drawPartyEntry();}requestAnimationFrame(loop);}requestAnimationFrame(loop);
 
 for(const button of document.querySelectorAll('[data-character]'))button.onclick=()=>selectCharacter(button.dataset.character);
 
