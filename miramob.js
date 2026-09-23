@@ -4,15 +4,18 @@ const miraFrames={};
 let adminUnlocked=false,miraAction=null,miraCooldowns=[0,0],miraShots=[],miraEffects=[],bossRoom=null;
 async function loadMira(){await Promise.all(Array.from({length:43},async(_,i)=>{const n=i+1;miraFrames[n]=await trimFrame(`enemy/miramob/${n<=25?String(n).padStart(3,'0'):n}.png`);}));}
 function resetMira(){miraAction=null;miraCooldowns=[0,0];miraShots=[];miraEffects=[];
- bossRoom={x:20150,right:21430,state:'idle',age:0,spawnClock:5,spawned:0,boss:null,camera:20150};
- platforms=platforms.filter(p=>p.x+p.w<bossRoom.x-100);platforms.push({x:20430,y:410,w:175,h:24,bossPlatform:true},{x:20970,y:355,w:175,h:24,bossPlatform:true});
+ bossRoom={x:20150,right:21430,state:'idle',portalX:20070,age:0,spawnClock:5,spawned:0,boss:null,camera:20150};
+ platforms=platforms.filter(p=>p.x+p.w<bossRoom.portalX-140);platforms.push({x:20430,y:410,w:175,h:24,bossPlatform:true},{x:20970,y:355,w:175,h:24,bossPlatform:true});
  let relocated=0;for(const e of enemies)if(e.x>=bossRoom.x-100){e.x=bossRoom.x-250-(relocated++%6)*95;e.home=e.x;e.range=40;}crates=crates.filter(e=>e.x<bossRoom.x-100);coins=coins.filter(c=>c.x<bossRoom.x-100);
  crates.push({type:'crate',x:20000,y:548,w:48,h:48,hp:12,maxHP:12,death:-1,flash:0});
 }
+function bossIntro(){return bossRoom&&['warping','closing'].includes(bossRoom.state);}
+function dropBossDorayaki(e){if(!e.bossAdd||bossRoom?.state!=='fighting'||Math.random()>=.4)return;dorayaki.push({x:e.x,y:Math.min(510,e.y-e.h/2),baseY:528,vy:-160,age:0});}
+function clearBossEntryAttacks(){clearInput();cancelNyoro();tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];comboWindow=0;anomaBursts=[];miraAction=null;miraShots=[];miraEffects=[];bullets=[];energyShots=[];explosions=[];lightning=[];dirtBalls=[];bombBursts=[];thunderBullet=null;thunderBursts=[];giantThunder=null;groundBolts=[];skillState.charging=false;skillState.charge=0;skillState.thunderLeft=0;skillState.thunderAge=10;skillState.releaseAge=10;particles=[];}
 function bossLocked(){return bossRoom&&['closing','fighting','opening'].includes(bossRoom.state);}
 function miraStart(actor,type){const a={type,age:0,dir:actor.dir,hit:new Set(),next:0};if(actor===player)miraAction=a;else actor.action=a;return a;}
-function miraAttack(){if(state==='playing'&&selectedCharacter==='miramob'&&!miraAction)miraStart(player,'normal');}
-function castMira(i){if(state!=='playing'||selectedCharacter!=='miramob'||miraAction||i>1||miraCooldowns[i]>0)return;miraStart(player,i===0?'blades':'skull');miraCooldowns[i]=MIRA.cooldowns[i];}
+function miraAttack(){if(state==='playing'&&!bossIntro()&&selectedCharacter==='miramob'&&!miraAction)miraStart(player,'normal');}
+function castMira(i){if(state!=='playing'||bossIntro()||selectedCharacter!=='miramob'||miraAction||i>1||miraCooldowns[i]>0)return;miraStart(player,i===0?'blades':'skull');miraCooldowns[i]=MIRA.cooldowns[i];}
 function miraSpecial(a){return !!a&&a.type!=='normal';}
 function miraVictims(hostile){return hostile?[player,...(pink?.enabled&&bossRoom?.state==='fighting'?[pink]:[])]:combatTargets();}
 function miraDamage(target,damage,dir,hostile,launch=false){
@@ -64,9 +67,18 @@ function updateMiraBoss(e,dt){
  if(!e.airMode){e.vx=e.dir*(Math.abs(dx)>370?240:95);if(Math.abs(dx)<100)e.vx=0;e.x=clamp(e.x+e.vx*dt,bossRoom.x+105,bossRoom.right-105);}
 }
 function updateBossRoom(dt){const b=bossRoom;if(!b)return;
- if(b.state==='idle'&&player.x>b.x+155){b.state='closing';b.age=0;checkpoint={x:b.x+180,y:548};const e={type:'miramob',x:b.right-280,y:548,vx:0,vy:0,grounded:true,dir:-1,hp:MIRA.hp,maxHP:MIRA.hp,w:80,h:MIRA.bossHeight,flightClock:3,airMode:null,home:b.right-280,range:1000,death:-1,flash:0,knock:0,phase:0,think:1.1,skillCD:[2.5,6],action:null};b.boss=e;enemies.push(e);}
- if(b.state==='idle'||b.state==='cleared')return;b.age+=dt;
- if(b.state==='closing'&&b.age>=.75){b.state='fighting';b.age=0;burst(b.x+30,548,25,'#bbb9b0');burst(b.right-30,548,25,'#bbb9b0');}
+ if(b.state==='idle'){
+  player.x=Math.min(player.x,b.portalX+45);
+  if(Math.abs(player.x-b.portalX)<48&&player.y>280){b.state='warping';b.age=0;clearBossEntryAttacks();player.vx=player.vy=player.knock=0;hintTimer=0;$('hint').hidden=true;}return;
+ }
+ if(b.state==='cleared')return;b.age+=dt;
+ if(b.state==='warping'){
+  if(b.age<.85)return;
+  b.state='closing';b.age=0;camera=b.camera;checkpoint={x:b.x+180,y:548};Object.assign(player,{x:b.x+230,y:548,vx:0,vy:0,knock:0,dir:1,grounded:true,jumpsUsed:0});
+  if(pink)Object.assign(pink,{x:b.x+160,y:548,vx:0,vy:0,grounded:true,attack:null,magic:null,stun:0,knock:0,hurtGrace:0,hopTarget:undefined,assist:0,recall:0});
+  const e={type:'miramob',x:b.right-280,y:548,vx:0,vy:0,grounded:true,dir:-1,hp:MIRA.hp,maxHP:MIRA.hp,w:80,h:MIRA.bossHeight,flightClock:3,airMode:null,home:b.right-280,range:1000,death:-1,flash:0,knock:0,phase:0,think:1.1,skillCD:[2.5,6],action:null};b.boss=e;enemies.push(e);
+ }
+ if(b.state==='closing'&&b.age>=2.4){b.state='fighting';b.age=0;clearBossEntryAttacks();player.inv=Math.max(player.inv,1);}
  if(b.state==='fighting'){
   b.spawnClock-=dt;if(b.spawnClock<=0&&b.boss.death<0){b.spawnClock=5+Math.random()*4;if(enemies.filter(e=>e.bossAdd&&e.death<0).length<3){const x=b.x+200+Math.random()*(b.right-b.x-400);enemies.push({type:'miira',bossAdd:true,x,y:-90,home:x,dir:-1,hp:24,maxHP:24,w:46,h:MIIRA.height,flash:0,knock:0,death:-1,range:220,phase:b.spawned++,dropping:{vy:0},attackCooldown:2,attackAge:-1});}}
   if(b.boss.death>=0){b.state='opening';b.age=0;b.boss.action=null;miraShots=miraShots.filter(s=>!s.hostile);miraEffects=miraEffects.filter(f=>!f.hostile);for(const e of enemies)if(e.bossAdd&&e.death<0)hitEnemy(e,e.hp);}
@@ -89,4 +101,27 @@ function drawMiraEffects(){
  for(const s of miraShots)miraImage(s.kind==='blade'?38:43,s.x,s.y,s.kind==='core'?160:s.kind==='blade'?62:38,s.dir);
  for(const actor of [player,bossRoom?.boss]){if(!actor)continue;const a=actor===player?miraAction:actor.action;if(a?.type==='skull'&&a.age<2.2){const t=Math.min(1,a.age/2.2);miraImage(43,actor.x+a.dir*(42+t*35)+Math.sin(elapsed*35)*3,actor.y-65+Math.sin(elapsed*29)*3,25+t*140);}}
 }
-function drawBossRoom(){const b=bossRoom;if(!b||['idle','cleared'].includes(b.state))return;const offset=b.state==='closing'?-600*(1-Math.min(1,b.age/.75))**2:b.state==='opening'?-650*Math.min(1,b.age):0;for(const wx of [b.x+32,b.right-32]){const x=wx-camera;for(let i=0;i<5;i++){const y=548-i*100+offset;ctx.fillStyle=i%2?'#726d80':'#97919e';ctx.strokeStyle='#38344a';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(x-42,y);ctx.lineTo(x-51,y-63);ctx.lineTo(x-17,y-104);ctx.lineTo(x+35,y-89);ctx.lineTo(x+48,y-21);ctx.closePath();ctx.fill();ctx.stroke();}}const e=b.boss;rounded(W/2-245,112,490,44,8,'#21152dec');text('BOSS ミラモブ',W/2,131,17,'#efd3ff');rounded(W/2-225,140,450,8,4,'#52445d');rounded(W/2-225,140,450*Math.max(0,e.hp)/e.maxHP,8,4,'#c968fa');}
+function drawBossAtmosphere(){const b=bossRoom;if(!b||b.state==='cleared')return;
+ if(b.state==='idle'||b.state==='warping'){
+  const x=b.portalX-camera,y=425;if(x<-100||x>W+100)return;ctx.save();ctx.shadowColor='#ae59ff';ctx.shadowBlur=28;
+  const glow=ctx.createRadialGradient(x,y,10,x,y,145);glow.addColorStop(0,'#110f30');glow.addColorStop(.65,'#5c259dcc');glow.addColorStop(1,'#bd79ff00');ctx.fillStyle=glow;ctx.beginPath();ctx.ellipse(x,y,70,125,0,0,Math.PI*2);ctx.fill();
+  for(let i=0;i<5;i++){ctx.strokeStyle=i%2?'#e2bcff':'#9962f5';ctx.lineWidth=3;ctx.beginPath();ctx.ellipse(x,y,40+i*6,86+i*9,Math.sin(elapsed*2+i)*.08,elapsed*(i%2?1:-1)+i,elapsed*(i%2?1:-1)+i+4.6);ctx.stroke();}
+  for(let i=0;i<16;i++){const a=elapsed*1.5+i*Math.PI/8;ctx.fillStyle='#edd6ff';ctx.beginPath();ctx.arc(x+Math.cos(a)*78,y+Math.sin(a)*130,2+i%3,0,Math.PI*2);ctx.fill();}
+  ctx.shadowBlur=0;rounded(x-117,262,234,37,10,'#241435ed');text('ミラモブへのワープ',x,287,20,'#efcfff');text('ホールに入るとボス戦',x,578,17,'#efcfff');ctx.restore();return;
+ }
+ ctx.save();ctx.fillStyle='#25103c44';ctx.fillRect(0,0,W,548);const shade=ctx.createLinearGradient(0,0,0,548);shade.addColorStop(0,'#251035b0');shade.addColorStop(1,'#66397e00');ctx.fillStyle=shade;ctx.fillRect(0,0,W,548);
+ for(let i=0;i<22;i++){const x=(i*137+Math.sin(elapsed+i)*15)%W,y=548-(elapsed*24+i*73)%500;ctx.fillStyle='#deafff55';ctx.beginPath();ctx.arc(x,y,2+i%3,0,Math.PI*2);ctx.fill();}ctx.restore();
+}
+function drawBossRoom(){const b=bossRoom;if(!b||['idle','cleared'].includes(b.state))return;
+ if(b.state==='warping'){const t=Math.min(1,b.age/.85);ctx.save();ctx.fillStyle=`rgba(28,8,48,${t})`;ctx.fillRect(0,0,W,H);ctx.strokeStyle=`rgba(226,186,255,${1-t})`;ctx.lineWidth=5;for(let i=0;i<20;i++){const a=i*Math.PI/10+elapsed;ctx.beginPath();ctx.moveTo(W/2+Math.cos(a)*80*(1-t),H/2+Math.sin(a)*80*(1-t));ctx.lineTo(W/2+Math.cos(a)*850,H/2+Math.sin(a)*600);ctx.stroke();}ctx.restore();return;}
+ const offset=b.state==='closing'?-600*(1-Math.min(1,b.age/.75))**2:b.state==='opening'?-650*Math.min(1,b.age):0;
+ for(const wx of [b.x+32,b.right-32]){const x=wx-camera;for(let i=0;i<5;i++){const y=548-i*100+offset;ctx.fillStyle=i%2?'#726d80':'#97919e';ctx.strokeStyle='#38344a';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(x-42,y);ctx.lineTo(x-51,y-63);ctx.lineTo(x-17,y-104);ctx.lineTo(x+35,y-89);ctx.lineTo(x+48,y-21);ctx.closePath();ctx.fill();ctx.stroke();}}
+ const e=b.boss;if(!e)return;rounded(W/2-245,112,490,44,8,'#21152dec');text('BOSS ミラモブ',W/2,131,17,'#efd3ff');rounded(W/2-225,140,450,8,4,'#52445d');rounded(W/2-225,140,450*Math.max(0,e.hp)/e.maxHP,8,4,'#c968fa');
+ if(b.state==='closing'){
+  const t=b.age;ctx.save();ctx.fillStyle=`rgba(27,8,45,${Math.max(0,1-t/.45)})`;ctx.fillRect(0,0,W,H);
+  const impact=Math.max(0,1-Math.abs(t-.8)/.35);ctx.fillStyle=`rgba(233,195,255,${impact*.24})`;ctx.fillRect(0,0,W,H);
+  if(t>=.75&&t<1.6){const d=(t-.75)/.85;for(const wx of [b.x+32,b.right-32])for(let i=0;i<8;i++){ctx.fillStyle=`rgba(199,181,213,${1-d})`;ctx.beginPath();ctx.arc(wx-camera+Math.cos(i*2)*d*145,535-Math.sin(i)*d*55,14+d*35,0,Math.PI*2);ctx.fill();}}
+  ctx.globalAlpha=Math.min(1,t*3,Math.max(0,(2.4-t)*3));rounded(0,0,W,18,0,'#130b20');rounded(0,H-18,W,18,0,'#130b20');rounded(W/2-270,197,540,113,12,'#21122aeb');text('BOSS ENCOUNTER',W/2,233,22,'#dfacff');text('ミラモブ',W/2,284,43,'#fff0ff');
+  const radius=80+t*55;ctx.strokeStyle='#d090ff';ctx.lineWidth=4;ctx.beginPath();ctx.ellipse(e.x-camera,544,radius,18+t*8,0,0,Math.PI*2);ctx.stroke();ctx.restore();
+ }
+}

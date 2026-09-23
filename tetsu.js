@@ -51,12 +51,12 @@ function startTetsuAction(type){tetsuAction={type,age:0,dir:player.dir,hit:new M
 function tetsuGravity(){return tetsuAction?.type==='combo'&&tetsuAction.lifted&&tetsuAction.age<.48?600:CONFIG.gravity;}
 function onTetsuLanding(){const a=tetsuAction;if(a?.type==='air'&&a.landedAt===undefined){a.landedAt=a.age;landingEffect(player.x,player.y);}}
 function tetsuAttack(){
- if(selectedCharacter!=='tetsu'||state!=='playing')return;
+ if(selectedCharacter!=='tetsu'||state!=='playing'||bossIntro())return;
  if(tetsuAction){if(tetsuAction.type==='normal')tetsuAction.queued=true;return;}
  startTetsuAction(!player.grounded?'air':comboWindow>0?'combo':'normal');
 }
 function castTetsu(index){
- if(state!=='playing'||tetsuAction||tetsuCooldowns[index]>0)return;
+ if(state!=='playing'||bossIntro()||tetsuAction||tetsuCooldowns[index]>0)return;
  startTetsuAction(['mob','dash','ultimate'][index]);tetsuCooldowns[index]=TETSU.cooldowns[index];
 }
 function launchEnemy(e,vx,vy,spin=0){if(e.type==='crate')return;if(e.type==='miramob'){e.stun=Math.max(e.stun||0,.18);e.x+=Math.sign(vx)*8;return;}const floor=e.dropping?CONFIG.groundY:e.launch?.floor??e.y;e.dropping=null;e.launch={vx,vy,spin,angle:0,floor};e.knock=0;if(e.type==='miira'){e.attackAge=-1;e.attackCooldown=MIIRA.cooldown;}}

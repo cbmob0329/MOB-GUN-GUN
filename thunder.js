@@ -6,7 +6,7 @@ function startGiantThunder(){const x=clamp(player.x+player.dir*210,40,CONFIG.wor
 function thunderArea(x,y,r,damage,stun){for(const e of combatTargets()){if(e.death>=0||Math.abs(e.x-x)>r+e.w/2||e.y<y-360||e.y-e.h>y+20)continue;hitEnemy(e,damage,Math.sign(e.x-x)||player.dir);if(e.type!=='crate'){e.electric=Math.max(e.electric||0,stun);e.stun=Math.max(e.stun||0,e.type==='miramob'?Math.min(.25,stun):stun);e.attackAge=-1;}}}
 function updateGiantThunder(dt){const g=giantThunder;if(g){g.age+=dt;
  if(!g.landed){g.y=Math.min(g.floor,g.y+1900*dt);if(g.y===g.floor){g.landed=true;thunderArea(g.x,g.floor,170,60,1.2);burst(g.x,g.floor-20,40,'#c6f9ff');}}
- else{g.groundAge+=dt;g.waveClock-=dt;g.pulse+=dt;if(g.pulse>=.4){g.pulse-=.4;thunderArea(g.x,g.floor,100,12,.35);}if(g.waveClock<=0){g.waveClock+=.18;for(const dir of [-1,1])groundBolts.push({x:g.x,y:g.floor,dir,age:0,hit:new Set()});}if(g.groundAge>=2){giantThunder=null;groundBolts=[];}}
+ else{g.groundAge+=dt;g.waveClock-=dt;g.pulse+=dt;if(g.pulse>=.4){g.pulse-=.4;thunderArea(g.x,g.floor,100,12,.35);}if(g.waveClock<=0){g.waveClock+=.25;for(const dir of [-1,1])groundBolts.push({x:g.x,y:g.floor,dir,age:0,hit:new Set()});}if(g.groundAge>=2){giantThunder=null;groundBolts=[];}}
  }
  for(const b of groundBolts){b.age+=dt;b.x+=b.dir*500*dt;const y=supportFloorAt(b.x,b.y-35);if(Number.isFinite(y))b.y=y;for(const e of combatTargets()){if(e.death>=0||b.hit.has(e)||Math.abs(e.x-b.x)>55+e.w/2||e.y<b.y-115||e.y-e.h>b.y+15)continue;b.hit.add(e);if((e.groundBoltNext||0)>elapsed)continue;e.groundBoltNext=elapsed+.35;hitEnemy(e,12,b.dir);if(e.type!=='crate'){e.electric=.45;e.stun=e.type==='miramob'?.15:.35;}}}groundBolts=groundBolts.filter(b=>b.age<.75);
 }

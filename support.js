@@ -16,7 +16,7 @@ async function loadSupport(){await Promise.all([
 ]);}
 function resetSupport(){anomaBursts=[];pink={x:player.x-65,y:player.y,vx:0,vy:0,dir:1,grounded:true,enabled:true,age:0,cooldown:0,attack:null,magic:null,magicCooldown:1.4,stun:0,knock:0,hurtGrace:0,assist:0,recall:0,lastTap:-Infinity,wanderDir:1,wanderClock:0};thunderBullet=null;thunderBulletCooldown=0;thunderBursts=[];}
 function supportFloorAt(x,fromY){let y=groundAt(x);const roof=summonRoofY(x);if(roof>=fromY)y=Math.min(y,roof);for(const q of stageSurfaces())if(x>=q.x&&x<=q.x+q.w&&q.y>=fromY)y=Math.min(y,q.y);for(const r of ramps)if(x>=r.x&&x<=r.x+r.w){const h=r.y+(r.endY-r.y)*(x-r.x)/r.w;if(h>=fromY)y=Math.min(y,h);}for(const b of bridges)if(x>=b.x&&x<=b.x+b.w){const h=bridgeY(b,x);if(h>=fromY)y=Math.min(y,h);}return y;}
-function castThunderBullet(){if(state!=='playing'||selectedCharacter!=='denden'||thunderBullet||thunderBulletCooldown>0||skillState.charging||thunderLocked())return;thunderBullet={age:0,x:player.x,y:player.y,dir:player.dir,next:0};thunderBulletCooldown=SUPPORT.bulletCooldown;}
+function castThunderBullet(){if(state!=='playing'||bossIntro()||selectedCharacter!=='denden'||thunderBullet||thunderBulletCooldown>0||skillState.charging||thunderLocked())return;thunderBullet={age:0,x:player.x,y:player.y,dir:player.dir,next:0};thunderBulletCooldown=SUPPORT.bulletCooldown;}
 function updateThunderBullet(dt){
  thunderBulletCooldown=Math.max(0,thunderBulletCooldown-dt);
  if(thunderBullet){const a=thunderBullet;a.age+=dt;while(a.next<3&&a.age>=.24+a.next*.13){const i=a.next++,x=a.x+a.dir*[95,225,395][i],y=supportFloorAt(x,a.y-55);if(Number.isFinite(y))thunderBursts.push({x,y,age:0,size:[115,175,245][i],damage:SUPPORT.bulletDamage[i],dir:a.dir,hit:new Set()});}if(a.age>=.72)thunderBullet=null;}
@@ -32,8 +32,8 @@ function stunNearby(){for(const e of enemies)if(e.death<0&&Math.abs(e.x-player.x
 function drawEnemyStatus(e){if(e.death>=0&&!e.launch)return;const x=e.x-camera,y=e.y-e.h/2;if(e.electric>0){ctx.strokeStyle='#b5faff';ctx.lineWidth=2;for(let i=0;i<3;i++){ctx.beginPath();ctx.moveTo(x-25+i*20,y-28);ctx.lineTo(x-32+i*20+Math.sin(elapsed*60+i)*5,y-8);ctx.lineTo(x-18+i*20,y+6);ctx.lineTo(x-25+i*20,y+27);ctx.stroke();}}else if(e.stun>0)for(let i=0;i<3;i++)text('✦',x+Math.cos(elapsed*7+i*2.1)*22,y-e.h*.6+Math.sin(elapsed*7+i*2.1)*5,13,'#fff198');}
 function hitPink(dir,strong=false){if(!pink?.enabled||pink.hurtGrace>0)return;pink.stun=strong?1.15:.75;pink.hurtGrace=.65;pink.knock=dir*(strong?440:300);pink.vy=strong?-420:-280;pink.grounded=false;pink.attack=null;pink.magic=null;pink.assist=0;pink.hopTarget=undefined;pink.cooldown=Math.max(pink.cooldown,.9);burst(pink.x,pink.y-35,10,'#e6b2ff');}
 function pinkJump(velocity){if(!pink?.enabled||pink.stun>0||pink.assist>0)return;pink.vy=velocity;pink.grounded=false;}
-function commandPink(){if(state!=='playing'||!pink?.enabled||pink.stun>0)return;if(elapsed-pink.lastTap<.32){pink.lastTap=-Infinity;pink.recall=0;activatePink();}else{pink.lastTap=elapsed;pink.recall=3;pink.assist=0;pink.attack=null;pink.magic=null;}}
-function activatePink(){if(state!=='playing'||!pink?.enabled||pink.stun>0||pink.assist>0)return;pink.assist=SUPPORT.assistDuration;pink.attack=null;pink.magic=null;pink.vx=0;}
+function commandPink(){if(state!=='playing'||bossIntro()||!pink?.enabled||pink.stun>0)return;if(elapsed-pink.lastTap<.32){pink.lastTap=-Infinity;pink.recall=0;activatePink();}else{pink.lastTap=elapsed;pink.recall=3;pink.assist=0;pink.attack=null;pink.magic=null;}}
+function activatePink(){if(state!=='playing'||bossIntro()||!pink?.enabled||pink.stun>0||pink.assist>0)return;pink.assist=SUPPORT.assistDuration;pink.attack=null;pink.magic=null;pink.vx=0;}
 function pinkLandingHeight(p,oldY){if(!pink?.enabled||pink.assist<=0||!pink.grounded||p.vy<0)return Infinity;const y=pink.y-84;return Math.abs(p.x-pink.x)<48&&oldY<=y+1&&p.y>=y?y:Infinity;}
 function bounceOnPink(){player.vy=-WORLD.trampolineSpeed;player.grounded=false;player.coyote=0;player.jumpsUsed=0;player.jumpAge=0;burst(player.x,player.y,14,'#ffaddc');}
 function pinkSafeFloor(x,y){
@@ -73,7 +73,7 @@ function drawPink(){
  const img=pinkFrames[i];if(!img)return;const body=i>=24&&i<32?.85:i>=8&&i<16?.93:1,scale=76/(img.height*body),x=p.x-camera;ctx.save();ctx.translate(x,p.y);ctx.scale(p.dir,1);ctx.drawImage(img,-img.width*scale*.48,-img.height*scale,img.width*scale,img.height*scale);ctx.restore();
  if(p.stun>0)for(let n=0;n<3;n++)text('✦',x+Math.cos(elapsed*7+n*2.1)*25,p.y-90+Math.sin(elapsed*7+n*2.1)*5,15,'#ffeda4');
  if(p.assist>0){const bx=clamp(x,135,W-135),by=Math.max(115,p.y-127);rounded(bx-126,by-25,252,34,9,'#fff1e4');text('お助けするであります！',bx,by-3,17,'#693e57');ctx.fillStyle='#fff1e4';ctx.beginPath();ctx.moveTo(bx-8,by+8);ctx.lineTo(bx+8,by+8);ctx.lineTo(x,by+22);ctx.fill();}
- button.hidden=state!=='playing'||x<-60||x>W+60;button.style.left=`${(x-40)/W*100}%`;button.style.top=`${(p.y-90)/H*100}%`;
+ button.hidden=state!=='playing'||bossIntro()||x<-60||x>W+60;button.style.left=`${(x-40)/W*100}%`;button.style.top=`${(p.y-90)/H*100}%`;
 }
 
 function drawBubbleExplosion(ex){const t=ex.age/.65;ctx.save();ctx.globalAlpha=(1-t)*.65;ctx.strokeStyle='#bbf9ff';ctx.lineWidth=4;ctx.beginPath();ctx.arc(ex.x-camera,ex.y,ex.r*(.2+t*.8),0,Math.PI*2);ctx.stroke();for(let i=0;i<18;i++){const a=i*2.399,x=ex.x-camera+Math.cos(a)*ex.r*t*.85,y=ex.y+Math.sin(a)*ex.r*t*.7,r=(12+i%5*6)*(1-t*.3);ctx.fillStyle=['#9cefff44','#f7bfff44','#fff0a044'][i%3];ctx.strokeStyle=['#b1f5ff','#ffd5f5','#fff4ba'][i%3];ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.strokeStyle='#ffffff';ctx.beginPath();ctx.arc(x,y,r*.68,3.4,4.7);ctx.stroke();}ctx.restore();}

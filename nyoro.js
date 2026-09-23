@@ -5,8 +5,8 @@ let nyoroAction=null,nyoroCooldowns=[0,0,0],nyoroGlide=false,nyoroGlideUsed=fals
 async function loadNyoro(){await Promise.all([...Array.from({length:42},(_,i)=>i+1),235,236,237,238].map(async n=>{nyoroFrames[n]=await trimFrame(`nyoro/${String(n).padStart(3,'0')}.png`);}));await Promise.all(Array.from({length:5},async(_,i)=>{nyoroFire[i]=await trimFrame(`nyoro/0${i+1}.png`);}));}
 function cancelNyoro(){nyoroAction=null;nyoroGlide=false;nyoroGlideUsed=false;nyoroCombo=0;nyoroShots=[];nyoroSummon=null;nyoroFX=[];}
 function resetNyoro(){cancelNyoro();nyoroCooldowns=[0,0,0];nyoroFireClock=0;}
-function nyoroAttack(){if(selectedCharacter!=='nyoro'||state!=='playing')return;if(nyoroAction){if(nyoroAction.type==='normal')nyoroAction.queued=true;return;}nyoroGlide=false;nyoroAction={type:nyoroCombo>0?'upper':'normal',age:0,dir:player.dir,hit:new Map()};nyoroCombo=0;}
-function castNyoro(i){if(state!=='playing'||selectedCharacter!=='nyoro'||nyoroAction||nyoroCooldowns[i]>0)return;nyoroGlide=false;nyoroAction={type:['rain','meteor','summon'][i],age:0,dir:player.dir,hit:new Map(),spawned:0};nyoroCooldowns[i]=NYORO.cooldowns[i];}
+function nyoroAttack(){if(selectedCharacter!=='nyoro'||state!=='playing'||bossIntro())return;if(nyoroAction){if(nyoroAction.type==='normal')nyoroAction.queued=true;return;}nyoroGlide=false;nyoroAction={type:nyoroCombo>0?'upper':'normal',age:0,dir:player.dir,hit:new Map()};nyoroCombo=0;}
+function castNyoro(i){if(state!=='playing'||bossIntro()||selectedCharacter!=='nyoro'||nyoroAction||nyoroCooldowns[i]>0)return;nyoroGlide=false;nyoroAction={type:['rain','meteor','summon'][i],age:0,dir:player.dir,hit:new Map(),spawned:0};nyoroCooldowns[i]=NYORO.cooldowns[i];}
 function burnEnemy(e){if(e.type==='crate'||e.death>=0)return;e.burn=Math.max(e.burn||0,1.2);e.burnClock??=.4;}
 function flameHit(x,y,r,damage,dir=1,launch=false){for(const e of combatTargets()){if(e.death>=0)continue;const dx=Math.max(0,Math.abs(e.x-x)-e.w/2),dy=Math.max(e.y-e.h-y,y-e.y,0);if(Math.hypot(dx,dy)>r)continue;hitEnemy(e,damage,dir);burnEnemy(e);if(launch)launchEnemy(e,dir*170,-820,5);}}
 function addFire(kind,x,y,owner=null){
