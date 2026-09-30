@@ -1,0 +1,10 @@
+モブスライム — generated with built-in image_gen, 2026-09-30
+Reference: D:/GitHub/MOB-QUEST/enemy/01.png (reference only; original unchanged)
+Output: spritesheet.png, original generated transparent PNG, 1254 x 1254.
+12 frames: locomotion (0–3), recoil (4–7), collapse (8–11).
+Actual frame regions are defined and alpha-trimmed at load time in slime.js;
+the generated spacing is not an exact uniform grid. One common rendering scale
+preserves the squash/stretch and shrinking death poses.
+
+Generation prompt:
+Create a production 2D game pixel-art sprite sheet based on the reference character: lime green translucent slime with large round GOLD goggles, dark olive lenses and pale yellow highlights, tiny green bubbles. Preserve its identity, no legs or arms. Strict crisp pixel art, dark pixel outline, limited bright palette, no smooth vector gradients. Exactly 4 columns by 3 rows, 12 frames total on a square transparent canvas, equal square cells with generous transparent margins. No text, labels, grid, shadows outside cells, or background. Every slime centered horizontally in its cell and feet aligned at 80% cell height; consistent scale. Row 1: four looping squishy hopping locomotion frames, rest, compressed, stretched hop, settle. Row 2: four recoil/damage frames with goggles wobbling and slime leaning, still recognizable, no added symbols. Row 3: four defeated frames squashing down, splattering into green blobs with goggles sinking, final tiny slime puddle with goggles. Original character silhouette and goggles must be consistent through frames; face front with subtle rightward orientation. Raster pixel-art only. Output 1024 by 1024 pixels with true alpha transparency. Intended for direct 4x3 grid slicing in a browser game.
