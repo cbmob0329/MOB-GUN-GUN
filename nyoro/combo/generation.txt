@@ -1,0 +1,10 @@
+Built-in image_gen. PNGs saved unchanged with alpha. Both atlases: 4 columns x 4 rows.
+body.png: first 8 frames umbrella sweep, last 8 thrust/open canopy.
+effects.png: first 8 fire crescent, last 8 fire burst.
+Runtime body extraction: 16 connected silhouettes are isolated in nyoro-combo.js. Original PNG remains unchanged. Body uses a fixed 35px face reference with a feet anchor; effects are limited to 140px (NYORO_COMBO_VISUAL).
+
+Body prompt:
+Transparent pixel art sprite sheet of reference Nyoro lava-pattern cat, yellow round goggles, black orange cape, flame umbrella. STRICT 4 columns x4 rows 16 small frames, equal cells, ample empty margins, no overlapping cells, 1024 square. All face right, same body scale and ground baseline per cell. FIRST EIGHT frames: folded umbrella sweeping horizontally, anticipation swing follow-through recovery. LAST EIGHT frames: umbrella thrust forward with opening canopy, anticipation thrust open canopy recoil recovery. Character only no flame effect or background. Crisp chunky cartoon pixel art faithful to reference. Entire sprite under180 pixels wide inside each256px cell. NO labels or grid lines.
+
+Effects prompt:
+Transparent pixel art GAME EFFECT sprite sheet, STRICT 4 columns x4 rows,16 isolated frames equal cells,1024 square. First8 frames consecutive orange yellow fire crescent sweeping to right, gather grow sweep dissipate. Last8 frames consecutive forward orange flame burst pointed to right, gather bright whiteyellowcore expand dissipate sparks. Cartoon chunky pixels, bold expressive shapes, no soft glow, no background, no characters, no text. Each effect entirely inside its own256pxcell with40pxempty margins.

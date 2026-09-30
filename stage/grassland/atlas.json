@@ -1,0 +1,15 @@
+{
+  "props": {
+    "image": "props.png",
+    "columns": 4,
+    "rowBoundaries": [0, 0.259, 0.510, 0.767, 1],
+    "rows": ["rolling-rock", "breakable-rock", "swaying-breakable-tree", "puddle-splash"]
+  },
+  "terrain": {
+    "image": "terrain.png",
+    "columns": 4,
+    "rowBoundaries": [0, 0.35, 0.565, 0.94],
+    "frames": ["ground-left", "ground-middle", "ground-right", "subsoil", "platform-left", "platform-middle", "platform-right", "wood-floor", "rope-anchor", "rope-segment", "rope-handhold", "stone-stairs"]
+  },
+  "note": "Normalized row bounds and equal columns select source regions. Runtime trims transparent margins without rewriting the generated images."
+}

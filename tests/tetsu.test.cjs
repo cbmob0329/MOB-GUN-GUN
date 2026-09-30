@@ -15,7 +15,7 @@ async function main(){
  const result=await page.evaluate(()=>{
   const check=(v,m)=>{if(!v)throw Error(m);},step=n=>{for(let i=0;i<n;i++)tick(1/120);};
   const setup=(offset=95,hp=1000)=>{reset();pink.enabled=false;state='playing';platforms=[];player.x=500;player.inv=100;const e={...enemies[0],x:500+offset,home:500+offset,hp,maxHP:hp,type:'tank',w:62,h:65,range:1000};enemies=[e];return e;};
-  let e=setup();tetsuAttack();step(18);check(e.hp===982,'normal damage');tetsuAttack();step(150);check(e.hp===954,'combo damage');check(!tetsuAction,'combo complete');
+  let e=setup();tetsuAttack();step(18);check(e.hp===982,'normal damage');tetsuAttack();step(150);check(e.hp===926,'combo damage');check(!tetsuAction,'combo complete');
   e=setup();pointers.shoot.add(1);step(100);check(e.hp===1000,'hold must not repeat');
   e=setup(60);player.grounded=false;startTetsuAction('air');step(20);check(e.hp===970&&e.launch&&e.launch.vy<0,'air launch');check(tetsuEffects.length===1,'air impact once');
   e=setup(150);const other={...e,x:690,home:690};enemies.push(other);castTetsu(0);step(108);check(e.hp===916&&other.hp===916,'MOB total 84');check(e.launch&&other.launch,'MOB launches all');check(tetsuCooldowns[0]>5,'cooldown');
@@ -26,7 +26,7 @@ async function main(){
   e=setup(150,24);castTetsu(2);step(190);check(enemies.includes(e)&&e.launch&&e.launch.angle>0,'dead flight');step(300);check(!enemies.includes(e),'dead cleanup');
   setup();castTetsu(0);const cd=tetsuCooldowns[0];pause();step(120);check(tetsuCooldowns[0]===cd,'pause freezes');check(document.getElementById('character-select').hidden,'pause hides selector');resume();reset();check(!tetsuAction&&!tetsuEffects.length&&!tetsuGhosts.length&&tetsuCooldowns.every(x=>x===0),'reset');
   for(const [group,frames] of Object.entries(tetsuFrames))for(const f of frames){check(f.w>0&&f.h>0&&Number.isFinite(f.scale),'valid trim');if(group!=='SKILL')check(f.scale*f.h<220,'sprite size');}
-  setup();castTetsu(0);step(87);return {normal:18,combo:28,air:30,mob:84,dash:54,ultimate:96};
+  setup();castTetsu(0);step(87);return {normal:18,combo:56,air:30,mob:84,dash:54,ultimate:96};
  });
  await page.screenshot({path:path.join(process.env.TEMP,'tetsu-mob-'+mobile+'.png')});await page.evaluate(()=>{state='dead';modal('RETRY','test','RETRY');});await page.locator('[data-character="denden"]').click();await page.locator('#start').click();assert.equal(await page.evaluate(()=>selectedCharacter),'denden');assert.equal(await page.locator('[data-skill="2"] small').textContent(),'03 READY');assert.deepEqual(errors,[]);console.log(mobile?'TOUCH':'KEYBOARD',result);await context.close();
  }}finally{await browser.close();server.close();}

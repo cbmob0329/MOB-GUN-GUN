@@ -1,0 +1,14 @@
+Tool: built-in image_gen. All PNGs retained with original alpha.
+Layout: 4 columns x 4 rows, 16 poses each for Denden and Nyoro; effects sheet contains 16 electric/fire dive and landing effects.
+Runtime: Nyoro frames use connected-silhouette isolation shared with nyoro-combo.js; other source bounds are in dive.js. Original atlas height is retained for display scale.
+
+Denden prompt:
+Transparent pixel art GAME SPRITE SHEET, exactly FOUR columns FOUR rows =16 distinct small frames in equal cells. 1024x1024 square. Each entire sprite within its256x256 cell with30px transparent margin, never overlap cells. Same character body scale. Row1 four anticipation poses drawing legs up in midair; row2 four feet-first diving poses; row3 four landing crouch poses; row4 four recovery standing poses. Faces RIGHT. Bold dark outlines crisp cartoon pixel art, no background, no labels, no effects, no glow. Reference is character identity, preserve costume/colors/face. Yellow cat Denden in pink cat-eared hoodie, huge black round goggles, black pistol held safely to side, feet-first electric stomp.
+
+Nyoro prompt:
+Transparent pixel art GAME SPRITE SHEET, exactly FOUR columns FOUR rows =16 distinct small frames in equal cells. 1024x1024 square. Each entire sprite within its256x256 cell with30px transparent margin, never overlap cells. Same character body scale. Row1 four anticipation poses drawing legs up in midair; row2 four feet-first diving poses; row3 four landing crouch poses; row4 four recovery standing poses. Faces RIGHT. Bold dark outlines crisp cartoon pixel art, no background, no labels, no effects, no glow. Nyoro black and orange lava patterned cat with yellow-rim goggles and flame umbrella. Folds umbrella pointing down beside body for fiery dive, opens on recovery. Reference is character identity, preserve costume/colors/face.
+
+Effects prompt:
+Transparent pixel art sprite atlas 1024 square, 4 columns 4 rows,16 equal cells with generous transparent gutters. NO characters. Row1 four frames cyan white downward speed streak; row2 four frames cyan electrical ground impact growing then fading; row3 four frames orange yellow downward fire trail; row4 four frames orange ground flame shockwave growing then fading. Crisp chunky cartoon pixel art, black outline where appropriate, no smooth glow, no text, all effects fit their own cell. Ground impact sprites sit at same baseline in their cell.
+
+Effects correction: row gutters at y=318,635,957 on the 1254px atlas, plus per-row horizontal gutters. This excludes dive flame tips from landing frames and neighbouring landing flames.

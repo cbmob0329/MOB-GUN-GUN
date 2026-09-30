@@ -4,14 +4,14 @@ const miraFrames={};
 let adminUnlocked=false,miraAction=null,miraCooldowns=[0,0],miraShots=[],miraEffects=[],bossRoom=null;
 async function loadMira(){await Promise.all(Array.from({length:43},async(_,i)=>{const n=i+1;miraFrames[n]=await trimFrame(`enemy/miramob/${n<=25?String(n).padStart(3,'0'):n}.png`);}));}
 function resetMira(){miraAction=null;miraCooldowns=[0,0];miraShots=[];miraEffects=[];
- bossRoom={x:20150,right:21430,state:'idle',portalX:20070,age:0,spawnClock:5,spawned:0,boss:null,camera:20150};
- platforms=platforms.filter(p=>p.x+p.w<bossRoom.portalX-140);platforms.push({x:20430,y:410,w:175,h:24,bossPlatform:true},{x:20970,y:355,w:175,h:24,bossPlatform:true});
+ if(!currentArea().boss){bossRoom=null;return;} bossRoom={x:CONFIG.worldWidth-1650,right:CONFIG.worldWidth-370,state:'idle',portalX:CONFIG.worldWidth-1730,age:0,spawnClock:5,spawned:0,boss:null,camera:CONFIG.worldWidth-1650};
+ platforms=platforms.filter(p=>p.x+p.w<bossRoom.portalX-140);platforms.push({x:bossRoom.x+280,y:410,w:175,h:24,bossPlatform:true},{x:bossRoom.x+820,y:355,w:175,h:24,bossPlatform:true});
  let relocated=0;for(const e of enemies)if(e.x>=bossRoom.x-100){e.x=bossRoom.x-250-(relocated++%6)*95;e.home=e.x;e.range=40;}crates=crates.filter(e=>e.x<bossRoom.x-100);coins=coins.filter(c=>c.x<bossRoom.x-100);
- crates.push({type:'crate',x:20000,y:548,w:48,h:48,hp:12,maxHP:12,death:-1,flash:0});
+ crates.push({type:'crate',x:bossRoom.portalX-70,y:548,w:48,h:48,hp:12,maxHP:12,death:-1,flash:0});
 }
 function bossIntro(){return bossRoom&&['warping','closing'].includes(bossRoom.state);}
 function dropBossDorayaki(e){if(!e.bossAdd||bossRoom?.state!=='fighting'||Math.random()>=.4)return;dorayaki.push({x:e.x,y:Math.min(510,e.y-e.h/2),baseY:528,vy:-160,age:0});}
-function clearBossEntryAttacks(){clearInput();cancelNyoro();tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];comboWindow=0;anomaBursts=[];miraAction=null;miraShots=[];miraEffects=[];bullets=[];energyShots=[];explosions=[];lightning=[];dirtBalls=[];bombBursts=[];thunderBullet=null;thunderBursts=[];giantThunder=null;groundBolts=[];skillState.charging=false;skillState.charge=0;skillState.thunderLeft=0;skillState.thunderAge=10;skillState.releaseAge=10;particles=[];}
+function clearBossEntryAttacks(){resetDive();clearInput();cancelNyoro();tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];comboWindow=0;anomaBursts=[];miraAction=null;miraShots=[];miraEffects=[];bullets=[];energyShots=[];explosions=[];lightning=[];dirtBalls=[];bombBursts=[];thunderBullet=null;thunderBursts=[];giantThunder=null;groundBolts=[];skillState.charging=false;skillState.charge=0;skillState.thunderLeft=0;skillState.thunderAge=10;skillState.releaseAge=10;particles=[];}
 function bossLocked(){return bossRoom&&['closing','fighting','opening'].includes(bossRoom.state);}
 function miraStart(actor,type){const a={type,age:0,dir:actor.dir,hit:new Set(),next:0};if(actor===player)miraAction=a;else actor.action=a;return a;}
 function miraAttack(){if(state==='playing'&&!bossIntro()&&selectedCharacter==='miramob'&&!miraAction)miraStart(player,'normal');}

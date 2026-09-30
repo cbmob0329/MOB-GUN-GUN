@@ -1,9 +1,9 @@
 'use strict';
-const NYORO=Object.freeze({jumpForce:790,normal:18,upper:26,ember:4,rain:24,meteor:64,burn:2,cooldowns:[8,11,16]});
-const nyoroFrames={},nyoroFire=[];
+const NYORO=Object.freeze({jumpForce:790,normal:18,upper:26,comboSweep:22,comboBurst:32,ember:4,rain:24,meteor:64,burn:2,cooldowns:[8,11,16]});
+const nyoroFrames={},nyoroFire=[],nyoroComboArt={};
 let nyoroAction=null,nyoroCooldowns=[0,0,0],nyoroGlide=false,nyoroGlideUsed=false,nyoroCombo=0,nyoroFireClock=0,nyoroShots=[],nyoroFX=[],nyoroSummon=null,bombBursts=[];
-async function loadNyoro(){await Promise.all([...Array.from({length:42},(_,i)=>i+1),235,236,237,238].map(async n=>{nyoroFrames[n]=await trimFrame(`nyoro/${String(n).padStart(3,'0')}.png`);}));await Promise.all(Array.from({length:5},async(_,i)=>{nyoroFire[i]=await trimFrame(`nyoro/0${i+1}.png`);}));}
-function cancelNyoro(){nyoroAction=null;nyoroGlide=false;nyoroGlideUsed=false;nyoroCombo=0;nyoroShots=[];nyoroSummon=null;nyoroFX=[];}
+async function loadNyoro(){await Promise.all([...Array.from({length:42},(_,i)=>i+1),235,236,237,238].map(async n=>{nyoroFrames[n]=await trimFrame(`nyoro/${String(n).padStart(3,'0')}.png`);}));await Promise.all(Array.from({length:5},async(_,i)=>{nyoroFire[i]=await trimFrame(`nyoro/0${i+1}.png`);}));await loadNyoroCombo();}
+function cancelNyoro(){resetNyoroOrbs();nyoroAction=null;nyoroGlide=false;nyoroGlideUsed=false;nyoroCombo=0;nyoroShots=[];nyoroSummon=null;nyoroFX=[];}
 function resetNyoro(){cancelNyoro();nyoroCooldowns=[0,0,0];nyoroFireClock=0;}
 function nyoroAttack(){if(selectedCharacter!=='nyoro'||state!=='playing'||bossIntro())return;if(nyoroAction){if(nyoroAction.type==='normal')nyoroAction.queued=true;return;}nyoroGlide=false;nyoroAction={type:nyoroCombo>0?'upper':'normal',age:0,dir:player.dir,hit:new Map()};nyoroCombo=0;}
 function castNyoro(i){if(state!=='playing'||bossIntro()||selectedCharacter!=='nyoro'||nyoroAction||nyoroCooldowns[i]>0)return;nyoroGlide=false;nyoroAction={type:['rain','meteor','summon'][i],age:0,dir:player.dir,hit:new Map(),spawned:0};nyoroCooldowns[i]=NYORO.cooldowns[i];}
@@ -20,8 +20,13 @@ function updateNyoro(dt){
  if(nyoroGlide){nyoroFireClock-=dt;if(nyoroFireClock<=0){nyoroFireClock=.28;addFire('ember',clamp(player.x+player.dir*90+(Math.random()-.5)*200,20,CONFIG.worldWidth-20),Math.min(-45,player.y-400));}}else nyoroFireClock=0;
  const a=nyoroAction;if(a){a.age+=dt;const t=a.age;
   if(a.type==='normal'||a.type==='upper'){
-   if(t>=.16&&!a.struck){a.struck=true;if(a.type==='normal')tetsuHit(a,0,player.x+a.dir*65,player.y-40,150,105,NYORO.normal);else{nyoroFX.push({x:player.x,y:player.y,dir:a.dir,r:245,age:0,kind:'groundWave',hit:new Set()});}}
-   if(t>=(a.type==='normal'?.44:.58)){nyoroAction=null;if(a.type==='normal'){nyoroCombo=.28;if(a.queued)nyoroAttack();}}
+   if(t>=.16&&!a.struck){a.struck=true;if(a.type==='normal')tetsuHit(a,0,player.x+a.dir*65,player.y-40,150,105,NYORO.normal);else{nyoroFX.push({x:player.x,y:player.y,dir:a.dir,r:245,age:0,kind:'groundWave',hit:new Set(),owner:a});}}
+   if(t>=(a.type==='normal'?.44:.58)){nyoroAction=null;if(a.type==='normal'){nyoroCombo=.28;if(a.queued)nyoroAttack();}else nyoroAction={type:'followup',age:0,dir:a.dir,hit:new Map(),upperTargets:a.upperTargets||[]};}
+  }else if(a.type==='followup'){
+   if(t>=.12&&!a.orbUp){a.orbUp=true;spawnNyoroOrb(a,true);}
+   if(t>=.52&&!a.orbForward){a.orbForward=true;spawnNyoroOrb(a,false);}
+
+   if(t>=.9)nyoroAction=null;
   }else if(a.type==='rain'){
    while(a.spawned<5&&t>=.12+a.spawned*.20){a.spawned++;const targets=enemies.filter(e=>e.death<0&&Math.abs(e.x-player.x)<420);const target=targets.length?targets[Math.floor(Math.random()*targets.length)]:null;addFire('rain',clamp(target?target.x+(Math.random()-.5)*70:player.x+(Math.random()-.5)*800,30,CONFIG.worldWidth-30),Math.min(-80,player.y-620),a);}
    if(a.spawned===5&&!nyoroShots.some(s=>s.owner===a))nyoroAction=null;
@@ -39,9 +44,9 @@ function updateNyoro(dt){
  }
  nyoroShots=nyoroShots.filter(s=>s.life>0&&s.y<H+150);for(const f of nyoroFX){f.age+=dt;if(f.kind==='groundWave'){
   const reach=Math.min(1,f.age/.30)*f.r;
-  for(const e of combatTargets()){const forward=(e.x-f.x)*f.dir,ground=supportFloorAt(e.x,f.y-60);if(e.death>=0||f.hit.has(e)||forward< -25||forward>reach+e.w/2||!Number.isFinite(ground)||e.y<ground-85||e.y-e.h>ground+8)continue;f.hit.add(e);hitEnemy(e,NYORO.upper,f.dir);burnEnemy(e);launchEnemy(e,f.dir*170,-820,5);}
+  for(const e of combatTargets()){const forward=(e.x-f.x)*f.dir,ground=supportFloorAt(e.x,f.y-60);if(e.death>=0||f.hit.has(e)||forward< -25||forward>reach+e.w/2||!Number.isFinite(ground)||e.y<ground-85||e.y-e.h>ground+8)continue;f.hit.add(e);if(f.owner){f.owner.upperTargets??=[];f.owner.upperTargets.push(e);}hitEnemy(e,NYORO.upper,f.dir);burnEnemy(e);launchEnemy(e,f.dir*170,-820,5);}
  }}nyoroFX=nyoroFX.filter(f=>f.age<(f.kind==='explosion'?1.1:.55));
- updateSummon(dt);
+ updateNyoroOrbs(dt);updateSummon(dt);
 }
 // The solid roof follows the house, excluding smoke and flame tips.
 const SUMMON_ROOF=[[0,.85],[.18,.66],[.34,.51],[.51,.32],[.66,.50],[.82,.60],[1,.83]];
@@ -49,7 +54,12 @@ function summonRoofY(x,s=nyoroSummon){if(!s||x<s.x||x>s.x+s.w)return Infinity;co
 function releaseSummon(s){
  for(const p of [player,pink,...enemies]){if(!p||p.death>=0||Math.abs(p.y-summonRoofY(p.x,s))>10)continue;
   if(p===player||p===pink){p.vy=-420;p.grounded=false;p.coyote=0;if(p===player){p.jumpsUsed=1;p.jumpAge=0;nyoroGlide=false;nyoroGlideUsed=false;jumpRequest=0;}}
-  else{p.summonRider=false;launchEnemy(p,0,-420);p.launch.floor=s.base;}
+  else{p.summonRider=false;p.terrainVy=0;
+   // Mira resists launchEnemy and never receives a launch object.
+   // Hand it back to the boss physics instead of writing a missing launch.floor.
+   if(p.type==='miramob'){p.airMode='fall';p.vy=0;p.grounded=false;}
+   else{launchEnemy(p,0,-420);if(p.launch)p.launch.floor=s.base;}
+  }
  }
  nyoroSummon=null;
 }
@@ -72,14 +82,14 @@ function updateSummon(dt){
 function fireSprite(i,x,y,size){const f=nyoroFire[i];if(!f)return;const k=size/Math.max(f.width,f.height);ctx.drawImage(f,x-camera-f.width*k/2,y-f.height*k/2,f.width*k,f.height*k);}
 const NYORO_FACE_WIDTH={1:.32,9:.31,10:.30,11:.34,12:.23,13:.21,14:.21,15:.34,16:.32,17:.34,18:.35,19:.34,20:.36,21:.34,22:.35,23:.40};
 function nyoroScale(n){const f=nyoroFrames[n];return NYORO_FACE_WIDTH[n]?26/(f.width*NYORO_FACE_WIDTH[n]):CONFIG.playerHeight/f.height;}
-function drawNyoro(){const a=nyoroAction,t=a?.age||0;let n=1;if(a){n=a.type==='normal'?9+Math.min(7,Math.floor(t/.055)):a.type==='upper'?17+Math.min(6,Math.floor(t/.083)):a.type==='rain'?32+Math.floor(t*10)%2:a.type==='meteor'?34+Math.min(8,Math.floor(t/.122)):t<1?31:39;}else n=nyoroGlide?26+Math.floor(player.anim*12)%6:!player.grounded?(player.jumpAge<.12?24:25):Math.abs(player.vx)>1?1+Math.floor(player.anim*12)%8:1;
+function drawNyoro(){if(nyoroAction?.type==='followup'){drawNyoroComboBody();return;}const a=nyoroAction,t=a?.age||0;let n=1;if(a){n=a.type==='normal'?9+Math.min(7,Math.floor(t/.055)):a.type==='upper'?17+Math.min(6,Math.floor(t/.083)):a.type==='rain'?32+Math.floor(t*10)%2:a.type==='meteor'?34+Math.min(8,Math.floor(t/.122)):t<1?31:39;}else n=nyoroGlide?26+Math.floor(player.anim*12)%6:!player.grounded?(player.jumpAge<.12?24:25):Math.abs(player.vx)>1?1+Math.floor(player.anim*12)%8:1;
  const f=nyoroFrames[n];if(!f)return;
  // Face width is stable across crouches, umbrella swings and differently sized source sheets.
  const k=nyoroScale(n);
  ctx.save();ctx.translate(player.x-camera+(a?.type==='summon'&&t<1?Math.sin(t*95)*2:0),player.y);ctx.scale(player.dir,1);if(player.inv>0&&Math.floor(player.inv*16)%2===0)ctx.globalAlpha=.35;if(a?.type==='summon'){ctx.shadowColor='#ff3e21';ctx.shadowBlur=20+Math.sin(t*25)*8;}ctx.drawImage(f,-f.width*k*.5,-f.height*k,f.width*k,f.height*k);if(a?.type==='summon'&&t<1){ctx.globalAlpha=.25+.15*Math.sin(t*25);ctx.drawImage(getTint(f),-f.width*k*.5,-f.height*k,f.width*k,f.height*k);}ctx.restore();
 }
 function drawSummon(){const s=nyoroSummon;if(!s)return;const n=s.age<.5?235+Math.min(2,Math.floor(s.age/.167)):237+Math.floor(s.age*12)%2;const f=nyoroFrames[n];if(!f)return;const shake=s.age>.5?Math.sin(elapsed*38)*2:0;ctx.save();ctx.beginPath();ctx.rect(s.x-camera-5,s.y,s.w+10,s.h);ctx.clip();ctx.drawImage(f,s.x-camera+shake,s.y,s.w,s.w*f.height/f.width);ctx.restore();}
-function drawNyoroEffects(){for(const s of nyoroShots){if(s.kind==='ember'){fireSprite(Math.floor(s.age*12)%3,s.x,s.y,28);continue;}const f=nyoroFire[s.kind==='rain'?3:4],size=s.kind==='rain'?92:190,k=size/Math.max(f.width,f.height);ctx.save();ctx.translate(s.x-camera,s.y);ctx.scale(s.vx>0?-1:1,1);ctx.drawImage(f,-f.width*k/2,-f.height*k/2,f.width*k,f.height*k);ctx.restore();}for(const e of enemies)if(e.burn>0&&e.death<0)fireSprite(Math.floor(elapsed*12)%3,e.x,e.y-20,35);if(pink?.burn>0){fireSprite(Math.floor(elapsed*12)%3,pink.x,pink.y-20,32);}
+function drawNyoroEffects(){drawNyoroComboFX();for(const s of nyoroShots){if(s.kind==='ember'){fireSprite(Math.floor(s.age*12)%3,s.x,s.y,28);continue;}const f=nyoroFire[s.kind==='rain'?3:4],size=s.kind==='rain'?92:190,k=size/Math.max(f.width,f.height);ctx.save();ctx.translate(s.x-camera,s.y);ctx.scale(s.vx>0?-1:1,1);ctx.drawImage(f,-f.width*k/2,-f.height*k/2,f.width*k,f.height*k);ctx.restore();}for(const e of enemies)if(e.burn>0&&e.death<0)fireSprite(Math.floor(elapsed*12)%3,e.x,e.y-20,35);if(pink?.burn>0){fireSprite(Math.floor(elapsed*12)%3,pink.x,pink.y-20,32);}
  for(const f of nyoroFX){ctx.save();ctx.globalAlpha=Math.max(0,1-f.age/(f.kind==='explosion'?1.1:.55));if(f.kind==='explosion'){
   const t=f.age/1.1;ctx.fillStyle='#fff3b5';ctx.beginPath();ctx.arc(f.x-camera,f.y-25,Math.max(0,1-t)*f.r*.7,0,Math.PI*2);ctx.fill();ctx.strokeStyle='#ffcb54';ctx.lineWidth=7*(1-t)+1;ctx.beginPath();ctx.ellipse(f.x-camera,f.y,30+t*f.r*1.25,10+t*f.r*.24,0,0,Math.PI*2);ctx.stroke();
   for(let i=0;i<14;i++){const a=Math.PI+i*Math.PI/13,r=f.r*(.35+t);ctx.strokeStyle=i%2?'#fff5cf':'#ff7d25';ctx.lineWidth=4*(1-t)+1;ctx.beginPath();ctx.moveTo(f.x-camera+Math.cos(a)*r*.6,f.y+Math.sin(a)*r*.6);ctx.lineTo(f.x-camera+Math.cos(a)*r,f.y+Math.sin(a)*r);ctx.stroke();}

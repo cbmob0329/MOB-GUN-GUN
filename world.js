@@ -1,35 +1,17 @@
 'use strict';
 const WORLD=Object.freeze({heal:8,crateHP:12,collapseDelay:.5,collapseRestore:4,trampolineSpeed:1050});
 let gaps=[],bridges=[],ramps=[],crumbles=[],trampolines=[],arenas=[],crates=[],dorayaki=[],worldEffects=[],checkpoint={x:140,y:548};
-function resetWorld(){
- gaps=[{x:3600,w:540},{x:7600,w:540}];bridges=[{x:3580,w:580,y:548}];
- ramps=[{x:5000,w:400,y:548,endY:420}];
- crumbles=Array.from({length:6},(_,i)=>({x:7600+i*90,y:532,w:90,h:16,type:'crumble',timer:-1,gone:false,restore:0}));
- trampolines=[{x:6500,y:548,w:100,pulse:0},{x:14500,y:548,w:100,pulse:0}];
- arenas=[9500,17100].map((x,i)=>({id:i,x,right:x+1050,state:'idle',age:0,wave:0,spawned:0,waves:3,perWave:16,clock:0}));
- // Clear deliberate feature zones so generated ledges cannot hide a gap or arena.
- const zones=[[3500,4300],[4950,6000],[6400,7100],[7500,8250],...arenas.map(a=>[a.x-100,a.right+100])];
- platforms=platforms.filter(p=>!zones.some(([l,r])=>p.x+p.w>l&&p.x<r));
- platforms.push({x:5400,y:420,w:100,h:128,solid:true,type:'stair'});
- for(let i=0;i<5;i++)platforms.push({x:5500+i*80,y:444+i*24,w:80,h:104-i*24,solid:true,type:'stair'});
- platforms.push({x:6740,y:300,w:220,h:25},{x:14720,y:300,w:240,h:25});
- for(const x of [6780,6820,6860,6900,14760,14800,14840,14880,14920])coins.push({x,y:260,taken:false});
- // Move existing ground enemies out of the canyon/terrain demonstrations.
- for(const e of enemies)if(zones.slice(0,4).some(([l,r])=>e.x>l&&e.x<r)){const zone=zones.find(([l,r])=>e.x>l&&e.x<r);e.x=zone[1]+60+(e.phase%3)*55;e.home=e.x;e.range=45;}
- crates=[650,2800,4450,6100,8500,9350,10900,13900,16600,18600,20700].map(x=>({type:'crate',x,y:CONFIG.groundY,w:48,h:48,hp:WORLD.crateHP,maxHP:WORLD.crateHP,death:-1,flash:0}));
- for(const a of arenas)for(const offset of [350,700])crates.push({type:'crate',x:a.x+offset,y:CONFIG.groundY,w:48,h:48,hp:WORLD.crateHP,maxHP:WORLD.crateHP,death:-1,flash:0,arenaId:a.id});
- dorayaki=[];worldEffects=[];checkpoint={x:140,y:CONFIG.groundY};
-}
+function resetWorld(){buildGrassArea();}
 function combatTargets(){return [...enemies,...crates.filter(c=>c.death<0)];}
-function damageCrate(c,damage){if(c.death>=0)return;c.hp=Math.max(0,c.hp-damage);c.flash=.12;if(c.hp===0){c.death=0;burst(c.x,c.y-24,16,'#cf9b58');dorayaki.push({x:c.x,y:c.y-50,baseY:c.y-20,vy:-160,age:0});}}
+function damageCrate(c,damage){if(c.propKind){damageGrassProp(c,damage);return;}if(c.death>=0)return;c.hp=Math.max(0,c.hp-damage);c.flash=.12;if(c.hp===0){c.death=0;burst(c.x,c.y-24,16,'#cf9b58');dorayaki.push({x:c.x,y:c.y-50,baseY:c.y-20,vy:-160,age:0});}}
 function groundAt(x){return gaps.some(g=>x>g.x&&x<g.x+g.w)?Infinity:CONFIG.groundY;}
 function bridgeY(b,x){return b.y+20*Math.sin(clamp((x-b.x)/b.w,0,1)*Math.PI);}
-function stageSurfaces(){return [...platforms,...crumbles.filter(c=>!c.gone)];}
+function stageSurfaces(){return [...platforms,...grassSolidBoxes(),...crumbles.filter(c=>!c.gone)];}
 function arenaForPlayer(){return arenas.find(a=>a.state==='closing'||a.state==='fighting'||a.state==='opening');}
 function arenaGateBoxes(){return arenas.filter(a=>!['idle','cleared'].includes(a.state)).flatMap(a=>[a.x+25,a.right-25].map(x=>({x:x-52,y:88,w:104,h:460})));}
 function resolveStageSides(p,oldX,oldY,wasGrounded){
  const half=CONFIG.playerColliderWidth/2;
- for(const platform of platforms){if(!platform.solid||oldY<=platform.y+1||p.y-CONFIG.playerColliderHeight>=platform.y+platform.h)continue;
+ for(const platform of [...platforms,...grassSolidBoxes()]){if(!platform.solid||oldY<=platform.y+1||p.y-CONFIG.playerColliderHeight>=platform.y+platform.h)continue;
   if(p.x+half>platform.x&&p.x-half<platform.x+platform.w){
    if(platform.type==='stair'&&wasGrounded&&oldY-platform.y<=26){p.y=platform.y;oldY=platform.y;continue;}
    if(oldX+half<=platform.x)p.x=platform.x-half;else if(oldX-half>=platform.x+platform.w)p.x=platform.x+platform.w+half;
@@ -53,7 +35,7 @@ function onStageLanding(){
  for(const t of trampolines)if(p.x>t.x&&p.x<t.x+t.w&&Math.abs(p.y-t.y)<1){p.vy=-WORLD.trampolineSpeed;p.grounded=false;p.coyote=0;p.jumpsUsed=0;p.jumpAge=0;t.pulse=.35;burst(p.x,p.y-5,12,'#8ff5e2');}
 }
 function landingEffect(x,y){worldEffects.push({kind:'impact',x,y,age:0,duration:.42});burst(x,y-3,24,'#bb85ff');}
-function respawnFromFall(){
+function respawnFromFall(){resetDive();ropeRide=null;ropeRegrab=.65;
  const p=player;p.hp=Math.max(1,Math.ceil(p.hp/2));p.x=checkpoint.x;p.y=checkpoint.y;p.vx=p.vy=p.knock=0;p.grounded=true;p.jumpsUsed=0;p.inv=2;p.red=0;
  cancelNyoro();miraAction=null;miraShots=[];miraEffects=[];giantThunder=null;groundBolts=[];tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;pink.magic=null;pink.stun=0;pink.knock=0;pink.hurtGrace=0;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
  for(const c of crumbles){c.gone=false;c.timer=-1;c.restore=0;}
@@ -81,7 +63,7 @@ function updateArenas(dt){
   else for(const a of arenas){if(['idle','cleared'].includes(a.state))continue;if(e.x>a.x-65&&e.x<a.x+65){e.x=a.x-65;e.dir=-1;}if(e.x>a.right-65&&e.x<a.right+65){e.x=a.right+65;e.dir=1;}}
  }
 }
-function updateWorld(dt){
+function updateWorld(dt){updateGrass(dt);
  updateArenas(dt);
  for(const c of crumbles){if(c.timer>=0&&!c.gone){c.timer+=dt;if(c.timer>=WORLD.collapseDelay){c.gone=true;c.restore=WORLD.collapseRestore;burst(c.x+c.w/2,c.y,8,'#bba376');}}else if(c.gone){c.restore-=dt;if(c.restore<=0){c.gone=false;c.timer=-1;}}}
  for(const t of trampolines)t.pulse=Math.max(0,t.pulse-dt);
@@ -92,12 +74,12 @@ function updateWorld(dt){
  if(player.grounded&&Math.abs(player.y-CONFIG.groundY)<.5&&!arenaForPlayer()&&!bossLocked()&&!gaps.some(g=>player.x>g.x-100&&player.x<g.x+g.w+100)&&!trampolines.some(t=>Math.abs(player.x-t.x)<140))checkpoint={x:player.x,y:player.y};
 }
 function drawWorld(){
- for(const g of gaps){const x=g.x-camera;rounded(x,548,g.w,172,0,'#182d38');ctx.fillStyle='#0c1c2c';ctx.fillRect(x+12,575,g.w-24,145);text('↓',x+g.w/2,675,28,'#567285');}
+ for(const g of gaps){const x=g.x-camera;rounded(x,545,g.w,Math.max(175,H+cameraY-545),0,'#182d38');ctx.fillStyle='#0c1c2c';ctx.fillRect(x+12,575,g.w-24,Math.max(145,H+cameraY-575));text('↓',x+g.w/2,675,28,'#567285');}
  for(const r of ramps){const x=r.x-camera;ctx.fillStyle='#776443';ctx.beginPath();ctx.moveTo(x,r.y);ctx.lineTo(x+r.w,r.endY);ctx.lineTo(x+r.w,548);ctx.closePath();ctx.fill();ctx.strokeStyle='#b1d46a';ctx.lineWidth=8;ctx.beginPath();ctx.moveTo(x,r.y);ctx.lineTo(x+r.w,r.endY);ctx.stroke();}
  for(const b of bridges){const x=b.x-camera;ctx.strokeStyle='#bba775';ctx.lineWidth=4;for(const offset of [-55,-35]){ctx.beginPath();for(let i=0;i<=24;i++){const px=b.x+b.w*i/24,y=bridgeY(b,px)+offset;if(!i)ctx.moveTo(px-camera,y);else ctx.lineTo(px-camera,y);}ctx.stroke();}for(let i=0;i<24;i++){const px=b.x+i*b.w/24,y=bridgeY(b,px);rounded(px-camera,y,b.w/24-3,12,2,'#ae8350');if(i%2===0){ctx.beginPath();ctx.moveTo(px-camera,y-52);ctx.lineTo(px-camera,y);ctx.stroke();}}for(const px of [x,x+b.w])rounded(px-4,b.y-80,8,99,3,'#765738');}
  for(const c of crumbles){if(c.gone)continue;const shake=c.timer>=0?Math.sin(elapsed*65)*2:0;rounded(c.x-camera+shake,c.y,c.w-3,c.h,3,c.timer<0?'#b4a17d':'#e6aa62');ctx.strokeStyle='#5e5243';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(c.x-camera+25,c.y);ctx.lineTo(c.x-camera+42,c.y+8);ctx.lineTo(c.x-camera+36,c.y+16);ctx.stroke();}
  for(const t of trampolines){const x=t.x-camera,y=t.y;ctx.strokeStyle='#d9dbb3';ctx.lineWidth=4;for(let i=10;i<t.w;i+=20){ctx.beginPath();ctx.moveTo(x+i,y+17);ctx.lineTo(x+i+7,y+10);ctx.lineTo(x+i,y+4);ctx.stroke();}rounded(x,y-5+t.pulse*15,t.w,9,4,'#62e1bf');text('↑',x+t.w/2,y-22,28,'#aaffdd');}
- for(const c of crates){if(c.death>=0)continue;const x=c.x-camera;rounded(x-c.w/2,c.y-c.h,c.w,c.h,4,c.flash>0?'#fff2b3':'#bb8749');ctx.strokeStyle='#704a29';ctx.lineWidth=4;ctx.strokeRect(x-20,c.y-44,40,40);ctx.beginPath();ctx.moveTo(x-18,c.y-42);ctx.lineTo(x+18,c.y-6);ctx.moveTo(x+18,c.y-42);ctx.lineTo(x-18,c.y-6);ctx.stroke();text('焼',x,c.y-17,19,'#fff0bd');}
+ for(const c of crates){if(c.death>=0||c.propKind)continue;const x=c.x-camera;rounded(x-c.w/2,c.y-c.h,c.w,c.h,4,c.flash>0?'#fff2b3':'#bb8749');ctx.strokeStyle='#704a29';ctx.lineWidth=4;ctx.strokeRect(x-20,c.y-44,40,40);ctx.beginPath();ctx.moveTo(x-18,c.y-42);ctx.lineTo(x+18,c.y-6);ctx.moveTo(x+18,c.y-42);ctx.lineTo(x-18,c.y-6);ctx.stroke();text('焼',x,c.y-17,19,'#fff0bd');}
  for(const d of dorayaki){const x=d.x-camera,y=d.y+Math.sin(d.age*4)*3;ctx.fillStyle='#ffefac33';ctx.beginPath();ctx.arc(x,y,25,0,Math.PI*2);ctx.fill();for(const [offset,color] of [[5,'#bb7738'],[1,'#583126'],[-4,'#e9b660']]){ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(x,y+offset,17,7,0,0,Math.PI*2);ctx.fill();}ctx.fillStyle='#ffdc89';ctx.beginPath();ctx.ellipse(x-4,y-6,6,2,0,0,Math.PI*2);ctx.fill();}
 }
 function drawArenaGates(){for(const a of arenas){if(a.state==='idle'||a.state==='cleared')continue;const offset=a.state==='closing'?-650*(1-clamp(a.age/.65,0,1))**2:a.state==='opening'?-650*clamp(a.age/.7,0,1):0;for(const worldX of [a.x+25,a.right-25]){const x=worldX-camera;for(let i=0;i<5;i++){const y=548-i*92+offset;ctx.fillStyle=i%2?'#6e7479':'#8b8e87';ctx.strokeStyle='#424d55';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(x-45,y);ctx.lineTo(x-52,y-53);ctx.lineTo(x-21,y-96);ctx.lineTo(x+27,y-89);ctx.lineTo(x+48,y-38);ctx.lineTo(x+37,y);ctx.closePath();ctx.fill();ctx.stroke();}}if(a.state==='fighting'){const left=a.waves*a.perWave-a.spawned+enemies.filter(e=>e.arenaId===a.id&&e.death<0).length;rounded(W/2-155,140,310,40,7,'#26333be8');text(`包囲戦 ${a.wave+1} / ${a.waves}  残り ${left}体`,W/2,166,20,'#ffdd86');}}}

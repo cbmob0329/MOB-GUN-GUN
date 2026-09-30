@@ -1,6 +1,6 @@
 'use strict';
 // Atlas rows: locomotion, recoil, collapse. Source rectangles preserve generated art.
-const LIME = Object.freeze({width:58,height:50,scale:.25,deathDuration:1.05});
+const LIME = Object.freeze({width:58,height:50,scale:.25,deathDuration:1.05,walkFrameSeconds:.30});
 let limeFrames=[];
 async function loadLime(){
  const img=await loadImage('enemy/lime-goggles/spritesheet.png');
@@ -15,12 +15,12 @@ async function loadLime(){
   return{img,x:l,y:t,w:r-l,h:b-t};
  }));
 }
-function limeFrameIndex(e){return e.death>=0?8+Math.min(3,Math.floor(e.death/.17)):e.flash>0?4+Math.min(3,Math.floor((.1-e.flash)/.025)):Math.floor((e.walkAge||0)/.14)%4;}
+function limeFrameIndex(e){return e.death>=0?8+Math.min(3,Math.floor(e.death/.17)):e.flash>0?4+Math.min(3,Math.floor((.1-e.flash)/.025)):[0,1,2,3,2,1][Math.floor((e.walkAge||0)/LIME.walkFrameSeconds)%6];}
 function updateLime(e,dt){
  e.walkAge=(e.walkAge||0)+dt;
  if(Math.abs(player.x-e.x)<360)e.dir=Math.sign(player.x-e.x)||e.dir;
  if(e.x<=e.home-e.range)e.dir=1;else if(e.x>=e.home+e.range)e.dir=-1;
- const speed=CONFIG.enemies.lime.speed*(.65+.35*Math.sin(e.walkAge*11)**2);
+ const speed=CONFIG.enemies.lime.speed*(.65+.35*Math.sin(e.walkAge*Math.PI/1.8)**2);
  const next=e.x+(e.dir*speed+e.knock)*dt;
  if(Number.isFinite(groundAt(next+e.dir*40)))e.x=clamp(next,e.home-e.range-15,e.home+e.range+15);else e.dir*=-1;
  e.knock*=Math.exp(-10*dt);

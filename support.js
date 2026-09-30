@@ -73,7 +73,7 @@ function drawPink(){
  const img=pinkFrames[i];if(!img)return;const body=i>=24&&i<32?.85:i>=8&&i<16?.93:1,scale=76/(img.height*body),x=p.x-camera;ctx.save();ctx.translate(x,p.y);ctx.scale(p.dir,1);ctx.drawImage(img,-img.width*scale*.48,-img.height*scale,img.width*scale,img.height*scale);ctx.restore();
  if(p.stun>0)for(let n=0;n<3;n++)text('✦',x+Math.cos(elapsed*7+n*2.1)*25,p.y-90+Math.sin(elapsed*7+n*2.1)*5,15,'#ffeda4');
  if(p.assist>0){const bx=clamp(x,135,W-135),by=Math.max(115,p.y-127);rounded(bx-126,by-25,252,34,9,'#fff1e4');text('お助けするであります！',bx,by-3,17,'#693e57');ctx.fillStyle='#fff1e4';ctx.beginPath();ctx.moveTo(bx-8,by+8);ctx.lineTo(bx+8,by+8);ctx.lineTo(x,by+22);ctx.fill();}
- button.hidden=state!=='playing'||bossIntro()||x<-60||x>W+60;button.style.left=`${(x-40)/W*100}%`;button.style.top=`${(p.y-90)/H*100}%`;
+ button.hidden=state!=='playing'||bossIntro()||x<-60||x>W+60;button.style.left=`${(x-40)/W*100}%`;button.style.top=`${(p.y-cameraY-90)/H*100}%`;
 }
 
 function drawBubbleExplosion(ex){const t=ex.age/.65;ctx.save();ctx.globalAlpha=(1-t)*.65;ctx.strokeStyle='#bbf9ff';ctx.lineWidth=4;ctx.beginPath();ctx.arc(ex.x-camera,ex.y,ex.r*(.2+t*.8),0,Math.PI*2);ctx.stroke();for(let i=0;i<18;i++){const a=i*2.399,x=ex.x-camera+Math.cos(a)*ex.r*t*.85,y=ex.y+Math.sin(a)*ex.r*t*.7,r=(12+i%5*6)*(1-t*.3);ctx.fillStyle=['#9cefff44','#f7bfff44','#fff0a044'][i%3];ctx.strokeStyle=['#b1f5ff','#ffd5f5','#fff4ba'][i%3];ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();ctx.stroke();ctx.strokeStyle='#ffffff';ctx.beginPath();ctx.arc(x,y,r*.68,3.4,4.7);ctx.stroke();}ctx.restore();}

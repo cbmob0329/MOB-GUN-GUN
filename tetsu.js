@@ -1,6 +1,6 @@
 'use strict';
 // Damage is per enemy and per animation phase, never per render frame.
-const TETSU = Object.freeze({normal:18,combo:28,comboMid:12,comboFinal:16,air:30,mob:[12,12,12,48],dash:36,afterimage:18,ultimate:96,cooldowns:[6,9,14]});
+const TETSU = Object.freeze({normal:18,combo:56,comboMid:12,comboFinal:16,comboExtra:28,normalSpeed:1.15,comboSpeed:1.5,air:30,mob:[12,12,12,48],dash:36,afterimage:18,ultimate:96,cooldowns:[6,9,14]});
 const tetsuFrames={};
 let selectedCharacter='denden',tetsuAction=null,tetsuEffects=[],tetsuGhosts=[],tetsuCooldowns=[0,0,0],comboWindow=0;
 // [body top, feet, body centre X] in the alpha-trimmed frame. Sword arcs,
@@ -27,6 +27,18 @@ async function loadTetsu(){
    return {img,sx:left,sy:top,w,h,scale:CONFIG.playerHeight/(h*(body[1]-body[0])),anchorX:w*body[2],anchorY:h*body[1]};
   }));
  }));
+ await loadTetsuFinisher();
+}
+async function loadTetsuFinisher(){
+ const img=await loadImage('tetsu/finisher/spritesheet.png'),surface=document.createElement('canvas');surface.width=img.width;surface.height=img.height;
+ const g=surface.getContext('2d',{willReadFrequently:true});g.drawImage(img,0,0);const pixels=g.getImageData(0,0,img.width,img.height).data;
+ for(let row=0;row<2;row++){const frames=[];for(let col=0;col<4;col++){
+  const edges=[0,.25,.484375,.7578125,1];
+  const x0=Math.floor(edges[col]*img.width),x1=Math.floor(edges[col+1]*img.width),y0=Math.floor(row*img.height/2),y1=Math.floor((row+1)*img.height/2);
+  let l=x1,r=x0,t=y1,b=y0;for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++)if(pixels[(y*img.width+x)*4+3]>16){l=Math.min(l,x);r=Math.max(r,x+1);t=Math.min(t,y);b=Math.max(b,y+1);}
+  if(r<=l||b<=t)throw Error('Empty Tetsu finisher cell');const w=r-l,h=b-t;
+  frames.push({img,sx:l,sy:t,w,h,scale:row?CONFIG.playerHeight/h:CONFIG.playerHeight/(img.height*250/1280),anchorX:row?w/2:img.width*[.115625,.3265625,.5796875,.828125][col]-l,anchorY:h});
+ }tetsuFrames[row?'FINISH_FX':'FINISH']=frames;}
 }
 function resetTetsu(){tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];tetsuCooldowns=[0,0,0];comboWindow=0;}
 function selectCharacter(character){
@@ -43,15 +55,16 @@ function updateCharacterUI(){
  skillButtons.forEach((b,i)=>{b.hidden=false;b.title=names[i];b.setAttribute('aria-label',names[i]);b.style.opacity='1';b.innerHTML=`<img src="${isTetsu?'tetsu/SKILL/'+['12','08','16'][i]+'.png':['skill/017.png','skill/86.png','skill/035.png'][i]}" alt=""><small></small>`;});
  $('character-copy').textContent=isTetsu?'モブテツ｜ATK 2回で連撃・空中ATKで茄子落とし。1：MOB斬り / 2：一閃 / 3：超吹き飛ばし':'デンデン｜8発で自動リロード（1秒・最後は雷ボム）。1：自動溜め撃ち / 2：落雷 / 3：雷弾';
  document.querySelector('#instructions span:last-child').innerHTML=isTetsu?'JUMP ＋ ATK<br><b>空中でモブテツ流茄子落とし</b>':'JUMP ＋ SHOOT<br><b>走りながら、空中でも撃てる</b>';
- if(isNyoro){const names=['ヒノフルカヨウ','炎列・大隕石','炎の召喚'];skillButtons.forEach((b,i)=>{b.hidden=false;b.title=names[i];b.setAttribute('aria-label',names[i]);b.innerHTML=`<img src="nyoro/${['04','05','237'][i]}.png" alt=""><small></small>`;});$('character-copy').textContent='モブニョロ｜ATK 2回で炎アッパー。空中で再ジャンプすると滑空＆火の雨。1：ヒノフルカヨウ / 2：大隕石 / 3：炎の足場';document.querySelector('.keyboard-help').textContent='A D 移動 / SHIFT ダッシュ / SPACE ジャンプ・再入力で滑空 / J 連撃 / 1・2・3 スキル / R 集合・2回で支援';document.querySelector('#instructions span:last-child').innerHTML='JUMP → JUMP<br><b>滑空しながら小さな炎を落とす</b>';}
+ if(isNyoro){const names=['ヒノフルカヨウ','炎列・大隕石','炎の召喚'];skillButtons.forEach((b,i)=>{b.hidden=false;b.title=names[i];b.setAttribute('aria-label',names[i]);b.innerHTML=`<img src="nyoro/${['04','05','237'][i]}.png" alt=""><small></small>`;});$('character-copy').textContent='モブニョロ｜ATK 2回で炎アッパー→追撃火球→正面火球。空中で再ジャンプすると滑空＆火の雨。1：ヒノフルカヨウ / 2：大隕石 / 3：炎の足場';document.querySelector('.keyboard-help').textContent='A D 移動 / SHIFT ダッシュ / SPACE ジャンプ・再入力で滑空 / J 連撃 / 1・2・3 スキル / R 集合・2回で支援';document.querySelector('#instructions span:last-child').innerHTML='JUMP → JUMP<br><b>滑空しながら小さな炎を落とす</b>';}
  if(selectedCharacter==='miramob'){$('shoot').innerHTML='<span>⚔</span>ATK';const names=['ゆらゆら四連斬','ミラモブポイズン'];skillButtons.forEach((b,i)=>{b.hidden=i===2;if(i<2){b.title=names[i];b.setAttribute('aria-label',names[i]);b.innerHTML=`<img src="enemy/miramob/${i===0?'38':'43'}.png" alt=""><small></small>`;}});document.querySelector('#instructions span:last-child').innerHTML='ATK ＋ SKILL<br><b>紫の爪斬りと髑髏の魔法</b>';$('character-copy').textContent='ミラモブ｜管理者プレイ。ATK：紫の爪斬り / 1：四連斬 / 2：ミラモブポイズン';document.querySelector('.keyboard-help').textContent='A D 移動 / SHIFT ダッシュ / SPACE ジャンプ / J 爪斬り / 1 四連斬 / 2 ミラモブポイズン';}
+ if(isNyoro||selectedCharacter==='denden'){document.querySelector('.keyboard-help').textContent+=' / S・↓ 落下攻撃';document.querySelector('#instructions span:last-child').innerHTML+='<br><b>空中で DIVE ／ S：落下攻撃</b>';}
  updateHUD();
 }
 function startTetsuAction(type){tetsuAction={type,age:0,dir:player.dir,hit:new Map(),queued:false,ghostClock:0};comboWindow=0;if(type==='ultimate')stunNearby();}
 function tetsuGravity(){return tetsuAction?.type==='combo'&&tetsuAction.lifted&&tetsuAction.age<.48?600:CONFIG.gravity;}
 function onTetsuLanding(){const a=tetsuAction;if(a?.type==='air'&&a.landedAt===undefined){a.landedAt=a.age;landingEffect(player.x,player.y);}}
 function tetsuAttack(){
- if(selectedCharacter!=='tetsu'||state!=='playing'||bossIntro())return;
+ if(selectedCharacter!=='tetsu'||state!=='playing'||bossIntro()||ropeRide)return;
  if(tetsuAction){if(tetsuAction.type==='normal')tetsuAction.queued=true;return;}
  startTetsuAction(!player.grounded?'air':comboWindow>0?'combo':'normal');
 }
@@ -71,13 +84,14 @@ function updateTetsu(dt){
  tetsuCooldowns=tetsuCooldowns.map(cd=>Math.max(0,cd-dt));comboWindow=Math.max(0,comboWindow-dt);
  for(const fx of tetsuEffects)fx.age+=dt;tetsuEffects=tetsuEffects.filter(f=>f.age<f.duration);
  for(const g of tetsuGhosts)g.life-=dt;tetsuGhosts=tetsuGhosts.filter(g=>g.life>0);
- const a=tetsuAction;if(!a)return;a.age+=dt*(a.type==='combo'?1.3:1);const p=player,t=a.age,x=p.x+a.dir*72,y=p.y-42;
+ const a=tetsuAction;if(!a)return;a.age+=dt*(a.type==='combo'?TETSU.comboSpeed:a.type==='normal'?TETSU.normalSpeed:1);const p=player,t=a.age,x=p.x+a.dir*72,y=p.y-42;
  if(a.type==='normal'&&t>=.08&&t<.24)tetsuHit(a,0,x,y,130,95,TETSU.normal);
  if(a.type==='combo'){
   if(t>=.16&&!a.lifted){a.lifted=true;p.vy=-150;p.grounded=false;p.coyote=0;}
   if(t>=.22&&t<.42)tetsuHit(a,'mid',x,y,160,105,TETSU.comboMid);
   if(a.lifted&&p.grounded&&a.landedAt===undefined){a.landedAt=t;burst(p.x+a.dir*35,p.y-3,10,'#bfe8ff');}
   if(a.landedAt!==undefined&&t-a.landedAt<.16)tetsuHit(a,'final',x,y,170,110,TETSU.comboFinal,[220,-190]);
+  if(a.landedAt!==undefined&&t-a.landedAt>=.19&&t-a.landedAt<.39)tetsuHit(a,'extra',p.x+a.dir*105,p.y-48,240,140,TETSU.comboExtra,[400,-230]);
  }
  if(a.type==='air'&&t>=.06){if(p.grounded)onTetsuLanding();tetsuHit(a,0,p.x+a.dir*25,p.y-20,a.landedAt===undefined?150:230,145,TETSU.air,[180,-650]);}
  if(a.type==='mob'&&t>=.16&&t<.88){const phase=Math.min(3,Math.floor((t-.16)/.18));tetsuHit(a,phase,p.x+a.dir*155,y-15,290,190,TETSU.mob[phase],phase===3?[850,-660]:null);if(phase===3&&!a.finisher){a.finisher=true;for(const targets of a.hit.values())for(const e of targets)launchEnemy(e,a.dir*850,-660);}}
@@ -88,7 +102,7 @@ function updateTetsu(dt){
  }
  if(a.type==='ultimate'&&t<1.1)stunNearby();
  if(a.type==='ultimate'&&t>=1.1&&t<1.78)tetsuHit(a,0,p.x+a.dir*140,y,320,220,TETSU.ultimate,[1050,-1150,19]);
- const duration={normal:.30,combo:a.landedAt===undefined?Infinity:a.landedAt+.20,air:a.landedAt===undefined?Infinity:a.landedAt+.22,mob:1.0,dash:.72,ultimate:2.12}[a.type];
+ const duration={normal:.30,combo:a.landedAt===undefined?Infinity:a.landedAt+.48,air:a.landedAt===undefined?Infinity:a.landedAt+.22,mob:1.0,dash:.72,ultimate:2.12}[a.type];
  if(t>=duration){tetsuAction=null;if(a.type==='normal'){if(a.queued)startTetsuAction('combo');else comboWindow=.22;}}
 }
 function tetsuPose(){
@@ -96,7 +110,7 @@ function tetsuPose(){
  if(a){const t=a.age;group={normal:'NA',combo:'HS',air:'JS',mob:'CS',dash:'HSP',ultimate:'PS'}[a.type];
   if(a.type==='ultimate')i=t<.1?0:t<1.1?1+Math.floor((t-.1)/.05)%2:t<1.26?3:t<1.42?4:t<1.82?5:t<1.97?6:7;
   else if(a.type==='air')i=a.landedAt!==undefined?(t-a.landedAt<.1?6:7):t<.06?3:t<.12?4:5;
-  else if(a.type==='combo')i=a.landedAt!==undefined?5:t<.10?0:t<.20?1:t<.28?2:t<.42?3:4;
+  else if(a.type==='combo'){if(a.landedAt!==undefined&&t-a.landedAt>=.10){group='FINISH';i=Math.min(3,Math.floor((t-a.landedAt-.10)/.09));}else i=a.landedAt!==undefined?5:t<.10?0:t<.20?1:t<.28?2:t<.42?3:4;}
   else i=Math.min(tetsuFrames[group].length-1,Math.floor(t/({normal:.05,combo:.0834,mob:.125,dash:.09}[a.type])));
  }else if(!player.grounded){group='JS';i=player.jumpAge<.1?0:player.vy<0?1:2;}
  else if(Math.abs(player.vx)>1){group=running?'HSP':'WK';i=running?1+Math.floor(player.anim*14)%3:Math.floor(player.anim*10)%7;}
@@ -114,6 +128,7 @@ function drawTetsuEffect(first,index,x,y,size,dir){const f=tetsuFrames.SKILL?.[f
 function drawTetsuEffects(){
  for(const f of tetsuEffects)drawTetsuEffect(f.first,Math.min(f.count-1,Math.floor(f.age/f.duration*f.count)),f.x,f.y,f.size,f.dir);
  const a=tetsuAction;if(!a)return;const t=a.age,p=player;
+ if(a.type==='combo'&&a.landedAt!==undefined){const age=t-a.landedAt-.13;if(age>=0&&age<.32){const f=tetsuFrames.FINISH_FX[Math.min(3,Math.floor(age/.08))],k=200/Math.max(f.w,f.h);ctx.save();ctx.imageSmoothingEnabled=false;ctx.translate(p.x-camera+a.dir*110,p.y-48);ctx.scale(a.dir,1);ctx.drawImage(f.img,f.sx,f.sy,f.w,f.h,-f.w*k/2,-f.h*k/2,f.w*k,f.h*k);ctx.restore();}}
  if(a.type==='mob'&&t>=.16&&t<.88){const i=Math.min(3,Math.floor((t-.16)/.18));drawTetsuEffect(8,i,p.x+a.dir*155,p.y-57,i===3?330:290,a.dir);}
  if(a.type==='dash'&&t>=.08&&t<.64)drawTetsuEffect(4,Math.min(3,Math.floor((t-.08)/.14)),p.x+a.dir*100,p.y-45,220,a.dir);
  if(a.type==='ultimate'&&t>=1.1&&t<1.9)drawTetsuEffect(12,Math.min(3,Math.floor((t-1.1)/.2)),p.x+a.dir*140,p.y-60,340,a.dir);

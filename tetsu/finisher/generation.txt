@@ -1,0 +1,5 @@
+Generated with the built-in image_gen tool. Original PNG and alpha preserved.
+Atlas: top row four right-facing thrust poses; bottom row four cyan impact effects.
+Runtime source rectangles and body anchors are defined in loadTetsuFinisher().
+
+A game sprite atlas on TRANSPARENT background. Square 1024x1024. Eight separate small sprites in STRICT FOUR COLUMNS TWO ROWS, each cell 256x512, fully separated by large empty margins. TOP FOUR CELLS: the reference black and white striped masked yellow-eyed cat samurai, facing right, doing a katana thrust in four successive poses. Each entire sprite including sword is only 170 pixels wide and 200 pixels tall, centered inside its cell; feet at y350, no sprite crosses x256/512/768. No motion trails on character. BOTTOM FOUR CELLS: separate tiny cyan and white pointed slash impact effect animation, each maximum170px wide, centered in its cell at y760. Crunchy pixel-art, cartoon shading, limited palette. No glow, no smoke, no background color, no text. Correct grid layout is essential. Do not enlarge characters to fill the canvas. Match the reference's black/white striped body, mask, cat ears and yellow eye.

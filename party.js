@@ -18,7 +18,7 @@ function resetParty(){
   const name=document.createElement('span');name.className='party-name';name.textContent=partyInfo[id].short;const status=document.createElement('small');button.append(portrait,name,status);button.onclick=()=>switchParty(id);bar.append(button);
  }
 }
-function cancelPartyAction(){
+function cancelPartyAction(){resetDive();
  clearInput();tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];comboWindow=0;cancelNyoro();miraAction=null;
  miraShots=miraShots.filter(s=>s.hostile);miraEffects=miraEffects.filter(s=>s.hostile);
  energyShots=[];explosions=[];giantThunder=null;groundBolts=[];lightning=[];thunderBullet=null;thunderBursts=[];
