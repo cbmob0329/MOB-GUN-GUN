@@ -14,7 +14,7 @@ const result=await page.evaluate(()=>{
  keys.clear();axis=1;
  const riding=!!ropeRide,nearRope=ropes.some(r=>player.x>r.gapX-400&&player.x<r.gapX+r.gapWidth+100);
  if(riding&&!lastRide)grabs++;lastRide=riding;
- const target=combatTargets().filter(e=>e.death<0&&Math.abs(e.y-player.y)<130&&(bossLocked()||e.x>player.x-30)&&Math.abs(e.x-player.x)<800).sort((a,b)=>Math.abs(a.x-player.x)-Math.abs(b.x-player.x))[0];
+ const target=combatTargets().filter(e=>e.death<0&&Math.abs(e.y-player.y)<130&&(bossLocked()||shartyEncounter?.state==='fighting'||e.x>player.x-30)&&Math.abs(e.x-player.x)<800).sort((a,b)=>Math.abs(a.x-player.x)-Math.abs(b.x-player.x))[0];
  if(target&&!nearRope){const d=Math.abs(target.x-player.x),dir=Math.sign(target.x-player.x)||1;axis=dir;if(d<170&&player.grounded)axis=player.dir===dir?0:dir*.55;if(selectedCharacter==='tetsu'){if(!tetsuAction){if(d<250&&tetsuCooldowns[0]===0)castTetsu(0);else if(d<400&&tetsuCooldowns[1]===0)castTetsu(1);else if(d<250&&tetsuCooldowns[2]===0)castTetsu(2);else if(d<135)tetsuAttack();}else if(tetsuAction.type==='normal')tetsuAttack();}else if(selectedCharacter==='nyoro'){if(!nyoroAction){if(d<600&&nyoroCooldowns[0]===0)castNyoro(0);else if(d<500&&nyoroCooldowns[1]===0)castNyoro(1);else if(d<135)nyoroAttack();}else if(nyoroAction.type==='normal')nyoroAttack();}else keys.add('KeyJ');if(d<650&&selectedCharacter==='denden'){if(skillState.cooldowns[0]===0)beginCharge('route');if(skillState.cooldowns[1]===0&&bossLocked())castThunder();if(thunderBulletCooldown===0)castThunderBullet();}}
  if(bossLocked()&&!target)axis=0;
  if(ropeRide){axis=1;if(ropeRide.angle>.58&&ropeRide.velocity>0)jumpRequest=CONFIG.jumpBuffer;}

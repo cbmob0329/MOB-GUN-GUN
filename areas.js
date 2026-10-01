@@ -50,8 +50,8 @@ function buildGrassArea(){
   addStairs(1800,20);platforms.push({x:2960,y:68,w:380,h:36});gaps.push({x:2960,w:1380});
   platforms.push({x:3400,y:116,w:260,h:32},{x:3740,y:212,w:260,h:32},{x:4070,y:332,w:270,h:32});
   addCoinLine(2990,30,7);addCoinLine(3440,76);addCoinLine(3780,172);addCoinLine(4110,292);
-  for(const x of [4660,5520])addGrassProp('tree',x);addGrassProp('rolling',5260);addGrassProp('rock',5760);
-  for(const [type,x] of [['lime',920],['miira',1470],['lime',4530],['chase',4900],['miira',5940]])spawnGrassEnemy(type,x);
+  addGrassProp('tree',4660); // Open ground for Sharty's midboss encounter.
+  for(const [type,x] of [['lime',920],['miira',1470],['lime',4530],['chase',4900]])spawnGrassEnemy(type,x);
  }else if(areaIndex===2){
   addSwing(1460);addSwing(3260,460);addSwing(4900,440);
   for(const x of [680,2660,4320,5900])addGrassProp('tree',x);for(const x of [1030,4050])addGrassProp('rock',x);
@@ -120,7 +120,7 @@ function updateGrass(dt){
  cameraY+=(Math.min(ropeRide?200:0,player.y-405)-cameraY)*(1-Math.exp(-5*dt));if(bossIntro()||bossLocked())cameraY=0;
  const nearest=ropes.find(r=>Math.abs(player.x-r.gapX)<350);if(nearest&&!ropeRide&&hintTimer<=0){hintTimer=.2;$('hint').hidden=false;$('hint').textContent='ジャンプしてロープへ → つかんだら左右＋JUMP';}
 }
-function finishGrassArea(){if(state!=='playing'||player.x<CONFIG.worldWidth-180||arenaForPlayer()||(currentArea().boss&&bossRoom?.state!=='cleared'))return;
+function finishGrassArea(){if(shartyEncounter&&shartyEncounter.state!=='cleared')return;if(state!=='playing'||player.x<CONFIG.worldWidth-180||arenaForPlayer()||(currentArea().boss&&bossRoom?.state!=='cleared'))return;
  ropeRide=null;state=areaIndex===3?'clear':'areaClear';modal(`${currentArea().name} CLEAR!`,`COIN ${collected} / 撃破 ${kills}体`,areaIndex===3?'RETRY AREA 1':`NEXT → AREA ${areaIndex+2}`);
 }
 function startGrassArea(){if(state==='loading')return;if(state==='paused'){resume();return;}
