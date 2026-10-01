@@ -72,7 +72,7 @@ function castTetsu(index){
  if(state!=='playing'||bossIntro()||tetsuAction||tetsuCooldowns[index]>0)return;
  startTetsuAction(['mob','dash','ultimate'][index]);tetsuCooldowns[index]=TETSU.cooldowns[index];
 }
-function launchEnemy(e,vx,vy,spin=0){if(e.type==='crate')return;if(e.type==='miramob'){e.stun=Math.max(e.stun||0,.18);e.x+=Math.sign(vx)*8;return;}const floor=e.dropping?CONFIG.groundY:e.launch?.floor??e.y;e.dropping=null;e.launch={vx,vy,spin,angle:0,floor};e.knock=0;if(e.type==='miira'){e.attackAge=-1;e.attackCooldown=MIIRA.cooldown;}}
+function launchEnemy(e,vx,vy,spin=0){if(e.type==='crate')return;if(e.type==='miramob'||e.type==='dragon'){e.stun=Math.max(e.stun||0,.18);e.x+=Math.sign(vx)*8;return;}const floor=e.dropping?CONFIG.groundY:e.launch?.floor??e.y;e.dropping=null;e.launch={vx,vy,spin,angle:0,floor};e.knock=0;if(e.type==='miira'){e.attackAge=-1;e.attackCooldown=MIIRA.cooldown;}}
 function tetsuHit(a,phase,x,y,w,h,damage,launch){
  if(!a.hit.has(phase))a.hit.set(phase,new Set());const hit=a.hit.get(phase);
  for(const e of combatTargets()){if(e.death>=0||hit.has(e)||Math.abs(e.x-x)>w/2+e.w/2||e.y<y-h/2||e.y-e.h>y+h/2)continue;

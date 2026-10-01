@@ -5,7 +5,7 @@ const server=http.createServer((req,res)=>{const f=path.join(root,decodeURICompo
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await chromium.launch({headless:true,channel:'msedge'});
 try{for(const mobile of [false,true]){const context=await browser.newContext({viewport:mobile?{width:844,height:390}:{width:1280,height:720},isMobile:mobile,hasTouch:mobile});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(`http://127.0.0.1:${server.address().port}`);await page.waitForFunction(()=>state==='ready',null,{timeout:60000});
 const result=await page.evaluate(()=>{
- const check=(v,m)=>{if(!v)throw Error(m);},step=n=>{for(let i=0;i<n;i++)tick(1/120);};
+ selectedBoss='miramob';const check=(v,m)=>{if(!v)throw Error(m);},step=n=>{for(let i=0;i<n;i++)tick(1/120);};
  areaIndex=3;selectedCharacter='nyoro';reset();state='playing';pink.enabled=false;player.inv=100;
  player.x=bossRoom.portalX;step(410);check(bossRoom.state==='fighting','real boss entry');
  const boss=bossRoom.boss;player.x=boss.x-30;castNyoro(2);step(190);check(nyoroSummon,'summon appeared');

@@ -35,7 +35,7 @@ function onStageLanding(){
  for(const t of trampolines)if(p.x>t.x&&p.x<t.x+t.w&&Math.abs(p.y-t.y)<1){p.vy=-WORLD.trampolineSpeed;p.grounded=false;p.coyote=0;p.jumpsUsed=0;p.jumpAge=0;t.pulse=.35;burst(p.x,p.y-5,12,'#8ff5e2');}
 }
 function landingEffect(x,y){worldEffects.push({kind:'impact',x,y,age:0,duration:.42});burst(x,y-3,24,'#bb85ff');}
-function respawnFromFall(){resetDive();ropeRide=null;ropeRegrab=.65;
+function respawnFromFall(){resetDragon();resetDive();ropeRide=null;ropeRegrab=.65;
  const p=player;p.hp=Math.max(1,Math.ceil(p.hp/2));p.x=checkpoint.x;p.y=checkpoint.y;p.vx=p.vy=p.knock=0;p.grounded=true;p.jumpsUsed=0;p.inv=2;p.red=0;
  cancelNyoro();miraAction=null;miraShots=[];miraEffects=[];giantThunder=null;groundBolts=[];tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;pink.magic=null;pink.stun=0;pink.knock=0;pink.hurtGrace=0;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
  for(const c of crumbles){c.gone=false;c.timer=-1;c.restore=0;}

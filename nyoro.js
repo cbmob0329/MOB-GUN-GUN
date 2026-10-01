@@ -57,7 +57,8 @@ function releaseSummon(s){
   else{p.summonRider=false;p.terrainVy=0;
    // Mira resists launchEnemy and never receives a launch object.
    // Hand it back to the boss physics instead of writing a missing launch.floor.
-   if(p.type==='miramob'){p.airMode='fall';p.vy=0;p.grounded=false;}
+   if(p.type==='dragon'){p.action=null;p.vy=0;p.grounded=false;}
+   else if(p.type==='miramob'){p.airMode='fall';p.vy=0;p.grounded=false;}
    else{launchEnemy(p,0,-420);if(p.launch)p.launch.floor=s.base;}
   }
  }
