@@ -13,7 +13,7 @@ let golemPunchFrames=[];const newEnemyArt={};let newEnemyShots=[],newEnemyFX=[];
 async function loadNewEnemies(){golemPunchFrames=await loadBiomeAtlas('enemy/expansion/golem_punch_effect.png');await Promise.all(Object.entries(NEW_ENEMIES).flatMap(([type,c])=>c.actions.map(async action=>{
  const img=await loadImage(`enemy/expansion/${type}_${action}.png`),canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;
  const g=canvas.getContext('2d',{willReadFrequently:true});g.drawImage(img,0,0);
- const frames=type==='poison'&&action==='defeat'?isolateCharacterBodies(img,16):c.actions.includes('defeat')?await loadBiomeAtlas(`enemy/expansion/${type}_${action}.png`):isolateDragonBodies(g.getImageData(0,0,img.width,img.height).data,img.width,img.height);
+ const frames=(type==='poison'&&action==='defeat'||type==='kairo')?isolateCharacterBodies(img,16):c.actions.includes('defeat')?await loadBiomeAtlas(`enemy/expansion/${type}_${action}.png`):isolateDragonBodies(g.getImageData(0,0,img.width,img.height).data,img.width,img.height);
  for(const f of frames)f.scale=c.height/frames[0].h;
  newEnemyArt[type+'_'+action]=frames;
 })));
@@ -87,7 +87,7 @@ function drawNewEnemyProjectiles(){
  for(const s of newEnemyShots){if(!['fire','bomb'].includes(s.kind)){drawRosterMagic(s.kind,s.x,s.y,s.r,s.age,Math.sign(s.vx));continue;}if(s.kind==='fire'){dragonFX('claw',Math.floor(s.age*12)%4,s.x,s.y,55,65,Math.sign(s.vx));continue;}
   ctx.save();ctx.translate(s.x-camera,s.y);ctx.rotate(s.age*8);rounded(-10,-10,20,20,6,'#162330');ctx.fillStyle='#687e8a';ctx.fillRect(-5,-7,6,4);ctx.fillStyle='#ffd865';ctx.fillRect(5,-15,4,6);ctx.fillStyle='#ff7e3d';ctx.fillRect(7,-18,4,4);ctx.restore();
  }
- for(const f of newEnemyFX){if(f.kind==='magmaPunch'){const p=golemPunchFrames[Math.min(15,Math.floor(f.age/.45*16))];if(p){ctx.save();ctx.translate(f.x-camera,f.y);ctx.scale(f.dir,1);ctx.imageSmoothingEnabled=false;ctx.drawImage(p.img,-100,-68,200,136);ctx.restore();}continue;}if(['poisonClaw'].includes(f.kind)){ctx.save();ctx.globalAlpha=1-f.age/.45;drawRosterMagic(f.kind,f.x,f.y,f.size*.4,f.age,f.dir);ctx.restore();continue;}if(f.kind==='trail'||f.kind==='guard'){ctx.save();ctx.globalAlpha=1-f.age/.45;ctx.fillStyle=f.kind==='guard'?'#ffd979':'#76f5ff';ctx.fillRect(f.x-camera-f.dir*28,f.y-3,45*f.dir,6);ctx.restore();}else dragonFX(f.kind,Math.min(3,Math.floor(f.age*9)),f.x,f.y,f.size,f.size,f.dir);}
+ for(const f of newEnemyFX){if(f.kind==='magmaPunch'){const p=golemPunchFrames[Math.min(15,Math.floor(f.age/.45*16))];if(p){ctx.save();ctx.beginPath();ctx.rect(-W,-2000,W*3,(f.floor??548)+2000);ctx.clip();ctx.translate(f.x-camera,f.y);ctx.scale(f.dir,1);ctx.imageSmoothingEnabled=false;ctx.drawImage(p.img,-100,-68,200,136);ctx.restore();}continue;}if(['poisonClaw'].includes(f.kind)){ctx.save();ctx.globalAlpha=1-f.age/.45;drawRosterMagic(f.kind,f.x,f.y,f.size*.4,f.age,f.dir);ctx.restore();continue;}if(f.kind==='trail'||f.kind==='guard'){ctx.save();ctx.globalAlpha=1-f.age/.45;ctx.fillStyle=f.kind==='guard'?'#ffd979':'#76f5ff';ctx.fillRect(f.x-camera-f.dir*28,f.y-3,45*f.dir,6);ctx.restore();}else dragonFX(f.kind,Math.min(3,Math.floor(f.age*9)),f.x,f.y,f.size,f.size,f.dir);}
 }
 // Shared grounded navigation: probe before collision, hop onto manageable steps,
 // turn away from a wall that is too tall, and keep feet on the same stage surfaces.
@@ -117,7 +117,7 @@ function rosterShot(e,kind,speed,damage,angleOffset=0){const victim=enemyTarget(
  newEnemyShots.push({kind,x,y,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,gravity:0,r:kind==='electric'?17:12,damage,age:0,life:kind==='electric'?4:2.7});
 }
 function rosterMelee(e,a,index,at,range,damage,kind){if(a.age<at||(a.mask||0)&(1<<index))return;a.mask=(a.mask||0)|(1<<index);
- newEnemyFX.push({kind,x:e.x+a.dir*range*.55,y:e.y-35,age:0,size:range,dir:a.dir});
+ newEnemyFX.push({kind,x:e.x+a.dir*range*.55,y:e.y-35,floor:e.y,age:0,size:range,dir:a.dir});
  for(const p of hostileVictims())if(Math.abs(p.x-e.x-a.dir*range*.5)<range*.65&&Math.abs(p.y-e.y)<85)hurtAlly(p,e,damage);
 }
 function updateRosterEnemy(e,dt){const victim=enemyTarget(e);
@@ -155,8 +155,7 @@ function drawRosterMagic(kind,x,y,r,age,dir=1){
  ctx.restore();
 }
 function normalizeKairo(){
- const measure=f=>{const g=f.img.getContext('2d',{willReadFrequently:true}),d=g.getImageData(0,0,f.w,f.h).data,rows=new Uint32Array(f.h);const gold=(i)=>d[i+3]>150&&d[i]>155&&d[i+1]>110&&d[i+2]<105&&d[i]>d[i+1]*.85;for(let y=0;y<f.h;y++)for(let x=0;x<f.w;x++)if(gold((y*f.w+x)*4))rows[y]++;
- const band=Math.max(10,Math.round(f.h*.22));let best=0,score=-1;for(let y=0;y<f.h-band;y++){let n=0;for(let j=y;j<y+band;j++)n+=rows[j];if(n>score){score=n;best=y;}}let l=f.w,r=0;for(let y=best;y<Math.min(f.h,best+band);y++)for(let x=0;x<f.w;x++)if(gold((y*f.w+x)*4)){l=Math.min(l,x);r=Math.max(r,x);}return Math.max(1,r-l+1);};
- const base=newEnemyArt.kairo_walk[0],target=measure(base)*NEW_ENEMIES.kairo.height/base.h;
- for(const action of NEW_ENEMIES.kairo.actions)for(const f of newEnemyArt['kairo_'+action]){f.goggleWidth=measure(f);f.scale=target/f.goggleWidth;}
+ // Every action starts with an upright calibration pose. Keep that body scale
+ // through crouches, shields and collapse; an effect is never a size reference.
+ for(const action of NEW_ENEMIES.kairo.actions){const frames=newEnemyArt['kairo_'+action],standing=Math.max(frames[0].h,frames[1].h);for(const f of frames)f.scale=NEW_ENEMIES.kairo.height/(action==='walk'?f.h:standing);}
 }

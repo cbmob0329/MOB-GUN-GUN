@@ -105,3 +105,5 @@ function updateDownPink(dt){const p=pink;p.downAge+=dt;const oldY=p.y;p.vy+=CONF
 }
 function drawDownPink(){const p=pink,f=pinkDownFrames[Math.min(15,Math.floor(p.downAge/.065))],x=p.x-camera;ctx.save();ctx.translate(x,p.y);ctx.scale(p.dir,1);ctx.imageSmoothingEnabled=false;if(f)ctx.drawImage(f.img,-f.w*f.scale/2,-f.h*f.scale,f.w*f.scale,f.h*f.scale);ctx.restore();text(`気絶 ${Math.ceil(Math.max(0,10-p.downAge))}s`,x,p.y-58,13,'#ffd0ea');$('pink-tap').hidden=true;const button=$('pink-revive');button.hidden=!canRescuePink()||x<0||x>W;button.style.left=`${x/W*100}%`;button.style.top=`${(p.y-cameraY-65)/H*100}%`;button.textContent=p.rescue?`復活中 ${Math.max(0,2-p.rescue.age).toFixed(1)}秒`:'復活（2秒）';button.disabled=!!p.rescue;}
 document.getElementById('pink-revive').addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();beginPinkRescue();});
+
+document.getElementById('pink-revive').addEventListener('click',beginPinkRescue);
