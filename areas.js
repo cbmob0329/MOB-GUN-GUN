@@ -8,7 +8,7 @@ const AREAS=Object.freeze([
 const GRASS={rockHP:36,treeHP:48,rollingDamage:8,rollingSpeed:205,ropeLength:560,ropeReach:78};
 let areaIndex=0,cameraY=0,areaBank={coins:0,kills:0,time:0},props=[],ropes=[],ropeRide=null,ropeRegrab=0;
 const grassArt={props:[],terrain:[],ribbon:null};
-function currentArea(){return biomeIndex===0?AREAS[areaIndex]:{...AREAS[areaIndex],name:BIOMES[biomeIndex].name+' Area '+(areaIndex+1),subtitle:BIOMES[biomeIndex].sub[areaIndex],width:5200+areaIndex*400};}
+function currentArea(){return biomeIndex===0?AREAS[areaIndex]:{...AREAS[areaIndex],name:BIOMES[biomeIndex].name+' Area '+(areaIndex+1),subtitle:BIOMES[biomeIndex].sub[areaIndex],width:biomeIndex===1&&areaIndex===1?6400:5200+areaIndex*400};}
 function updateAreaLabels(){document.querySelector('.area strong').textContent=currentArea().name;document.querySelector('.route>span').textContent=`${BIOMES[biomeIndex].route} / 0${areaIndex+1}`;}
 async function loadGrassAtlas(path,rows){
  const img=await loadImage(path),c=document.createElement('canvas');c.width=img.width;c.height=img.height;
@@ -65,7 +65,8 @@ function buildGrassArea(){
   for(const [type,x] of [['lime',820],['chase',1350],['miira',2770],['tank',3980],['miira',4660]])spawnGrassEnemy(type,x,548,60);
  }
  // Leave clear running stretches between obstacles; retain one example of each prop.
- const seenProps=new Set();props=props.filter((p,i)=>{if(!seenProps.has(p.propKind)){seenProps.add(p.propKind);return true;}return i%3===0;});crates=crates.filter(p=>props.includes(p));
+ const seenProps=new Set();props=props.filter((p,i)=>{if(!seenProps.has(p.propKind)){seenProps.add(p.propKind);return true;}return false;});crates=crates.filter(p=>props.includes(p));
+ if(areaIndex%2===0)props=props.filter(p=>p.propKind!=='rolling');crates=crates.filter(p=>props.includes(p));
  addActionTerraces();
  // Gentle moving platforms are introduced over safe ground before the high route.
  if(areaIndex===0){platforms.push({x:3550,y:415,w:190,h:28,variant:'wood',motion:{axis:'y',range:60,period:5}});}
@@ -77,6 +78,7 @@ function buildGrassArea(){
  for(const e of enemies){const gap=gaps.find(g=>e.x>g.x-60&&e.x<g.x+g.w+60);if(gap){e.x=gap.x+gap.w+150;e.home=e.x;e.range=65;}}
  for(let x=260;x<currentArea().width-700;x+=600)if(!gaps.some(g=>x>=g.x-100&&x<=g.x+g.w+100)&&!platforms.some(p=>x>=p.x-40&&x<=p.x+p.w+40))addCoinLine(x,505,3);
  hintTimer=5;$('hint').hidden=false;$('hint').textContent=`${currentArea().name} — ${currentArea().subtitle}`;
+ stitchPlatforms();
  updateAreaLabels();
 }
 function updateMovingPlatforms(dt){
@@ -165,7 +167,7 @@ function grassIsland(width,variant='moss'){
  if(variant==='crystal'){for(const x of [12,Math.floor(w*.52),w-14]){poly([[x-3,14],[x+3,14],[x+4,21],[x,28],[x-4,21]],'#294b67');poly([[x-2,15],[x+2,15],[x+2,21],[x,25]],'#68c9c8');g.fillStyle='#c4fbde';g.fillRect(x-1,16,1,5);}}
  islandArt.set(key,c);return c;
 }
-function drawGrassPlatform(p){if(biomeIndex>0){drawBiomePlatform(p);return;}if(p.x+p.w<camera||p.x>camera+W)return;if(p.solid){soilRibbon(p.x,p.y,p.w,p.h);return;}ctx.save();ctx.imageSmoothingEnabled=false;ctx.drawImage(grassIsland(p.w,p.variant),Math.round(p.x-camera),p.y-3,p.w,90);if(p.motion){ctx.fillStyle='#f8edb2';const x=Math.round(p.x-camera+p.w/2);ctx.fillRect(x-8,p.y+27,16,3);if(p.motion.axis==='y')ctx.fillRect(x-1,p.y+21,3,15);}ctx.restore();}
+function drawGrassPlatform(p){if(biomeIndex>0){drawBiomePlatform(p);return;}if(!p.solid&&(p.x+p.w<camera||p.x>camera+W))return;if(p.solid){drawConnectedTerrace(p);return;}ctx.save();ctx.imageSmoothingEnabled=false;ctx.drawImage(grassIsland(p.w,p.variant),Math.round(p.x-camera),p.y-3,p.w,90);if(p.motion){ctx.fillStyle='#f8edb2';const x=Math.round(p.x-camera+p.w/2);ctx.fillRect(x-8,p.y+27,16,3);if(p.motion.axis==='y')ctx.fillRect(x-1,p.y+21,3,15);}ctx.restore();}
 function drawSwingRope(r){
  const end=ropeEnd(r),segment=grassArt.terrain[9],handle=grassArt.terrain[10];
  grassSprite('terrain',8,r.x-camera-54,r.y-38,64,86);

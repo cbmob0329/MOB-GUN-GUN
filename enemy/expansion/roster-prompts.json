@@ -1,0 +1,72 @@
+[
+  {
+    "name": "tende_hover",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create tende hover: gentle floating wing-flap loop. EXACTLY 16 distinct chronological poses in a precise 4 columns by 4 rows grid, read left to right. Square canvas, equal cells, ample transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters, no smooth painterly shading. All poses same physical character scale, feet near cell bottom; whole body contained inside each cell, including tail/wings/arms. No text, grid lines, ground, shadows, detached effects or particles; one connected character per cell. Background genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-4db6a300-55bc-447b-8bb6-b821aedf2273.png"
+  },
+  {
+    "name": "tende_wind",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create tende wind: wind magic casting: inhale, wings spread, blow forward, recover. EXACTLY 16 distinct chronological poses in a precise 4 columns by 4 rows grid, read left to right. Square canvas, equal cells, ample transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters, no smooth painterly shading. All poses same physical character scale, feet near cell bottom; whole body contained inside each cell, including tail/wings/arms. No text, grid lines, ground, shadows, detached effects or particles; one connected character per cell. Background genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-690b0532-9070-47a5-be39-a404adc8b4ed.png"
+  },
+  {
+    "name": "tende_defeat",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create tende defeat: non-gory defeat sequence: recoil, lose balance, collapse and lie defeated, last four frames remain visibly collapsed. EXACTLY 16 distinct chronological poses in a precise 4 columns by 4 rows grid, read left to right. Square canvas, equal cells, ample transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters, no smooth painterly shading. All poses same physical character scale, feet near cell bottom; whole body contained inside each cell, including tail/wings/arms. No text, grid lines, ground, shadows, detached effects or particles; one connected character per cell. Background genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-e9c75b76-d77e-443e-8d74-19f51e509351.png"
+  },
+  {
+    "name": "poison_walk",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create poison walk: distinct slow walking cycle, alternating legs. EXACTLY 16 distinct chronological poses in a precise 4 columns by 4 rows grid, read left to right. Square canvas, equal cells, ample transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters, no smooth painterly shading. All poses same physical character scale, feet near cell bottom; whole body contained inside each cell, including tail/wings/arms. No text, grid lines, ground, shadows, detached effects or particles; one connected character per cell. Background genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-72b1dc54-4a39-45fb-bc3c-4b3f8115d2e0.png"
+  },
+  {
+    "name": "poison_dash",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create poison dash: forward sprint with strong anticipation and recovery. EXACTLY 16 distinct chronological poses in a precise 4 columns by 4 rows grid, read left to right. Square canvas, equal cells, ample transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters, no smooth painterly shading. All poses same physical character scale, feet near cell bottom; whole body contained inside each cell, including tail/wings/arms. No text, grid lines, ground, shadows, detached effects or particles; one connected character per cell. Background genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-8bee4f0b-5a49-415a-bab4-6ec1543ca51b.png"
+  },
+  {
+    "name": "poison_jump",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create poison jump: crouch, high jump ascent, apex, descent, landing. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-a73b905a-c803-41ab-94cb-2aa4d5c88383.png"
+  },
+  {
+    "name": "poison_claw",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create poison claw: three-hit claw combo: left swipe, right swipe, lunging final swipe. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-0b1a8a7f-5e21-4a7e-8cf3-70334895bf08.png"
+  },
+  {
+    "name": "poison_orb",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create poison orb: gather magic in hands, aim forward, release magic orb, recover. No detached orb baked into image. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-93824412-264f-448a-8c47-cb0d9f24c481.png"
+  },
+  {
+    "name": "poison_defeat",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create poison defeat: non-gory defeat sequence: recoil, lose balance, collapse and lie defeated, last four frames remain visibly collapsed. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-222df410-e7bc-4644-872f-0b775685278c.png"
+  },
+  {
+    "name": "dancer_walk",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create dancer walk: distinct slow walking cycle, alternating legs. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-4b688726-b18b-4f33-80d2-9c8f7f48ed14.png"
+  },
+  {
+    "name": "dancer_flip",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create dancer flip: stylish forward somersault jump, full body rotation, land. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-f33493a5-2f15-4b25-8c0c-f83d14de3b7a.png"
+  },
+  {
+    "name": "dancer_dance",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create dancer dance: rhythmic hip-hop dance, expressive alternating arms, finish by projecting music energy forward. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-4d96e796-b175-4af0-adc2-432713158169.png"
+  },
+  {
+    "name": "dancer_step",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create dancer step: fast dance footwork and side steps. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-7f92b363-84f9-4f04-824f-82a00987e681.png"
+  },
+  {
+    "name": "dancer_defeat",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Input image is character identity reference. Create dancer defeat: non-gory defeat sequence: recoil, lose balance, collapse and lie defeated, last four frames remain visibly collapsed. EXACTLY 16 distinct chronological poses in precise 4 columns by 4 rows grid. Equal cells with wide transparent gutters. Right-facing side/three-quarter view. Match reference outfit, colors, face and silhouette. Crisp limited-palette pixel clusters. Same physical character scale in all cells, whole body within cell including tail/arms. First two frames standing upright before action, for scale calibration. One connected character per cell. No text, ground, shadow, separate magic, detached particles or grid lines. Genuine transparent alpha.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-37d7207a-db96-4d33-b297-bdecc0142d6d.png"
+  }
+]

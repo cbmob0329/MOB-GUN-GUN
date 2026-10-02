@@ -21,9 +21,7 @@ function updateLime(e,dt){
  if(Math.abs(player.x-e.x)<360)e.dir=Math.sign(player.x-e.x)||e.dir;
  if(e.x<=e.home-e.range)e.dir=1;else if(e.x>=e.home+e.range)e.dir=-1;
  const speed=CONFIG.enemies.lime.speed*(.65+.35*Math.sin(e.walkAge*Math.PI/1.8)**2);
- const next=e.x+(e.dir*speed+e.knock)*dt;
- if(Number.isFinite(groundAt(next+e.dir*40)))e.x=clamp(next,e.home-e.range-15,e.home+e.range+15);else e.dir*=-1;
- e.knock*=Math.exp(-10*dt);
+ moveEnemyOnTerrain(e,e.dir*speed,dt);
  if(Math.abs(player.x-e.x)<CONFIG.playerColliderWidth/2+e.w*.42&&player.y>e.y-e.h&&player.y-CONFIG.playerColliderHeight<e.y)damagePlayer(e);
 }
 function drawLime(e){

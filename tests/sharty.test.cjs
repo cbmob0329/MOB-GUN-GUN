@@ -7,7 +7,7 @@ try{for(const mobile of [false,true]){const context=await browser.newContext({vi
 const result=await page.evaluate(()=>{
  const check=(v,m)=>{if(!v)throw Error(m);},step=n=>{for(let i=0;i<n;i++)tick(1/120);};
  for(const name of ['walk','attack','teleport','special','effects'])check(shartyArt[name].length===16,'16 isolated frames '+name);
- areaIndex=1;reset();state='playing';pink.enabled=false;player.inv=100;
+ biomeIndex=1;areaIndex=1;reset();state='playing';pink.enabled=false;player.inv=100;
  const room=shartyEncounter,e=room.enemy;check(e.h>MIIRA.height&&e.h<MIIRA.height*1.2,'slightly bigger than mummy');
  player.x=SHARTY.trigger;step(1);check(room.state==='fighting','encounter activates');
  player.x=6300;step(1);check(player.x<=SHARTY.right-20&&state==='playing','cannot skip midboss');

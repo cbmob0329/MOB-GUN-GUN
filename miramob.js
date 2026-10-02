@@ -80,7 +80,7 @@ function updateBossRoom(dt){const b=bossRoom;if(!b)return;
  }
  if(b.state==='closing'&&b.age>=2.4){b.state='fighting';b.age=0;clearBossEntryAttacks();player.inv=Math.max(player.inv,1);}
  if(b.state==='fighting'){
-  b.spawnClock-=dt;if(b.kind!=='dragon'&&b.spawnClock<=0&&b.boss.death<0){b.spawnClock=5+Math.random()*4;if(enemies.filter(e=>e.bossAdd&&e.death<0).length<3){const x=b.x+200+Math.random()*(b.right-b.x-400);enemies.push({type:'miira',bossAdd:true,x,y:-90,home:x,dir:-1,hp:24,maxHP:24,w:46,h:MIIRA.height,flash:0,knock:0,death:-1,range:220,phase:b.spawned++,dropping:{vy:0},attackCooldown:2,attackAge:-1});}}
+  b.spawnClock-=dt;if(b.kind!=='dragon'&&b.spawnClock<=0&&b.boss.death<0){b.spawnClock=5+Math.random()*4;if(enemies.filter(e=>e.bossAdd&&e.death<0).length<3){const x=b.x+200+Math.random()*(b.right-b.x-400);const add=randomNewEnemy(x,-90);Object.assign(add,{bossAdd:true,hp:24,maxHP:24,phase:b.spawned++,dropping:{vy:0},attackCooldown:2,attackAge:-1});}}
   if(b.boss.death>=0){b.state='opening';b.age=0;b.boss.action=null;miraShots=miraShots.filter(s=>!s.hostile);miraEffects=miraEffects.filter(f=>!f.hostile);for(const e of enemies)if(e.bossAdd&&e.death<0)hitEnemy(e,e.hp);}
  }
  if(b.state==='opening'&&b.age>=(b.kind==='dragon'?DRAGON.deathDuration:1)){b.state='cleared';hintTimer=2;$('hint').textContent=bossName()+'撃破！ ゴールへ →';}

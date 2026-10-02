@@ -22,7 +22,7 @@ function resolveStageSides(p,oldX,oldY,wasGrounded){
  return oldY;
 }
 function stageLandingHeight(p,oldY,wasGrounded){
- const half=CONFIG.playerColliderWidth/2;let landing=Math.min(groundAt(p.x),sandLanding(p,oldY,wasGrounded));
+ const half=p===player?CONFIG.playerColliderWidth/2:(p.w||CONFIG.playerColliderWidth)/2;let landing=Math.min(groundAt(p.x),sandLanding(p,oldY,wasGrounded));
  for(const q of stageSurfaces())if(p.x+half>q.x&&p.x-half<q.x+q.w&&p.vy>=0&&((oldY<=q.y+.5&&p.y>=q.y)||((q.type==='stair'||q.type==='crumble')&&wasGrounded&&Math.abs(q.y-oldY)<=26)))landing=Math.min(landing,q.y);
  for(const r of ramps){if(p.x<r.x||p.x>r.x+r.w)continue;const y=r.y+(r.endY-r.y)*(p.x-r.x)/r.w;if(p.vy>=0&&((oldY<=y+8&&p.y>=y)||(wasGrounded&&Math.abs(oldY-y)<12)))landing=Math.min(landing,y);}
  for(const b of bridges){if(p.x<b.x||p.x>b.x+b.w)continue;const y=bridgeY(b,p.x);if(p.vy>=0&&((oldY<=y+2&&p.y>=y)||(wasGrounded&&Math.abs(oldY-y)<6)))landing=Math.min(landing,y);}
@@ -42,8 +42,8 @@ function respawnFromFall(){newEnemyShots=[];newEnemyFX=[];resetDragon();resetDiv
  worldEffects.push({kind:'respawn',x:p.x,y:p.y-35,age:0,duration:.65});hintTimer=2;$('hint').textContent='落下！ HPが半分になって安全地点へ復帰';
 }
 function spawnArenaEnemy(a,side,index){
- const type=index%4===3?'chase':'miira',c=CONFIG.enemies[type],x=side===0?a.x+220+(index*137)%610:side<0?a.x+120:a.right-120;
- const e={type,x,y:CONFIG.groundY,home:(a.x+a.right)/2,dir:-side,hp:c.hp,maxHP:c.hp,w:46,h:type==='miira'?MIIRA.height:46,flash:0,knock:0,death:-1,range:400,phase:a.spawned+index,arenaId:a.id,attackCooldown:.9+(index%3)*.25,attackAge:-1};if(side===0){e.y=-60-(index%3)*65;e.dropping={vy:0};e.dir=Math.sign(player.x-x)||1;}enemies.push(e);burst(x,e.y-15,12,'#cbb693');
+ const type=BIOME_ENEMIES[biomeIndex][index%BIOME_ENEMIES[biomeIndex].length],x=side===0?a.x+220+(index*137)%610:side<0?a.x+120:a.right-120;
+ const e=spawnBiomeEnemy(type,x);Object.assign(e,{home:(a.x+a.right)/2,dir:-side,range:400,phase:a.spawned+index,arenaId:a.id,attackCooldown:.9+(index%3)*.25,attackAge:-1});if(side===0){e.y=-60-(index%3)*65;e.dropping={vy:0};e.dir=Math.sign(player.x-x)||1;}burst(x,e.y-15,12,'#cbb693');
 }
 function updateArenas(dt){
  for(const a of arenas){

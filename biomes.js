@@ -36,9 +36,12 @@ function buildBiomeArea(){
   if(b===4){const gapX=x-80,width=300+(a%2)*40;gaps.push({x:gapX,w:width,lava:true});platforms.push({x:gapX+65,y:488,w:170,h:28,geyser:true,motion:{axis:'y',range:88,period:4.8+(n%2)}});addCoinLine(gapX+85,355,3,38);}
  }
  // Sparse props, never in a pit or under a platform's full travel envelope.
- for(let x=680,n=0;x<last;x+=1350,n++)if(!gaps.some(g=>x>g.x-140&&x<g.x+g.w+140)&&!sandHills.some(h=>x>h.x-70&&x<h.x+h.w+70)&&!platforms.some(p=>x>p.x-100&&x<p.x+p.w+100))addBiomeProp(b===4?n%2:n%3,x);
+ for(let x=680,n=0;x<last;x+=1750,n++)if(!gaps.some(g=>x>g.x-140&&x<g.x+g.w+140)&&!sandHills.some(h=>x>h.x-70&&x<h.x+h.w+70)&&!platforms.some(p=>x>p.x-100&&x<p.x+p.w+100))addBiomeProp(b===4?n%2:n%3,x);
+ props=props.slice(0,b===2&&a%2===0?1:2);crates=crates.filter(p=>props.includes(p));
  addActionTerraces();
  if(b===3){addStairs(650,4);addStairs(3200,5);}
+ if(b===1&&a===1){platforms=platforms.filter(p=>p.x+p.w<5000);sandHills=sandHills.filter(h=>h.x+h.w<5000);props=props.filter(p=>p.x<4950);crates=crates.filter(p=>props.includes(p));}
+ stitchPlatforms();
  for(const [i,p] of platforms.entries()){p.variant=i%4;if(p.motion){p.originX=p.x;p.originY=p.y;p.motionAge=a*.7;}}
  for(let x=300;x<last;x+=450)if(!gaps.some(g=>x>g.x-50&&x<g.x+g.w+50))addCoinLine(x,505,3,35);
  hintTimer=6;$('hint').hidden=false;$('hint').textContent=currentArea().name+' — '+['','砂山は乗ると崩れる！','タイヤをジャンプでかわそう','動く足場を乗り継ごう','吹上足場で溶岩を越えよう'][b];
@@ -59,10 +62,10 @@ function drawTownStone(x,y,w,h,variant=0){const i=((Math.floor(variant)%4)+4)%4;
 function drawBiomeGround(){const b=BIOMES[biomeIndex];ctx.fillStyle=b.color;ctx.fillRect(0,548,W,H+Math.abs(cameraY));
  const size=400;ctx.save();ctx.imageSmoothingEnabled=false;for(let x=Math.floor(camera/size)*size;x<camera+W;x+=size){const f=biomeArt[b.id].terrain[((x/size)%4+4)%4];if(biomeIndex===2)drawTownStone(x-camera,546,size+1,190,x/size);else ctx.drawImage(f.img,8,0,f.w-16,f.h,x-camera,546,size+1,190);}ctx.restore();
 }
-function drawBiomePlatform(p){if(p.x+p.w<camera||p.x>camera+W)return;
- if(p.solid){const f=biomeArt[BIOMES[biomeIndex].id].terrain[0];ctx.save();ctx.imageSmoothingEnabled=false;ctx.beginPath();ctx.rect(p.x-camera,p.y,p.w,p.h);ctx.clip();ctx.fillStyle=BIOMES[biomeIndex].color;ctx.fill();if(biomeIndex===2)drawTownStone(p.x-camera,p.y,p.w,Math.max(100,p.h));else ctx.drawImage(f.img,8,0,f.w-16,f.h,p.x-camera,p.y,p.w,Math.max(100,p.h));ctx.restore();return;}
+function drawBiomePlatform(p){if(!p.solid&&(p.x+p.w<camera||p.x>camera+W))return;
+ if(p.solid){drawConnectedTerrace(p);return;}
  if(p.geyser){const f=12+Math.floor(biomeClock*7)%4;biomeSprite('props',f,p.x-camera,p.y-2,p.w,Math.max(60,568-p.y));return;}
- const index=4+(typeof p.variant==='number'?p.variant:0);const topOffset=biomeIndex===2?[0,0,.30,.28][index-4]:biomeIndex===3?[0,.05,.22,.28][index-4]:0;biomeSprite('terrain',index,p.x-camera,p.y-2-topOffset*65,p.w,65);
+ const index=4+(typeof p.variant==='number'?p.variant:0);const topOffset=biomeIndex===2?[0,0,.30,.28][index-4]:biomeIndex===3?[0,.05,.22,.28][index-4]:0;drawIslandStrip(biomeArt[BIOMES[biomeIndex].id].terrain[index],p.x-camera,p.y-2-topOffset*65,p.w,65);
 }
 function drawBiomeDecor(){
  for(const p of props){if(p.propKind!=='biome'||p.x<camera-200||p.x>camera+W+200)continue;const elapsedDead=elapsed-p.brokenAt;
@@ -90,9 +93,38 @@ function addActionTerraces(){
   if(gaps.some(g=>x<g.x+g.w+100&&x+1080>g.x-100))continue;
   if(platforms.some(p=>p.solid&&x<p.x+p.w&&x+1080>p.x))continue;
   if(platforms.some(p=>p.y<160&&x<p.x+p.w&&x+1080>p.x))continue;
+  // Remove short ledges that visually cut through this new broad route.
+  platforms=platforms.filter(p=>p.motion||p.solid||p.x+p.w<x||p.x>x+1080);
   platforms.push({x,y:448,w:220,h:100,solid:true,actionRoute:true},{x:x+290,y:348,w:410,h:40,actionRoute:true},{x:x+775,y:248,w:300,h:36,actionRoute:true,motion:{axis:'y',range:22,period:6},originX:x+775,originY:248,motionAge:0});
   addCoinLine(x+325,310,7,48);addCoinLine(x+805,203,5,48);added++;
  }
  // Grass rope courses have little solid ground: a safe optional lookout at the entrance.
  if(!added){const x=300;platforms.push({x,y:448,w:210,h:100,solid:true,actionRoute:true},{x:560,y:348,w:350,h:35,actionRoute:true});addCoinLine(595,305,6,48);}
+}
+// Preserve illustrated end caps and extend only the inner rock/wood section into one continuous island.
+function drawIslandStrip(f,x,y,w,h){
+ const cap=Math.min(30,w/4),srcCap=f.w*.2;ctx.save();ctx.imageSmoothingEnabled=false;
+ ctx.drawImage(f.img,0,0,srcCap,f.h,x,y,cap,h);
+ ctx.drawImage(f.img,f.w-srcCap,0,srcCap,f.h,x+w-cap,y,cap,h);
+ const middle=f.w-srcCap*2;
+ ctx.drawImage(f.img,srcCap,0,middle,f.h,x+cap,y,w-cap*2,h);
+ ctx.restore();
+}
+function stitchPlatforms(){
+ // Join only tiny unintended gaps on a shared static ledge, never moving routes or chasms.
+ const list=platforms.filter(p=>!p.solid&&!p.motion&&!p.geyser).sort((a,b)=>a.x-b.x);
+ for(let i=0;i<list.length-1;i++){const a=list[i],b=list[i+1],gap=b.x-(a.x+a.w);if(Math.abs(a.y-b.y)<2&&gap>=0&&gap<=35&&!gaps.some(g=>a.x+a.w<g.x+g.w&&b.x>g.x)){a.w=b.x+b.w-a.x;platforms=platforms.filter(p=>p!==b);list.splice(i+1,1);i--;}}
+}
+function drawConnectedTerrace(p){
+ const group=[p];let changed=true;
+ while(changed){changed=false;for(const q of platforms){if(!q.solid||group.includes(q))continue;if(group.some(r=>q.x<=r.x+r.w+.5&&q.x+q.w>=r.x-.5&&q.y<=r.y+r.h&&q.y+q.h>=r.y)){group.push(q);changed=true;}}}
+ // One draw for the entire joined staircase eliminates internal rectangular borders.
+ const first=group.reduce((a,b)=>platforms.indexOf(a)<platforms.indexOf(b)?a:b);if(first!==p)return;
+ const left=Math.min(...group.map(q=>q.x)),right=Math.max(...group.map(q=>q.x+q.w)),top=Math.min(...group.map(q=>q.y)),bottom=Math.max(...group.map(q=>q.y+q.h));
+ ctx.save();ctx.imageSmoothingEnabled=false;ctx.beginPath();for(const q of group)ctx.rect(q.x-camera,q.y-2,q.w,q.h+2);ctx.clip();ctx.fillStyle=biomeIndex?BIOMES[biomeIndex].color:'#76502e';ctx.fillRect(left-camera,top,right-left,bottom-top);
+ for(let x=Math.floor(left/320)*320;x<right;x+=320){if(!biomeIndex){for(let y=Math.floor(top/80)*80;y<bottom;y+=80)ctx.drawImage(grassArt.ribbon,32,494,1472,160,x-camera,y,320,80);}else if(biomeIndex===2)drawTownStone(x-camera,top,321,Math.max(120,bottom-top),x/320);else{const f=biomeArt[BIOMES[biomeIndex].id].terrain[0];ctx.drawImage(f.img,8,Math.floor(f.h*.35),f.w-16,f.h*.65,x-camera,top,321,Math.max(120,bottom-top));}}
+ for(const q of group){let spans=[[q.x,q.x+q.w]];for(const r of group){if(r===q||r.y>=q.y||r.y+r.h<q.y)continue;spans=spans.flatMap(([l,h])=>r.x>=h||r.x+r.w<=l?[[l,h]]:[[l,Math.max(l,r.x)],[Math.min(h,r.x+r.w),h]].filter(([a,b])=>b>a));}
+  for(const [l,r] of spans){if(!biomeIndex)ctx.drawImage(grassArt.ribbon,32,157,1472,38,l-camera,q.y-2,r-l,19);else{ctx.fillStyle=['','#f3cf85','#d9c28b','#70e5ed','#ed9660'][biomeIndex];ctx.fillRect(l-camera,q.y-2,r-l,5);ctx.fillStyle='#201b2c55';ctx.fillRect(l-camera,q.y+8,r-l,3);}}
+ }
+ ctx.restore();
 }

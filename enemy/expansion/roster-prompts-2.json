@@ -1,0 +1,57 @@
+[
+  {
+    "name": "kairo_walk",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. kairo performs walk: distinct slow walking cycle, alternating legs. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-b61025fb-4742-4bf3-a5ea-9edf4b368ca4.png"
+  },
+  {
+    "name": "kairo_hop",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. kairo performs hop: playful crouch and hopping movement. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-8e1859a4-c048-4073-b38c-57a92042bb02.png"
+  },
+  {
+    "name": "kairo_guard",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. kairo performs guard: raise arms to guard, braced energy shield casting pose, hold then recover. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-026d4366-e463-45e0-b01c-e047f5773572.png"
+  },
+  {
+    "name": "kairo_orb",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. kairo performs orb: gather magic in hands, aim forward, release magic orb, recover. No detached orb baked into image. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-2deca6ea-4d9a-446c-9157-61436ad145ce.png"
+  },
+  {
+    "name": "kairo_defeat",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. kairo performs defeat: non-gory defeat sequence: recoil, lose balance, collapse and lie defeated, last four frames remain visibly collapsed. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-a8c7f659-8b2c-4ffa-977d-8259700fe2e7.png"
+  },
+  {
+    "name": "golem_walk",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. golem performs walk: distinct slow walking cycle, alternating legs. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-f3b0edcd-3a1f-4432-9546-1d0d00961a9e.png"
+  },
+  {
+    "name": "golem_jump",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. golem performs jump: crouch, high jump ascent, apex, descent, landing. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-b1b56c07-9389-45b1-993c-25e1046dff08.png"
+  },
+  {
+    "name": "golem_guard",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. golem performs guard: raise arms to guard, braced energy shield casting pose, hold then recover. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-66ffad07-3aa7-4fa3-84a2-72facda7f83f.png"
+  },
+  {
+    "name": "golem_punch",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. golem performs punch: heavy forward magma fist punch, winding up and recoiling. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-1c177771-bf0b-4517-8bc7-7142857c2245.png"
+  },
+  {
+    "name": "golem_slam",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. golem performs slam: raise both huge fists overhead then violently slam ground, recover. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-065bc938-f3db-49b9-8f6d-b160e4327d8a.png"
+  },
+  {
+    "name": "golem_defeat",
+    "prompt": "Use case: stylized-concept. Production cartoon PIXEL ART game sprite sheet. Reference image defines character identity. golem performs defeat: non-gory defeat sequence: recoil, lose balance, collapse and lie defeated, last four frames remain visibly collapsed. EXACTLY 16 distinct chronological poses in 4 columns by 4 rows equal grid. Square canvas. Wide transparent margins and gutters. Right-facing three-quarter view. Preserve reference costume, goggles, colors and silhouette. Crisp bold pixels, limited palette, dark outline. Same physical body scale throughout, all limbs inside cell. First two poses upright standing for scale calibration. Single connected character each cell. No text, ground, shadow, detached effects or particles, grid lines. Transparent alpha background.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-e8528503-cb16-4c33-89f0-fa9f24c81dd7.png"
+  }
+]

@@ -31,6 +31,7 @@ function throwDirt(e){
  burst(x,y,3,'#ad8150');
 }
 function updateMiira(e,dt){
+ const previousX=e.x;
  e.attackAge??=-1;e.attackCooldown??=.8+(e.phase%7)*.15;e.walkAge??=0;
  const distance=Math.abs(player.x-e.x);e.attackCooldown=Math.max(0,e.attackCooldown-dt);
  if(e.attackAge>=0){
@@ -42,7 +43,7 @@ function updateMiira(e,dt){
   if(e.x<e.home-e.range)e.dir=1;else if(e.x>e.home+e.range)e.dir=-1;
   e.x+=e.dir*CONFIG.enemies.miira.speed*dt;e.walkAge+=dt;
  }
- e.x=clamp(e.x+e.knock*dt,e.home-e.range-40,e.home+e.range+40);e.knock*=Math.exp(-10*dt);
+ const moveV=(e.x-previousX)/dt;e.x=previousX;moveEnemyOnTerrain(e,moveV,dt);
  if(Math.abs(player.x-e.x)<CONFIG.playerColliderWidth/2+e.w*.42&&player.y>e.y-e.h&&player.y-CONFIG.playerColliderHeight<e.y)damagePlayer(e);
 }
 // Swept collision handles fast balls without skipping players or narrow ledges.
