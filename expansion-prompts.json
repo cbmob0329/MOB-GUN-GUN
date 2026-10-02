@@ -1,0 +1,74 @@
+[
+  {
+    "name": "knife_walk",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sprite sheet EXACTLY 4 columns x4 rows=16 sequential frames. Right-facing side view. Faithfully translate attached character design, gold round goggles preserved. Same head/body scale every frame. Whole silhouette including weapons/tail inside CENTRAL 65% of EACH cell with generous gutters, never touch adjacent sprites. No grid/text/background. Crisp bold pixels not smooth illustration. Foot baseline consistent. 1024 square. Mob Knife red bandana pirate, black mask, striped red/white shirt, brown boots, curved silver sword. 16-frame WALK cycle, sack at belt."
+  },
+  {
+    "name": "knife_slash",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sprite sheet EXACTLY 4 columns x4 rows=16 sequential frames. Right-facing side view. Faithfully translate attached character design, gold round goggles preserved. Same head/body scale every frame. Whole silhouette including weapons/tail inside CENTRAL 65% of EACH cell with generous gutters, never touch adjacent sprites. No grid/text/background. Crisp bold pixels not smooth illustration. Foot baseline consistent. 1024 square. Mob Knife pirate. 16-frame DASH SLASH: four bracing anticipation frames, eight lunging sword slash forward frames, four recovery. No slash effects."
+  },
+  {
+    "name": "knife_bomb",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sprite sheet EXACTLY 4 columns x4 rows=16 sequential frames. Right-facing side view. Faithfully translate attached character design, gold round goggles preserved. Same head/body scale every frame. Whole silhouette including weapons/tail inside CENTRAL 65% of EACH cell with generous gutters, never touch adjacent sprites. No grid/text/background. Crisp bold pixels not smooth illustration. Foot baseline consistent. 1024 square. Mob Knife pirate. 16-frame BOMB THROW: hand draws black round iron cannonball bomb from sack, raises overhead, throws forward/up in middle frames, follows through and returns ready. No floating projectiles outside hands."
+  },
+  {
+    "name": "naga_walk",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sprite sheet EXACTLY 4 columns x4 rows=16 sequential frames. Right-facing side view. Faithfully translate attached character design, gold round goggles preserved. Same head/body scale every frame. Whole silhouette including weapons/tail inside CENTRAL 65% of EACH cell with generous gutters. No grid/text/background. Bold chunky pixels. 1024 square. Mob Naga: black hooded cat/snake ninja, pink cyan trim and yellow snake belly, NO legs. 16-frame slithering locomotion cycle, coiled long tail sways."
+  },
+  {
+    "name": "naga_dash",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sprite sheet EXACTLY 4 columns x4 rows=16 sequential frames. Right-facing side view. Faithfully translate attached character design, gold round goggles preserved. Same head/body scale every frame. Whole silhouette including weapons/tail inside CENTRAL 65% of EACH cell with generous gutters. No grid/text/background. Bold chunky pixels. 1024 square. Mob Naga black hooded cat/snake ninja pink cyan trim yellow belly NO legs. 16-frame lightspeed charge: coil brace, lean horizontally forward arms reaching, tail follows in curved S, braking recover. Body only no trails."
+  },
+  {
+    "name": "naga_jump",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sprite sheet EXACTLY 4 columns x4 rows=16 sequential frames. Right-facing side view. Faithfully translate attached character design, gold round goggles preserved. Same head/body scale every frame. Whole silhouette including weapons/tail inside CENTRAL 65% of EACH cell with generous gutters. No grid/text/background. Bold chunky pixels. 1024 square. Mob Naga black hooded cat/snake ninja pink cyan trim yellow belly NO legs. 16-frame high jump: compress coil, spring upward, tail curls beneath torso, spread arms at apex, descending coil landing. Same head scale; body fully visible each cell."
+  },
+  {
+    "name": "mag_walk",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sheet EXACT 4x4=16 sequential animation frames, read row-major. Character Mob Magutokage reference: black volcanic lizard cat, orange molten cracks, orange flame on head, gold round goggles, black armor, lava sword and rocky shield. Face RIGHT side view. Same head/body scale all frames, whole body/weapon/tail contained central 60% each cell; large gutters no overlap. No text, no background, no grid. Bold pixels. 1024 square. Walk cycle alternating legs, shield on left arm sword forward."
+  },
+  {
+    "name": "mag_slash",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sheet EXACT 4x4=16 sequential animation frames, read row-major. Character Mob Magutokage reference: black volcanic lizard cat, orange molten cracks, orange flame on head, gold round goggles, black armor, lava sword and rocky shield. Face RIGHT side view. Same head/body scale all frames, whole body/weapon/tail contained central 60% each cell; large gutters no overlap. No text, no background, no grid. Bold pixels. 1024 square. Fire sword slash cycle: windup four, cutting sword forward eight, recover four. Actual fire arc separate NOT in sheet."
+  },
+  {
+    "name": "mag_guard",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sheet EXACT 4x4=16 sequential animation frames, read row-major. Character Mob Magutokage reference: black volcanic lizard cat, orange molten cracks, orange flame on head, gold round goggles, black armor, lava sword and rocky shield. Face RIGHT side view. Same head/body scale all frames, whole body/weapon/tail contained central 60% each cell; large gutters no overlap. No text, no background, no grid. Bold pixels. 1024 square. Guard cycle: lift large rock shield in front, brace behind shield at middle frames, lower shield slowly at end. Head stays same size."
+  },
+  {
+    "name": "mag_backstep",
+    "prompt": "Game-ready cartoon PIXEL ART transparent PNG sheet EXACT 4x4=16 sequential animation frames, read row-major. Character Mob Magutokage reference: black volcanic lizard cat, orange molten cracks, orange flame on head, gold round goggles, black armor, lava sword and rocky shield. Face RIGHT side view. Same head/body scale all frames, whole body/weapon/tail contained central 60% each cell; large gutters no overlap. No text, no background, no grid. Bold pixels. 1024 square. Backstep cycle: lean away, hop backward feet lifted briefly with shield raised, land bracing then regain ready. No movement trails."
+  },
+  {
+    "name": "desert_props",
+    "prompt": "Create cartoon PIXEL ART game prop atlas transparent PNG exact4x4 equalcells16sprites. Side-scrolling side view. NO text/grid. Each sprite entirely central65% cell and anchored bottom, ample transparent gutters, consistent object scale within each row including rubble (do NOT enlarge rubble). Reference designs faithful, chunky clean pixels. Row1 dead leafless tree. Row2 a single palm tree (NO pond). Row3 dinosaur skull/rib bones pile. For each of these rows columns show intact, cracked, breaking apart, low rubble. Row4 a rounded sandy mound collapsing in four frames: full hill, sagging, collapsing sand, flat sand pile."
+  },
+  {
+    "name": "desert_terrain",
+    "prompt": "PIXEL ART cartoon side-scrolling PLATFORMER TERRAIN TILE ATLAS, transparent PNG exact4x4 equalcells16. Theme: golden sand, layered sandstone sediment, dry roots and tiny fossils; floating sandstone ledges, dune stone steps. Row1 four broad rectangular continuous floor strips, flat walkable top edge, textured solid interior, NO square checkerboard blocks. These strips tile horizontally seamlessly when put side by side (no side outlines). Row2 four distinct floating islands/ledges with flat top and interesting tapered underside, all wide landscape shapes. Row3 four broad stair/platform solid cross sections. Row4 four decorative terrain fragments in same theme. 1024square. Every shape fully inside its own cell central75%, 20pixel transparent gutters, NO text/grid/characters/background scene. Crisp chunky pixels, expressive handmade cartoon texture."
+  },
+  {
+    "name": "town_props",
+    "prompt": "Create cartoon PIXEL ART game prop atlas transparent PNG exact4x4 equalcells16sprites. Side-scrolling side view. NO text/grid. Each sprite entirely central65% cell and anchored bottom, ample transparent gutters, consistent object scale within each row including rubble (do NOT enlarge rubble). Reference designs faithful, chunky clean pixels. Row1 blue trash can. Row2 cardboard box stack. Row3 red beverage vending machine without brands. Each row four damage frames: intact, dented/cracked, bursting apart, rubble. Row4 bicycle tire, black narrow rubber ring with silver spokes, four rotating orientations."
+  },
+  {
+    "name": "town_terrain",
+    "prompt": "PIXEL ART cartoon side-scrolling PLATFORMER TERRAIN TILE ATLAS, transparent PNG exact4x4 equalcells16. Theme: country town asphalt pavement surface, brown compact soil and worn concrete foundations; wooden plank balconies and brick or concrete floating ledges. Row1 four broad rectangular continuous floor strips, flat walkable top edge, textured solid interior, NO square checkerboard blocks. These strips tile horizontally seamlessly when put side by side (no side outlines). Row2 four distinct floating islands/ledges with flat top and interesting tapered underside, all wide landscape shapes. Row3 four broad stair/platform solid cross sections. Row4 four decorative terrain fragments in same theme. 1024square. Every shape fully inside its own cell central75%, 20pixel transparent gutters, NO text/grid/characters/background scene. Crisp chunky pixels, expressive handmade cartoon texture."
+  },
+  {
+    "name": "neon_props",
+    "prompt": "Create cartoon PIXEL ART game prop atlas transparent PNG exact4x4 equalcells16sprites. Side-scrolling side view. NO text/grid. Each sprite entirely central65% cell and anchored bottom, ample transparent gutters, consistent object scale within each row including rubble (do NOT enlarge rubble). Reference designs faithful, chunky clean pixels. Row1 neon climbing playground structure. Row2 electric generator. Row3 neon vending machine with simple bottle icons NO text. Each row four damage frames intact, cracked, breaking, rubble. Row4 cyan magenta lift thruster glowing four animation frames."
+  },
+  {
+    "name": "neon_terrain",
+    "prompt": "PIXEL ART cartoon side-scrolling PLATFORMER TERRAIN TILE ATLAS, transparent PNG exact4x4 equalcells16. Theme: night neon city dark navy metal pavement, cyan magenta luminous thin trim, urban concrete and cables; hover-tech metal ledges, step sections, no words. Row1 four broad rectangular continuous floor strips, flat walkable top edge, textured solid interior, NO square checkerboard blocks. These strips tile horizontally seamlessly when put side by side (no side outlines). Row2 four distinct floating islands/ledges with flat top and interesting tapered underside, all wide landscape shapes. Row3 four broad stair/platform solid cross sections. Row4 four decorative terrain fragments in same theme. 1024square. Every shape fully inside its own cell central75%, 20pixel transparent gutters, NO text/grid/characters/background scene. Crisp chunky pixels, expressive handmade cartoon texture."
+  },
+  {
+    "name": "magma_props",
+    "prompt": "Create cartoon PIXEL ART game prop atlas transparent PNG exact4x4 equalcells16sprites. Side-scrolling side view. NO text/grid. Each sprite entirely central65% cell and anchored bottom, ample transparent gutters, consistent object scale within each row including rubble (do NOT enlarge rubble). Reference designs faithful, chunky clean pixels. Row1 large dark magma cracked boulder. Row2 red volcanic stone pile. Each row four damage frames intact, cracked, bursting, rubble. Row3 four animated orange lava surface puddle textures. Row4 four rising lava geyser columns with a safe flat dark stone platform cap on top."
+  },
+  {
+    "name": "magma_terrain",
+    "prompt": "PIXEL ART cartoon side-scrolling PLATFORMER TERRAIN TILE ATLAS, transparent PNG exact4x4 equalcells16. Theme: dark basalt stone surface orange glowing lava cracks below, volcanic strata; floating basalt ledges with small molten fissures, rugged stone steps. Row1 four broad rectangular continuous floor strips, flat walkable top edge, textured solid interior, NO square checkerboard blocks. These strips tile horizontally seamlessly when put side by side (no side outlines). Row2 four distinct floating islands/ledges with flat top and interesting tapered underside, all wide landscape shapes. Row3 four broad stair/platform solid cross sections. Row4 four decorative terrain fragments in same theme. 1024square. Every shape fully inside its own cell central75%, 20pixel transparent gutters, NO text/grid/characters/background scene. Crisp chunky pixels, expressive handmade cartoon texture."
+  }
+]

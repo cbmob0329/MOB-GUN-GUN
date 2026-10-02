@@ -11,7 +11,7 @@ function resetMira(){resetDragon();miraAction=null;miraCooldowns=[0,0];miraShots
 }
 function bossIntro(){return bossRoom&&['warping','closing'].includes(bossRoom.state);}
 function dropBossDorayaki(e){if(!e.bossAdd||bossRoom?.state!=='fighting'||Math.random()>=.4)return;dorayaki.push({x:e.x,y:Math.min(510,e.y-e.h/2),baseY:528,vy:-160,age:0});}
-function clearBossEntryAttacks(){resetDragon();resetDive();clearInput();cancelNyoro();tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];comboWindow=0;anomaBursts=[];miraAction=null;miraShots=[];miraEffects=[];bullets=[];energyShots=[];explosions=[];lightning=[];dirtBalls=[];bombBursts=[];thunderBullet=null;thunderBursts=[];giantThunder=null;groundBolts=[];skillState.charging=false;skillState.charge=0;skillState.thunderLeft=0;skillState.thunderAge=10;skillState.releaseAge=10;particles=[];}
+function clearBossEntryAttacks(){newEnemyShots=[];newEnemyFX=[];resetDragon();resetDive();clearInput();cancelNyoro();tetsuAction=null;tetsuEffects=[];tetsuGhosts=[];comboWindow=0;anomaBursts=[];miraAction=null;miraShots=[];miraEffects=[];bullets=[];energyShots=[];explosions=[];lightning=[];dirtBalls=[];bombBursts=[];thunderBullet=null;thunderBursts=[];giantThunder=null;groundBolts=[];skillState.charging=false;skillState.charge=0;skillState.thunderLeft=0;skillState.thunderAge=10;skillState.releaseAge=10;particles=[];}
 function bossLocked(){return bossRoom&&['closing','fighting','opening'].includes(bossRoom.state);}
 function miraStart(actor,type){const a={type,age:0,dir:actor.dir,hit:new Set(),next:0};if(actor===player)miraAction=a;else actor.action=a;return a;}
 function miraAttack(){if(state==='playing'&&!bossIntro()&&selectedCharacter==='miramob'&&!miraAction)miraStart(player,'normal');}

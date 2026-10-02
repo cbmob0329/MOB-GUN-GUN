@@ -22,7 +22,7 @@ function resolveStageSides(p,oldX,oldY,wasGrounded){
  return oldY;
 }
 function stageLandingHeight(p,oldY,wasGrounded){
- const half=CONFIG.playerColliderWidth/2;let landing=groundAt(p.x);
+ const half=CONFIG.playerColliderWidth/2;let landing=Math.min(groundAt(p.x),sandLanding(p,oldY,wasGrounded));
  for(const q of stageSurfaces())if(p.x+half>q.x&&p.x-half<q.x+q.w&&p.vy>=0&&((oldY<=q.y+.5&&p.y>=q.y)||((q.type==='stair'||q.type==='crumble')&&wasGrounded&&Math.abs(q.y-oldY)<=26)))landing=Math.min(landing,q.y);
  for(const r of ramps){if(p.x<r.x||p.x>r.x+r.w)continue;const y=r.y+(r.endY-r.y)*(p.x-r.x)/r.w;if(p.vy>=0&&((oldY<=y+8&&p.y>=y)||(wasGrounded&&Math.abs(oldY-y)<12)))landing=Math.min(landing,y);}
  for(const b of bridges){if(p.x<b.x||p.x>b.x+b.w)continue;const y=bridgeY(b,p.x);if(p.vy>=0&&((oldY<=y+2&&p.y>=y)||(wasGrounded&&Math.abs(oldY-y)<6)))landing=Math.min(landing,y);}
@@ -35,7 +35,7 @@ function onStageLanding(){
  for(const t of trampolines)if(p.x>t.x&&p.x<t.x+t.w&&Math.abs(p.y-t.y)<1){p.vy=-WORLD.trampolineSpeed;p.grounded=false;p.coyote=0;p.jumpsUsed=0;p.jumpAge=0;t.pulse=.35;burst(p.x,p.y-5,12,'#8ff5e2');}
 }
 function landingEffect(x,y){worldEffects.push({kind:'impact',x,y,age:0,duration:.42});burst(x,y-3,24,'#bb85ff');}
-function respawnFromFall(){resetDragon();resetDive();ropeRide=null;ropeRegrab=.65;
+function respawnFromFall(){newEnemyShots=[];newEnemyFX=[];resetDragon();resetDive();ropeRide=null;ropeRegrab=.65;
  const p=player;p.hp=Math.max(1,Math.ceil(p.hp/2));p.x=checkpoint.x;p.y=checkpoint.y;p.vx=p.vy=p.knock=0;p.grounded=true;p.jumpsUsed=0;p.inv=2;p.red=0;
  cancelNyoro();miraAction=null;miraShots=[];miraEffects=[];giantThunder=null;groundBolts=[];tetsuAction=null;comboWindow=0;thunderBullet=null;skillState.charging=false;skillState.charge=0;if(pink){pink.x=p.x-p.dir*65;pink.y=p.y;pink.vy=0;pink.assist=0;pink.attack=null;pink.magic=null;pink.stun=0;pink.knock=0;pink.hurtGrace=0;}clearInput();dirtBalls=[];camera=clamp(p.x-W*.35,0,CONFIG.worldWidth-W);
  for(const c of crumbles){c.gone=false;c.timer=-1;c.restore=0;}
@@ -63,7 +63,7 @@ function updateArenas(dt){
   else for(const a of arenas){if(['idle','cleared'].includes(a.state))continue;if(e.x>a.x-65&&e.x<a.x+65){e.x=a.x-65;e.dir=-1;}if(e.x>a.right-65&&e.x<a.right+65){e.x=a.right+65;e.dir=1;}}
  }
 }
-function updateWorld(dt){updateGrass(dt);
+function updateWorld(dt){updateGrass(dt);updateBiome(dt);
  updateArenas(dt);
  for(const c of crumbles){if(c.timer>=0&&!c.gone){c.timer+=dt;if(c.timer>=WORLD.collapseDelay){c.gone=true;c.restore=WORLD.collapseRestore;burst(c.x+c.w/2,c.y,8,'#bba376');}}else if(c.gone){c.restore-=dt;if(c.restore<=0){c.gone=false;c.timer=-1;}}}
  for(const t of trampolines)t.pulse=Math.max(0,t.pulse-dt);
@@ -74,7 +74,7 @@ function updateWorld(dt){updateGrass(dt);
  if(player.grounded&&Math.abs(player.y-CONFIG.groundY)<.5&&!arenaForPlayer()&&!bossLocked()&&!gaps.some(g=>player.x>g.x-100&&player.x<g.x+g.w+100)&&!trampolines.some(t=>Math.abs(player.x-t.x)<140))checkpoint={x:player.x,y:player.y};
 }
 function drawWorld(){
- for(const g of gaps){const x=g.x-camera;rounded(x,545,g.w,Math.max(175,H+cameraY-545),0,'#182d38');ctx.fillStyle='#0c1c2c';ctx.fillRect(x+12,575,g.w-24,Math.max(145,H+cameraY-575));text('↓',x+g.w/2,675,28,'#567285');}
+ for(const g of gaps){const x=g.x-camera;if(g.lava){ctx.fillStyle='#4e1723';ctx.fillRect(x,545,g.w,H+Math.abs(cameraY));ctx.fillStyle='#c74420';ctx.fillRect(x+4,575,g.w-8,H);continue;}rounded(x,545,g.w,Math.max(175,H+cameraY-545),0,'#182d38');ctx.fillStyle='#0c1c2c';ctx.fillRect(x+12,575,g.w-24,Math.max(145,H+cameraY-575));text('↓',x+g.w/2,675,28,'#567285');}
  for(const r of ramps){const x=r.x-camera;ctx.fillStyle='#776443';ctx.beginPath();ctx.moveTo(x,r.y);ctx.lineTo(x+r.w,r.endY);ctx.lineTo(x+r.w,548);ctx.closePath();ctx.fill();ctx.strokeStyle='#b1d46a';ctx.lineWidth=8;ctx.beginPath();ctx.moveTo(x,r.y);ctx.lineTo(x+r.w,r.endY);ctx.stroke();}
  for(const b of bridges){const x=b.x-camera;ctx.strokeStyle='#bba775';ctx.lineWidth=4;for(const offset of [-55,-35]){ctx.beginPath();for(let i=0;i<=24;i++){const px=b.x+b.w*i/24,y=bridgeY(b,px)+offset;if(!i)ctx.moveTo(px-camera,y);else ctx.lineTo(px-camera,y);}ctx.stroke();}for(let i=0;i<24;i++){const px=b.x+i*b.w/24,y=bridgeY(b,px);rounded(px-camera,y,b.w/24-3,12,2,'#ae8350');if(i%2===0){ctx.beginPath();ctx.moveTo(px-camera,y-52);ctx.lineTo(px-camera,y);ctx.stroke();}}for(const px of [x,x+b.w])rounded(px-4,b.y-80,8,99,3,'#765738');}
  for(const c of crumbles){if(c.gone)continue;const shake=c.timer>=0?Math.sin(elapsed*65)*2:0;rounded(c.x-camera+shake,c.y,c.w-3,c.h,3,c.timer<0?'#b4a17d':'#e6aa62');ctx.strokeStyle='#5e5243';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(c.x-camera+25,c.y);ctx.lineTo(c.x-camera+42,c.y+8);ctx.lineTo(c.x-camera+36,c.y+16);ctx.stroke();}

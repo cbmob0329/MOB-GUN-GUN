@@ -27,3 +27,5 @@
 #dive{position:absolute;right:24cqw;bottom:.8cqw;width:5.8cqw;height:5.8cqw;border:2px solid #ffdf99;border-radius:50%;background:#235363df;font-size:2.2cqw;font-weight:900;display:flex;flex-direction:column;align-items:center;justify-content:center}#dive small{font-size:.7cqw}#dive:disabled{opacity:.38}#dive[hidden]{display:none}
 
 .boss-choice{display:flex;align-items:center;gap:.8cqw;margin:.5cqw 0 .8cqw}.boss-choice>span{font-size:.65cqw;letter-spacing:.1em;color:#e7c464;white-space:nowrap}.boss-choice .character-options{flex:1;gap:.6cqw}.boss-choice button{padding:.5cqw;font-size:1cqw}.boss-choice small{font-size:.6cqw;margin-top:.15cqw}
+
+.biome-options{display:flex;gap:.4cqw;margin:.7cqw 0}.biome-options button{flex:1;background:#25434e;border:1px solid #668c8d;border-radius:5px;padding:.65cqw .2cqw;font-size:1.15cqw;min-height:28px}.biome-options [aria-pressed="true"]{border-color:#f7cd5f;background:#665044}#next-biome{background:#396b73;padding:.8cqw;font-size:1cqw;border-radius:5px;margin:.6cqw}#next-biome[hidden]{display:none}.modal{width:55%}

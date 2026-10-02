@@ -1,5 +1,5 @@
 'use strict';
-const DRAGON=Object.freeze({hp:1680,height:200,width:108,speed:100,dashSpeed:540,contact:5,claw:6,breath:5,orb:6,stomp:8,flame:8,deathDuration:2.3,
+const DRAGON=Object.freeze({hp:1680,flightCycle:10,flightShare:.7,height:240,width:124,speed:100,dashSpeed:540,contact:5,claw:6,breath:5,orb:6,stomp:8,flame:8,deathDuration:2.3,
  animations:['walk','hover','dash','attack','breath','orb','dive','flame','defeat','effects'],
  durations:{walk:1.2,hover:2.3,dash:1.35,attack:1.15,breath:2.15,orb:2.05,dive:2.1,flame:3.35}});
 let selectedBoss='dragon',dragonShots=[],dragonEffects=[];
@@ -54,40 +54,45 @@ async function loadDragon(){
  }));
 }
 function resetDragon(){dragonShots=[];dragonEffects=[];}
-function makeDragon(x){return{type:'dragon',x,y:548,home:x,vx:0,vy:0,dir:-1,w:DRAGON.width,h:170,hp:DRAGON.hp,maxHP:DRAGON.hp,grounded:true,death:-1,flash:0,knock:0,stun:0,action:null,think:1.4,sequence:0,walkAge:0};}
+function makeDragon(x){return{type:'dragon',x,y:548,home:x,vx:0,vy:0,dir:-1,w:DRAGON.width,h:195,hp:DRAGON.hp,maxHP:DRAGON.hp,grounded:true,death:-1,flash:0,knock:0,stun:0,action:null,think:1.4,sequence:0,walkAge:0,flightAge:0};}
 function bossName(){return bossRoom?.kind==='dragon'?'モブドラゴン':'ミラモブ';}
 function dragonStart(e,type){
  e.dir=Math.sign(player.x-e.x)||e.dir;
- e.action={type,age:0,dir:e.dir,hit:false,next:0,startX:e.x,startY:e.y,targetX:clamp(player.x,bossRoom.x+180,bossRoom.right-180)};
+ e.action={type,age:0,dir:e.dir,hit:false,next:0,startX:e.x,startY:e.y,targetY:player.y-35,targetX:clamp(player.x,bossRoom.x+180,bossRoom.right-180)};
  if(type==='dive')e.grounded=false;
 }
-function dragonMouth(e){return{x:e.x+e.dir*76,y:e.y-94};}
+function dragonMouth(e){return{x:e.x+e.dir*91,y:e.y-113};}
 function dragonEffect(kind,x,y,size=100,dir=1){dragonEffects.push({kind,x,y,size,dir,age:0});}
 function dragonBlast(x,y,r,damage){
- dragonEffect('impact',x,y,r*2);burst(x,y,18,'#ff9b3b');
+ dragonEffect('impact',x,y,r*2.3);burst(x,y,28,'#ff9b3b');
  if(segmentHitsBox(player.x,player.y-32,player.x,player.y-32,x-r,y-55,x+r,y+18))damagePlayer({x},damage);
 }
 function dragonFireball(e,angleOffset=0,speed=340){
  const m=dragonMouth(e),a=Math.atan2(player.y-35-m.y,player.x-m.x)+angleOffset;
- dragonShots.push({x:m.x,y:m.y,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,r:23,age:0,life:3,damage:DRAGON.orb});
+ dragonShots.push({x:m.x,y:m.y,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,r:27,age:0,life:3,damage:DRAGON.orb});
  dragonEffect('orb',m.x,m.y,55,e.dir);
 }
+function dragonBeam(e,length){const m=dragonMouth(e),dy=clamp((e.action?.targetY??513)-m.y,-180,230);return{...m,dx:e.dir*length,dy};}
 function dragonCone(e,length,height,damage){
- const m=dragonMouth(e),end=m.x+e.dir*length;
- // The visible flame is a horizontal danger band, leaving room to jump above it.
- if(player.x+17>=Math.min(m.x,end)&&player.x-17<=Math.max(m.x,end)&&player.y>m.y-height/2&&player.y-65<m.y+height/2)damagePlayer({x:e.x},damage);
+ const b=dragonBeam(e,length),px=player.x-b.x,py=player.y-32-b.y,t=clamp((px*b.dx+py*b.dy)/(b.dx*b.dx+b.dy*b.dy),0,1);
+ if(Math.hypot(px-b.dx*t,py-b.dy*t)<height/2+20)damagePlayer(e,damage);
+}
+function dragonFlight(e,dt){
+ // A ten-second rhythm: seven seconds airborne, three seconds on the ground.
+ const air=e.flightAge%DRAGON.flightCycle<DRAGON.flightCycle*DRAGON.flightShare,target=air?440+Math.sin(e.flightAge*2)*6:548;
+ e.y+=clamp(target-e.y,-300*dt,360*dt);e.vy=0;e.grounded=!air&&e.y>=547.9;
 }
 function updateDragon(e,dt){
  if(bossRoom?.state!=='fighting'||e.death>=0)return;
- e.walkAge+=dt;e.think=Math.max(0,e.think-dt);e.knock*=Math.exp(-12*dt);
+ e.flightAge=(e.flightAge||0)+dt;e.walkAge+=dt;e.think=Math.max(0,e.think-dt);e.knock*=Math.exp(-12*dt);
  if(!e.action){
   e.dir=Math.sign(player.x-e.x)||e.dir;e.vx=Math.abs(player.x-e.x)>180?e.dir*DRAGON.speed:0;e.x+=e.vx*dt;
-  e.vy+=CONFIG.gravity*dt;e.y=Math.min(548,e.y+e.vy*dt);if(e.y===548){e.vy=0;e.grounded=true;}
+  dragonFlight(e,dt);
   if(e.think===0&&e.stun<=0){const sequence=['attack','orb','hover','dive','dash','breath','flame'];dragonStart(e,sequence[e.sequence++%sequence.length]);}
  }else{
   const a=e.action;a.age+=dt;const t=a.age;e.vx=0;
   if(a.type==='hover'){
-   e.grounded=false;e.y=548-190*Math.min(1,t/.7)+Math.sin(t*5)*5;
+   dragonFlight(e,dt);
    e.x=clamp(e.x+a.dir*38*dt,bossRoom.x+155,bossRoom.right-155);
   }else if(a.type==='dive'){
    // Rise first; lock the landing marker before the plunge so it can be dodged.
@@ -97,9 +102,9 @@ function updateDragon(e,dt){
    else if(!a.landed){e.y+=1050*dt;if(e.y>=548){e.y=548;a.landed=true;dragonBlast(e.x,535,150,DRAGON.stomp);}}
    if(a.landed)e.grounded=true;
   }else{
-   e.vy+=CONFIG.gravity*dt;e.y=Math.min(548,e.y+e.vy*dt);if(e.y===548){e.vy=0;e.grounded=true;}
+   dragonFlight(e,dt);
    if(a.type==='dash'&&t>=.55&&t<1.08){e.vx=a.dir*DRAGON.dashSpeed;e.x+=e.vx*dt;}
-   if(a.type==='attack'&&t>=.47&&!a.hit){a.hit=true;dragonEffect('claw',e.x+a.dir*105,e.y-62,150,a.dir);const x=e.x+a.dir*100;if(Math.abs(player.x-x)<95&&player.y>e.y-125&&player.y-65<e.y)damagePlayer(e,DRAGON.claw);}
+   if(a.type==='attack'&&t>=.47&&!a.hit){a.hit=true;dragonEffect('claw',e.x+a.dir*120,e.y-62,180,a.dir);const x=e.x+a.dir*100;if(Math.abs(player.x-x)<95&&player.y>e.y-125&&player.y-65<e.y)damagePlayer(e,DRAGON.claw);}
    if(a.type==='orb')while(a.next<3&&t>=.65+a.next*.3){dragonFireball(e,(a.next-1)*.08);a.next++;}
    if(a.type==='breath'&&t>=.75&&t<1.75)dragonCone(e,330,105,DRAGON.breath);
    if(a.type==='flame'&&t>=1.65&&t<2.55){dragonCone(e,640,135,DRAGON.flame);if(a.next===0){a.next++;dragonEffect('impact',e.x,e.y-35,140);}}
@@ -142,14 +147,14 @@ function drawDragonEffects(){
  const e=bossRoom?.boss;if(e?.type==='dragon'&&e.death<0&&e.action){
   const a=e.action,t=a.age,m=dragonMouth(e),index=Math.floor(t*12)%4;
   if(a.type==='breath'||a.type==='flame'){
-   const big=a.type==='flame',windup=big?1.65:.75,end=big?2.55:1.75,length=big?640:330;
-   if(t<windup){dragonFX('orb',index,m.x,m.y,25+30*t/windup);ctx.save();ctx.setLineDash([10,9]);ctx.strokeStyle='#ffbe66';ctx.lineWidth=3;ctx.strokeRect(Math.min(m.x,m.x+a.dir*length)-camera,510,length,24);ctx.restore();}
-   else if(t<end)dragonFX('breath',index,m.x+a.dir*length/2,m.y,length,big?150:110,a.dir);
+   const big=a.type==='flame',windup=big?1.65:.75,end=big?2.55:1.75,length=big?640:330,b=dragonBeam(e,length),angle=Math.atan2(b.dy,Math.abs(b.dx));
+   if(t<windup){dragonFX('orb',index,m.x,m.y,25+30*t/windup);ctx.save();ctx.setLineDash([10,9]);ctx.strokeStyle='#ffbe66';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(m.x-camera,m.y);ctx.lineTo(m.x+b.dx-camera,m.y+b.dy);ctx.stroke();ctx.restore();}
+   else if(t<end){const f=dragonArt.effects[4+index];ctx.save();ctx.imageSmoothingEnabled=false;ctx.translate(m.x-camera,m.y);ctx.scale(a.dir,1);ctx.rotate(angle);ctx.shadowColor='#ff7c24';ctx.shadowBlur=big?24:12;const h=big?175:130;ctx.drawImage(f.img,0,-h/2,Math.hypot(b.dx,b.dy),h);ctx.restore();}
   }
   if(a.type==='dive'&&!a.landed){ctx.save();ctx.strokeStyle='#ffbd55';ctx.lineWidth=4;ctx.beginPath();ctx.ellipse(a.targetX-camera,540,150,10,0,0,Math.PI*2);ctx.stroke();text('↓',a.targetX-camera,511,30,'#ffde87');ctx.restore();}
   if(a.type==='dash'&&t<.55){ctx.save();ctx.strokeStyle='#ffdf89';ctx.lineWidth=4;const x=e.x-camera+a.dir*90;ctx.beginPath();ctx.moveTo(x,535);ctx.lineTo(x+a.dir*120,535);ctx.lineTo(x+a.dir*100,520);ctx.stroke();ctx.restore();}
  }
- for(const s of dragonShots)dragonFX('orb',Math.floor(s.age*12)%4,s.x,s.y,60,60,Math.sign(s.vx)||1);
+ for(const s of dragonShots)dragonFX('orb',Math.floor(s.age*12)%4,s.x,s.y,76,76,Math.sign(s.vx)||1);
  for(const f of dragonEffects)dragonFX(f.kind,Math.min(3,Math.floor(f.age/.14)),f.x,f.y,f.size,f.size,f.dir);
 }
 document.querySelectorAll('[data-boss]').forEach(button=>button.addEventListener('click',()=>{

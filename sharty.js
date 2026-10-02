@@ -33,7 +33,7 @@ async function loadSharty(){
 }
 function resetSharty(){
  shartyShots=[];shartyEffects=[];shartyEncounter=null;
- if(areaIndex!==1)return;
+ if(areaIndex!==1||biomeIndex!==0)return;
  const e=spawnGrassEnemy('sharty',5750);Object.assign(e,{w:42,h:SHARTY.height,vy:0,grounded:true,walkAge:0,action:null,cooldown:1.1,sequence:0,jumpClock:2.8});
  shartyEncounter={enemy:e,state:'waiting'};
 }

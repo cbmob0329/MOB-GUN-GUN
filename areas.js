@@ -8,8 +8,8 @@ const AREAS=Object.freeze([
 const GRASS={rockHP:36,treeHP:48,rollingDamage:8,rollingSpeed:205,ropeLength:560,ropeReach:78};
 let areaIndex=0,cameraY=0,areaBank={coins:0,kills:0,time:0},props=[],ropes=[],ropeRide=null,ropeRegrab=0;
 const grassArt={props:[],terrain:[],ribbon:null};
-function currentArea(){return AREAS[areaIndex];}
-function updateAreaLabels(){document.querySelector('.area strong').textContent=currentArea().name;document.querySelector('.route>span').textContent=`GREENWAY / 0${areaIndex+1}`;}
+function currentArea(){return biomeIndex===0?AREAS[areaIndex]:{...AREAS[areaIndex],name:BIOMES[biomeIndex].name+' Area '+(areaIndex+1),subtitle:BIOMES[biomeIndex].sub[areaIndex],width:5200+areaIndex*400};}
+function updateAreaLabels(){document.querySelector('.area strong').textContent=currentArea().name;document.querySelector('.route>span').textContent=`${BIOMES[biomeIndex].route} / 0${areaIndex+1}`;}
 async function loadGrassAtlas(path,rows){
  const img=await loadImage(path),c=document.createElement('canvas');c.width=img.width;c.height=img.height;
  const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(img,0,0);const pixels=g.getImageData(0,0,c.width,c.height).data;
@@ -35,7 +35,7 @@ function addStairs(x,count=12,y=548){for(let i=0;i<count;i++)platforms.push({x:x
 function addSwing(gapX,width=820){width=Math.max(820,width);gaps.push({x:gapX,w:width});ropes.push({x:gapX+width/2,y:40,length:GRASS.ropeLength,angle:-.95,velocity:0,phase:0,gapX,gapWidth:width});addCoinLine(gapX+100,310,5,50);}
 function buildGrassArea(){
  platforms=[];coins=[];enemies=[];gaps=[];bridges=[];ramps=[];crumbles=[];trampolines=[];arenas=[];crates=[];dorayaki=[];worldEffects=[];props=[];ropes=[];ropeRide=null;ropeRegrab=0;cameraY=0;
- checkpoint={x:140,y:548};
+ checkpoint={x:140,y:548};sandHills=[];townTires=[];if(biomeIndex>0){buildBiomeArea();updateAreaLabels();return;}
  if(areaIndex===0){
   platforms.push({x:780,y:490,w:180,h:58,solid:true},{x:1100,y:416,w:240,h:28});addStairs(2350,8);platforms.push({x:2814,y:356,w:350,h:30});
   for(const x of [650,2060,3980])addGrassProp('rock',x);
@@ -83,14 +83,14 @@ function updateMovingPlatforms(dt){
   for(const a of riders){a.x+=p.x-ox;a.y+=p.y-oy;}
  }
 }
-function damageGrassProp(p,damage){if(p.death>=0)return;p.hp=Math.max(0,p.hp-damage);p.flash=.12;p.shake=.3;
+function damageGrassProp(p,damage){if(p.propKind==='biome'){damageBiomeProp(p,damage);return;}if(p.death>=0)return;p.hp=Math.max(0,p.hp-damage);p.flash=.12;p.shake=.3;
  if(p.hp>0)return;p.death=0;p.brokenAt=elapsed;burst(p.x,p.y-40,18,p.propKind==='tree'?'#99c546':'#bbb7bb');
  if(p.propKind==='tree'){
   if(Math.random()<.5){const e=spawnGrassEnemy('lime',p.x,390,130);e.dropping={vy:-230};e.fromTree=true;}
   else dorayaki.push({x:p.x,y:p.y-125,baseY:p.y-20,vy:-290,age:0});
  }
 }
-function grassSolidBoxes(){return props.filter(p=>p.death<0&&(p.propKind==='rock'||p.propKind==='tree')).map(p=>({x:p.x-p.w/2,y:p.y-p.h,w:p.w,h:p.h,solid:true,prop:p}));}
+function grassSolidBoxes(){return props.filter(p=>p.death<0&&(p.propKind==='rock'||p.propKind==='tree'||p.propKind==='biome')).map(p=>({x:p.x-p.w/2,y:p.y-p.h,w:p.w,h:p.h,solid:true,prop:p}));}
 function ropeEnd(r){return{x:r.x+Math.sin(r.angle)*r.length,y:r.y+Math.cos(r.angle)*r.length};}
 function updateRopePlayer(dt,input){
  ropeRegrab=Math.max(0,ropeRegrab-dt);
@@ -140,7 +140,7 @@ function soilRibbon(worldX,y,w,h,ledge=false){
  }
  ctx.restore();
 }
-function drawGrassGround(){soilRibbon(camera,548,W,H+Math.abs(cameraY));}
+function drawGrassGround(){if(biomeIndex>0){drawBiomeGround();return;}soilRibbon(camera,548,W,H+Math.abs(cameraY));}
 // Render once on a coarse pixel grid: a grassy island with a tapered stone belly.
 // The flat grass lip is the exact walking surface; roots below are decoration.
 const islandArt=new Map();
@@ -162,7 +162,7 @@ function grassIsland(width,variant='moss'){
  if(variant==='crystal'){for(const x of [12,Math.floor(w*.52),w-14]){poly([[x-3,14],[x+3,14],[x+4,21],[x,28],[x-4,21]],'#294b67');poly([[x-2,15],[x+2,15],[x+2,21],[x,25]],'#68c9c8');g.fillStyle='#c4fbde';g.fillRect(x-1,16,1,5);}}
  islandArt.set(key,c);return c;
 }
-function drawGrassPlatform(p){if(p.x+p.w<camera||p.x>camera+W)return;if(p.solid){soilRibbon(p.x,p.y,p.w,p.h);return;}ctx.save();ctx.imageSmoothingEnabled=false;ctx.drawImage(grassIsland(p.w,p.variant),Math.round(p.x-camera),p.y-3,p.w,90);if(p.motion){ctx.fillStyle='#f8edb2';const x=Math.round(p.x-camera+p.w/2);ctx.fillRect(x-8,p.y+27,16,3);if(p.motion.axis==='y')ctx.fillRect(x-1,p.y+21,3,15);}ctx.restore();}
+function drawGrassPlatform(p){if(biomeIndex>0){drawBiomePlatform(p);return;}if(p.x+p.w<camera||p.x>camera+W)return;if(p.solid){soilRibbon(p.x,p.y,p.w,p.h);return;}ctx.save();ctx.imageSmoothingEnabled=false;ctx.drawImage(grassIsland(p.w,p.variant),Math.round(p.x-camera),p.y-3,p.w,90);if(p.motion){ctx.fillStyle='#f8edb2';const x=Math.round(p.x-camera+p.w/2);ctx.fillRect(x-8,p.y+27,16,3);if(p.motion.axis==='y')ctx.fillRect(x-1,p.y+21,3,15);}ctx.restore();}
 function drawSwingRope(r){
  const end=ropeEnd(r),segment=grassArt.terrain[9],handle=grassArt.terrain[10];
  grassSprite('terrain',8,r.x-camera-54,r.y-38,64,86);
@@ -173,7 +173,7 @@ function drawSwingRope(r){
  const sy=handle.y+handle.h*.73,sh=handle.h*.27,hw=48,hh=sh/handle.w*hw;
  ctx.drawImage(handle.img,handle.x,sy,handle.w,sh,-hw/2,r.length-hh*.65,hw,hh);
  ctx.restore();text('JUMP',end.x-camera,end.y+75,14,'#fff5c5');
-}function drawGrassProps(){
+}function drawGrassProps(){if(biomeIndex>0){drawBiomeDecor();return;}
  for(const p of props){if(p.spent||p.x<camera-250||p.x>camera+W+250)continue;const kind=p.propKind,x=p.x-camera;
   // Contact shadow and grass overlap anchor the irregular sprite bottoms to the floor.
   if(Number.isFinite(groundAt(p.x))&&Math.abs(p.y-groundAt(p.x))<2){ctx.fillStyle='#20392166';ctx.fillRect(Math.round(x-(kind==='tree'?28:37)),p.y-1,kind==='tree'?56:74,5);ctx.fillRect(Math.round(x-22),p.y-3,44,8);}
