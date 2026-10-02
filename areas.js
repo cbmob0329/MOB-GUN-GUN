@@ -64,6 +64,9 @@ function buildGrassArea(){
   addSwing(3030);addGrassProp('tree',3860);addGrassProp('rock',4220);
   for(const [type,x] of [['lime',820],['chase',1350],['miira',2770],['tank',3980],['miira',4660]])spawnGrassEnemy(type,x,548,60);
  }
+ // Leave clear running stretches between obstacles; retain one example of each prop.
+ const seenProps=new Set();props=props.filter((p,i)=>{if(!seenProps.has(p.propKind)){seenProps.add(p.propKind);return true;}return i%3===0;});crates=crates.filter(p=>props.includes(p));
+ addActionTerraces();
  // Gentle moving platforms are introduced over safe ground before the high route.
  if(areaIndex===0){platforms.push({x:3550,y:415,w:190,h:28,variant:'wood',motion:{axis:'y',range:60,period:5}});}
  if(areaIndex===1){platforms.push({x:1450,y:405,w:190,h:28,variant:'crystal',motion:{axis:'y',range:75,period:6}});const ferry=platforms.find(p=>p.x===3400);ferry.motion={axis:'x',range:45,period:5};ferry.variant='wood';}

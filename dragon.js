@@ -62,15 +62,16 @@ function dragonStart(e,type){
  if(type==='dive')e.grounded=false;
 }
 function dragonMouth(e){return{x:e.x+e.dir*91,y:e.y-113};}
-function dragonEffect(kind,x,y,size=100,dir=1){dragonEffects.push({kind,x,y,size,dir,age:0});}
+function dragonEffect(kind,x,y,size=100,dir=1){dragonEffects.push({kind,x,y:kind==='impact'&&y>500?548:y,size,dir,age:0,ground:kind==='impact'&&y>500});}
 function dragonBlast(x,y,r,damage){
- dragonEffect('impact',x,y,r*2.3);burst(x,y,28,'#ff9b3b');
+ dragonEffect('impact',x,y,r*2.3);const first=particles.length;burst(x,y,28,'#ff9b3b');for(let i=first;i<particles.length;i++){particles[i].vy=-Math.abs(particles[i].vy)-60;particles[i].floor=548;}
  if(segmentHitsBox(player.x,player.y-32,player.x,player.y-32,x-r,y-55,x+r,y+18))damagePlayer({x},damage);
 }
 function dragonFireball(e,angleOffset=0,speed=340){
  const m=dragonMouth(e),a=Math.atan2(player.y-35-m.y,player.x-m.x)+angleOffset;
  dragonShots.push({x:m.x,y:m.y,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,r:27,age:0,life:3,damage:DRAGON.orb});
- dragonEffect('orb',m.x,m.y,55,e.dir);
+ // The projectile itself leaves the mouth; no stationary duplicate remains.
+ e.recoil=.16;
 }
 function dragonBeam(e,length){const m=dragonMouth(e),dy=clamp((e.action?.targetY??513)-m.y,-180,230);return{...m,dx:e.dir*length,dy};}
 function dragonCone(e,length,height,damage){
@@ -79,12 +80,12 @@ function dragonCone(e,length,height,damage){
 }
 function dragonFlight(e,dt){
  // A ten-second rhythm: seven seconds airborne, three seconds on the ground.
- const air=e.flightAge%DRAGON.flightCycle<DRAGON.flightCycle*DRAGON.flightShare,target=air?440+Math.sin(e.flightAge*2)*6:548;
+ const air=e.flightAge%DRAGON.flightCycle<DRAGON.flightCycle*DRAGON.flightShare,target=air?434+Math.sin(e.flightAge*3)*12:548;
  e.y+=clamp(target-e.y,-300*dt,360*dt);e.vy=0;e.grounded=!air&&e.y>=547.9;
 }
 function updateDragon(e,dt){
  if(bossRoom?.state!=='fighting'||e.death>=0)return;
- e.flightAge=(e.flightAge||0)+dt;e.walkAge+=dt;e.think=Math.max(0,e.think-dt);e.knock*=Math.exp(-12*dt);
+ e.flightAge=(e.flightAge||0)+dt;e.walkAge+=dt;e.recoil=Math.max(0,(e.recoil||0)-dt);e.think=Math.max(0,e.think-dt);e.knock*=Math.exp(-12*dt);
  if(!e.action){
   e.dir=Math.sign(player.x-e.x)||e.dir;e.vx=Math.abs(player.x-e.x)>180?e.dir*DRAGON.speed:0;e.x+=e.vx*dt;
   dragonFlight(e,dt);
@@ -97,13 +98,14 @@ function updateDragon(e,dt){
   }else if(a.type==='dive'){
    // Rise first; lock the landing marker before the plunge so it can be dodged.
    e.grounded=false;
-   if(t<.7){e.y=a.startY-(a.startY-320)*Math.min(1,t/.7);e.x=a.startX+(a.targetX-a.startX)*Math.min(1,t/.7);}
-   else if(t<1.1){e.x=a.targetX;e.y=320;}
-   else if(!a.landed){e.y+=1050*dt;if(e.y>=548){e.y=548;a.landed=true;dragonBlast(e.x,535,150,DRAGON.stomp);}}
+   if(t<.7){const q=1-(1-t/.7)**3;e.y=a.startY+(290-a.startY)*q;e.x=a.startX+(a.targetX-a.startX)*q;}
+   else if(t<1.1){e.x=a.targetX;e.y=290;}
+   else if(!a.landed){e.y+=(850+(t-1.1)*2200)*dt;if(e.y>=548){e.y=548;a.landed=true;a.landAge=t;dragonBlast(e.x,535,150,DRAGON.stomp);}}
    if(a.landed)e.grounded=true;
   }else{
    dragonFlight(e,dt);
    if(a.type==='dash'&&t>=.55&&t<1.08){e.vx=a.dir*DRAGON.dashSpeed;e.x+=e.vx*dt;}
+   if(a.type==='attack'&&t>.25&&t<.47)e.x+=a.dir*170*dt;
    if(a.type==='attack'&&t>=.47&&!a.hit){a.hit=true;dragonEffect('claw',e.x+a.dir*120,e.y-62,180,a.dir);const x=e.x+a.dir*100;if(Math.abs(player.x-x)<95&&player.y>e.y-125&&player.y-65<e.y)damagePlayer(e,DRAGON.claw);}
    if(a.type==='orb')while(a.next<3&&t>=.65+a.next*.3){dragonFireball(e,(a.next-1)*.08);a.next++;}
    if(a.type==='breath'&&t>=.75&&t<1.75)dragonCone(e,330,105,DRAGON.breath);
@@ -128,15 +130,22 @@ function updateDragonEffects(dt){
 function dragonPose(e){
  if(e.death>=0)return{name:'defeat',index:Math.min(15,Math.floor(e.death/1.7*16))};
  const a=e.action;if(!a)return{name:e.y<500?'hover':'walk',index:Math.floor(e.walkAge*10)%16};
- if(a.type==='hover')return{name:'hover',index:Math.floor(a.age*10)%16};
- if(a.type==='dive')return{name:'dive',index:a.age<1.1?Math.min(7,Math.floor(a.age/1.1*8)):a.landed?Math.min(15,8+Math.floor((a.age-1.3)/.8*8)):7};
+ if(a.type==='hover')return{name:'hover',index:Math.floor(a.age*15)%16};
+ if(a.type==='dive')return{name:'dive',index:a.age<1.1?Math.min(7,Math.floor(a.age/1.1*8)):a.landed?Math.min(15,8+Math.floor((a.age-a.landAge)/.7*8)):7};
+ if(a.type==='orb'){const pulse=(a.age-.65)%.3;return{name:'orb',index:a.age<.5?Math.floor(a.age/.5*4):a.age<1.5?4+Math.min(3,Math.floor(Math.max(0,pulse)/.3*4)):Math.min(15,8+Math.floor((a.age-1.5)/.55*8))};}
  return{name:a.type,index:Math.min(15,Math.floor(a.age/DRAGON.durations[a.type]*16))};
 }
 function drawDragon(e){
  const pose=dragonPose(e),f=dragonArt[pose.name]?.[Math.max(0,pose.index)];if(!f)return;
- ctx.save();ctx.imageSmoothingEnabled=false;ctx.fillStyle='#28171350';ctx.beginPath();ctx.ellipse(e.x-camera,548,74,10,0,0,Math.PI*2);ctx.fill();
- ctx.translate(e.x-camera,e.y);ctx.scale(e.dir,1);
+ ctx.save();ctx.imageSmoothingEnabled=false;ctx.fillStyle='#28171350';ctx.beginPath();ctx.ellipse(e.x-camera,548,Math.max(40,74-(548-e.y)*.12),Math.max(5,10-(548-e.y)*.025),0,0,Math.PI*2);ctx.fill();
+ const a=e.death<0?e.action:null,t=a?.age||0,recoil=(e.recoil||0)/.16;
+ let lean=0,shift=0;if(a?.type==='dash')lean=t<.55?-.045: t<1.08?.10:0;
+ if(a?.type==='attack')shift=t<.25?-Math.sin(t/.25*Math.PI)*10:0;
+ if(a?.type==='dive'&&!a.landed)lean=t>1.1?.10:-.025;
+ if(a?.type==='breath'||a?.type==='flame')lean=-Math.sin(Math.min(1,t/(a.type==='flame'?1.65:.75))*Math.PI)*.035;
+ ctx.translate(e.x-camera+e.dir*(shift-recoil*9),e.y);ctx.scale(e.dir,1);ctx.rotate(lean);
  if(e.flash>0)ctx.filter='brightness(1.8)';if(e.death>1.7)ctx.globalAlpha=Math.max(0,1-(e.death-1.7)/.6);
+ if(a?.type==='dash'&&t>=.55&&t<1.08){for(let i=2;i>=1;i--){ctx.globalAlpha=.1/i;ctx.drawImage(f.img,-f.anchorX*f.scale-i*26,-f.h*f.scale,f.w*f.scale,f.h*f.scale);}ctx.globalAlpha=1;}
  ctx.drawImage(f.img,-f.anchorX*f.scale,-f.h*f.scale,f.w*f.scale,f.h*f.scale);ctx.restore();
 }
 function dragonFX(kind,index,x,y,w,h=w,dir=1){
@@ -144,18 +153,20 @@ function dragonFX(kind,index,x,y,w,h=w,dir=1){
  ctx.save();ctx.imageSmoothingEnabled=false;ctx.translate(x-camera,y);ctx.scale(dir,1);ctx.drawImage(f.img,-w/2,-h/2,w,h);ctx.restore();
 }
 function drawDragonEffects(){
+ ctx.save();ctx.beginPath();ctx.rect(-W,-2000,W*3,2548);ctx.clip();
  const e=bossRoom?.boss;if(e?.type==='dragon'&&e.death<0&&e.action){
   const a=e.action,t=a.age,m=dragonMouth(e),index=Math.floor(t*12)%4;
   if(a.type==='breath'||a.type==='flame'){
    const big=a.type==='flame',windup=big?1.65:.75,end=big?2.55:1.75,length=big?640:330,b=dragonBeam(e,length),angle=Math.atan2(b.dy,Math.abs(b.dx));
-   if(t<windup){dragonFX('orb',index,m.x,m.y,25+30*t/windup);ctx.save();ctx.setLineDash([10,9]);ctx.strokeStyle='#ffbe66';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(m.x-camera,m.y);ctx.lineTo(m.x+b.dx-camera,m.y+b.dy);ctx.stroke();ctx.restore();}
+   if(t<windup){ctx.save();ctx.fillStyle='#ffd574';ctx.shadowColor='#ff7427';ctx.shadowBlur=12;ctx.beginPath();ctx.arc(m.x-camera,m.y,5+8*t/windup,0,Math.PI*2);ctx.fill();ctx.restore();ctx.save();ctx.setLineDash([10,9]);ctx.strokeStyle='#ffbe66';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(m.x-camera,m.y);ctx.lineTo(m.x+b.dx-camera,m.y+b.dy);ctx.stroke();ctx.restore();}
    else if(t<end){const f=dragonArt.effects[4+index];ctx.save();ctx.imageSmoothingEnabled=false;ctx.translate(m.x-camera,m.y);ctx.scale(a.dir,1);ctx.rotate(angle);ctx.shadowColor='#ff7c24';ctx.shadowBlur=big?24:12;const h=big?175:130;ctx.drawImage(f.img,0,-h/2,Math.hypot(b.dx,b.dy),h);ctx.restore();}
   }
   if(a.type==='dive'&&!a.landed){ctx.save();ctx.strokeStyle='#ffbd55';ctx.lineWidth=4;ctx.beginPath();ctx.ellipse(a.targetX-camera,540,150,10,0,0,Math.PI*2);ctx.stroke();text('↓',a.targetX-camera,511,30,'#ffde87');ctx.restore();}
   if(a.type==='dash'&&t<.55){ctx.save();ctx.strokeStyle='#ffdf89';ctx.lineWidth=4;const x=e.x-camera+a.dir*90;ctx.beginPath();ctx.moveTo(x,535);ctx.lineTo(x+a.dir*120,535);ctx.lineTo(x+a.dir*100,520);ctx.stroke();ctx.restore();}
  }
  for(const s of dragonShots)dragonFX('orb',Math.floor(s.age*12)%4,s.x,s.y,76,76,Math.sign(s.vx)||1);
- for(const f of dragonEffects)dragonFX(f.kind,Math.min(3,Math.floor(f.age/.14)),f.x,f.y,f.size,f.size,f.dir);
+ for(const f of dragonEffects){const index=Math.min(3,Math.floor(f.age/.14));if(f.ground){const frame=dragonArt.effects[12+index],h=f.size*.46;ctx.save();ctx.imageSmoothingEnabled=false;ctx.drawImage(frame.img,f.x-camera-f.size/2,548-h,f.size,h);ctx.restore();}else dragonFX(f.kind,index,f.x,f.y,f.size,f.size,f.dir);}
+ ctx.restore();
 }
 document.querySelectorAll('[data-boss]').forEach(button=>button.addEventListener('click',()=>{
  if(!['loading','ready','dead','clear','areaClear'].includes(state))return;
