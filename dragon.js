@@ -56,38 +56,38 @@ async function loadDragon(){
 function resetDragon(){dragonShots=[];dragonEffects=[];}
 function makeDragon(x){return{type:'dragon',x,y:548,home:x,vx:0,vy:0,dir:-1,w:DRAGON.width,h:195,hp:DRAGON.hp,maxHP:DRAGON.hp,grounded:true,death:-1,flash:0,knock:0,stun:0,action:null,think:1.4,sequence:0,walkAge:0,flightAge:0};}
 function bossName(){return bossRoom?.kind==='dragon'?'モブドラゴン':'ミラモブ';}
-function dragonStart(e,type){
- e.dir=Math.sign(player.x-e.x)||e.dir;
- e.action={type,age:0,dir:e.dir,hit:false,next:0,startX:e.x,startY:e.y,targetY:player.y-35,targetX:clamp(player.x,bossRoom.x+180,bossRoom.right-180)};
+function dragonStart(e,type){const victim=enemyTarget(e);
+ e.dir=Math.sign(victim.x-e.x)||e.dir;
+ e.action={type,age:0,dir:e.dir,hit:false,next:0,startX:e.x,startY:e.y,targetY:victim.y-35,targetX:clamp(victim.x,bossRoom.x+180,bossRoom.right-180)};
  if(type==='dive')e.grounded=false;
 }
 function dragonMouth(e){return{x:e.x+e.dir*91,y:e.y-113};}
 function dragonEffect(kind,x,y,size=100,dir=1){dragonEffects.push({kind,x,y:kind==='impact'&&y>500?548:y,size,dir,age:0,ground:kind==='impact'&&y>500});}
 function dragonBlast(x,y,r,damage){
  dragonEffect('impact',x,y,r*2.3);const first=particles.length;burst(x,y,28,'#ff9b3b');for(let i=first;i<particles.length;i++){particles[i].vy=-Math.abs(particles[i].vy)-60;particles[i].floor=548;}
- if(segmentHitsBox(player.x,player.y-32,player.x,player.y-32,x-r,y-55,x+r,y+18))damagePlayer({x},damage);
+ for(const p of hostileVictims())if(segmentHitsBox(p.x,p.y-32,p.x,p.y-32,x-r,y-55,x+r,y+18))hurtAlly(p,{x},damage);
 }
-function dragonFireball(e,angleOffset=0,speed=340){
- const m=dragonMouth(e),a=Math.atan2(player.y-35-m.y,player.x-m.x)+angleOffset;
+function dragonFireball(e,angleOffset=0,speed=340){const victim=enemyTarget(e);
+ const m=dragonMouth(e),a=Math.atan2(victim.y-35-m.y,victim.x-m.x)+angleOffset;
  dragonShots.push({x:m.x,y:m.y,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,r:27,age:0,life:3,damage:DRAGON.orb});
  // The projectile itself leaves the mouth; no stationary duplicate remains.
  e.recoil=.16;
 }
 function dragonBeam(e,length){const m=dragonMouth(e),dy=clamp((e.action?.targetY??513)-m.y,-180,230);return{...m,dx:e.dir*length,dy};}
 function dragonCone(e,length,height,damage){
- const b=dragonBeam(e,length),px=player.x-b.x,py=player.y-32-b.y,t=clamp((px*b.dx+py*b.dy)/(b.dx*b.dx+b.dy*b.dy),0,1);
- if(Math.hypot(px-b.dx*t,py-b.dy*t)<height/2+20)damagePlayer(e,damage);
+ const b=dragonBeam(e,length);for(const p of hostileVictims()){const px=p.x-b.x,py=p.y-32-b.y,t=clamp((px*b.dx+py*b.dy)/(b.dx*b.dx+b.dy*b.dy),0,1);
+ if(Math.hypot(px-b.dx*t,py-b.dy*t)<height/2+20)hurtAlly(p,e,damage);}
 }
 function dragonFlight(e,dt){
  // A ten-second rhythm: seven seconds airborne, three seconds on the ground.
  const air=e.flightAge%DRAGON.flightCycle<DRAGON.flightCycle*DRAGON.flightShare,target=air?434+Math.sin(e.flightAge*3)*12:548;
  e.y+=clamp(target-e.y,-300*dt,360*dt);e.vy=0;e.grounded=!air&&e.y>=547.9;
 }
-function updateDragon(e,dt){
+function updateDragon(e,dt){const victim=enemyTarget(e);
  if(bossRoom?.state!=='fighting'||e.death>=0)return;
  e.flightAge=(e.flightAge||0)+dt;e.walkAge+=dt;e.recoil=Math.max(0,(e.recoil||0)-dt);e.think=Math.max(0,e.think-dt);e.knock*=Math.exp(-12*dt);
  if(!e.action){
-  e.dir=Math.sign(player.x-e.x)||e.dir;e.vx=Math.abs(player.x-e.x)>180?e.dir*DRAGON.speed:0;e.x+=e.vx*dt;
+  e.dir=Math.sign(victim.x-e.x)||e.dir;e.vx=Math.abs(victim.x-e.x)>180?e.dir*DRAGON.speed:0;e.x+=e.vx*dt;
   dragonFlight(e,dt);
   if(e.think===0&&e.stun<=0){const sequence=['attack','orb','hover','dive','dash','breath','flame'];dragonStart(e,sequence[e.sequence++%sequence.length]);}
  }else{
@@ -106,7 +106,7 @@ function updateDragon(e,dt){
    dragonFlight(e,dt);
    if(a.type==='dash'&&t>=.55&&t<1.08){e.vx=a.dir*DRAGON.dashSpeed;e.x+=e.vx*dt;}
    if(a.type==='attack'&&t>.25&&t<.47)e.x+=a.dir*170*dt;
-   if(a.type==='attack'&&t>=.47&&!a.hit){a.hit=true;dragonEffect('claw',e.x+a.dir*120,e.y-62,180,a.dir);const x=e.x+a.dir*100;if(Math.abs(player.x-x)<95&&player.y>e.y-125&&player.y-65<e.y)damagePlayer(e,DRAGON.claw);}
+   if(a.type==='attack'&&t>=.47&&!a.hit){a.hit=true;dragonEffect('claw',e.x+a.dir*120,e.y-62,180,a.dir);const x=e.x+a.dir*100;if(Math.abs(victim.x-x)<95&&victim.y>e.y-125&&victim.y-65<e.y)hurtAlly(victim,e,DRAGON.claw);}
    if(a.type==='orb')while(a.next<3&&t>=.65+a.next*.3){dragonFireball(e,(a.next-1)*.08);a.next++;}
    if(a.type==='breath'&&t>=.75&&t<1.75)dragonCone(e,330,105,DRAGON.breath);
    if(a.type==='flame'&&t>=1.65&&t<2.55){dragonCone(e,640,135,DRAGON.flame);if(a.next===0){a.next++;dragonEffect('impact',e.x,e.y-35,140);}}
@@ -114,14 +114,14 @@ function updateDragon(e,dt){
   if(t>=DRAGON.durations[a.type]){e.action=null;e.think=e.hp<e.maxHP*.4?.65:.95;e.vy=0;}
  }
  e.x=clamp(e.x,bossRoom.x+155,bossRoom.right-155);
- if(Math.abs(player.x-e.x)<e.w*.4+17&&player.y>e.y-e.h&&player.y-65<e.y)damagePlayer(e,DRAGON.contact);
+ if(Math.abs(victim.x-e.x)<e.w*.4+17&&victim.y>e.y-e.h&&victim.y-65<e.y)hurtAlly(victim,e,DRAGON.contact);
 }
 function updateDragonEffects(dt){
  if(bossRoom?.boss?.type==='dragon'&&bossRoom.boss.death>=0)dragonShots=[];
  for(const s of dragonShots){
   const ox=s.x,oy=s.y;s.age+=dt;s.life-=dt;s.x+=s.vx*dt;s.y+=s.vy*dt;
-  const hit=segmentHitsBox(ox,oy,s.x,s.y,player.x-17-s.r,player.y-65-s.r,player.x+17+s.r,player.y+s.r);
-  if(hit){damagePlayer({x:s.x},s.damage);s.life=0;dragonEffect('impact',s.x,s.y,100);}
+  const hit=hostileShotHit(ox,oy,s.x,s.y,s.r);
+  if(hit){hurtAlly(hit,{x:s.x},s.damage);s.life=0;dragonEffect('impact',s.x,s.y,100);}
   else if(s.y+s.r>=548){s.life=0;dragonEffect('impact',s.x,530,100);}
  }
  dragonShots=dragonShots.filter(s=>s.life>0&&s.x>camera-150&&s.x<camera+W+150);

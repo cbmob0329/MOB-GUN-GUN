@@ -17,9 +17,9 @@ function miraStart(actor,type){const a={type,age:0,dir:actor.dir,hit:new Set(),n
 function miraAttack(){if(state==='playing'&&!bossIntro()&&selectedCharacter==='miramob'&&!miraAction)miraStart(player,'normal');}
 function castMira(i){if(state!=='playing'||bossIntro()||selectedCharacter!=='miramob'||miraAction||i>1||miraCooldowns[i]>0)return;miraStart(player,i===0?'blades':'skull');miraCooldowns[i]=MIRA.cooldowns[i];}
 function miraSpecial(a){return !!a&&a.type!=='normal';}
-function miraVictims(hostile){return hostile?[player,...(pink?.enabled&&bossRoom?.state==='fighting'?[pink]:[])]:combatTargets();}
+function miraVictims(hostile){return hostile?[player,...(pink?.enabled&&pink.hp>0&&bossRoom?.state==='fighting'?[pink]:[])]:combatTargets();}
 function miraDamage(target,damage,dir,hostile,launch=false){
- if(hostile&&target===pink){hitPink(dir,launch);return;}
+ if(hostile&&target===pink){hitPink(dir,launch,damage);return;}
  if(hostile){const hp=player.hp;damagePlayer({x:player.x-dir*50},damage);if(player.hp<hp){player.purple=.45;if(launch){player.vx=dir*100;player.knock=dir*160;player.vy=-200;}}}
  else{hitEnemy(target,damage,dir);target.purple=.45;if(launch)launchEnemy(target,dir*180,-180);}
 }
@@ -46,7 +46,7 @@ function updateMira(dt){
  }
  miraShots=miraShots.filter(s=>s.life>0&&s.x>0&&s.x<CONFIG.worldWidth);for(const f of miraEffects){f.age+=dt;if(f.kind==='skull'&&f.age<=.4)hitSkullBlast(f);}miraEffects=miraEffects.filter(f=>f.age<(f.kind==='skull'?1.15:.4));
 }
-function miraBossTarget(e){return pink?.enabled&&pink.stun<=0&&Math.abs(pink.x-e.x)<190&&Math.abs(player.x-e.x)>180?pink:player;}
+function miraBossTarget(e){return enemyTarget(e);}
 function moveMiraBoss(e,dt){
  const oldY=e.y,wasGrounded=e.grounded;e.flightClock=Math.max(0,(e.flightClock??3)-dt);
  if(e.stun>0){e.airMode=null;e.vy=(e.vy||0)+CONFIG.gravity*dt;}

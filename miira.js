@@ -22,29 +22,29 @@ async function loadMiira(){
 }
 function miiraDeathDuration(){return MIIRA.downFrameTime*7+MIIRA.fadeTime;}
 function miiraPose(e){const group=e.death>=0?'do':e.attackAge>=0?'at':MIIRA.walkGroup;const age=e.death>=0?e.death:e.attackAge>=0?e.attackAge:(e.walkAge||0);const index=group==='do'?Math.min(7,Math.floor(age/MIIRA.downFrameTime)):e.attackAge>=0?Math.min(7,Math.floor(age/MIIRA.frameTime)):Math.floor(age/.12)%8;return miiraFrames[group]?.[index];}
-function throwDirt(e){
+function throwDirt(e){const victim=enemyTarget(e);
  if(dirtBalls.length>=48)return;
- e.dir=Math.sign(player.x-e.x)||e.dir;
- const x=e.x+e.dir*28,y=e.y-47,targetX=player.x+clamp(player.vx*.15,-45,45),targetY=player.y-30;
+ e.dir=Math.sign(victim.x-e.x)||e.dir;
+ const x=e.x+e.dir*28,y=e.y-47,targetX=victim.x+clamp((victim.vx||0)*.15,-45,45),targetY=victim.y-30;
  const flight=clamp(Math.abs(targetX-x)/470,.65,.95);
  dirtBalls.push({x,y,vx:clamp((targetX-x)/flight,-650,650),vy:(targetY-y-.5*MIIRA.ballGravity*flight*flight)/flight,r:9,life:2.2,angle:0});
  burst(x,y,3,'#ad8150');
 }
-function updateMiira(e,dt){
+function updateMiira(e,dt){const victim=enemyTarget(e);
  const previousX=e.x;
  e.attackAge??=-1;e.attackCooldown??=.8+(e.phase%7)*.15;e.walkAge??=0;
- const distance=Math.abs(player.x-e.x);e.attackCooldown=Math.max(0,e.attackCooldown-dt);
+ const distance=Math.abs(victim.x-e.x);e.attackCooldown=Math.max(0,e.attackCooldown-dt);
  if(e.attackAge>=0){
   const previous=e.attackAge;e.attackAge+=dt;
   if(previous<MIIRA.frameTime*3&&e.attackAge>=MIIRA.frameTime*3)throwDirt(e);
   if(e.attackAge>=MIIRA.frameTime*8){e.attackAge=-1;e.attackCooldown=MIIRA.cooldown+(e.phase%5)*.12;}
- }else if(distance>=65&&distance<=MIIRA.range&&Math.abs(player.y-e.y)<180&&e.attackCooldown===0){e.dir=Math.sign(player.x-e.x)||e.dir;e.attackAge=0;}
+ }else if(distance>=65&&distance<=MIIRA.range&&Math.abs(victim.y-e.y)<180&&e.attackCooldown===0){e.dir=Math.sign(victim.x-e.x)||e.dir;e.attackAge=0;}
  else{
   if(e.x<e.home-e.range)e.dir=1;else if(e.x>e.home+e.range)e.dir=-1;
   e.x+=e.dir*CONFIG.enemies.miira.speed*dt;e.walkAge+=dt;
  }
  const moveV=(e.x-previousX)/dt;e.x=previousX;moveEnemyOnTerrain(e,moveV,dt);
- if(Math.abs(player.x-e.x)<CONFIG.playerColliderWidth/2+e.w*.42&&player.y>e.y-e.h&&player.y-CONFIG.playerColliderHeight<e.y)damagePlayer(e);
+ hostileContact(e,CONFIG.enemies.miira.damage);
 }
 // Swept collision handles fast balls without skipping players or narrow ledges.
 function segmentHitsBox(x,y,nx,ny,left,top,right,bottom){
@@ -57,8 +57,8 @@ function updateDirtBalls(dt){
  for(const b of dirtBalls){
   const x=b.x,y=b.y;b.x+=b.vx*dt;b.y+=b.vy*dt+.5*MIIRA.ballGravity*dt*dt;b.vy+=MIIRA.ballGravity*dt;b.life-=dt;b.angle+=dt*8;
   const terrain=b.y+b.r>=groundAt(b.x)||[...stageSurfaces(),...arenaGateBoxes()].some(p=>segmentHitsBox(x,y,b.x,b.y,p.x-b.r,p.y-b.r,p.x+p.w+b.r,p.y+p.h+b.r));
-  const hit=!terrain&&segmentHitsBox(x,y,b.x,b.y,player.x-CONFIG.playerColliderWidth/2-b.r,player.y-CONFIG.playerColliderHeight-b.r,player.x+CONFIG.playerColliderWidth/2+b.r,player.y+b.r);
-  if(hit)damagePlayer({type:'miira',x:b.x},MIIRA.ballDamage);
+  const hit=!terrain&&hostileShotHit(x,y,b.x,b.y,b.r);
+  if(hit)hurtAlly(hit,{type:'miira',x:b.x},MIIRA.ballDamage);
   if(terrain||hit){b.life=0;burst(b.x,Math.min(b.y,CONFIG.groundY-3),7,'#b38b58');}
  }
  dirtBalls=dirtBalls.filter(b=>b.life>0&&Math.abs(b.x-player.x)<1600);

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "pink_down",
+    "prompt": "Production pixel art game sprite sheet, exact 4x4 grid of 16 sequential poses. Reference defines Mob Pink: pink hood, black face, golden round goggles, round pink silver shield, brown boots. Same right-facing character. Non-gory knocked unconscious sequence: first 2 upright poses, stumble then lie on side with shield resting against body, last 6 poses prone sleeping gently with eyes closed. Same physical body scale throughout, full body per cell, large transparent margins, no pieces from another cell. Crisp chunky cartoon pixels. Transparent background, no shadows, no text, no detached stars or effects. Each cell one connected silhouette, shield remains touching body.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-2f9985ea-5caf-4f05-adae-27527ee8202b.png",
+    "destination": "pink/down.png"
+  },
+  {
+    "name": "golem_punch_fx",
+    "prompt": "Production cartoon PIXEL ART game effect sprite sheet. EXACT 4x4 equal cells, 16 frames of ONE fiery magma punch impact animation: first 4 a clenched molten rocky fist silhouette thrusting horizontally right with orange fire trail, next 6 expanding sharp crescent flames and yellow-white explosive impact burst, last 6 glowing ember fragments shrinking and fading. Powerful heavy physical impact, black volcanic fragments, vivid orange-red fire, bright yellow core. Crisp square pixel clusters, no blur, no solid rectangular placeholder. Generous clear transparent gutters, all effects within cells, consistent center. Transparent background. No character, ground, letters or grid lines.",
+    "source": "C:\\Users\\CB-Me\\.codex\\generated_images\\01a0b4ff-9376-7ae0-9475-537ce3f3269b\\exec-d599fa7b-3771-459e-ac6d-8cd9fee6e544.png",
+    "destination": "enemy/expansion/golem_punch_effect.png"
+  }
+]

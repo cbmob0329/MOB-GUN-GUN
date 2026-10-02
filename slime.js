@@ -4,25 +4,16 @@ const LIME = Object.freeze({width:58,height:50,scale:.25,deathDuration:1.05,walk
 let limeFrames=[];
 async function loadLime(){
  const img=await loadImage('enemy/lime-goggles/spritesheet.png');
- const c=document.createElement('canvas');c.width=img.width;c.height=img.height;
- const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(img,0,0);
- const data=g.getImageData(0,0,c.width,c.height).data;
- const xs=[0,318,632,944,1254],rows=[[70,480],[510,855],[920,1225]];
- limeFrames=rows.flatMap(([top,bottom])=>xs.slice(0,4).map((left,i)=>{
-  let l=xs[i+1],t=bottom,r=left,b=top;
-  for(let y=top;y<bottom;y++)for(let x=left;x<xs[i+1];x++)if(data[(y*c.width+x)*4+3]>16){l=Math.min(l,x);r=Math.max(r,x+1);t=Math.min(t,y);b=Math.max(b,y+1);}
-  if(r<=l||b<=t)throw Error('Empty lime slime sprite');
-  return{img,x:l,y:t,w:r-l,h:b-t};
- }));
+ limeFrames=isolateCharacterBodies(img,12);
 }
 function limeFrameIndex(e){return e.death>=0?8+Math.min(3,Math.floor(e.death/.17)):e.flash>0?4+Math.min(3,Math.floor((.1-e.flash)/.025)):[0,1,2,3,2,1][Math.floor((e.walkAge||0)/LIME.walkFrameSeconds)%6];}
 function updateLime(e,dt){
- e.walkAge=(e.walkAge||0)+dt;
- if(Math.abs(player.x-e.x)<360)e.dir=Math.sign(player.x-e.x)||e.dir;
+ const target=enemyTarget(e);e.walkAge=(e.walkAge||0)+dt;
+ if(Math.abs(target.x-e.x)<360)e.dir=Math.sign(target.x-e.x)||e.dir;
  if(e.x<=e.home-e.range)e.dir=1;else if(e.x>=e.home+e.range)e.dir=-1;
  const speed=CONFIG.enemies.lime.speed*(.65+.35*Math.sin(e.walkAge*Math.PI/1.8)**2);
  moveEnemyOnTerrain(e,e.dir*speed,dt);
- if(Math.abs(player.x-e.x)<CONFIG.playerColliderWidth/2+e.w*.42&&player.y>e.y-e.h&&player.y-CONFIG.playerColliderHeight<e.y)damagePlayer(e);
+ hostileContact(e,CONFIG.enemies.lime.damage);
 }
 function drawLime(e){
  const x=e.x-camera;if(x<-160||x>W+160)return;

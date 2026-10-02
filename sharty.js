@@ -38,21 +38,21 @@ function resetSharty(){
  shartyEncounter={enemy:e,state:'waiting'};
 }
 function shartyFX(kind,x,y,size=80,dir=1){shartyEffects.push({kind,x,y,size,dir,age:0});}
-function startShartyAction(e,type){e.action={type,age:0,dir:Math.sign(player.x-e.x)||e.dir,fired:false,moved:false};e.dir=e.action.dir;}
-function shartyProjectile(e,orb=false,offset=0){
- const x=e.x+e.dir*34,y=e.y-42,angle=orb?Math.atan2(player.y-32-y,player.x-x)+offset:(e.dir>0?0:Math.PI);
+function startShartyAction(e,type){const victim=enemyTarget(e);e.action={type,age:0,dir:Math.sign(victim.x-e.x)||e.dir,fired:false,moved:false};e.dir=e.action.dir;}
+function shartyProjectile(e,orb=false,offset=0){const victim=enemyTarget(e);
+ const x=e.x+e.dir*34,y=e.y-42,angle=orb?Math.atan2(victim.y-32-y,victim.x-x)+offset:(e.dir>0?0:Math.PI);
  const speed=orb?310:430;
  shartyShots.push({owner:e,kind:orb?'orb':'wave',x,y,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,r:orb?18:12,age:0,life:orb?2.8:.44,damage:orb?SHARTY.orb:SHARTY.melee});
  shartyFX(orb?'burst':'wave',x,y,orb?58:78,e.dir);
 }
-function updateSharty(e,dt){
+function updateSharty(e,dt){const victim=enemyTarget(e);
  if(shartyEncounter?.state!=='fighting')return;
  e.walkAge+=dt;e.cooldown=Math.max(0,e.cooldown-dt);e.jumpClock-=dt;
  if(e.action){
   const a=e.action;a.age+=dt;
   if(a.type==='attack'&&!a.fired&&a.age>=.43){a.fired=true;shartyProjectile(e);}
   if(a.type==='teleport'&&!a.moved&&a.age>=.5){
-   a.moved=true;shartyFX('portal',e.x,e.y-35,100);e.x=a.targetX;e.y=548;e.vy=0;e.grounded=true;shartyFX('portal',e.x,e.y-35,100);e.dir=Math.sign(player.x-e.x)||e.dir;
+   a.moved=true;shartyFX('portal',e.x,e.y-35,100);e.x=a.targetX;e.y=548;e.vy=0;e.grounded=true;shartyFX('portal',e.x,e.y-35,100);e.dir=Math.sign(victim.x-e.x)||e.dir;
   }
   if(a.type==='special'){
    for(let i=0;i<3;i++)if(a.age>=.85+i*.22&&!(a.firedMask&(1<<i))){a.firedMask=(a.firedMask||0)|(1<<i);shartyProjectile(e,true,(i-1)*.13);}
@@ -60,17 +60,17 @@ function updateSharty(e,dt){
   const duration={attack:.95,teleport:1.1,special:1.85}[a.type];
   if(a.age>=duration){e.action=null;e.cooldown=.8;}
  }else if(e.stun<=0||!e.stun){
-  const distance=Math.abs(player.x-e.x);e.dir=Math.sign(player.x-e.x)||e.dir;
+  const distance=Math.abs(victim.x-e.x);e.dir=Math.sign(victim.x-e.x)||e.dir;
   if(e.cooldown===0){
    const type=['attack','attack','teleport','special'][e.sequence%4];
-   if(type!=='attack'||distance<230){startShartyAction(e,type);e.sequence++;if(type==='teleport'){e.action.targetX=clamp(player.x-e.dir*220,SHARTY.left+70,SHARTY.right-70);shartyFX('portal',e.action.targetX,510,110);}}
+   if(type!=='attack'||distance<230){startShartyAction(e,type);e.sequence++;if(type==='teleport'){e.action.targetX=clamp(victim.x-e.dir*220,SHARTY.left+70,SHARTY.right-70);shartyFX('portal',e.action.targetX,510,110);}}
   }
   if(!e.action&&distance>110)e.x+=e.dir*SHARTY.speed*dt;
   if(!e.action&&e.grounded&&e.jumpClock<=0){e.vy=-SHARTY.jump;e.grounded=false;e.jumpClock=3.8;}
  }
  e.x=clamp(e.x+e.knock*dt,SHARTY.left+35,SHARTY.right-35);e.knock*=Math.exp(-10*dt);
  e.vy+=CONFIG.gravity*dt;e.y+=e.vy*dt;if(e.y>=548){e.y=548;e.vy=0;e.grounded=true;}
- if(Math.abs(player.x-e.x)<35&&player.y>e.y-e.h&&player.y-CONFIG.playerColliderHeight<e.y)damagePlayer(e,SHARTY.contact);
+ if(Math.abs(victim.x-e.x)<35&&victim.y>e.y-e.h&&victim.y-CONFIG.playerColliderHeight<e.y)hurtAlly(victim,e,SHARTY.contact);
 }
 function updateShartyWorld(dt){
  const room=shartyEncounter;
@@ -82,8 +82,8 @@ function updateShartyWorld(dt){
  for(const s of shartyShots){
   const ox=s.x,oy=s.y;s.age+=dt;s.life-=dt;s.x+=s.vx*dt;s.y+=s.vy*dt;
   if(s.owner.death>=0){s.life=0;continue;}
-  if(segmentHitsBox(ox,oy,s.x,s.y,player.x-17-s.r,player.y-CONFIG.playerColliderHeight-s.r,player.x+17+s.r,player.y+s.r)){
-   damagePlayer({x:s.x},s.damage);s.life=0;shartyFX('burst',s.x,s.y,s.r*4);
+  const hit=hostileShotHit(ox,oy,s.x,s.y,s.r);if(hit){
+   hurtAlly(hit,{x:s.x},s.damage);s.life=0;shartyFX('burst',s.x,s.y,s.r*4);
   }else if(s.y+s.r>548){s.life=0;shartyFX('burst',s.x,535,s.r*4);}
  }
  shartyShots=shartyShots.filter(s=>s.life>0&&s.x>SHARTY.left-100&&s.x<SHARTY.right+100);
