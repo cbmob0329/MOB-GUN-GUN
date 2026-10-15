@@ -1,0 +1,25 @@
+{
+  "releaseFrame": 7,
+  "sourceBodyHeight": 235,
+  "rawFixedGroundReleaseSocket": [
+    0.6031914893617021,
+    -0.2978723404255319
+  ],
+  "authoredRootLiftAtRelease": 0.225531914893617,
+  "releaseSocket": [
+    0.6031914893617021,
+    -0.07234042553191489
+  ],
+  "displayBodyHeight": 110,
+  "compensationDisplayPxY": 24.80851063829787,
+  "worldPositionAtDisplay110": [
+    "P.x + dir*66.35106382978723",
+    "P.y - 7.957446808510637"
+  ],
+  "rendererContract": "drawAnchorY=P.y+authoredRootLift*displayBodyHeight; physicsP unchanged",
+  "actualProjectileCenter": "same compensated releaseSocket as rendered sword tip",
+  "fxSocketOffset": [
+    0,
+    0
+  ]
+}

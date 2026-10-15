@@ -1,0 +1,116 @@
+{
+  "format": "MOB GUN GUN partial cartoon runtime pack",
+  "version": 1,
+  "scope": [
+    "denden"
+  ],
+  "status": "Full required source art coverage; actual-game acceptance pending",
+  "animations": {
+    "denden/air1": {
+      "adapter": "denden/body/air1/denden-body-air1-runtime220.json"
+    },
+    "denden/air2": {
+      "adapter": "denden/body/air2/denden-body-air2-runtime220.json"
+    },
+    "denden/air3": {
+      "adapter": "denden/body/air3/denden-body-air3-runtime220.json"
+    },
+    "denden/awakening-end": {
+      "adapter": "denden/body/awakening-end/denden-body-awakening-end-runtime220.json"
+    },
+    "denden/effects/awakening-aura": {
+      "adapter": "denden/effects/awakening-aura/denden-effects-awakening-aura-runtime220.json"
+    },
+    "denden/effects/hit-heavy": {
+      "adapter": "denden/effects/hit-heavy/denden-effects-hit-heavy-runtime220.json"
+    },
+    "denden/effects/launch": {
+      "adapter": "denden/effects/launch/denden-effects-launch-runtime220.json"
+    },
+    "denden/effects/slam": {
+      "adapter": "denden/effects/slam/denden-effects-slam-runtime220.json"
+    },
+    "denden/effects/special2-water": {
+      "adapter": "denden/effects/special2-water/denden-effects-special2-water-runtime220.json"
+    },
+    "denden/guard": {
+      "adapter": "denden/body/guard/denden-body-guard-runtime220.json"
+    },
+    "denden/idle": {
+      "adapter": "denden/body/idle/denden-body-idle-runtime220.json"
+    },
+    "denden/launch": {
+      "adapter": "denden/body/launch/denden-body-launch-runtime220.json"
+    },
+    "denden/light2": {
+      "adapter": "denden/body/light2/denden-body-light2-runtime220.json"
+    },
+    "denden/light3": {
+      "adapter": "denden/body/light3/denden-body-light3-runtime220.json"
+    },
+    "denden/light4": {
+      "adapter": "denden/body/light4/denden-body-light4-runtime220.json"
+    },
+    "denden/ranged": {
+      "adapter": "denden/body/ranged/denden-body-ranged-runtime220.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.7792207792207793,
+        -0.5367965367965368
+      ]
+    },
+    "denden/recovery": {
+      "adapter": "denden/body/recovery/denden-body-recovery-runtime220.json"
+    },
+    "denden/slam": {
+      "adapter": "denden/body/slam/denden-body-slam-runtime220.json"
+    },
+    "denden/special1-recovery": {
+      "adapter": "denden/body/special1-recovery/denden-body-special1-recovery-runtime220.json"
+    },
+    "denden/special1-startup": {
+      "adapter": "denden/body/special1-startup/denden-body-special1-startup-runtime220.json"
+    },
+    "denden/special2-startup": {
+      "adapter": "denden/body/special2-startup/denden-body-special2-startup-runtime220.json"
+    }
+  },
+  "aliases": {
+    "denden/awakened-air1": "denden/air1",
+    "denden/awakened-air2": "denden/air2",
+    "denden/awakened-air3": "denden/air3",
+    "denden/awakened-awakening-end": "denden/awakening-end",
+    "denden/effects/awakened-awakening-aura": "denden/effects/awakening-aura",
+    "denden/effects/awakened-hit-heavy": "denden/effects/hit-heavy",
+    "denden/effects/awakened-launch": "denden/effects/launch",
+    "denden/effects/awakened-slam": "denden/effects/slam",
+    "denden/effects/awakened-special2-water": "denden/effects/special2-water",
+    "denden/awakened-guard": "denden/guard",
+    "denden/awakened-idle": "denden/idle",
+    "denden/awakened-launch": "denden/launch",
+    "denden/awakened-light2": "denden/light2",
+    "denden/awakened-light3": "denden/light3",
+    "denden/awakened-light4": "denden/light4",
+    "denden/awakened-ranged": "denden/ranged",
+    "denden/awakened-recovery": "denden/recovery",
+    "denden/awakened-slam": "denden/slam",
+    "denden/awakened-special1-recovery": "denden/special1-recovery",
+    "denden/awakened-special1-startup": "denden/special1-startup",
+    "denden/awakened-special2-startup": "denden/special2-startup",
+    "denden/dance": "denden/special1-startup",
+    "denden/awakened-dance": "denden/special1-startup"
+  },
+  "awakenedReuse": "Existing character normal and awakened aliases share all16 source body cels. Separate character-specific16-cel aura supplies form change. Not separately drawn awakened artwork.",
+  "sourceCoordinateContract": {
+    "rect": "atlas pixels",
+    "pivot": "frame-local runtime pixels",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height; added to existing FX anchor",
+    "releaseSocket": "body manifest entry: x,y normalized by displayed body height from player virtual feet; actual projectile spawn and collider, x follows facing, y positive down",
+    "releaseFrame": "body manifest entry: zero-based LOCAL frame index in the emitting runtime phase; global special cel23 maps to active local index6",
+    "orientationMode": "velocity: atan2(vy,vx)-nativeAngleRadians, no mirror; facing: horizontal mirror; fixed: no rotation or mirror"
+  },
+  "masterPolicy": "All PNG artwork masters unchanged. Runtime copies are uniformly downsampled at most to220 source body pixels, then alpha-trimmed with8px transparent gutters and lossless static WebP encoding. Spatial downsampling itself is lossy.",
+  "playbackRequirement": "Every animation and awakened alias must present all16 distinct source cels. No skipped-cel speedups or shortened action clocks; engine verification pending."
+}

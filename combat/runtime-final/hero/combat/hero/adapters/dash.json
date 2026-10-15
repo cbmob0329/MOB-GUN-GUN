@@ -1,0 +1,253 @@
+{
+  "frames": [
+    {
+      "rect": [
+        8,
+        696,
+        271,
+        226
+      ],
+      "duration": 0.034,
+      "pivot": [
+        106.1764705882353,
+        223.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        295,
+        696,
+        270,
+        214
+      ],
+      "duration": 0.034,
+      "pivot": [
+        100.1764705882353,
+        212.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        297,
+        249,
+        266,
+        214
+      ],
+      "duration": 0.034,
+      "pivot": [
+        95.1764705882353,
+        211.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        855,
+        694,
+        256,
+        214
+      ],
+      "duration": 0.034,
+      "pivot": [
+        101.1764705882353,
+        212.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        249,
+        273,
+        208
+      ],
+      "duration": 0.034,
+      "pivot": [
+        106.1764705882353,
+        205.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        657,
+        8,
+        260,
+        211
+      ],
+      "duration": 0.034,
+      "pivot": [
+        99.1764705882353,
+        222.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        377,
+        8,
+        264,
+        211
+      ],
+      "duration": 0.034,
+      "pivot": [
+        99.1764705882353,
+        208.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        581,
+        694,
+        258,
+        204
+      ],
+      "duration": 0.034,
+      "pivot": [
+        99.1764705882353,
+        201.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        473,
+        272,
+        207
+      ],
+      "duration": 0.034,
+      "pivot": [
+        109.1764705882353,
+        204.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        578,
+        479,
+        265,
+        199
+      ],
+      "duration": 0.034,
+      "pivot": [
+        93.1764705882353,
+        197.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        933,
+        223,
+        259,
+        201
+      ],
+      "duration": 0.034,
+      "pivot": [
+        97.1764705882353,
+        198.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        859,
+        440,
+        252,
+        202
+      ],
+      "duration": 0.034,
+      "pivot": [
+        104.1764705882353,
+        199.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        296,
+        479,
+        266,
+        191
+      ],
+      "duration": 0.034,
+      "pivot": [
+        106.1764705882353,
+        202.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        579,
+        235,
+        262,
+        206
+      ],
+      "duration": 0.034,
+      "pivot": [
+        93.1764705882353,
+        204.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        933,
+        8,
+        260,
+        199
+      ],
+      "duration": 0.034,
+      "pivot": [
+        101.1764705882353,
+        196.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        353,
+        225
+      ],
+      "duration": 0.034,
+      "pivot": [
+        148.1764705882353,
+        222.58823529411768
+      ],
+      "src": "../clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "status": "runtime-export-awaiting-integration-review",
+  "loop": true,
+  "name": "モブラミ / Mob Rami",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "rootNote": "Feet registered to450,650; game supplies root motion.",
+  "runtimeExport": {
+    "scale": 0.6470588235294118,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "events": [],
+  "completeSequenceId": "dash",
+  "authoredCelCount": 16,
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/dash/pilot/mobrami-dash-16.json"
+  ]
+}

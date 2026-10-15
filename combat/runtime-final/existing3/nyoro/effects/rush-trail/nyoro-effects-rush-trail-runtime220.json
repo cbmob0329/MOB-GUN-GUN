@@ -1,0 +1,726 @@
+{
+  "character": "nyoro",
+  "animation": "rush-trail",
+  "kind": "effects",
+  "src": "nyoro-effects-rush-trail-runtime220.webp",
+  "bodyHeight": 188.88888888888886,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        337,
+        338,
+        314,
+        305
+      ],
+      "pivot": [
+        250.8,
+        147.75
+      ],
+      "duration": 0.035,
+      "phase": "seed",
+      "sourceFrame": 1,
+      "displaySize": [
+        1.6623529411764706,
+        1.6147058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/01",
+      "sourceVisibleRgbaSha256": "d7c7a8b9f101f7c9de7ccff81c488624ca151ed5af55ab50c4363f7bdec234de"
+    },
+    {
+      "rect": [
+        995,
+        984,
+        313,
+        295
+      ],
+      "pivot": [
+        250.3,
+        137.75
+      ],
+      "duration": 0.035,
+      "phase": "seed splits",
+      "sourceFrame": 2,
+      "displaySize": [
+        1.657058823529412,
+        1.5617647058823532
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/02",
+      "sourceVisibleRgbaSha256": "909ceca6b219e005fa52cae693c59100c6f4795d75cb9ce7cff2df37f3ffbcca"
+    },
+    {
+      "rect": [
+        995,
+        667,
+        313,
+        301
+      ],
+      "pivot": [
+        250.8,
+        143.75
+      ],
+      "duration": 0.03,
+      "phase": "first growth",
+      "sourceFrame": 3,
+      "displaySize": [
+        1.657058823529412,
+        1.593529411764706
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/03",
+      "sourceVisibleRgbaSha256": "48d02dac5f6df0244a1024aa2543078deb2206941eaf3eb4d344c088123794d4"
+    },
+    {
+      "rect": [
+        666,
+        995,
+        313,
+        295
+      ],
+      "pivot": [
+        251.3,
+        137.75
+      ],
+      "duration": 0.03,
+      "phase": "branch growth",
+      "sourceFrame": 4,
+      "displaySize": [
+        1.657058823529412,
+        1.5617647058823532
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/04",
+      "sourceVisibleRgbaSha256": "e672fb47f620bbcc89d7d1090962e86cd6439c0bc67bf821921c870dacfe1d3c"
+    },
+    {
+      "rect": [
+        668,
+        8,
+        314,
+        313
+      ],
+      "pivot": [
+        250.8,
+        156.25
+      ],
+      "duration": 0.03,
+      "phase": "build",
+      "sourceFrame": 5,
+      "displaySize": [
+        1.6623529411764706,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/05",
+      "sourceVisibleRgbaSha256": "b9c2e3239364f7bffea354e7ecb474461fb5620d2a7a97f5fd29e7e123b06109"
+    },
+    {
+      "rect": [
+        337,
+        659,
+        313,
+        313
+      ],
+      "pivot": [
+        250.3,
+        156.25
+      ],
+      "duration": 0.03,
+      "phase": "expansion",
+      "sourceFrame": 6,
+      "displaySize": [
+        1.657058823529412,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/06",
+      "sourceVisibleRgbaSha256": "6e383342115dec43fc782a110e0559c14b7e89bffd29bdef5381ceb462f91fdc"
+    },
+    {
+      "rect": [
+        8,
+        668,
+        313,
+        313
+      ],
+      "pivot": [
+        250.8,
+        156.25
+      ],
+      "duration": 0.035,
+      "phase": "near peak",
+      "sourceFrame": 7,
+      "displaySize": [
+        1.657058823529412,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/07",
+      "sourceVisibleRgbaSha256": "1b9c00e42a24ed6faaeee71d2aa8d46203e0c583dfc32e62fa1555d0629185c0"
+    },
+    {
+      "rect": [
+        666,
+        666,
+        313,
+        313
+      ],
+      "pivot": [
+        251.3,
+        156.25
+      ],
+      "duration": 0.04,
+      "phase": "peak",
+      "sourceFrame": 8,
+      "displaySize": [
+        1.657058823529412,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/08",
+      "sourceVisibleRgbaSha256": "117e4783c7a636865ac0027b3790fb58c96bd2ae6b6d2e97e8f4f6ad65ec1bf7"
+    },
+    {
+      "rect": [
+        998,
+        8,
+        314,
+        313
+      ],
+      "pivot": [
+        250.8,
+        156.75
+      ],
+      "duration": 0.04,
+      "phase": "breakup begins",
+      "sourceFrame": 9,
+      "displaySize": [
+        1.6623529411764706,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/09",
+      "sourceVisibleRgbaSha256": "20b1854e3572610d6fb08fb2087ad0596b25429e50d956e94f1f0535c5e96508"
+    },
+    {
+      "rect": [
+        337,
+        988,
+        313,
+        313
+      ],
+      "pivot": [
+        250.3,
+        156.75
+      ],
+      "duration": 0.035,
+      "phase": "fragments split",
+      "sourceFrame": 10,
+      "displaySize": [
+        1.657058823529412,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/10",
+      "sourceVisibleRgbaSha256": "35da3360ff367d86be02af28faace928bab0219e5420e38547cb5cfe87218398"
+    },
+    {
+      "rect": [
+        8,
+        997,
+        313,
+        313
+      ],
+      "pivot": [
+        250.8,
+        156.75
+      ],
+      "duration": 0.035,
+      "phase": "separation",
+      "sourceFrame": 11,
+      "displaySize": [
+        1.657058823529412,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/11",
+      "sourceVisibleRgbaSha256": "e5bbcb6e02423102285a1b85f49c88c92fba0680d02b4c48909acc5c2cca56f4"
+    },
+    {
+      "rect": [
+        668,
+        337,
+        314,
+        313
+      ],
+      "pivot": [
+        251.3,
+        156.75
+      ],
+      "duration": 0.035,
+      "phase": "thin fragments",
+      "sourceFrame": 12,
+      "displaySize": [
+        1.6623529411764706,
+        1.657058823529412
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/12",
+      "sourceVisibleRgbaSha256": "868da7b4540f9b9a90fcfe80299b025713ff6780d23cccf1372f86a7e3224688"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        314,
+        314
+      ],
+      "pivot": [
+        250.8,
+        157.25
+      ],
+      "duration": 0.04,
+      "phase": "small remnants",
+      "sourceFrame": 13,
+      "displaySize": [
+        1.6623529411764706,
+        1.6623529411764706
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/13",
+      "sourceVisibleRgbaSha256": "12fd09080f58ceaf78dc30a84d79616286cb5ab6d0b909259efb1d252a46d1dc"
+    },
+    {
+      "rect": [
+        998,
+        337,
+        313,
+        314
+      ],
+      "pivot": [
+        250.3,
+        157.25
+      ],
+      "duration": 0.045,
+      "phase": "last remnants",
+      "sourceFrame": 14,
+      "displaySize": [
+        1.657058823529412,
+        1.6623529411764706
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/14",
+      "sourceVisibleRgbaSha256": "ac1b53eefc2f5276c4304256571cb13d7aca0fbac554d3c947af20e7d7ba5859"
+    },
+    {
+      "rect": [
+        8,
+        338,
+        313,
+        314
+      ],
+      "pivot": [
+        250.8,
+        157.25
+      ],
+      "duration": 0.05,
+      "phase": "tiny residue",
+      "sourceFrame": 15,
+      "displaySize": [
+        1.657058823529412,
+        1.6623529411764706
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/15",
+      "sourceVisibleRgbaSha256": "78da11418f63df347cf2895ccc77fa54335d9aeba5c7bae38deead34cc13569a"
+    },
+    {
+      "rect": [
+        338,
+        8,
+        314,
+        314
+      ],
+      "pivot": [
+        251.3,
+        157.25
+      ],
+      "duration": 0.055,
+      "phase": "final residual",
+      "sourceFrame": 16,
+      "displaySize": [
+        1.6623529411764706,
+        1.6623529411764706
+      ],
+      "socketOffset": [
+        -0.2,
+        -0.09090909090909088
+      ],
+      "authoredSocketOffset": [
+        -0.2,
+        -0.5
+      ],
+      "sourceDrawingId": "nyoro/effects/rush-trail/16",
+      "sourceVisibleRgbaSha256": "92b58d1b5690659333f0f34292ff36125d851d76f60a4534092f170871401e9b"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "canonical-fx/nyoro/rush-trail/metadata.json",
+    "atlas": "canonical-fx/nyoro/rush-trail/nyoro-rush-trail-16-atlas.png",
+    "status": "static_review_candidate_not_user_approved",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        9,
+        314,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        19,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        13,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        19,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        314,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        314,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        314,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    }
+  ],
+  "gameBinding": {
+    "socketReference": "player-feet",
+    "existingHookOffsetPxAtBody110": [
+      0,
+      -45
+    ],
+    "socketOffsetMode": "Add normalized offset to existing game hook. Hook correction applied exactly once.",
+    "nativeDirectionRadians": null,
+    "mirrorPixelsWithFacing": true,
+    "mirrorSocketXWithFacing": true
+  },
+  "orientationMode": "facing",
+  "nativeAngleRadians": 0,
+  "runtimeExport": {
+    "scale": 1,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 188.88888888888886,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "bfdfb9e7624fef79c1cca78e1d0961cc548596e8f0e79e3c6e434334482a8436",
+  "runtimeMeasurement": {
+    "action": "nyoro-effects-rush-trail",
+    "frames": 16,
+    "scale": 1,
+    "uniformAtlasPixels": 1577536,
+    "trimmedAtlas": [
+      1344,
+      1344
+    ],
+    "trimmedPixels": 1806336,
+    "rgbaMiB": 6.890625,
+    "fileBytes": 511928,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": true,
+  "durationSeconds": 0.6,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

@@ -1,5 +1,18 @@
 # Cartoon combat integration (2026-10-15)
 
+## Final 18-ZIP asset integration (2026-10-15)
+
+This section supersedes older pending-art notes below. All 18 delivered ZIP sizes and SHA-256 hashes matched the supplied delivery manifest. Only the final existing3 seven parts, Rami runtime16-v2 five parts, and new-two six parts were installed under combat/runtime-final. Their originals remain unchanged. The combined cartoon-manifest.json resolves 282 source entries and 289 aliases (571 keys), with 279 static lossless WebP atlases, at most 4096px. Every full source sequence has at least 16 independently addressed frames. Awakened body drawings for existing3 and newtwo intentionally reuse normal cels; Rami has separate awakened sequences.
+
+Rami special2-active is the supplied [16,24) phase of its full 32-cel sequence. The combined manifest uses the complete adapter plus frameRange [16,24) and absolute releaseFrame19, equivalent to exposed phase frame3. No old 4/8-frame artwork or old seven-part Rami set was added.
+
+Special projectile release now occurs at its authored releaseFrame within the active window, weighted by frame durations. This preserves pre-release cels that previously skipped when the event fired at active start. Ranged attacks retain their fixed event time. Socket coordinates are unchanged; authoredRootLift applies only to body drawing. New-two generic water/aura/splash aliases were not added.
+
+Validation: 38 PIECE tests separately passed after six artReady flags changed; GUN final-assets metadata/frame/socket tests878, root-lift303, release59, FX113, MOB timing90; browser combat desktop/mobile377 each; polish25 per each of3 viewports; all runtime key textures decoded without page/asset errors and6598 body frame/alias draw samples rendered. Real physics release events16 cover both directions for all six characters, plus new-two special1. Managed texture peak67108864 bytes (64MiB), initial atlas requests2; the separate LRU disposal/retry regression passed. Browser screenshots and JSON reports are in the task gungun-final-assets folder. These cache figures are not total browser/GPU process memory.
+
+Known limits: Manny orb follows the approved overhead center and horizontal trajectory; short grounded enemies may pass underneath, so its collision test uses a tall target on its path. No trajectory or socket was silently changed. Existing source review flags (Denden leg/hood changes, Nyoro phase proportions, Tetsu stride and posture variation) remain; no repainting or per-frame rescaling was used to hide them. New-character party portrait slots still have text without dedicated portrait art; legacy party portraits/skill icons remain. Physical mobile hardware and Safari were not tested. No push, publication or deployment.
+
+
 ## Tetsu standalone strong: MOB slash revision
 
 Only tetsu/blow (strong held and released without a preceding weak) now uses the original four-stage MOB slash. Weak1/2/3 charged branches and weak4 remain unchanged. Action duration is 1.0 action seconds, with startup 0-.16, four active windows .16-.34 / .34-.52 / .52-.70 / .70-.88, then recovery to 1.0. Modest forward movement is about 32 logical pixels per normal action excluding hitstop. Original hitbox is 290x190 centered 155 pixels forward and 57 above the feet; final launch is vx=direction*850, vy=-660. Original boss/crate launch rules remain.

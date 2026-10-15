@@ -1,0 +1,730 @@
+{
+  "character": "denden",
+  "animation": "ranged",
+  "kind": "effects",
+  "src": "denden-effects-ranged-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        1043,
+        366,
+        236
+      ],
+      "pivot": [
+        104.9047619047619,
+        140.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 1,
+      "displaySize": [
+        1.6636363636363638,
+        1.0727272727272728
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/01",
+      "sourceVisibleRgbaSha256": "ae95c8b635d5e2ca05eb4cbdf707b8170fa58731350bbe73a8e9f1e34864522e"
+    },
+    {
+      "rect": [
+        8,
+        269,
+        367,
+        237
+      ],
+      "pivot": [
+        110.9047619047619,
+        140.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 2,
+      "displaySize": [
+        1.6681818181818184,
+        1.0772727272727274
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/02",
+      "sourceVisibleRgbaSha256": "cd9a54ab1764f596336b92c8e38f6c5e59045bfe1285a37ffbc8b687c67bafe0"
+    },
+    {
+      "rect": [
+        390,
+        1050,
+        366,
+        231
+      ],
+      "pivot": [
+        107.9047619047619,
+        134.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 3,
+      "displaySize": [
+        1.6636363636363638,
+        1.05
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/03",
+      "sourceVisibleRgbaSha256": "804b7f4e3cdbd98858da8794626e6987e864851b2ebacb7fce0c650f5f4c12fd"
+    },
+    {
+      "rect": [
+        8,
+        1555,
+        353,
+        244
+      ],
+      "pivot": [
+        117.9047619047619,
+        148.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 4,
+      "displaySize": [
+        1.6045454545454547,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/04",
+      "sourceVisibleRgbaSha256": "14f97f498d9c05f3e9252f1288d3ccba111c18acf702160c9e9404c27478a430"
+    },
+    {
+      "rect": [
+        391,
+        269,
+        366,
+        245
+      ],
+      "pivot": [
+        94.9047619047619,
+        152.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 5,
+      "displaySize": [
+        1.6636363636363638,
+        1.1136363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/05",
+      "sourceVisibleRgbaSha256": "0cf890e038ccf1891e7c2edcb530932333f3bc006044bf040ffaeab8c9ca828d"
+    },
+    {
+      "rect": [
+        8,
+        522,
+        366,
+        245
+      ],
+      "pivot": [
+        105.9047619047619,
+        152.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 6,
+      "displaySize": [
+        1.6636363636363638,
+        1.1136363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/06",
+      "sourceVisibleRgbaSha256": "27459980970f852770ac221a9b32c75fc4bea3ec50066c02122116dd394d9420"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        397,
+        245
+      ],
+      "pivot": [
+        101.9047619047619,
+        151.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 7,
+      "displaySize": [
+        1.8045454545454547,
+        1.1136363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/07",
+      "sourceVisibleRgbaSha256": "0b50e4f75f0fa30d3c08a7fbe03d8f8f44d027fce1b18225219c84a8a71fa50c"
+    },
+    {
+      "rect": [
+        421,
+        8,
+        326,
+        245
+      ],
+      "pivot": [
+        75.9047619047619,
+        152.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 8,
+      "displaySize": [
+        1.481818181818182,
+        1.1136363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/08",
+      "sourceVisibleRgbaSha256": "7e8e35c457cda44d4fb341bd4401357a2a03b408e89b05d2b7e63d04ec118b46"
+    },
+    {
+      "rect": [
+        386,
+        1297,
+        354,
+        244
+      ],
+      "pivot": [
+        87.9047619047619,
+        138.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 9,
+      "displaySize": [
+        1.6090909090909093,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/09",
+      "sourceVisibleRgbaSha256": "09d474096669d1b8c0da15dba30f9cd6954ea8d50c85938e106235bad757d1ea"
+    },
+    {
+      "rect": [
+        390,
+        530,
+        366,
+        244
+      ],
+      "pivot": [
+        119.9047619047619,
+        140.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 10,
+      "displaySize": [
+        1.6636363636363638,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/10",
+      "sourceVisibleRgbaSha256": "9a29dc0e73905a4d9439065f2ddba1374c30c5b60f06ffbbe774d36ba2003853"
+    },
+    {
+      "rect": [
+        8,
+        783,
+        366,
+        244
+      ],
+      "pivot": [
+        115.9047619047619,
+        141.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 11,
+      "displaySize": [
+        1.6636363636363638,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/11",
+      "sourceVisibleRgbaSha256": "b76ba1b8ab42e07bcb32ead418105465a33afddbf277d786f8a39ecb559e6fd7"
+    },
+    {
+      "rect": [
+        8,
+        1815,
+        345,
+        244
+      ],
+      "pivot": [
+        121.9047619047619,
+        139.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 12,
+      "displaySize": [
+        1.5681818181818181,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/12",
+      "sourceVisibleRgbaSha256": "3ca30ed4bf245ac6d8c377e5f55c1c4772a3cdf94148e2b9ff691112b2e63992"
+    },
+    {
+      "rect": [
+        390,
+        790,
+        366,
+        244
+      ],
+      "pivot": [
+        104.9047619047619,
+        124.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 13,
+      "displaySize": [
+        1.6636363636363638,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/13",
+      "sourceVisibleRgbaSha256": "6fa96dcafd0776a8a865ef042b7bc08236055d5ebebf55b6822428d24a9324b5"
+    },
+    {
+      "rect": [
+        8,
+        1295,
+        362,
+        244
+      ],
+      "pivot": [
+        121.9047619047619,
+        115.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 14,
+      "displaySize": [
+        1.6454545454545455,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/14",
+      "sourceVisibleRgbaSha256": "6159ec729838ca55c153d3ef21b94bb91bd7b5b89160d05a313fa7ec58253c60"
+    },
+    {
+      "rect": [
+        377,
+        1557,
+        350,
+        244
+      ],
+      "pivot": [
+        121.9047619047619,
+        124.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 15,
+      "displaySize": [
+        1.590909090909091,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/15",
+      "sourceVisibleRgbaSha256": "02945f2abcdf1c53987e148821d9355065f7afb85eaf646dc35c7be7bd87c1e2"
+    },
+    {
+      "rect": [
+        369,
+        1817,
+        297,
+        244
+      ],
+      "pivot": [
+        121.9047619047619,
+        126.8095238095238
+      ],
+      "duration": 0.016666666666666666,
+      "phase": null,
+      "sourceFrame": 16,
+      "displaySize": [
+        1.35,
+        1.1090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "denden/effects/ranged/16",
+      "sourceVisibleRgbaSha256": "698a8539825ce1aa89f83adfaaad0990c7c2a050df31d82c2556cfda713fa116"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/proof-light1/fx-ranged-proof/metadata.json",
+    "atlas": "denden/proof-light1/fx-ranged-proof/denden-lightning-16-atlas.png",
+    "status": "proof_not_production_approved",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        18,
+        108,
+        402,
+        356
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 18
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        12,
+        108,
+        396,
+        357
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 12
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        15,
+        114,
+        399,
+        357
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 15
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        4,
+        100,
+        374,
+        356
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 4
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        28,
+        96,
+        412,
+        352
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 28
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        17,
+        96,
+        401,
+        352
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 17
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        21,
+        97,
+        437,
+        353
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 21
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        48,
+        96,
+        390,
+        352
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 48
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        36,
+        110,
+        407,
+        366
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 36
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        2,
+        108,
+        386,
+        364
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 2
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        6,
+        107,
+        390,
+        363
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 6
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        109,
+        362,
+        365
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        18,
+        125,
+        402,
+        381
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 18
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        134,
+        380,
+        390
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        125,
+        367,
+        381
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        123,
+        312,
+        379
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    }
+  ],
+  "gameBinding": {
+    "socketReference": "moving-projectile",
+    "existingHookOffsetPxAtBody110": [
+      0,
+      0
+    ],
+    "socketOffsetMode": "Zero offset from actual moving projectile; body releaseSocket sets actual spawn position.",
+    "nativeDirectionRadians": 0,
+    "mirrorPixelsWithFacing": false,
+    "mirrorSocketXWithFacing": true,
+    "legacySpawnFallbackFromFeetPxAt110": [
+      36,
+      -55
+    ]
+  },
+  "runtimeExport": {
+    "scale": 0.9523809523809523,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "7b5f84bfb19e62ba707b98fd06da22a4db99d4d44cb8d3ef750b3dd55cafa84c",
+  "runtimeMeasurement": {
+    "action": "denden-effects-ranged",
+    "frames": 16,
+    "scale": 0.9523809523809523,
+    "uniformAtlasPixels": 3802500,
+    "trimmedAtlas": [
+      768,
+      2112
+    ],
+    "trimmedPixels": 1622016,
+    "rgbaMiB": 6.1875,
+    "fileBytes": 652068,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "orientationMode": "velocity",
+  "nativeAngleRadians": 0,
+  "durationSeconds": 0.26666666666666666,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

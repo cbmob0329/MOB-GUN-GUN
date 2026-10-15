@@ -1,0 +1,1517 @@
+{
+  "updatedUTC": "2026-10-15T10:33:37.662394+00:00",
+  "bodyClips": 62,
+  "newFxTracks": 12,
+  "sharedFxTracks": 7,
+  "animations": 81,
+  "aliases": 102,
+  "allAliasesResolve": true,
+  "totalWebpBytes": 98690534,
+  "maxAtlasDimension": 3968,
+  "sceneBudget": {
+    "bodyMaxPerCharacter": {
+      "manny": {
+        "key": "manny/air1",
+        "kind": "body",
+        "frames": 16,
+        "uniqueSourceCrops": 16,
+        "uniqueCompactCels": 16,
+        "scale": 1.1,
+        "atlasSize": [
+          1536,
+          2048
+        ],
+        "rgbaMiB": 12.0,
+        "fileBytes": 2400744,
+        "bodyHeight": 220.00000000000003,
+        "losslessDecodedRgbaVerified": true,
+        "gutterPixels": 8,
+        "inputFingerprint": "170709222993c6e363ddb13a570c57c5f444e3c437c08b8bd79ef0d2beffe0dc"
+      },
+      "mobdesert": {
+        "key": "mobdesert/walk",
+        "kind": "body",
+        "frames": 16,
+        "uniqueSourceCrops": 16,
+        "uniqueCompactCels": 16,
+        "scale": 0.6376811594202898,
+        "atlasSize": [
+          1024,
+          1664
+        ],
+        "rgbaMiB": 6.5,
+        "fileBytes": 883476,
+        "bodyHeight": 219.99999999999997,
+        "losslessDecodedRgbaVerified": true,
+        "gutterPixels": 8,
+        "inputFingerprint": "b2935410758db43172ae28b3ae89a5d872e225066869b1d46aa3d7b3a17450c6"
+      }
+    },
+    "allNineteenDistinctFxAtlasesMiB": 42.625,
+    "twoMaximumBodyAtlasesPlusAllFxMiB": 61.125,
+    "limitMiB": 64,
+    "passes": true,
+    "assumption": "One active body atlas per character, every distinct new/shared FX atlas resident simultaneously. Reused/awakened aliases share the same decoded texture. Unused body clips evicted/not all predecoded."
+  },
+  "clips": [
+    {
+      "key": "manny/idle",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0731707317073171,
+      "atlasSize": [
+        2688,
+        704
+      ],
+      "rgbaMiB": 7.21875,
+      "fileBytes": 1927074,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "ff8304ef297faebf17a8f23cf78cdbdc74a1c81173a283695fbfae2730baa339"
+    },
+    {
+      "key": "manny/walk",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        2368,
+        704
+      ],
+      "rgbaMiB": 6.359375,
+      "fileBytes": 1645588,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "809b258ed79b6621b323582e061c42119b8819194487795909eedae6f70172a8"
+    },
+    {
+      "key": "manny/dash",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        3648,
+        704
+      ],
+      "rgbaMiB": 9.796875,
+      "fileBytes": 2006378,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "6477104cf17e74a7ea9804d944ed91271f0adc7db5a125393dfff4a0f8a51b84"
+    },
+    {
+      "key": "manny/jump",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        1280,
+        1920
+      ],
+      "rgbaMiB": 9.375,
+      "fileBytes": 2044448,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "c4029ed866a228d8fd6bc0bf1a15cc687375cf191dcb9d4f1fc9493476d2961e"
+    },
+    {
+      "key": "manny/light1",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.8,
+      "atlasSize": [
+        1024,
+        2048
+      ],
+      "rgbaMiB": 8.0,
+      "fileBytes": 1737964,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "5ccefb664e547cfa59a0206be48573023529a10e63d3338107ed66425951f705"
+    },
+    {
+      "key": "manny/light2",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.88,
+      "atlasSize": [
+        1280,
+        1920
+      ],
+      "rgbaMiB": 9.375,
+      "fileBytes": 1867806,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "8f8de1c1e771cf461f27b67f2b6534cfafdc5d4a5344a6776d13251c7b8fb398"
+    },
+    {
+      "key": "manny/light3",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.8,
+      "atlasSize": [
+        768,
+        2816
+      ],
+      "rgbaMiB": 8.25,
+      "fileBytes": 1686950,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "27777eecfe09d724d704bd622cf0d15803d51a1d44ab9d3785c8da94ed960d64"
+    },
+    {
+      "key": "manny/light4",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.88,
+      "atlasSize": [
+        1536,
+        1280
+      ],
+      "rgbaMiB": 7.5,
+      "fileBytes": 1847388,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "a1b72f5032c731ba00ffad29ae1301f49bd7dd0083680735f9f4cdd4c58b1655"
+    },
+    {
+      "key": "manny/charge-start",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1024,
+        2048
+      ],
+      "rgbaMiB": 8.0,
+      "fileBytes": 1943074,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "73753e9a667871e17e092b74a77c21b9563d7e020efdd2536976f36840c85fbf"
+    },
+    {
+      "key": "manny/charge-hold",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        768,
+        2816
+      ],
+      "rgbaMiB": 8.25,
+      "fileBytes": 2253154,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "7cb30cf4de65be8be1d9235a1ca8b57d4e8bfef626bd1449fe932249d26f0347"
+    },
+    {
+      "key": "manny/blow",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1024,
+        2176
+      ],
+      "rgbaMiB": 8.5,
+      "fileBytes": 1856296,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "fb68dadd9332e2c1a413f314e030097866f3ae89d826d95c7fb893f8ae6f524a"
+    },
+    {
+      "key": "manny/launch",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        3584,
+        768
+      ],
+      "rgbaMiB": 10.5,
+      "fileBytes": 2225886,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "4d70148e8b322ef79bad839ed87671c427f334147928b11274073ce75ebc4206"
+    },
+    {
+      "key": "manny/ranged",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1024,
+        2048
+      ],
+      "rgbaMiB": 8.0,
+      "fileBytes": 1755502,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "3b9ce2eed39315fdbee2477df3300a0ecf85dc62b164bf8a5defeea9cd58c810"
+    },
+    {
+      "key": "manny/rush",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1536,
+        1920
+      ],
+      "rgbaMiB": 11.25,
+      "fileBytes": 2231286,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "f8c1e762cb0cce4a7d7f3f949b8986d1f3076049d0959d89694985d130826656"
+    },
+    {
+      "key": "manny/air1",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1536,
+        2048
+      ],
+      "rgbaMiB": 12.0,
+      "fileBytes": 2400744,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "170709222993c6e363ddb13a570c57c5f444e3c437c08b8bd79ef0d2beffe0dc"
+    },
+    {
+      "key": "manny/air2",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1280,
+        2432
+      ],
+      "rgbaMiB": 11.875,
+      "fileBytes": 2346976,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "7d605b8128550ceb96b7b090f8bcfd31b928bd508bddd6fb995baf22328dbac1"
+    },
+    {
+      "key": "manny/air3",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1280,
+        2304
+      ],
+      "rgbaMiB": 11.25,
+      "fileBytes": 2273802,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "75ec6dca0645340c31e4c86fdbae13d6afd160240d21773b53e1d61cedd8f539"
+    },
+    {
+      "key": "manny/slam",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        3072,
+        896
+      ],
+      "rgbaMiB": 10.5,
+      "fileBytes": 2304602,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "db75610ed188a4a962ad419492db4424d587f353cd636bbf19042b304c652dc5"
+    },
+    {
+      "key": "manny/damage",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1024,
+        2048
+      ],
+      "rgbaMiB": 8.0,
+      "fileBytes": 2019964,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "ebb33fe6256f1631ba634e214b2962289c3b202f368c614c684c55568831720f"
+    },
+    {
+      "key": "manny/death",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        768,
+        2560
+      ],
+      "rgbaMiB": 7.5,
+      "fileBytes": 1725630,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "0b2b6c3b1cd68e97f36f0d13993b3659e608bbfd1b4aa59833db775c10edd1b9"
+    },
+    {
+      "key": "manny/recovery",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        1024,
+        1920
+      ],
+      "rgbaMiB": 7.5,
+      "fileBytes": 1797762,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "529d6b6152497c6b3d5f9085b558ffe0a565e0ab219c2fd2f797935fa0cf261a"
+    },
+    {
+      "key": "manny/awakening-start",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        768,
+        2816
+      ],
+      "rgbaMiB": 8.25,
+      "fileBytes": 2027710,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "3d7cd83fc77db030bbb926805d2114e027030090a04b4ca2d5c5e24c08d5fc3f"
+    },
+    {
+      "key": "manny/awakening-end",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        2560,
+        640
+      ],
+      "rgbaMiB": 6.25,
+      "fileBytes": 1852600,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "3f1cfa9df0ff6f0c31e8ce196b596330d3f33b3b17c191148a0a408920ecadcb"
+    },
+    {
+      "key": "manny/guard",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        768,
+        2688
+      ],
+      "rgbaMiB": 7.875,
+      "fileBytes": 2011638,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "dcc1fca5ca23bab858e26cd957c529073dc95dcaf9c95740916f9abf1becad79"
+    },
+    {
+      "key": "manny/crouch",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.1,
+      "atlasSize": [
+        2048,
+        1024
+      ],
+      "rgbaMiB": 8.0,
+      "fileBytes": 1998510,
+      "bodyHeight": 220.00000000000003,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "c2e8e5a9d372e511e6b9c68c0f250d6a3734a8caf0cd014a3366b85e8189755b"
+    },
+    {
+      "key": "manny/special1-startup",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0476190476190477,
+      "atlasSize": [
+        1280,
+        1280
+      ],
+      "rgbaMiB": 6.25,
+      "fileBytes": 1692206,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "9d158dccd36b7426a7d541742ceb466f7ed029050c7ab6533f386fb697087a52"
+    },
+    {
+      "key": "manny/special1-active",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0476190476190477,
+      "atlasSize": [
+        1280,
+        1536
+      ],
+      "rgbaMiB": 7.5,
+      "fileBytes": 1757546,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "a3331de16139ecb6c6f8fd812e436c5be2a1dfd58f099d1a31053a68f00d9b83"
+    },
+    {
+      "key": "manny/special1-recovery",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0476190476190477,
+      "atlasSize": [
+        2560,
+        640
+      ],
+      "rgbaMiB": 6.25,
+      "fileBytes": 1792496,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "51a92fec104fd65f85381bb4b69268a3a00286b7e2b12fbacbd66b6b5da91c96"
+    },
+    {
+      "key": "manny/special2-startup",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0476190476190477,
+      "atlasSize": [
+        2560,
+        896
+      ],
+      "rgbaMiB": 8.75,
+      "fileBytes": 2024298,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "4e86bb440b53723b3e830fb398ef4f000e4d3bb507130307a6ba556530a13d32"
+    },
+    {
+      "key": "manny/special2-active",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0476190476190477,
+      "atlasSize": [
+        768,
+        3072
+      ],
+      "rgbaMiB": 9.0,
+      "fileBytes": 2069410,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "3cc93865ec606ff0fee063ec39e4e09f9f03dde593f6a32295bf05468009d10c"
+    },
+    {
+      "key": "manny/special2-recovery",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0476190476190477,
+      "atlasSize": [
+        768,
+        2816
+      ],
+      "rgbaMiB": 8.25,
+      "fileBytes": 2060180,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "1edb0cca5b4a5450050016482d186558bc2703f757ab645e9d9be034ee74e463"
+    },
+    {
+      "key": "mobdesert/idle",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7333333333333333,
+      "atlasSize": [
+        512,
+        2048
+      ],
+      "rgbaMiB": 4.0,
+      "fileBytes": 963456,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "42ed4556a2309d8bb0f012143f1264de7ef6ad61f42bbb86768520c014706ae8"
+    },
+    {
+      "key": "mobdesert/walk",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.6376811594202898,
+      "atlasSize": [
+        1024,
+        1664
+      ],
+      "rgbaMiB": 6.5,
+      "fileBytes": 883476,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "b2935410758db43172ae28b3ae89a5d872e225066869b1d46aa3d7b3a17450c6"
+    },
+    {
+      "key": "mobdesert/dash",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.6285714285714286,
+      "atlasSize": [
+        1280,
+        1152
+      ],
+      "rgbaMiB": 5.625,
+      "fileBytes": 1076682,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "42ac412fa07c3fafe189175ee79bff7c7bea40c33609776cf810ab3eb6f7c50e"
+    },
+    {
+      "key": "mobdesert/jump",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.6470588235294118,
+      "atlasSize": [
+        1280,
+        1024
+      ],
+      "rgbaMiB": 5.0,
+      "fileBytes": 978934,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "d07ca03410a173ccc2949d140fc52d1598973813b11c39f8a3ccda2d7d10d376"
+    },
+    {
+      "key": "mobdesert/light1",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7096774193548387,
+      "atlasSize": [
+        1280,
+        1280
+      ],
+      "rgbaMiB": 6.25,
+      "fileBytes": 1128426,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "345b8b80c356707ab110b52a8de0f0e3a300d54bb40ad1297967a4e0255cb01e"
+    },
+    {
+      "key": "mobdesert/light2",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.6666666666666666,
+      "atlasSize": [
+        1024,
+        1536
+      ],
+      "rgbaMiB": 6.0,
+      "fileBytes": 1042124,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "ec52e8860acadf8081e7b59bbe66189cf810d4af8980361601275c86dd4c67e5"
+    },
+    {
+      "key": "mobdesert/light3",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.6470588235294118,
+      "atlasSize": [
+        1792,
+        768
+      ],
+      "rgbaMiB": 5.25,
+      "fileBytes": 950864,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "2c722afc16f5ee86f35317405ebb5b3d3d9babca16cf0ec30445a07bb5e7e91d"
+    },
+    {
+      "key": "mobdesert/light4",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7096774193548387,
+      "atlasSize": [
+        768,
+        2048
+      ],
+      "rgbaMiB": 6.0,
+      "fileBytes": 1204036,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "963f82c69a6a5e12b7fc89547c0ad6f3f261db2d79a774761fb95834c7fbd58f"
+    },
+    {
+      "key": "mobdesert/charge-start",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        2048,
+        512
+      ],
+      "rgbaMiB": 4.0,
+      "fileBytes": 870194,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "d2c984cfcfcba74b2c6be659d772f938dc7407e43aea5415df8cbab90dfe2e90"
+    },
+    {
+      "key": "mobdesert/charge-hold",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        256,
+        3968
+      ],
+      "rgbaMiB": 3.875,
+      "fileBytes": 955394,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "89b8ad2a58fd38c73d8f106f1d5ab7e1ff81026df977d88e81d3e876e8baef4e"
+    },
+    {
+      "key": "mobdesert/blow",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        768,
+        1280
+      ],
+      "rgbaMiB": 3.75,
+      "fileBytes": 838738,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "bf615e8274c2318b18be9d3780fde404847ca92cbd18201bedd069b025d8eda9"
+    },
+    {
+      "key": "mobdesert/launch",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7333333333333333,
+      "atlasSize": [
+        512,
+        2944
+      ],
+      "rgbaMiB": 5.75,
+      "fileBytes": 972126,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "daa3886dba91d49775e6e4ac09e0103e4d3f04103efc9982d9289bee8fd83222"
+    },
+    {
+      "key": "mobdesert/ranged",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        1024,
+        1024
+      ],
+      "rgbaMiB": 4.0,
+      "fileBytes": 820492,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "fbb68b6163a747adb6413c934d898ffbe921cbd275e6b838209038734443dbe1"
+    },
+    {
+      "key": "mobdesert/rush",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7333333333333333,
+      "atlasSize": [
+        1280,
+        1024
+      ],
+      "rgbaMiB": 5.0,
+      "fileBytes": 948634,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "6429d441b556b6cab9d6ecfa921575352f3dfa464d7ec1de56ea6d13c3df9975"
+    },
+    {
+      "key": "mobdesert/air1",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7333333333333333,
+      "atlasSize": [
+        768,
+        2176
+      ],
+      "rgbaMiB": 6.375,
+      "fileBytes": 1123986,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "a0c240c660a02622842e357b321a23c0e169e7a87c24499de87307d39c6dda11"
+    },
+    {
+      "key": "mobdesert/air2",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7333333333333333,
+      "atlasSize": [
+        1792,
+        896
+      ],
+      "rgbaMiB": 6.125,
+      "fileBytes": 1036976,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "4e6633df9fe24865efa7619e20ed417d68b3a325c44d07763a3638c84c160cb5"
+    },
+    {
+      "key": "mobdesert/air3",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7333333333333333,
+      "atlasSize": [
+        1024,
+        1536
+      ],
+      "rgbaMiB": 6.0,
+      "fileBytes": 1061890,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "773c501e1591a5f01e7909f5c9aa6706dae17922465cd6f95f7348db41b74d6c"
+    },
+    {
+      "key": "mobdesert/slam",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7333333333333333,
+      "atlasSize": [
+        2560,
+        640
+      ],
+      "rgbaMiB": 6.25,
+      "fileBytes": 1124328,
+      "bodyHeight": 219.99999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "268e4cfa7465e799a7ee72903bc79ed049dae41b52e15dadf0d6829d91f8bb13"
+    },
+    {
+      "key": "mobdesert/damage",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        512,
+        2048
+      ],
+      "rgbaMiB": 4.0,
+      "fileBytes": 903490,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "fa2c94c6ec2ce47c77cf3a8b2698ba49d57e426432345164a41c0bcc1e925d08"
+    },
+    {
+      "key": "mobdesert/death",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        1280,
+        768
+      ],
+      "rgbaMiB": 3.75,
+      "fileBytes": 744956,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "f335c66a2e07fbf185a0e1557bd28c7e0f1d4058aee1827e251814fb0858e5ed"
+    },
+    {
+      "key": "mobdesert/recovery",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        256,
+        3200
+      ],
+      "rgbaMiB": 3.125,
+      "fileBytes": 802282,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "f66b05d581f841f6c6f831c08931b919d2b11b97df12cbdfd259a86fc4fd21c4"
+    },
+    {
+      "key": "mobdesert/awakening-start",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        512,
+        2048
+      ],
+      "rgbaMiB": 4.0,
+      "fileBytes": 841112,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "ed5920558bca29803da88ce9ddf9ddab01f74579f957d1297bfad1dce0a13aab"
+    },
+    {
+      "key": "mobdesert/awakening-end",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        3584,
+        256
+      ],
+      "rgbaMiB": 3.5,
+      "fileBytes": 874602,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "af4acc9b8024692477489675b73d1b962d49671a37a468568148414711cb0d24"
+    },
+    {
+      "key": "mobdesert/guard",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        512,
+        1920
+      ],
+      "rgbaMiB": 3.75,
+      "fileBytes": 890376,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "0b3e2d80c96adb73655454da8c72d4fa3fccbd4eac3da2cfb2680f2052350e4b"
+    },
+    {
+      "key": "mobdesert/crouch",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7457627118644068,
+      "atlasSize": [
+        768,
+        1664
+      ],
+      "rgbaMiB": 4.875,
+      "fileBytes": 995864,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "1b4ee871549dce1aa00bcc33afa1ba94c1c2b609ee4be33ef399c210e7a19592"
+    },
+    {
+      "key": "mobdesert/special1-startup",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        1024,
+        1536
+      ],
+      "rgbaMiB": 6.0,
+      "fileBytes": 1064372,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "c17663ef202dc054772d364ee5649b9a75e333a1a6ec42f73c51fb5e1a4dd037"
+    },
+    {
+      "key": "mobdesert/special1-active",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        1024,
+        1664
+      ],
+      "rgbaMiB": 6.5,
+      "fileBytes": 1149786,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "390efad1860651b18abdb59e250d02ac97782107abbffb9936d1dbbae1c32371"
+    },
+    {
+      "key": "mobdesert/special1-recovery",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        1280,
+        1152
+      ],
+      "rgbaMiB": 5.625,
+      "fileBytes": 1146442,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "881fa67cb1a105c4c83c019e13023fe79d6b777bf184d6ba18e7181f6cd729ab"
+    },
+    {
+      "key": "mobdesert/special2-startup",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        1792,
+        896
+      ],
+      "rgbaMiB": 6.125,
+      "fileBytes": 1090216,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "d330a8d2a579b425e8094f4d470f63b64b0a248bdb99d50b96dccc9a85d8ff7b"
+    },
+    {
+      "key": "mobdesert/special2-active",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        1280,
+        1152
+      ],
+      "rgbaMiB": 5.625,
+      "fileBytes": 1082716,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "c397c0f53d4411d2723cdf2a57156a10171ac7047a77faede58903854f70e03a"
+    },
+    {
+      "key": "mobdesert/special2-recovery",
+      "kind": "body",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.9361702127659575,
+      "atlasSize": [
+        1024,
+        1280
+      ],
+      "rgbaMiB": 5.0,
+      "fileBytes": 1133670,
+      "bodyHeight": 220.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "d49d36fae2e338188345d7a63727700ce881de375663d9e181101398db7b358b"
+    },
+    {
+      "key": "manny/effects/special1-bomb-pink",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.18,
+      "atlasSize": [
+        512,
+        256
+      ],
+      "rgbaMiB": 0.5,
+      "fileBytes": 64816,
+      "bodyHeight": 14.399999999999999,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "63196241cafbd20b814af131b44672c9b1836ab3f59bf2201485a659808718bb"
+    },
+    {
+      "key": "manny/effects/special1-bomb-cyan",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.135,
+      "atlasSize": [
+        128,
+        512
+      ],
+      "rgbaMiB": 0.25,
+      "fileBytes": 41952,
+      "bodyHeight": 10.8,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "609099d997c7074e5784709a6dbe901957a4f71ab90fb54ae98daa23a4e7fd27"
+    },
+    {
+      "key": "manny/effects/special1-bomb-green",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.15999999999999998,
+      "atlasSize": [
+        128,
+        896
+      ],
+      "rgbaMiB": 0.4375,
+      "fileBytes": 53334,
+      "bodyHeight": 12.799999999999997,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "0ce21129a9413cf4af8f0ef7a9c5af8735140c6bccc7184fb77a27d4b7e9d022"
+    },
+    {
+      "key": "manny/effects/special1-bomb-orange",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.21,
+      "atlasSize": [
+        512,
+        256
+      ],
+      "rgbaMiB": 0.5,
+      "fileBytes": 80080,
+      "bodyHeight": 16.8,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "1dd76257bac00cf10a6fc60ff509a3f4d4a8adf3e74bfdfa36ab5ec762b68a79"
+    },
+    {
+      "key": "manny/effects/special1-bomb-purple",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.16999999999999998,
+      "atlasSize": [
+        512,
+        256
+      ],
+      "rgbaMiB": 0.5,
+      "fileBytes": 56154,
+      "bodyHeight": 13.599999999999998,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "34511965bb6deb524c74fcec6b6268db15ca0963184b9a0dd8c919903b2001e9"
+    },
+    {
+      "key": "manny/effects/special2-orb",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.7199999999999999,
+      "atlasSize": [
+        512,
+        1920
+      ],
+      "rgbaMiB": 3.75,
+      "fileBytes": 994700,
+      "bodyHeight": 57.59999999999999,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "986d1763c62e7438150318929fbbfe48955bb746218bf3e290a35b62ca57fde8"
+    },
+    {
+      "key": "manny/effects/awakening-aura",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.57,
+      "atlasSize": [
+        2048,
+        640
+      ],
+      "rgbaMiB": 5.0,
+      "fileBytes": 746586,
+      "bodyHeight": 45.599999999999994,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "615a019874d4c79a14a35c3833e70f178dcb98ee937d5ba7096e1aff531af5d0"
+    },
+    {
+      "key": "manny/effects/awakening-burst",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.4499999999999999,
+      "atlasSize": [
+        1280,
+        640
+      ],
+      "rgbaMiB": 3.125,
+      "fileBytes": 380130,
+      "bodyHeight": 35.99999999999999,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "9404e50d7f70f52e3089fe5c7ec2d1635f1e828ddffcbe27544dbeb7685b5130"
+    },
+    {
+      "key": "mobdesert/effects/special1-fish",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.4999999041533547,
+      "atlasSize": [
+        768,
+        768
+      ],
+      "rgbaMiB": 2.25,
+      "fileBytes": 380588,
+      "bodyHeight": 54.99998945686902,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "a60658d1325c6084d1dcc857a719fdc9e1ff114c1f4feed85ab3e4a63fc994bf"
+    },
+    {
+      "key": "mobdesert/effects/special2-dragon",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 1.0,
+      "atlasSize": [
+        1024,
+        1920
+      ],
+      "rgbaMiB": 7.5,
+      "fileBytes": 1553056,
+      "bodyHeight": 110.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "00e96273d96fbe0c6d4e6d159bfab195f7696f1fd90ce05a336f546eeec88390"
+    },
+    {
+      "key": "mobdesert/effects/awakening-aura",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.67,
+      "atlasSize": [
+        1280,
+        768
+      ],
+      "rgbaMiB": 3.75,
+      "fileBytes": 774796,
+      "bodyHeight": 73.7,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "2d91333467d409ae35ce944cf123e90c5b2d1b41a5a39368760173f49adbaae8"
+    },
+    {
+      "key": "mobdesert/effects/awakening-burst",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        768,
+        1280
+      ],
+      "rgbaMiB": 3.75,
+      "fileBytes": 507122,
+      "bodyHeight": 55.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "629bb8fac2fd5db137a40746bec8a6c60f162d867fab2c6cc3a5ef60d28b239a"
+    },
+    {
+      "key": "shared/effects/hit-light",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        128,
+        1408
+      ],
+      "rgbaMiB": 0.6875,
+      "fileBytes": 38034,
+      "bodyHeight": 110.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "b159c6d847f3850c25bcaab37fb5537594c5009a16a7ae62156fc2dabafaf2f7"
+    },
+    {
+      "key": "shared/effects/hit-heavy",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        512,
+        768
+      ],
+      "rgbaMiB": 1.5,
+      "fileBytes": 204366,
+      "bodyHeight": 110.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "78dfff1c041190a8ac2230e29ce20595fca25d6664d1c710506ac2f1f396d1ac"
+    },
+    {
+      "key": "shared/effects/charge",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        512,
+        640
+      ],
+      "rgbaMiB": 1.25,
+      "fileBytes": 104170,
+      "bodyHeight": 110.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "00f0368cd50c87f628fc3352f20a90ce00bc6f78a8408c20bb163fcb298db769"
+    },
+    {
+      "key": "shared/effects/launch",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        768,
+        640
+      ],
+      "rgbaMiB": 1.875,
+      "fileBytes": 166642,
+      "bodyHeight": 110.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "69e16b167ab83fca4b6f1bf430b620d34f3bbe6bb75f9bafd7a010b7d85dc7da"
+    },
+    {
+      "key": "shared/effects/slam",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        768,
+        768
+      ],
+      "rgbaMiB": 2.25,
+      "fileBytes": 251776,
+      "bodyHeight": 91.42857142857143,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "34e7a075c56df84fb9b83c6e7a7e7d2d3da3b9ecb12a5c78c228905c1ed51aef"
+    },
+    {
+      "key": "shared/effects/ranged",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        512,
+        768
+      ],
+      "rgbaMiB": 1.5,
+      "fileBytes": 138196,
+      "bodyHeight": 110.0,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "f84d35c9d6876934ddba3af3c66d0b3f318ccdcdba18964f803bc38431548f57"
+    },
+    {
+      "key": "shared/effects/rush-trail",
+      "kind": "fx",
+      "frames": 16,
+      "uniqueSourceCrops": 16,
+      "uniqueCompactCels": 16,
+      "scale": 0.5,
+      "atlasSize": [
+        768,
+        768
+      ],
+      "rgbaMiB": 2.25,
+      "fileBytes": 268528,
+      "bodyHeight": 94.81481481481481,
+      "losslessDecodedRgbaVerified": true,
+      "gutterPixels": 8,
+      "inputFingerprint": "35a4f49000908ae73a4f8d363efa84daa48db62c0d9d6dd1e9ce8cc9fa2a4cd2"
+    }
+  ],
+  "status": "art_export_verified_runtime_review_pending"
+}

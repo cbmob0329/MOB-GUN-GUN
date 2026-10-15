@@ -1,0 +1,649 @@
+{
+  "character": "tetsu",
+  "scope": "Existing3 required art and runtime copies only. Not all6 game completion.",
+  "actualGameAccepted": false,
+  "requiredBodyDrawings": 496,
+  "requiredEffectDrawings": 224,
+  "normalAwakenedBodyReuse": "All31 normal16-cel tracks reused by awakened aliases; no separate awakened body drawings counted. Separate16-cel character aura included.",
+  "knownVisualReviewFlags": [
+    "User-accepted four distinct weak attacks are preserved.",
+    "Special1 active7–10 have uneven stride spacing; phase-boundary projected height and sword-angle changes need actual playback review.",
+    "Special2 downcast release body gesture is restrained and depends on separate energy FX for readability.",
+    "Strong standalone blow is source-based MOB斬り: body/trail1s; letters active0.16–0.88s. Four hits at0.16,0.34,0.52,0.70. Letters mirror their placement but retain readable glyph orientation.",
+    "Crouch early rebound, damage double recoil and per-clip body proportions remain review flags."
+  ],
+  "reviewMethod": "Source/contact and decoded-file/coordinate validation; not an in-engine gameplay approval.",
+  "sourceRecords": [
+    {
+      "action": "special2-startup",
+      "kind": "body",
+      "metadata": "tetsu/special2/tetsu-special2-48.json",
+      "recordedReview": {
+        "status": "48_drawn_cels_static_review_candidate_not_production_approved",
+        "limitations": [
+          "Airborne roots are manually measured virtual foot roots beneath pelvis; runtime controls world trajectory.",
+          "The overhead-to-downward sword transition between cels9 and10 is broad; runtime timing review remains necessary.",
+          "Real-time and in-engine playback not visually verified.",
+          "Airborne virtual roots align hips; runtime controls world trajectory.",
+          "Downward casting push is restrained rather than a wide slash; two pulse poses occur within one active phase.",
+          "The blade lifts before landing to retain full rigid weapon length, then levels across compression.",
+          "Manual virtual airborne roots transition to foot-root registration at contact. Runtime must supply world trajectory.",
+          "Head/torso projected scale varies slightly across the three separately drawn phase sheets; no rescaling or synthetic poses were used."
+        ]
+      }
+    },
+    {
+      "action": "air2",
+      "kind": "body",
+      "metadata": "tetsu/air2/tetsu-air2-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Full blade remains visible through low chamber and overhead follow-through; natural projected-length variation remains.",
+          "Virtual roots are measured near pelvis plus90px; runtime owns ballistic position.",
+          "Overhead follow-through to lower recovery is quick and needs actual-size playback review.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "ranged",
+      "kind": "body",
+      "metadata": "tetsu/ranged/tetsu-ranged-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Original source cel3 had a missing blade; only that cel is replaced from an imagegen correction. Other fifteen drawings remain exact.",
+          "Overhead acceleration into release is deliberately fast; runtime review should check perceived blade arc and contact timing.",
+          "Source frame10 weapon reaches across its nominal cell boundary but does not touch its neighbor; lossless extraction preserves the full blade.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "charge-hold",
+      "kind": "body",
+      "metadata": "tetsu/charge-hold/tetsu-charge-hold-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Six original cels 6/7/8/14/15/16 are replaced by imagegen-corrected compact anatomical poses. Other ten source drawings are retained exactly.",
+          "The sixteen distinct drawings are curated into one smooth height progression rather than claiming the original sheet order was a smooth loop. Source-cel order is [13, 11, 9, 14, 2, 7, 3, 5, 4, 16, 8, 15, 6, 1, 10, 12].",
+          "Ear-tip-to-foot range is 231–253 px; this charge breathing movement is more visible than a perfectly still hold.",
+          "Minor stripe and hand contour drift remains. Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "crouch",
+      "kind": "body",
+      "metadata": "tetsu/crouch/tetsu-crouch-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Deep knee folding and low weight shifts are distinct, but early cel4→5 has a small posture rebound before the deepest duck.",
+          "Standing body height varies from first to final cel; actual-size scale/continuity needs review. The head is not artificially rescaled during packaging.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "blow",
+      "kind": "body",
+      "metadata": "tetsu/mob-slash-body/tetsu-mob-slash-body-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Source8-action landmarks are remade with16 separately drawn phases; the original frame11 attachment and frame14 short-blade defects were locally redrawn via imagegen.",
+          "Minor hood/stripe/body silhouette drift and sword projected-length variation remain; actual-speed review is needed.",
+          "Corrected frame11 keeps the original crouched rotating-sweep function but uses a visibly attached up-right katana rather than the candidate's disconnected upper-left blade.",
+          "No real-time playback or in-engine acceptance has been visually verified by this artist."
+        ],
+        "retiming": "Final thrust cel13 begins0.70s; cel11=.64-.67,12=.67-.70,13=.70-.78,14=.78-.88,15=.88-.94,16=.94-1.00. All16 drawings and frame1-10 timings unchanged.",
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "jump",
+      "kind": "body",
+      "metadata": "tetsu/jump/tetsu-jump-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Manual virtual-foot anchors during airborne4–12 should be checked against runtime physics.",
+          "No world-space ballistic trajectory is baked into the sprite drawings; optional trajectory preview is illustrative only.",
+          "Minor hood/stripe/limb length drift persists, and takeoff4 begins airborne rather than a fully planted toe extension.",
+          "Real-time playback/in-engine acceptance not verified by this artist."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "light2",
+      "kind": "body",
+      "metadata": "tetsu/light2/tetsu-light2-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Minor hood/stripe and body-shape drift remains between drawn cels.",
+          "Real-time playback and in-engine acceptance have not been visually verified by this artist.",
+          "Sixteen distinct drawings and visible chronological phases were inspected; hash uniqueness alone is not an animation-quality claim.",
+          "Cel2 has edge-on blade foreshortening; the backswing-to-contact transition6→7 needs actual-speed continuity review.",
+          "Some13–16 recovery changes are subtle; no duplicate cel was inserted."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "damage",
+      "kind": "body",
+      "metadata": "tetsu/damage/tetsu-damage-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Readably nonfatal recoil, back-step and regain sequence; early head/shoulder recoil oscillates rather than following one perfectly monotonic arc.",
+          "No hurt FX, enemy or injury graphic; body only. Weapon retained throughout.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "special1-startup",
+      "kind": "body",
+      "metadata": "tetsu/special1/tetsu-special1-48.json",
+      "recordedReview": {
+        "status": "48_drawn_cels_static_review_candidate_not_production_approved",
+        "limitations": [
+          "Cels12,14,16 receive localized imagegen blade repairs. Other thirteen source cels are unchanged.",
+          "One-handed transition appears briefly at cel12, returns two-handed13-15, then frees the rear arm16 for the rush.",
+          "Real-time and in-engine playback not visually verified.",
+          "Leg silhouettes alternate, but stride spacing is uneven and leg occlusion near cels7-10 needs actual-size playback review. This is not yet an accepted polished run loop.",
+          "Root translations only; engine supplies travel. No aura or trail is baked into body.",
+          "Blade angles make several small corrective swings during recovery rather than a perfectly monotonic return.",
+          "Manual registration aligns foot/hip roots without changing source scale.",
+          "Source neighboring silhouettes are disjoint but crop rectangles overlap; exact nearest-component ownership mask removes only unrelated neighbors.",
+          "Projected body height changes at16-to17 launch and32-to33 braking boundaries. Head/weapon proportions vary mildly across source sheets; review these transitions in engine."
+        ]
+      }
+    },
+    {
+      "action": "walk",
+      "kind": "body",
+      "metadata": "tetsu/walk/tetsu-walk-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cel_walk_for_playback_review",
+        "limitations": [
+          "Head/hood/stripe details drift slightly across independently generated cels.",
+          "Body-height measurements vary about503-557px due to pose and drawing variation; support-foot registration is fixed, so body bob/block-boundary continuity needs actual-size playback review.",
+          "Far-leg gray shading intentionally distinguishes leg depth; contacts and passing phases were visually checked.",
+          "Some swing phases extend knees earlier than the ideal schedule and shoulder/cloth counter-motion is subtle.",
+          "No real-time playback or in-engine approval by this worker; animated files were decoded and frame counts verified."
+        ]
+      }
+    },
+    {
+      "action": "launch",
+      "kind": "body",
+      "metadata": "tetsu/launch/tetsu-launch-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Heavy low-to-high sweep is readable; overhead sword projection shortens somewhat through follow-through.",
+          "Body stretches through launcher contact and contracts into recovery; actual-size timing and head/stripe continuity need playback review.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "rush",
+      "kind": "body",
+      "metadata": "tetsu/rush/tetsu-rush-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Cel4 was corrected with imagegen to restore a complete hood boundary away from the source edge; other fifteen drawings remain unchanged.",
+          "Windup cels show back/side torso rotation; grip is partly occluded by the torso in cels3/4.",
+          "Contact cel9 has a wider lunge and longer sword projection than neighboring cels; actual-size continuity should be reviewed.",
+          "Visible neighboring silhouettes do not touch; overlapping bounding rectangles are isolated mechanically with source masks preserving target RGBA.",
+          "Real-time and in-engine playback not visually verified.",
+          "Corrected fullsheet has unrelated merged cels9/10; neither is used from that source. Only isolated cel4 is accepted; source-cel4 index remains unambiguous."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "air1",
+      "kind": "body",
+      "metadata": "tetsu/air1/tetsu-air1-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "First generated sheet failed alpha and is rejected; only the transparent retry contributes sixteen source drawings.",
+          "All cels are airborne. Virtual actor roots are manually measured near pelvis plus90px; runtime owns ballistic motion.",
+          "Counter-rotation, leg tuck and waist-level contact are visible, but fast sword path and root registration require real-time review.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "special2-active",
+      "kind": "body",
+      "metadata": "tetsu/special2/tetsu-special2-48.json",
+      "recordedReview": {
+        "status": "48_drawn_cels_static_review_candidate_not_production_approved",
+        "limitations": [
+          "Airborne roots are manually measured virtual foot roots beneath pelvis; runtime controls world trajectory.",
+          "The overhead-to-downward sword transition between cels9 and10 is broad; runtime timing review remains necessary.",
+          "Real-time and in-engine playback not visually verified.",
+          "Airborne virtual roots align hips; runtime controls world trajectory.",
+          "Downward casting push is restrained rather than a wide slash; two pulse poses occur within one active phase.",
+          "The blade lifts before landing to retain full rigid weapon length, then levels across compression.",
+          "Manual virtual airborne roots transition to foot-root registration at contact. Runtime must supply world trajectory.",
+          "Head/torso projected scale varies slightly across the three separately drawn phase sheets; no rescaling or synthetic poses were used."
+        ]
+      }
+    },
+    {
+      "action": "dash",
+      "kind": "body",
+      "metadata": "tetsu/dash/tetsu-dash-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Mild head/stripe drift and run-pose leg-length variation remain.",
+          "Forward lean is moderate rather than an extreme sprint; gait and actual dash-speed pairing need runtime review.",
+          "Each stride is drawn independently; no mirrored or recolored duplicate contact was used.",
+          "Real-time playback/in-engine acceptance not verified by this artist."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "awakening-end",
+      "kind": "body",
+      "metadata": "tetsu/awakening-end/tetsu-awakening-end-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Same exact outfit and model, with black-gloved hand transitions. No aura or external glow is baked in.",
+          "Near-ready ending drawings contain subtle shoulder and wrist settling; all are separately drawn.",
+          "Normal/awakened gameplay body art remains shared; this clip is only the exit transition.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "light4",
+      "kind": "body",
+      "metadata": "tetsu/light4/tetsu-light4-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Minor hood/stripe and body-shape drift remains between individually drawn cels.",
+          "The rearward chamber and late recovery changes are subtle; sixteen distinct anatomical drawings were inspected, but hash uniqueness alone is not an animation-quality claim.",
+          "Katana projection and curve vary slightly between chamber and extension.",
+          "No real-time playback or in-engine acceptance has been visually verified by this artist."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "special2-recovery",
+      "kind": "body",
+      "metadata": "tetsu/special2/tetsu-special2-48.json",
+      "recordedReview": {
+        "status": "48_drawn_cels_static_review_candidate_not_production_approved",
+        "limitations": [
+          "Airborne roots are manually measured virtual foot roots beneath pelvis; runtime controls world trajectory.",
+          "The overhead-to-downward sword transition between cels9 and10 is broad; runtime timing review remains necessary.",
+          "Real-time and in-engine playback not visually verified.",
+          "Airborne virtual roots align hips; runtime controls world trajectory.",
+          "Downward casting push is restrained rather than a wide slash; two pulse poses occur within one active phase.",
+          "The blade lifts before landing to retain full rigid weapon length, then levels across compression.",
+          "Manual virtual airborne roots transition to foot-root registration at contact. Runtime must supply world trajectory.",
+          "Head/torso projected scale varies slightly across the three separately drawn phase sheets; no rescaling or synthetic poses were used."
+        ]
+      }
+    },
+    {
+      "action": "slam",
+      "kind": "body",
+      "metadata": "tetsu/slam/tetsu-slam-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Cels9/10/11 use imagegen corrections raising the hands and restoring long rigid landing blades. Other13 original drawings remain unchanged.",
+          "Corrected landing compression is less deep than first candidate. Blade tips extend slightly below foot baseline at impact, representing ground penetration; tips remain fully visible.",
+          "Virtual airborne roots1–8 transition to planted-foot roots9–16. Engine must synchronize impact and ballistic descent.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "light1",
+      "kind": "body",
+      "metadata": "tetsu/proof-light1/tetsu-light1-16.json",
+      "recordedReview": {
+        "status": "proof_requires_review",
+        "limitations": [
+          "Mild hood/stripe shape drift between drawings remains.",
+          "Frame6 short-blade flaw corrected; actual-size/in-engine weapon continuity still needs review.",
+          "Late follow-through changes remain smaller than specified.",
+          "Sixteen cels are distinct drawings; hashes alone do not establish polished motion.",
+          "Durations and pivots are provisional; no in-engine verification by this worker."
+        ]
+      }
+    },
+    {
+      "action": "air3",
+      "kind": "body",
+      "metadata": "tetsu/air3/tetsu-air3-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Only cel6 is replaced with imagegen-corrected overhead arms/hands to restore coherent katana attachment. Other15 original cels are preserved.",
+          "Virtual actor roots are manually measured from pelvis plus90px; engine owns world trajectory. All cels remain airborne, separate from landing slam.",
+          "Downward diagonal contact and tuck/untuck are readable; fast overhead-to-contact transition needs actual-size playback review.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "awakening-start",
+      "kind": "body",
+      "metadata": "tetsu/awakening-start/tetsu-awakening-start-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Free-fist beige color artifacts in source cels3–13 are corrected by imagegen to black gloves; other five original cels remain unchanged.",
+          "Same exact outfit/body identity; no aura is baked in. Brighter eye difference is subtle, separate aura communicates awakened state.",
+          "This is one transition body sequence, not a redraw of every awakened motion. Normal/awakened runtime clips share existing16-pose body art as approved.",
+          "Power surge extends torso and lifts a knee briefly; actual-size continuity/timing needs playback review.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "death",
+      "kind": "body",
+      "metadata": "tetsu/death/tetsu-death-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Sixteen separate drawn collapse/settling phases; final four are small but visibly different leg, hand and hood settling drawings.",
+          "Near hand retains the full katana throughout; far hand becomes ground support during kneeling.",
+          "Ground/hip roots are manually registered through the horizontal collapse and need actual-size runtime review.",
+          "Real-time and in-engine playback not visually verified.",
+          "Prone-cel bounding rectangles overlap slightly, but visible silhouettes are separated. Neighbor-only masks preserve all target RGBA and are recorded in provenance."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "special1-recovery",
+      "kind": "body",
+      "metadata": "tetsu/special1/tetsu-special1-48.json",
+      "recordedReview": {
+        "status": "48_drawn_cels_static_review_candidate_not_production_approved",
+        "limitations": [
+          "Cels12,14,16 receive localized imagegen blade repairs. Other thirteen source cels are unchanged.",
+          "One-handed transition appears briefly at cel12, returns two-handed13-15, then frees the rear arm16 for the rush.",
+          "Real-time and in-engine playback not visually verified.",
+          "Leg silhouettes alternate, but stride spacing is uneven and leg occlusion near cels7-10 needs actual-size playback review. This is not yet an accepted polished run loop.",
+          "Root translations only; engine supplies travel. No aura or trail is baked into body.",
+          "Blade angles make several small corrective swings during recovery rather than a perfectly monotonic return.",
+          "Manual registration aligns foot/hip roots without changing source scale.",
+          "Source neighboring silhouettes are disjoint but crop rectangles overlap; exact nearest-component ownership mask removes only unrelated neighbors.",
+          "Projected body height changes at16-to17 launch and32-to33 braking boundaries. Head/weapon proportions vary mildly across source sheets; review these transitions in engine."
+        ]
+      }
+    },
+    {
+      "action": "special1-active",
+      "kind": "body",
+      "metadata": "tetsu/special1/tetsu-special1-48.json",
+      "recordedReview": {
+        "status": "48_drawn_cels_static_review_candidate_not_production_approved",
+        "limitations": [
+          "Cels12,14,16 receive localized imagegen blade repairs. Other thirteen source cels are unchanged.",
+          "One-handed transition appears briefly at cel12, returns two-handed13-15, then frees the rear arm16 for the rush.",
+          "Real-time and in-engine playback not visually verified.",
+          "Leg silhouettes alternate, but stride spacing is uneven and leg occlusion near cels7-10 needs actual-size playback review. This is not yet an accepted polished run loop.",
+          "Root translations only; engine supplies travel. No aura or trail is baked into body.",
+          "Blade angles make several small corrective swings during recovery rather than a perfectly monotonic return.",
+          "Manual registration aligns foot/hip roots without changing source scale.",
+          "Source neighboring silhouettes are disjoint but crop rectangles overlap; exact nearest-component ownership mask removes only unrelated neighbors.",
+          "Projected body height changes at16-to17 launch and32-to33 braking boundaries. Head/weapon proportions vary mildly across source sheets; review these transitions in engine."
+        ]
+      }
+    },
+    {
+      "action": "light3",
+      "kind": "body",
+      "metadata": "tetsu/light3/tetsu-light3-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Minor hood/stripe and body-shape drift remains between drawn cels.",
+          "Real-time playback and in-engine acceptance have not been visually verified by this artist.",
+          "Sixteen distinct drawings and visible chronological phases were inspected; hash uniqueness alone is not an animation-quality claim.",
+          "Vertical sword views10–12 have slight projected-length/curve variation requiring motion review.",
+          "The head tilts strongly with the rising arm in8–12; sword and hood are not pixel-identical model cels."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "charge-start",
+      "kind": "body",
+      "metadata": "tetsu/charge-start/tetsu-charge-start-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Sixteen source drawings show gradual low-guard compression; body height intentionally falls with knee bend.",
+          "Minor hood stripe and hand contour variation remains; test the transition at actual game size.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "guard",
+      "kind": "body",
+      "metadata": "tetsu/guard/tetsu-guard-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Sixteen genuinely drawn enter/brace/release phases; no static pose duplicated to inflate count.",
+          "Near forearm partially overlaps the face during bracing; head stays recognizable.",
+          "Guard release at frame13 drops blade lower than neutral before returning. Actual input/state and held-guard timing need desktop integration review.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "idle",
+      "kind": "body",
+      "metadata": "tetsu/idle/tetsu-idle-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Minor hood/stripe shape drift remains.",
+          "Final source order is curated for coherent breathing height rather than blindly retaining initial generator order:1,8,2,6,14,3,4,5,11,15,13,12,7,9,16,10.",
+          "Breathing bob is roughly22px at255px nominal body height; actual-size loop review remains necessary.",
+          "Real-time playback/in-engine acceptance not verified by this artist."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "recovery",
+      "kind": "body",
+      "metadata": "tetsu/recovery/tetsu-recovery-16.json",
+      "recordedReview": {
+        "status": "drawn_16_cels_for_playback_review_not_production_approved",
+        "limitations": [
+          "Cel10 missing blade was restored with imagegen; the other fifteen source cels remain unchanged.",
+          "Recovery is newly drawn, not reversed death playback. Early palm-support posture briefly lowers again while shifting knee under hips.",
+          "Manual hip/ground roots transition from prone to standing; actual-size continuity requires runtime review.",
+          "Real-time and in-engine playback not visually verified."
+        ],
+        "socketsNote": "Katana hilt sockets, where included, are manually measured pixel coordinates in each registered frame, for placement review."
+      }
+    },
+    {
+      "action": "ranged",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/ranged/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "rush-trail",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/rush-trail/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "awakening-burst",
+      "kind": "effects",
+      "metadata": "awakening-fx/tetsu/activation-burst/metadata.json",
+      "recordedReview": {
+        "status": "packaged_art_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "charge",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/charge/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "launch",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/launch/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "hit-heavy",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/hit-heavy/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "special2-splash",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/special2-splash/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "awakening-aura",
+      "kind": "effects",
+      "metadata": "awakening-fx/tetsu/aura-loop/metadata.json",
+      "recordedReview": {
+        "status": "packaged_art_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "hit-light",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/hit-light/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "slam",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/slam/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "mob-slash-trail",
+      "kind": "effects",
+      "metadata": "tetsu/mob-slash-trail/tetsu-mob-slash-trail-16.json",
+      "recordedReview": {
+        "status": "drawn16_effect_cels_for_composite_review",
+        "limitations": [
+          "Attachment origins are manually measured visual anchors, not original-game exported bones. Body/trail compositing and runtime acceptance remain review steps.",
+          "Different slash directions intentionally produce changing silhouettes rather than one repeated arc.",
+          "Raw transparentRGB looks noisy on black; correct alpha-composited shapes were checked on light background. Alpha<=3 haze at crop-divider gaps is visually negligible.",
+          "No real-time or in-engine playback approval by this artist."
+        ],
+        "retiming": "Final thrust cel13 begins0.70s; cel11=.64-.67,12=.67-.70,13=.70-.78,14=.78-.88,15=.88-.94,16=.94-1.00. All16 drawings and frame1-10 timings unchanged."
+      }
+    },
+    {
+      "action": "special2-water",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/special2-water/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "special1-aura",
+      "kind": "effects",
+      "metadata": "canonical-fx/tetsu/special1-aura/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "mob-slash-letters",
+      "kind": "effects",
+      "metadata": "tetsu/mob-slash-fx/mob-slash-letters-manifest.json",
+      "recordedReview": {}
+    }
+  ],
+  "sourceEdgeCaveat": "Some Nyoro/Tetsu FX source cell edges retain faint alpha up to16/255. Runtime export preserves these source pixels; all8px runtime gutters are transparent. This is source haze, not runtime crop loss.",
+  "releaseSocketContract": "Actual projectile releaseSocket and zero-based local releaseFrame are exported on the emitting BODY animation manifest entry, alongside adapter; moving projectile FX socketOffset is zero. Manual measurements retain several source-pixel uncertainty and require gameplay visual confirmation.",
+  "additionalStaticReadabilitySeverity": {
+    "blockingFindings": [],
+    "moderatePolishGroups": [
+      {
+        "character": "tetsu",
+        "actions": [
+          "special1-startup",
+          "special1-active",
+          "special1-recovery"
+        ],
+        "finding": "Full16 startup shows heel lifts, near/far foot taps, cross-step, uncross and launch lean; this is restrained footwork dance, not an idle duplicate. Active runs, but stride spacing and joins need playback polish."
+      },
+      {
+        "character": "tetsu",
+        "actions": [
+          "special2-active"
+        ],
+        "finding": "Full16 has tucked-knee changes, torso counter-motion, blade aim/release and leg extension. Energy-cast gesture is restrained and needs separate FX; it is not a missing or rigid-only pose sequence."
+      }
+    ],
+    "scopeAndLimit": "Inspected6 evenly spaced poses (1,4,7,10,13,16) for16 body tracks per character,48 tracks total. Full16 enlarged sheets additionally inspected for Tetsu special1-startup and special2-active, Denden charge-hold, Nyoro charge-hold. Prior independent review covers all12 weak tracks, Nyoro special1 full48 and Denden special1 active16. Source artists retained their per-track reviews.",
+    "gameplayAcceptance": false
+  }
+}

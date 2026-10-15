@@ -1,0 +1,527 @@
+{
+  "character": "tetsu",
+  "animation": "light1",
+  "kind": "body",
+  "src": "tetsu-body-light1-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        272,
+        745,
+        244,
+        226
+      ],
+      "pivot": [
+        79.81967213114754,
+        222.68852459016392
+      ],
+      "duration": 0.045,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/light1/01",
+      "sourceVisibleRgbaSha256": "c3f765e68f13359a278ffe9e5df211d32dcb220ad36ceb93c2b3ee76c32fe6c9"
+    },
+    {
+      "rect": [
+        266,
+        987,
+        241,
+        222
+      ],
+      "pivot": [
+        76.81967213114754,
+        218.68852459016392
+      ],
+      "duration": 0.035,
+      "phase": "anticipation_a",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/light1/02",
+      "sourceVisibleRgbaSha256": "daa8b9feb55656569c125d322cf296a6e54a9cad50312c97bd16a1e9bbd2910b"
+    },
+    {
+      "rect": [
+        8,
+        947,
+        242,
+        225
+      ],
+      "pivot": [
+        82.81967213114754,
+        221.68852459016392
+      ],
+      "duration": 0.04,
+      "phase": "anticipation_b",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/light1/03",
+      "sourceVisibleRgbaSha256": "78aa06a9463aaf20fbd390a7d37ab01c89e1f333d94a830c66784f3edb218a48"
+    },
+    {
+      "rect": [
+        8,
+        333,
+        178,
+        259
+      ],
+      "pivot": [
+        85.81967213114754,
+        255.68852459016392
+      ],
+      "duration": 0.045,
+      "phase": "anticipation_c",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/light1/04",
+      "sourceVisibleRgbaSha256": "751869881af2e5a17d46251e09fd5b8a4b71b55a07e14868e73b25c2f28d8a2c"
+    },
+    {
+      "rect": [
+        512,
+        8,
+        206,
+        269
+      ],
+      "pivot": [
+        99.81967213114754,
+        265.6885245901639
+      ],
+      "duration": 0.055,
+      "phase": "maximum_coil",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/light1/05",
+      "sourceVisibleRgbaSha256": "8f9af8fcd28c540bf92390f6923dfcb759ab062e78b15ae65188614b713e6074"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        183,
+        309
+      ],
+      "pivot": [
+        86.81967213114754,
+        305.6885245901639
+      ],
+      "duration": 0.025,
+      "phase": "acceleration_a",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/light1/06",
+      "sourceVisibleRgbaSha256": "49708a1c9af430ca5fdb3557ef4549e13b113639ed60a6ef330daf25598ba900"
+    },
+    {
+      "rect": [
+        202,
+        447,
+        240,
+        254
+      ],
+      "pivot": [
+        85.81967213114754,
+        250.68852459016392
+      ],
+      "duration": 0.02,
+      "phase": "acceleration_b",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/light1/07",
+      "sourceVisibleRgbaSha256": "fdf78e9f57a2ea62f72da3c7e07030334fb6c425fbc983495c28ad34f89ba79a"
+    },
+    {
+      "rect": [
+        207,
+        229,
+        271,
+        202
+      ],
+      "pivot": [
+        91.81967213114754,
+        199.68852459016392
+      ],
+      "duration": 0.02,
+      "phase": "contact_entry",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/light1/08",
+      "sourceVisibleRgbaSha256": "069192cbca07c02ae70c9a1c91c92735c839775c79af89d70528cb26dbd472a6"
+    },
+    {
+      "rect": [
+        207,
+        8,
+        289,
+        205
+      ],
+      "pivot": [
+        91.81967213114754,
+        201.68852459016392
+      ],
+      "duration": 0.025,
+      "phase": "contact_exit",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/light1/09",
+      "sourceVisibleRgbaSha256": "0d48e17481c9c99d7d099a7a6462c0b059ab866a4ca0b988d23eb478c4bb0698"
+    },
+    {
+      "rect": [
+        494,
+        293,
+        255,
+        205
+      ],
+      "pivot": [
+        87.81967213114754,
+        201.68852459016392
+      ],
+      "duration": 0.03,
+      "phase": "followthrough_a",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/light1/10",
+      "sourceVisibleRgbaSha256": "fb4367e7093638f500552880e961b62308a834a6be8a00a717b13f79e298d80a"
+    },
+    {
+      "rect": [
+        8,
+        1188,
+        242,
+        189
+      ],
+      "pivot": [
+        83.81967213114754,
+        185.68852459016392
+      ],
+      "duration": 0.035,
+      "phase": "followthrough_b",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/light1/11",
+      "sourceVisibleRgbaSha256": "f9e2b403a9dac471125939eb82f8b35933ee897dc5294ff93e99fa91452f32fd"
+    },
+    {
+      "rect": [
+        266,
+        1225,
+        238,
+        212
+      ],
+      "pivot": [
+        81.81967213114754,
+        208.68852459016392
+      ],
+      "duration": 0.04,
+      "phase": "followthrough_c",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/light1/12",
+      "sourceVisibleRgbaSha256": "a9772e89ccfd00028bdb666d87a7c288014e6d48754a43b3178194bc5d933124"
+    },
+    {
+      "rect": [
+        523,
+        987,
+        231,
+        216
+      ],
+      "pivot": [
+        82.81967213114754,
+        212.68852459016392
+      ],
+      "duration": 0.04,
+      "phase": "recovery_a",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/light1/13",
+      "sourceVisibleRgbaSha256": "309637f8ebf6f5dd97e349b40a76adcc4d9346dd7c7a70ac86e62c9cc711ed08"
+    },
+    {
+      "rect": [
+        458,
+        514,
+        252,
+        215
+      ],
+      "pivot": [
+        82.81967213114754,
+        211.68852459016392
+      ],
+      "duration": 0.04,
+      "phase": "recovery_b",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/light1/14",
+      "sourceVisibleRgbaSha256": "62961bfb5246b544af4dff60604579e62650a0a5985493cc57aa67cfd2c3063e"
+    },
+    {
+      "rect": [
+        8,
+        717,
+        248,
+        214
+      ],
+      "pivot": [
+        81.81967213114754,
+        210.68852459016392
+      ],
+      "duration": 0.035,
+      "phase": "recovery_c",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/light1/15",
+      "sourceVisibleRgbaSha256": "fb8782eb81cc5ce85434b5c06f10ed9f1c020b7a81def1ce20290e2e3e2f912f"
+    },
+    {
+      "rect": [
+        532,
+        745,
+        228,
+        214
+      ],
+      "pivot": [
+        85.81967213114754,
+        210.68852459016392
+      ],
+      "duration": 0.05,
+      "phase": "settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/light1/16",
+      "sourceVisibleRgbaSha256": "7d027f91f833f53859b15331afb8e9a43e18a3fdca53cb7f54dd5d8760d83a81"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/proof-light1/tetsu-light1-16.json",
+    "atlas": "tetsu/proof-light1/tetsu-light1-registered-16.png",
+    "status": "proof_requires_review",
+    "runtimeNotes": [
+      "Mild hood/stripe shape drift between drawings remains.",
+      "Frame6 short-blade flaw corrected; actual-size/in-engine weapon continuity still needs review.",
+      "Late follow-through changes remain smaller than specified.",
+      "Sixteen cels are distinct drawings; hashes alone do not establish polished motion.",
+      "Durations and pivots are provisional; no in-engine verification by this worker."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        167,
+        173,
+        438,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 74
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        171,
+        177,
+        438,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 74
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        164,
+        174,
+        432,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 80
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        161,
+        137,
+        357,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        146,
+        126,
+        373,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        159,
+        81,
+        362,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 81
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        161,
+        142,
+        427,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 85
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        154,
+        199,
+        454,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 58
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        154,
+        196,
+        474,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 38
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        159,
+        197,
+        441,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 71
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        163,
+        214,
+        431,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 81
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        165,
+        189,
+        429,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 83
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        164,
+        185,
+        420,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        164,
+        186,
+        443,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        165,
+        187,
+        440,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 72
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        161,
+        186,
+        413,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.9016393442622951,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "5170f1d26b0a8626037c8bdee9fca345a5900bc48f5214c08f2548bb21377ace",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-light1",
+    "frames": 16,
+    "scale": 0.9016393442622951,
+    "uniformAtlasPixels": 3411409,
+    "trimmedAtlas": [
+      768,
+      1472
+    ],
+    "trimmedPixels": 1130496,
+    "rgbaMiB": 4.3125,
+    "fileBytes": 619602,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.5800000000000001,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

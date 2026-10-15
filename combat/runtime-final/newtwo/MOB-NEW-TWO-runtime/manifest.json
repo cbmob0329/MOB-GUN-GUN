@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "status": "complete_art_candidate_runtime_review_pending",
+  "animations": {
+    "manny/idle": {
+      "adapter": "manny/idle/clip.json"
+    },
+    "manny/walk": {
+      "adapter": "manny/walk/clip.json"
+    },
+    "manny/dash": {
+      "adapter": "manny/dash/clip.json"
+    },
+    "manny/jump": {
+      "adapter": "manny/jump/clip.json"
+    },
+    "manny/light1": {
+      "adapter": "manny/light1/clip.json"
+    },
+    "manny/light2": {
+      "adapter": "manny/light2/clip.json"
+    },
+    "manny/light3": {
+      "adapter": "manny/light3/clip.json"
+    },
+    "manny/light4": {
+      "adapter": "manny/light4/clip.json"
+    },
+    "manny/charge-start": {
+      "adapter": "manny/charge-start/clip.json"
+    },
+    "manny/charge-hold": {
+      "adapter": "manny/charge-hold/clip.json"
+    },
+    "manny/blow": {
+      "adapter": "manny/blow/clip.json"
+    },
+    "manny/launch": {
+      "adapter": "manny/launch/clip.json"
+    },
+    "manny/ranged": {
+      "adapter": "manny/ranged/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.725,
+        -0.68
+      ]
+    },
+    "manny/rush": {
+      "adapter": "manny/rush/clip.json"
+    },
+    "manny/air1": {
+      "adapter": "manny/air1/clip.json"
+    },
+    "manny/air2": {
+      "adapter": "manny/air2/clip.json"
+    },
+    "manny/air3": {
+      "adapter": "manny/air3/clip.json"
+    },
+    "manny/slam": {
+      "adapter": "manny/slam/clip.json"
+    },
+    "manny/damage": {
+      "adapter": "manny/damage/clip.json"
+    },
+    "manny/death": {
+      "adapter": "manny/death/clip.json"
+    },
+    "manny/recovery": {
+      "adapter": "manny/recovery/clip.json"
+    },
+    "manny/awakening-start": {
+      "adapter": "manny/awakening-start/clip.json"
+    },
+    "manny/awakening-end": {
+      "adapter": "manny/awakening-end/clip.json"
+    },
+    "manny/guard": {
+      "adapter": "manny/guard/clip.json"
+    },
+    "manny/crouch": {
+      "adapter": "manny/crouch/clip.json"
+    },
+    "manny/special1-startup": {
+      "adapter": "manny/special1-startup/clip.json"
+    },
+    "manny/special1-active": {
+      "adapter": "manny/special1-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6321428571428571,
+        -0.6523809523809524
+      ]
+    },
+    "manny/special1-recovery": {
+      "adapter": "manny/special1-recovery/clip.json"
+    },
+    "manny/special2-startup": {
+      "adapter": "manny/special2-startup/clip.json"
+    },
+    "manny/special2-active": {
+      "adapter": "manny/special2-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6784999999999999,
+        -2.408333333333333
+      ]
+    },
+    "manny/special2-recovery": {
+      "adapter": "manny/special2-recovery/clip.json"
+    },
+    "mobdesert/idle": {
+      "adapter": "mobdesert/idle/clip.json"
+    },
+    "mobdesert/walk": {
+      "adapter": "mobdesert/walk/clip.json"
+    },
+    "mobdesert/dash": {
+      "adapter": "mobdesert/dash/clip.json"
+    },
+    "mobdesert/jump": {
+      "adapter": "mobdesert/jump/clip.json"
+    },
+    "mobdesert/light1": {
+      "adapter": "mobdesert/light1/clip.json"
+    },
+    "mobdesert/light2": {
+      "adapter": "mobdesert/light2/clip.json"
+    },
+    "mobdesert/light3": {
+      "adapter": "mobdesert/light3/clip.json"
+    },
+    "mobdesert/light4": {
+      "adapter": "mobdesert/light4/clip.json"
+    },
+    "mobdesert/charge-start": {
+      "adapter": "mobdesert/charge-start/clip.json"
+    },
+    "mobdesert/charge-hold": {
+      "adapter": "mobdesert/charge-hold/clip.json"
+    },
+    "mobdesert/blow": {
+      "adapter": "mobdesert/blow/clip.json"
+    },
+    "mobdesert/launch": {
+      "adapter": "mobdesert/launch/clip.json"
+    },
+    "mobdesert/ranged": {
+      "adapter": "mobdesert/ranged/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.5016949152542373,
+        -0.5457627118644067
+      ]
+    },
+    "mobdesert/rush": {
+      "adapter": "mobdesert/rush/clip.json"
+    },
+    "mobdesert/air1": {
+      "adapter": "mobdesert/air1/clip.json"
+    },
+    "mobdesert/air2": {
+      "adapter": "mobdesert/air2/clip.json"
+    },
+    "mobdesert/air3": {
+      "adapter": "mobdesert/air3/clip.json"
+    },
+    "mobdesert/slam": {
+      "adapter": "mobdesert/slam/clip.json"
+    },
+    "mobdesert/damage": {
+      "adapter": "mobdesert/damage/clip.json"
+    },
+    "mobdesert/death": {
+      "adapter": "mobdesert/death/clip.json"
+    },
+    "mobdesert/recovery": {
+      "adapter": "mobdesert/recovery/clip.json"
+    },
+    "mobdesert/awakening-start": {
+      "adapter": "mobdesert/awakening-start/clip.json"
+    },
+    "mobdesert/awakening-end": {
+      "adapter": "mobdesert/awakening-end/clip.json"
+    },
+    "mobdesert/guard": {
+      "adapter": "mobdesert/guard/clip.json"
+    },
+    "mobdesert/crouch": {
+      "adapter": "mobdesert/crouch/clip.json"
+    },
+    "mobdesert/special1-startup": {
+      "adapter": "mobdesert/special1-startup/clip.json"
+    },
+    "mobdesert/special1-active": {
+      "adapter": "mobdesert/special1-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6031914893617021,
+        -0.07234042553191489
+      ]
+    },
+    "mobdesert/special1-recovery": {
+      "adapter": "mobdesert/special1-recovery/clip.json"
+    },
+    "mobdesert/special2-startup": {
+      "adapter": "mobdesert/special2-startup/clip.json"
+    },
+    "mobdesert/special2-active": {
+      "adapter": "mobdesert/special2-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.5908163265306122,
+        -1.0489795918367346
+      ]
+    },
+    "mobdesert/special2-recovery": {
+      "adapter": "mobdesert/special2-recovery/clip.json"
+    },
+    "manny/effects/special1-bomb-pink": {
+      "adapter": "manny/effects/special1-bomb-pink/clip.json"
+    },
+    "manny/effects/special1-bomb-cyan": {
+      "adapter": "manny/effects/special1-bomb-cyan/clip.json"
+    },
+    "manny/effects/special1-bomb-green": {
+      "adapter": "manny/effects/special1-bomb-green/clip.json"
+    },
+    "manny/effects/special1-bomb-orange": {
+      "adapter": "manny/effects/special1-bomb-orange/clip.json"
+    },
+    "manny/effects/special1-bomb-purple": {
+      "adapter": "manny/effects/special1-bomb-purple/clip.json"
+    },
+    "manny/effects/special2-orb": {
+      "adapter": "manny/effects/special2-orb/clip.json"
+    },
+    "manny/effects/awakening-aura": {
+      "adapter": "manny/effects/awakening-aura/clip.json"
+    },
+    "manny/effects/awakening-burst": {
+      "adapter": "manny/effects/awakening-burst/clip.json"
+    },
+    "mobdesert/effects/special1-fish": {
+      "adapter": "mobdesert/effects/special1-fish/clip.json"
+    },
+    "mobdesert/effects/special2-dragon": {
+      "adapter": "mobdesert/effects/special2-dragon/clip.json"
+    },
+    "mobdesert/effects/awakening-aura": {
+      "adapter": "mobdesert/effects/awakening-aura/clip.json"
+    },
+    "mobdesert/effects/awakening-burst": {
+      "adapter": "mobdesert/effects/awakening-burst/clip.json"
+    },
+    "shared/effects/hit-light": {
+      "adapter": "shared/effects/hit-light/clip.json"
+    },
+    "shared/effects/hit-heavy": {
+      "adapter": "shared/effects/hit-heavy/clip.json"
+    },
+    "shared/effects/charge": {
+      "adapter": "shared/effects/charge/clip.json"
+    },
+    "shared/effects/launch": {
+      "adapter": "shared/effects/launch/clip.json"
+    },
+    "shared/effects/slam": {
+      "adapter": "shared/effects/slam/clip.json"
+    },
+    "shared/effects/ranged": {
+      "adapter": "shared/effects/ranged/clip.json"
+    },
+    "shared/effects/rush-trail": {
+      "adapter": "shared/effects/rush-trail/clip.json"
+    }
+  },
+  "aliases": {
+    "manny/awakened-idle": "manny/idle",
+    "manny/awakened-walk": "manny/walk",
+    "manny/awakened-dash": "manny/dash",
+    "manny/awakened-jump": "manny/jump",
+    "manny/awakened-light1": "manny/light1",
+    "manny/awakened-light2": "manny/light2",
+    "manny/awakened-light3": "manny/light3",
+    "manny/awakened-light4": "manny/light4",
+    "manny/awakened-charge-start": "manny/charge-start",
+    "manny/awakened-charge-hold": "manny/charge-hold",
+    "manny/awakened-blow": "manny/blow",
+    "manny/awakened-launch": "manny/launch",
+    "manny/awakened-ranged": "manny/ranged",
+    "manny/awakened-rush": "manny/rush",
+    "manny/awakened-air1": "manny/air1",
+    "manny/awakened-air2": "manny/air2",
+    "manny/awakened-air3": "manny/air3",
+    "manny/awakened-slam": "manny/slam",
+    "manny/awakened-damage": "manny/damage",
+    "manny/awakened-death": "manny/death",
+    "manny/awakened-recovery": "manny/recovery",
+    "manny/awakened-awakening-start": "manny/awakening-start",
+    "manny/awakened-awakening-end": "manny/awakening-end",
+    "manny/awakened-guard": "manny/guard",
+    "manny/awakened-crouch": "manny/crouch",
+    "manny/awakened-special1-startup": "manny/special1-startup",
+    "manny/awakened-special1-active": "manny/special1-active",
+    "manny/awakened-special1-recovery": "manny/special1-recovery",
+    "manny/awakened-special2-startup": "manny/special2-startup",
+    "manny/awakened-special2-active": "manny/special2-active",
+    "manny/awakened-special2-recovery": "manny/special2-recovery",
+    "mobdesert/awakened-idle": "mobdesert/idle",
+    "mobdesert/awakened-walk": "mobdesert/walk",
+    "mobdesert/awakened-dash": "mobdesert/dash",
+    "mobdesert/awakened-jump": "mobdesert/jump",
+    "mobdesert/awakened-light1": "mobdesert/light1",
+    "mobdesert/awakened-light2": "mobdesert/light2",
+    "mobdesert/awakened-light3": "mobdesert/light3",
+    "mobdesert/awakened-light4": "mobdesert/light4",
+    "mobdesert/awakened-charge-start": "mobdesert/charge-start",
+    "mobdesert/awakened-charge-hold": "mobdesert/charge-hold",
+    "mobdesert/awakened-blow": "mobdesert/blow",
+    "mobdesert/awakened-launch": "mobdesert/launch",
+    "mobdesert/awakened-ranged": "mobdesert/ranged",
+    "mobdesert/awakened-rush": "mobdesert/rush",
+    "mobdesert/awakened-air1": "mobdesert/air1",
+    "mobdesert/awakened-air2": "mobdesert/air2",
+    "mobdesert/awakened-air3": "mobdesert/air3",
+    "mobdesert/awakened-slam": "mobdesert/slam",
+    "mobdesert/awakened-damage": "mobdesert/damage",
+    "mobdesert/awakened-death": "mobdesert/death",
+    "mobdesert/awakened-recovery": "mobdesert/recovery",
+    "mobdesert/awakened-awakening-start": "mobdesert/awakening-start",
+    "mobdesert/awakened-awakening-end": "mobdesert/awakening-end",
+    "mobdesert/awakened-guard": "mobdesert/guard",
+    "mobdesert/awakened-crouch": "mobdesert/crouch",
+    "mobdesert/awakened-special1-startup": "mobdesert/special1-startup",
+    "mobdesert/awakened-special1-active": "mobdesert/special1-active",
+    "mobdesert/awakened-special1-recovery": "mobdesert/special1-recovery",
+    "mobdesert/awakened-special2-startup": "mobdesert/special2-startup",
+    "mobdesert/awakened-special2-active": "mobdesert/special2-active",
+    "mobdesert/awakened-special2-recovery": "mobdesert/special2-recovery",
+    "manny/effects/hit-light": "shared/effects/hit-light",
+    "manny/effects/awakened-hit-light": "shared/effects/hit-light",
+    "manny/effects/hit-heavy": "shared/effects/hit-heavy",
+    "manny/effects/awakened-hit-heavy": "shared/effects/hit-heavy",
+    "manny/effects/charge": "shared/effects/charge",
+    "manny/effects/awakened-charge": "shared/effects/charge",
+    "manny/effects/launch": "shared/effects/launch",
+    "manny/effects/awakened-launch": "shared/effects/launch",
+    "manny/effects/slam": "shared/effects/slam",
+    "manny/effects/awakened-slam": "shared/effects/slam",
+    "manny/effects/ranged": "shared/effects/ranged",
+    "manny/effects/awakened-ranged": "shared/effects/ranged",
+    "manny/effects/rush-trail": "shared/effects/rush-trail",
+    "manny/effects/awakened-rush-trail": "shared/effects/rush-trail",
+    "manny/effects/awakened-special1-bomb-pink": "manny/effects/special1-bomb-pink",
+    "manny/effects/awakened-special1-bomb-cyan": "manny/effects/special1-bomb-cyan",
+    "manny/effects/awakened-special1-bomb-green": "manny/effects/special1-bomb-green",
+    "manny/effects/awakened-special1-bomb-orange": "manny/effects/special1-bomb-orange",
+    "manny/effects/awakened-special1-bomb-purple": "manny/effects/special1-bomb-purple",
+    "manny/effects/awakened-special2-orb": "manny/effects/special2-orb",
+    "manny/effects/awakened-awakening-aura": "manny/effects/awakening-aura",
+    "manny/effects/awakened-awakening-burst": "manny/effects/awakening-burst",
+    "mobdesert/effects/hit-light": "shared/effects/hit-light",
+    "mobdesert/effects/awakened-hit-light": "shared/effects/hit-light",
+    "mobdesert/effects/hit-heavy": "shared/effects/hit-heavy",
+    "mobdesert/effects/awakened-hit-heavy": "shared/effects/hit-heavy",
+    "mobdesert/effects/charge": "shared/effects/charge",
+    "mobdesert/effects/awakened-charge": "shared/effects/charge",
+    "mobdesert/effects/launch": "shared/effects/launch",
+    "mobdesert/effects/awakened-launch": "shared/effects/launch",
+    "mobdesert/effects/slam": "shared/effects/slam",
+    "mobdesert/effects/awakened-slam": "shared/effects/slam",
+    "mobdesert/effects/ranged": "shared/effects/ranged",
+    "mobdesert/effects/awakened-ranged": "shared/effects/ranged",
+    "mobdesert/effects/rush-trail": "shared/effects/rush-trail",
+    "mobdesert/effects/awakened-rush-trail": "shared/effects/rush-trail",
+    "mobdesert/effects/awakened-special1-fish": "mobdesert/effects/special1-fish",
+    "mobdesert/effects/awakened-special2-dragon": "mobdesert/effects/special2-dragon",
+    "mobdesert/effects/awakened-awakening-aura": "mobdesert/effects/awakening-aura",
+    "mobdesert/effects/awakened-awakening-burst": "mobdesert/effects/awakening-burst"
+  },
+  "runtimeTier": {
+    "bodyPixels": 220,
+    "encoding": "static lossless WebP",
+    "maxAtlasDimension": 4096,
+    "gutterPixels": 8,
+    "displayBodyHeight": {
+      "manny": 80,
+      "mobdesert": 110
+    },
+    "fxPixelsPerDisplayedPixel": 1.0,
+    "mastersUnchanged": true
+  }
+}

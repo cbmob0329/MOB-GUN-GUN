@@ -1,0 +1,267 @@
+{
+  "frames": [
+    {
+      "rect": [
+        8,
+        8,
+        217,
+        265
+      ],
+      "duration": 0.032,
+      "pivot": [
+        95.1764705882353,
+        262.5882352941177
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        241,
+        8,
+        221,
+        264
+      ],
+      "duration": 0.032,
+      "pivot": [
+        95.1764705882353,
+        261.5882352941177
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        478,
+        8,
+        203,
+        263
+      ],
+      "duration": 0.032,
+      "pivot": [
+        79.1764705882353,
+        260.5882352941177
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        435,
+        785,
+        190,
+        219
+      ],
+      "duration": 0.036,
+      "pivot": [
+        97.1764705882353,
+        217.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        548,
+        201,
+        235
+      ],
+      "duration": 0.04,
+      "pivot": [
+        63.176470588235304,
+        232.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        196,
+        804,
+        223,
+        221
+      ],
+      "duration": 0.038,
+      "pivot": [
+        147.1764705882353,
+        218.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        460,
+        548,
+        200,
+        221
+      ],
+      "duration": 0.032,
+      "pivot": [
+        58.176470588235304,
+        218.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        641,
+        804,
+        207,
+        212
+      ],
+      "duration": 0.036,
+      "pivot": [
+        100.1764705882353,
+        209.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        289,
+        203,
+        223
+      ],
+      "duration": 0.038,
+      "pivot": [
+        73.1764705882353,
+        220.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        225,
+        528,
+        219,
+        224
+      ],
+      "duration": 0.038,
+      "pivot": [
+        68.1764705882353,
+        221.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        241,
+        288,
+        220,
+        224
+      ],
+      "duration": 0.04,
+      "pivot": [
+        68.1764705882353,
+        221.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        697,
+        8,
+        183,
+        258
+      ],
+      "duration": 0.038,
+      "pivot": [
+        74.1764705882353,
+        255.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        804,
+        172,
+        244
+      ],
+      "duration": 0.038,
+      "pivot": [
+        44.176470588235304,
+        241.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        697,
+        282,
+        191,
+        245
+      ],
+      "duration": 0.038,
+      "pivot": [
+        73.1764705882353,
+        242.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        478,
+        287,
+        187,
+        245
+      ],
+      "duration": 0.04,
+      "pivot": [
+        74.1764705882353,
+        242.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        681,
+        543,
+        185,
+        245
+      ],
+      "duration": 0.05,
+      "pivot": [
+        76.1764705882353,
+        242.58823529411768
+      ],
+      "src": "../clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "status": "runtime-export-awaiting-integration-review",
+  "loop": false,
+  "name": "モブラミ / Mob Rami",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "rootNote": "Feet registered to450,650; game supplies root motion.",
+  "phaseRanges": {
+    "enter": [
+      0,
+      6
+    ],
+    "brace": [
+      6,
+      12
+    ],
+    "exit": [
+      12,
+      16
+    ]
+  },
+  "runtimeExport": {
+    "scale": 0.6470588235294118,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "events": [],
+  "completeSequenceId": "guard",
+  "authoredCelCount": 16,
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/guard/pilot/mobrami-guard-16.json"
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "frames": [
+    {
+      "rect": [
+        797,
+        268,
+        211,
+        250
+      ],
+      "duration": 0.025,
+      "pivot": [
+        96.5846153846154,
+        246.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        254,
+        1572,
+        225,
+        214
+      ],
+      "duration": 0.025,
+      "pivot": [
+        109.5846153846154,
+        210.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        802,
+        534,
+        203,
+        247
+      ],
+      "duration": 0.025,
+      "pivot": [
+        87.5846153846154,
+        243.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        558,
+        268,
+        223,
+        250
+      ],
+      "duration": 0.025,
+      "pivot": [
+        132.5846153846154,
+        246.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        582,
+        8,
+        258,
+        244
+      ],
+      "duration": 0.025,
+      "pivot": [
+        153.5846153846154,
+        240.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        745,
+        1699,
+        223,
+        208
+      ],
+      "duration": 0.025,
+      "pivot": [
+        138.5846153846154,
+        204.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        275,
+        429,
+        248,
+        229
+      ],
+      "duration": 0.03,
+      "pivot": [
+        152.5846153846154,
+        225.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        495,
+        1717,
+        222,
+        197
+      ],
+      "duration": 0.03,
+      "pivot": [
+        142.5846153846154,
+        194.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        539,
+        534,
+        247,
+        221
+      ],
+      "duration": 0.025,
+      "pivot": [
+        158.5846153846154,
+        217.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1072,
+        239,
+        224
+      ],
+      "duration": 0.025,
+      "pivot": [
+        164.5846153846154,
+        220.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        266,
+        898,
+        240,
+        214
+      ],
+      "duration": 0.025,
+      "pivot": [
+        155.5846153846154,
+        210.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        303,
+        8,
+        263,
+        194
+      ],
+      "duration": 0.025,
+      "pivot": [
+        175.5846153846154,
+        190.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        205,
+        263,
+        194
+      ],
+      "duration": 0.025,
+      "pivot": [
+        185.5846153846154,
+        190.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        279,
+        181
+      ],
+      "duration": 0.025,
+      "pivot": [
+        184.5846153846154,
+        178.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        287,
+        218,
+        255,
+        195
+      ],
+      "duration": 0.05,
+      "pivot": [
+        179.5846153846154,
+        191.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1731,
+        223,
+        217
+      ],
+      "duration": 0.05,
+      "pivot": [
+        145.5846153846154,
+        213.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        263,
+        1128,
+        233,
+        211
+      ],
+      "duration": 0.1,
+      "pivot": [
+        150.5846153846154,
+        207.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        502,
+        1490,
+        227,
+        211
+      ],
+      "duration": 0.1,
+      "pivot": [
+        140.5846153846154,
+        207.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        272,
+        674,
+        243,
+        208
+      ],
+      "duration": 0.1,
+      "pivot": [
+        160.5846153846154,
+        205.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        415,
+        251,
+        180
+      ],
+      "duration": 0.1,
+      "pivot": [
+        166.5846153846154,
+        176.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        256,
+        1355,
+        230,
+        201
+      ],
+      "duration": 0.1,
+      "pivot": [
+        141.5846153846154,
+        197.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1529,
+        230,
+        186
+      ],
+      "duration": 0.1,
+      "pivot": [
+        143.5846153846154,
+        182.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        758,
+        1469,
+        228,
+        214
+      ],
+      "duration": 0.1,
+      "pivot": [
+        147.5846153846154,
+        210.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        777,
+        1014,
+        238,
+        204
+      ],
+      "duration": 0.1,
+      "pivot": [
+        157.5846153846154,
+        200.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        522,
+        1014,
+        239,
+        221
+      ],
+      "duration": 0.1,
+      "pivot": [
+        154.5846153846154,
+        217.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        512,
+        1251,
+        230,
+        223
+      ],
+      "duration": 0.1,
+      "pivot": [
+        143.5846153846154,
+        219.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        841,
+        242,
+        215
+      ],
+      "duration": 0.1,
+      "pivot": [
+        158.5846153846154,
+        212.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1312,
+        232,
+        201
+      ],
+      "duration": 0.1,
+      "pivot": [
+        152.5846153846154,
+        198.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        531,
+        771,
+        241,
+        227
+      ],
+      "duration": 0.1,
+      "pivot": [
+        151.5846153846154,
+        223.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        788,
+        797,
+        222,
+        200
+      ],
+      "duration": 0.1,
+      "pivot": [
+        136.5846153846154,
+        197.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        611,
+        248,
+        214
+      ],
+      "duration": 0.1,
+      "pivot": [
+        157.5846153846154,
+        211.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "rect": [
+        777,
+        1234,
+        234,
+        219
+      ],
+      "duration": 0.1,
+      "pivot": [
+        153.5846153846154,
+        215.84615384615387
+      ],
+      "src": "../clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "action": "normal.charge.start_hold",
+  "status": "runtime-export-awaiting-integration-review",
+  "authoredCelCount": 32,
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "segments": {
+    "start": {
+      "first": 0,
+      "last": 15,
+      "loop": false
+    },
+    "hold": {
+      "first": 16,
+      "last": 31,
+      "loop": true
+    }
+  },
+  "runtimeExport": {
+    "scale": 0.676923076923077,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "events": [],
+  "completeSequenceId": "charge-cycle",
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/charge/charge-start-hold/review32/mobrami-charge-start-hold-32.json"
+  ]
+}

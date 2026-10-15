@@ -1,0 +1,542 @@
+{
+  "character": "denden",
+  "animation": "ranged",
+  "kind": "body",
+  "src": "denden-body-ranged-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        2074,
+        251,
+        237,
+        225
+      ],
+      "pivot": [
+        104.09523809523807,
+        221.0
+      ],
+      "duration": 0.04,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "denden/body/ranged/01",
+      "sourceVisibleRgbaSha256": "fd165425732a914fff65fabacc07546409ac7a8cdd512f9a5aa359ae1499033e"
+    },
+    {
+      "rect": [
+        666,
+        8,
+        267,
+        224
+      ],
+      "pivot": [
+        122.09523809523807,
+        220.0
+      ],
+      "duration": 0.04,
+      "phase": "front foot braces",
+      "sourceFrame": 2,
+      "sourceDrawingId": "denden/body/ranged/02",
+      "sourceVisibleRgbaSha256": "46e0dfe231257137f53b4674db265898950c719925742b49b0376106c92e511f"
+    },
+    {
+      "rect": [
+        968,
+        257,
+        266,
+        219
+      ],
+      "pivot": [
+        117.09523809523807,
+        215.0
+      ],
+      "duration": 0.04,
+      "phase": "knees set",
+      "sourceFrame": 3,
+      "sourceDrawingId": "denden/body/ranged/03",
+      "sourceVisibleRgbaSha256": "73aa92791eb16b39f067632907232b9edb8af3df644a8be67216191832cbfacb"
+    },
+    {
+      "rect": [
+        1530,
+        253,
+        259,
+        230
+      ],
+      "pivot": [
+        113.09523809523807,
+        226.0
+      ],
+      "duration": 0.04,
+      "phase": "near gun tucks",
+      "sourceFrame": 4,
+      "sourceDrawingId": "denden/body/ranged/04",
+      "sourceVisibleRgbaSha256": "a83370642fd466da35a303b6977ab88cc73e40812dc4676b6030adf1fda64d78"
+    },
+    {
+      "rect": [
+        1542,
+        8,
+        259,
+        229
+      ],
+      "pivot": [
+        112.09523809523807,
+        225.0
+      ],
+      "duration": 0.04,
+      "phase": "shoulder rotates",
+      "sourceFrame": 5,
+      "sourceDrawingId": "denden/body/ranged/05",
+      "sourceVisibleRgbaSha256": "e4e046894588279d7350b59897d629b91c85c17cc13b395191fc8970f4890fe3"
+    },
+    {
+      "rect": [
+        968,
+        8,
+        282,
+        233
+      ],
+      "pivot": [
+        113.09523809523807,
+        229.0
+      ],
+      "duration": 0.04,
+      "phase": "gun reaches eye",
+      "sourceFrame": 6,
+      "sourceDrawingId": "denden/body/ranged/06",
+      "sourceVisibleRgbaSha256": "c00e88918d7d896b87c2a5c219bbcce914326efd1dc55e9a26463c18dd700229"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        323,
+        232
+      ],
+      "pivot": [
+        117.09523809523807,
+        228.0
+      ],
+      "duration": 0.035,
+      "phase": "arm extends",
+      "sourceFrame": 7,
+      "sourceDrawingId": "denden/body/ranged/07",
+      "sourceVisibleRgbaSha256": "d4e93bdb4a79bd34cfa45447eaee7f9bee52d79b59007d802b86461d0f436e13"
+    },
+    {
+      "rect": [
+        8,
+        256,
+        307,
+        231
+      ],
+      "pivot": [
+        131.09523809523807,
+        227.0
+      ],
+      "duration": 0.045,
+      "phase": "shot release",
+      "sourceFrame": 8,
+      "sourceDrawingId": "denden/body/ranged/08",
+      "sourceVisibleRgbaSha256": "c6ca73dfc491950c42b93f5b86b2ffc7ceb3ce46de6bc27374fd69f0b65e3209"
+    },
+    {
+      "rect": [
+        331,
+        256,
+        306,
+        221
+      ],
+      "pivot": [
+        126.09523809523807,
+        217.0
+      ],
+      "duration": 0.045,
+      "phase": "wrist recoil",
+      "sourceFrame": 9,
+      "sourceDrawingId": "denden/body/ranged/09",
+      "sourceVisibleRgbaSha256": "636046e91a3fee6eb64b041bc4de20a4dfff41b54396ed1a2afa55a4dac5e872"
+    },
+    {
+      "rect": [
+        653,
+        250,
+        299,
+        224
+      ],
+      "pivot": [
+        122.09523809523807,
+        221.0
+      ],
+      "duration": 0.04,
+      "phase": "aim recovers",
+      "sourceFrame": 10,
+      "sourceDrawingId": "denden/body/ranged/10",
+      "sourceVisibleRgbaSha256": "3771022383431a639e44fb68edb3179fb9721b4726a7b015185eedfa3dc0e1ac"
+    },
+    {
+      "rect": [
+        347,
+        8,
+        303,
+        226
+      ],
+      "pivot": [
+        117.09523809523807,
+        222.0
+      ],
+      "duration": 0.04,
+      "phase": "arm lowers",
+      "sourceFrame": 11,
+      "sourceDrawingId": "denden/body/ranged/11",
+      "sourceVisibleRgbaSha256": "3b7433e8847055eef363869285c84264527025f4fa033b7368cc6952fdcfb9e5"
+    },
+    {
+      "rect": [
+        1250,
+        257,
+        264,
+        226
+      ],
+      "pivot": [
+        114.09523809523807,
+        222.0
+      ],
+      "duration": 0.04,
+      "phase": "shoulder settles",
+      "sourceFrame": 12,
+      "sourceDrawingId": "denden/body/ranged/12",
+      "sourceVisibleRgbaSha256": "548f8abf25036d73a40126759efe0150672a9681aba4789d953b9503c4f162cd"
+    },
+    {
+      "rect": [
+        1817,
+        8,
+        250,
+        227
+      ],
+      "pivot": [
+        128.09523809523807,
+        224.0
+      ],
+      "duration": 0.04,
+      "phase": "knee absorbs",
+      "sourceFrame": 13,
+      "sourceDrawingId": "denden/body/ranged/13",
+      "sourceVisibleRgbaSha256": "0d0426099bce440ebf025bece79c3c4e0c2f315e496ef6346d1f2b3ca84d4ae6"
+    },
+    {
+      "rect": [
+        1266,
+        8,
+        260,
+        229
+      ],
+      "pivot": [
+        119.09523809523807,
+        225.0
+      ],
+      "duration": 0.04,
+      "phase": "two-gun gather",
+      "sourceFrame": 14,
+      "sourceDrawingId": "denden/body/ranged/14",
+      "sourceVisibleRgbaSha256": "ddff5aefe9d442ef702987bb00f5e8a8c6c40a53110995233dae02da63f6dc2e"
+    },
+    {
+      "rect": [
+        1805,
+        253,
+        253,
+        226
+      ],
+      "pivot": [
+        109.09523809523807,
+        222.0
+      ],
+      "duration": 0.035,
+      "phase": "ready returns",
+      "sourceFrame": 15,
+      "sourceDrawingId": "denden/body/ranged/15",
+      "sourceVisibleRgbaSha256": "4fef9d4e06fe40f16070c5e1d79b20e145939617333764999d329d8cf228f816"
+    },
+    {
+      "rect": [
+        2083,
+        8,
+        250,
+        225
+      ],
+      "pivot": [
+        115.09523809523807,
+        221.0
+      ],
+      "duration": 0.035,
+      "phase": "ready settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "denden/body/ranged/16",
+      "sourceVisibleRgbaSha256": "f23de3a1e31eeee022d2b11da01eb9b6feba882c47c89d03f6cbbee9c1990c96"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/ranged/denden-ranged-16.json",
+    "atlas": "denden/ranged/denden-ranged-16-atlas.png",
+    "status": "16-cel static-review candidate; in-engine acceptance pending",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        141,
+        188,
+        389,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        189,
+        401,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        194,
+        406,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        183,
+        403,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        184,
+        403,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        180,
+        427,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 85
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        181,
+        466,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 46
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        113,
+        182,
+        434,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 78
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        118,
+        192,
+        438,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 74
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        188,
+        435,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 77
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        187,
+        444,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 68
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        187,
+        407,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        116,
+        185,
+        377,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        184,
+        397,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        136,
+        187,
+        400,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        188,
+        391,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.9523809523809523,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "033cbaccb01f1d181a2c06b810b22134af13f8103c9852bfa546807ad2d5ba29",
+  "runtimeMeasurement": {
+    "action": "denden-body-ranged",
+    "frames": 16,
+    "scale": 0.9523809523809523,
+    "uniformAtlasPixels": 3802500,
+    "trimmedAtlas": [
+      2368,
+      512
+    ],
+    "trimmedPixels": 1212416,
+    "rgbaMiB": 4.625,
+    "fileBytes": 972974,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.635,
+  "artTimingRecommendations": {
+    "events": [
+      {
+        "key": "ranged-release",
+        "timeSeconds": 0.275,
+        "sourceCel": 8,
+        "muzzleSocketPx": [
+          430,
+          296
+        ],
+        "rootOffsetBodyHeight": [
+          0.7792207792207793,
+          -0.5367965367965368
+        ],
+        "fxKey": "ranged",
+        "fxStartAtActionSeconds": 0.275,
+        "fxFollow": "snapshot release socket in world space; do not rotate projectile with later recoil"
+      }
+    ],
+    "phaseRanges": {}
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

@@ -1,0 +1,523 @@
+{
+  "character": "nyoro",
+  "animation": "recovery",
+  "kind": "body",
+  "src": "nyoro-body-recovery-runtime220.webp",
+  "bodyHeight": 212,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        1040,
+        332,
+        169
+      ],
+      "pivot": [
+        90,
+        166
+      ],
+      "duration": 0.06,
+      "phase": "fallen",
+      "sourceFrame": 1,
+      "sourceDrawingId": "nyoro/body/recovery/01",
+      "sourceVisibleRgbaSha256": "8985fb206e5e537af8f0ef80f7a2b06b659a8092a99347b16278a7445b8144a0"
+    },
+    {
+      "rect": [
+        8,
+        1225,
+        323,
+        169
+      ],
+      "pivot": [
+        89,
+        166
+      ],
+      "duration": 0.06,
+      "phase": "eyes-open",
+      "sourceFrame": 2,
+      "sourceDrawingId": "nyoro/body/recovery/02",
+      "sourceVisibleRgbaSha256": "691da1d281ecea48c5fad63945d203711822aa805ac39dfb157404cbe8122dea"
+    },
+    {
+      "rect": [
+        8,
+        1892,
+        315,
+        170
+      ],
+      "pivot": [
+        83,
+        167
+      ],
+      "duration": 0.06,
+      "phase": "head-lift",
+      "sourceFrame": 3,
+      "sourceDrawingId": "nyoro/body/recovery/03",
+      "sourceVisibleRgbaSha256": "a2ac8c1cf47b12383f7de25a094241bde1ede21f72ddb29622dda69c41903ab3"
+    },
+    {
+      "rect": [
+        8,
+        2324,
+        308,
+        196
+      ],
+      "pivot": [
+        88,
+        192
+      ],
+      "duration": 0.06,
+      "phase": "plant-elbow",
+      "sourceFrame": 4,
+      "sourceDrawingId": "nyoro/body/recovery/04",
+      "sourceVisibleRgbaSha256": "378c93eef46ddae8f0db941c1d994c1fbc301d06720e4733d21a5c04439941f3"
+    },
+    {
+      "rect": [
+        8,
+        534,
+        335,
+        219
+      ],
+      "pivot": [
+        90,
+        215
+      ],
+      "duration": 0.06,
+      "phase": "brace-paws",
+      "sourceFrame": 5,
+      "sourceDrawingId": "nyoro/body/recovery/05",
+      "sourceVisibleRgbaSha256": "f96dd2ba7c1f263a8ac581bc1528b6f2b63d71df9acf7b08de012f9baf626537"
+    },
+    {
+      "rect": [
+        8,
+        1410,
+        322,
+        227
+      ],
+      "pivot": [
+        83,
+        223
+      ],
+      "duration": 0.06,
+      "phase": "push-shoulders",
+      "sourceFrame": 6,
+      "sourceDrawingId": "nyoro/body/recovery/06",
+      "sourceVisibleRgbaSha256": "1911fca23c04c1d3938f8899ecf64b4957494055b888ada625fc4bb34e45683b"
+    },
+    {
+      "rect": [
+        8,
+        2078,
+        310,
+        230
+      ],
+      "pivot": [
+        74,
+        226
+      ],
+      "duration": 0.06,
+      "phase": "roll-hips",
+      "sourceFrame": 7,
+      "sourceDrawingId": "nyoro/body/recovery/07",
+      "sourceVisibleRgbaSha256": "3bf31affe01a0bd074aeeb8228288e1b3bf6878aa689ebc1d06f8ad9a95ad7c9"
+    },
+    {
+      "rect": [
+        8,
+        2829,
+        302,
+        228
+      ],
+      "pivot": [
+        85,
+        225
+      ],
+      "duration": 0.065,
+      "phase": "knee-under",
+      "sourceFrame": 8,
+      "sourceDrawingId": "nyoro/body/recovery/08",
+      "sourceVisibleRgbaSha256": "2a722d1086f4605ff256256106ec0bbf7f1a9e88a206a5434b7be289d33dc867"
+    },
+    {
+      "rect": [
+        8,
+        1653,
+        317,
+        223
+      ],
+      "pivot": [
+        83,
+        220
+      ],
+      "duration": 0.065,
+      "phase": "regrip",
+      "sourceFrame": 9,
+      "sourceDrawingId": "nyoro/body/recovery/09",
+      "sourceVisibleRgbaSha256": "4fb8943c46a15e7b625d0146fc08b2b375f86744f7c4b239cd723a183e7ec96c"
+    },
+    {
+      "rect": [
+        8,
+        288,
+        343,
+        230
+      ],
+      "pivot": [
+        88,
+        227
+      ],
+      "duration": 0.065,
+      "phase": "kneel",
+      "sourceFrame": 10,
+      "sourceDrawingId": "nyoro/body/recovery/10",
+      "sourceVisibleRgbaSha256": "8ea5c994e5fbc65e7c9f292c9da22b8c768029f6884eecc05a8c51c1cae6204a"
+    },
+    {
+      "rect": [
+        8,
+        769,
+        333,
+        255
+      ],
+      "pivot": [
+        83,
+        251
+      ],
+      "duration": 0.065,
+      "phase": "backfoot-plant",
+      "sourceFrame": 11,
+      "sourceDrawingId": "nyoro/body/recovery/11",
+      "sourceVisibleRgbaSha256": "7efc9b984da1cc8b4ba728c7cba5e51319e2ff2264a156e62c10c3899679f215"
+    },
+    {
+      "rect": [
+        8,
+        3374,
+        292,
+        264
+      ],
+      "pivot": [
+        83,
+        261
+      ],
+      "duration": 0.065,
+      "phase": "feet-support",
+      "sourceFrame": 12,
+      "sourceDrawingId": "nyoro/body/recovery/12",
+      "sourceVisibleRgbaSha256": "d031acf74a364ebfa3dc74a7d8955685615fd435421bd5ea640bef5da2e543de"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        347,
+        264
+      ],
+      "pivot": [
+        106,
+        261
+      ],
+      "duration": 0.06,
+      "phase": "hips-rise",
+      "sourceFrame": 13,
+      "sourceDrawingId": "nyoro/body/recovery/13",
+      "sourceVisibleRgbaSha256": "a137e4bfc970fc145a9dd0c40ee72798795531d2f33557b92a6369a305c2d8e0"
+    },
+    {
+      "rect": [
+        8,
+        2536,
+        304,
+        277
+      ],
+      "pivot": [
+        136,
+        274
+      ],
+      "duration": 0.06,
+      "phase": "umbrella-up",
+      "sourceFrame": 14,
+      "sourceDrawingId": "nyoro/body/recovery/14",
+      "sourceVisibleRgbaSha256": "387a9dc375532ba6f5bc976019927b41538c4d156c792c2a4f0eb47458865d13"
+    },
+    {
+      "rect": [
+        8,
+        3073,
+        297,
+        285
+      ],
+      "pivot": [
+        141,
+        282
+      ],
+      "duration": 0.06,
+      "phase": "knees-extend",
+      "sourceFrame": 15,
+      "sourceDrawingId": "nyoro/body/recovery/15",
+      "sourceVisibleRgbaSha256": "1437d50d08cb12ca384749c9ef3384093619bccd240579d0fee732bcba14ad7b"
+    },
+    {
+      "rect": [
+        8,
+        3654,
+        278,
+        282
+      ],
+      "pivot": [
+        149,
+        279
+      ],
+      "duration": 0.07,
+      "phase": "ready",
+      "sourceFrame": 16,
+      "sourceDrawingId": "nyoro/body/recovery/16",
+      "sourceVisibleRgbaSha256": "dafbe63a029d98c980f920c0c468deca59ca260069367f5703550f9c688902dc"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "nyoro/recovery/candidate-v1/manifest.json",
+    "atlas": "nyoro/recovery/candidate-v1/nyoro-recovery-16-atlas.png",
+    "status": "review candidate, not production approved",
+    "runtimeNotes": [
+      "Recovery source is1312x1199, generated independently from death. Standing final anatomy is taller than original death ready; one reference scale per clip exposes this drift. First fallen pose transition needs runtime comparison; no per-frame normalization."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        274,
+        462,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 50
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        274,
+        454,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 58
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        137,
+        273,
+        452,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 60
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        248,
+        440,
+        444
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 68
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        225,
+        465,
+        444
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 47
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        137,
+        217,
+        459,
+        444
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 53
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        146,
+        214,
+        456,
+        444
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 56
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        135,
+        215,
+        437,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        137,
+        220,
+        454,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 58
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        213,
+        475,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 37
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        137,
+        189,
+        470,
+        444
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 42
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        137,
+        179,
+        429,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        179,
+        461,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 51
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        84,
+        166,
+        388,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        79,
+        158,
+        376,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        71,
+        161,
+        349,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    }
+  ],
+  "runtimeExport": {
+    "scale": 1,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 212,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "93fe7b784d1f978405e6acb5951eaf8feee5cff3c18a7971264496d217c7ba49",
+  "runtimeMeasurement": {
+    "action": "nyoro-body-recovery",
+    "frames": 16,
+    "scale": 1,
+    "uniformAtlasPixels": 4194304,
+    "trimmedAtlas": [
+      384,
+      3968
+    ],
+    "trimmedPixels": 1523712,
+    "rgbaMiB": 5.8125,
+    "fileBytes": 1205984,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.995,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

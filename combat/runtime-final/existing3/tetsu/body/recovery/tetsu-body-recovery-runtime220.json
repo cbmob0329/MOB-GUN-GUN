@@ -1,0 +1,526 @@
+{
+  "character": "tetsu",
+  "animation": "recovery",
+  "kind": "body",
+  "src": "tetsu-body-recovery-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        203,
+        273,
+        123
+      ],
+      "pivot": [
+        57.25490196078431,
+        119.35294117647061
+      ],
+      "duration": 0.055,
+      "phase": "eye_opens",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/recovery/01",
+      "sourceVisibleRgbaSha256": "f99bb4ccacd7431808c8b2add2989098f4158efbffc7346bc744a6cf59d25c86"
+    },
+    {
+      "rect": [
+        308,
+        8,
+        258,
+        142
+      ],
+      "pivot": [
+        56.25490196078431,
+        138.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "chin_lift",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/recovery/02",
+      "sourceVisibleRgbaSha256": "bf52c51b4069e8767bfe4e9c1071ae71737baec734c117674bf902f25ba1991d"
+    },
+    {
+      "rect": [
+        290,
+        428,
+        266,
+        189
+      ],
+      "pivot": [
+        58.25490196078431,
+        185.3529411764706
+      ],
+      "duration": 0.06,
+      "phase": "palm_plant",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/recovery/03",
+      "sourceVisibleRgbaSha256": "4c044fff519a3070d7f79deffb32f16c11817df6caeb12e638a3d76bac61809f"
+    },
+    {
+      "rect": [
+        284,
+        633,
+        256,
+        207
+      ],
+      "pivot": [
+        86.25490196078431,
+        203.3529411764706
+      ],
+      "duration": 0.06,
+      "phase": "chest_push",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/recovery/04",
+      "sourceVisibleRgbaSha256": "bb83e1db57521448d7af1570f829fe11dab70e9e7d5c3c5ea7944765d3d2b60c"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        284,
+        179
+      ],
+      "pivot": [
+        86.25490196078431,
+        175.3529411764706
+      ],
+      "duration": 0.06,
+      "phase": "knee_under",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/recovery/05",
+      "sourceVisibleRgbaSha256": "b5330c0b4acdc3b81f0450b364f26d8e6d2150f8affb4c668885b835b66ae3c8"
+    },
+    {
+      "rect": [
+        254,
+        1574,
+        228,
+        212
+      ],
+      "pivot": [
+        81.25490196078431,
+        208.3529411764706
+      ],
+      "duration": 0.06,
+      "phase": "low_kneel",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/recovery/06",
+      "sourceVisibleRgbaSha256": "cfe52e393ee3ade825369de6ada5ee9936c12784f367e4321566e592e0eeb483"
+    },
+    {
+      "rect": [
+        8,
+        565,
+        260,
+        211
+      ],
+      "pivot": [
+        77.25490196078431,
+        207.3529411764706
+      ],
+      "duration": 0.06,
+      "phase": "hips_center",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/recovery/07",
+      "sourceVisibleRgbaSha256": "45a68cc7f0d51cb9b90a69e4c626f3f34dbc6f8413cf7ad39746a0e283bf60d1"
+    },
+    {
+      "rect": [
+        8,
+        1487,
+        230,
+        208
+      ],
+      "pivot": [
+        78.25490196078431,
+        204.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "front_foot_plant",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/recovery/08",
+      "sourceVisibleRgbaSha256": "076135713a2394e9fd57cad2f74bc382567e42ab4dacb1a9bce202ad09d76ec9"
+    },
+    {
+      "rect": [
+        297,
+        203,
+        270,
+        209
+      ],
+      "pivot": [
+        74.25490196078431,
+        206.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "rise_begin",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/recovery/09",
+      "sourceVisibleRgbaSha256": "f86bb3932078272032fe33f6f6b2066557c9f3c221b719b133fd795be945a3c5"
+    },
+    {
+      "rect": [
+        8,
+        342,
+        266,
+        207
+      ],
+      "pivot": [
+        77.25490196078431,
+        204.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "hand_returns",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/recovery/10",
+      "sourceVisibleRgbaSha256": "cf66586e235ef68601f44873a28bb21e9d08be449868d67b946c9e37a349cfc3"
+    },
+    {
+      "rect": [
+        8,
+        792,
+        252,
+        203
+      ],
+      "pivot": [
+        79.25490196078431,
+        199.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "two_hand_grip",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/recovery/11",
+      "sourceVisibleRgbaSha256": "47e8ffbe4a4ca3350831b5d394e4881764a227ea1ecd484c4728a6c477a74ce9"
+    },
+    {
+      "rect": [
+        8,
+        1249,
+        242,
+        222
+      ],
+      "pivot": [
+        74.25490196078431,
+        218.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "knees_extend",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/recovery/12",
+      "sourceVisibleRgbaSha256": "796c346f94279bf66f79c72f31ae9f77d127f216b08ef1cfce45ab7cba8149d5"
+    },
+    {
+      "rect": [
+        8,
+        1011,
+        250,
+        222
+      ],
+      "pivot": [
+        80.25490196078431,
+        218.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "chest_straighten",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/recovery/13",
+      "sourceVisibleRgbaSha256": "fc28825247d8187ef8c1cb755807b99b979b5f2e5290f7e60e563f7fa11ec5f5"
+    },
+    {
+      "rect": [
+        274,
+        1096,
+        246,
+        226
+      ],
+      "pivot": [
+        82.25490196078431,
+        222.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "blade_level",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/recovery/14",
+      "sourceVisibleRgbaSha256": "57a77be79bac5f5c87237922e3fa010ba4c0ce4f9b10adaccfc5fec5da600390"
+    },
+    {
+      "rect": [
+        276,
+        856,
+        251,
+        224
+      ],
+      "pivot": [
+        80.25490196078431,
+        220.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "shoulders_settle",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/recovery/15",
+      "sourceVisibleRgbaSha256": "e2f319dc62276dbbff822c9618a019de1311ddcdf41849bbc0a2a336db8990de"
+    },
+    {
+      "rect": [
+        266,
+        1338,
+        241,
+        220
+      ],
+      "pivot": [
+        83.25490196078431,
+        216.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "ready",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/recovery/16",
+      "sourceVisibleRgbaSha256": "c6839393fcb1e11665409f9e439c9102237637ffe64039a56072a0eccd31eec1"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/recovery/tetsu-recovery-16.json",
+    "atlas": "tetsu/recovery/tetsu-recovery-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Cel10 missing blade was restored with imagegen; the other fifteen source cels remain unchanged.",
+      "Recovery is newly drawn, not reversed death playback. Early palm-support posture briefly lowers again while shifting knee under hips.",
+      "Manual hip/ground roots transition from prone to standing; actual-size continuity requires runtime review.",
+      "Real-time and in-engine playback not visually verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        158,
+        282,
+        474,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 38
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        159,
+        260,
+        458,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 54
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        156,
+        205,
+        464,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 48
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        185,
+        420,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        217,
+        452,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 60
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        179,
+        394,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        135,
+        180,
+        436,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 76
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        184,
+        399,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        138,
+        181,
+        451,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 61
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        135,
+        183,
+        442,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        190,
+        424,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        138,
+        167,
+        418,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        167,
+        420,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        162,
+        413,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        164,
+        422,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        170,
+        407,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8627450980392157,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "339629743fdda7734560f58a80e3264370ef268398ef6ddf846bf2dcf3ddfcb8",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-recovery",
+    "frames": 16,
+    "scale": 0.8627450980392157,
+    "uniformAtlasPixels": 3122289,
+    "trimmedAtlas": [
+      576,
+      1856
+    ],
+    "trimmedPixels": 1069056,
+    "rgbaMiB": 4.078125,
+    "fileBytes": 606034,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.885,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

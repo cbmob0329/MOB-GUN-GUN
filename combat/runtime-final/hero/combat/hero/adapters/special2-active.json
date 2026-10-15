@@ -1,0 +1,151 @@
+{
+  "frames": [
+    {
+      "rect": [
+        425,
+        261,
+        178,
+        235
+      ],
+      "duration": 0.03,
+      "pivot": [
+        115.1764705882353,
+        235.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        259,
+        753,
+        189,
+        234
+      ],
+      "duration": 0.024,
+      "pivot": [
+        118.1764705882353,
+        239.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        527,
+        203,
+        239
+      ],
+      "duration": 0.02,
+      "pivot": [
+        117.1764705882353,
+        242.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        268,
+        195,
+        243
+      ],
+      "duration": 0.036,
+      "pivot": [
+        106.1764705882353,
+        252.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        414,
+        8,
+        204,
+        237
+      ],
+      "duration": 0.04,
+      "pivot": [
+        119.1764705882353,
+        245.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        219,
+        266,
+        190,
+        239
+      ],
+      "duration": 0.03,
+      "pivot": [
+        121.1764705882353,
+        249.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        184,
+        244
+      ],
+      "duration": 0.032,
+      "pivot": [
+        101.1764705882353,
+        255.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        208,
+        8,
+        190,
+        242
+      ],
+      "duration": 0.034,
+      "pivot": [
+        104.1764705882353,
+        256.5882352941177
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "status": "runtime-export-awaiting-integration-review",
+  "name": "モブラミ / Mob Rami",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "rootNote": "Ground frames boot baseline650; airborne pelvis530. Virtual root450,650; game controls vertical movement.",
+  "events": [
+    {
+      "frame": 3,
+      "event": "downward-water-cast"
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.6470588235294118,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "completeSequenceId": "special2",
+  "authoredCelCount": 32,
+  "phaseWindowOnly": true,
+  "sources": [
+    "rebuild16/special2-startup/pilot/mobrami-special2-startup-16.json",
+    "rebuild16/special2-release/pilot/mobrami-special2-release-16.json"
+  ],
+  "sourceFrameRange": [
+    16,
+    24
+  ],
+  "phase": "active"
+}

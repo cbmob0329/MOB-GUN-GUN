@@ -1,0 +1,354 @@
+{
+  "character": "manny",
+  "clip": "crouch",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 220.00000000000003,
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "knownIssues": [
+    "User and runtime review pending.",
+    "Exact anatomical bounds and non-release sockets pending."
+  ],
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        712,
+        8,
+        316,
+        329
+      ],
+      "duration": 0.09,
+      "pivot": [
+        147.5,
+        319.1
+      ],
+      "headBodyBounds": [
+        26.500000000000004,
+        99.10000000000001,
+        290.5,
+        319.1
+      ],
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        1710,
+        8,
+        318,
+        320
+      ],
+      "duration": 0.09,
+      "pivot": [
+        162.9,
+        307.0
+      ],
+      "headBodyBounds": [
+        41.900000000000006,
+        87.0,
+        305.90000000000003,
+        307.0
+      ],
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        712,
+        353,
+        327,
+        286
+      ],
+      "duration": 0.09,
+      "pivot": [
+        176.10000000000002,
+        274.0
+      ],
+      "headBodyBounds": [
+        55.1,
+        54.00000000000001,
+        319.1,
+        274.0
+      ],
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        712,
+        655,
+        326,
+        269
+      ],
+      "duration": 0.09,
+      "pivot": [
+        171.70000000000002,
+        258.6
+      ],
+      "headBodyBounds": [
+        50.7,
+        38.6,
+        314.70000000000005,
+        258.6
+      ],
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        1044,
+        8,
+        326,
+        317
+      ],
+      "duration": 0.09,
+      "pivot": [
+        144.20000000000002,
+        302.6
+      ],
+      "headBodyBounds": [
+        23.200000000000003,
+        82.60000000000001,
+        287.20000000000005,
+        302.6
+      ],
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        1386,
+        8,
+        308,
+        321
+      ],
+      "duration": 0.09,
+      "pivot": [
+        148.60000000000002,
+        318.0
+      ],
+      "headBodyBounds": [
+        27.6,
+        98.00000000000001,
+        291.6,
+        318.0
+      ],
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        1710,
+        344,
+        310,
+        320
+      ],
+      "duration": 0.09,
+      "pivot": [
+        156.3,
+        314.70000000000005
+      ],
+      "headBodyBounds": [
+        35.300000000000004,
+        94.7,
+        299.3,
+        314.70000000000005
+      ],
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        1392,
+        680,
+        314,
+        319
+      ],
+      "duration": 0.09,
+      "pivot": [
+        162.9,
+        315.8
+      ],
+      "headBodyBounds": [
+        41.900000000000006,
+        95.80000000000001,
+        305.90000000000003,
+        315.8
+      ],
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        8,
+        320,
+        337,
+        296
+      ],
+      "duration": 0.09,
+      "pivot": [
+        154.10000000000002,
+        292.70000000000005
+      ],
+      "headBodyBounds": [
+        33.1,
+        72.7,
+        297.1,
+        292.70000000000005
+      ],
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        361,
+        320,
+        335,
+        294
+      ],
+      "duration": 0.09,
+      "pivot": [
+        153.0,
+        288.40000000000003
+      ],
+      "headBodyBounds": [
+        32.0,
+        68.4,
+        296.0,
+        288.40000000000003
+      ],
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        8,
+        8,
+        342,
+        296
+      ],
+      "duration": 0.09,
+      "pivot": [
+        171.70000000000002,
+        287.20000000000005
+      ],
+      "headBodyBounds": [
+        50.7,
+        67.2,
+        314.70000000000005,
+        287.20000000000005
+      ],
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        366,
+        8,
+        327,
+        288
+      ],
+      "duration": 0.09,
+      "pivot": [
+        167.3,
+        282.8
+      ],
+      "headBodyBounds": [
+        46.300000000000004,
+        62.800000000000004,
+        310.3,
+        282.8
+      ],
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        360,
+        632,
+        336,
+        295
+      ],
+      "duration": 0.09,
+      "pivot": [
+        160.70000000000002,
+        290.5
+      ],
+      "headBodyBounds": [
+        39.7,
+        70.5,
+        303.70000000000005,
+        290.5
+      ],
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        1722,
+        680,
+        316,
+        288
+      ],
+      "duration": 0.09,
+      "pivot": [
+        153.0,
+        282.8
+      ],
+      "headBodyBounds": [
+        32.0,
+        62.800000000000004,
+        296.0,
+        282.8
+      ],
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        8,
+        632,
+        336,
+        307
+      ],
+      "duration": 0.09,
+      "pivot": [
+        173.9,
+        304.8
+      ],
+      "headBodyBounds": [
+        52.900000000000006,
+        84.80000000000001,
+        316.90000000000003,
+        304.8
+      ],
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        1054,
+        655,
+        322,
+        310
+      ],
+      "duration": 0.09,
+      "pivot": [
+        165.10000000000002,
+        307.0
+      ],
+      "headBodyBounds": [
+        44.1,
+        87.0,
+        308.1,
+        307.0
+      ],
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/manny/crouch/manny-crouch-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 200,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 1.1,
+    "actualBodyPixels": 220.00000000000003,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/manny/crouch/clip.json"
+  }
+}

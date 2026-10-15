@@ -1,0 +1,374 @@
+{
+  "character": "manny",
+  "clip": "special1-bomb-pink",
+  "status": "drawn16-FX-internal-review-candidate",
+  "src": "atlas.webp",
+  "frameCount": 16,
+  "bodyHeight": 14.399999999999999,
+  "displayBodyHeight": 80,
+  "orientationMode": "fixed",
+  "nativeAngleRadians": 0,
+  "socketOffset": [
+    0,
+    0
+  ],
+  "displaySizeUnits": "normalized to displayBodyHeight",
+  "frames": [
+    {
+      "rect": [
+        151,
+        153,
+        54,
+        57
+      ],
+      "duration": 0.065,
+      "pivot": [
+        26.907747678018573,
+        33.52159829721362
+      ],
+      "displaySize": [
+        0.6750000000000002,
+        0.7125
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        8,
+        56,
+        57
+      ],
+      "duration": 0.065,
+      "pivot": [
+        28.62573310696095,
+        33.56919932088285
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.7125
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        369,
+        8,
+        56,
+        54
+      ],
+      "duration": 0.065,
+      "pivot": [
+        27.74937386018237,
+        31.023112462006083
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.675
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        152,
+        80,
+        57,
+        54
+      ],
+      "duration": 0.065,
+      "pivot": [
+        27.384315153091073,
+        30.834678541246827
+      ],
+      "displaySize": [
+        0.7125,
+        0.675
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        441,
+        8,
+        54,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        28.169739230474242,
+        33.26393327368017
+      ],
+      "displaySize": [
+        0.6750000000000002,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        153,
+        8,
+        56,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        29.726706903055447,
+        32.2830554507733
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        221,
+        150,
+        56,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        29.109683579853957,
+        32.91234225800412
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        81,
+        57,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        27.172052672347018,
+        33.057316034082106
+      ],
+      "displaySize": [
+        0.7125,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        80,
+        8,
+        57,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        29.70949434229137,
+        31.143553748231966
+      ],
+      "displaySize": [
+        0.7125,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        225,
+        8,
+        56,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        30.330418268403232,
+        30.897724482184863
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        293,
+        80,
+        56,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        27.758627987159674,
+        30.988398525740102
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        297,
+        8,
+        56,
+        56
+      ],
+      "duration": 0.065,
+      "pivot": [
+        28.332617203665386,
+        31.66967780076855
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.7000000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        80,
+        153,
+        55,
+        57
+      ],
+      "duration": 0.065,
+      "pivot": [
+        28.266660920955427,
+        29.086167200196996
+      ],
+      "displaySize": [
+        0.6875000000000001,
+        0.7125
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        153,
+        56,
+        57
+      ],
+      "duration": 0.065,
+      "pivot": [
+        28.70345958168457,
+        29.23263990955342
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.7125
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        293,
+        152,
+        56,
+        55
+      ],
+      "duration": 0.065,
+      "pivot": [
+        28.76772580350064,
+        28.96782582179667
+      ],
+      "displaySize": [
+        0.7000000000000001,
+        0.6875000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        81,
+        80,
+        55,
+        57
+      ],
+      "duration": 0.065,
+      "pivot": [
+        28.087888753056234,
+        29.34324572127139
+      ],
+      "displaySize": [
+        0.6875,
+        0.7125
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    }
+  ],
+  "knownIssues": [
+    "Independent16 drawn bomb cels replace rejected multi-color extraction.",
+    "Internal and runtime review pending.",
+    "Soft glows remain source RGBA; cell boundaries have no alpha>16."
+  ],
+  "sourceBodyHeight": 80,
+  "sourcePixelsPreserved": false,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.18,
+    "actualBodyPixels": 14.399999999999999,
+    "nominalBodyPixels": null,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "packed/manny/effects/special1-bomb-pink/special1-bomb-pink-16.json"
+  }
+}

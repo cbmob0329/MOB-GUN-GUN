@@ -1,0 +1,274 @@
+{
+  "frames": [
+    {
+      "rect": [
+        8,
+        470,
+        371,
+        235
+      ],
+      "duration": 0.045,
+      "pivot": [
+        171.82857142857142,
+        232.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        389,
+        1173,
+        363,
+        228
+      ],
+      "duration": 0.045,
+      "pivot": [
+        175.82857142857142,
+        224.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        395,
+        690,
+        371,
+        228
+      ],
+      "duration": 0.05,
+      "pivot": [
+        204.82857142857142,
+        224.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        395,
+        934,
+        369,
+        223
+      ],
+      "duration": 0.07,
+      "pivot": [
+        214.82857142857142,
+        219.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        386,
+        1417,
+        361,
+        224
+      ],
+      "duration": 0.035,
+      "pivot": [
+        152.82857142857142,
+        221.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        240,
+        376,
+        214
+      ],
+      "duration": 0.03,
+      "pivot": [
+        154.82857142857142,
+        210.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        408,
+        8,
+        379,
+        206
+      ],
+      "duration": 0.025,
+      "pivot": [
+        162.82857142857142,
+        203.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        400,
+        463,
+        376,
+        211
+      ],
+      "duration": 0.05,
+      "pivot": [
+        172.82857142857142,
+        208.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        384,
+        216
+      ],
+      "duration": 0.035,
+      "pivot": [
+        154.82857142857142,
+        212.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1437,
+        353,
+        207
+      ],
+      "duration": 0.04,
+      "pivot": [
+        151.82857142857142,
+        203.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        956,
+        365,
+        219
+      ],
+      "duration": 0.045,
+      "pivot": [
+        181.82857142857142,
+        215.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        376,
+        1660,
+        335,
+        219
+      ],
+      "duration": 0.045,
+      "pivot": [
+        153.82857142857142,
+        215.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        721,
+        371,
+        219
+      ],
+      "duration": 0.045,
+      "pivot": [
+        173.82857142857142,
+        215.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1660,
+        352,
+        217
+      ],
+      "duration": 0.045,
+      "pivot": [
+        161.82857142857142,
+        213.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        408,
+        230,
+        376,
+        217
+      ],
+      "duration": 0.05,
+      "pivot": [
+        187.82857142857142,
+        213.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1191,
+        362,
+        230
+      ],
+      "duration": 0.065,
+      "pivot": [
+        181.82857142857142,
+        227.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "action": "awakened.weak1",
+  "status": "runtime-export-awaiting-integration-review",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "authoredCelCount": 16,
+  "segments": {
+    "load": {
+      "first": 0,
+      "last": 3
+    },
+    "release": {
+      "first": 4,
+      "last": 8
+    },
+    "recovery": {
+      "first": 9,
+      "last": 15
+    }
+  },
+  "events": [
+    {
+      "frame": 7,
+      "name": "jabContact"
+    },
+    {
+      "frame": 15,
+      "name": "ready"
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.6285714285714286,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "completeSequenceId": "awakened-light1",
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/awakened-combat/weak1/review/mobrami-awakened-weak1-16.json"
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "character": "tetsu",
+  "animation": "hit-light",
+  "kind": "effects",
+  "src": "tetsu-effects-hit-light-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        330,
+        502,
+        120,
+        125
+      ],
+      "pivot": [
+        56.50255972696246,
+        50.50255972696246
+      ],
+      "duration": 0.035,
+      "phase": "seed",
+      "sourceFrame": 1,
+      "displaySize": [
+        0.5454545454545454,
+        0.5681818181818182
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/01",
+      "sourceVisibleRgbaSha256": "a216ab64f80bacc56fde662ff51d2fc285f16e55bf26d122af9e7c87c9ddf61d"
+    },
+    {
+      "rect": [
+        322,
+        8,
+        130,
+        131
+      ],
+      "pivot": [
+        57.258532423208194,
+        56.50255972696246
+      ],
+      "duration": 0.035,
+      "phase": "seed splits",
+      "sourceFrame": 2,
+      "displaySize": [
+        0.5909090909090909,
+        0.5954545454545455
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/02",
+      "sourceVisibleRgbaSha256": "f0df4c00d64302395a52e0b4660dbfefe710a15fd6db22079f87fac3233ceef2"
+    },
+    {
+      "rect": [
+        155,
+        8,
+        151,
+        131
+      ],
+      "pivot": [
+        75.50255972696246,
+        54.50255972696246
+      ],
+      "duration": 0.03,
+      "phase": "first growth",
+      "sourceFrame": 3,
+      "displaySize": [
+        0.6863636363636364,
+        0.5954545454545455
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/03",
+      "sourceVisibleRgbaSha256": "c7ba606300afb51b388debd2f066357fa1b0ec6bb1b06a8e374056923272be99"
+    },
+    {
+      "rect": [
+        176,
+        502,
+        138,
+        129
+      ],
+      "pivot": [
+        75.74658703071673,
+        54.50255972696246
+      ],
+      "duration": 0.03,
+      "phase": "branch growth",
+      "sourceFrame": 4,
+      "displaySize": [
+        0.6272727272727273,
+        0.5863636363636364
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/04",
+      "sourceVisibleRgbaSha256": "76c9e3db01cc318866d850e33ecb3492b5e54ba98864c9ef83300010fdc31854"
+    },
+    {
+      "rect": [
+        483,
+        8,
+        142,
+        149
+      ],
+      "pivot": [
+        67.50255972696246,
+        73.2585324232082
+      ],
+      "duration": 0.03,
+      "phase": "build",
+      "sourceFrame": 5,
+      "displaySize": [
+        0.6454545454545455,
+        0.6772727272727274
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/05",
+      "sourceVisibleRgbaSha256": "666d7d2cfe6a7b22822cf743756127e2ab42241309d730516ecdd23c1360abb9"
+    },
+    {
+      "rect": [
+        8,
+        346,
+        152,
+        152
+      ],
+      "pivot": [
+        76.2585324232082,
+        75.2585324232082
+      ],
+      "duration": 0.03,
+      "phase": "expansion",
+      "sourceFrame": 6,
+      "displaySize": [
+        0.690909090909091,
+        0.690909090909091
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/06",
+      "sourceVisibleRgbaSha256": "e8ed3e51c3e3669eba54119ca69b6cb41b1955632b162afe4236bb65db4f1fda"
+    },
+    {
+      "rect": [
+        176,
+        336,
+        147,
+        150
+      ],
+      "pivot": [
+        71.50255972696246,
+        76.2585324232082
+      ],
+      "duration": 0.035,
+      "phase": "near peak",
+      "sourceFrame": 7,
+      "displaySize": [
+        0.6681818181818182,
+        0.6818181818181819
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/07",
+      "sourceVisibleRgbaSha256": "f4698935763c502b987eca904e47190864ce0208c190e78448710e111d11977c"
+    },
+    {
+      "rect": [
+        339,
+        337,
+        141,
+        135
+      ],
+      "pivot": [
+        76.74658703071673,
+        73.2585324232082
+      ],
+      "duration": 0.04,
+      "phase": "peak",
+      "sourceFrame": 8,
+      "displaySize": [
+        0.640909090909091,
+        0.6136363636363638
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/08",
+      "sourceVisibleRgbaSha256": "d2f70ed58ea88a3de9e2240577a4ae965f9ec69ed79b69d376dc5d56e71093a7"
+    },
+    {
+      "rect": [
+        8,
+        177,
+        127,
+        153
+      ],
+      "pivot": [
+        60.50255972696246,
+        76.50255972696246
+      ],
+      "duration": 0.04,
+      "phase": "breakup begins",
+      "sourceFrame": 9,
+      "displaySize": [
+        0.5772727272727273,
+        0.6954545454545454
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/09",
+      "sourceVisibleRgbaSha256": "f10bd0cb5672ebcfe7be9900030520aa932f15645b772b9c9fad0f7b666e5d48"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        131,
+        153
+      ],
+      "pivot": [
+        55.258532423208194,
+        76.50255972696246
+      ],
+      "duration": 0.035,
+      "phase": "fragments split",
+      "sourceFrame": 10,
+      "displaySize": [
+        0.5954545454545455,
+        0.6954545454545454
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/10",
+      "sourceVisibleRgbaSha256": "8c5b8ef9025f6fd1b43401bcc09defac544f34b896509ba764f53e809066e851"
+    },
+    {
+      "rect": [
+        318,
+        155,
+        149,
+        148
+      ],
+      "pivot": [
+        76.50255972696246,
+        73.50255972696246
+      ],
+      "duration": 0.035,
+      "phase": "separation",
+      "sourceFrame": 11,
+      "displaySize": [
+        0.6772727272727274,
+        0.6727272727272728
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/11",
+      "sourceVisibleRgbaSha256": "206af9b1f25a5f3a1cb32519dd083ccb2ecfcea7a232ba9b20f4e66e93d14320"
+    },
+    {
+      "rect": [
+        483,
+        173,
+        143,
+        148
+      ],
+      "pivot": [
+        75.74658703071673,
+        72.50255972696246
+      ],
+      "duration": 0.035,
+      "phase": "thin fragments",
+      "sourceFrame": 12,
+      "displaySize": [
+        0.65,
+        0.6727272727272728
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/12",
+      "sourceVisibleRgbaSha256": "369d5bd14631068f8a54737a3645b1792c69ccdb1e4143ac13921dd4978881af"
+    },
+    {
+      "rect": [
+        8,
+        514,
+        100,
+        118
+      ],
+      "pivot": [
+        36.50255972696246,
+        75.74658703071673
+      ],
+      "duration": 0.04,
+      "phase": "small remnants",
+      "sourceFrame": 13,
+      "displaySize": [
+        0.45454545454545464,
+        0.5363636363636364
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/13",
+      "sourceVisibleRgbaSha256": "ac274bda2b7c695eedfa1791f99580ebbcd6ee71f22cf7a87730d4d8814439f8"
+    },
+    {
+      "rect": [
+        466,
+        488,
+        79,
+        119
+      ],
+      "pivot": [
+        28.258532423208194,
+        73.74658703071673
+      ],
+      "duration": 0.045,
+      "phase": "last remnants",
+      "sourceFrame": 14,
+      "displaySize": [
+        0.3590909090909091,
+        0.540909090909091
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/14",
+      "sourceVisibleRgbaSha256": "8f5fda5c7fc4bc5280ffcbc9f3bf14ea08f19f03cb760b68830ad446855358d5"
+    },
+    {
+      "rect": [
+        151,
+        177,
+        151,
+        143
+      ],
+      "pivot": [
+        75.50255972696246,
+        76.74658703071673
+      ],
+      "duration": 0.05,
+      "phase": "tiny residue",
+      "sourceFrame": 15,
+      "displaySize": [
+        0.6863636363636364,
+        0.65
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/15",
+      "sourceVisibleRgbaSha256": "e2bebcb84cbb57f707a5352c826b942a5a781daf7c88d706f910f8c2a6d8bb95"
+    },
+    {
+      "rect": [
+        496,
+        337,
+        124,
+        132
+      ],
+      "pivot": [
+        76.74658703071673,
+        76.74658703071673
+      ],
+      "duration": 0.055,
+      "phase": "final residual",
+      "sourceFrame": 16,
+      "displaySize": [
+        0.5636363636363637,
+        0.6000000000000001
+      ],
+      "socketOffset": [
+        0.0,
+        0.0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/hit-light/16",
+      "sourceVisibleRgbaSha256": "3a3213eca0271288c6a101e8e0c8a452b1253cd9c92a27e3a2d773a51d4663d7"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "canonical-fx/tetsu/hit-light/metadata.json",
+    "atlas": "canonical-fx/tetsu/hit-light/tetsu-hit-light-16-atlas.png",
+    "status": "static_review_candidate_not_user_approved",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        39,
+        37,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        23,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        35,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        31,
+        302,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        17,
+        0,
+        314,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        308,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        33,
+        0,
+        312,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        3,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 1
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        298,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        61,
+        0,
+        293,
+        242
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        16,
+        0,
+        293,
+        272
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        1,
+        312,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        290,
+        281
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    }
+  ],
+  "gameBinding": {
+    "socketReference": "world-hit-contact",
+    "existingHookOffsetPxAtBody110": [
+      0,
+      0
+    ],
+    "socketOffsetMode": "Add normalized offset to existing game hook. Hook correction applied exactly once.",
+    "nativeDirectionRadians": null,
+    "mirrorPixelsWithFacing": true,
+    "mirrorSocketXWithFacing": true
+  },
+  "orientationMode": "facing",
+  "nativeAngleRadians": 0,
+  "runtimeExport": {
+    "scale": 0.4880546075085324,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "830528d5be31795d800693b55a358f9664f501b7e45bafba1e71e69920153876",
+  "runtimeMeasurement": {
+    "action": "tetsu-effects-hit-light",
+    "frames": 16,
+    "scale": 0.4880546075085324,
+    "uniformAtlasPixels": 375769,
+    "trimmedAtlas": [
+      640,
+      640
+    ],
+    "trimmedPixels": 409600,
+    "rgbaMiB": 1.5625,
+    "fileBytes": 179784,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.6,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

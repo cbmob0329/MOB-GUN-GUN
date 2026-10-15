@@ -1,0 +1,305 @@
+{
+  "frames": [
+    {
+      "rect": [
+        333,
+        8,
+        284,
+        209
+      ],
+      "duration": 0.045,
+      "pivot": [
+        110.82051282051282,
+        207.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        766,
+        241,
+        193
+      ],
+      "duration": 0.045,
+      "pivot": [
+        90.82051282051282,
+        185.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        333,
+        233,
+        248,
+        210
+      ],
+      "duration": 0.05,
+      "pivot": [
+        104.82051282051282,
+        207.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        249,
+        1213,
+        213,
+        167
+      ],
+      "duration": 0.07,
+      "pivot": [
+        71.82051282051282,
+        164.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        335,
+        248,
+        191
+      ],
+      "duration": 0.035,
+      "pivot": [
+        100.82051282051282,
+        188.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        542,
+        245,
+        208
+      ],
+      "duration": 0.03,
+      "pivot": [
+        91.82051282051282,
+        205.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        512,
+        636,
+        241,
+        228
+      ],
+      "duration": 0.025,
+      "pivot": [
+        109.82051282051282,
+        226.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        272,
+        459,
+        224,
+        245
+      ],
+      "duration": 0.05,
+      "pivot": [
+        92.82051282051282,
+        263.3076923076923
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        309,
+        311
+      ],
+      "duration": 0.035,
+      "pivot": [
+        179.82051282051282,
+        331.3076923076923
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        507,
+        880,
+        209,
+        231
+      ],
+      "duration": 0.04,
+      "pivot": [
+        115.82051282051282,
+        258.3076923076923
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        975,
+        198,
+        200
+      ],
+      "duration": 0.045,
+      "pivot": [
+        107.82051282051282,
+        232.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1213,
+        225,
+        182
+      ],
+      "duration": 0.045,
+      "pivot": [
+        106.82051282051282,
+        200.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        265,
+        968,
+        224,
+        229
+      ],
+      "duration": 0.045,
+      "pivot": [
+        127.82051282051282,
+        238.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        512,
+        459,
+        243,
+        161
+      ],
+      "duration": 0.045,
+      "pivot": [
+        100.82051282051282,
+        158.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        269,
+        720,
+        222,
+        232
+      ],
+      "duration": 0.05,
+      "pivot": [
+        112.82051282051282,
+        230.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        505,
+        1127,
+        214,
+        223
+      ],
+      "duration": 0.065,
+      "pivot": [
+        110.82051282051282,
+        221.30769230769232
+      ],
+      "src": "../clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "action": "normal.charge.launch",
+  "status": "runtime-export-awaiting-integration-review",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "authoredCelCount": 16,
+  "segments": {
+    "load": {
+      "first": 0,
+      "last": 3,
+      "loop": false
+    },
+    "release": {
+      "first": 4,
+      "last": 7,
+      "loop": false
+    },
+    "airborne": {
+      "first": 8,
+      "last": 11,
+      "loop": false
+    },
+    "optionalLandingRecovery": {
+      "first": 12,
+      "last": 15,
+      "loop": false
+    }
+  },
+  "events": [
+    {
+      "frame": 7,
+      "at": "enter",
+      "event": "launchContactAndSelfJump"
+    },
+    {
+      "frame": 8,
+      "at": "enter",
+      "event": "airFollowupWindowOpen",
+      "branches": [
+        "air1",
+        "air2",
+        "air3"
+      ]
+    },
+    {
+      "frame": 11,
+      "at": "exit",
+      "event": "branchToAirChainOrOptionalLandingRecovery"
+    },
+    {
+      "frame": 13,
+      "at": "enter",
+      "event": "optionalLandingContact"
+    },
+    {
+      "frame": 15,
+      "at": "exit",
+      "event": "ready"
+    }
+  ],
+  "branchNotes": "Frame indices are zero-based. Engine launches target and hero at contact frame7. Frames8-11 support transition directly into the separate air1-air3 chain, then distinct final slam. Do not force launcher frames12-15 before the air chain. Optional frames12-15 are only no-followup landing/recovery. Vertical world motion is supplied by game physics.",
+  "runtimeExport": {
+    "scale": 0.5641025641025641,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "completeSequenceId": "launch",
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/charge/launch/review/mobrami-launch-16.json"
+  ]
+}

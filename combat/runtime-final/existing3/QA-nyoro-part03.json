@@ -1,0 +1,257 @@
+[
+  {
+    "key": "nyoro/air1",
+    "adapter": "nyoro/body/air1/nyoro-body-air1-runtime220.json",
+    "texture": "nyoro/body/air1/nyoro-body-air1-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5734400,
+    "textureSize": [
+      896,
+      1600
+    ],
+    "textureBytes": 1057432,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "f1930afa4917b8fba4538af6384ec030f850cc8aa0dd740d119fbbf488b6cb95",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/awakening-end",
+    "adapter": "nyoro/body/awakening-end/nyoro-body-awakening-end-runtime220.json",
+    "texture": "nyoro/body/awakening-end/nyoro-body-awakening-end-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5308416,
+    "textureSize": [
+      576,
+      2304
+    ],
+    "textureBytes": 1314648,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "e7cbc825e84f818c6e1c0ce8d0330165a19d63901bfe4bad95281a092ba45cb5",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/death",
+    "adapter": "nyoro/body/death/nyoro-body-death-runtime220.json",
+    "texture": "nyoro/body/death/nyoro-body-death-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5406720,
+    "textureSize": [
+      704,
+      1920
+    ],
+    "textureBytes": 1133094,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "5ac6598740ef31d1c1bf387006757c83b1bf37261830ef99da608848cb779d7b",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/awakening-burst",
+    "adapter": "nyoro/effects/awakening-burst/nyoro-effects-awakening-burst-runtime220.json",
+    "texture": "nyoro/effects/awakening-burst/nyoro-effects-awakening-burst-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7208960,
+    "textureSize": [
+      704,
+      2560
+    ],
+    "textureBytes": 574978,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "5563c9669d0c51f247258f8c18c79dc3b4cf19898089f925aac5db9a76f4c6cd",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/charge",
+    "adapter": "nyoro/effects/charge/nyoro-effects-charge-runtime220.json",
+    "texture": "nyoro/effects/charge/nyoro-effects-charge-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7274496,
+    "textureSize": [
+      768,
+      2368
+    ],
+    "textureBytes": 1090224,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "fbd0e00f1cae8ad0864eb0f0954e439d22a7133c9f57db09fb86944f0b2a1360",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/hit-heavy",
+    "adapter": "nyoro/effects/hit-heavy/nyoro-effects-hit-heavy-runtime220.json",
+    "texture": "nyoro/effects/hit-heavy/nyoro-effects-hit-heavy-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5603328,
+    "textureSize": [
+      1152,
+      1216
+    ],
+    "textureBytes": 843170,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "2c4c06012529abea77e5ed7adf72af08d67f7973ae63f2bb22a6590c3a7d5c33",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/hit-light",
+    "adapter": "nyoro/effects/hit-light/nyoro-effects-hit-light-runtime220.json",
+    "texture": "nyoro/effects/hit-light/nyoro-effects-hit-light-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 2162688,
+    "textureSize": [
+      384,
+      1408
+    ],
+    "textureBytes": 223962,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "4c35923019527ae63da8031ca924e07ed38ea768c44c196378e6d54c004f00d6",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/launch",
+    "adapter": "nyoro/effects/launch/nyoro-effects-launch-runtime220.json",
+    "texture": "nyoro/effects/launch/nyoro-effects-launch-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7225344,
+    "textureSize": [
+      1344,
+      1344
+    ],
+    "textureBytes": 605822,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "6921d901989ba0349b12c5d8ad31a64c2bd08baf57f6aa5c2f864bb0fd11ddb6",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/special1-aura",
+    "adapter": "nyoro/effects/special1-aura/nyoro-effects-special1-aura-runtime220.json",
+    "texture": "nyoro/effects/special1-aura/nyoro-effects-special1-aura-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7389184,
+    "textureSize": [
+      2624,
+      704
+    ],
+    "textureBytes": 1278098,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "7afd0cb419e03a6bff3ed2de58ed47ac7aa28ecc25d0ba5d49187da4f56f37ef",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/light2",
+    "adapter": "nyoro/body/light2/nyoro-body-light2-runtime220.json",
+    "texture": "nyoro/body/light2/nyoro-body-light2-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5603328,
+    "textureSize": [
+      2432,
+      576
+    ],
+    "textureBytes": 1172434,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "b5062be3d1dfa112c7d600667c178f746157804af337a6393d15a98e280341b2",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/light4",
+    "adapter": "nyoro/body/light4/nyoro-body-light4-runtime220.json",
+    "texture": "nyoro/body/light4/nyoro-body-light4-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5963776,
+    "textureSize": [
+      896,
+      1664
+    ],
+    "textureBytes": 1205914,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "5f08180826f8e81cba945c6a10f2db2057d033a60f1595dbad578ed730c0d5bc",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/special1-startup",
+    "adapter": "nyoro/body/special1-startup/nyoro-body-special1-startup-runtime220.json",
+    "texture": "nyoro/body/special1-startup/nyoro-body-special1-startup-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6553600,
+    "textureSize": [
+      1280,
+      1280
+    ],
+    "textureBytes": 1411806,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "0cdcfd7dd7c2490833dadb663874e2709c91fea115f094dc85bceeda5c2b0b8a",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/special2-active",
+    "adapter": "nyoro/body/special2-active/nyoro-body-special2-active-runtime220.json",
+    "texture": "nyoro/body/special2-active/nyoro-body-special2-active-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6225920,
+    "textureSize": [
+      1280,
+      1216
+    ],
+    "textureBytes": 1334168,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "13250356a2517d7ef053787d7e5f7115f53c325aad8de74ab0c1a63c6a4513c3",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/special2-startup",
+    "adapter": "nyoro/body/special2-startup/nyoro-body-special2-startup-runtime220.json",
+    "texture": "nyoro/body/special2-startup/nyoro-body-special2-startup-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5160960,
+    "textureSize": [
+      576,
+      2240
+    ],
+    "textureBytes": 1154164,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "442852e44da94d8d8b8f34174501cdf96ea2a4078c7138dc24c9489f6ea7d185",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/walk",
+    "adapter": "nyoro/body/walk/nyoro-body-walk-runtime220.json",
+    "texture": "nyoro/body/walk/nyoro-body-walk-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6717440,
+    "textureSize": [
+      640,
+      2624
+    ],
+    "textureBytes": 1424810,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "77376247c400c214544f84d1d083f5fc40e8c6e031d8fc6dd7a0f2550e69678e",
+    "runtimeAccepted": false
+  }
+]

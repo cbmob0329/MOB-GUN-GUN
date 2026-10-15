@@ -1,0 +1,526 @@
+{
+  "character": "tetsu",
+  "animation": "air2",
+  "kind": "body",
+  "src": "tetsu-body-air2-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        898,
+        235,
+        243,
+        210
+      ],
+      "pivot": [
+        80.25490196078431,
+        240.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "airborne_ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/air2/01",
+      "sourceVisibleRgbaSha256": "7b1f82647f79c0b623d60c51e40cf1ab65f75cab83b6cbf8439f97ea12131916"
+    },
+    {
+      "rect": [
+        1414,
+        238,
+        232,
+        225
+      ],
+      "pivot": [
+        81.25490196078431,
+        249.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "hilt_gather",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/air2/02",
+      "sourceVisibleRgbaSha256": "16459606dba8a421454518688caa018ce9b6e1b0b2ccbafd926079db82e6eff7"
+    },
+    {
+      "rect": [
+        1662,
+        254,
+        227,
+        216
+      ],
+      "pivot": [
+        79.25490196078431,
+        238.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "low_coil",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/air2/03",
+      "sourceVisibleRgbaSha256": "53d6c13d16068e0a5473c194680943dd3ffc3e8dfa46837df17ec1beedc90019"
+    },
+    {
+      "rect": [
+        1905,
+        245,
+        218,
+        213
+      ],
+      "pivot": [
+        88.25490196078431,
+        229.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "low_chamber",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/air2/04",
+      "sourceVisibleRgbaSha256": "dd01f3084c2b5ca20a1edbaefc8e2469c1ba8de08819080e5a26b6ad45cef289"
+    },
+    {
+      "rect": [
+        632,
+        242,
+        250,
+        211
+      ],
+      "pivot": [
+        84.25490196078431,
+        242.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "reverse_twist",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/air2/05",
+      "sourceVisibleRgbaSha256": "e265e9d50da8ab23a2dd44e59fa5568ed7ca1301cb661156c59f259de664973f"
+    },
+    {
+      "rect": [
+        567,
+        8,
+        253,
+        218
+      ],
+      "pivot": [
+        83.25490196078431,
+        243.3529411764706
+      ],
+      "duration": 0.025,
+      "phase": "rise_begin",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/air2/06",
+      "sourceVisibleRgbaSha256": "64adf15afc062d6e9da7fa022ab8a0e3ae7d44b606feb4d7d496ef484689bce6"
+    },
+    {
+      "rect": [
+        1881,
+        8,
+        218,
+        221
+      ],
+      "pivot": [
+        80.25490196078431,
+        249.3529411764706
+      ],
+      "duration": 0.025,
+      "phase": "upward_acceleration",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/air2/07",
+      "sourceVisibleRgbaSha256": "250a519ee10695b6c2662722e745f9b61b34ae0293830b6cec42e6b5d8c93a1e"
+    },
+    {
+      "rect": [
+        364,
+        8,
+        187,
+        267
+      ],
+      "pivot": [
+        85.25490196078431,
+        294.3529411764706
+      ],
+      "duration": 0.025,
+      "phase": "upward_contact",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/air2/08",
+      "sourceVisibleRgbaSha256": "e4e55b931c4e17c0d9f6dbf46d52992e1b2f92ab33a2e4eecdb681feddfb3772"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        164,
+        287
+      ],
+      "pivot": [
+        82.25490196078431,
+        318.3529411764706
+      ],
+      "duration": 0.03,
+      "phase": "high_contact",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/air2/09",
+      "sourceVisibleRgbaSha256": "e9fed5423aec5b98d3ca6d19275aec44093ef847dba95870bc133dc5e8dea942"
+    },
+    {
+      "rect": [
+        188,
+        8,
+        160,
+        277
+      ],
+      "pivot": [
+        78.25490196078431,
+        305.3529411764706
+      ],
+      "duration": 0.035,
+      "phase": "high_follow",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/air2/10",
+      "sourceVisibleRgbaSha256": "c1a1175da56d18ee7016373bfc6ce9343f88291c21b1b9185a39545ea71bf52e"
+    },
+    {
+      "rect": [
+        1157,
+        8,
+        173,
+        243
+      ],
+      "pivot": [
+        85.25490196078431,
+        271.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "elbow_check",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/air2/11",
+      "sourceVisibleRgbaSha256": "66185567a0e971c5e257f4be6eaa2ce085d7833d06dd2c3113d7e9ede3502d88"
+    },
+    {
+      "rect": [
+        1662,
+        8,
+        203,
+        230
+      ],
+      "pivot": [
+        112.25490196078431,
+        259.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "lower_hilt",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/air2/12",
+      "sourceVisibleRgbaSha256": "719e4d1ceb227334e3b544d5a40c61231fb960c0f5efe97ebf0cf2071a31f139"
+    },
+    {
+      "rect": [
+        364,
+        291,
+        252,
+        205
+      ],
+      "pivot": [
+        75.25490196078431,
+        231.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "controlled_return",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/air2/13",
+      "sourceVisibleRgbaSha256": "68776834118334fd1661f55d6deab78fe0438e9f4735366aff8d5678abff4c7a"
+    },
+    {
+      "rect": [
+        836,
+        8,
+        246,
+        211
+      ],
+      "pivot": [
+        82.25490196078431,
+        236.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "ribs_guard",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/air2/14",
+      "sourceVisibleRgbaSha256": "3777c7f3d1662c9dde534bf76c2c2bcb4505b10b831b94ab66acd3f50403185b"
+    },
+    {
+      "rect": [
+        1157,
+        267,
+        241,
+        216
+      ],
+      "pivot": [
+        79.25490196078431,
+        239.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "compact_air_pose",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/air2/15",
+      "sourceVisibleRgbaSha256": "864a0e80741e57556d20cce784aa889179eddc358133129f6930e18145a4b86e"
+    },
+    {
+      "rect": [
+        1346,
+        8,
+        237,
+        214
+      ],
+      "pivot": [
+        86.25490196078431,
+        238.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "air_ready_settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/air2/16",
+      "sourceVisibleRgbaSha256": "69aec1a03a69d0b11cd1802b5864dfcbbfa8855019f4cbc01da5baf41f08405c"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/air2/tetsu-air2-16.json",
+    "atlas": "tetsu/air2/tetsu-air2-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Full blade remains visible through low chamber and overhead follow-through; natural projected-length variation remains.",
+      "Virtual roots are measured near pelvis plus90px; runtime owns ballistic position.",
+      "Overhead follow-through to lower recovery is quick and needs actual-size playback review.",
+      "Real-time and in-engine playback not visually verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        141,
+        412,
+        385
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 100
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        131,
+        398,
+        391
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 114
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        144,
+        395,
+        393
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 117
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        154,
+        374,
+        400
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 112
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        140,
+        415,
+        383
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 97
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        138,
+        420,
+        390
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 92
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        131,
+        383,
+        386
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 126
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        79,
+        341,
+        388
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 79
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        52,
+        318,
+        383
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 52
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        134,
+        67,
+        319,
+        387
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 67
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        106,
+        325,
+        386
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 106
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        94,
+        120,
+        329,
+        385
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 94
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        137,
+        152,
+        428,
+        389
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 84
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        146,
+        413,
+        390
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 99
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        143,
+        411,
+        392
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 101
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        144,
+        398,
+        391
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 114
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8627450980392157,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "123c0269a32363848e8a209aad7a03277602de04cddc204f40c870df3d7479ba",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-air2",
+    "frames": 16,
+    "scale": 0.8627450980392157,
+    "uniformAtlasPixels": 3122289,
+    "trimmedAtlas": [
+      2176,
+      512
+    ],
+    "trimmedPixels": 1114112,
+    "rgbaMiB": 4.25,
+    "fileBytes": 581340,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.605,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

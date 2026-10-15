@@ -1,0 +1,51 @@
+{
+  "hit-light": {
+    "adapter": "shared-fx/hit-light/clip.json",
+    "source": "output/existing-combat-16/runtime-compact/denden/effects/hit-light/denden-effects-hit-light-runtime220.json",
+    "sourceDrawings": 16,
+    "newDrawings": 0,
+    "imageSha256": "a5a6a577ec034d7ecaecf4bcbb790595868ec9215d395cbde4915edd3fc7170b"
+  },
+  "hit-heavy": {
+    "adapter": "shared-fx/hit-heavy/clip.json",
+    "source": "output/existing-combat-16/runtime-compact/denden/effects/hit-heavy/denden-effects-hit-heavy-runtime220.json",
+    "sourceDrawings": 16,
+    "newDrawings": 0,
+    "imageSha256": "45c19fbf5db05860fecd0593a706a74a88e56616f9a9789ec6f3952c726915e7"
+  },
+  "charge": {
+    "adapter": "shared-fx/charge/clip.json",
+    "source": "output/existing-combat-16/runtime-compact/denden/effects/charge/denden-effects-charge-runtime220.json",
+    "sourceDrawings": 16,
+    "newDrawings": 0,
+    "imageSha256": "e94a06fcea677e6ac5f75dab4d3133aeecca28213c2fafc38508823aa9019d9d"
+  },
+  "launch": {
+    "adapter": "shared-fx/launch/clip.json",
+    "source": "output/existing-combat-16/runtime-compact/denden/effects/launch/denden-effects-launch-runtime220.json",
+    "sourceDrawings": 16,
+    "newDrawings": 0,
+    "imageSha256": "75783f7fe1f86f2b28d7c53e563df679b4443362d6f638e4ecef7d3cc688afcb"
+  },
+  "slam": {
+    "adapter": "shared-fx/slam/clip.json",
+    "source": "output/existing-combat-16/runtime-compact/denden/effects/slam/denden-effects-slam-runtime220.json",
+    "sourceDrawings": 16,
+    "newDrawings": 0,
+    "imageSha256": "77a07e84f937577e704b4a68551f778d277a59883133afc37a27e914504771cf"
+  },
+  "rush-trail": {
+    "adapter": "shared-fx/rush-trail/clip.json",
+    "source": "output/existing-combat-16/runtime-compact/denden/effects/rush-trail/denden-effects-rush-trail-runtime220.json",
+    "sourceDrawings": 16,
+    "newDrawings": 0,
+    "imageSha256": "3861344f3daf839cb30ac52e8b0062a72d7f0e5c1f083843aae6f3081f4434ca"
+  },
+  "ranged": {
+    "adapter": "shared-fx/ranged/clip.json",
+    "source": "output/existing-combat-16/runtime-compact/tetsu/effects/ranged/tetsu-effects-ranged-runtime220.json",
+    "sourceDrawings": 16,
+    "newDrawings": 0,
+    "imageSha256": "2f55b23b12bcfcf30e6a998ed58455b27266db90389b5a90864d072f280f88fb"
+  }
+}

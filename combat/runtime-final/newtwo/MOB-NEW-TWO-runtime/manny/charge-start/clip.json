@@ -1,0 +1,355 @@
+{
+  "character": "manny",
+  "clip": "charge-start",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 220.00000000000003,
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "bodyHeightDefinition": "Neutral source head/body to soles, excluding weapon and Mannyhat; crouched frames retain the same nominal metric.",
+  "knownIssues": [
+    "User and runtime review pending.",
+    "Exact anatomical bounds and sockets pending."
+  ],
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        688,
+        366,
+        291,
+        340
+      ],
+      "duration": 0.05,
+      "pivot": [
+        143.10000000000002,
+        332.3
+      ],
+      "headBodyBounds": [
+        22.1,
+        112.30000000000001,
+        275.1,
+        332.3
+      ],
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        324,
+        722,
+        302,
+        337
+      ],
+      "duration": 0.05,
+      "pivot": [
+        146.4,
+        326.8
+      ],
+      "headBodyBounds": [
+        25.400000000000002,
+        106.80000000000001,
+        278.40000000000003,
+        326.8
+      ],
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        8,
+        1725,
+        312,
+        308
+      ],
+      "duration": 0.05,
+      "pivot": [
+        156.3,
+        298.20000000000005
+      ],
+      "headBodyBounds": [
+        35.300000000000004,
+        78.2,
+        288.3,
+        298.20000000000005
+      ],
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        681,
+        1715,
+        302,
+        312
+      ],
+      "duration": 0.05,
+      "pivot": [
+        146.4,
+        305.90000000000003
+      ],
+      "headBodyBounds": [
+        25.400000000000002,
+        85.9,
+        278.40000000000003,
+        305.90000000000003
+      ],
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        8,
+        8,
+        357,
+        324
+      ],
+      "duration": 0.05,
+      "pivot": [
+        172.8,
+        311.40000000000003
+      ],
+      "headBodyBounds": [
+        51.800000000000004,
+        91.4,
+        304.8,
+        311.40000000000003
+      ],
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        349,
+        1715,
+        316,
+        324
+      ],
+      "duration": 0.05,
+      "pivot": [
+        137.60000000000002,
+        314.70000000000005
+      ],
+      "headBodyBounds": [
+        16.6,
+        94.7,
+        269.6,
+        314.70000000000005
+      ],
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        8,
+        348,
+        338,
+        327
+      ],
+      "duration": 0.05,
+      "pivot": [
+        143.10000000000002,
+        322.40000000000003
+      ],
+      "headBodyBounds": [
+        22.1,
+        102.4,
+        275.1,
+        322.40000000000003
+      ],
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        381,
+        8,
+        291,
+        344
+      ],
+      "duration": 0.05,
+      "pivot": [
+        128.8,
+        334.5
+      ],
+      "headBodyBounds": [
+        7.800000000000001,
+        114.50000000000001,
+        260.8,
+        334.5
+      ],
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        8,
+        1416,
+        325,
+        293
+      ],
+      "duration": 0.05,
+      "pivot": [
+        158.5,
+        289.40000000000003
+      ],
+      "headBodyBounds": [
+        37.5,
+        69.4,
+        290.5,
+        289.40000000000003
+      ],
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        642,
+        1065,
+        326,
+        298
+      ],
+      "duration": 0.05,
+      "pivot": [
+        148.60000000000002,
+        291.6
+      ],
+      "headBodyBounds": [
+        27.6,
+        71.60000000000001,
+        280.6,
+        291.6
+      ],
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        362,
+        368,
+        307,
+        338
+      ],
+      "duration": 0.05,
+      "pivot": [
+        139.8,
+        329.0
+      ],
+      "headBodyBounds": [
+        18.8,
+        109.00000000000001,
+        271.8,
+        329.0
+      ],
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        688,
+        8,
+        270,
+        342
+      ],
+      "duration": 0.05,
+      "pivot": [
+        128.8,
+        338.90000000000003
+      ],
+      "headBodyBounds": [
+        7.800000000000001,
+        118.9,
+        260.8,
+        338.90000000000003
+      ],
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        8,
+        691,
+        300,
+        338
+      ],
+      "duration": 0.05,
+      "pivot": [
+        132.10000000000002,
+        331.20000000000005
+      ],
+      "headBodyBounds": [
+        11.100000000000001,
+        111.2,
+        264.1,
+        331.20000000000005
+      ],
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        642,
+        722,
+        315,
+        327
+      ],
+      "duration": 0.05,
+      "pivot": [
+        148.60000000000002,
+        321.3
+      ],
+      "headBodyBounds": [
+        27.6,
+        101.30000000000001,
+        280.6,
+        321.3
+      ],
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        8,
+        1075,
+        325,
+        325
+      ],
+      "duration": 0.05,
+      "pivot": [
+        158.5,
+        316.90000000000003
+      ],
+      "headBodyBounds": [
+        37.5,
+        96.9,
+        290.5,
+        316.90000000000003
+      ],
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        349,
+        1379,
+        324,
+        320
+      ],
+      "duration": 0.05,
+      "pivot": [
+        168.4,
+        315.8
+      ],
+      "headBodyBounds": [
+        47.400000000000006,
+        95.80000000000001,
+        300.40000000000003,
+        315.8
+      ],
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/manny/charge-start/manny-charge-start-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 200,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 1.1,
+    "actualBodyPixels": 220.00000000000003,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/manny/charge-start/clip.json"
+  }
+}

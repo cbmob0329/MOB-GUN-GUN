@@ -1,0 +1,355 @@
+{
+  "character": "manny",
+  "clip": "recovery",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 220.00000000000003,
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "knownIssues": [
+    "User and runtime review pending.",
+    "Exact anatomical bounds and non-release sockets pending.",
+    "Desert death cels11/12 are newly drawn sword-preserving repairs uniformly normalized0.32."
+  ],
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        8,
+        8,
+        356,
+        226
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.3,
+        213.50000000000003
+      ],
+      "headBodyBounds": [
+        35.300000000000004,
+        -6.5,
+        299.3,
+        213.50000000000003
+      ],
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        380,
+        8,
+        354,
+        240
+      ],
+      "duration": 0.065,
+      "pivot": [
+        146.4,
+        231.10000000000002
+      ],
+      "headBodyBounds": [
+        25.400000000000002,
+        11.100000000000001,
+        289.40000000000003,
+        231.10000000000002
+      ],
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        678,
+        1203,
+        318,
+        244
+      ],
+      "duration": 0.065,
+      "pivot": [
+        151.9,
+        235.50000000000003
+      ],
+      "headBodyBounds": [
+        30.900000000000002,
+        15.5,
+        294.90000000000003,
+        235.50000000000003
+      ],
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        8,
+        543,
+        336,
+        248
+      ],
+      "duration": 0.065,
+      "pivot": [
+        180.50000000000003,
+        242.10000000000002
+      ],
+      "headBodyBounds": [
+        59.50000000000001,
+        22.1,
+        323.5,
+        242.10000000000002
+      ],
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        8,
+        250,
+        347,
+        277
+      ],
+      "duration": 0.065,
+      "pivot": [
+        145.3,
+        265.20000000000005
+      ],
+      "headBodyBounds": [
+        24.3,
+        45.2,
+        288.3,
+        265.20000000000005
+      ],
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        360,
+        623,
+        335,
+        261
+      ],
+      "duration": 0.065,
+      "pivot": [
+        126.60000000000001,
+        252.00000000000003
+      ],
+      "headBodyBounds": [
+        5.6000000000000005,
+        32.0,
+        269.6,
+        252.00000000000003
+      ],
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        343,
+        1202,
+        319,
+        280
+      ],
+      "duration": 0.065,
+      "pivot": [
+        137.60000000000002,
+        268.5
+      ],
+      "headBodyBounds": [
+        16.6,
+        48.50000000000001,
+        280.6,
+        268.5
+      ],
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        711,
+        264,
+        282,
+        290
+      ],
+      "duration": 0.065,
+      "pivot": [
+        131.0,
+        280.6
+      ],
+      "headBodyBounds": [
+        10.0,
+        60.60000000000001,
+        274.0,
+        280.6
+      ],
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        343,
+        900,
+        325,
+        286
+      ],
+      "duration": 0.065,
+      "pivot": [
+        143.10000000000002,
+        277.3
+      ],
+      "headBodyBounds": [
+        22.1,
+        57.300000000000004,
+        286.1,
+        277.3
+      ],
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        8,
+        1148,
+        319,
+        304
+      ],
+      "duration": 0.065,
+      "pivot": [
+        144.20000000000002,
+        291.6
+      ],
+      "headBodyBounds": [
+        23.200000000000003,
+        71.60000000000001,
+        287.20000000000005,
+        291.6
+      ],
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        684,
+        900,
+        322,
+        287
+      ],
+      "duration": 0.065,
+      "pivot": [
+        173.9,
+        283.90000000000003
+      ],
+      "headBodyBounds": [
+        52.900000000000006,
+        63.900000000000006,
+        316.90000000000003,
+        283.90000000000003
+      ],
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        8,
+        1468,
+        318,
+        315
+      ],
+      "duration": 0.065,
+      "pivot": [
+        162.9,
+        303.70000000000005
+      ],
+      "headBodyBounds": [
+        41.900000000000006,
+        83.7,
+        305.90000000000003,
+        303.70000000000005
+      ],
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        8,
+        807,
+        319,
+        325
+      ],
+      "duration": 0.065,
+      "pivot": [
+        136.5,
+        318.0
+      ],
+      "headBodyBounds": [
+        15.5,
+        98.00000000000001,
+        279.5,
+        318.0
+      ],
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        342,
+        1498,
+        309,
+        310
+      ],
+      "duration": 0.065,
+      "pivot": [
+        113.4,
+        304.8
+      ],
+      "headBodyBounds": [
+        -7.6000000000000005,
+        84.80000000000001,
+        256.40000000000003,
+        304.8
+      ],
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        678,
+        1463,
+        313,
+        303
+      ],
+      "duration": 0.065,
+      "pivot": [
+        143.10000000000002,
+        294.90000000000003
+      ],
+      "headBodyBounds": [
+        22.1,
+        74.9,
+        286.1,
+        294.90000000000003
+      ],
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        371,
+        264,
+        322,
+        343
+      ],
+      "duration": 0.065,
+      "pivot": [
+        162.9,
+        336.70000000000005
+      ],
+      "headBodyBounds": [
+        41.900000000000006,
+        116.7,
+        305.90000000000003,
+        336.70000000000005
+      ],
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/manny/recovery/manny-recovery-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 200,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 1.1,
+    "actualBodyPixels": 220.00000000000003,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/manny/recovery/clip.json"
+  }
+}

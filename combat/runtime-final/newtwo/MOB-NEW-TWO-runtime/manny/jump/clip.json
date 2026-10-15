@@ -1,0 +1,374 @@
+{
+  "character": "manny",
+  "clip": "jump",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 220.0,
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "bodyHeightDefinition": "Neutral source head/body to soles excluding weapon, cape/scarf and Manny hat.",
+  "knownIssues": [
+    "User and runtime review pending.",
+    "Airborne virtual-ground offsets preserve authored jump pose height; runtime physics integration must avoid double-applying jump displacement.",
+    "Exact anatomical bounds and sockets pending."
+  ],
+  "authoredRootLiftUnits": "normalized bodyHeight",
+  "authoredRootLiftInterpretation": "Positive means authored image is raised above the fixed ground root. Diagnostic metadata only; source pivots are unchanged. If runtime physics already provides this displacement, compensate once, including releaseSocket at its event frame.",
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        379,
+        1353,
+        348,
+        337
+      ],
+      "duration": 0.04,
+      "pivot": [
+        180.61702127659575,
+        333.21276595744683
+      ],
+      "headBodyBounds": [
+        72.95744680851064,
+        113.2127659574468,
+        307.0,
+        333.21276595744683
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        8,
+        1341,
+        355,
+        315
+      ],
+      "duration": 0.045,
+      "pivot": [
+        187.17021276595744,
+        313.5531914893617
+      ],
+      "headBodyBounds": [
+        79.51063829787235,
+        93.55319148936171,
+        313.5531914893617,
+        313.5531914893617
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        413,
+        718,
+        386,
+        282
+      ],
+      "duration": 0.055,
+      "pivot": [
+        203.08510638297872,
+        277.1063829787234
+      ],
+      "headBodyBounds": [
+        95.42553191489363,
+        57.1063829787234,
+        329.468085106383,
+        277.1063829787234
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        422,
+        368,
+        390,
+        334
+      ],
+      "duration": 0.035,
+      "pivot": [
+        226.48936170212767,
+        338.82978723404256
+      ],
+      "headBodyBounds": [
+        118.82978723404256,
+        104.7872340425532,
+        352.87234042553195,
+        324.7872340425532
+      ],
+      "authoredRootLift": 0.06382978723404255,
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        8,
+        314,
+        398,
+        311
+      ],
+      "duration": 0.04,
+      "pivot": [
+        208.70212765957447,
+        345.3829787234043
+      ],
+      "headBodyBounds": [
+        101.04255319148936,
+        87.93617021276596,
+        335.0851063829787,
+        307.93617021276594
+      ],
+      "authoredRootLift": 0.1702127659574468,
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        815,
+        1000,
+        379,
+        281
+      ],
+      "duration": 0.045,
+      "pivot": [
+        190.91489361702128,
+        344.4468085106383
+      ],
+      "headBodyBounds": [
+        83.25531914893617,
+        54.23404255319149,
+        317.29787234042556,
+        274.2340425531915
+      ],
+      "authoredRootLift": 0.3191489361702128,
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        787,
+        1297,
+        354,
+        269
+      ],
+      "duration": 0.05,
+      "pivot": [
+        171.25531914893617,
+        364.1063829787234
+      ],
+      "headBodyBounds": [
+        63.59574468085107,
+        45.808510638297875,
+        297.63829787234044,
+        265.8085106382979
+      ],
+      "authoredRootLift": 0.44680851063829785,
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        743,
+        1582,
+        321,
+        277
+      ],
+      "duration": 0.06,
+      "pivot": [
+        154.40425531914894,
+        384.7021276595745
+      ],
+      "headBodyBounds": [
+        46.74468085106383,
+        52.361702127659576,
+        280.7872340425532,
+        272.36170212765956
+      ],
+      "authoredRootLift": 0.5106382978723404,
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        828,
+        664,
+        386,
+        320
+      ],
+      "duration": 0.05,
+      "pivot": [
+        195.59574468085106,
+        429.63829787234044
+      ],
+      "headBodyBounds": [
+        87.93617021276596,
+        97.29787234042553,
+        321.97872340425533,
+        317.29787234042556
+      ],
+      "authoredRootLift": 0.5106382978723404,
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        8,
+        641,
+        389,
+        332
+      ],
+      "duration": 0.045,
+      "pivot": [
+        185.29787234042553,
+        411.8510638297872
+      ],
+      "headBodyBounds": [
+        77.63829787234043,
+        102.91489361702128,
+        311.6808510638298,
+        322.9148936170213
+      ],
+      "authoredRootLift": 0.40425531914893614,
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        425,
+        8,
+        399,
+        344
+      ],
+      "duration": 0.04,
+      "pivot": [
+        190.91489361702128,
+        398.74468085106383
+      ],
+      "headBodyBounds": [
+        83.25531914893617,
+        117.8936170212766,
+        317.29787234042556,
+        337.8936170212766
+      ],
+      "authoredRootLift": 0.2765957446808511,
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        8,
+        989,
+        382,
+        336
+      ],
+      "duration": 0.04,
+      "pivot": [
+        187.17021276595744,
+        366.9148936170213
+      ],
+      "headBodyBounds": [
+        79.51063829787235,
+        114.14893617021276,
+        313.5531914893617,
+        334.1489361702128
+      ],
+      "authoredRootLift": 0.14893617021276595,
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        840,
+        344,
+        397,
+        304
+      ],
+      "duration": 0.035,
+      "pivot": [
+        194.6595744680851,
+        301.3829787234043
+      ],
+      "headBodyBounds": [
+        87.0,
+        81.38297872340425,
+        321.0425531914894,
+        301.3829787234043
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        8,
+        8,
+        401,
+        290
+      ],
+      "duration": 0.055,
+      "pivot": [
+        193.72340425531917,
+        287.40425531914894
+      ],
+      "headBodyBounds": [
+        86.06382978723404,
+        67.40425531914894,
+        320.1063829787234,
+        287.40425531914894
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        840,
+        8,
+        397,
+        320
+      ],
+      "duration": 0.05,
+      "pivot": [
+        190.91489361702128,
+        318.2340425531915
+      ],
+      "headBodyBounds": [
+        83.25531914893617,
+        98.23404255319149,
+        317.29787234042556,
+        318.2340425531915
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        406,
+        1016,
+        365,
+        321
+      ],
+      "duration": 0.06,
+      "pivot": [
+        185.29787234042553,
+        318.2340425531915
+      ],
+      "headBodyBounds": [
+        77.63829787234043,
+        98.23404255319149,
+        311.6808510638298,
+        318.2340425531915
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/manny/jump/manny-jump-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 235,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.9361702127659575,
+    "actualBodyPixels": 220.0,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/manny/jump/clip.json"
+  }
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "key": "tetsu/air3",
+    "adapter": "tetsu/body/air3/tetsu-body-air3-runtime220.json",
+    "texture": "tetsu/body/air3/tetsu-body-air3-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4194304,
+    "textureSize": [
+      1024,
+      1024
+    ],
+    "textureBytes": 563436,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "5159b75f5c528b789fac287fd9dfe735094d751346bfe44f30787ff11bbc4352",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/awakening-end",
+    "adapter": "tetsu/body/awakening-end/tetsu-body-awakening-end-runtime220.json",
+    "texture": "tetsu/body/awakening-end/tetsu-body-awakening-end-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4423680,
+    "textureSize": [
+      1152,
+      960
+    ],
+    "textureBytes": 659522,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "d141e6347ccc5cc0cf83bd04dd1148c8f02e8a50eb023f9af5b7f47e035aae1a",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/dash",
+    "adapter": "tetsu/body/dash/tetsu-body-dash-runtime220.json",
+    "texture": "tetsu/body/dash/tetsu-body-dash-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 3997696,
+    "textureSize": [
+      3904,
+      256
+    ],
+    "textureBytes": 590308,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "4564620fe0acea8ba46d2a430825c779a7d91f8e4e8cd2152c4d484041e93489",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/awakening-aura",
+    "adapter": "tetsu/effects/awakening-aura/tetsu-effects-awakening-aura-runtime220.json",
+    "texture": "tetsu/effects/awakening-aura/tetsu-effects-awakening-aura-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7225344,
+    "textureSize": [
+      1344,
+      1344
+    ],
+    "textureBytes": 516154,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "f2a8db00a8a59b26e56672e81a64e13449cffbaae88f907e879714976aae4ce5",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/awakening-burst",
+    "adapter": "tetsu/effects/awakening-burst/tetsu-effects-awakening-burst-runtime220.json",
+    "texture": "tetsu/effects/awakening-burst/tetsu-effects-awakening-burst-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6881280,
+    "textureSize": [
+      1280,
+      1344
+    ],
+    "textureBytes": 547172,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "55c307a266f03ea717b89fb39ac5b8eeb7a10dae9f03102aaeef2c86822cd89c",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/charge",
+    "adapter": "tetsu/effects/charge/tetsu-effects-charge-runtime220.json",
+    "texture": "tetsu/effects/charge/tetsu-effects-charge-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7225344,
+    "textureSize": [
+      1344,
+      1344
+    ],
+    "textureBytes": 670370,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "01ac9d87d1a2b1bf67e825b305d4b1c459c2a943ec7e592600c9532e7cb41d2e",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/hit-heavy",
+    "adapter": "tetsu/effects/hit-heavy/tetsu-effects-hit-heavy-runtime220.json",
+    "texture": "tetsu/effects/hit-heavy/tetsu-effects-hit-heavy-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 3932160,
+    "textureSize": [
+      960,
+      1024
+    ],
+    "textureBytes": 586108,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "d4cc45fccca93e4c06767becc652d0b81cc8c2310588bbc86937412c5eafa6e8",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/hit-light",
+    "adapter": "tetsu/effects/hit-light/tetsu-effects-hit-light-runtime220.json",
+    "texture": "tetsu/effects/hit-light/tetsu-effects-hit-light-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 1638400,
+    "textureSize": [
+      640,
+      640
+    ],
+    "textureBytes": 179784,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "875a26adb32287a346ca427a8332c66691940cd66e45f5cadda23d72bd6325a6",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/launch",
+    "adapter": "tetsu/effects/launch/tetsu-effects-launch-runtime220.json",
+    "texture": "tetsu/effects/launch/tetsu-effects-launch-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7225344,
+    "textureSize": [
+      1344,
+      1344
+    ],
+    "textureBytes": 542170,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "176872e21908750a080186cb056626da432c8601a63cae59899487841552b711",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/mob-slash-letters",
+    "adapter": "tetsu/effects/mob-slash-letters/tetsu-effects-mob-slash-letters-runtime220.json",
+    "texture": "tetsu/effects/mob-slash-letters/tetsu-effects-mob-slash-letters-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 26214400,
+    "textureSize": [
+      2560,
+      2560
+    ],
+    "textureBytes": 3292084,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "3c8459a4c579b9c965dda9f33f663ec2b20868bbdb2179d72352e8c2f2a425d1",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/rush-trail",
+    "adapter": "tetsu/effects/rush-trail/tetsu-effects-rush-trail-runtime220.json",
+    "texture": "tetsu/effects/rush-trail/tetsu-effects-rush-trail-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7389184,
+    "textureSize": [
+      704,
+      2624
+    ],
+    "textureBytes": 399098,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "6598272ea0555f820689b0bcc51f07492cb10359dc8b34ccbe64eb234a543456",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/effects/special2-splash",
+    "adapter": "tetsu/effects/special2-splash/tetsu-effects-special2-splash-runtime220.json",
+    "texture": "tetsu/effects/special2-splash/tetsu-effects-special2-splash-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7225344,
+    "textureSize": [
+      1344,
+      1344
+    ],
+    "textureBytes": 629682,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "575db56cbcb589393db8bbb93b4c33d3ffb549af562b7418f8b2d8f3d291dfe5",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/guard",
+    "adapter": "tetsu/body/guard/tetsu-body-guard-runtime220.json",
+    "texture": "tetsu/body/guard/tetsu-body-guard-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4521984,
+    "textureSize": [
+      1472,
+      768
+    ],
+    "textureBytes": 650090,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "89b1c517a9c8283d217712d451f9e0f42d1b3291003db825a93db60765afc1ee",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/jump",
+    "adapter": "tetsu/body/jump/tetsu-body-jump-runtime220.json",
+    "texture": "tetsu/body/jump/tetsu-body-jump-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4456448,
+    "textureSize": [
+      1088,
+      1024
+    ],
+    "textureBytes": 607010,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "978cd653bbf6796bfad284c2cc37e9cae737966b0c2877396e6f80a68a4cf355",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/light1",
+    "adapter": "tetsu/body/light1/tetsu-body-light1-runtime220.json",
+    "texture": "tetsu/body/light1/tetsu-body-light1-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4521984,
+    "textureSize": [
+      768,
+      1472
+    ],
+    "textureBytes": 619602,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "04c6cb2196bc6bb7a8ccb7a8a0c1f8d2267418bf24436a2b4c08f0625983b37e",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/light3",
+    "adapter": "tetsu/body/light3/tetsu-body-light3-runtime220.json",
+    "texture": "tetsu/body/light3/tetsu-body-light3-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4849664,
+    "textureSize": [
+      2368,
+      512
+    ],
+    "textureBytes": 637556,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "4ac66abd1c8f5a21cac0dcb26ab7606ffb9c8abf9a70f299bfe8a12fd5c75500",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/rush",
+    "adapter": "tetsu/body/rush/tetsu-body-rush-runtime220.json",
+    "texture": "tetsu/body/rush/tetsu-body-rush-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4898816,
+    "textureSize": [
+      832,
+      1472
+    ],
+    "textureBytes": 651488,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "c9e55d65cc9307c4c7c2944be5e8545ef3da2a02e4b4042dd2db754b8c562540",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/slam",
+    "adapter": "tetsu/body/slam/tetsu-body-slam-runtime220.json",
+    "texture": "tetsu/body/slam/tetsu-body-slam-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4423680,
+    "textureSize": [
+      1920,
+      576
+    ],
+    "textureBytes": 643526,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "9da16a6644a40fbaeeabbd18fb07cdf066c56c9fdfd697cef0b83eadc190b6da",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/special2-recovery",
+    "adapter": "tetsu/body/special2-recovery/tetsu-body-special2-recovery-runtime220.json",
+    "texture": "tetsu/body/special2-recovery/tetsu-body-special2-recovery-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4128768,
+    "textureSize": [
+      576,
+      1792
+    ],
+    "textureBytes": 526940,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "af7808165604fe72a29770aa30a6e03b0b7d3c8cba716f4c67c7f2cccd1791ec",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/special2-startup",
+    "adapter": "tetsu/body/special2-startup/tetsu-body-special2-startup-runtime220.json",
+    "texture": "tetsu/body/special2-startup/tetsu-body-special2-startup-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4456448,
+    "textureSize": [
+      2176,
+      512
+    ],
+    "textureBytes": 611924,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "daff09627248cdfa3be9de958528e791cb6bd828873c0ae11558a8b619f8e8e8",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "tetsu/walk",
+    "adapter": "tetsu/body/walk/tetsu-body-walk-runtime220.json",
+    "texture": "tetsu/body/walk/tetsu-body-walk-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 3670016,
+    "textureSize": [
+      1792,
+      512
+    ],
+    "textureBytes": 492170,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "a4efc5a9dc33b1ab1fc79cd70545f1256ffc52306ac7d57d77e48291c254d059",
+    "runtimeAccepted": false
+  }
+]

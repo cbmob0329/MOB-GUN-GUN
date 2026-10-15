@@ -1,0 +1,521 @@
+{
+  "character": "denden",
+  "animation": "dash",
+  "kind": "body",
+  "src": "denden-body-dash-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        8,
+        269,
+        223
+      ],
+      "pivot": [
+        164.2907488986784,
+        220.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near reach",
+      "sourceFrame": 1,
+      "sourceDrawingId": "denden/body/dash/01",
+      "sourceVisibleRgbaSha256": "aff405b5f5900658a0f61935d71b67c0bd68cfdc577f9941976d0ef4a36b1276"
+    },
+    {
+      "rect": [
+        8,
+        1671,
+        248,
+        223
+      ],
+      "pivot": [
+        148.2907488986784,
+        220.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near support",
+      "sourceFrame": 2,
+      "sourceDrawingId": "denden/body/dash/02",
+      "sourceVisibleRgbaSha256": "4c1dcfa6a9b5ee12568c28ee81a2f805f47fc44c5ec074265575065f717bf007"
+    },
+    {
+      "rect": [
+        8,
+        497,
+        261,
+        213
+      ],
+      "pivot": [
+        158.2907488986784,
+        210.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near compression",
+      "sourceFrame": 3,
+      "sourceDrawingId": "denden/body/dash/03",
+      "sourceVisibleRgbaSha256": "947e4d2cc5d3715989d2a65a71929820da53a884fac4ab4556296adfabb5a8d2"
+    },
+    {
+      "rect": [
+        8,
+        247,
+        263,
+        234
+      ],
+      "pivot": [
+        167.2907488986784,
+        231.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "far knee passes",
+      "sourceFrame": 4,
+      "sourceDrawingId": "denden/body/dash/04",
+      "sourceVisibleRgbaSha256": "5b92187a7fe9dcc7536592057f7696b30e937a6c730f83bb6e4c4373b595bdd1"
+    },
+    {
+      "rect": [
+        8,
+        966,
+        256,
+        226
+      ],
+      "pivot": [
+        156.2907488986784,
+        234.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "far extends airborne",
+      "sourceFrame": 5,
+      "sourceDrawingId": "denden/body/dash/05",
+      "sourceVisibleRgbaSha256": "de1302ca260fc7993a49c57e4e6633a61f5163d98ebfb21fff76e2eb2fdbb56b"
+    },
+    {
+      "rect": [
+        287,
+        258,
+        261,
+        232
+      ],
+      "pivot": [
+        165.2907488986784,
+        239.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "far airborne reach",
+      "sourceFrame": 6,
+      "sourceDrawingId": "denden/body/dash/06",
+      "sourceVisibleRgbaSha256": "ef45014395dfe9ca1524a54ec6fa17131b0c72ad104f5069ca8a6cd58082275e"
+    },
+    {
+      "rect": [
+        285,
+        506,
+        259,
+        224
+      ],
+      "pivot": [
+        161.2907488986784,
+        226.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "far reach toward landing",
+      "sourceFrame": 7,
+      "sourceDrawingId": "denden/body/dash/07",
+      "sourceVisibleRgbaSha256": "673e6415cea59bf1b50f872deb77316568e04dae1431421e3b459c786c7cd1e9"
+    },
+    {
+      "rect": [
+        8,
+        1208,
+        255,
+        223
+      ],
+      "pivot": [
+        160.2907488986784,
+        220.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "far landing",
+      "sourceFrame": 8,
+      "sourceDrawingId": "denden/body/dash/08",
+      "sourceVisibleRgbaSha256": "e12ff12ab27d83501903cd88a643f384e0811c02a984ad34648fff74cdbcde37"
+    },
+    {
+      "rect": [
+        293,
+        8,
+        265,
+        234
+      ],
+      "pivot": [
+        167.2907488986784,
+        231.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "far support",
+      "sourceFrame": 9,
+      "sourceDrawingId": "denden/body/dash/09",
+      "sourceVisibleRgbaSha256": "cafb0bafeced53801d60dc29d23e6c889d1ea2b7f23423ec4ae715ce58a31476"
+    },
+    {
+      "rect": [
+        276,
+        1460,
+        250,
+        213
+      ],
+      "pivot": [
+        153.2907488986784,
+        210.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "far compression",
+      "sourceFrame": 10,
+      "sourceDrawingId": "denden/body/dash/10",
+      "sourceVisibleRgbaSha256": "3e72bc76a2645a1a5cfff3567cccb6fe4d612a1112958ba2973135841e2b618e"
+    },
+    {
+      "rect": [
+        8,
+        726,
+        259,
+        224
+      ],
+      "pivot": [
+        162.2907488986784,
+        221.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near knee begins passing",
+      "sourceFrame": 11,
+      "sourceDrawingId": "denden/body/dash/11",
+      "sourceVisibleRgbaSha256": "506f178220953ea35556bd5a90e8e4ef31ec6d2c2c45e742da1c51947ad1937e"
+    },
+    {
+      "rect": [
+        283,
+        746,
+        259,
+        223
+      ],
+      "pivot": [
+        157.2907488986784,
+        220.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near knee rises",
+      "sourceFrame": 12,
+      "sourceDrawingId": "denden/body/dash/12",
+      "sourceVisibleRgbaSha256": "959339bbe0d9720fa1ba979916abe0b23b2922916b1e8a74aed69cadcaa8653a"
+    },
+    {
+      "rect": [
+        279,
+        1225,
+        253,
+        219
+      ],
+      "pivot": [
+        150.2907488986784,
+        227.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near extends airborne",
+      "sourceFrame": 13,
+      "sourceDrawingId": "denden/body/dash/13",
+      "sourceVisibleRgbaSha256": "627719ddbbae9841810d73f5b702e367489238036574c791799cefff4679ca04"
+    },
+    {
+      "rect": [
+        8,
+        1447,
+        252,
+        208
+      ],
+      "pivot": [
+        154.2907488986784,
+        215.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near airborne reach",
+      "sourceFrame": 14,
+      "sourceDrawingId": "denden/body/dash/14",
+      "sourceVisibleRgbaSha256": "019df4bebe9db614d3f72b76d745d76b9a9adceb7be85de9f60720f1b9c48842"
+    },
+    {
+      "rect": [
+        272,
+        1689,
+        245,
+        209
+      ],
+      "pivot": [
+        148.2907488986784,
+        210.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near landing approach",
+      "sourceFrame": 15,
+      "sourceDrawingId": "denden/body/dash/15",
+      "sourceVisibleRgbaSha256": "ffd1fcbb139a6d38e2e19be86c165a5bde68dbea52fcad6c0654207a5769a10a"
+    },
+    {
+      "rect": [
+        280,
+        985,
+        256,
+        224
+      ],
+      "pivot": [
+        159.2907488986784,
+        221.04845814977972
+      ],
+      "duration": 0.04,
+      "phase": "near contact",
+      "sourceFrame": 16,
+      "sourceDrawingId": "denden/body/dash/16",
+      "sourceVisibleRgbaSha256": "1dfde7dc7fc20f74ea7e7ac24ff2df83bf0d0699f11ba8b76323cdb0ce256a7d"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/dash/denden-dash-16.json",
+    "atlas": "denden/dash/denden-dash-16-atlas.png",
+    "status": "16-cel alternating-run candidate; static and actual-motion review pending",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        82,
+        193,
+        357,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 82
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        98,
+        193,
+        353,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        88,
+        205,
+        355,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        79,
+        183,
+        348,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 79
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        90,
+        180,
+        353,
+        410
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        81,
+        175,
+        348,
+        412
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 81
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        85,
+        188,
+        350,
+        418
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 85
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        86,
+        193,
+        346,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 86
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        79,
+        183,
+        350,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 79
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        93,
+        205,
+        348,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        84,
+        192,
+        349,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 84
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        89,
+        193,
+        354,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        95,
+        187,
+        355,
+        410
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 95
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        92,
+        200,
+        350,
+        412
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 92
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        98,
+        205,
+        348,
+        418
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 94
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        87,
+        192,
+        350,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 87
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.9691629955947136,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "cea2dfd3043d9f7cbef9652b669dafabf7d35bd72bd26dc3b18c008b13efd383",
+  "runtimeMeasurement": {
+    "action": "denden-body-dash",
+    "frames": 16,
+    "scale": 0.9691629955947136,
+    "uniformAtlasPixels": 3940225,
+    "trimmedAtlas": [
+      576,
+      1984
+    ],
+    "trimmedPixels": 1142784,
+    "rgbaMiB": 4.359375,
+    "fileBytes": 873624,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": true,
+  "durationSeconds": 0.64,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

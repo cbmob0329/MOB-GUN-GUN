@@ -1,0 +1,375 @@
+{
+  "character": "mobdesert",
+  "clip": "special2-dragon",
+  "status": "drawn16-FX-internal-review-candidate",
+  "src": "atlas.webp",
+  "frameCount": 16,
+  "bodyHeight": 110.0,
+  "displayBodyHeight": 110,
+  "orientationMode": "velocity",
+  "nativeAngleRadians": 2.356194490192345,
+  "socketOffset": [
+    0,
+    0
+  ],
+  "frames": [
+    {
+      "rect": [
+        667,
+        666,
+        314,
+        312
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        155.0
+      ],
+      "displaySize": [
+        3.14,
+        3.12
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        666,
+        1323,
+        313,
+        295
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        138.0
+      ],
+      "displaySize": [
+        3.13,
+        2.95
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        337,
+        1323,
+        313,
+        305
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        148.0
+      ],
+      "displaySize": [
+        3.13,
+        3.05
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        8,
+        314,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        157.0
+      ],
+      "displaySize": [
+        3.14,
+        3.14
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        668,
+        8,
+        314,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        156.5
+      ],
+      "displaySize": [
+        3.14,
+        3.13
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        997,
+        313,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        156.5
+      ],
+      "displaySize": [
+        3.13,
+        3.13
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        661,
+        994,
+        313,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        156.5
+      ],
+      "displaySize": [
+        3.13,
+        3.13
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        668,
+        337,
+        314,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        156.5
+      ],
+      "displaySize": [
+        3.14,
+        3.13
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        1655,
+        295,
+        243
+      ],
+      "duration": 0.065,
+      "pivot": [
+        147.0,
+        125.0
+      ],
+      "displaySize": [
+        2.95,
+        2.43
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        337,
+        998,
+        304,
+        246
+      ],
+      "duration": 0.065,
+      "pivot": [
+        151.0,
+        118.0
+      ],
+      "displaySize": [
+        3.04,
+        2.46
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        1326,
+        313,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        156.5
+      ],
+      "displaySize": [
+        3.13,
+        3.13
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        338,
+        314,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        156.5
+      ],
+      "displaySize": [
+        3.14,
+        3.13
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        338,
+        8,
+        314,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        157.0
+      ],
+      "displaySize": [
+        3.14,
+        3.14
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        338,
+        338,
+        313,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        157.0
+      ],
+      "displaySize": [
+        3.13,
+        3.14
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        667,
+        313,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        157.0
+      ],
+      "displaySize": [
+        3.13,
+        3.14
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        337,
+        668,
+        308,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        157.0
+      ],
+      "displaySize": [
+        3.08,
+        3.14
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    }
+  ],
+  "knownIssues": [
+    "Internal and runtime review pending.",
+    "Runtime displaySize normalized to character displayBodyHeight, with socketOffset zero because event positions already include launch offsets.",
+    "Source cels09–10 replaced by two newly drawn isolated cels to avoid merged soft glow/smoke; source normalization documented.",
+    "Native direction uses manually observed neck-to-snout diagonal down-left,3pi/4 screen coordinates; individual roar recoil varies around that axis."
+  ],
+  "displaySizeUnits": "normalized to displayBodyHeight",
+  "sourceBodyHeight": 110,
+  "sourcePixelsPreserved": true,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 1.0,
+    "actualBodyPixels": 110.0,
+    "nominalBodyPixels": null,
+    "spatialResampling": "none",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "packed/mobdesert/effects/special2-dragon/special2-dragon-16.json"
+  }
+}

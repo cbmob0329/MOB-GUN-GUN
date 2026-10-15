@@ -1,0 +1,240 @@
+[
+  {
+    "key": "nyoro/air2",
+    "adapter": "nyoro/body/air2/nyoro-body-air2-runtime220.json",
+    "texture": "nyoro/body/air2/nyoro-body-air2-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5505024,
+    "textureSize": [
+      768,
+      1792
+    ],
+    "textureBytes": 1005222,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "25c81b1f1607a8207d91a907a4cd1fb25e4c763ee13ce207ded372385d918dd9",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/awakening-start",
+    "adapter": "nyoro/body/awakening-start/nyoro-body-awakening-start-runtime220.json",
+    "texture": "nyoro/body/awakening-start/nyoro-body-awakening-start-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6062080,
+    "textureSize": [
+      640,
+      2368
+    ],
+    "textureBytes": 1357226,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "137ed2bedf48a47a0728d23fc5599c770aa23cddb321bc15d424c9122246d6e2",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/charge-hold",
+    "adapter": "nyoro/body/charge-hold/nyoro-body-charge-hold-runtime220.json",
+    "texture": "nyoro/body/charge-hold/nyoro-body-charge-hold-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6225920,
+    "textureSize": [
+      2432,
+      640
+    ],
+    "textureBytes": 1449054,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "96036fdf544729924ab300af03c4c575faa833c8e397146620ea3bcdaa1a5aa9",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/damage",
+    "adapter": "nyoro/body/damage/nyoro-body-damage-runtime220.json",
+    "texture": "nyoro/body/damage/nyoro-body-damage-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5406720,
+    "textureSize": [
+      640,
+      2112
+    ],
+    "textureBytes": 1161762,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "c32f68ffdfcbc30b7676fdf7a4ba6e4542fe18f40e3f36fb6ed3228274fc7509",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/rush-trail",
+    "adapter": "nyoro/effects/rush-trail/nyoro-effects-rush-trail-runtime220.json",
+    "texture": "nyoro/effects/rush-trail/nyoro-effects-rush-trail-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7225344,
+    "textureSize": [
+      1344,
+      1344
+    ],
+    "textureBytes": 511928,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "460158b4856e7596b75d2b2e53698cac3acf02b780638b4d3020cb95570d6603",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/effects/special2-water",
+    "adapter": "nyoro/effects/special2-water/nyoro-effects-special2-water-runtime220.json",
+    "texture": "nyoro/effects/special2-water/nyoro-effects-special2-water-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7208960,
+    "textureSize": [
+      2560,
+      704
+    ],
+    "textureBytes": 590990,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "498c12d0bfd2b13d2e50eff196b936e67d0e59a8c00b62819ebeb8ca72ad4bbb",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/guard",
+    "adapter": "nyoro/body/guard/nyoro-body-guard-runtime220.json",
+    "texture": "nyoro/body/guard/nyoro-body-guard-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6225920,
+    "textureSize": [
+      1280,
+      1216
+    ],
+    "textureBytes": 1240950,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "af32ef2639b722250186eef359de0a83cf2c1d2e197ba10e911a2cbae4afe257",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/idle",
+    "adapter": "nyoro/body/idle/nyoro-body-idle-runtime220.json",
+    "texture": "nyoro/body/idle/nyoro-body-idle-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6062080,
+    "textureSize": [
+      2368,
+      640
+    ],
+    "textureBytes": 1382940,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "c27c046aa05f293ed0bbe3e34ae16243029e10830039dd93c2f98659a6d5d082",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/light1",
+    "adapter": "nyoro/body/light1/nyoro-body-light1-runtime220.json",
+    "texture": "nyoro/body/light1/nyoro-body-light1-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4587520,
+    "textureSize": [
+      640,
+      1792
+    ],
+    "textureBytes": 967406,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "535cbcab944041eaeadd2d67414019c5547083ddf78c9c585e04586708cd2e37",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/light3",
+    "adapter": "nyoro/body/light3/nyoro-body-light3-runtime220.json",
+    "texture": "nyoro/body/light3/nyoro-body-light3-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5046272,
+    "textureSize": [
+      1408,
+      896
+    ],
+    "textureBytes": 1112702,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "ec053abab1e155d2d7055f7ac07e68567578459cc0e99ae6d93e16a08c2a99d4",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/ranged",
+    "adapter": "nyoro/body/ranged/nyoro-body-ranged-runtime220.json",
+    "texture": "nyoro/body/ranged/nyoro-body-ranged-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6225920,
+    "textureSize": [
+      1216,
+      1280
+    ],
+    "textureBytes": 1312196,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "31c3085a3deba109a674a7f640cd24e289184d02659930e75bfa9bb9890144ef",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/recovery",
+    "adapter": "nyoro/body/recovery/nyoro-body-recovery-runtime220.json",
+    "texture": "nyoro/body/recovery/nyoro-body-recovery-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6094848,
+    "textureSize": [
+      384,
+      3968
+    ],
+    "textureBytes": 1205984,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "7835023e4687d631bed888b6eb92738856a82a17421610900e67aed2655974a7",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/rush",
+    "adapter": "nyoro/body/rush/nyoro-body-rush-runtime220.json",
+    "texture": "nyoro/body/rush/nyoro-body-rush-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6062080,
+    "textureSize": [
+      640,
+      2368
+    ],
+    "textureBytes": 1192380,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "a5edb6cd0b04ea3eb839e2a0b93efb678c362e5cee3321629bf62f8962a5bbc5",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "nyoro/special2-recovery",
+    "adapter": "nyoro/body/special2-recovery/nyoro-body-special2-recovery-runtime220.json",
+    "texture": "nyoro/body/special2-recovery/nyoro-body-special2-recovery-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5505024,
+    "textureSize": [
+      896,
+      1536
+    ],
+    "textureBytes": 1125558,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "b391d52c02842ca4fd70aeefbda26c8ee7a72db388dd2d04921f33c7e1d9c805",
+    "runtimeAccepted": false
+  }
+]

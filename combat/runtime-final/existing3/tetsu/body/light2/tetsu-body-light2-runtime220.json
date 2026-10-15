@@ -1,0 +1,527 @@
+{
+  "character": "tetsu",
+  "animation": "light2",
+  "kind": "body",
+  "src": "tetsu-body-light2-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        280,
+        721,
+        253,
+        231
+      ],
+      "pivot": [
+        81.28,
+        226.60000000000002
+      ],
+      "duration": 0.035,
+      "phase": "chain_entry",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/light2/01",
+      "sourceVisibleRgbaSha256": "2a56bb2db7c2a30b6a789edecedea9688e6fa5567d6d6aee24ddc63b8f6e01fe"
+    },
+    {
+      "rect": [
+        628,
+        239,
+        184,
+        224
+      ],
+      "pivot": [
+        89.28,
+        220.60000000000002
+      ],
+      "duration": 0.035,
+      "phase": "draw_hilt_back",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/light2/02",
+      "sourceVisibleRgbaSha256": "e8b739b8b65c7ef4e27d4726b1b26aa71fd5c74317da54ba10a3ecf0a4245d8a"
+    },
+    {
+      "rect": [
+        253,
+        1204,
+        225,
+        223
+      ],
+      "pivot": [
+        130.28,
+        220.60000000000002
+      ],
+      "duration": 0.04,
+      "phase": "coil_across_chest",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/light2/03",
+      "sourceVisibleRgbaSha256": "03dd6d3ee75a5f083c1b6708472b96b43b4b7cc2a2deebeb96d51a47aa73fb5d"
+    },
+    {
+      "rect": [
+        8,
+        1167,
+        229,
+        224
+      ],
+      "pivot": [
+        119.28,
+        221.60000000000002
+      ],
+      "duration": 0.04,
+      "phase": "rearward_coil",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/light2/04",
+      "sourceVisibleRgbaSha256": "e173f2a7bd25339d13fd93827378c07a0e4efbf5b640f7123e65c4170fa991a5"
+    },
+    {
+      "rect": [
+        325,
+        239,
+        287,
+        226
+      ],
+      "pivot": [
+        174.28,
+        221.60000000000002
+      ],
+      "duration": 0.05,
+      "phase": "full_backswing",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/light2/05",
+      "sourceVisibleRgbaSha256": "ee26ebf8d1321f1f3fe4e3f8c74242d8a0c34e063b237dda968a9457ff0ec8a9"
+    },
+    {
+      "rect": [
+        549,
+        963,
+        240,
+        225
+      ],
+      "pivot": [
+        140.28,
+        220.60000000000002
+      ],
+      "duration": 0.025,
+      "phase": "hip_unwind",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/light2/06",
+      "sourceVisibleRgbaSha256": "1c11395de086cc44cde3cd74aca3dd671e4b94c1ddc9183b94d452fc49cd3fdc"
+    },
+    {
+      "rect": [
+        273,
+        968,
+        233,
+        218
+      ],
+      "pivot": [
+        87.28,
+        213.60000000000002
+      ],
+      "duration": 0.02,
+      "phase": "accelerate",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/light2/07",
+      "sourceVisibleRgbaSha256": "613f3d9a93fe571ca2ebd61322a4ecca0f130bc287e10f5da766d95f217ee848"
+    },
+    {
+      "rect": [
+        325,
+        8,
+        290,
+        215
+      ],
+      "pivot": [
+        94.28,
+        210.60000000000002
+      ],
+      "duration": 0.02,
+      "phase": "contact_entry",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/light2/08",
+      "sourceVisibleRgbaSha256": "4a91a742c2311cc513941a72d611c35a98ca9d13294670fff67f1c7a059cfb42"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        301,
+        216
+      ],
+      "pivot": [
+        89.28,
+        211.60000000000002
+      ],
+      "duration": 0.025,
+      "phase": "contact_exit",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/light2/09",
+      "sourceVisibleRgbaSha256": "b5cc95e94314e6a910f0785a5ecefac32b04463111b666fb3183a3c78e9b0625"
+    },
+    {
+      "rect": [
+        8,
+        240,
+        282,
+        210
+      ],
+      "pivot": [
+        81.28,
+        205.60000000000002
+      ],
+      "duration": 0.03,
+      "phase": "follow_down",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/light2/10",
+      "sourceVisibleRgbaSha256": "504fe913ee48a78169584f9a6f66aa60f979d94fbe3920e9251ae851bba3c039"
+    },
+    {
+      "rect": [
+        8,
+        466,
+        262,
+        211
+      ],
+      "pivot": [
+        79.28,
+        206.60000000000002
+      ],
+      "duration": 0.035,
+      "phase": "finish_sweep",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/light2/11",
+      "sourceVisibleRgbaSha256": "9bd76d2c2e8a8ba3e5c1d22e0b1bbec2d5ad1e9dada962836a6ec5e887303386"
+    },
+    {
+      "rect": [
+        8,
+        693,
+        256,
+        214
+      ],
+      "pivot": [
+        70.28,
+        209.60000000000002
+      ],
+      "duration": 0.035,
+      "phase": "decelerate",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/light2/12",
+      "sourceVisibleRgbaSha256": "441fbe6e5182d7235e53b8220d641b46bc1fbb3cbc2b307dfabc2077a7d956c0"
+    },
+    {
+      "rect": [
+        562,
+        481,
+        255,
+        225
+      ],
+      "pivot": [
+        80.28,
+        220.60000000000002
+      ],
+      "duration": 0.04,
+      "phase": "recover_twist",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/light2/13",
+      "sourceVisibleRgbaSha256": "5fb0b56e2984746b920cf2c72b26db59c07f6037224e2610b1666e77e98171ec"
+    },
+    {
+      "rect": [
+        8,
+        923,
+        249,
+        228
+      ],
+      "pivot": [
+        79.28,
+        223.60000000000002
+      ],
+      "duration": 0.04,
+      "phase": "recover_weight",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/light2/14",
+      "sourceVisibleRgbaSha256": "204ef87d384dc0f954549d79e6ea02fb899dbe9fa7e2ed5a6935165089087567"
+    },
+    {
+      "rect": [
+        286,
+        481,
+        260,
+        224
+      ],
+      "pivot": [
+        81.28,
+        219.60000000000002
+      ],
+      "duration": 0.035,
+      "phase": "low_ready",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/light2/15",
+      "sourceVisibleRgbaSha256": "8723200d48c9bd9a91bf8eca2cf9c6b5443182d37b2e83e5a0662482847d0ddb"
+    },
+    {
+      "rect": [
+        549,
+        722,
+        246,
+        225
+      ],
+      "pivot": [
+        81.28,
+        220.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "chain_ready",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/light2/16",
+      "sourceVisibleRgbaSha256": "cc0f65ea1d415a2ecbd85fd2adb543a26364321a0747047d69ba71a87d6d050c"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/light2/tetsu-light2-16.json",
+    "atlas": "tetsu/light2/tetsu-light2-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Minor hood/stripe and body-shape drift remains between drawn cels.",
+      "Real-time playback and in-engine acceptance have not been visually verified by this artist.",
+      "Sixteen distinct drawings and visible chronological phases were inspected; hash uniqueness alone is not an animation-quality claim.",
+      "Cel2 has edge-on blade foreshortening; the backswing-to-contact transition6\u21927 needs actual-speed continuity review.",
+      "Some13\u201316 recovery changes are subtle; no duplicate cel was inserted."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        164,
+        163,
+        450,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 62
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        155,
+        170,
+        363,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        108,
+        170,
+        363,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        121,
+        168,
+        380,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        58,
+        168,
+        383,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 58
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        97,
+        170,
+        368,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        157,
+        177,
+        421,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        149,
+        181,
+        478,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 34
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        154,
+        179,
+        496,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 16
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        164,
+        186,
+        483,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 29
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        166,
+        186,
+        463,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 49
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        176,
+        182,
+        466,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 46
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        165,
+        169,
+        453,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 59
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        166,
+        166,
+        448,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 64
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        164,
+        170,
+        458,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 54
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        164,
+        169,
+        442,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.88,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "c91590d45fbeae2ad8505347b2fb4401e56899975fe785336939a97c3e8d37b4",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-light2",
+    "frames": 16,
+    "scale": 0.88,
+    "uniformAtlasPixels": 3247204,
+    "trimmedAtlas": [
+      832,
+      1472
+    ],
+    "trimmedPixels": 1224704,
+    "rgbaMiB": 4.671875,
+    "fileBytes": 614752,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.55,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

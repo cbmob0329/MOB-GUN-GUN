@@ -1,0 +1,537 @@
+{
+  "character": "denden",
+  "animation": "crouch",
+  "kind": "body",
+  "src": "denden-body-crouch-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        254,
+        447,
+        229,
+        224
+      ],
+      "pivot": [
+        105.12547528517112,
+        221.3307984790875
+      ],
+      "duration": 0.05,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "denden/body/crouch/01",
+      "sourceVisibleRgbaSha256": "20fd2a71975937e00de3597d522036ee393c20c8b63af26da1c28a7bcd810cbc"
+    },
+    {
+      "rect": [
+        8,
+        427,
+        230,
+        213
+      ],
+      "pivot": [
+        114.12547528517112,
+        210.3307984790875
+      ],
+      "duration": 0.05,
+      "phase": "knees bend",
+      "sourceFrame": 2,
+      "sourceDrawingId": "denden/body/crouch/02",
+      "sourceVisibleRgbaSha256": "ffca41031eeec7929e7103eab82ec91513e7c59454c7984b9872b76c9bedcf66"
+    },
+    {
+      "rect": [
+        250,
+        899,
+        223,
+        201
+      ],
+      "pivot": [
+        113.12547528517112,
+        198.3307984790875
+      ],
+      "duration": 0.06,
+      "phase": "hips lower",
+      "sourceFrame": 3,
+      "sourceDrawingId": "denden/body/crouch/03",
+      "sourceVisibleRgbaSha256": "bdec058a6b07460631368400d21cbf9edfef2e2920f33c806632b16db92cc25f"
+    },
+    {
+      "rect": [
+        239,
+        1337,
+        214,
+        199
+      ],
+      "pivot": [
+        101.12547528517112,
+        196.3307984790875
+      ],
+      "duration": 0.07,
+      "phase": "deep squat",
+      "sourceFrame": 4,
+      "sourceDrawingId": "denden/body/crouch/04",
+      "sourceVisibleRgbaSha256": "3cccd1f17718b6bc54eacedaf739be2387fa5ef7af4b8b8bcb909bb34fe1c0b9"
+    },
+    {
+      "rect": [
+        8,
+        656,
+        228,
+        199
+      ],
+      "pivot": [
+        114.12547528517112,
+        196.3307984790875
+      ],
+      "duration": 0.08,
+      "phase": "low settle",
+      "sourceFrame": 5,
+      "sourceDrawingId": "denden/body/crouch/05",
+      "sourceVisibleRgbaSha256": "194205bd772afba39aaa6e87d96ea25a16768ae2b4f7bfa985db1484a20c565a"
+    },
+    {
+      "rect": [
+        8,
+        216,
+        242,
+        195
+      ],
+      "pivot": [
+        122.12547528517112,
+        192.3307984790875
+      ],
+      "duration": 0.08,
+      "phase": "rear weight",
+      "sourceFrame": 6,
+      "sourceDrawingId": "denden/body/crouch/06",
+      "sourceVisibleRgbaSha256": "b35b3b1ec4e6088d38a6f97367ad7833064fc3b8eb82b4de67e1126f879b6430"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        245,
+        192
+      ],
+      "pivot": [
+        124.12547528517112,
+        189.3307984790875
+      ],
+      "duration": 0.08,
+      "phase": "near knee compress",
+      "sourceFrame": 7,
+      "sourceDrawingId": "denden/body/crouch/07",
+      "sourceVisibleRgbaSha256": "798c8b8fa1037e51f1e0288eaa2f61e588600a40f161b9d4764b2ac34e5c1c7e"
+    },
+    {
+      "rect": [
+        269,
+        8,
+        232,
+        195
+      ],
+      "pivot": [
+        118.12547528517112,
+        192.3307984790875
+      ],
+      "duration": 0.08,
+      "phase": "center low",
+      "sourceFrame": 8,
+      "sourceDrawingId": "denden/body/crouch/08",
+      "sourceVisibleRgbaSha256": "519b579a2fea2bdede56bb2a089f59d5b1af613d0be898127c78d2891a689e31"
+    },
+    {
+      "rect": [
+        252,
+        687,
+        228,
+        196
+      ],
+      "pivot": [
+        108.12547528517112,
+        193.3307984790875
+      ],
+      "duration": 0.08,
+      "phase": "forward low shift",
+      "sourceFrame": 9,
+      "sourceDrawingId": "denden/body/crouch/09",
+      "sourceVisibleRgbaSha256": "a968422c0f0c38b096913700e4d54e9ce458d93777e532ab094f0ae1aebe1e66"
+    },
+    {
+      "rect": [
+        8,
+        871,
+        226,
+        196
+      ],
+      "pivot": [
+        107.12547528517112,
+        193.3307984790875
+      ],
+      "duration": 0.08,
+      "phase": "low breath",
+      "sourceFrame": 10,
+      "sourceDrawingId": "denden/body/crouch/10",
+      "sourceVisibleRgbaSha256": "f50ceb32cc15e84bfd36db24c301c90d20105524ad9afc9a585c4ac58c16e658"
+    },
+    {
+      "rect": [
+        246,
+        1116,
+        220,
+        205
+      ],
+      "pivot": [
+        100.12547528517112,
+        202.3307984790875
+      ],
+      "duration": 0.06,
+      "phase": "hips rise",
+      "sourceFrame": 11,
+      "sourceDrawingId": "denden/body/crouch/11",
+      "sourceVisibleRgbaSha256": "ad0545e12b071256b6b7bcbcf5154e249d8ddea0fb595600696826e895465744"
+    },
+    {
+      "rect": [
+        8,
+        1083,
+        222,
+        216
+      ],
+      "pivot": [
+        114.12547528517112,
+        213.3307984790875
+      ],
+      "duration": 0.06,
+      "phase": "knees extend",
+      "sourceFrame": 12,
+      "sourceDrawingId": "denden/body/crouch/12",
+      "sourceVisibleRgbaSha256": "fb219c4320807864ecbd482719d16eeb5e9fcbeaf18a191c307884624778313c"
+    },
+    {
+      "rect": [
+        266,
+        219,
+        231,
+        212
+      ],
+      "pivot": [
+        105.12547528517112,
+        209.3307984790875
+      ],
+      "duration": 0.05,
+      "phase": "half rise",
+      "sourceFrame": 13,
+      "sourceDrawingId": "denden/body/crouch/13",
+      "sourceVisibleRgbaSha256": "36c308f1b9b980fc5a9d61cc7110124237948dca3e92ccc427bed93ba6bf1129"
+    },
+    {
+      "rect": [
+        227,
+        1552,
+        206,
+        208
+      ],
+      "pivot": [
+        107.12547528517112,
+        205.3307984790875
+      ],
+      "duration": 0.05,
+      "phase": "nearly upright",
+      "sourceFrame": 14,
+      "sourceDrawingId": "denden/body/crouch/14",
+      "sourceVisibleRgbaSha256": "91caa44019a5baa89740416d2541547858c8823f51e8bbe29ac03fa6cf21ac0f"
+    },
+    {
+      "rect": [
+        8,
+        1315,
+        215,
+        214
+      ],
+      "pivot": [
+        98.12547528517112,
+        211.3307984790875
+      ],
+      "duration": 0.05,
+      "phase": "shoulders settle",
+      "sourceFrame": 15,
+      "sourceDrawingId": "denden/body/crouch/15",
+      "sourceVisibleRgbaSha256": "bf6ba2187fcc1b46683fc23f89925a4f13eacea1669963ee1773351b5d4be94c"
+    },
+    {
+      "rect": [
+        8,
+        1545,
+        203,
+        213
+      ],
+      "pivot": [
+        106.12547528517112,
+        210.3307984790875
+      ],
+      "duration": 0.06,
+      "phase": "ready return",
+      "sourceFrame": 16,
+      "sourceDrawingId": "denden/body/crouch/16",
+      "sourceVisibleRgbaSha256": "2abe0c1865e2c72dd71428440c574d7614056324be6ef3daedd718dbccb4cebe"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/crouch/denden-crouch-16.json",
+    "atlas": "denden/crouch/denden-crouch-16-atlas.png",
+    "status": "16-cel static-review candidate; in-engine acceptance pending",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        156,
+        398,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        115,
+        170,
+        388,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        115,
+        184,
+        381,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        186,
+        384,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        186,
+        385,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        105,
+        191,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        103,
+        195,
+        394,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        191,
+        385,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        190,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        123,
+        190,
+        392,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        179,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        166,
+        379,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        171,
+        400,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        123,
+        175,
+        368,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        134,
+        168,
+        389,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        170,
+        365,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8365019011406845,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "003579a85db302d52f36d9e7fd7e5e9c2bbe40e3942b5c518df8c4e268e52f83",
+  "runtimeMeasurement": {
+    "action": "denden-body-crouch",
+    "frames": 16,
+    "scale": 0.8365019011406845,
+    "uniformAtlasPixels": 2934369,
+    "trimmedAtlas": [
+      512,
+      1856
+    ],
+    "trimmedPixels": 950272,
+    "rgbaMiB": 3.625,
+    "fileBytes": 819160,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 1.04,
+  "artTimingRecommendations": {
+    "phaseRanges": {
+      "enter": [
+        0,
+        3
+      ],
+      "low": [
+        4,
+        9
+      ],
+      "rise": [
+        10,
+        15
+      ]
+    }
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

@@ -1,0 +1,536 @@
+{
+  "character": "tetsu",
+  "animation": "slam",
+  "kind": "body",
+  "src": "tetsu-body-slam-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        344,
+        278,
+        223
+      ],
+      "pivot": [
+        80.12,
+        252.60000000000002
+      ],
+      "duration": 0.04,
+      "phase": "air_prepare",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/slam/01",
+      "sourceVisibleRgbaSha256": "ddc904f0fab604ab64d99eb2c277a0571f18e42ed122fae4ff99a4d643060d56"
+    },
+    {
+      "rect": [
+        1621,
+        265,
+        229,
+        232
+      ],
+      "pivot": [
+        73.12,
+        257.6
+      ],
+      "duration": 0.04,
+      "phase": "hands_lift",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/slam/02",
+      "sourceVisibleRgbaSha256": "d51663157a2f4d626a142a489cae3087d7858cf468889e26937ef7813381319f"
+    },
+    {
+      "rect": [
+        302,
+        321,
+        270,
+        245
+      ],
+      "pivot": [
+        75.12,
+        254.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "wrists_rotate",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/slam/03",
+      "sourceVisibleRgbaSha256": "c5ea399002d7ec68a25aba00e7ee91ebb89822c741bd18b3515207b31bcd2526"
+    },
+    {
+      "rect": [
+        731,
+        8,
+        230,
+        260
+      ],
+      "pivot": [
+        77.12,
+        248.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "downward_aim",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/slam/04",
+      "sourceVisibleRgbaSha256": "1eaa3fdd303cb0baf45cca6e5f748c99f4a273df3031733f52ce75936408da63"
+    },
+    {
+      "rect": [
+        552,
+        8,
+        163,
+        274
+      ],
+      "pivot": [
+        72.12,
+        254.60000000000002
+      ],
+      "duration": 0.05,
+      "phase": "vertical_align",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/slam/05",
+      "sourceVisibleRgbaSha256": "a144b12da827ba1e5bb3adf967c73f84d9fe6a30c094df0b80c98aac1cb98a40"
+    },
+    {
+      "rect": [
+        179,
+        8,
+        168,
+        297
+      ],
+      "pivot": [
+        75.12,
+        278.6
+      ],
+      "duration": 0.03,
+      "phase": "plunge_begin",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/slam/06",
+      "sourceVisibleRgbaSha256": "865807fb76debe0cdc2a90d7867410f4d24e5da4008c8a851dc5f368d17e783f"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        155,
+        320
+      ],
+      "pivot": [
+        78.12,
+        298.6
+      ],
+      "duration": 0.025,
+      "phase": "fast_plunge",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/slam/07",
+      "sourceVisibleRgbaSha256": "eb793e89536b04515107d7e48241feee10ed44471d5023df6d364f78205a8a3b"
+    },
+    {
+      "rect": [
+        363,
+        8,
+        173,
+        294
+      ],
+      "pivot": [
+        88.12,
+        274.6
+      ],
+      "duration": 0.025,
+      "phase": "ground_approach",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/slam/08",
+      "sourceVisibleRgbaSha256": "237a5f4e5f0022036da4089f9690bb7a02592a14c1d0d2f83453e3601d913388"
+    },
+    {
+      "rect": [
+        1182,
+        8,
+        181,
+        248
+      ],
+      "pivot": [
+        96.12,
+        224.60000000000002
+      ],
+      "duration": 0.035,
+      "phase": "impact",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/slam/09",
+      "sourceVisibleRgbaSha256": "978f5179ef717b46deae947c37756e1d4f4b5f5ceccde8dc919fc4fbef194bbb"
+    },
+    {
+      "rect": [
+        1414,
+        240,
+        191,
+        237
+      ],
+      "pivot": [
+        97.12,
+        215.60000000000002
+      ],
+      "duration": 0.055,
+      "phase": "compression",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/slam/10",
+      "sourceVisibleRgbaSha256": "a4919ac58d8f233c1f47923469d17adc60fdb414c192070cfbc632663ba268bb"
+    },
+    {
+      "rect": [
+        977,
+        8,
+        189,
+        258
+      ],
+      "pivot": [
+        97.12,
+        237.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "rebound",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/slam/11",
+      "sourceVisibleRgbaSha256": "716eae8d29a120333930b2a88f08921ba1c1696fa4f1aa972701298564027c43"
+    },
+    {
+      "rect": [
+        1642,
+        8,
+        235,
+        241
+      ],
+      "pivot": [
+        91.12,
+        236.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "blade_withdraw",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/slam/12",
+      "sourceVisibleRgbaSha256": "63c0a36e5a1ed9b9e915a45013fc5126cf19ef21b9a1c172623e289aa85fac6a"
+    },
+    {
+      "rect": [
+        865,
+        284,
+        260,
+        223
+      ],
+      "pivot": [
+        78.12,
+        218.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "guard_rotate",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/slam/13",
+      "sourceVisibleRgbaSha256": "a046de8c12ef89f50e4f60fdf722b2ee6497dea5459001db84c609a350bc0fbd"
+    },
+    {
+      "rect": [
+        1141,
+        282,
+        257,
+        229
+      ],
+      "pivot": [
+        83.12,
+        225.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "torso_rise",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/slam/14",
+      "sourceVisibleRgbaSha256": "68be5fd3b820514a5f001ca5493c23e53a84eff0cdd0a92a0fe70ac7d73fb2f5"
+    },
+    {
+      "rect": [
+        588,
+        298,
+        261,
+        223
+      ],
+      "pivot": [
+        85.12,
+        219.60000000000002
+      ],
+      "duration": 0.045,
+      "phase": "ready_return",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/slam/15",
+      "sourceVisibleRgbaSha256": "45b7550f44624ebcb5db9e8b4c6fe9af5a285dbba0f21bbc4f5c82970e3a6daf"
+    },
+    {
+      "rect": [
+        1379,
+        8,
+        247,
+        216
+      ],
+      "pivot": [
+        86.12,
+        213.60000000000002
+      ],
+      "duration": 0.05,
+      "phase": "settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/slam/16",
+      "sourceVisibleRgbaSha256": "fc03328b0caad450ae64af8e834e673e73234a113137eac096ca31e835c865f7"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/slam/tetsu-slam-16.json",
+    "atlas": "tetsu/slam/tetsu-slam-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Cels9/10/11 use imagegen corrections raising the hands and restoring long rigid landing blades. Other13 original drawings remain unchanged.",
+      "Corrected landing compression is less deep than first candidate. Blade tips extend slightly below foot baseline at impact, representing ground penetration; tips remain fully visible.",
+      "Virtual airborne roots1\u20138 transition to planted-foot roots9\u201316. Engine must synchronize impact and ballistic descent.",
+      "Real-time and in-engine playback not visually verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        133,
+        448,
+        386
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 64
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        141,
+        127,
+        401,
+        390
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 111
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        138,
+        131,
+        445,
+        408
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 67
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        136,
+        138,
+        397,
+        432
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 80
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        142,
+        131,
+        326,
+        442
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        139,
+        103,
+        329,
+        440
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 72
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        135,
+        81,
+        311,
+        444
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 68
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        108,
+        320,
+        441
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 71
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        115,
+        164,
+        320,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        176,
+        331,
+        443
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        150,
+        328,
+        442
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        121,
+        151,
+        387,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        135,
+        172,
+        430,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 82
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        164,
+        421,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        171,
+        424,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        177,
+        406,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.88,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "97d540193bb5a6ae9a46830c54d11bd54903f952c18ed2d1dde63e4b272154a7",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-slam",
+    "frames": 16,
+    "scale": 0.88,
+    "uniformAtlasPixels": 3247204,
+    "trimmedAtlas": [
+      1920,
+      576
+    ],
+    "trimmedPixels": 1105920,
+    "rgbaMiB": 4.21875,
+    "fileBytes": 643526,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.665,
+  "artTimingRecommendations": {
+    "suggestedEvents": [
+      {
+        "time": 0.3,
+        "frame": 9,
+        "type": "landing_impact",
+        "note": "Synchronize to actual engine landing; play all16 poses."
+      }
+    ]
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

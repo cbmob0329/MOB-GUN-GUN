@@ -1,0 +1,524 @@
+{
+  "character": "denden",
+  "animation": "death",
+  "kind": "body",
+  "src": "denden-body-death-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        285,
+        8,
+        216,
+        225
+      ],
+      "pivot": [
+        111.42857142857142,
+        222.0
+      ],
+      "duration": 0.04,
+      "phase": "weakened ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "denden/body/death/01",
+      "sourceVisibleRgbaSha256": "ed26dae92ad417157f8c97a3b8ba584cb947681968595137381c49f0e7a5f72b"
+    },
+    {
+      "rect": [
+        273,
+        802,
+        213,
+        209
+      ],
+      "pivot": [
+        111.42857142857142,
+        206.0
+      ],
+      "duration": 0.04,
+      "phase": "knees buckle",
+      "sourceFrame": 2,
+      "sourceDrawingId": "denden/body/death/02",
+      "sourceVisibleRgbaSha256": "51927048b2e3c95848c96177d662317c5f29333a8bb67b80526a08c5483b1a4c"
+    },
+    {
+      "rect": [
+        275,
+        593,
+        225,
+        193
+      ],
+      "pivot": [
+        113.42857142857142,
+        190.0
+      ],
+      "duration": 0.04,
+      "phase": "hips sink",
+      "sourceFrame": 3,
+      "sourceDrawingId": "denden/body/death/03",
+      "sourceVisibleRgbaSha256": "96877da831fbe0ab6ec7c9010aa1711d23510c2068abcc44283fa12451fc2af9"
+    },
+    {
+      "rect": [
+        240,
+        1261,
+        207,
+        203
+      ],
+      "pivot": [
+        106.42857142857142,
+        200.0
+      ],
+      "duration": 0.04,
+      "phase": "tips backward",
+      "sourceFrame": 4,
+      "sourceDrawingId": "denden/body/death/04",
+      "sourceVisibleRgbaSha256": "192ac34d0ed72b4d317afc3496f89262a7de7b478379854d477f7a4b35de02ed"
+    },
+    {
+      "rect": [
+        272,
+        1027,
+        208,
+        207
+      ],
+      "pivot": [
+        106.42857142857142,
+        204.0
+      ],
+      "duration": 0.04,
+      "phase": "balance lost",
+      "sourceFrame": 5,
+      "sourceDrawingId": "denden/body/death/05",
+      "sourceVisibleRgbaSha256": "10791686331811b2a002c9b364acdfe6e8bc6510922d0b1152557dc60b35a625"
+    },
+    {
+      "rect": [
+        8,
+        1261,
+        216,
+        195
+      ],
+      "pivot": [
+        100.42857142857142,
+        192.0
+      ],
+      "duration": 0.04,
+      "phase": "hips descend",
+      "sourceFrame": 6,
+      "sourceDrawingId": "denden/body/death/06",
+      "sourceVisibleRgbaSha256": "06231c32fa719f7b6186e4be534592785c303443013de3c6dd6780d2ed879bc3"
+    },
+    {
+      "rect": [
+        277,
+        399,
+        227,
+        178
+      ],
+      "pivot": [
+        111.42857142857142,
+        175.0
+      ],
+      "duration": 0.05,
+      "phase": "seated fall",
+      "sourceFrame": 7,
+      "sourceDrawingId": "denden/body/death/07",
+      "sourceVisibleRgbaSha256": "f6e0da6f83ab4876d40adfc67070c2a487ae611675b0fd879d0c815e1e95f4fb"
+    },
+    {
+      "rect": [
+        8,
+        1092,
+        247,
+        153
+      ],
+      "pivot": [
+        125.42857142857142,
+        150.0
+      ],
+      "duration": 0.05,
+      "phase": "back contacts",
+      "sourceFrame": 8,
+      "sourceDrawingId": "denden/body/death/08",
+      "sourceVisibleRgbaSha256": "d69c48e1db13950451ef34df2fd2659a92a9206bd5f8419bd1027fe2c0d7668d"
+    },
+    {
+      "rect": [
+        8,
+        803,
+        248,
+        143
+      ],
+      "pivot": [
+        124.42857142857142,
+        140.0
+      ],
+      "duration": 0.06,
+      "phase": "rolls onto back",
+      "sourceFrame": 9,
+      "sourceDrawingId": "denden/body/death/09",
+      "sourceVisibleRgbaSha256": "4c0ffba083f4e42eb9849d2f6fabe0ab99a231cfd39d0cf06d2bcb95a0374eb7"
+    },
+    {
+      "rect": [
+        8,
+        258,
+        259,
+        125
+      ],
+      "pivot": [
+        132.42857142857142,
+        122.0
+      ],
+      "duration": 0.06,
+      "phase": "hood settles",
+      "sourceFrame": 10,
+      "sourceDrawingId": "denden/body/death/10",
+      "sourceVisibleRgbaSha256": "b9c5c60308e9b19175cd99c7643ed95d86b7274878a907a404192dd69953333c"
+    },
+    {
+      "rect": [
+        8,
+        962,
+        248,
+        114
+      ],
+      "pivot": [
+        121.42857142857142,
+        111.0
+      ],
+      "duration": 0.08,
+      "phase": "feet descend",
+      "sourceFrame": 11,
+      "sourceDrawingId": "denden/body/death/11",
+      "sourceVisibleRgbaSha256": "1c9d6eb579da842832b9ab767333e1ef64ed86a73e0db8da65f71e0a53187c6c"
+    },
+    {
+      "rect": [
+        8,
+        674,
+        249,
+        113
+      ],
+      "pivot": [
+        122.42857142857142,
+        110.0
+      ],
+      "duration": 0.08,
+      "phase": "arms settle",
+      "sourceFrame": 12,
+      "sourceDrawingId": "denden/body/death/12",
+      "sourceVisibleRgbaSha256": "e2a4132ccccc107dbc1910a28acb341ed662a2ce4e4f8bbe72a4196ca98513d6"
+    },
+    {
+      "rect": [
+        8,
+        399,
+        253,
+        126
+      ],
+      "pivot": [
+        124.42857142857142,
+        123.0
+      ],
+      "duration": 0.09,
+      "phase": "tail rebound",
+      "sourceFrame": 13,
+      "sourceDrawingId": "denden/body/death/13",
+      "sourceVisibleRgbaSha256": "60e833cfedb87006a12f9f56b8ebc81e7830b0ec347369597f5d2124747cb104"
+    },
+    {
+      "rect": [
+        8,
+        541,
+        251,
+        117
+      ],
+      "pivot": [
+        126.42857142857142,
+        114.0
+      ],
+      "duration": 0.09,
+      "phase": "grip relaxes",
+      "sourceFrame": 14,
+      "sourceDrawingId": "denden/body/death/14",
+      "sourceVisibleRgbaSha256": "fbe7393a747c6497999cf4ca1c7c866021eebc6526653e894fd945cedafb021a"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        261,
+        111
+      ],
+      "pivot": [
+        126.42857142857142,
+        108.0
+      ],
+      "duration": 0.1,
+      "phase": "last settling",
+      "sourceFrame": 15,
+      "sourceDrawingId": "denden/body/death/15",
+      "sourceVisibleRgbaSha256": "a1caefedb3dae7df6f9277297302a6cd2610a1e594d310725e6aeb1ab5da2228"
+    },
+    {
+      "rect": [
+        8,
+        135,
+        260,
+        107
+      ],
+      "pivot": [
+        130.42857142857142,
+        104.0
+      ],
+      "duration": 0.12,
+      "phase": "resting defeat",
+      "sourceFrame": 16,
+      "sourceDrawingId": "denden/body/death/16",
+      "sourceVisibleRgbaSha256": "23fb3faefcc3917201c4688e805d4e89836616366da4678edfde61af8b756e3f"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/death/denden-death-16.json",
+    "atlas": "denden/death/denden-death-16-atlas.png",
+    "status": "16-cel static-review candidate; in-engine acceptance pending",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        139,
+        383,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        159,
+        379,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        107,
+        180,
+        392,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        115,
+        167,
+        377,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        115,
+        162,
+        379,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        123,
+        177,
+        396,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        199,
+        397,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        92,
+        230,
+        404,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        93,
+        243,
+        407,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        82,
+        266,
+        410,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 82
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        97,
+        280,
+        410,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        95,
+        281,
+        411,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        92,
+        264,
+        413,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        90,
+        276,
+        408,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        90,
+        284,
+        421,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        85,
+        288,
+        414,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 85
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.7857142857142857,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "0e382ba7b1f906384320d36897522815ae3ed933cc98f2d8b1876608bfe27351",
+  "runtimeMeasurement": {
+    "action": "denden-body-death",
+    "frames": 16,
+    "scale": 0.7857142857142857,
+    "uniformAtlasPixels": 2588881,
+    "trimmedAtlas": [
+      512,
+      1472
+    ],
+    "trimmedPixels": 753664,
+    "rgbaMiB": 2.875,
+    "fileBytes": 684372,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 1.02,
+  "artTimingRecommendations": {
+    "phaseRanges": {}
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

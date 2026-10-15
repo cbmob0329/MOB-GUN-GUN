@@ -1,0 +1,139 @@
+{
+  "format": "MOB GUN GUN partial cartoon runtime pack",
+  "version": 1,
+  "scope": [
+    "tetsu"
+  ],
+  "status": "Full required source art coverage; actual-game acceptance pending",
+  "animations": {
+    "tetsu/air1": {
+      "adapter": "tetsu/body/air1/tetsu-body-air1-runtime220.json"
+    },
+    "tetsu/air2": {
+      "adapter": "tetsu/body/air2/tetsu-body-air2-runtime220.json"
+    },
+    "tetsu/awakening-start": {
+      "adapter": "tetsu/body/awakening-start/tetsu-body-awakening-start-runtime220.json"
+    },
+    "tetsu/blow": {
+      "adapter": "tetsu/body/blow/tetsu-body-blow-runtime220.json"
+    },
+    "tetsu/charge-hold": {
+      "adapter": "tetsu/body/charge-hold/tetsu-body-charge-hold-runtime220.json"
+    },
+    "tetsu/charge-start": {
+      "adapter": "tetsu/body/charge-start/tetsu-body-charge-start-runtime220.json"
+    },
+    "tetsu/crouch": {
+      "adapter": "tetsu/body/crouch/tetsu-body-crouch-runtime220.json"
+    },
+    "tetsu/damage": {
+      "adapter": "tetsu/body/damage/tetsu-body-damage-runtime220.json"
+    },
+    "tetsu/death": {
+      "adapter": "tetsu/body/death/tetsu-body-death-runtime220.json"
+    },
+    "tetsu/effects/mob-slash-trail": {
+      "adapter": "tetsu/effects/mob-slash-trail/tetsu-effects-mob-slash-trail-runtime220.json"
+    },
+    "tetsu/effects/ranged": {
+      "adapter": "tetsu/effects/ranged/tetsu-effects-ranged-runtime220.json"
+    },
+    "tetsu/effects/slam": {
+      "adapter": "tetsu/effects/slam/tetsu-effects-slam-runtime220.json"
+    },
+    "tetsu/effects/special1-aura": {
+      "adapter": "tetsu/effects/special1-aura/tetsu-effects-special1-aura-runtime220.json"
+    },
+    "tetsu/effects/special2-water": {
+      "adapter": "tetsu/effects/special2-water/tetsu-effects-special2-water-runtime220.json"
+    },
+    "tetsu/idle": {
+      "adapter": "tetsu/body/idle/tetsu-body-idle-runtime220.json"
+    },
+    "tetsu/launch": {
+      "adapter": "tetsu/body/launch/tetsu-body-launch-runtime220.json"
+    },
+    "tetsu/light2": {
+      "adapter": "tetsu/body/light2/tetsu-body-light2-runtime220.json"
+    },
+    "tetsu/light4": {
+      "adapter": "tetsu/body/light4/tetsu-body-light4-runtime220.json"
+    },
+    "tetsu/ranged": {
+      "adapter": "tetsu/body/ranged/tetsu-body-ranged-runtime220.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.8727272727272727,
+        -0.5863636363636363
+      ]
+    },
+    "tetsu/recovery": {
+      "adapter": "tetsu/body/recovery/tetsu-body-recovery-runtime220.json"
+    },
+    "tetsu/special1-active": {
+      "adapter": "tetsu/body/special1-active/tetsu-body-special1-active-runtime220.json"
+    },
+    "tetsu/special1-recovery": {
+      "adapter": "tetsu/body/special1-recovery/tetsu-body-special1-recovery-runtime220.json"
+    },
+    "tetsu/special1-startup": {
+      "adapter": "tetsu/body/special1-startup/tetsu-body-special1-startup-runtime220.json"
+    },
+    "tetsu/special2-active": {
+      "adapter": "tetsu/body/special2-active/tetsu-body-special2-active-runtime220.json",
+      "releaseFrame": 6,
+      "releaseSocket": [
+        0.5803921568627451,
+        0.03137254901960784
+      ]
+    }
+  },
+  "aliases": {
+    "tetsu/awakened-air1": "tetsu/air1",
+    "tetsu/awakened-air2": "tetsu/air2",
+    "tetsu/awakened-awakening-start": "tetsu/awakening-start",
+    "tetsu/awakened-blow": "tetsu/blow",
+    "tetsu/awakened-charge-hold": "tetsu/charge-hold",
+    "tetsu/awakened-charge-start": "tetsu/charge-start",
+    "tetsu/awakened-crouch": "tetsu/crouch",
+    "tetsu/awakened-damage": "tetsu/damage",
+    "tetsu/awakened-death": "tetsu/death",
+    "tetsu/effects/awakened-mob-slash-trail": "tetsu/effects/mob-slash-trail",
+    "tetsu/effects/awakened-ranged": "tetsu/effects/ranged",
+    "tetsu/effects/awakened-slam": "tetsu/effects/slam",
+    "tetsu/effects/awakened-special1-aura": "tetsu/effects/special1-aura",
+    "tetsu/effects/awakened-special2-water": "tetsu/effects/special2-water",
+    "tetsu/awakened-idle": "tetsu/idle",
+    "tetsu/awakened-launch": "tetsu/launch",
+    "tetsu/awakened-light2": "tetsu/light2",
+    "tetsu/awakened-light4": "tetsu/light4",
+    "tetsu/awakened-ranged": "tetsu/ranged",
+    "tetsu/awakened-recovery": "tetsu/recovery",
+    "tetsu/awakened-special1-active": "tetsu/special1-active",
+    "tetsu/awakened-special1-recovery": "tetsu/special1-recovery",
+    "tetsu/awakened-special1-startup": "tetsu/special1-startup",
+    "tetsu/awakened-special2-active": "tetsu/special2-active",
+    "tetsu/charge": "tetsu/charge-hold",
+    "tetsu/awakened-charge": "tetsu/charge-hold",
+    "tetsu/dance": "tetsu/special1-startup",
+    "tetsu/awakened-dance": "tetsu/special1-startup",
+    "tetsu/specialRush": "tetsu/special1-active",
+    "tetsu/awakened-specialRush": "tetsu/special1-active",
+    "tetsu/water": "tetsu/special2-active",
+    "tetsu/awakened-water": "tetsu/special2-active"
+  },
+  "awakenedReuse": "Existing character normal and awakened aliases share all16 source body cels. Separate character-specific16-cel aura supplies form change. Not separately drawn awakened artwork.",
+  "sourceCoordinateContract": {
+    "rect": "atlas pixels",
+    "pivot": "frame-local runtime pixels",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height; added to existing FX anchor",
+    "releaseSocket": "body manifest entry: x,y normalized by displayed body height from player virtual feet; actual projectile spawn and collider, x follows facing, y positive down",
+    "releaseFrame": "body manifest entry: zero-based LOCAL frame index in the emitting runtime phase; global special cel23 maps to active local index6",
+    "orientationMode": "velocity: atan2(vy,vx)-nativeAngleRadians, no mirror; facing: horizontal mirror; fixed: no rotation or mirror"
+  },
+  "masterPolicy": "All PNG artwork masters unchanged. Runtime copies are uniformly downsampled at most to220 source body pixels, then alpha-trimmed with8px transparent gutters and lossless static WebP encoding. Spatial downsampling itself is lossy.",
+  "playbackRequirement": "Every animation and awakened alias must present all16 distinct source cels. No skipped-cel speedups or shortened action clocks; engine verification pending."
+}

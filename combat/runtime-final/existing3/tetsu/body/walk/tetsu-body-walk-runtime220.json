@@ -1,0 +1,527 @@
+{
+  "character": "tetsu",
+  "animation": "walk",
+  "kind": "body",
+  "src": "tetsu-body-walk-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        231,
+        249,
+        207,
+        224
+      ],
+      "pivot": [
+        73.99630314232901,
+        222.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_contact",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/walk/01",
+      "sourceVisibleRgbaSha256": "0e51f3f39102d15e1488c537bedf5756dc8ab706eff0b84ebe4f9d6938d88154"
+    },
+    {
+      "rect": [
+        454,
+        248,
+        203,
+        223
+      ],
+      "pivot": [
+        68.99630314232901,
+        220.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_weight_accept",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/walk/02",
+      "sourceVisibleRgbaSha256": "1696a738c50fbf2ebf52b5481c8ed8f87b3d3edef7b5f5d42ba5ee40dc2c87a0"
+    },
+    {
+      "rect": [
+        1567,
+        8,
+        210,
+        212
+      ],
+      "pivot": [
+        72.99630314232901,
+        210.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_down",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/walk/03",
+      "sourceVisibleRgbaSha256": "7c728f642445daf89e4ec23e55752701529a41571b2643f876cbe5d88b045fcb"
+    },
+    {
+      "rect": [
+        1110,
+        244,
+        201,
+        218
+      ],
+      "pivot": [
+        68.99630314232901,
+        216.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_toe_off",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/walk/04",
+      "sourceVisibleRgbaSha256": "79cfa8b5d42a7fed0d272ae14103a639276f74a8f8ce676a688820fe8aa564a9"
+    },
+    {
+      "rect": [
+        452,
+        8,
+        195,
+        224
+      ],
+      "pivot": [
+        62.99630314232901,
+        221.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_passing",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/walk/05",
+      "sourceVisibleRgbaSha256": "5ef309b517a4624b50cb19449f516001dc51629a69eff3dcd3ab3132550cdb9a"
+    },
+    {
+      "rect": [
+        663,
+        8,
+        199,
+        223
+      ],
+      "pivot": [
+        73.99630314232901,
+        221.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_swing",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/walk/06",
+      "sourceVisibleRgbaSha256": "5a04dfd74b9ad33951de3a17f26f7bdbb0de9948b6c5ffda72233beee142f04e"
+    },
+    {
+      "rect": [
+        1114,
+        8,
+        208,
+        217
+      ],
+      "pivot": [
+        74.99630314232901,
+        215.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_extension",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/walk/07",
+      "sourceVisibleRgbaSha256": "3fbfc446babe67e663a4ddcfa950e322ea91a7f27e47432bca3a8abe13e61c23"
+    },
+    {
+      "rect": [
+        878,
+        8,
+        220,
+        220
+      ],
+      "pivot": [
+        84.99630314232901,
+        218.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_precontact",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/walk/08",
+      "sourceVisibleRgbaSha256": "fe81107b52119c38993a87d4d195b27501fb60d65cce1297fb614fba105bc3df"
+    },
+    {
+      "rect": [
+        228,
+        8,
+        208,
+        225
+      ],
+      "pivot": [
+        74.99630314232901,
+        222.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_contact",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/walk/09",
+      "sourceVisibleRgbaSha256": "2b83a5d6664c3239362ea89306ba2598e368237011f6ead4b85c64d832c902e4"
+    },
+    {
+      "rect": [
+        673,
+        247,
+        203,
+        221
+      ],
+      "pivot": [
+        68.99630314232901,
+        218.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_weight_accept",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/walk/10",
+      "sourceVisibleRgbaSha256": "32fa20976fe90d96cb274846f1a61b1cd499c82f97b2a4fcb8952f0b620d9e66"
+    },
+    {
+      "rect": [
+        1327,
+        241,
+        205,
+        215
+      ],
+      "pivot": [
+        69.99630314232901,
+        213.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "right_down",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/walk/11",
+      "sourceVisibleRgbaSha256": "07088263cd13be7b39d4c4ed06495478d9bb6fd060f6b1e37792b475a6a3ec93"
+    },
+    {
+      "rect": [
+        892,
+        244,
+        202,
+        219
+      ],
+      "pivot": [
+        67.99630314232901,
+        217.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_toe_off",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/walk/12",
+      "sourceVisibleRgbaSha256": "938158a19fa36a60c3f02bffab4a6c504bda82850b8ba0b262e3cf7d68d46077"
+    },
+    {
+      "rect": [
+        8,
+        255,
+        207,
+        227
+      ],
+      "pivot": [
+        68.99630314232901,
+        225.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_passing",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/walk/13",
+      "sourceVisibleRgbaSha256": "964fe49029e4c753dfb8acaf2c29eedc8274b9c77f34d2da82e413a24b9f0637"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        204,
+        231
+      ],
+      "pivot": [
+        70.99630314232901,
+        229.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_swing",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/walk/14",
+      "sourceVisibleRgbaSha256": "f4e375c4d0ef8b6a9070c2725d336bf16f45a5a4b2282c70f191155a068922c2"
+    },
+    {
+      "rect": [
+        1548,
+        236,
+        208,
+        209
+      ],
+      "pivot": [
+        72.99630314232901,
+        207.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_extension",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/walk/15",
+      "sourceVisibleRgbaSha256": "0ff83f563ccd7f663d47f3b10d85007bb53dfdb3c2b8e864ba26fbabe4c1c122"
+    },
+    {
+      "rect": [
+        1338,
+        8,
+        213,
+        211
+      ],
+      "pivot": [
+        73.99630314232901,
+        208.25878003696857
+      ],
+      "duration": 0.05,
+      "phase": "left_precontact",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/walk/16",
+      "sourceVisibleRgbaSha256": "bbacfd7485fec66631d7ee86596cd57ed8ddece9c24bd2a1c2f0b036cf4a043d"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/walk/tetsu-walk-16.json",
+    "atlas": "tetsu/walk/tetsu-walk-registered-16.png",
+    "status": "drawn_16_cel_walk_for_playback_review",
+    "runtimeNotes": [
+      "Head/hood/stripe details drift slightly across independently generated cels.",
+      "Body-height measurements vary about503-557px due to pose and drawing variation; support-foot registration is fixed, so body bob/block-boundary continuity needs actual-size playback review.",
+      "Far-leg gray shading intentionally distinguishes leg depth; contacts and passing phases were visually checked.",
+      "Some swing phases extend knees earlier than the ideal schedule and shoulder/cloth counter-motion is subtle.",
+      "No real-time playback or in-engine approval by this worker; animated files were decoded and frame counts verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        119,
+        96,
+        625,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 96
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        101,
+        627,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 101
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        124,
+        634,
+        643
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 124
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        111,
+        622,
+        643
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 111
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        148,
+        99,
+        622,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 99
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        119,
+        99,
+        606,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 99
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        118,
+        115,
+        625,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 115
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        94,
+        107,
+        628,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 94
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        120,
+        96,
+        624,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 96
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        134,
+        107,
+        626,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 107
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        118,
+        630,
+        642
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 118
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        134,
+        107,
+        626,
+        643
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 107
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        88,
+        636,
+        643
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        79,
+        627,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 79
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        133,
+        630,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 122
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        119,
+        129,
+        639,
+        644
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 119
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.4066543438077634,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "4bcc19b11895d73019ce7787f053fbba8f03d87d0d141eab738fc1d2e63ac7c3",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-walk",
+    "frames": 16,
+    "scale": 0.4066543438077634,
+    "uniformAtlasPixels": 1560001,
+    "trimmedAtlas": [
+      1792,
+      512
+    ],
+    "trimmedPixels": 917504,
+    "rgbaMiB": 3.5,
+    "fileBytes": 492170,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": true,
+  "durationSeconds": 0.8,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

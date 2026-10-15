@@ -1,0 +1,315 @@
+{
+  "action": "walk",
+  "loop": true,
+  "bodyHeight": 220.0,
+  "frames": [
+    {
+      "index": 0,
+      "page": 0,
+      "rect": [
+        1021,
+        254,
+        303,
+        228
+      ],
+      "duration": 0.083,
+      "pivot": [
+        130.40816326530611,
+        223.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 1,
+      "page": 0,
+      "rect": [
+        690,
+        490,
+        315,
+        224
+      ],
+      "duration": 0.083,
+      "pivot": [
+        142.40816326530611,
+        221.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 2,
+      "page": 0,
+      "rect": [
+        694,
+        8,
+        306,
+        224
+      ],
+      "duration": 0.083,
+      "pivot": [
+        133.40816326530611,
+        221.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 3,
+      "page": 0,
+      "rect": [
+        8,
+        252,
+        330,
+        222
+      ],
+      "duration": 0.083,
+      "pivot": [
+        157.40816326530611,
+        220.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 4,
+      "page": 0,
+      "rect": [
+        8,
+        8,
+        331,
+        228
+      ],
+      "duration": 0.083,
+      "pivot": [
+        158.40816326530611,
+        224.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 5,
+      "page": 0,
+      "rect": [
+        351,
+        490,
+        323,
+        227
+      ],
+      "duration": 0.083,
+      "pivot": [
+        154.40816326530611,
+        224.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 6,
+      "page": 0,
+      "rect": [
+        1021,
+        498,
+        300,
+        229
+      ],
+      "duration": 0.083,
+      "pivot": [
+        129.40816326530611,
+        224.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 7,
+      "page": 0,
+      "rect": [
+        694,
+        248,
+        303,
+        225
+      ],
+      "duration": 0.083,
+      "pivot": [
+        132.40816326530611,
+        223.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 8,
+      "page": 1,
+      "rect": [
+        8,
+        735,
+        326,
+        227
+      ],
+      "duration": 0.083,
+      "pivot": [
+        157.40816326530611,
+        224.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 9,
+      "page": 1,
+      "rect": [
+        350,
+        735,
+        325,
+        227
+      ],
+      "duration": 0.083,
+      "pivot": [
+        152.40816326530611,
+        223.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 10,
+      "page": 1,
+      "rect": [
+        355,
+        8,
+        323,
+        227
+      ],
+      "duration": 0.083,
+      "pivot": [
+        150.40816326530611,
+        223.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 11,
+      "page": 1,
+      "rect": [
+        355,
+        251,
+        323,
+        223
+      ],
+      "duration": 0.083,
+      "pivot": [
+        150.40816326530611,
+        222.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 12,
+      "page": 1,
+      "rect": [
+        8,
+        490,
+        327,
+        229
+      ],
+      "duration": 0.083,
+      "pivot": [
+        154.40816326530611,
+        223.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 13,
+      "page": 1,
+      "rect": [
+        691,
+        730,
+        297,
+        229
+      ],
+      "duration": 0.083,
+      "pivot": [
+        124.40816326530611,
+        224.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 14,
+      "page": 1,
+      "rect": [
+        1004,
+        743,
+        294,
+        229
+      ],
+      "duration": 0.083,
+      "pivot": [
+        123.40816326530611,
+        224.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "index": 15,
+      "page": 1,
+      "rect": [
+        1021,
+        8,
+        306,
+        230
+      ],
+      "duration": 0.083,
+      "pivot": [
+        133.40816326530611,
+        224.48979591836735
+      ],
+      "src": "../clips/walk-sequence/walk-sequence-runtime220.webp"
+    }
+  ],
+  "pages": [
+    {
+      "adapter": "walk-A.json",
+      "src": "walk-A.webp",
+      "frames": 8,
+      "size": [
+        3072,
+        4096
+      ],
+      "decodedRGBASHA256": "b941c2e81221d494126e0b684756dfa62eb72cec3ce9ea93758b5b781cd4dcc9",
+      "sourceDecodedRGBASHA256": "72b776639c407594292cef50aaa208190adb777ec311d2f9ddfa08d8cc8afd9b",
+      "allAlphaAndVisibleRGBPreserved": true
+    },
+    {
+      "adapter": "walk-B.json",
+      "src": "walk-B.webp",
+      "frames": 8,
+      "size": [
+        3072,
+        4096
+      ],
+      "decodedRGBASHA256": "8c86e572e85308022d8f4bf522fcd447688d79edcd42421dffcebecdbcb674a1",
+      "sourceDecodedRGBASHA256": "83d10d6e9033a48b90f52231ac2a06d4b4838b01869441714d3ff798f1d8c289",
+      "allAlphaAndVisibleRGBPreserved": true
+    }
+  ],
+  "note": "Play these 16 entries in exact index order, selecting each entry src/page. Per-page adapters are loadable segments, not separate complete walk cycles.",
+  "runtimeEncoding": {
+    "format": "standard lossless WebP",
+    "alphaIdentical": true,
+    "RGBIdenticalWhereAlphaGreaterThanZero": true,
+    "hiddenRGBNote": "RGB values under fully transparent alpha=0 pixels may be discarded. This changes no visible pixel, alpha value, frame order, pose, dimensions or animation timing. Original PNGs and exact-RGBA WebPs are preserved outside the runtime bundle."
+  },
+  "runtimeExport": {
+    "scale": 0.22448979591836735,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "status": "runtime-export-awaiting-integration-review",
+  "character": "モブラミ / Mob Rami",
+  "events": [],
+  "completeSequenceId": "walk",
+  "authoredCelCount": 16,
+  "phaseWindowOnly": false,
+  "sources": [
+    "combat/handoff/final/assets/hero/normal/locomotion/walk/walk-sequence.json"
+  ]
+}

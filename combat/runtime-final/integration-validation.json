@@ -1,0 +1,646 @@
+{
+  "audit": {
+    "animations": 282,
+    "aliases": 289,
+    "images": 279,
+    "checkedNewTwoFiles": 173,
+    "frameMinimum": 16,
+    "maxDimension": 4096
+  },
+  "browser": {
+    "initialAtlasRequests": 2,
+    "reports": [
+      {
+        "id": "hero",
+        "keys": 102,
+        "renderedFrames": 1254,
+        "peakBytes": 67108864,
+        "stats": {
+          "bytes": 4390912,
+          "reserved": 0,
+          "peak": 67108864,
+          "budget": 67108864,
+          "cached": 1,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        },
+        "assetErrors": []
+      },
+      {
+        "id": "denden",
+        "keys": 94,
+        "renderedFrames": 1120,
+        "peakBytes": 67108864,
+        "stats": {
+          "bytes": 4718592,
+          "reserved": 0,
+          "peak": 67108864,
+          "budget": 67108864,
+          "cached": 1,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        },
+        "assetErrors": []
+      },
+      {
+        "id": "nyoro",
+        "keys": 94,
+        "renderedFrames": 1120,
+        "peakBytes": 67108864,
+        "stats": {
+          "bytes": 6324224,
+          "reserved": 0,
+          "peak": 67108864,
+          "budget": 67108864,
+          "cached": 1,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        },
+        "assetErrors": []
+      },
+      {
+        "id": "tetsu",
+        "keys": 98,
+        "renderedFrames": 1120,
+        "peakBytes": 67108864,
+        "stats": {
+          "bytes": 4259840,
+          "reserved": 0,
+          "peak": 67108864,
+          "budget": 67108864,
+          "cached": 1,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        },
+        "assetErrors": []
+      },
+      {
+        "id": "manny",
+        "keys": 92,
+        "renderedFrames": 992,
+        "peakBytes": 67108864,
+        "stats": {
+          "bytes": 7831552,
+          "reserved": 0,
+          "peak": 67108864,
+          "budget": 67108864,
+          "cached": 1,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        },
+        "assetErrors": []
+      },
+      {
+        "id": "mobdesert",
+        "keys": 84,
+        "renderedFrames": 992,
+        "peakBytes": 67108864,
+        "stats": {
+          "bytes": 4456448,
+          "reserved": 0,
+          "peak": 67108864,
+          "budget": 67108864,
+          "cached": 1,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        },
+        "assetErrors": []
+      }
+    ],
+    "physics": [
+      {
+        "id": "manny",
+        "dir": -1,
+        "forward": -15.541666666666288,
+        "origin": {
+          "x": 430.17833333333374,
+          "y": 355.33333333333337
+        },
+        "shot": {
+          "x": 210.57833333333375,
+          "y": 355.33333333333337,
+          "r": 72,
+          "fx": "special2-orb"
+        }
+      },
+      {
+        "id": "manny",
+        "dir": 1,
+        "forward": 15.541666666666515,
+        "origin": {
+          "x": 569.8216666666665,
+          "y": 355.33333333333337
+        },
+        "shot": {
+          "x": 789.4216666666665,
+          "y": 355.33333333333337,
+          "r": 72,
+          "fx": "special2-orb"
+        }
+      },
+      {
+        "id": "mobdesert",
+        "dir": -1,
+        "forward": -15.541666666666288,
+        "origin": {
+          "x": 419.46853741496636,
+          "y": 432.61224489795916
+        },
+        "shot": {
+          "x": 132.76853741496637,
+          "y": 432.61224489795916,
+          "r": 80,
+          "fx": "special2-dragon"
+        }
+      },
+      {
+        "id": "mobdesert",
+        "dir": 1,
+        "forward": 15.541666666666515,
+        "origin": {
+          "x": 580.5314625850339,
+          "y": 432.61224489795916
+        },
+        "shot": {
+          "x": 867.2314625850338,
+          "y": 432.61224489795916,
+          "r": 80,
+          "fx": "special2-dragon"
+        }
+      }
+    ],
+    "pageErrors": []
+  },
+  "events": [
+    {
+      "id": "hero",
+      "dir": -1,
+      "special": 1,
+      "age": 0.4250000000000005,
+      "release": 0.41715447154471547,
+      "localFrame": 3,
+      "playerY": 373.7499999999993,
+      "origin": {
+        "x": 445.11029411764804,
+        "y": 353.33578431372484
+      },
+      "shot": {
+        "x": 439.69362745098135,
+        "y": 359.58578431372484,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 22495232,
+        "reserved": 0,
+        "peak": 22495232,
+        "budget": 67108864,
+        "cached": 5,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "hero",
+      "dir": 1,
+      "special": 1,
+      "age": 0.4250000000000005,
+      "release": 0.41715447154471547,
+      "localFrame": 3,
+      "playerY": 373.7499999999993,
+      "origin": {
+        "x": 554.889705882354,
+        "y": 353.33578431372484
+      },
+      "shot": {
+        "x": 560.3063725490206,
+        "y": 359.58578431372484,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 22495232,
+        "reserved": 0,
+        "peak": 22495232,
+        "budget": 67108864,
+        "cached": 5,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "denden",
+      "dir": -1,
+      "special": 1,
+      "age": 0.40833333333333377,
+      "release": 0.40191176470588236,
+      "localFrame": 4,
+      "playerY": 374.4583333333327,
+      "origin": {
+        "x": 384.56586021505467,
+        "y": 385.64516129032194
+      },
+      "shot": {
+        "x": 379.149193548388,
+        "y": 391.89516129032194,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 33292288,
+        "reserved": 0,
+        "peak": 41025536,
+        "budget": 67108864,
+        "cached": 7,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "denden",
+      "dir": 1,
+      "special": 1,
+      "age": 0.40833333333333377,
+      "release": 0.40191176470588236,
+      "localFrame": 4,
+      "playerY": 374.4583333333327,
+      "origin": {
+        "x": 615.4341397849472,
+        "y": 385.64516129032194
+      },
+      "shot": {
+        "x": 620.8508064516138,
+        "y": 391.89516129032194,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 33292288,
+        "reserved": 0,
+        "peak": 41025536,
+        "budget": 67108864,
+        "cached": 7,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "nyoro",
+      "dir": -1,
+      "special": 1,
+      "age": 0.4250000000000005,
+      "release": 0.4244444444444444,
+      "localFrame": 6,
+      "playerY": 373.7499999999993,
+      "origin": {
+        "x": 395.98928571428667,
+        "y": 327.52738095238027
+      },
+      "shot": {
+        "x": 390.57261904762,
+        "y": 333.77738095238027,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 41730048,
+        "reserved": 0,
+        "peak": 47448064,
+        "budget": 67108864,
+        "cached": 7,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "nyoro",
+      "dir": 1,
+      "special": 1,
+      "age": 0.4250000000000005,
+      "release": 0.4244444444444444,
+      "localFrame": 6,
+      "playerY": 373.7499999999993,
+      "origin": {
+        "x": 604.0107142857153,
+        "y": 327.52738095238027
+      },
+      "shot": {
+        "x": 609.4273809523819,
+        "y": 333.77738095238027,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 41730048,
+        "reserved": 0,
+        "peak": 47448064,
+        "budget": 67108864,
+        "cached": 7,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "tetsu",
+      "dir": -1,
+      "special": 1,
+      "age": 0.43333333333333385,
+      "release": 0.43124999999999997,
+      "localFrame": 6,
+      "playerY": 373.58333333333263,
+      "origin": {
+        "x": 399.32352941176566,
+        "y": 377.20098039215617
+      },
+      "shot": {
+        "x": 393.906862745099,
+        "y": 383.45098039215617,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 31227904,
+        "reserved": 0,
+        "peak": 58343424,
+        "budget": 67108864,
+        "cached": 7,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "tetsu",
+      "dir": 1,
+      "special": 1,
+      "age": 0.43333333333333385,
+      "release": 0.43124999999999997,
+      "localFrame": 6,
+      "playerY": 373.58333333333263,
+      "origin": {
+        "x": 600.6764705882364,
+        "y": 377.20098039215617
+      },
+      "shot": {
+        "x": 606.093137254903,
+        "y": 383.45098039215617,
+        "fx": "special2-water"
+      },
+      "memory": {
+        "bytes": 31227904,
+        "reserved": 0,
+        "peak": 58343424,
+        "budget": 67108864,
+        "cached": 7,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "manny",
+      "dir": -1,
+      "special": 0,
+      "age": 0.6333333333333335,
+      "release": 0.6257352941176471,
+      "localFrame": 7,
+      "playerY": 548,
+      "origin": {
+        "x": 449.42857142857144,
+        "y": 495.8095238095238
+      },
+      "shot": {
+        "x": 447.42857142857144,
+        "y": 496.3511904761905,
+        "fx": "special1-bomb-pink"
+      },
+      "memory": {
+        "bytes": 54214656,
+        "reserved": 0,
+        "peak": 58343424,
+        "budget": 67108864,
+        "cached": 8,
+        "queued": 9,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "manny",
+      "dir": -1,
+      "special": 1,
+      "age": 0.6500000000000001,
+      "release": 0.6419117647058824,
+      "localFrame": 7,
+      "playerY": 548,
+      "origin": {
+        "x": 445.72,
+        "y": 355.33333333333337
+      },
+      "shot": {
+        "x": 442.72,
+        "y": 355.33333333333337,
+        "fx": "special2-orb"
+      },
+      "memory": {
+        "bytes": 64552960,
+        "reserved": 0,
+        "peak": 67026944,
+        "budget": 67108864,
+        "cached": 13,
+        "queued": 7,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "manny",
+      "dir": 1,
+      "special": 0,
+      "age": 0.6333333333333335,
+      "release": 0.6257352941176471,
+      "localFrame": 7,
+      "playerY": 548,
+      "origin": {
+        "x": 550.5714285714286,
+        "y": 495.8095238095238
+      },
+      "shot": {
+        "x": 552.5714285714286,
+        "y": 496.3511904761905,
+        "fx": "special1-bomb-pink"
+      },
+      "memory": {
+        "bytes": 64552960,
+        "reserved": 0,
+        "peak": 67026944,
+        "budget": 67108864,
+        "cached": 13,
+        "queued": 8,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "manny",
+      "dir": 1,
+      "special": 1,
+      "age": 0.6500000000000001,
+      "release": 0.6419117647058824,
+      "localFrame": 7,
+      "playerY": 548,
+      "origin": {
+        "x": 554.28,
+        "y": 355.33333333333337
+      },
+      "shot": {
+        "x": 557.28,
+        "y": 355.33333333333337,
+        "fx": "special2-orb"
+      },
+      "memory": {
+        "bytes": 62291968,
+        "reserved": 0,
+        "peak": 67026944,
+        "budget": 67108864,
+        "cached": 13,
+        "queued": 8,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "mobdesert",
+      "dir": -1,
+      "special": 0,
+      "age": 0.43333333333333385,
+      "release": 0.4320588235294117,
+      "localFrame": 7,
+      "playerY": 468.9166666666672,
+      "origin": {
+        "x": 433.6489361702128,
+        "y": 459.2925531914899
+      },
+      "shot": {
+        "x": 430.4822695035461,
+        "y": 460.0425531914899,
+        "fx": "special1-fish"
+      },
+      "memory": {
+        "bytes": 45481984,
+        "reserved": 0,
+        "peak": 67026944,
+        "budget": 67108864,
+        "cached": 8,
+        "queued": 5,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "mobdesert",
+      "dir": -1,
+      "special": 1,
+      "age": 0.7333333333333332,
+      "release": 0.7286764705882353,
+      "localFrame": 7,
+      "playerY": 548,
+      "origin": {
+        "x": 435.01020408163265,
+        "y": 432.61224489795916
+      },
+      "shot": {
+        "x": 431.09353741496597,
+        "y": 432.61224489795916,
+        "fx": "special2-dragon"
+      },
+      "memory": {
+        "bytes": 64749568,
+        "reserved": 0,
+        "peak": 67026944,
+        "budget": 67108864,
+        "cached": 11,
+        "queued": 4,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "mobdesert",
+      "dir": 1,
+      "special": 0,
+      "age": 0.43333333333333385,
+      "release": 0.4320588235294117,
+      "localFrame": 7,
+      "playerY": 468.9166666666672,
+      "origin": {
+        "x": 566.3510638297872,
+        "y": 459.2925531914899
+      },
+      "shot": {
+        "x": 569.5177304964539,
+        "y": 460.0425531914899,
+        "fx": "special1-fish"
+      },
+      "memory": {
+        "bytes": 63438848,
+        "reserved": 0,
+        "peak": 67026944,
+        "budget": 67108864,
+        "cached": 11,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    },
+    {
+      "id": "mobdesert",
+      "dir": 1,
+      "special": 1,
+      "age": 0.7333333333333332,
+      "release": 0.7286764705882353,
+      "localFrame": 7,
+      "playerY": 548,
+      "origin": {
+        "x": 564.9897959183673,
+        "y": 432.61224489795916
+      },
+      "shot": {
+        "x": 568.906462585034,
+        "y": 432.61224489795916,
+        "fx": "special2-dragon"
+      },
+      "memory": {
+        "bytes": 63438848,
+        "reserved": 0,
+        "peak": 67026944,
+        "budget": 67108864,
+        "cached": 11,
+        "queued": 6,
+        "inFlight": 1,
+        "failures": 0
+      },
+      "errors": []
+    }
+  ]
+}

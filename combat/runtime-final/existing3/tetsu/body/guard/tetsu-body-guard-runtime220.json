@@ -1,0 +1,526 @@
+{
+  "character": "tetsu",
+  "animation": "guard",
+  "kind": "body",
+  "src": "tetsu-body-guard-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        8,
+        261,
+        228
+      ],
+      "pivot": [
+        81.25490196078431,
+        224.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/guard/01",
+      "sourceVisibleRgbaSha256": "09645996a7d6e76beed50bf4dcb254b0a09bbb7796c81b3a18af4e9abe73d1c8"
+    },
+    {
+      "rect": [
+        959,
+        268,
+        235,
+        224
+      ],
+      "pivot": [
+        78.25490196078431,
+        220.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "hilt_draw",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/guard/02",
+      "sourceVisibleRgbaSha256": "b41d6775b52f4d122f094f12377b54eb7fcf7565fd35342ed57673ffa4051eb1"
+    },
+    {
+      "rect": [
+        1244,
+        510,
+        220,
+        224
+      ],
+      "pivot": [
+        78.25490196078431,
+        220.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "blade_lift",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/guard/03",
+      "sourceVisibleRgbaSha256": "ef90d645ad83ab6b5d5345b61ac00a46b5ef6a241755fb6f79d5272cb992c83e"
+    },
+    {
+      "rect": [
+        285,
+        8,
+        174,
+        256
+      ],
+      "pivot": [
+        86.25490196078431,
+        252.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "front_guard",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/guard/04",
+      "sourceVisibleRgbaSha256": "04947b5c2334f10abea2b959501034949cf8eaa70931bd5968afdc5aaac97b09"
+    },
+    {
+      "rect": [
+        750,
+        520,
+        231,
+        238
+      ],
+      "pivot": [
+        89.25490196078431,
+        234.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "rear_brace",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/guard/05",
+      "sourceVisibleRgbaSha256": "730a3cbac8bde713e206342e702d169cc4a22f2d4b1a714fbcc704c0a49dfa59"
+    },
+    {
+      "rect": [
+        256,
+        491,
+        219,
+        257
+      ],
+      "pivot": [
+        86.25490196078431,
+        253.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "full_guard",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/guard/06",
+      "sourceVisibleRgbaSha256": "426ffff953b1d445375590a9f8d4eba12e071bf18f4837835af47a69f43e844e"
+    },
+    {
+      "rect": [
+        1195,
+        8,
+        226,
+        241
+      ],
+      "pivot": [
+        92.25490196078431,
+        237.3529411764706
+      ],
+      "duration": 0.055,
+      "phase": "knees_flex",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/guard/07",
+      "sourceVisibleRgbaSha256": "9716d8a3066fc969cdc4b9daf232531c7209ef17c17f0064ea7f5623c537b1c6"
+    },
+    {
+      "rect": [
+        8,
+        491,
+        232,
+        257
+      ],
+      "pivot": [
+        128.2549019607843,
+        253.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "incoming_brace",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/guard/08",
+      "sourceVisibleRgbaSha256": "15f86e232549256577109a4f0ff8c7dadc11deeb7aa2525d25e3c397dd759663"
+    },
+    {
+      "rect": [
+        475,
+        8,
+        255,
+        235
+      ],
+      "pivot": [
+        108.25490196078431,
+        232.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "strong_brace",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/guard/09",
+      "sourceVisibleRgbaSha256": "025e6b41a10bc2fb3e5c4e5a7783379042ac3555f83ed9ad5b0110c368084d1f"
+    },
+    {
+      "rect": [
+        728,
+        259,
+        215,
+        245
+      ],
+      "pivot": [
+        89.25490196078431,
+        241.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "recoil_absorb",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/guard/10",
+      "sourceVisibleRgbaSha256": "5fcd46b4e9235b7e55b45157d869e875ff38876c04485a73c8ab14eb26a5217d"
+    },
+    {
+      "rect": [
+        491,
+        259,
+        221,
+        250
+      ],
+      "pivot": [
+        88.25490196078431,
+        246.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "balance_push",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/guard/11",
+      "sourceVisibleRgbaSha256": "601549d53ac4a897564aaa4279ab9b881e007243616c544b534ccc88510f816e"
+    },
+    {
+      "rect": [
+        959,
+        8,
+        220,
+        244
+      ],
+      "pivot": [
+        90.25490196078431,
+        240.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "tension_release",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/guard/12",
+      "sourceVisibleRgbaSha256": "24b501bec3d9b92bfe485dd508be62ae296d00a8aea1fc4143fb960a3e188f89"
+    },
+    {
+      "rect": [
+        8,
+        252,
+        258,
+        223
+      ],
+      "pivot": [
+        80.25490196078431,
+        220.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "blade_lower",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/guard/13",
+      "sourceVisibleRgbaSha256": "fd5ae90117851c461f807a144a6869419fb5a56439e883f5decdeb2d3a4cd022"
+    },
+    {
+      "rect": [
+        491,
+        525,
+        243,
+        223
+      ],
+      "pivot": [
+        79.25490196078431,
+        219.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "hilt_return",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/guard/14",
+      "sourceVisibleRgbaSha256": "6dfde97b4e1f790d58b1f4d7b08b0e139b0be7e56d96d0e170f6d0ff9a30e02b"
+    },
+    {
+      "rect": [
+        1210,
+        265,
+        233,
+        229
+      ],
+      "pivot": [
+        79.25490196078431,
+        225.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "knees_soften",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/guard/15",
+      "sourceVisibleRgbaSha256": "68b2dff7097248631e33d0001646d1e194f17831c32c83a0952e5b7a81ecf64f"
+    },
+    {
+      "rect": [
+        997,
+        510,
+        231,
+        226
+      ],
+      "pivot": [
+        83.25490196078431,
+        222.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/guard/16",
+      "sourceVisibleRgbaSha256": "5d5c0b9e6292b293a9c8b2b822b32671af8b3a90d7205f289a245e9c0d3b2b09"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/guard/tetsu-guard-16.json",
+    "atlas": "tetsu/guard/tetsu-guard-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Sixteen genuinely drawn enter/brace/release phases; no static pose duplicated to inflate count.",
+      "Near forearm partially overlaps the face during bracing; head stays recognizable.",
+      "Guard release at frame13 drops blade lower than neutral before returning. Actual input/state and held-guard timing need desktop integration review.",
+      "Real-time and in-engine playback not visually verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        160,
+        432,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 80
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        165,
+        405,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        165,
+        387,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        127,
+        327,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        119,
+        149,
+        388,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        126,
+        377,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        117,
+        145,
+        379,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        75,
+        127,
+        344,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 75
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        99,
+        151,
+        393,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        121,
+        141,
+        369,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        135,
+        378,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        120,
+        141,
+        374,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        165,
+        429,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 83
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        166,
+        413,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        159,
+        402,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        162,
+        395,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8627450980392157,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "c8220cf8f2c461d61314fa3223ab2dbd71157498c8295a456e771a9d926b33d7",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-guard",
+    "frames": 16,
+    "scale": 0.8627450980392157,
+    "uniformAtlasPixels": 3122289,
+    "trimmedAtlas": [
+      1472,
+      768
+    ],
+    "trimmedPixels": 1130496,
+    "rgbaMiB": 4.3125,
+    "fileBytes": 650090,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.715,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

@@ -1,0 +1,523 @@
+{
+  "character": "nyoro",
+  "animation": "air3",
+  "kind": "body",
+  "src": "nyoro-body-air3-runtime220.webp",
+  "bodyHeight": 168,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        278,
+        1150,
+        248,
+        252
+      ],
+      "pivot": [
+        143,
+        294
+      ],
+      "duration": 0.045,
+      "phase": "air-ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "nyoro/body/air3/01",
+      "sourceVisibleRgbaSha256": "b7724bcbfe922128f9e7b63af4d55d80716989f68cb8efbd25497c1d5fc5d519"
+    },
+    {
+      "rect": [
+        542,
+        1150,
+        250,
+        239
+      ],
+      "pivot": [
+        153,
+        282
+      ],
+      "duration": 0.04,
+      "phase": "tuck",
+      "sourceFrame": 2,
+      "sourceDrawingId": "nyoro/body/air3/02",
+      "sourceVisibleRgbaSha256": "4300c4dc6b81bb1bc1ea2d734b32c7411367aef961cf9df05947b3d27647f9fb"
+    },
+    {
+      "rect": [
+        582,
+        559,
+        233,
+        291
+      ],
+      "pivot": [
+        154,
+        334
+      ],
+      "duration": 0.05,
+      "phase": "raise-umbrella",
+      "sourceFrame": 3,
+      "sourceDrawingId": "nyoro/body/air3/03",
+      "sourceVisibleRgbaSha256": "fdfd187755fa17552c38f6292b7409ae2a0b1311701fedf98bc6c86c07f48e7b"
+    },
+    {
+      "rect": [
+        8,
+        473,
+        245,
+        299
+      ],
+      "pivot": [
+        163,
+        338
+      ],
+      "duration": 0.055,
+      "phase": "arms-high",
+      "sourceFrame": 4,
+      "sourceDrawingId": "nyoro/body/air3/04",
+      "sourceVisibleRgbaSha256": "0dced3c2c60b95a8621bf9cc071b7b1e719bc5e49aa68a0c7cbddd7fb4c01e41"
+    },
+    {
+      "rect": [
+        8,
+        788,
+        231,
+        290
+      ],
+      "pivot": [
+        162,
+        316
+      ],
+      "duration": 0.06,
+      "phase": "loaded-arch",
+      "sourceFrame": 5,
+      "sourceDrawingId": "nyoro/body/air3/05",
+      "sourceVisibleRgbaSha256": "56455a16e0a563bc1b97795a8e68df4868aef35a97f4119a8d82b608667e7b12"
+    },
+    {
+      "rect": [
+        8,
+        1119,
+        254,
+        285
+      ],
+      "pivot": [
+        157,
+        312
+      ],
+      "duration": 0.03,
+      "phase": "pull-down",
+      "sourceFrame": 6,
+      "sourceDrawingId": "nyoro/body/air3/06",
+      "sourceVisibleRgbaSha256": "6540f79e292968149c60a520af2eeaab17fadfffc4cc3f132308b260656e5f7c"
+    },
+    {
+      "rect": [
+        357,
+        270,
+        313,
+        273
+      ],
+      "pivot": [
+        148,
+        309
+      ],
+      "duration": 0.025,
+      "phase": "downward-travel",
+      "sourceFrame": 7,
+      "sourceDrawingId": "nyoro/body/air3/07",
+      "sourceVisibleRgbaSha256": "bce3af4472d94226bc411a76a0c54978e69956647044947caa992cb6f3c880f8"
+    },
+    {
+      "rect": [
+        516,
+        866,
+        286,
+        268
+      ],
+      "pivot": [
+        103,
+        223
+      ],
+      "duration": 0.04,
+      "phase": "cleave-contact",
+      "sourceFrame": 8,
+      "sourceDrawingId": "nyoro/body/air3/08",
+      "sourceVisibleRgbaSha256": "79a7a92ad3e86205ddf60aa85716a80d11b5fbf07f5a3fca0895a2351e5db3ad"
+    },
+    {
+      "rect": [
+        387,
+        8,
+        333,
+        246
+      ],
+      "pivot": [
+        93,
+        209
+      ],
+      "duration": 0.06,
+      "phase": "full-reach",
+      "sourceFrame": 9,
+      "sourceDrawingId": "nyoro/body/air3/09",
+      "sourceVisibleRgbaSha256": "eae1fe5157ac2011b593b966ee31a87d8c3bbc6ccec3beabbcf5c2abb43a940c"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        363,
+        234
+      ],
+      "pivot": [
+        111,
+        201
+      ],
+      "duration": 0.045,
+      "phase": "low-followthrough",
+      "sourceFrame": 10,
+      "sourceDrawingId": "nyoro/body/air3/10",
+      "sourceVisibleRgbaSha256": "a6b0abf483b24f6315b75da202e2a62e2d049b15c8e3ed1c5a4563a031f96464"
+    },
+    {
+      "rect": [
+        8,
+        258,
+        333,
+        199
+      ],
+      "pivot": [
+        111,
+        207
+      ],
+      "duration": 0.04,
+      "phase": "brake",
+      "sourceFrame": 11,
+      "sourceDrawingId": "nyoro/body/air3/11",
+      "sourceVisibleRgbaSha256": "bed787366fd61cad30df0a3b72b45ed7edcca4d1758d4bee84e6cbad0e77f87c"
+    },
+    {
+      "rect": [
+        269,
+        559,
+        297,
+        239
+      ],
+      "pivot": [
+        99,
+        274
+      ],
+      "duration": 0.04,
+      "phase": "rebound",
+      "sourceFrame": 12,
+      "sourceDrawingId": "nyoro/body/air3/12",
+      "sourceVisibleRgbaSha256": "cf43531f6c0945580c94ca0888dd23e3ffa0db0f30a82b1719cff6549a389171"
+    },
+    {
+      "rect": [
+        8,
+        1420,
+        255,
+        276
+      ],
+      "pivot": [
+        153,
+        302
+      ],
+      "duration": 0.045,
+      "phase": "draw-back",
+      "sourceFrame": 13,
+      "sourceDrawingId": "nyoro/body/air3/13",
+      "sourceVisibleRgbaSha256": "d0a3c8dc0279b018f7abf15f3e541393df3dd0d3cdce8ef98f93a03c551dc962"
+    },
+    {
+      "rect": [
+        542,
+        1405,
+        237,
+        243
+      ],
+      "pivot": [
+        151,
+        278
+      ],
+      "duration": 0.045,
+      "phase": "knees-curl",
+      "sourceFrame": 14,
+      "sourceDrawingId": "nyoro/body/air3/14",
+      "sourceVisibleRgbaSha256": "e1c3b4e2e0c319776a196fc6ea07314d45fc1c44d43be6b595cedae970991bc9"
+    },
+    {
+      "rect": [
+        255,
+        814,
+        245,
+        289
+      ],
+      "pivot": [
+        151,
+        325
+      ],
+      "duration": 0.05,
+      "phase": "return-up",
+      "sourceFrame": 15,
+      "sourceDrawingId": "nyoro/body/air3/15",
+      "sourceVisibleRgbaSha256": "5b071b1086e32b3e66ddeec50c37a89894ff02fd7fdda3f39c2b670e219ffebb"
+    },
+    {
+      "rect": [
+        279,
+        1418,
+        236,
+        243
+      ],
+      "pivot": [
+        145,
+        282
+      ],
+      "duration": 0.055,
+      "phase": "air-ready-return",
+      "sourceFrame": 16,
+      "sourceDrawingId": "nyoro/body/air3/16",
+      "sourceVisibleRgbaSha256": "1e0cb8bd990d0d83761937f2345cceb7406617fddd6adf04a657f1ba75a202bf"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "nyoro/air3/candidate-v1/manifest.json",
+    "atlas": "nyoro/air3/candidate-v1/nyoro-air3-16-atlas.png",
+    "status": "review candidate, not production approved",
+    "runtimeNotes": [
+      "All16 airborne.04source repair restores clear top margin around raised canopy. Weapon tips08\u201311 excluded from anatomical bodyHeight."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        77,
+        146,
+        325,
+        398
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 77
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        67,
+        158,
+        317,
+        397
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 67
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        66,
+        106,
+        299,
+        397
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        57,
+        102,
+        302,
+        401
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 57
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        58,
+        124,
+        289,
+        414
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 58
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        63,
+        128,
+        317,
+        413
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 63
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        72,
+        131,
+        385,
+        404
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 72
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        117,
+        217,
+        403,
+        485
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 27
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        231,
+        460,
+        477
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 35
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        239,
+        472,
+        473
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 39
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        233,
+        442,
+        432
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        121,
+        166,
+        418,
+        405
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 94
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        67,
+        138,
+        322,
+        414
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 67
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        69,
+        162,
+        306,
+        405
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        69,
+        115,
+        314,
+        404
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        75,
+        158,
+        311,
+        401
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 75
+    }
+  ],
+  "runtimeExport": {
+    "scale": 1,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 168,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "a7b7e20f173988d6b6a1a32b08d0a5933026827e1af3fbf0da2b6439920903f5",
+  "runtimeMeasurement": {
+    "action": "nyoro-body-air3",
+    "frames": 16,
+    "scale": 1,
+    "uniformAtlasPixels": 4194304,
+    "trimmedAtlas": [
+      832,
+      1728
+    ],
+    "trimmedPixels": 1437696,
+    "rgbaMiB": 5.484375,
+    "fileBytes": 1136786,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.725,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

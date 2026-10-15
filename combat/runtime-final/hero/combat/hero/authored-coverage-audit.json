@@ -1,0 +1,382 @@
+{
+  "bodySourceSequences": 50,
+  "bodyAuthoredCels": 896,
+  "fxSequences": 12,
+  "fxAuthoredCels": 192,
+  "globalDistinctRgbaFrameHashes": 1088,
+  "hashMeaning": "Exactduplicate detection only; genuine articulation and continuity were separately visually reviewed at110-body display.",
+  "rows": [
+    {
+      "id": "normal/idle",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/walk",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/dash",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/jump",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/guard",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/crouch",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/light1",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/light2",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/light3",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/light4",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/charge-cycle",
+      "category": "body",
+      "authoredCels": 32,
+      "distinctRgbaFrameHashes": 32
+    },
+    {
+      "id": "normal/blow",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/launch",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/ranged",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/rush",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/air1",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/air2",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/air3",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/slam",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/damage",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/death",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/recovery",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/awakening-transition",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "normal/special1-cycle",
+      "category": "body",
+      "authoredCels": 32,
+      "distinctRgbaFrameHashes": 32
+    },
+    {
+      "id": "normal/special2-cycle",
+      "category": "body",
+      "authoredCels": 32,
+      "distinctRgbaFrameHashes": 32
+    },
+    {
+      "id": "awakened/idle",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/walk",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/dash",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/jump",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/guard",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/crouch",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/light1",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/light2",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/light3",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/light4",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/charge-cycle",
+      "category": "body",
+      "authoredCels": 32,
+      "distinctRgbaFrameHashes": 32
+    },
+    {
+      "id": "awakened/blow",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/launch",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/ranged",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/rush",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/air1",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/air2",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/air3",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/slam",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/damage",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/death",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/recovery",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/awakening-transition",
+      "category": "body",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "awakened/special1-cycle",
+      "category": "body",
+      "authoredCels": 32,
+      "distinctRgbaFrameHashes": 32
+    },
+    {
+      "id": "awakened/special2-cycle",
+      "category": "body",
+      "authoredCels": 32,
+      "distinctRgbaFrameHashes": 32
+    },
+    {
+      "id": "fx/hit-light",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/hit-heavy",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/charge",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/launch",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/slam",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/ranged",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/rush-trail",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/special1-aura",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/special2-water",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/special2-splash",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/awakening-aura",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    },
+    {
+      "id": "fx/awakening-burst",
+      "category": "fx",
+      "authoredCels": 16,
+      "distinctRgbaFrameHashes": 16
+    }
+  ]
+}

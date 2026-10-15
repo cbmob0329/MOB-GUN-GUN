@@ -1,0 +1,726 @@
+{
+  "character": "tetsu",
+  "animation": "charge",
+  "kind": "effects",
+  "src": "tetsu-effects-charge-runtime220.webp",
+  "bodyHeight": 214.4,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        990,
+        920,
+        291,
+        295
+      ],
+      "pivot": [
+        133.75,
+        263.15
+      ],
+      "duration": 0.035,
+      "phase": "seed",
+      "sourceFrame": 1,
+      "displaySize": [
+        1.3572761194029852,
+        1.3759328358208955
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/01",
+      "sourceVisibleRgbaSha256": "c6aaf4ac929f4347980ff95446219c35f3ad451aec7fbae49ae68e7d58eefc4a"
+    },
+    {
+      "rect": [
+        968,
+        8,
+        313,
+        291
+      ],
+      "pivot": [
+        156.25,
+        259.15
+      ],
+      "duration": 0.035,
+      "phase": "seed splits",
+      "sourceFrame": 2,
+      "displaySize": [
+        1.4598880597014925,
+        1.3572761194029852
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/02",
+      "sourceVisibleRgbaSha256": "dcefd8b5d98eae0ed15ec83f3c682471a0490dda6fca5f7355e5dc8c5c83b6d2"
+    },
+    {
+      "rect": [
+        981,
+        315,
+        312,
+        273
+      ],
+      "pivot": [
+        155.75,
+        241.14999999999998
+      ],
+      "duration": 0.03,
+      "phase": "first growth",
+      "sourceFrame": 3,
+      "displaySize": [
+        1.455223880597015,
+        1.273320895522388
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/03",
+      "sourceVisibleRgbaSha256": "5d8e0031aba24c58f3aef74e00bd122f6493d5adf0ed60adf53dab2adb3b5932"
+    },
+    {
+      "rect": [
+        652,
+        337,
+        313,
+        294
+      ],
+      "pivot": [
+        157.25,
+        262.15
+      ],
+      "duration": 0.03,
+      "phase": "branch growth",
+      "sourceFrame": 4,
+      "displaySize": [
+        1.4598880597014925,
+        1.3712686567164178
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/04",
+      "sourceVisibleRgbaSha256": "751e35968ae68efb460c99221865daac2c3c52c3ba0e26df533dabec29a976ea"
+    },
+    {
+      "rect": [
+        338,
+        988,
+        289,
+        313
+      ],
+      "pivot": [
+        131.75,
+        281.65
+      ],
+      "duration": 0.03,
+      "phase": "build",
+      "sourceFrame": 5,
+      "displaySize": [
+        1.3479477611940298,
+        1.4598880597014925
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/05",
+      "sourceVisibleRgbaSha256": "af401741e4fa65eef6875ef27dfbbd4a18738c19ae678c3c39a0eaa584fefa66"
+    },
+    {
+      "rect": [
+        323,
+        341,
+        313,
+        313
+      ],
+      "pivot": [
+        156.25,
+        281.65
+      ],
+      "duration": 0.03,
+      "phase": "expansion",
+      "sourceFrame": 6,
+      "displaySize": [
+        1.4598880597014925,
+        1.4598880597014925
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/06",
+      "sourceVisibleRgbaSha256": "7b66ff8d33671d54df302a5b72258cc4fe07f9c9d9ea6f9a91dbbbd890920a6d"
+    },
+    {
+      "rect": [
+        643,
+        988,
+        312,
+        309
+      ],
+      "pivot": [
+        155.75,
+        281.65
+      ],
+      "duration": 0.035,
+      "phase": "near peak",
+      "sourceFrame": 7,
+      "displaySize": [
+        1.455223880597015,
+        1.4412313432835822
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/07",
+      "sourceVisibleRgbaSha256": "2b4f7389b2d21fa33208a6e9aaf2cef92a907aef4fe92b74b3e651f8f844e6f6"
+    },
+    {
+      "rect": [
+        990,
+        604,
+        304,
+        300
+      ],
+      "pivot": [
+        157.25,
+        281.65
+      ],
+      "duration": 0.04,
+      "phase": "peak",
+      "sourceFrame": 8,
+      "displaySize": [
+        1.4179104477611941,
+        1.3992537313432838
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/08",
+      "sourceVisibleRgbaSha256": "1bcc10e7a2d9626d817ab71f731c409ad0d73a28ec66d96e6a4daf3468d770f4"
+    },
+    {
+      "rect": [
+        8,
+        1026,
+        314,
+        297
+      ],
+      "pivot": [
+        156.75,
+        282.15
+      ],
+      "duration": 0.04,
+      "phase": "breakup begins",
+      "sourceFrame": 9,
+      "displaySize": [
+        1.4645522388059702,
+        1.3852611940298507
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/09",
+      "sourceVisibleRgbaSha256": "79223c4a41086c2c6c4a2718e6abbf579bf0c813a00c74938ae2d8969be31ca2"
+    },
+    {
+      "rect": [
+        639,
+        8,
+        313,
+        313
+      ],
+      "pivot": [
+        156.25,
+        282.15
+      ],
+      "duration": 0.035,
+      "phase": "fragments split",
+      "sourceFrame": 10,
+      "displaySize": [
+        1.4598880597014925,
+        1.4598880597014925
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/10",
+      "sourceVisibleRgbaSha256": "5e8c3c5e2e5589ccd72118f3a9889e06243845bcab6d477eb4309d6b5d56d5e0"
+    },
+    {
+      "rect": [
+        313,
+        8,
+        310,
+        317
+      ],
+      "pivot": [
+        156.75,
+        286.15
+      ],
+      "duration": 0.035,
+      "phase": "separation",
+      "sourceFrame": 11,
+      "displaySize": [
+        1.4458955223880596,
+        1.4785447761194028
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/11",
+      "sourceVisibleRgbaSha256": "f9f04d981c273a8f4e48bfcb99e5a8943c7f8c01233059a30ce2750c3e48d90d"
+    },
+    {
+      "rect": [
+        8,
+        354,
+        299,
+        326
+      ],
+      "pivot": [
+        156.25,
+        295.15
+      ],
+      "duration": 0.035,
+      "phase": "thin fragments",
+      "sourceFrame": 12,
+      "displaySize": [
+        1.394589552238806,
+        1.5205223880597014
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/12",
+      "sourceVisibleRgbaSha256": "8f8f7eface417db585d1af3d11684a19b3b29a4de57ffccba17c8e0abe50a677"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        289,
+        330
+      ],
+      "pivot": [
+        131.75,
+        298.65
+      ],
+      "duration": 0.04,
+      "phase": "small remnants",
+      "sourceFrame": 13,
+      "displaySize": [
+        1.3479477611940298,
+        1.539179104477612
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/13",
+      "sourceVisibleRgbaSha256": "67960f91dcb5f4b2b12b51b633f70e943105ec0ec3358d92b94bfb576b769273"
+    },
+    {
+      "rect": [
+        337,
+        670,
+        313,
+        302
+      ],
+      "pivot": [
+        156.25,
+        282.65
+      ],
+      "duration": 0.045,
+      "phase": "last remnants",
+      "sourceFrame": 14,
+      "displaySize": [
+        1.4598880597014925,
+        1.4085820895522387
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/14",
+      "sourceVisibleRgbaSha256": "473ba5ef575032a95f94192f69ad4976bcfabe27b9f3b68f8d71c70e22a6f943"
+    },
+    {
+      "rect": [
+        8,
+        696,
+        313,
+        314
+      ],
+      "pivot": [
+        156.75,
+        282.65
+      ],
+      "duration": 0.05,
+      "phase": "tiny residue",
+      "sourceFrame": 15,
+      "displaySize": [
+        1.4598880597014925,
+        1.4645522388059702
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/15",
+      "sourceVisibleRgbaSha256": "7784dcc833be3481ee1946f8f42a32f49ef43ddd624d7d6871ed12b2b210405a"
+    },
+    {
+      "rect": [
+        666,
+        647,
+        308,
+        296
+      ],
+      "pivot": [
+        157.25,
+        282.65
+      ],
+      "duration": 0.055,
+      "phase": "final residual",
+      "sourceFrame": 16,
+      "displaySize": [
+        1.4365671641791047,
+        1.380597014925373
+      ],
+      "socketOffset": [
+        0.0,
+        0.45454545454545453
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/charge/16",
+      "sourceVisibleRgbaSha256": "ceaa27c234bf578bfa06f93ae49d2b14c414d93b14d292ddf8f7fe725db9c693"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "canonical-fx/tetsu/charge/metadata.json",
+    "atlas": "canonical-fx/tetsu/charge/tetsu-charge-16-atlas.png",
+    "status": "static_review_candidate_not_user_approved",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        23,
+        19,
+        314,
+        314
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 16
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        23,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        41,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 1
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        20,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        25,
+        0,
+        314,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        313,
+        309
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        304,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        314,
+        297
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        313
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        310,
+        317
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        300,
+        326
+      ],
+      "masterEdgeAlphaMax": 2,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        25,
+        0,
+        314,
+        330
+      ],
+      "masterEdgeAlphaMax": 3,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        302
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        308,
+        296
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    }
+  ],
+  "gameBinding": {
+    "socketReference": "player-feet",
+    "existingHookOffsetPxAtBody110": [
+      0,
+      -50
+    ],
+    "socketOffsetMode": "Add normalized offset to existing game hook. Hook correction applied exactly once.",
+    "nativeDirectionRadians": null,
+    "mirrorPixelsWithFacing": true,
+    "mirrorSocketXWithFacing": true
+  },
+  "orientationMode": "facing",
+  "nativeAngleRadians": 0,
+  "runtimeExport": {
+    "scale": 1,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 214.4,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "898d623427e221a471425698e420227b7144b23d0063d4a799389264e35fa24c",
+  "runtimeMeasurement": {
+    "action": "tetsu-effects-charge",
+    "frames": 16,
+    "scale": 1,
+    "uniformAtlasPixels": 1742400,
+    "trimmedAtlas": [
+      1344,
+      1344
+    ],
+    "trimmedPixels": 1806336,
+    "rgbaMiB": 6.890625,
+    "fileBytes": 670370,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": true,
+  "durationSeconds": 0.6,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

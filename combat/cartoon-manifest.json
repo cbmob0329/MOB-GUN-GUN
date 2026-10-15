@@ -1,5 +1,1368 @@
 {
-  "idle": {"src": null,"columns":1,"rows":1,"frames":1,"fps":12},
-  "walk": {"src":null,"columns":4,"rows":4,"frames":16,"fps":12},
-  "awakened": {"src":null,"columns":1,"rows":1,"frames":1,"fps":12}
+  "version": 2,
+  "animations": {
+    "denden/awakening-start": {
+      "adapter": "runtime-final/existing3/denden/body/awakening-start/denden-body-awakening-start-runtime220.json"
+    },
+    "denden/blow": {
+      "adapter": "runtime-final/existing3/denden/body/blow/denden-body-blow-runtime220.json"
+    },
+    "denden/charge-hold": {
+      "adapter": "runtime-final/existing3/denden/body/charge-hold/denden-body-charge-hold-runtime220.json"
+    },
+    "denden/charge-start": {
+      "adapter": "runtime-final/existing3/denden/body/charge-start/denden-body-charge-start-runtime220.json"
+    },
+    "denden/crouch": {
+      "adapter": "runtime-final/existing3/denden/body/crouch/denden-body-crouch-runtime220.json"
+    },
+    "denden/damage": {
+      "adapter": "runtime-final/existing3/denden/body/damage/denden-body-damage-runtime220.json"
+    },
+    "denden/dash": {
+      "adapter": "runtime-final/existing3/denden/body/dash/denden-body-dash-runtime220.json"
+    },
+    "denden/death": {
+      "adapter": "runtime-final/existing3/denden/body/death/denden-body-death-runtime220.json"
+    },
+    "denden/effects/awakening-burst": {
+      "adapter": "runtime-final/existing3/denden/effects/awakening-burst/denden-effects-awakening-burst-runtime220.json"
+    },
+    "denden/effects/charge": {
+      "adapter": "runtime-final/existing3/denden/effects/charge/denden-effects-charge-runtime220.json"
+    },
+    "denden/effects/hit-light": {
+      "adapter": "runtime-final/existing3/denden/effects/hit-light/denden-effects-hit-light-runtime220.json"
+    },
+    "denden/effects/ranged": {
+      "adapter": "runtime-final/existing3/denden/effects/ranged/denden-effects-ranged-runtime220.json"
+    },
+    "denden/effects/rush-trail": {
+      "adapter": "runtime-final/existing3/denden/effects/rush-trail/denden-effects-rush-trail-runtime220.json"
+    },
+    "denden/effects/special1-aura": {
+      "adapter": "runtime-final/existing3/denden/effects/special1-aura/denden-effects-special1-aura-runtime220.json"
+    },
+    "denden/effects/special2-splash": {
+      "adapter": "runtime-final/existing3/denden/effects/special2-splash/denden-effects-special2-splash-runtime220.json"
+    },
+    "denden/jump": {
+      "adapter": "runtime-final/existing3/denden/body/jump/denden-body-jump-runtime220.json"
+    },
+    "denden/light1": {
+      "adapter": "runtime-final/existing3/denden/body/light1/denden-body-light1-runtime220.json"
+    },
+    "denden/rush": {
+      "adapter": "runtime-final/existing3/denden/body/rush/denden-body-rush-runtime220.json"
+    },
+    "denden/special1-active": {
+      "adapter": "runtime-final/existing3/denden/body/special1-active/denden-body-special1-active-runtime220.json"
+    },
+    "denden/special2-active": {
+      "adapter": "runtime-final/existing3/denden/body/special2-active/denden-body-special2-active-runtime220.json",
+      "releaseFrame": 4,
+      "releaseSocket": [
+        0.7338709677419355,
+        0.0967741935483871
+      ]
+    },
+    "denden/special2-recovery": {
+      "adapter": "runtime-final/existing3/denden/body/special2-recovery/denden-body-special2-recovery-runtime220.json"
+    },
+    "denden/walk": {
+      "adapter": "runtime-final/existing3/denden/body/walk/denden-body-walk-runtime220.json"
+    },
+    "denden/air1": {
+      "adapter": "runtime-final/existing3/denden/body/air1/denden-body-air1-runtime220.json"
+    },
+    "denden/air2": {
+      "adapter": "runtime-final/existing3/denden/body/air2/denden-body-air2-runtime220.json"
+    },
+    "denden/air3": {
+      "adapter": "runtime-final/existing3/denden/body/air3/denden-body-air3-runtime220.json"
+    },
+    "denden/awakening-end": {
+      "adapter": "runtime-final/existing3/denden/body/awakening-end/denden-body-awakening-end-runtime220.json"
+    },
+    "denden/effects/awakening-aura": {
+      "adapter": "runtime-final/existing3/denden/effects/awakening-aura/denden-effects-awakening-aura-runtime220.json"
+    },
+    "denden/effects/hit-heavy": {
+      "adapter": "runtime-final/existing3/denden/effects/hit-heavy/denden-effects-hit-heavy-runtime220.json"
+    },
+    "denden/effects/launch": {
+      "adapter": "runtime-final/existing3/denden/effects/launch/denden-effects-launch-runtime220.json"
+    },
+    "denden/effects/slam": {
+      "adapter": "runtime-final/existing3/denden/effects/slam/denden-effects-slam-runtime220.json"
+    },
+    "denden/effects/special2-water": {
+      "adapter": "runtime-final/existing3/denden/effects/special2-water/denden-effects-special2-water-runtime220.json"
+    },
+    "denden/guard": {
+      "adapter": "runtime-final/existing3/denden/body/guard/denden-body-guard-runtime220.json"
+    },
+    "denden/idle": {
+      "adapter": "runtime-final/existing3/denden/body/idle/denden-body-idle-runtime220.json"
+    },
+    "denden/launch": {
+      "adapter": "runtime-final/existing3/denden/body/launch/denden-body-launch-runtime220.json"
+    },
+    "denden/light2": {
+      "adapter": "runtime-final/existing3/denden/body/light2/denden-body-light2-runtime220.json"
+    },
+    "denden/light3": {
+      "adapter": "runtime-final/existing3/denden/body/light3/denden-body-light3-runtime220.json"
+    },
+    "denden/light4": {
+      "adapter": "runtime-final/existing3/denden/body/light4/denden-body-light4-runtime220.json"
+    },
+    "denden/ranged": {
+      "adapter": "runtime-final/existing3/denden/body/ranged/denden-body-ranged-runtime220.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.7792207792207793,
+        -0.5367965367965368
+      ]
+    },
+    "denden/recovery": {
+      "adapter": "runtime-final/existing3/denden/body/recovery/denden-body-recovery-runtime220.json"
+    },
+    "denden/slam": {
+      "adapter": "runtime-final/existing3/denden/body/slam/denden-body-slam-runtime220.json"
+    },
+    "denden/special1-recovery": {
+      "adapter": "runtime-final/existing3/denden/body/special1-recovery/denden-body-special1-recovery-runtime220.json"
+    },
+    "denden/special1-startup": {
+      "adapter": "runtime-final/existing3/denden/body/special1-startup/denden-body-special1-startup-runtime220.json"
+    },
+    "denden/special2-startup": {
+      "adapter": "runtime-final/existing3/denden/body/special2-startup/denden-body-special2-startup-runtime220.json"
+    },
+    "nyoro/air3": {
+      "adapter": "runtime-final/existing3/nyoro/body/air3/nyoro-body-air3-runtime220.json"
+    },
+    "nyoro/blow": {
+      "adapter": "runtime-final/existing3/nyoro/body/blow/nyoro-body-blow-runtime220.json"
+    },
+    "nyoro/charge-start": {
+      "adapter": "runtime-final/existing3/nyoro/body/charge-start/nyoro-body-charge-start-runtime220.json"
+    },
+    "nyoro/crouch": {
+      "adapter": "runtime-final/existing3/nyoro/body/crouch/nyoro-body-crouch-runtime220.json"
+    },
+    "nyoro/dash": {
+      "adapter": "runtime-final/existing3/nyoro/body/dash/nyoro-body-dash-runtime220.json"
+    },
+    "nyoro/effects/awakening-aura": {
+      "adapter": "runtime-final/existing3/nyoro/effects/awakening-aura/nyoro-effects-awakening-aura-runtime220.json"
+    },
+    "nyoro/effects/ranged": {
+      "adapter": "runtime-final/existing3/nyoro/effects/ranged/nyoro-effects-ranged-runtime220.json"
+    },
+    "nyoro/effects/slam": {
+      "adapter": "runtime-final/existing3/nyoro/effects/slam/nyoro-effects-slam-runtime220.json"
+    },
+    "nyoro/effects/special2-splash": {
+      "adapter": "runtime-final/existing3/nyoro/effects/special2-splash/nyoro-effects-special2-splash-runtime220.json"
+    },
+    "nyoro/jump": {
+      "adapter": "runtime-final/existing3/nyoro/body/jump/nyoro-body-jump-runtime220.json"
+    },
+    "nyoro/launch": {
+      "adapter": "runtime-final/existing3/nyoro/body/launch/nyoro-body-launch-runtime220.json"
+    },
+    "nyoro/slam": {
+      "adapter": "runtime-final/existing3/nyoro/body/slam/nyoro-body-slam-runtime220.json"
+    },
+    "nyoro/special1-active": {
+      "adapter": "runtime-final/existing3/nyoro/body/special1-active/nyoro-body-special1-active-runtime220.json"
+    },
+    "nyoro/special1-recovery": {
+      "adapter": "runtime-final/existing3/nyoro/body/special1-recovery/nyoro-body-special1-recovery-runtime220.json"
+    },
+    "nyoro/air2": {
+      "adapter": "runtime-final/existing3/nyoro/body/air2/nyoro-body-air2-runtime220.json"
+    },
+    "nyoro/awakening-start": {
+      "adapter": "runtime-final/existing3/nyoro/body/awakening-start/nyoro-body-awakening-start-runtime220.json"
+    },
+    "nyoro/charge-hold": {
+      "adapter": "runtime-final/existing3/nyoro/body/charge-hold/nyoro-body-charge-hold-runtime220.json"
+    },
+    "nyoro/damage": {
+      "adapter": "runtime-final/existing3/nyoro/body/damage/nyoro-body-damage-runtime220.json"
+    },
+    "nyoro/effects/rush-trail": {
+      "adapter": "runtime-final/existing3/nyoro/effects/rush-trail/nyoro-effects-rush-trail-runtime220.json"
+    },
+    "nyoro/effects/special2-water": {
+      "adapter": "runtime-final/existing3/nyoro/effects/special2-water/nyoro-effects-special2-water-runtime220.json"
+    },
+    "nyoro/guard": {
+      "adapter": "runtime-final/existing3/nyoro/body/guard/nyoro-body-guard-runtime220.json"
+    },
+    "nyoro/idle": {
+      "adapter": "runtime-final/existing3/nyoro/body/idle/nyoro-body-idle-runtime220.json"
+    },
+    "nyoro/light1": {
+      "adapter": "runtime-final/existing3/nyoro/body/light1/nyoro-body-light1-runtime220.json"
+    },
+    "nyoro/light3": {
+      "adapter": "runtime-final/existing3/nyoro/body/light3/nyoro-body-light3-runtime220.json"
+    },
+    "nyoro/ranged": {
+      "adapter": "runtime-final/existing3/nyoro/body/ranged/nyoro-body-ranged-runtime220.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.7922705314009661,
+        -0.6570048309178744
+      ]
+    },
+    "nyoro/recovery": {
+      "adapter": "runtime-final/existing3/nyoro/body/recovery/nyoro-body-recovery-runtime220.json"
+    },
+    "nyoro/rush": {
+      "adapter": "runtime-final/existing3/nyoro/body/rush/nyoro-body-rush-runtime220.json"
+    },
+    "nyoro/special2-recovery": {
+      "adapter": "runtime-final/existing3/nyoro/body/special2-recovery/nyoro-body-special2-recovery-runtime220.json"
+    },
+    "nyoro/air1": {
+      "adapter": "runtime-final/existing3/nyoro/body/air1/nyoro-body-air1-runtime220.json"
+    },
+    "nyoro/awakening-end": {
+      "adapter": "runtime-final/existing3/nyoro/body/awakening-end/nyoro-body-awakening-end-runtime220.json"
+    },
+    "nyoro/death": {
+      "adapter": "runtime-final/existing3/nyoro/body/death/nyoro-body-death-runtime220.json"
+    },
+    "nyoro/effects/awakening-burst": {
+      "adapter": "runtime-final/existing3/nyoro/effects/awakening-burst/nyoro-effects-awakening-burst-runtime220.json"
+    },
+    "nyoro/effects/charge": {
+      "adapter": "runtime-final/existing3/nyoro/effects/charge/nyoro-effects-charge-runtime220.json"
+    },
+    "nyoro/effects/hit-heavy": {
+      "adapter": "runtime-final/existing3/nyoro/effects/hit-heavy/nyoro-effects-hit-heavy-runtime220.json"
+    },
+    "nyoro/effects/hit-light": {
+      "adapter": "runtime-final/existing3/nyoro/effects/hit-light/nyoro-effects-hit-light-runtime220.json"
+    },
+    "nyoro/effects/launch": {
+      "adapter": "runtime-final/existing3/nyoro/effects/launch/nyoro-effects-launch-runtime220.json"
+    },
+    "nyoro/effects/special1-aura": {
+      "adapter": "runtime-final/existing3/nyoro/effects/special1-aura/nyoro-effects-special1-aura-runtime220.json"
+    },
+    "nyoro/light2": {
+      "adapter": "runtime-final/existing3/nyoro/body/light2/nyoro-body-light2-runtime220.json"
+    },
+    "nyoro/light4": {
+      "adapter": "runtime-final/existing3/nyoro/body/light4/nyoro-body-light4-runtime220.json"
+    },
+    "nyoro/special1-startup": {
+      "adapter": "runtime-final/existing3/nyoro/body/special1-startup/nyoro-body-special1-startup-runtime220.json"
+    },
+    "nyoro/special2-active": {
+      "adapter": "runtime-final/existing3/nyoro/body/special2-active/nyoro-body-special2-active-runtime220.json",
+      "releaseFrame": 6,
+      "releaseSocket": [
+        0.6171428571428571,
+        -0.4228571428571429
+      ]
+    },
+    "nyoro/special2-startup": {
+      "adapter": "runtime-final/existing3/nyoro/body/special2-startup/nyoro-body-special2-startup-runtime220.json"
+    },
+    "nyoro/walk": {
+      "adapter": "runtime-final/existing3/nyoro/body/walk/nyoro-body-walk-runtime220.json"
+    },
+    "tetsu/air3": {
+      "adapter": "runtime-final/existing3/tetsu/body/air3/tetsu-body-air3-runtime220.json"
+    },
+    "tetsu/awakening-end": {
+      "adapter": "runtime-final/existing3/tetsu/body/awakening-end/tetsu-body-awakening-end-runtime220.json"
+    },
+    "tetsu/dash": {
+      "adapter": "runtime-final/existing3/tetsu/body/dash/tetsu-body-dash-runtime220.json"
+    },
+    "tetsu/effects/awakening-aura": {
+      "adapter": "runtime-final/existing3/tetsu/effects/awakening-aura/tetsu-effects-awakening-aura-runtime220.json"
+    },
+    "tetsu/effects/awakening-burst": {
+      "adapter": "runtime-final/existing3/tetsu/effects/awakening-burst/tetsu-effects-awakening-burst-runtime220.json"
+    },
+    "tetsu/effects/charge": {
+      "adapter": "runtime-final/existing3/tetsu/effects/charge/tetsu-effects-charge-runtime220.json"
+    },
+    "tetsu/effects/hit-heavy": {
+      "adapter": "runtime-final/existing3/tetsu/effects/hit-heavy/tetsu-effects-hit-heavy-runtime220.json"
+    },
+    "tetsu/effects/hit-light": {
+      "adapter": "runtime-final/existing3/tetsu/effects/hit-light/tetsu-effects-hit-light-runtime220.json"
+    },
+    "tetsu/effects/launch": {
+      "adapter": "runtime-final/existing3/tetsu/effects/launch/tetsu-effects-launch-runtime220.json"
+    },
+    "tetsu/effects/mob-slash-letters": {
+      "adapter": "runtime-final/existing3/tetsu/effects/mob-slash-letters/tetsu-effects-mob-slash-letters-runtime220.json"
+    },
+    "tetsu/effects/rush-trail": {
+      "adapter": "runtime-final/existing3/tetsu/effects/rush-trail/tetsu-effects-rush-trail-runtime220.json"
+    },
+    "tetsu/effects/special2-splash": {
+      "adapter": "runtime-final/existing3/tetsu/effects/special2-splash/tetsu-effects-special2-splash-runtime220.json"
+    },
+    "tetsu/guard": {
+      "adapter": "runtime-final/existing3/tetsu/body/guard/tetsu-body-guard-runtime220.json"
+    },
+    "tetsu/jump": {
+      "adapter": "runtime-final/existing3/tetsu/body/jump/tetsu-body-jump-runtime220.json"
+    },
+    "tetsu/light1": {
+      "adapter": "runtime-final/existing3/tetsu/body/light1/tetsu-body-light1-runtime220.json"
+    },
+    "tetsu/light3": {
+      "adapter": "runtime-final/existing3/tetsu/body/light3/tetsu-body-light3-runtime220.json"
+    },
+    "tetsu/rush": {
+      "adapter": "runtime-final/existing3/tetsu/body/rush/tetsu-body-rush-runtime220.json"
+    },
+    "tetsu/slam": {
+      "adapter": "runtime-final/existing3/tetsu/body/slam/tetsu-body-slam-runtime220.json"
+    },
+    "tetsu/special2-recovery": {
+      "adapter": "runtime-final/existing3/tetsu/body/special2-recovery/tetsu-body-special2-recovery-runtime220.json"
+    },
+    "tetsu/special2-startup": {
+      "adapter": "runtime-final/existing3/tetsu/body/special2-startup/tetsu-body-special2-startup-runtime220.json"
+    },
+    "tetsu/walk": {
+      "adapter": "runtime-final/existing3/tetsu/body/walk/tetsu-body-walk-runtime220.json"
+    },
+    "tetsu/air1": {
+      "adapter": "runtime-final/existing3/tetsu/body/air1/tetsu-body-air1-runtime220.json"
+    },
+    "tetsu/air2": {
+      "adapter": "runtime-final/existing3/tetsu/body/air2/tetsu-body-air2-runtime220.json"
+    },
+    "tetsu/awakening-start": {
+      "adapter": "runtime-final/existing3/tetsu/body/awakening-start/tetsu-body-awakening-start-runtime220.json"
+    },
+    "tetsu/blow": {
+      "adapter": "runtime-final/existing3/tetsu/body/blow/tetsu-body-blow-runtime220.json"
+    },
+    "tetsu/charge-hold": {
+      "adapter": "runtime-final/existing3/tetsu/body/charge-hold/tetsu-body-charge-hold-runtime220.json"
+    },
+    "tetsu/charge-start": {
+      "adapter": "runtime-final/existing3/tetsu/body/charge-start/tetsu-body-charge-start-runtime220.json"
+    },
+    "tetsu/crouch": {
+      "adapter": "runtime-final/existing3/tetsu/body/crouch/tetsu-body-crouch-runtime220.json"
+    },
+    "tetsu/damage": {
+      "adapter": "runtime-final/existing3/tetsu/body/damage/tetsu-body-damage-runtime220.json"
+    },
+    "tetsu/death": {
+      "adapter": "runtime-final/existing3/tetsu/body/death/tetsu-body-death-runtime220.json"
+    },
+    "tetsu/effects/mob-slash-trail": {
+      "adapter": "runtime-final/existing3/tetsu/effects/mob-slash-trail/tetsu-effects-mob-slash-trail-runtime220.json"
+    },
+    "tetsu/effects/ranged": {
+      "adapter": "runtime-final/existing3/tetsu/effects/ranged/tetsu-effects-ranged-runtime220.json"
+    },
+    "tetsu/effects/slam": {
+      "adapter": "runtime-final/existing3/tetsu/effects/slam/tetsu-effects-slam-runtime220.json"
+    },
+    "tetsu/effects/special1-aura": {
+      "adapter": "runtime-final/existing3/tetsu/effects/special1-aura/tetsu-effects-special1-aura-runtime220.json"
+    },
+    "tetsu/effects/special2-water": {
+      "adapter": "runtime-final/existing3/tetsu/effects/special2-water/tetsu-effects-special2-water-runtime220.json"
+    },
+    "tetsu/idle": {
+      "adapter": "runtime-final/existing3/tetsu/body/idle/tetsu-body-idle-runtime220.json"
+    },
+    "tetsu/launch": {
+      "adapter": "runtime-final/existing3/tetsu/body/launch/tetsu-body-launch-runtime220.json"
+    },
+    "tetsu/light2": {
+      "adapter": "runtime-final/existing3/tetsu/body/light2/tetsu-body-light2-runtime220.json"
+    },
+    "tetsu/light4": {
+      "adapter": "runtime-final/existing3/tetsu/body/light4/tetsu-body-light4-runtime220.json"
+    },
+    "tetsu/ranged": {
+      "adapter": "runtime-final/existing3/tetsu/body/ranged/tetsu-body-ranged-runtime220.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.8727272727272727,
+        -0.5863636363636363
+      ]
+    },
+    "tetsu/recovery": {
+      "adapter": "runtime-final/existing3/tetsu/body/recovery/tetsu-body-recovery-runtime220.json"
+    },
+    "tetsu/special1-active": {
+      "adapter": "runtime-final/existing3/tetsu/body/special1-active/tetsu-body-special1-active-runtime220.json"
+    },
+    "tetsu/special1-recovery": {
+      "adapter": "runtime-final/existing3/tetsu/body/special1-recovery/tetsu-body-special1-recovery-runtime220.json"
+    },
+    "tetsu/special1-startup": {
+      "adapter": "runtime-final/existing3/tetsu/body/special1-startup/tetsu-body-special1-startup-runtime220.json"
+    },
+    "tetsu/special2-active": {
+      "adapter": "runtime-final/existing3/tetsu/body/special2-active/tetsu-body-special2-active-runtime220.json",
+      "releaseFrame": 6,
+      "releaseSocket": [
+        0.5803921568627451,
+        0.03137254901960784
+      ]
+    },
+    "idle": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/idle.json"
+    },
+    "walk": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/walk.json"
+    },
+    "dash": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/dash.json"
+    },
+    "jump": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/jump.json"
+    },
+    "guard": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/guard.json"
+    },
+    "crouch": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/crouch.json"
+    },
+    "light1": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/light1.json"
+    },
+    "light2": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/light2.json"
+    },
+    "light3": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/light3.json"
+    },
+    "light4": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/light4.json"
+    },
+    "charge-cycle": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/charge-cycle.json"
+    },
+    "charge-start": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/charge-start.json"
+    },
+    "charge-hold": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/charge-hold.json"
+    },
+    "blow": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/blow.json"
+    },
+    "launch": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/launch.json"
+    },
+    "ranged": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/ranged.json",
+      "releaseSocket": [
+        0.3076923076923077,
+        -0.43846153846153846
+      ],
+      "releaseFrame": 7
+    },
+    "rush": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/rush.json"
+    },
+    "air1": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/air1.json"
+    },
+    "air2": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/air2.json"
+    },
+    "air3": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/air3.json"
+    },
+    "slam": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/slam.json"
+    },
+    "damage": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/damage.json"
+    },
+    "death": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/death.json"
+    },
+    "recovery": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/recovery.json"
+    },
+    "awakening-start": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakening-start.json"
+    },
+    "special1": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/special1.json"
+    },
+    "special2": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/special2.json"
+    },
+    "special2-active": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/special2.json",
+      "releaseSocket": [
+        0.17058823529411765,
+        -0.18823529411764706
+      ],
+      "releaseFrame": 19,
+      "frameRange": [
+        16,
+        24
+      ]
+    },
+    "water": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/special2.json",
+      "releaseSocket": [
+        0.17058823529411765,
+        -0.18823529411764706
+      ],
+      "releaseFrame": 19,
+      "frameRange": [
+        16,
+        24
+      ]
+    },
+    "awakened-idle": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-idle.json"
+    },
+    "awakened-walk": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-walk.json"
+    },
+    "awakened-dash": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-dash.json"
+    },
+    "awakened-jump": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-jump.json"
+    },
+    "awakened-guard": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-guard.json"
+    },
+    "awakened-crouch": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-crouch.json"
+    },
+    "awakened-light1": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-light1.json"
+    },
+    "awakened-light2": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-light2.json"
+    },
+    "awakened-light3": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-light3.json"
+    },
+    "awakened-light4": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-light4.json"
+    },
+    "awakened-charge-cycle": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-cycle.json"
+    },
+    "awakened-charge-start": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-start.json"
+    },
+    "awakened-charge-hold": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-hold.json"
+    },
+    "awakened-blow": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-blow.json"
+    },
+    "awakened-launch": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-launch.json"
+    },
+    "awakened-ranged": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-ranged.json",
+      "releaseSocket": [
+        0.3314285714285714,
+        -0.5142857142857142
+      ],
+      "releaseFrame": 7
+    },
+    "awakened-rush": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-rush.json"
+    },
+    "awakened-air1": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-air1.json"
+    },
+    "awakened-air2": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-air2.json"
+    },
+    "awakened-air3": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-air3.json"
+    },
+    "awakened-slam": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-slam.json"
+    },
+    "awakened-damage": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-damage.json"
+    },
+    "awakened-death": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-death.json"
+    },
+    "awakened-recovery": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-recovery.json"
+    },
+    "awakened-awakening-end": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-awakening-end.json"
+    },
+    "awakened-special1": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special1.json"
+    },
+    "awakened-special2": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special2.json"
+    },
+    "awakened-special2-active": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special2.json",
+      "releaseSocket": [
+        0.3323529411764706,
+        -0.3088235294117647
+      ],
+      "releaseFrame": 19,
+      "frameRange": [
+        16,
+        24
+      ]
+    },
+    "awakened-water": {
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special2.json",
+      "releaseSocket": [
+        0.3323529411764706,
+        -0.3088235294117647
+      ],
+      "releaseFrame": 19,
+      "frameRange": [
+        16,
+        24
+      ]
+    },
+    "hero/effects/hit-light": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-hit-light-16/mobrami-fx-hit-light-16-runtime220.json"
+    },
+    "hero/effects/hit-heavy": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-hit-heavy-16/mobrami-fx-hit-heavy-16-runtime220.json"
+    },
+    "hero/effects/charge": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-charge-16/mobrami-fx-charge-16-runtime220.json"
+    },
+    "hero/effects/launch": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-launch-16/mobrami-fx-launch-16-runtime220.json"
+    },
+    "hero/effects/slam": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-slam-16/mobrami-fx-slam-16-runtime220.json"
+    },
+    "hero/effects/ranged": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-ranged-16/mobrami-fx-ranged-16-runtime220.json"
+    },
+    "hero/effects/rush-trail": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-rush-trail-16/mobrami-fx-rush-trail-16-runtime220.json"
+    },
+    "hero/effects/special1-aura": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-special1-aura-16/mobrami-fx-special1-aura-16-runtime220.json"
+    },
+    "hero/effects/special2-water": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-special2-water-16/mobrami-fx-special2-water-16-runtime220.json"
+    },
+    "hero/effects/special2-splash": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-special2-splash-16/mobrami-fx-special2-splash-16-runtime220.json"
+    },
+    "hero/effects/awakening-aura": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-awakening-aura-16/mobrami-fx-awakening-aura-16-runtime220.json"
+    },
+    "hero/effects/awakening-burst": {
+      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-awakening-burst-16/mobrami-fx-awakening-burst-16-runtime220.json"
+    },
+    "manny/idle": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/idle/clip.json"
+    },
+    "manny/walk": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/walk/clip.json"
+    },
+    "manny/dash": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/dash/clip.json"
+    },
+    "manny/jump": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/jump/clip.json"
+    },
+    "manny/light1": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light1/clip.json"
+    },
+    "manny/light2": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light2/clip.json"
+    },
+    "manny/light3": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light3/clip.json"
+    },
+    "manny/light4": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light4/clip.json"
+    },
+    "manny/charge-start": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/charge-start/clip.json"
+    },
+    "manny/charge-hold": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/charge-hold/clip.json"
+    },
+    "manny/blow": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/blow/clip.json"
+    },
+    "manny/launch": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/launch/clip.json"
+    },
+    "manny/ranged": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/ranged/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.725,
+        -0.68
+      ]
+    },
+    "manny/rush": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/rush/clip.json"
+    },
+    "manny/air1": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/air1/clip.json"
+    },
+    "manny/air2": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/air2/clip.json"
+    },
+    "manny/air3": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/air3/clip.json"
+    },
+    "manny/slam": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/slam/clip.json"
+    },
+    "manny/damage": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/damage/clip.json"
+    },
+    "manny/death": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/death/clip.json"
+    },
+    "manny/recovery": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/recovery/clip.json"
+    },
+    "manny/awakening-start": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/awakening-start/clip.json"
+    },
+    "manny/awakening-end": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/awakening-end/clip.json"
+    },
+    "manny/guard": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/guard/clip.json"
+    },
+    "manny/crouch": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/crouch/clip.json"
+    },
+    "manny/special1-startup": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special1-startup/clip.json"
+    },
+    "manny/special1-active": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special1-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6321428571428571,
+        -0.6523809523809524
+      ]
+    },
+    "manny/special1-recovery": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special1-recovery/clip.json"
+    },
+    "manny/special2-startup": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-startup/clip.json"
+    },
+    "manny/special2-active": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6784999999999999,
+        -2.408333333333333
+      ]
+    },
+    "manny/special2-recovery": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-recovery/clip.json"
+    },
+    "mobdesert/idle": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/idle/clip.json"
+    },
+    "mobdesert/walk": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/walk/clip.json"
+    },
+    "mobdesert/dash": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/dash/clip.json"
+    },
+    "mobdesert/jump": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/jump/clip.json"
+    },
+    "mobdesert/light1": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light1/clip.json"
+    },
+    "mobdesert/light2": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light2/clip.json"
+    },
+    "mobdesert/light3": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light3/clip.json"
+    },
+    "mobdesert/light4": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light4/clip.json"
+    },
+    "mobdesert/charge-start": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/charge-start/clip.json"
+    },
+    "mobdesert/charge-hold": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/charge-hold/clip.json"
+    },
+    "mobdesert/blow": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/blow/clip.json"
+    },
+    "mobdesert/launch": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/launch/clip.json"
+    },
+    "mobdesert/ranged": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/ranged/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.5016949152542373,
+        -0.5457627118644067
+      ]
+    },
+    "mobdesert/rush": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/rush/clip.json"
+    },
+    "mobdesert/air1": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/air1/clip.json"
+    },
+    "mobdesert/air2": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/air2/clip.json"
+    },
+    "mobdesert/air3": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/air3/clip.json"
+    },
+    "mobdesert/slam": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/slam/clip.json"
+    },
+    "mobdesert/damage": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/damage/clip.json"
+    },
+    "mobdesert/death": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/death/clip.json"
+    },
+    "mobdesert/recovery": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/recovery/clip.json"
+    },
+    "mobdesert/awakening-start": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/awakening-start/clip.json"
+    },
+    "mobdesert/awakening-end": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/awakening-end/clip.json"
+    },
+    "mobdesert/guard": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/guard/clip.json"
+    },
+    "mobdesert/crouch": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/crouch/clip.json"
+    },
+    "mobdesert/special1-startup": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special1-startup/clip.json"
+    },
+    "mobdesert/special1-active": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special1-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6031914893617021,
+        -0.07234042553191489
+      ]
+    },
+    "mobdesert/special1-recovery": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special1-recovery/clip.json"
+    },
+    "mobdesert/special2-startup": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special2-startup/clip.json"
+    },
+    "mobdesert/special2-active": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special2-active/clip.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.5908163265306122,
+        -1.0489795918367346
+      ]
+    },
+    "mobdesert/special2-recovery": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special2-recovery/clip.json"
+    },
+    "manny/effects/special1-bomb-pink": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-pink/clip.json"
+    },
+    "manny/effects/special1-bomb-cyan": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-cyan/clip.json"
+    },
+    "manny/effects/special1-bomb-green": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-green/clip.json"
+    },
+    "manny/effects/special1-bomb-orange": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-orange/clip.json"
+    },
+    "manny/effects/special1-bomb-purple": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-purple/clip.json"
+    },
+    "manny/effects/special2-orb": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special2-orb/clip.json"
+    },
+    "manny/effects/awakening-aura": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/awakening-aura/clip.json"
+    },
+    "manny/effects/awakening-burst": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/awakening-burst/clip.json"
+    },
+    "mobdesert/effects/special1-fish": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/special1-fish/clip.json"
+    },
+    "mobdesert/effects/special2-dragon": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/special2-dragon/clip.json"
+    },
+    "mobdesert/effects/awakening-aura": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/awakening-aura/clip.json"
+    },
+    "mobdesert/effects/awakening-burst": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/awakening-burst/clip.json"
+    },
+    "shared/effects/hit-light": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/hit-light/clip.json"
+    },
+    "shared/effects/hit-heavy": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/hit-heavy/clip.json"
+    },
+    "shared/effects/charge": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/charge/clip.json"
+    },
+    "shared/effects/launch": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/launch/clip.json"
+    },
+    "shared/effects/slam": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/slam/clip.json"
+    },
+    "shared/effects/ranged": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/ranged/clip.json"
+    },
+    "shared/effects/rush-trail": {
+      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/rush-trail/clip.json"
+    }
+  },
+  "aliases": {
+    "denden/awakened-awakening-start": "denden/awakening-start",
+    "denden/awakened-blow": "denden/blow",
+    "denden/awakened-charge-hold": "denden/charge-hold",
+    "denden/awakened-charge-start": "denden/charge-start",
+    "denden/awakened-crouch": "denden/crouch",
+    "denden/awakened-damage": "denden/damage",
+    "denden/awakened-dash": "denden/dash",
+    "denden/awakened-death": "denden/death",
+    "denden/effects/awakened-awakening-burst": "denden/effects/awakening-burst",
+    "denden/effects/awakened-charge": "denden/effects/charge",
+    "denden/effects/awakened-hit-light": "denden/effects/hit-light",
+    "denden/effects/awakened-ranged": "denden/effects/ranged",
+    "denden/effects/awakened-rush-trail": "denden/effects/rush-trail",
+    "denden/effects/awakened-special1-aura": "denden/effects/special1-aura",
+    "denden/effects/awakened-special2-splash": "denden/effects/special2-splash",
+    "denden/awakened-jump": "denden/jump",
+    "denden/awakened-light1": "denden/light1",
+    "denden/awakened-rush": "denden/rush",
+    "denden/awakened-special1-active": "denden/special1-active",
+    "denden/awakened-special2-active": "denden/special2-active",
+    "denden/awakened-special2-recovery": "denden/special2-recovery",
+    "denden/awakened-walk": "denden/walk",
+    "denden/charge": "denden/charge-hold",
+    "denden/awakened-charge": "denden/charge-hold",
+    "denden/specialRush": "denden/special1-active",
+    "denden/awakened-specialRush": "denden/special1-active",
+    "denden/water": "denden/special2-active",
+    "denden/awakened-water": "denden/special2-active",
+    "denden/awakened-air1": "denden/air1",
+    "denden/awakened-air2": "denden/air2",
+    "denden/awakened-air3": "denden/air3",
+    "denden/awakened-awakening-end": "denden/awakening-end",
+    "denden/effects/awakened-awakening-aura": "denden/effects/awakening-aura",
+    "denden/effects/awakened-hit-heavy": "denden/effects/hit-heavy",
+    "denden/effects/awakened-launch": "denden/effects/launch",
+    "denden/effects/awakened-slam": "denden/effects/slam",
+    "denden/effects/awakened-special2-water": "denden/effects/special2-water",
+    "denden/awakened-guard": "denden/guard",
+    "denden/awakened-idle": "denden/idle",
+    "denden/awakened-launch": "denden/launch",
+    "denden/awakened-light2": "denden/light2",
+    "denden/awakened-light3": "denden/light3",
+    "denden/awakened-light4": "denden/light4",
+    "denden/awakened-ranged": "denden/ranged",
+    "denden/awakened-recovery": "denden/recovery",
+    "denden/awakened-slam": "denden/slam",
+    "denden/awakened-special1-recovery": "denden/special1-recovery",
+    "denden/awakened-special1-startup": "denden/special1-startup",
+    "denden/awakened-special2-startup": "denden/special2-startup",
+    "denden/dance": "denden/special1-startup",
+    "denden/awakened-dance": "denden/special1-startup",
+    "nyoro/awakened-air3": "nyoro/air3",
+    "nyoro/awakened-blow": "nyoro/blow",
+    "nyoro/awakened-charge-start": "nyoro/charge-start",
+    "nyoro/awakened-crouch": "nyoro/crouch",
+    "nyoro/awakened-dash": "nyoro/dash",
+    "nyoro/effects/awakened-awakening-aura": "nyoro/effects/awakening-aura",
+    "nyoro/effects/awakened-ranged": "nyoro/effects/ranged",
+    "nyoro/effects/awakened-slam": "nyoro/effects/slam",
+    "nyoro/effects/awakened-special2-splash": "nyoro/effects/special2-splash",
+    "nyoro/awakened-jump": "nyoro/jump",
+    "nyoro/awakened-launch": "nyoro/launch",
+    "nyoro/awakened-slam": "nyoro/slam",
+    "nyoro/awakened-special1-active": "nyoro/special1-active",
+    "nyoro/awakened-special1-recovery": "nyoro/special1-recovery",
+    "nyoro/specialRush": "nyoro/special1-active",
+    "nyoro/awakened-specialRush": "nyoro/special1-active",
+    "nyoro/awakened-air2": "nyoro/air2",
+    "nyoro/awakened-awakening-start": "nyoro/awakening-start",
+    "nyoro/awakened-charge-hold": "nyoro/charge-hold",
+    "nyoro/awakened-damage": "nyoro/damage",
+    "nyoro/effects/awakened-rush-trail": "nyoro/effects/rush-trail",
+    "nyoro/effects/awakened-special2-water": "nyoro/effects/special2-water",
+    "nyoro/awakened-guard": "nyoro/guard",
+    "nyoro/awakened-idle": "nyoro/idle",
+    "nyoro/awakened-light1": "nyoro/light1",
+    "nyoro/awakened-light3": "nyoro/light3",
+    "nyoro/awakened-ranged": "nyoro/ranged",
+    "nyoro/awakened-recovery": "nyoro/recovery",
+    "nyoro/awakened-rush": "nyoro/rush",
+    "nyoro/awakened-special2-recovery": "nyoro/special2-recovery",
+    "nyoro/charge": "nyoro/charge-hold",
+    "nyoro/awakened-charge": "nyoro/charge-hold",
+    "nyoro/awakened-air1": "nyoro/air1",
+    "nyoro/awakened-awakening-end": "nyoro/awakening-end",
+    "nyoro/awakened-death": "nyoro/death",
+    "nyoro/effects/awakened-awakening-burst": "nyoro/effects/awakening-burst",
+    "nyoro/effects/awakened-charge": "nyoro/effects/charge",
+    "nyoro/effects/awakened-hit-heavy": "nyoro/effects/hit-heavy",
+    "nyoro/effects/awakened-hit-light": "nyoro/effects/hit-light",
+    "nyoro/effects/awakened-launch": "nyoro/effects/launch",
+    "nyoro/effects/awakened-special1-aura": "nyoro/effects/special1-aura",
+    "nyoro/awakened-light2": "nyoro/light2",
+    "nyoro/awakened-light4": "nyoro/light4",
+    "nyoro/awakened-special1-startup": "nyoro/special1-startup",
+    "nyoro/awakened-special2-active": "nyoro/special2-active",
+    "nyoro/awakened-special2-startup": "nyoro/special2-startup",
+    "nyoro/awakened-walk": "nyoro/walk",
+    "nyoro/dance": "nyoro/special1-startup",
+    "nyoro/awakened-dance": "nyoro/special1-startup",
+    "nyoro/water": "nyoro/special2-active",
+    "nyoro/awakened-water": "nyoro/special2-active",
+    "tetsu/awakened-air3": "tetsu/air3",
+    "tetsu/awakened-awakening-end": "tetsu/awakening-end",
+    "tetsu/awakened-dash": "tetsu/dash",
+    "tetsu/effects/awakened-awakening-aura": "tetsu/effects/awakening-aura",
+    "tetsu/effects/awakened-awakening-burst": "tetsu/effects/awakening-burst",
+    "tetsu/effects/awakened-charge": "tetsu/effects/charge",
+    "tetsu/effects/awakened-hit-heavy": "tetsu/effects/hit-heavy",
+    "tetsu/effects/awakened-hit-light": "tetsu/effects/hit-light",
+    "tetsu/effects/awakened-launch": "tetsu/effects/launch",
+    "tetsu/effects/awakened-mob-slash-letters": "tetsu/effects/mob-slash-letters",
+    "tetsu/effects/awakened-rush-trail": "tetsu/effects/rush-trail",
+    "tetsu/effects/awakened-special2-splash": "tetsu/effects/special2-splash",
+    "tetsu/awakened-guard": "tetsu/guard",
+    "tetsu/awakened-jump": "tetsu/jump",
+    "tetsu/awakened-light1": "tetsu/light1",
+    "tetsu/awakened-light3": "tetsu/light3",
+    "tetsu/awakened-rush": "tetsu/rush",
+    "tetsu/awakened-slam": "tetsu/slam",
+    "tetsu/awakened-special2-recovery": "tetsu/special2-recovery",
+    "tetsu/awakened-special2-startup": "tetsu/special2-startup",
+    "tetsu/awakened-walk": "tetsu/walk",
+    "tetsu/awakened-air1": "tetsu/air1",
+    "tetsu/awakened-air2": "tetsu/air2",
+    "tetsu/awakened-awakening-start": "tetsu/awakening-start",
+    "tetsu/awakened-blow": "tetsu/blow",
+    "tetsu/awakened-charge-hold": "tetsu/charge-hold",
+    "tetsu/awakened-charge-start": "tetsu/charge-start",
+    "tetsu/awakened-crouch": "tetsu/crouch",
+    "tetsu/awakened-damage": "tetsu/damage",
+    "tetsu/awakened-death": "tetsu/death",
+    "tetsu/effects/awakened-mob-slash-trail": "tetsu/effects/mob-slash-trail",
+    "tetsu/effects/awakened-ranged": "tetsu/effects/ranged",
+    "tetsu/effects/awakened-slam": "tetsu/effects/slam",
+    "tetsu/effects/awakened-special1-aura": "tetsu/effects/special1-aura",
+    "tetsu/effects/awakened-special2-water": "tetsu/effects/special2-water",
+    "tetsu/awakened-idle": "tetsu/idle",
+    "tetsu/awakened-launch": "tetsu/launch",
+    "tetsu/awakened-light2": "tetsu/light2",
+    "tetsu/awakened-light4": "tetsu/light4",
+    "tetsu/awakened-ranged": "tetsu/ranged",
+    "tetsu/awakened-recovery": "tetsu/recovery",
+    "tetsu/awakened-special1-active": "tetsu/special1-active",
+    "tetsu/awakened-special1-recovery": "tetsu/special1-recovery",
+    "tetsu/awakened-special1-startup": "tetsu/special1-startup",
+    "tetsu/awakened-special2-active": "tetsu/special2-active",
+    "tetsu/charge": "tetsu/charge-hold",
+    "tetsu/awakened-charge": "tetsu/charge-hold",
+    "tetsu/dance": "tetsu/special1-startup",
+    "tetsu/awakened-dance": "tetsu/special1-startup",
+    "tetsu/specialRush": "tetsu/special1-active",
+    "tetsu/awakened-specialRush": "tetsu/special1-active",
+    "tetsu/water": "tetsu/special2-active",
+    "tetsu/awakened-water": "tetsu/special2-active",
+    "charge": {
+      "clip": "charge-hold"
+    },
+    "special1-startup": {
+      "clip": "special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "special1-active": {
+      "clip": "special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "special1-recovery": {
+      "clip": "special1",
+      "range": [
+        27,
+        32
+      ]
+    },
+    "dance": {
+      "clip": "special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "specialRush": {
+      "clip": "special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "special2-startup": {
+      "clip": "special2",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "special2-recovery": {
+      "clip": "special2",
+      "range": [
+        24,
+        32
+      ]
+    },
+    "awakened-charge": {
+      "clip": "awakened-charge-hold"
+    },
+    "awakened-special1-startup": {
+      "clip": "awakened-special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "awakened-special1-active": {
+      "clip": "awakened-special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "awakened-special1-recovery": {
+      "clip": "awakened-special1",
+      "range": [
+        27,
+        32
+      ]
+    },
+    "awakened-dance": {
+      "clip": "awakened-special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "awakened-specialRush": {
+      "clip": "awakened-special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "awakened-special2-startup": {
+      "clip": "awakened-special2",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "awakened-special2-recovery": {
+      "clip": "awakened-special2",
+      "range": [
+        24,
+        32
+      ]
+    },
+    "charge-release": {
+      "clip": "blow"
+    },
+    "awakened-charge-release": {
+      "clip": "awakened-blow"
+    },
+    "awakening-end": {
+      "clip": "awakened-awakening-end"
+    },
+    "awakened-awakening-start": {
+      "clip": "awakening-start"
+    },
+    "hero/effects/awakened-hit-light": {
+      "clip": "hero/effects/hit-light"
+    },
+    "hero/effects/awakened-hit-heavy": {
+      "clip": "hero/effects/hit-heavy"
+    },
+    "hero/effects/awakened-charge": {
+      "clip": "hero/effects/charge"
+    },
+    "hero/effects/awakened-launch": {
+      "clip": "hero/effects/launch"
+    },
+    "hero/effects/awakened-slam": {
+      "clip": "hero/effects/slam"
+    },
+    "hero/effects/awakened-ranged": {
+      "clip": "hero/effects/ranged"
+    },
+    "hero/effects/awakened-rush-trail": {
+      "clip": "hero/effects/rush-trail"
+    },
+    "hero/effects/awakened-special1-aura": {
+      "clip": "hero/effects/special1-aura"
+    },
+    "hero/effects/awakened-special2-water": {
+      "clip": "hero/effects/special2-water"
+    },
+    "hero/effects/awakened-special2-splash": {
+      "clip": "hero/effects/special2-splash"
+    },
+    "hero/effects/awakened-awakening-aura": {
+      "clip": "hero/effects/awakening-aura"
+    },
+    "hero/effects/awakened-awakening-burst": {
+      "clip": "hero/effects/awakening-burst"
+    },
+    "manny/awakened-idle": "manny/idle",
+    "manny/awakened-walk": "manny/walk",
+    "manny/awakened-dash": "manny/dash",
+    "manny/awakened-jump": "manny/jump",
+    "manny/awakened-light1": "manny/light1",
+    "manny/awakened-light2": "manny/light2",
+    "manny/awakened-light3": "manny/light3",
+    "manny/awakened-light4": "manny/light4",
+    "manny/awakened-charge-start": "manny/charge-start",
+    "manny/awakened-charge-hold": "manny/charge-hold",
+    "manny/awakened-blow": "manny/blow",
+    "manny/awakened-launch": "manny/launch",
+    "manny/awakened-ranged": "manny/ranged",
+    "manny/awakened-rush": "manny/rush",
+    "manny/awakened-air1": "manny/air1",
+    "manny/awakened-air2": "manny/air2",
+    "manny/awakened-air3": "manny/air3",
+    "manny/awakened-slam": "manny/slam",
+    "manny/awakened-damage": "manny/damage",
+    "manny/awakened-death": "manny/death",
+    "manny/awakened-recovery": "manny/recovery",
+    "manny/awakened-awakening-start": "manny/awakening-start",
+    "manny/awakened-awakening-end": "manny/awakening-end",
+    "manny/awakened-guard": "manny/guard",
+    "manny/awakened-crouch": "manny/crouch",
+    "manny/awakened-special1-startup": "manny/special1-startup",
+    "manny/awakened-special1-active": "manny/special1-active",
+    "manny/awakened-special1-recovery": "manny/special1-recovery",
+    "manny/awakened-special2-startup": "manny/special2-startup",
+    "manny/awakened-special2-active": "manny/special2-active",
+    "manny/awakened-special2-recovery": "manny/special2-recovery",
+    "mobdesert/awakened-idle": "mobdesert/idle",
+    "mobdesert/awakened-walk": "mobdesert/walk",
+    "mobdesert/awakened-dash": "mobdesert/dash",
+    "mobdesert/awakened-jump": "mobdesert/jump",
+    "mobdesert/awakened-light1": "mobdesert/light1",
+    "mobdesert/awakened-light2": "mobdesert/light2",
+    "mobdesert/awakened-light3": "mobdesert/light3",
+    "mobdesert/awakened-light4": "mobdesert/light4",
+    "mobdesert/awakened-charge-start": "mobdesert/charge-start",
+    "mobdesert/awakened-charge-hold": "mobdesert/charge-hold",
+    "mobdesert/awakened-blow": "mobdesert/blow",
+    "mobdesert/awakened-launch": "mobdesert/launch",
+    "mobdesert/awakened-ranged": "mobdesert/ranged",
+    "mobdesert/awakened-rush": "mobdesert/rush",
+    "mobdesert/awakened-air1": "mobdesert/air1",
+    "mobdesert/awakened-air2": "mobdesert/air2",
+    "mobdesert/awakened-air3": "mobdesert/air3",
+    "mobdesert/awakened-slam": "mobdesert/slam",
+    "mobdesert/awakened-damage": "mobdesert/damage",
+    "mobdesert/awakened-death": "mobdesert/death",
+    "mobdesert/awakened-recovery": "mobdesert/recovery",
+    "mobdesert/awakened-awakening-start": "mobdesert/awakening-start",
+    "mobdesert/awakened-awakening-end": "mobdesert/awakening-end",
+    "mobdesert/awakened-guard": "mobdesert/guard",
+    "mobdesert/awakened-crouch": "mobdesert/crouch",
+    "mobdesert/awakened-special1-startup": "mobdesert/special1-startup",
+    "mobdesert/awakened-special1-active": "mobdesert/special1-active",
+    "mobdesert/awakened-special1-recovery": "mobdesert/special1-recovery",
+    "mobdesert/awakened-special2-startup": "mobdesert/special2-startup",
+    "mobdesert/awakened-special2-active": "mobdesert/special2-active",
+    "mobdesert/awakened-special2-recovery": "mobdesert/special2-recovery",
+    "manny/effects/hit-light": "shared/effects/hit-light",
+    "manny/effects/awakened-hit-light": "shared/effects/hit-light",
+    "manny/effects/hit-heavy": "shared/effects/hit-heavy",
+    "manny/effects/awakened-hit-heavy": "shared/effects/hit-heavy",
+    "manny/effects/charge": "shared/effects/charge",
+    "manny/effects/awakened-charge": "shared/effects/charge",
+    "manny/effects/launch": "shared/effects/launch",
+    "manny/effects/awakened-launch": "shared/effects/launch",
+    "manny/effects/slam": "shared/effects/slam",
+    "manny/effects/awakened-slam": "shared/effects/slam",
+    "manny/effects/ranged": "shared/effects/ranged",
+    "manny/effects/awakened-ranged": "shared/effects/ranged",
+    "manny/effects/rush-trail": "shared/effects/rush-trail",
+    "manny/effects/awakened-rush-trail": "shared/effects/rush-trail",
+    "manny/effects/awakened-special1-bomb-pink": "manny/effects/special1-bomb-pink",
+    "manny/effects/awakened-special1-bomb-cyan": "manny/effects/special1-bomb-cyan",
+    "manny/effects/awakened-special1-bomb-green": "manny/effects/special1-bomb-green",
+    "manny/effects/awakened-special1-bomb-orange": "manny/effects/special1-bomb-orange",
+    "manny/effects/awakened-special1-bomb-purple": "manny/effects/special1-bomb-purple",
+    "manny/effects/awakened-special2-orb": "manny/effects/special2-orb",
+    "manny/effects/awakened-awakening-aura": "manny/effects/awakening-aura",
+    "manny/effects/awakened-awakening-burst": "manny/effects/awakening-burst",
+    "mobdesert/effects/hit-light": "shared/effects/hit-light",
+    "mobdesert/effects/awakened-hit-light": "shared/effects/hit-light",
+    "mobdesert/effects/hit-heavy": "shared/effects/hit-heavy",
+    "mobdesert/effects/awakened-hit-heavy": "shared/effects/hit-heavy",
+    "mobdesert/effects/charge": "shared/effects/charge",
+    "mobdesert/effects/awakened-charge": "shared/effects/charge",
+    "mobdesert/effects/launch": "shared/effects/launch",
+    "mobdesert/effects/awakened-launch": "shared/effects/launch",
+    "mobdesert/effects/slam": "shared/effects/slam",
+    "mobdesert/effects/awakened-slam": "shared/effects/slam",
+    "mobdesert/effects/ranged": "shared/effects/ranged",
+    "mobdesert/effects/awakened-ranged": "shared/effects/ranged",
+    "mobdesert/effects/rush-trail": "shared/effects/rush-trail",
+    "mobdesert/effects/awakened-rush-trail": "shared/effects/rush-trail",
+    "mobdesert/effects/awakened-special1-fish": "mobdesert/effects/special1-fish",
+    "mobdesert/effects/awakened-special2-dragon": "mobdesert/effects/special2-dragon",
+    "mobdesert/effects/awakened-awakening-aura": "mobdesert/effects/awakening-aura",
+    "mobdesert/effects/awakened-awakening-burst": "mobdesert/effects/awakening-burst"
+  }
 }

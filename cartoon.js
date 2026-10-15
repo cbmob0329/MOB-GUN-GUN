@@ -68,11 +68,20 @@ function cartoonMobSlash(a){
  if(phase===3)for(const e of a.mobTargets){if(a.mobLaunched.has(e))continue;a.mobLaunched.add(e);launchEnemy(e,a.dir*c.launchX,c.launchY);}
 }
 function cartoonReleaseArt(a){const prefix=selectedCharacter==='hero'?'':selectedCharacter+'/',form=cartoon.awake>0?'awakened-':'',key=a.unique?'special'+(a.specialIndex+1)+'-active':a.type==='water'?'special2-active':a.type;return cartoonArt[prefix+form+key]||cartoonArt[prefix+form+a.type];}
+// Special active clips include pre-release cels; release at their authored frame within the active window.
+function cartoonReleaseTime(a){
+ const timing=cartoonTiming[a.type];if(!timing)return 0;
+ if(!a.unique&&a.type!=='water')return timing[0];
+ const art=cartoonReleaseArt(a),index=art?.releaseFrame,first=art?.frameRange?.[0]||0,last=art?.frameRange?.[1]||art?.frames.length;
+ if(!Number.isInteger(index)||index<first||index>=last)return timing[0];
+ const offset=first?art.ends[first-1]:0,duration=art.ends[last-1]-offset,before=(index?art.ends[index-1]:0)-offset;
+ return timing[0]+(timing[1]-timing[0])*before/duration;
+}
 function cartoonReleaseOrigin(a){const socket=cartoonReleaseArt(a)?.releaseSocket;if(!socket)return null;const h=cartoonProfiles[selectedCharacter].displayBodyHeight||110;return {x:player.x+a.dir*socket[0]*h,y:player.y+socket[1]*h};}
 function cartoonReleasePose(art,a,age,duration){
  if(!a||art.releaseFrame===undefined)return cartoonFrame(art,age,duration);
  const first=art.frameRange?.[0]||0,last=art.frameRange?.[1]||art.frames.length,index=art.releaseFrame;if(index<first||index>=last)return cartoonFrame(art,age,duration);
- const event=cartoonTiming[a.type]?.[0];if(event===undefined)return cartoonFrame(art,age,duration);const localEvent=event-(a.age-age);
+ const event=cartoonTiming[a.type]?cartoonReleaseTime(a):undefined;if(event===undefined)return cartoonFrame(art,age,duration);const localEvent=event-(a.age-age);
  if(age<localEvent&&index>first)return cartoonFrame({...art,frameRange:[first,index],loop:false},age,Math.max(.000001,localEvent));
  return cartoonFrame({...art,frameRange:[index,last],loop:false},Math.max(0,age-localEvent),Math.max(.000001,duration-localEvent));
 }
@@ -105,7 +114,7 @@ function cartoonStep(dt){
     if(a.type==='rush')cartoonHit(a,155,42,-260);
     if(a.type==='specialRush')cartoonHit(a,a.empowered?190:135,a.empowered?88:60,-400);
    }
-   if((a.type==='ranged'&&a.age>=.09||a.type==='water'&&a.age>=.36)&&!a.fired){a.fired=true;cartoonShot(a,a.type==='water');}
+   if((a.type==='ranged'&&a.age>=.09||a.type==='water'&&a.age>=cartoonReleaseTime(a))&&!a.fired){a.fired=true;cartoonShot(a,a.type==='water');}
    if(a.age>=a.duration){if(a.type==='air'&&a.index===3){cartoonAction('slam',{duration:.32});player.vy=850;}else{const queue=cartoon.queued&&cartoon.buffer>0;cartoon.action=null;cartoon.queued=false;if(a.type==='light')cartoon.window=CARTOON.comboWindow;if(queue&&!cartoon.charge)cartoonWeak();}}
   }
  }
@@ -180,7 +189,7 @@ if(cartoonEnabled){
  window.addEventListener('blur',cartoonCancel);
 }
 function cartoonDrawHero(){
- if(!cartoonDrawCharacter())text(cartoonProfiles[selectedCharacter].name+' / 16コマ素材待ち',player.x-camera,player.y-45,16);
+ if(!cartoonDrawCharacter())text(cartoonProfiles[selectedCharacter].name+' / 読み込み中',player.x-camera,player.y-45,16);
 }
 const cartoonTextures=new Map(),cartoonLoading=new Map(),cartoonAssetErrors=[];
 const cartoonTextureBudget=64*1024*1024;
@@ -328,7 +337,7 @@ if(cartoonEnabled){
  };
  const oldImage=playerImage;playerImage=function(){if(cartoonActive()&&selectedCharacter==='denden'){if(cartoon.charge)return skillSprites[Math.floor(player.anim*12)%8];if(cartoon.action)return sprites[24+Math.floor(cartoon.action.age*24)%8];}return oldImage();};
  const oldNyoroDraw=drawNyoro;drawNyoro=function(){const prior=nyoroAction;if(cartoonActive()&&cartoon.action){const a=cartoon.action;nyoroAction={type:a.type==='launch'?'upper':a.type==='water'?'meteor':'normal',age:a.age,dir:a.dir};}try{oldNyoroDraw();}finally{nyoroAction=prior;}};
- const hero=document.createElement('button');hero.dataset.character='hero';hero.textContent='モブラミ（16コマ素材待ち）';hero.setAttribute('aria-pressed','false');hero.onclick=()=>selectCharacter('hero');document.querySelector('.character-options').prepend(hero);
+ const hero=document.createElement('button');hero.dataset.character='hero';hero.textContent='モブラミ';hero.setAttribute('aria-pressed','false');hero.onclick=()=>selectCharacter('hero');document.querySelector('.character-options').prepend(hero);
  partyInfo.hero={name:'モブラミ',short:'モブラミ',line:'',color:'#ff80cd'};
  const baseParty=resetParty;resetParty=function(){baseParty();party.hero={hp:CONFIG.maxHP,regen:0,revive:0};const b=document.createElement('button');b.className='party-slot';b.dataset.party='hero';b.innerHTML='<span class="party-name">モブラミ</span><small></small>';b.onclick=()=>switchParty('hero');$('party').prepend(b);};
  fetch('combat/cartoon-manifest.json').then(r=>r.json()).then(loadCartoonArt).catch(()=>{});
@@ -378,14 +387,14 @@ function cartoonUniqueSpecial(a){
  const origin=cartoonReleaseOrigin(a);
  const emit=(fx,x,y,vx,vy,r,damage,color,delay=0)=>cartoon.shots.push({fx,x:origin?origin.x:x,y:origin?origin.y:y,vx,vy,r,damage:damage*(a.empowered?1.35:1),color,delay,age:0,life:2.4,hit:new Set(),dir:a.dir});
  if(a.type==='desertSpin')cartoonHit(a,145,a.empowered?48:34,-300);
- if(a.fired)return;a.fired=true;const x=player.x,y=player.y-55;
+ if(a.fired||a.age<cartoonReleaseTime(a))return;a.fired=true;const x=player.x,y=player.y-55;
  if(a.type==='mannyBombs'){const n=a.empowered?8:5;for(let i=0;i<n;i++)emit('special1-bomb-'+['pink','cyan','green','orange','purple'][i%5],x+a.dir*(35+i*17),y-20-Math.sin(i/(n-1)*Math.PI)*55,a.dir*(240+i*30),65,18,12,['#ff83bb','#78edff','#8de985','#ffaa55','#bd89ff'][i%5],.12*i);}
  if(a.type==='mannyOrb')emit('special2-orb',x+a.dir*70,y-20,a.dir*360,0,a.empowered?94:72,70,'#c76cff');
  if(a.type==='desertSpin'){for(let i=0;i<(a.empowered?7:4);i++)emit('special1-fish',x+a.dir*40,y,a.dir*(380+i*25),90+i*35,22,10,'#b588ff');}
  if(a.type==='desertDragon')emit('special2-dragon',x+a.dir*85,y-10,a.dir*470,0,a.empowered?105:80,82,'#a877d9');
 }
 if(cartoonEnabled){
- for(const id of ['manny','mobdesert']){partyInfo[id]={name:cartoonProfiles[id].name,short:cartoonProfiles[id].name,line:'',color:cartoonProfiles[id].color};const b=document.createElement('button');b.dataset.character=id;b.textContent=cartoonProfiles[id].name+'（素材待ち）';b.onclick=()=>selectCharacter(id);document.querySelector('.character-options').append(b);}
+ for(const id of ['manny','mobdesert']){partyInfo[id]={name:cartoonProfiles[id].name,short:cartoonProfiles[id].name,line:'',color:cartoonProfiles[id].color};const b=document.createElement('button');b.dataset.character=id;b.textContent=cartoonProfiles[id].name;b.onclick=()=>selectCharacter(id);document.querySelector('.character-options').append(b);}
  const oldParty=resetParty;resetParty=function(){oldParty();for(const id of ['manny','mobdesert']){party[id]={hp:CONFIG.maxHP,regen:0,revive:0};const b=document.createElement('button');b.className='party-slot';b.dataset.party=id;b.title=partyInfo[id].name;b.setAttribute('aria-label',partyInfo[id].name+'に切り替え');const label=document.createElement('span');label.className='party-name';label.textContent=partyInfo[id].name;b.append(label,document.createElement('small'));b.onclick=()=>switchParty(id);$('party').append(b);}};
  const previousCancelNew=cartoonCancel;cartoonCancel=function(){previousCancelNew();cartoon.shots=cartoon.shots.filter(s=>!s.fx);};
  const oldNewUI=cartoonUI;cartoonUI=function(){oldNewUI();if(!['manny','mobdesert'].includes(selectedCharacter))return;const names=selectedCharacter==='manny'?['浮遊ボム群','巨大エネルギー球']:['回転斬り・魚群','紫煙の龍'];skillButtons.forEach((b,i)=>{if(i<2){b.title=names[i];b.setAttribute('aria-label',names[i]);if(cartoon.cooldowns[i]<=0)b.querySelector('small').textContent=names[i];const img=b.querySelector('img');if(img)img.hidden=true;}});};

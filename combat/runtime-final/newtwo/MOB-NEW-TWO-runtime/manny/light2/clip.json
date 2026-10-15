@@ -1,0 +1,358 @@
+{
+  "character": "manny",
+  "clip": "light2",
+  "status": "trimmed_review_candidate",
+  "bodyHeight": 220.0,
+  "bodyHeightDefinition": "Neutral visible head and body from black face below hat to boot soles, measured approximately250sourcepx. Witchhat, extended staff, cape extensions and FX excluded.",
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "frameCount": 16,
+  "durationUnits": "seconds",
+  "pivotUnits": "frame-local source pixels",
+  "knownIssues": [
+    "User and runtime acceptance pending.",
+    "Minor staff perspective and garment shape variation across individually authored cels.",
+    "Three newly drawn repair cels normalized uniformly to0.56× to match phase-page head scale; this is source size normalization, not added animation."
+  ],
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        385,
+        1235,
+        313,
+        321
+      ],
+      "duration": 0.035,
+      "pivot": [
+        197.0,
+        314.04
+      ],
+      "headBodyBounds": [
+        77.32000000000001,
+        97.56,
+        291.16,
+        314.04
+      ],
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        882,
+        605,
+        368,
+        315
+      ],
+      "duration": 0.035,
+      "pivot": [
+        248.04,
+        299.96
+      ],
+      "headBodyBounds": [
+        71.16,
+        111.64,
+        340.44,
+        299.96
+      ],
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        817,
+        936,
+        359,
+        301
+      ],
+      "duration": 0.04,
+      "pivot": [
+        182.16,
+        298.32
+      ],
+      "headBodyBounds": [
+        113.52,
+        85.36,
+        315.04,
+        298.32
+      ],
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        8,
+        938,
+        361,
+        315
+      ],
+      "duration": 0.045,
+      "pivot": [
+        206.68,
+        312.28000000000003
+      ],
+      "headBodyBounds": [
+        57.08,
+        109.88,
+        338.68,
+        312.28000000000003
+      ],
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        714,
+        1253,
+        295,
+        303
+      ],
+      "duration": 0.035,
+      "pivot": [
+        122.32000000000001,
+        300.08
+      ],
+      "headBodyBounds": [
+        31.68,
+        87.12,
+        292.16,
+        300.08
+      ],
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        490,
+        291,
+        426,
+        298
+      ],
+      "duration": 0.03,
+      "pivot": [
+        248.04,
+        292.92
+      ],
+      "headBodyBounds": [
+        37.72,
+        115.16,
+        339.56,
+        292.92
+      ],
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        8,
+        8,
+        466,
+        289
+      ],
+      "duration": 0.025,
+      "pivot": [
+        245.4,
+        280.72
+      ],
+      "headBodyBounds": [
+        41.24,
+        110.88,
+        338.68,
+        280.72
+      ],
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        490,
+        8,
+        462,
+        267
+      ],
+      "duration": 0.035,
+      "pivot": [
+        233.08,
+        260.36
+      ],
+      "headBodyBounds": [
+        30.68,
+        101.96,
+        372.12,
+        260.36
+      ],
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        8,
+        313,
+        424,
+        285
+      ],
+      "duration": 0.035,
+      "pivot": [
+        195.24,
+        282.36
+      ],
+      "headBodyBounds": [
+        42.12,
+        95.8,
+        314.04,
+        282.36
+      ],
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        448,
+        605,
+        418,
+        299
+      ],
+      "duration": 0.035,
+      "pivot": [
+        197.0,
+        288.64
+      ],
+      "headBodyBounds": [
+        51.8,
+        94.16,
+        306.12,
+        288.64
+      ],
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        8,
+        614,
+        411,
+        308
+      ],
+      "duration": 0.035,
+      "pivot": [
+        188.2,
+        294.68
+      ],
+      "headBodyBounds": [
+        32.44,
+        94.92,
+        281.48,
+        294.68
+      ],
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        435,
+        920,
+        366,
+        299
+      ],
+      "duration": 0.035,
+      "pivot": [
+        175.88,
+        291.16
+      ],
+      "headBodyBounds": [
+        31.560000000000002,
+        93.16,
+        268.28000000000003,
+        291.16
+      ],
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        616,
+        1572,
+        253,
+        312
+      ],
+      "duration": 0.04,
+      "pivot": [
+        114.4,
+        308.88
+      ],
+      "headBodyBounds": [
+        26.4,
+        89.76,
+        227.04,
+        308.88
+      ],
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        968,
+        8,
+        297,
+        319
+      ],
+      "duration": 0.04,
+      "pivot": [
+        151.24,
+        316.8
+      ],
+      "headBodyBounds": [
+        33.32,
+        110.0,
+        282.36,
+        316.8
+      ],
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        314,
+        1572,
+        286,
+        316
+      ],
+      "duration": 0.04,
+      "pivot": [
+        160.04,
+        313.16
+      ],
+      "headBodyBounds": [
+        50.04,
+        114.28,
+        268.28000000000003,
+        313.16
+      ],
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        8,
+        1572,
+        290,
+        316
+      ],
+      "duration": 0.04,
+      "pivot": [
+        144.2,
+        313.16
+      ],
+      "headBodyBounds": [
+        29.8,
+        113.4,
+        274.44,
+        313.16
+      ],
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/manny/light2/manny-light2-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 250,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.88,
+    "actualBodyPixels": 220.0,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/manny/light2/clip.json"
+  }
+}

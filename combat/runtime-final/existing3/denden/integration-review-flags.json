@@ -1,0 +1,567 @@
+{
+  "character": "denden",
+  "scope": "Existing3 required art and runtime copies only. Not all6 game completion.",
+  "actualGameAccepted": false,
+  "requiredBodyDrawings": 496,
+  "requiredEffectDrawings": 192,
+  "normalAwakenedBodyReuse": "All31 normal16-cel tracks reused by awakened aliases; no separate awakened body drawings counted. Separate16-cel character aura included.",
+  "knownVisualReviewFlags": [
+    "Special1 active8→9 and11→12: repaired far-leg cels9–11 have a narrower hood and forward pistol placement; independent static review accepted a pre-runtime candidate but playback pops remain flagged.",
+    "Special2 startup10→11 is a fast overhead-to-downcast transition. The composite preview used an illustrative jump path, not game physics.",
+    "Per-clip anatomical body-height estimates vary. Do not use per-frame fit scaling to hide source proportion drift.",
+    "Projectile release sockets must be reconciled with actual projectile physics, not solely visual FX offsets."
+  ],
+  "reviewMethod": "Source/contact and decoded-file/coordinate validation; not an in-engine gameplay approval.",
+  "sourceRecords": [
+    {
+      "action": "special2-startup",
+      "kind": "body",
+      "metadata": "denden/special2/startup/denden-special2-startup-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Two guns retained; all16 newly drawn poses.",
+          "First4 use feet anchor, last12 use measured airborne pelvis. Runtime owns jump worldY.",
+          "Overhead10 to downward11 is fast transition; actual game motion acceptance pending."
+        ]
+      }
+    },
+    {
+      "action": "air2",
+      "kind": "body",
+      "metadata": "denden/air2/denden-air2-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 distinct source drawings show a reverse twist/backhand, not the air1 shot reused.",
+          "Two guns present in all cels; far grip naturally occluded behind forearm/body at some follow-through angles.",
+          "Virtual torso root uses hoodie hem65px above sole anchor, upper-hood x. No foot-baseline flattening.",
+          "Integer registration only; world trajectory and air-chain seam need actual-game review."
+        ]
+      }
+    },
+    {
+      "action": "ranged",
+      "kind": "body",
+      "metadata": "denden/ranged/denden-ranged-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Original v1 is genuinely transparent: colored zero-alpha RGB only appeared in raw viewer; neutral compositing verified clean background. Unneeded v2 edit retained but not selected or counted.",
+          "Sixteen original source drawings selected once each, curated order returns from recoil to aim then lower; no repeated or mirror padding.",
+          "Single extended firing pistol, second held near torso; both guns remain present.",
+          "Source frame sizes unscaled, only integer ground registration. RangedFX exists separately."
+        ]
+      }
+    },
+    {
+      "action": "charge-hold",
+      "kind": "body",
+      "metadata": "denden/charge-hold/denden-charge-hold-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 newly drawn source cels; body height varies238–249px, a small breathing excursion.",
+          "Nominal upright bodyHeight261 derives from charge-start253 and hood-width ratio171/166; not per-frame fit scaling.",
+          "Source pixels unscaled. Exact2 guns remain visibly separate, planted knees and short chibi maintained.",
+          "Charge-start seam, restrained hold subtlety and actual-size playback remain runtime review."
+        ]
+      }
+    },
+    {
+      "action": "crouch",
+      "kind": "body",
+      "metadata": "denden/crouch/denden-crouch-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Static source review:16 sequential drawn poses, consistent yellow/pink cat identity, exactly two held pistols.",
+          "No obvious clipping/cross-cell contamination; final registered contact review pending.",
+          "Real-time playback and runtime state/phase transitions remain unverified."
+        ]
+      }
+    },
+    {
+      "action": "blow",
+      "kind": "body",
+      "metadata": "denden/blow/denden-blow-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 distinct source-drawn poses; exact2guns and2arms checked.",
+          "Rightmost sourcecel08 has4px visible alpha clearance, no actual gun clipping; registered frame has ample margins.",
+          "No baked shot FX; event timing and heavy hit effect remain integration work."
+        ]
+      }
+    },
+    {
+      "action": "jump",
+      "kind": "body",
+      "metadata": "denden/jump/denden-jump-16.json",
+      "recordedReview": {
+        "status": "16-cel review candidate; runtime jump phase alignment pending",
+        "qc": [
+          "16 distinct newly drawn poses: squat, extension, tuck, release, landing and recovery.",
+          "Exactly two held pistols, short chibi proportions.",
+          "Static contact review and actual game jump timing/pose continuity pending."
+        ]
+      }
+    },
+    {
+      "action": "light2",
+      "kind": "body",
+      "metadata": "denden/light2/denden-light2-16.json",
+      "recordedReview": {
+        "status": "16-cel candidate; pending actual-size in-game motion acceptance",
+        "qc": [
+          "16 distinct new drawings with rear windup, torso turn, extended near-arm contact and recovery.",
+          "Exactly two pistols; original requested pistol-butt emphasis became a forward lunging pistol strike, not another straight gunshot sequence.",
+          "Some gun/hood line drift remains; test at game size.",
+          "Real-time motion has not been visually watched in cloud."
+        ]
+      }
+    },
+    {
+      "action": "damage",
+      "kind": "body",
+      "metadata": "denden/damage/denden-damage-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Static source review:16 sequential drawn poses, consistent yellow/pink cat identity, exactly two held pistols.",
+          "No obvious clipping/cross-cell contamination; final registered contact review pending.",
+          "Real-time playback and runtime state/phase transitions remain unverified."
+        ]
+      }
+    },
+    {
+      "action": "special1-startup",
+      "kind": "body",
+      "metadata": "denden/special1/startup/denden-special1-startup-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 distinct dance anticipation drawings, twoheldguns, no baked aura.",
+          "Foot contacts change on dance; cel10 is a heelhop, candidate verticalclearance not finalphysics.",
+          "Must be joined to16active and16recovery with shared nominalscale."
+        ]
+      }
+    },
+    {
+      "action": "walk",
+      "kind": "body",
+      "metadata": "denden/walk/denden-walk-16.json",
+      "recordedReview": {
+        "status": "16-drawing gait candidate; visual/motion acceptance pending",
+        "qc": {
+          "nearFarLegIdentity": "Bright near leg / shaded far leg. Contact, passing, opposite contact, passing order inspected.",
+          "provisionalConcerns": [
+            "Four source blocks may show proportion/line consistency drift; inspect normalized contact sheet and actual-size motion.",
+            "bodyHeight264 is provisional registration-scale reference.",
+            "Real-time animation has not been visually watched in cloud.",
+            "Frame13–16 legs shortened by imagegen to correct block4 proportion jump."
+          ]
+        }
+      }
+    },
+    {
+      "action": "launch",
+      "kind": "body",
+      "metadata": "denden/launch/denden-launch-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Sourcecel10 missing near-hand pistol repaired by imagegen, other15 original cels retained.",
+          "Corrected single cel normalized from1447x1087 to362x272 source canvas, then integer registration.",
+          "Two guns verified in all16, full tips/ears/paws inside atlas cells.",
+          "Upward FX synchronization and actual-size motion acceptance pending."
+        ]
+      }
+    },
+    {
+      "action": "rush",
+      "kind": "body",
+      "metadata": "denden/rush/denden-rush-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Cel02 extra central gun-shaped object removed by imagegen; exactly two outer pistols retained, other15 source cels unchanged.",
+          "Body, broad armspread and weapon tips remain fully within registered cells.",
+          "Wide attack, distinct from special1 aura rush; body only, no baked effects.",
+          "Full action timing, width of hitbox and pose continuity still pending actual-game review."
+        ]
+      }
+    },
+    {
+      "action": "air1",
+      "kind": "body",
+      "metadata": "denden/air1/denden-air1-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "All16 source cels genuinely drawn and airborne, with2 held guns and tucked/counterbalancing legs.",
+          "Virtual torso root: lower hoodie hem kept65px above nominal sole root; head-center x from upper pink hood.",
+          "Integer registration only. Body sprite provides local articulation, engine owns ballistic world-y.",
+          "Air-combo transitions and virtual-root/bodyHeight tuning need runtime review."
+        ]
+      }
+    },
+    {
+      "action": "special2-active",
+      "kind": "body",
+      "metadata": "denden/special2/active/denden-special2-active-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Selectedv2 has imagegen background extraction; v1 had opaque haze and is rejected for runtime.",
+          "16 distinct source poses,2guns and no baked energy.",
+          "Manually registered airborne pelvis, same nominal248 source-body-height as startup; runtime owns trajectory."
+        ]
+      }
+    },
+    {
+      "action": "dash",
+      "kind": "body",
+      "metadata": "denden/dash/denden-dash-16.json",
+      "recordedReview": {
+        "status": "16-cel alternating-run candidate; static and actual-motion review pending",
+        "qc": [
+          "Bright near leg and dark far leg actually exchange contact/support/passing roles.",
+          "Source blocks differ in line/proportion detail; test at game size.",
+          "Real-time motion and loop wrap not yet visually reviewed."
+        ]
+      }
+    },
+    {
+      "action": "awakening-end",
+      "kind": "body",
+      "metadata": "denden/awakening-end/denden-awakening-end-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 newly drawn poses, not reverse playback of awakening-start.",
+          "Two pistols held throughout, no new costume or bakedFX; runtime review pending."
+        ]
+      }
+    },
+    {
+      "action": "light4",
+      "kind": "body",
+      "metadata": "denden/light4/denden-light4-16.json",
+      "recordedReview": {
+        "status": "16-cel candidate; pending actual-size in-game motion acceptance",
+        "qc": [
+          "16 distinct new drawings with double-gun gathering, broad brace, two-arm contact, recoil and recovery.",
+          "Two pistols remain independently visible; both hands hold a gun throughout; no FX baked into body.",
+          "Some gun/hood line drift remains; test at game size.",
+          "Real-time motion has not been visually watched in cloud."
+        ]
+      }
+    },
+    {
+      "action": "special2-recovery",
+      "kind": "body",
+      "metadata": "denden/special2/recovery/denden-special2-recovery-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 distinct recovery poses,2guns throughout; actual first ground contact is cel4.",
+          "First3 airborne pelvis root, last13 feet root. Runtime owns worldY before landing.",
+          "Nominal source bodyHeight248 shared with both earlier special2 phases; no per-frame fitting."
+        ]
+      }
+    },
+    {
+      "action": "slam",
+      "kind": "body",
+      "metadata": "denden/slam/denden-slam-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "All16 source poses are distinct; exactly2 pistols retained. No bakedFX.",
+          "First6 use manually registered airborne pelvis; cels7–16 use grounded foot-midpoint. Runtime owns worldY before contact.",
+          "16-cel static review only; actual animation/physics timing pending."
+        ]
+      }
+    },
+    {
+      "action": "light1",
+      "kind": "body",
+      "metadata": "denden/proof-light1/denden-light1-16.json",
+      "recordedReview": {
+        "status": "16-frame proof; not final production acceptance",
+        "notes": [
+          "Sixteen newly drawn chronological phases; no duplicate padding.",
+          "Only lossless cell extraction and integer translation registration used; those translations are not the source animation.",
+          "No script repainting, rotation, morphing or scaling.",
+          "Face/hood/gun detail consistency and temporal smoothness still need human/in-engine acceptance.",
+          "Body VFX separate: fx-ranged-proof contains16 newly drawn lightning phases. Composite preview is timing demonstration only."
+        ]
+      }
+    },
+    {
+      "action": "air3",
+      "kind": "body",
+      "metadata": "denden/air3/denden-air3-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 newly drawn body poses, both pistols visible, no extra arms/guns or cut-off tips.",
+          "Manual pelvis sockets keep hip reference60px above nominal sole root, allowing actual forward head motion during downward fold.",
+          "World-y trajectory belongs to runtime. No foot-baseline normalization for airborne motion.",
+          "Integer extraction/registration only; no generated inbetweens or transforms used to create cels.",
+          "Air3 contact and transition to slam need runtime review."
+        ]
+      }
+    },
+    {
+      "action": "awakening-start",
+      "kind": "body",
+      "metadata": "denden/awakening-start/denden-awakening-start-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 distinct source drawings; exactly2 pistols retained, no bakedFX or new costume.",
+          "Body proportions and weapon silhouette reviewed at source and registered sheet; actual game playback pending."
+        ]
+      }
+    },
+    {
+      "action": "death",
+      "kind": "body",
+      "metadata": "denden/death/denden-death-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Two held pistols and two legs remain identifiable throughout source sequence. No injury marks or baked FX.",
+          "Manual pelvis-over-ground root follows fall; visible supporting feet/back/hood sit on common y=420.",
+          "Integer translation only; all16 source drawings retained once, no digital pose construction.",
+          "Actual-time playback and death-to-recovery root transition pending."
+        ]
+      }
+    },
+    {
+      "action": "special1-recovery",
+      "kind": "body",
+      "metadata": "denden/special1/recovery/denden-special1-recovery-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "16 distinct recovery drawings; no reverse-frame reuse.",
+          "Nominal bodyHeight from last neutral pose, not low first braking pose. All2guns retained."
+        ]
+      }
+    },
+    {
+      "action": "special1-active",
+      "kind": "body",
+      "metadata": "denden/special1/active/denden-special1-active-16.json",
+      "recordedReview": {
+        "qc": [
+          "Gait replacement selects only first3 repaired block cels; unused fourth has insufficient weapon visibility.",
+          "Near-leg lead1-5, passing6-8, far-leg lead9-10, near-leg passing11, next-drive12-13, brake14-16.",
+          "Repaired block has slightly different head aspect and front-held arms; whole-motion runtime continuity review still pending.",
+          "Original grid dividers are outside component-bound crop rectangles; no programmatic background removal."
+        ],
+        "independentReview": {
+          "reviewer": "Tetsu character artist",
+          "UTC": "2026-10-15T07:06:50Z",
+          "finding": "Acceptable as clearly labeled pre-runtime candidate; no hard anatomy/weapon defect, far-leg-leading interval readable.",
+          "flaggedTransitions": [
+            "8to9",
+            "11to12"
+          ],
+          "detail": "Repair cels9–11 have narrower/more pointed hood and both guns forward; possible visible pop requires playback review."
+        }
+      }
+    },
+    {
+      "action": "light3",
+      "kind": "body",
+      "metadata": "denden/light3/denden-light3-16.json",
+      "recordedReview": {
+        "status": "16-cel candidate; pending actual-size in-game motion acceptance",
+        "qc": [
+          "16 distinct new drawings with low coil, upward contact, high arc and recovery.",
+          "Original frames8 and12 had an unwanted third waist pistol; imagegen corrected those two cels, keeping the two held guns.",
+          "Some gun/hood line drift remains; test at game size.",
+          "Real-time motion has not been visually watched in cloud."
+        ]
+      }
+    },
+    {
+      "action": "charge-start",
+      "kind": "body",
+      "metadata": "denden/charge-start/denden-charge-start-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Static sheet checked: two held pistols, compact chibi, no baked charge FX.",
+          "All16 poses are newly drawn; no duplicate or rigid-transform padding.",
+          "Final charge-hold transition and actual-size playback pending."
+        ]
+      }
+    },
+    {
+      "action": "guard",
+      "kind": "body",
+      "metadata": "denden/guard/denden-guard-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Static source review: two held pistols, two legs, clear crossed-arm brace without invented shield.",
+          "Each pose is newly drawn; no repeated-padding frames.",
+          "Await actual-size playback, guard input/state mapping and transition review."
+        ]
+      }
+    },
+    {
+      "action": "idle",
+      "kind": "body",
+      "metadata": "denden/idle/denden-idle-16.json",
+      "recordedReview": {
+        "status": "16-cel candidate; pending actual-size in-game motion acceptance",
+        "qc": [
+          "16 distinct source drawings; no duplicate padding or procedural pose synthesis.",
+          "Static contact-sheet review complete. Restrained changes include chest, knee bend, wrists and tail.",
+          "Real-time motion has not been visually watched in cloud; loop pacing and frame-to-frame line drift need in-game review."
+        ]
+      }
+    },
+    {
+      "action": "recovery",
+      "kind": "body",
+      "metadata": "denden/recovery/denden-recovery-16.json",
+      "recordedReview": {
+        "status": "16-cel static-review candidate; in-engine acceptance pending",
+        "qc": [
+          "Missing pistol in sourcecel06 corrected by imagegen; other15 source cels preserved.",
+          "Corrected single-cel output1450x1085 normalized uniformly to362x271 original cell canvas; no pose synthesis.",
+          "Manual pelvis-over-ground root for lying/seated phases; no per-frame size fitting.",
+          "Fall-to-get-up scale and root transition, plus actual playback, need runtime acceptance.",
+          "Replacement assembled from a separate cel rather than pasted over a sheet grid; preserves neighboring cel10 hood that extends into grid gutter."
+        ]
+      }
+    },
+    {
+      "action": "ranged",
+      "kind": "effects",
+      "metadata": "denden/proof-light1/fx-ranged-proof/metadata.json",
+      "recordedReview": {
+        "status": "proof_not_production_approved",
+        "qc": {
+          "gridIssue": "Beam7 crosses nominal 384px grid; custom crop ends at x1184 in clear visible gap. No beam was clipped or erased.",
+          "alphaPreserved": true,
+          "all16VisibleBoundsInsideCells": true,
+          "realTimePlaybackVisuallyVerified": false
+        }
+      }
+    },
+    {
+      "action": "rush-trail",
+      "kind": "effects",
+      "metadata": "denden/effects/rush-trail/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "awakening-burst",
+      "kind": "effects",
+      "metadata": "awakening-fx/denden/activation-burst/metadata.json",
+      "recordedReview": {
+        "status": "packaged_art_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "charge",
+      "kind": "effects",
+      "metadata": "denden/effects/charge/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "launch",
+      "kind": "effects",
+      "metadata": "denden/effects/launch/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "hit-heavy",
+      "kind": "effects",
+      "metadata": "denden/effects/hit-heavy/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "special2-splash",
+      "kind": "effects",
+      "metadata": "denden/effects/special2-splash/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "awakening-aura",
+      "kind": "effects",
+      "metadata": "awakening-fx/denden/aura-loop/metadata.json",
+      "recordedReview": {
+        "status": "packaged_art_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "hit-light",
+      "kind": "effects",
+      "metadata": "denden/effects/hit-light/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "slam",
+      "kind": "effects",
+      "metadata": "denden/effects/slam/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "special2-water",
+      "kind": "effects",
+      "metadata": "denden/effects/special2-water/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    },
+    {
+      "action": "special1-aura",
+      "kind": "effects",
+      "metadata": "denden/effects/special1-aura/metadata.json",
+      "recordedReview": {
+        "status": "static-review candidate; runtime scale, socket and timing pending"
+      }
+    }
+  ],
+  "sourceEdgeCaveat": "Some Nyoro/Tetsu FX source cell edges retain faint alpha up to16/255. Runtime export preserves these source pixels; all8px runtime gutters are transparent. This is source haze, not runtime crop loss.",
+  "releaseSocketContract": "Actual projectile releaseSocket and zero-based local releaseFrame are exported on the emitting BODY animation manifest entry, alongside adapter; moving projectile FX socketOffset is zero. Manual measurements retain several source-pixel uncertainty and require gameplay visual confirmation.",
+  "additionalStaticReadabilitySeverity": {
+    "blockingFindings": [],
+    "moderatePolishGroups": [
+      {
+        "character": "denden",
+        "actions": [
+          "special1-startup",
+          "special1-active",
+          "special1-recovery"
+        ],
+        "finding": "Dance-to-propulsion-to-braking is intelligible. Repaired active9–11 changes hood silhouette and pistol placement at joins; motion pop, not missing attack."
+      }
+    ],
+    "scopeAndLimit": "Inspected6 evenly spaced poses (1,4,7,10,13,16) for16 body tracks per character,48 tracks total. Full16 enlarged sheets additionally inspected for Tetsu special1-startup and special2-active, Denden charge-hold, Nyoro charge-hold. Prior independent review covers all12 weak tracks, Nyoro special1 full48 and Denden special1 active16. Source artists retained their per-track reviews.",
+    "gameplayAcceptance": false
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "character": "manny",
+  "action": "special2-active",
+  "releaseFrame": 7,
+  "staffTipSocket": [
+    0.6784999999999999,
+    -1.3373333333333333
+  ],
+  "orbSourceSeedEmitterCel01": [
+    157,
+    276
+  ],
+  "orbSourceCenterPivotCel01": [
+    157,
+    157
+  ],
+  "sourceToDisplayScale": 0.72,
+  "displayBodyHeight": 80,
+  "visualCenterOffsetDisplayPx": [
+    0,
+    -85.68
+  ],
+  "releaseCenterOffsetNormalized": [
+    0,
+    -1.071
+  ],
+  "releaseSocket": [
+    0.6784999999999999,
+    -2.408333333333333
+  ],
+  "releaseWorldPositionAtManny80": {
+    "rightFacing": [
+      "P.x + 54.28",
+      "P.y - 192.66666666666666"
+    ],
+    "leftFacing": [
+      "P.x - 54.28",
+      "P.y - 192.66666666666666"
+    ]
+  },
+  "fxSocketOffset": [
+    0,
+    0
+  ],
+  "fxPivot": "orb center remains unchanged",
+  "colliderOrigin": "same body releaseSocket as visual orb center",
+  "status": "measured source composite; engine left/right release synchronization pending"
+}

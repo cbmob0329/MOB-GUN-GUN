@@ -1,0 +1,94 @@
+{
+  "format": "MOB GUN GUN partial cartoon runtime pack",
+  "version": 1,
+  "scope": [
+    "nyoro"
+  ],
+  "status": "Full required source art coverage; actual-game acceptance pending",
+  "animations": {
+    "nyoro/air1": {
+      "adapter": "nyoro/body/air1/nyoro-body-air1-runtime220.json"
+    },
+    "nyoro/awakening-end": {
+      "adapter": "nyoro/body/awakening-end/nyoro-body-awakening-end-runtime220.json"
+    },
+    "nyoro/death": {
+      "adapter": "nyoro/body/death/nyoro-body-death-runtime220.json"
+    },
+    "nyoro/effects/awakening-burst": {
+      "adapter": "nyoro/effects/awakening-burst/nyoro-effects-awakening-burst-runtime220.json"
+    },
+    "nyoro/effects/charge": {
+      "adapter": "nyoro/effects/charge/nyoro-effects-charge-runtime220.json"
+    },
+    "nyoro/effects/hit-heavy": {
+      "adapter": "nyoro/effects/hit-heavy/nyoro-effects-hit-heavy-runtime220.json"
+    },
+    "nyoro/effects/hit-light": {
+      "adapter": "nyoro/effects/hit-light/nyoro-effects-hit-light-runtime220.json"
+    },
+    "nyoro/effects/launch": {
+      "adapter": "nyoro/effects/launch/nyoro-effects-launch-runtime220.json"
+    },
+    "nyoro/effects/special1-aura": {
+      "adapter": "nyoro/effects/special1-aura/nyoro-effects-special1-aura-runtime220.json"
+    },
+    "nyoro/light2": {
+      "adapter": "nyoro/body/light2/nyoro-body-light2-runtime220.json"
+    },
+    "nyoro/light4": {
+      "adapter": "nyoro/body/light4/nyoro-body-light4-runtime220.json"
+    },
+    "nyoro/special1-startup": {
+      "adapter": "nyoro/body/special1-startup/nyoro-body-special1-startup-runtime220.json"
+    },
+    "nyoro/special2-active": {
+      "adapter": "nyoro/body/special2-active/nyoro-body-special2-active-runtime220.json",
+      "releaseFrame": 6,
+      "releaseSocket": [
+        0.6171428571428571,
+        -0.4228571428571429
+      ]
+    },
+    "nyoro/special2-startup": {
+      "adapter": "nyoro/body/special2-startup/nyoro-body-special2-startup-runtime220.json"
+    },
+    "nyoro/walk": {
+      "adapter": "nyoro/body/walk/nyoro-body-walk-runtime220.json"
+    }
+  },
+  "aliases": {
+    "nyoro/awakened-air1": "nyoro/air1",
+    "nyoro/awakened-awakening-end": "nyoro/awakening-end",
+    "nyoro/awakened-death": "nyoro/death",
+    "nyoro/effects/awakened-awakening-burst": "nyoro/effects/awakening-burst",
+    "nyoro/effects/awakened-charge": "nyoro/effects/charge",
+    "nyoro/effects/awakened-hit-heavy": "nyoro/effects/hit-heavy",
+    "nyoro/effects/awakened-hit-light": "nyoro/effects/hit-light",
+    "nyoro/effects/awakened-launch": "nyoro/effects/launch",
+    "nyoro/effects/awakened-special1-aura": "nyoro/effects/special1-aura",
+    "nyoro/awakened-light2": "nyoro/light2",
+    "nyoro/awakened-light4": "nyoro/light4",
+    "nyoro/awakened-special1-startup": "nyoro/special1-startup",
+    "nyoro/awakened-special2-active": "nyoro/special2-active",
+    "nyoro/awakened-special2-startup": "nyoro/special2-startup",
+    "nyoro/awakened-walk": "nyoro/walk",
+    "nyoro/dance": "nyoro/special1-startup",
+    "nyoro/awakened-dance": "nyoro/special1-startup",
+    "nyoro/water": "nyoro/special2-active",
+    "nyoro/awakened-water": "nyoro/special2-active"
+  },
+  "awakenedReuse": "Existing character normal and awakened aliases share all16 source body cels. Separate character-specific16-cel aura supplies form change. Not separately drawn awakened artwork.",
+  "sourceCoordinateContract": {
+    "rect": "atlas pixels",
+    "pivot": "frame-local runtime pixels",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height; added to existing FX anchor",
+    "releaseSocket": "body manifest entry: x,y normalized by displayed body height from player virtual feet; actual projectile spawn and collider, x follows facing, y positive down",
+    "releaseFrame": "body manifest entry: zero-based LOCAL frame index in the emitting runtime phase; global special cel23 maps to active local index6",
+    "orientationMode": "velocity: atan2(vy,vx)-nativeAngleRadians, no mirror; facing: horizontal mirror; fixed: no rotation or mirror"
+  },
+  "masterPolicy": "All PNG artwork masters unchanged. Runtime copies are uniformly downsampled at most to220 source body pixels, then alpha-trimmed with8px transparent gutters and lossless static WebP encoding. Spatial downsampling itself is lossy.",
+  "playbackRequirement": "Every animation and awakened alias must present all16 distinct source cels. No skipped-cel speedups or shortened action clocks; engine verification pending."
+}

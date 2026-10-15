@@ -1,0 +1,275 @@
+{
+  "frames": [
+    {
+      "rect": [
+        287,
+        1003,
+        259,
+        245
+      ],
+      "duration": 0.045,
+      "pivot": [
+        101.29411764705884,
+        243.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        292,
+        753,
+        267,
+        234
+      ],
+      "duration": 0.045,
+      "pivot": [
+        110.29411764705884,
+        231.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        296,
+        245
+      ],
+      "duration": 0.05,
+      "pivot": [
+        129.29411764705884,
+        242.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1549,
+        254,
+        220
+      ],
+      "duration": 0.07,
+      "pivot": [
+        98.29411764705884,
+        218.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        269,
+        269,
+        263
+      ],
+      "duration": 0.035,
+      "pivot": [
+        128.29411764705884,
+        261.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        282,
+        1264,
+        257,
+        256
+      ],
+      "duration": 0.03,
+      "pivot": [
+        115.29411764705884,
+        254.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        320,
+        8,
+        282,
+        239
+      ],
+      "duration": 0.025,
+      "pivot": [
+        120.29411764705884,
+        236.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        548,
+        268,
+        213
+      ],
+      "duration": 0.05,
+      "pivot": [
+        111.29411764705884,
+        210.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        320,
+        263,
+        273,
+        222
+      ],
+      "duration": 0.035,
+      "pivot": [
+        126.29411764705884,
+        220.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1030,
+        258,
+        245
+      ],
+      "duration": 0.04,
+      "pivot": [
+        109.29411764705884,
+        242.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1291,
+        256,
+        242
+      ],
+      "duration": 0.045,
+      "pivot": [
+        122.29411764705884,
+        240.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        274,
+        1789,
+        246,
+        249
+      ],
+      "duration": 0.045,
+      "pivot": [
+        101.29411764705884,
+        247.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        293,
+        501,
+        269,
+        236
+      ],
+      "duration": 0.045,
+      "pivot": [
+        128.29411764705884,
+        233.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        280,
+        1536,
+        256,
+        237
+      ],
+      "duration": 0.045,
+      "pivot": [
+        113.29411764705884,
+        235.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        777,
+        263,
+        237
+      ],
+      "duration": 0.05,
+      "pivot": [
+        121.29411764705884,
+        234.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1785,
+        250,
+        242
+      ],
+      "duration": 0.065,
+      "pivot": [
+        107.29411764705884,
+        239.05882352941177
+      ],
+      "src": "../clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "action": "awakened.damage",
+  "status": "runtime-export-awaiting-integration-review",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "authoredCelCount": 16,
+  "events": [
+    {
+      "frame": 1,
+      "event": "damageFlinch"
+    },
+    {
+      "frame": 15,
+      "event": "ready"
+    }
+  ],
+  "segments": {
+    "impact": {
+      "first": 0,
+      "last": 4
+    },
+    "compression": {
+      "first": 5,
+      "last": 8
+    },
+    "recovery": {
+      "first": 9,
+      "last": 15
+    }
+  },
+  "worldMotion": "Game-driven hit displacement; no baked world translation.",
+  "runtimeExport": {
+    "scale": 0.6470588235294118,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "completeSequenceId": "awakened-damage",
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/awakened-combat/damage/review/mobrami-awakened-damage-16.json"
+  ]
+}

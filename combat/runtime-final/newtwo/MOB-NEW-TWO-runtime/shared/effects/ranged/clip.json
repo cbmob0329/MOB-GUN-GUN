@@ -1,0 +1,747 @@
+{
+  "character": "shared-new-two",
+  "animation": "ranged",
+  "kind": "effects",
+  "src": "atlas.webp",
+  "bodyHeight": 110.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        273,
+        147,
+        81
+      ],
+      "pivot": [
+        100.61803333333334,
+        28.07893333333334
+      ],
+      "duration": 0.035,
+      "phase": "seed",
+      "sourceFrame": 1,
+      "displaySize": [
+        1.3363636363636362,
+        0.7363636363636362
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/01",
+      "sourceVisibleRgbaSha256": "a49e2c97fb469a10d595fbb234a924965a3583f9f7982ae6a282987aa70d9a79"
+    },
+    {
+      "rect": [
+        166,
+        608,
+        142,
+        91
+      ],
+      "pivot": [
+        106.72236666666666,
+        48.68466666666667
+      ],
+      "duration": 0.035,
+      "phase": "seed splits",
+      "sourceFrame": 2,
+      "displaySize": [
+        1.2909090909090908,
+        0.8272727272727274
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/02",
+      "sourceVisibleRgbaSha256": "5a46a56e90d0a4e51fac07bdb47bb88c1feeefa3fe885f9996c8e3310c135cff"
+    },
+    {
+      "rect": [
+        180,
+        263,
+        153,
+        109
+      ],
+      "pivot": [
+        115.3949,
+        57.195066666666676
+      ],
+      "duration": 0.03,
+      "phase": "first growth",
+      "sourceFrame": 3,
+      "displaySize": [
+        1.3909090909090909,
+        0.9909090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/03",
+      "sourceVisibleRgbaSha256": "cdb876e6d74f7ad88379a202f9566f169a10aa23a9758a4b531aefd38247ae6b"
+    },
+    {
+      "rect": [
+        8,
+        608,
+        142,
+        109
+      ],
+      "pivot": [
+        116.88743333333333,
+        57.80996666666667
+      ],
+      "duration": 0.03,
+      "phase": "branch growth",
+      "sourceFrame": 4,
+      "displaySize": [
+        1.290909090909091,
+        0.9909090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/04",
+      "sourceVisibleRgbaSha256": "b56ae367874e5767440896c7e29cd31793a3262a3fb9cd76a744a8b2bd70853a"
+    },
+    {
+      "rect": [
+        353,
+        8,
+        150,
+        118
+      ],
+      "pivot": [
+        115.74780000000001,
+        60.479899999999994
+      ],
+      "duration": 0.03,
+      "phase": "build",
+      "sourceFrame": 5,
+      "displaySize": [
+        1.3636363636363635,
+        1.0727272727272725
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/05",
+      "sourceVisibleRgbaSha256": "65d5161d66c84af4a424b4d2abcb581deed38e10d8fba82837857df618bf2799"
+    },
+    {
+      "rect": [
+        8,
+        142,
+        156,
+        115
+      ],
+      "pivot": [
+        125.87386666666667,
+        57.9058
+      ],
+      "duration": 0.03,
+      "phase": "expansion",
+      "sourceFrame": 6,
+      "displaySize": [
+        1.4181818181818182,
+        1.0454545454545454
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/06",
+      "sourceVisibleRgbaSha256": "3d04f2d1e01ad79891317eb2d0fc5f4c07b1d51cd31c715b343a1d07220c03b5"
+    },
+    {
+      "rect": [
+        181,
+        8,
+        156,
+        118
+      ],
+      "pivot": [
+        129.2353,
+        62.338033333333335
+      ],
+      "duration": 0.035,
+      "phase": "near peak",
+      "sourceFrame": 7,
+      "displaySize": [
+        1.418181818181818,
+        1.0727272727272725
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/07",
+      "sourceVisibleRgbaSha256": "7587a5c3d904e05c57f8c0169c2fd68286726e9fa0ca996845f566efb405a4e7"
+    },
+    {
+      "rect": [
+        352,
+        258,
+        147,
+        114
+      ],
+      "pivot": [
+        126.01636666666668,
+        60.553133333333335
+      ],
+      "duration": 0.04,
+      "phase": "peak",
+      "sourceFrame": 8,
+      "displaySize": [
+        1.3363636363636362,
+        1.0363636363636364
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/08",
+      "sourceVisibleRgbaSha256": "d16298f62d8f5888bdeeaea1c34fe937fdcbaee277e5f426f5dbb7175ba63849"
+    },
+    {
+      "rect": [
+        8,
+        370,
+        143,
+        104
+      ],
+      "pivot": [
+        116.27733333333333,
+        44.932833333333335
+      ],
+      "duration": 0.04,
+      "phase": "breakup begins",
+      "sourceFrame": 9,
+      "displaySize": [
+        1.2999999999999998,
+        0.9454545454545452
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/09",
+      "sourceVisibleRgbaSha256": "90ae71ff920c241b612a31bc9acf41733ddea198a292405451a2c0e3d5724a81"
+    },
+    {
+      "rect": [
+        180,
+        142,
+        156,
+        105
+      ],
+      "pivot": [
+        128.0393,
+        46.97126666666667
+      ],
+      "duration": 0.035,
+      "phase": "fragments split",
+      "sourceFrame": 10,
+      "displaySize": [
+        1.418181818181818,
+        0.9545454545454545
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/10",
+      "sourceVisibleRgbaSha256": "bcac0cd1b0312d569a56e259793b9fc0a5518498468c40506f8e57adb233b662"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        157,
+        118
+      ],
+      "pivot": [
+        136.95543333333333,
+        59.30383333333333
+      ],
+      "duration": 0.035,
+      "phase": "separation",
+      "sourceFrame": 11,
+      "displaySize": [
+        1.427272727272727,
+        1.0727272727272725
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/11",
+      "sourceVisibleRgbaSha256": "1338993b3194ce3f23cce7d163f17842c994b69ab4f0629dc1c2ef1c34df5433"
+    },
+    {
+      "rect": [
+        352,
+        142,
+        149,
+        100
+      ],
+      "pivot": [
+        121.35143333333333,
+        61.90613333333334
+      ],
+      "duration": 0.035,
+      "phase": "thin fragments",
+      "sourceFrame": 12,
+      "displaySize": [
+        1.3545454545454543,
+        0.9090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/12",
+      "sourceVisibleRgbaSha256": "e7e49dc2e486280b901fb8972e3caaad5e723569cf10707a24bdbf5c711ca7c7"
+    },
+    {
+      "rect": [
+        324,
+        514,
+        123,
+        105
+      ],
+      "pivot": [
+        102.19136666666668,
+        53.503233333333334
+      ],
+      "duration": 0.04,
+      "phase": "small remnants",
+      "sourceFrame": 13,
+      "displaySize": [
+        1.1181818181818182,
+        0.9545454545454546
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/13",
+      "sourceVisibleRgbaSha256": "6eefb248e91b32c9e036644153143bcf79c693e15531d388b1b2ff956bcf8ac9"
+    },
+    {
+      "rect": [
+        167,
+        388,
+        129,
+        99
+      ],
+      "pivot": [
+        91.1267,
+        63.92013333333334
+      ],
+      "duration": 0.045,
+      "phase": "last remnants",
+      "sourceFrame": 14,
+      "displaySize": [
+        1.1727272727272726,
+        0.9
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/14",
+      "sourceVisibleRgbaSha256": "2e8b7b9592a426f37af23850d05541ab9f2752524a695ef03adf71ad8e747b23"
+    },
+    {
+      "rect": [
+        8,
+        490,
+        143,
+        102
+      ],
+      "pivot": [
+        107.04083333333334,
+        45.897266666666674
+      ],
+      "duration": 0.05,
+      "phase": "tiny residue",
+      "sourceFrame": 15,
+      "displaySize": [
+        1.2999999999999998,
+        0.9272727272727272
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/15",
+      "sourceVisibleRgbaSha256": "dda1ab577b17a81e37f345f01af58056d30f25fa55da68ea22c64968c3e73773"
+    },
+    {
+      "rect": [
+        324,
+        388,
+        131,
+        110
+      ],
+      "pivot": [
+        117.5335,
+        54.25143333333334
+      ],
+      "duration": 0.055,
+      "phase": "final residual",
+      "sourceFrame": 16,
+      "displaySize": [
+        1.1909090909090907,
+        1.0
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "tetsu/effects/ranged/16",
+      "sourceVisibleRgbaSha256": "a341e6839a6f9ca04a4fe9d5e52ac86c417638afe8644e1d2a5cd49ee9d31c4e"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "canonical-fx/tetsu/ranged/metadata.json",
+    "atlas": "canonical-fx/tetsu/ranged/tetsu-ranged-16-atlas.png",
+    "status": "static_review_candidate_not_user_approved",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        29,
+        362,
+        272
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        35,
+        352,
+        257
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 1
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        7,
+        17,
+        362,
+        272
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        17,
+        348,
+        272
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        17,
+        0,
+        362,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        4,
+        362,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        362,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        342,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        25,
+        1,
+        362,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        1,
+        362,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        362,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        352,
+        271
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        55,
+        0,
+        338,
+        272
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        17,
+        0,
+        346,
+        254
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        19,
+        0,
+        362,
+        272
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        352,
+        272
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    }
+  ],
+  "gameBinding": {
+    "socketReference": "moving-projectile",
+    "existingHookOffsetPxAtBody110": [
+      0,
+      0
+    ],
+    "socketOffsetMode": "Zero offset from actual moving projectile; body releaseSocket sets actual spawn position.",
+    "nativeDirectionRadians": 0,
+    "mirrorPixelsWithFacing": false,
+    "mirrorSocketXWithFacing": true,
+    "legacySpawnFallbackFromFeetPxAt110": [
+      36,
+      -55
+    ]
+  },
+  "orientationMode": "velocity",
+  "nativeAngleRadians": 0,
+  "runtimeExport": {
+    "scale": 0.5,
+    "actualBodyPixels": 110.0,
+    "nominalBodyPixels": null,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/shared-fx/ranged/clip.json"
+  },
+  "inputSha256": "a4ac9ba752a82a221692412bb006b62c4fdae5ac9e391fb8c1b9eecc4a752d9a",
+  "runtimeMeasurement": {
+    "action": "tetsu-effects-ranged",
+    "frames": 16,
+    "scale": 0.8666666666666667,
+    "uniformAtlasPixels": 1575025,
+    "trimmedAtlas": [
+      704,
+      1984
+    ],
+    "trimmedPixels": 1396736,
+    "rgbaMiB": 5.328125,
+    "fileBytes": 439126,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.6,
+  "status": "approved-existing-source-explicitly-reused",
+  "sharedSource": {
+    "character": "tetsu",
+    "clip": "ranged",
+    "adapter": "output/existing-combat-16/runtime-compact/tetsu/effects/ranged/tetsu-effects-ranged-runtime220.json",
+    "sha256": "39332edb659fcebb87275ef124fe1a13c8c71bac2c9e20498a6f2f51db80c54b",
+    "artUnchanged": true,
+    "newDrawings": 0
+  },
+  "socketOffset": [
+    0,
+    0
+  ],
+  "sourceSocketOverrideReason": "New-two event anchor is supplied by its own handler. Foreign-character authored offset is not reused.",
+  "sourceBodyHeight": 220.0,
+  "sourcePixelsPreserved": false
+}

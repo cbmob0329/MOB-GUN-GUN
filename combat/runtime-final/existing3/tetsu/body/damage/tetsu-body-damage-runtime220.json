@@ -1,0 +1,525 @@
+{
+  "character": "tetsu",
+  "animation": "damage",
+  "kind": "body",
+  "src": "tetsu-body-damage-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        212,
+        253,
+        225
+      ],
+      "pivot": [
+        81.25490196078431,
+        221.3529411764706
+      ],
+      "duration": 0.03,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/damage/01",
+      "sourceVisibleRgbaSha256": "02bdf54d64fb00d2c5b0884117e0be9ee9ddff7bdf23b302a171bcc708fe6fff"
+    },
+    {
+      "rect": [
+        8,
+        904,
+        246,
+        230
+      ],
+      "pivot": [
+        99.25490196078431,
+        226.3529411764706
+      ],
+      "duration": 0.025,
+      "phase": "chest_jolt",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/damage/02",
+      "sourceVisibleRgbaSha256": "057848c2dd2911d908f1cb6703a411fa611aa535da1a30006042b32c1a6b3318"
+    },
+    {
+      "rect": [
+        8,
+        1150,
+        239,
+        222
+      ],
+      "pivot": [
+        91.25490196078431,
+        218.3529411764706
+      ],
+      "duration": 0.025,
+      "phase": "shoulder_recoil",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/damage/03",
+      "sourceVisibleRgbaSha256": "7f98ef1567a28f06ef6207fd36a180d181d060e71aa6ddfcf06573226a7d8fe3"
+    },
+    {
+      "rect": [
+        8,
+        1632,
+        227,
+        228
+      ],
+      "pivot": [
+        106.25490196078431,
+        224.3529411764706
+      ],
+      "duration": 0.03,
+      "phase": "back_arch",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/damage/04",
+      "sourceVisibleRgbaSha256": "c3c2bc1dbd36204dcca9510be383cce676cdd77bce0acf6b5984ebb4ec1ff819"
+    },
+    {
+      "rect": [
+        263,
+        1246,
+        238,
+        228
+      ],
+      "pivot": [
+        103.25490196078431,
+        225.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "strong_recoil",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/damage/05",
+      "sourceVisibleRgbaSha256": "cf60683bfbd8a55e458615250a60f626f0d0f68c2bb5c32710b42d7e587f67aa"
+    },
+    {
+      "rect": [
+        258,
+        1490,
+        230,
+        229
+      ],
+      "pivot": [
+        96.25490196078431,
+        225.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "back_step_lift",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/damage/06",
+      "sourceVisibleRgbaSha256": "ac2255b6fc2d354263d61bbdac0b8831a29860c9806e67ee1b2a7df6d5e1c801"
+    },
+    {
+      "rect": [
+        251,
+        1735,
+        221,
+        224
+      ],
+      "pivot": [
+        124.25490196078431,
+        221.3529411764706
+      ],
+      "duration": 0.04,
+      "phase": "back_step_plant",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/damage/07",
+      "sourceVisibleRgbaSha256": "c3b240c1d5cdc0650826f7a302c43610749522418d34f6d49d2c224523f948cd"
+    },
+    {
+      "rect": [
+        8,
+        453,
+        252,
+        189
+      ],
+      "pivot": [
+        82.25490196078431,
+        185.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "cloth_recoil",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/damage/08",
+      "sourceVisibleRgbaSha256": "d80acd642f472d881f73c07acef4d77724c320e79b663ce67186aac1d7150e39"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        268,
+        188
+      ],
+      "pivot": [
+        80.25490196078431,
+        185.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "deep_stagger",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/damage/09",
+      "sourceVisibleRgbaSha256": "6109fdba22d6132fab5725eef57f80e3a479f4d7d41f5f6c54ca95e13b164877"
+    },
+    {
+      "rect": [
+        292,
+        8,
+        255,
+        214
+      ],
+      "pivot": [
+        84.25490196078431,
+        210.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "weight_recenter",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/damage/10",
+      "sourceVisibleRgbaSha256": "fe1a204edafcde62c62e9a4906bfd16c352dd4616cb5f601646fe3cbcb90bbb1"
+    },
+    {
+      "rect": [
+        8,
+        658,
+        250,
+        230
+      ],
+      "pivot": [
+        87.25490196078431,
+        226.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "chin_return",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/damage/11",
+      "sourceVisibleRgbaSha256": "ee646b2eb404348de44185e776afcc608d8e4264d6cfc653cb5c8207456ee804"
+    },
+    {
+      "rect": [
+        8,
+        1388,
+        234,
+        228
+      ],
+      "pivot": [
+        84.25490196078431,
+        224.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "blade_level",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/damage/12",
+      "sourceVisibleRgbaSha256": "5fdd762a67e257ce7d1d99e8a19a94cb3b28b39ca7569ab51a2ce120e7c0a7f7"
+    },
+    {
+      "rect": [
+        274,
+        742,
+        248,
+        237
+      ],
+      "pivot": [
+        84.25490196078431,
+        233.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "chest_straighten",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/damage/13",
+      "sourceVisibleRgbaSha256": "c11bf71bf6a86feacda2c3c285f58d2aab8969d38f9d61787b7134730886ac8b"
+    },
+    {
+      "rect": [
+        277,
+        238,
+        252,
+        236
+      ],
+      "pivot": [
+        89.25490196078431,
+        232.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "front_foot_set",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/damage/14",
+      "sourceVisibleRgbaSha256": "9cbe4cc33b16edc01c8ca411696d24ee0d6a076a01d2a5d5dc6595a35a53e926"
+    },
+    {
+      "rect": [
+        276,
+        490,
+        251,
+        236
+      ],
+      "pivot": [
+        80.25490196078431,
+        232.3529411764706
+      ],
+      "duration": 0.045,
+      "phase": "shoulders_ready",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/damage/15",
+      "sourceVisibleRgbaSha256": "c55d8d9603360ceb02d892b84f8544a0d641dcac69b08e16012425d9819fedb8"
+    },
+    {
+      "rect": [
+        270,
+        995,
+        244,
+        235
+      ],
+      "pivot": [
+        82.25490196078431,
+        231.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "regain_ready",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/damage/16",
+      "sourceVisibleRgbaSha256": "b1badb79fd638e7e1ef117cf8edaeb7070247611799ff5b521abe961e1f51282"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/damage/tetsu-damage-16.json",
+    "atlas": "tetsu/damage/tetsu-damage-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Readably nonfatal recoil, back-step and regain sequence; early head/shoulder recoil oscillates rather than following one perfectly monotonic arc.",
+      "No hurt FX, enemy or injury graphic; body only. Weapon retained throughout.",
+      "Real-time and in-engine playback not visually verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        163,
+        422,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        158,
+        394,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        118,
+        167,
+        395,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        101,
+        160,
+        364,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        105,
+        159,
+        380,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        113,
+        159,
+        379,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        80,
+        164,
+        336,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 80
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        205,
+        420,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        205,
+        441,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 71
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        176,
+        421,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        123,
+        158,
+        412,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        160,
+        397,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        150,
+        414,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        120,
+        150,
+        412,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        150,
+        421,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        152,
+        411,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8627450980392157,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "1266f51421a4db5c40493adec9f2ab79ef14a64e4738fdbc3a767caa1e30eca5",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-damage",
+    "frames": 16,
+    "scale": 0.8627450980392157,
+    "uniformAtlasPixels": 3122289,
+    "trimmedAtlas": [
+      576,
+      1984
+    ],
+    "trimmedPixels": 1142784,
+    "rgbaMiB": 4.359375,
+    "fileBytes": 650432,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.645,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

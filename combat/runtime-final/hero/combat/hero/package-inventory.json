@@ -1,0 +1,717 @@
+{
+  "name": "Mob Rami runtime16 integration candidate",
+  "version": "20261015-v2",
+  "requiredParts": 5,
+  "artCoverage": {
+    "normalBodyCels": 448,
+    "awakenedBodyCels": 448,
+    "detachedFxCels": 192
+  },
+  "files": [
+    {
+      "path": "combat/hero/README.txt",
+      "bytes": 3467,
+      "sha256": "5bd02383a15069458f73202b9465201a4850a93cefed931364e86837c8d25b1a"
+    },
+    {
+      "path": "combat/hero/adapters/air1.json",
+      "bytes": 5072,
+      "sha256": "0fc132a4924da1dc0d715c1e6cfa34a6549569fd8ba85b72daadfe0d28a66281"
+    },
+    {
+      "path": "combat/hero/adapters/air2.json",
+      "bytes": 5064,
+      "sha256": "89afa2c949d5e5141a6ec83afa21f18846f92886a21289e2f4cfb0ce92460b60"
+    },
+    {
+      "path": "combat/hero/adapters/air3.json",
+      "bytes": 5070,
+      "sha256": "69274e4421d7b9d2fa3f0c7f9fca10ce0c6c67eba104dd094a7f6cf08aac2081"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-air1.json",
+      "bytes": 5468,
+      "sha256": "d54359ff83252b8284021dbaa94558215eac8366d3ced9a58ee365d602754c4f"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-air2.json",
+      "bytes": 5463,
+      "sha256": "24b597bed8e40fb467b63d3d6443775b974a21fd45e830513e000a100ebbd09d"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-air3.json",
+      "bytes": 5465,
+      "sha256": "c2ed3a6bbb913534e5fd82e2a7856f70eb41d34963f34480dbad7b1fedf7b4aa"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-awakening-end.json",
+      "bytes": 5514,
+      "sha256": "acabb08a6b621dcebcc32463fdb48224b547ca80400ab297465ddd9114750cd1"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-blow.json",
+      "bytes": 5708,
+      "sha256": "341e03c9796b073fe44995a0b127a085b096ef54a9df6691684680d32c37d5a5"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-charge-cycle.json",
+      "bytes": 10662,
+      "sha256": "49fa4b4e05b916ca275a4db3e1b51cfc026c565681693ee81f32218838d425b4"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-charge-hold.json",
+      "bytes": 5797,
+      "sha256": "76d2b8dd1dc90730d4a3ad950520c74bd5033b13b4b0400a74f7b5ea0db89361"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-charge-start.json",
+      "bytes": 5965,
+      "sha256": "71ca3999f1c09ee60fd702a072bd5eefdc85f16b8c19541ab108e0afa01107c6"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-crouch.json",
+      "bytes": 5459,
+      "sha256": "5a10f504c3c2f300bc1507655236601c6477661151c451e957349c668c66ebe0"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-damage.json",
+      "bytes": 5761,
+      "sha256": "63b7aca375ade7631567bcbb95c69b73ba96cc7dee7887dbe7d26cef77ecfa34"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-dash.json",
+      "bytes": 5404,
+      "sha256": "1001e6ede7bb160de3ce32e46a18172af5ed1a48d1961c2c1ae04d829574196f"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-death.json",
+      "bytes": 5838,
+      "sha256": "22821817a3178a3c0e20a12fd65b64b73a4fda3640362e439edf32f6e2102a6a"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-guard.json",
+      "bytes": 5573,
+      "sha256": "a74174e33afd4ca60065d6ebeee87b4358e2f991f296e1ee389ac981cfff7611"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-idle.json",
+      "bytes": 5367,
+      "sha256": "b11c943486ccfdb7c74824def0354fcba2013a0c217727c38c34b035d3c66e07"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-jump.json",
+      "bytes": 5507,
+      "sha256": "0edecec6a5ad056d46927c3dea75f4940c43e6fb131592ea230b59339b8517e5"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-launch.json",
+      "bytes": 6266,
+      "sha256": "66884cc8c4fa6522b738cd65637de6b88b914b1df9093f7cdce015c7bdcfc68c"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-light1.json",
+      "bytes": 5637,
+      "sha256": "d6d51cfcc05aa845ff7cd9eac7c9c168a0f74469fc0f3335386f354b6b937a3e"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-light2.json",
+      "bytes": 5640,
+      "sha256": "626acc416235e714dd8240094d72e5a4a1e6f662b83218ab29364ab4b8455674"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-light3.json",
+      "bytes": 5639,
+      "sha256": "329f7109214d37e4cd2d165c60f1b1382da504bab995584581b0768494351e13"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-light4.json",
+      "bytes": 5643,
+      "sha256": "7509bcae9732788d19fe49463f6d40e9c0bc6709f334f8e89b61329150403b59"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-ranged.json",
+      "bytes": 5796,
+      "sha256": "94eb5ee26d80f84583972a3ff3e9246a5989b95ad9259dafdfb3f94f854b75bf"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-recovery.json",
+      "bytes": 6043,
+      "sha256": "c9afff2014148ed62220224790f882109548d2d2d7b317f1effa53d8cc4eefed"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-rush.json",
+      "bytes": 5788,
+      "sha256": "0b342c3138dd0939a3ed3cb1cf647be8906b2310b496217dc9851c279a37519c"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-slam.json",
+      "bytes": 5460,
+      "sha256": "17c21cb3761983eb6d1478b5824a77aab59f820546da45eb71a85b5ee9806830"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-special1.json",
+      "bytes": 10690,
+      "sha256": "811727709bf1e94c0dde13d7b1c4cbcb022d17a38c7b72268c96d1d2a017f693"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-special2-active.json",
+      "bytes": 3640,
+      "sha256": "7f071e04fd87042811fbda1176229af7ff42e59d9b29cdcb0401e48b303f499c"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-special2.json",
+      "bytes": 11043,
+      "sha256": "0d0838cafe20dfb5618a07ed9b879a66f172a6113d60643c88e7beb3934e5771"
+    },
+    {
+      "path": "combat/hero/adapters/awakened-walk.json",
+      "bytes": 5386,
+      "sha256": "70517b3088be615fedc78f3dbc2aa8b1415b1f043f26692b6c39001015c77769"
+    },
+    {
+      "path": "combat/hero/adapters/awakening-start.json",
+      "bytes": 5560,
+      "sha256": "1e2d018105bbf299a9c8641a8a40ca069509e05d0a0b44b4ea1c222a2aa83eff"
+    },
+    {
+      "path": "combat/hero/adapters/blow.json",
+      "bytes": 5332,
+      "sha256": "789e42fd976ecc806120380c353006667bab935f0efe8b8e34655ddb6849729c"
+    },
+    {
+      "path": "combat/hero/adapters/charge-cycle.json",
+      "bytes": 10244,
+      "sha256": "7c035789a593d7ef68c3873e55190b76ae8d96fb74319723705af44aa3367a7b"
+    },
+    {
+      "path": "combat/hero/adapters/charge-hold.json",
+      "bytes": 5647,
+      "sha256": "52402bd59e0da56fba72a6e51df42346f91e754a1d6ed1bde50130df5f4f09f5"
+    },
+    {
+      "path": "combat/hero/adapters/charge-start.json",
+      "bytes": 5664,
+      "sha256": "e7c7131779c190f87376de0d98247e035f1a9df7e2018d72afda7c7631e1bc59"
+    },
+    {
+      "path": "combat/hero/adapters/crouch.json",
+      "bytes": 5101,
+      "sha256": "a19be5021b18c93b8c109eacda80f44e861834b815c01bbb7245028629aae8d6"
+    },
+    {
+      "path": "combat/hero/adapters/damage.json",
+      "bytes": 5111,
+      "sha256": "b4851dd8f43e431e959b0018c807e8e8a6f3d43a47927c872171e752184576f9"
+    },
+    {
+      "path": "combat/hero/adapters/dash.json",
+      "bytes": 5046,
+      "sha256": "f002fb75d6794a1b3364edf0cc20adb23106b19dc90d05cce75a86585343e09a"
+    },
+    {
+      "path": "combat/hero/adapters/death.json",
+      "bytes": 5134,
+      "sha256": "cc363c12ec336643e296115df601dccf3605b200540494b898eb103f35b7327e"
+    },
+    {
+      "path": "combat/hero/adapters/guard.json",
+      "bytes": 5216,
+      "sha256": "90a5e99782599146afc65262f946bd68df67660df3d838d77c10942672c19a2c"
+    },
+    {
+      "path": "combat/hero/adapters/idle.json",
+      "bytes": 5027,
+      "sha256": "46bf806acdb494dac2ed2c5dd8c69d34b7d1ddd95738798a140b0acdc23ba951"
+    },
+    {
+      "path": "combat/hero/adapters/jump.json",
+      "bytes": 5189,
+      "sha256": "6e5b3782fcf7938652e704172ecfcecf43fa76fa8ee1a915080015fc89687650"
+    },
+    {
+      "path": "combat/hero/adapters/launch.json",
+      "bytes": 6312,
+      "sha256": "edb05ea46b629190a8ce335d5c09d988b81edffbead9caf6ef6d1ebb1e598734"
+    },
+    {
+      "path": "combat/hero/adapters/light1.json",
+      "bytes": 5006,
+      "sha256": "a696135ab6e0160623cb4b2b4518a3a4afdceb07fd79999a48a113d5a9cd6341"
+    },
+    {
+      "path": "combat/hero/adapters/light2.json",
+      "bytes": 5003,
+      "sha256": "3434e9e6101c0fdcfcb1a07c6f293d9e03a48c0b88a92c2c7c77b9e2ea72281c"
+    },
+    {
+      "path": "combat/hero/adapters/light3.json",
+      "bytes": 5034,
+      "sha256": "4135269b00a65af3f2babf69c409bc66489b5e3138af1230ceec1449da4a8e5c"
+    },
+    {
+      "path": "combat/hero/adapters/light4.json",
+      "bytes": 5001,
+      "sha256": "3d62b9d0227aed9b6f2499ad5dbd2751e59dddf7366cad15328892649edc44f5"
+    },
+    {
+      "path": "combat/hero/adapters/ranged.json",
+      "bytes": 5408,
+      "sha256": "b703e5fb5def95a607e804c460e4f4ad6d14ed5d1d15b954a2ce4020b5aa56e5"
+    },
+    {
+      "path": "combat/hero/adapters/recovery.json",
+      "bytes": 5208,
+      "sha256": "a70a2c99d2d037a0ded7b8b72ba3dfcbbc6876f8df54697fdbf89455d98b189f"
+    },
+    {
+      "path": "combat/hero/adapters/rush.json",
+      "bytes": 5455,
+      "sha256": "11dfdfff464895c44f888c0cd30d3ad281617bbf4d56dfdd6f6614a8a1f3d209"
+    },
+    {
+      "path": "combat/hero/adapters/slam.json",
+      "bytes": 5289,
+      "sha256": "fd24e22a54716e4731a64da5ec7a3a77d247bb1304ce9db76bbe88bc575ea6bc"
+    },
+    {
+      "path": "combat/hero/adapters/special1.json",
+      "bytes": 9884,
+      "sha256": "9f919e8c85b254e72d8cb0f71f060d7ccf937434c81bdef6a8ef26fd4e97a147"
+    },
+    {
+      "path": "combat/hero/adapters/special2-active.json",
+      "bytes": 3387,
+      "sha256": "cee2108d39a6a7a36a53ed26266dce49a2d8fd1eb7e6e71a96661d53540a970c"
+    },
+    {
+      "path": "combat/hero/adapters/special2.json",
+      "bytes": 10372,
+      "sha256": "596168bb986778255bafc00a906c25bc9be02bd911158e8d75e6bcacfadd1095"
+    },
+    {
+      "path": "combat/hero/adapters/walk.json",
+      "bytes": 6813,
+      "sha256": "e8deac10b988e550e221b695c9af8b266ef2b304c6c6aa11216e25787bd06167"
+    },
+    {
+      "path": "combat/hero/authored-coverage-audit.json",
+      "bytes": 8421,
+      "sha256": "b92bd1a67cda9afebb3eb97a5af90a860fe549a8e255302615c52638c9dc0e2c"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-air1-16/mobrami-air1-16-runtime220.webp",
+      "bytes": 1023516,
+      "sha256": "5a7cf472a5ecd9d6f09cc7b0d610368ed469b40e2497e996c0fdfda225fe0d1e"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-air2-16/mobrami-air2-16-runtime220.webp",
+      "bytes": 972842,
+      "sha256": "1047f253746fd29455500b396d5fe3d54a7d19ed148a065e4a65add27fe88fcd"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-air3-16/mobrami-air3-16-runtime220.webp",
+      "bytes": 949276,
+      "sha256": "d38917613895ef5930ec20f296f8a24c6d4da97707e700dc4e8b97046122c23e"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-air1-16/mobrami-awakened-air1-16-runtime220.webp",
+      "bytes": 1253276,
+      "sha256": "2ceed4a9730bc9fb3a02960bdc1fc1f58e8948bfaabbc0ec41e35b0f1dd631b7"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-air2-16/mobrami-awakened-air2-16-runtime220.webp",
+      "bytes": 1178410,
+      "sha256": "fcd6855e81eb2ab3a571ec659008d2d5432bd5b960bd3b3ef80dd3aa5500eee8"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-air3-16/mobrami-awakened-air3-16-runtime220.webp",
+      "bytes": 1218616,
+      "sha256": "88747abc920dc1f65b3a7120aa0731b9af99e73d6c46c4c38d3b75bf3bb49835"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-blow-16/mobrami-awakened-blow-16-runtime220.webp",
+      "bytes": 1699378,
+      "sha256": "246ed478b836b67282e10f934f06c0398c9c031ac757c65ce1c5b9209d7fc9dc"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-charge-hold-16/mobrami-awakened-charge-hold-16-runtime220.webp",
+      "bytes": 1919544,
+      "sha256": "7cbe01a674270c802ae0c49d132e72ee86c360ca9cc5b4d545a1b7f9a56d97e8"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp",
+      "bytes": 1771104,
+      "sha256": "dbf27cd3341a0b434e3b2689909f08c3c73050f1554403e6330feb5a24b27ce2"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-crouch-16/mobrami-awakened-crouch-16-runtime220.webp",
+      "bytes": 1136350,
+      "sha256": "964288720e8a5c9bfda266b58ac3dd1f77776e65bea9373de6d3f4d2641a8c96"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp",
+      "bytes": 1608478,
+      "sha256": "375aa00845aab74294e1682522462f4e7f1aee354d20224646221e87aa259215"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-dash-16/mobrami-awakened-dash-16-runtime220.webp",
+      "bytes": 1183082,
+      "sha256": "96b1c7c38f3192c34b12cad38d9aa6d3048be27295f269d8ccf8f7a6de327a11"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-death-16/mobrami-awakened-death-16-runtime220.webp",
+      "bytes": 1095496,
+      "sha256": "6f36c407ce4e5a9dcb69f9e07d45f952d24145ccd8de50bc3f58e1b6c3360daa"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-guard-16/mobrami-awakened-guard-16-runtime220.webp",
+      "bytes": 1264810,
+      "sha256": "4e87bf63e773b5bff2e3cd536d9853fd6605ca3edb2855428ac0506dcdbecad9"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-idle-16/mobrami-awakened-idle-16-runtime220.webp",
+      "bytes": 1379192,
+      "sha256": "76bd23124edc636540425232fa0f7cb91aad45ed1a95d56804b1b5b5e520eff9"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-jump-16/mobrami-awakened-jump-16-runtime220.webp",
+      "bytes": 1163534,
+      "sha256": "8741e019b9b23dd742cf95d5f37da07019359e499246da6646f5e964705d7ea8"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-launch-16/mobrami-awakened-launch-16-runtime220.webp",
+      "bytes": 1796286,
+      "sha256": "393484799e09260d4f2aa089c018873b2dca2cade66f4d34f9caffdb7879a935"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-ranged-16/mobrami-awakened-ranged-16-runtime220.webp",
+      "bytes": 1707298,
+      "sha256": "624acd05eb8c692dd5b24d076e915d12e3687926e3ced2c02232e01eb63e76a9"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-recovery-16/mobrami-awakened-recovery-16-runtime220.webp",
+      "bytes": 1484532,
+      "sha256": "861fef5294f6316faf298cfc12c22cadbb89e62dd39092bb27901705444d53d2"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-rush-16/mobrami-awakened-rush-16-runtime220.webp",
+      "bytes": 1590818,
+      "sha256": "dbb85941f9d9488feed71c13c0b5998910191d6943f4d9b5a3de719fc7c841b7"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-slam-16/mobrami-awakened-slam-16-runtime220.webp",
+      "bytes": 1217266,
+      "sha256": "8b2630ab6cf3d3561404396940ca5fb2a268d7817651345e416cfbc1252fc01e"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-special1-dance-16/mobrami-awakened-special1-dance-16-runtime220.webp",
+      "bytes": 1496802,
+      "sha256": "5b15f7fbf2e885a7178c61e3f48c60371477a612da5ad8f3eb31822f7d0e0bb1"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-special1-rush-16/mobrami-awakened-special1-rush-16-runtime220.webp",
+      "bytes": 1183564,
+      "sha256": "4774bf21bb2c06b057473b61e8615fc9a8b32be6f4ccf4d934ce1ae49ef00652"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-special2-release-16/mobrami-awakened-special2-release-16-runtime220.webp",
+      "bytes": 1375758,
+      "sha256": "bc7227c6fa3ed395b59c4b26e6fcfb2c9f7fdbbbaa0e15e7665a6eda5d57cb5b"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-special2-startup-16/mobrami-awakened-special2-startup-16-runtime220.webp",
+      "bytes": 1420472,
+      "sha256": "61d04c9e2d439fae6f34f96fd95f8a7b6212c4a8c6a25020a88e3713f91c72e9"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-walk-16/mobrami-awakened-walk-16-runtime220.webp",
+      "bytes": 1224018,
+      "sha256": "2eb6b85a404362953d4b8a006141e433b8f533530eb72dee4842820addc2e1dc"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp",
+      "bytes": 1641478,
+      "sha256": "054c3a86afa495202f55bfcb82d0798e8bdb870f8ae65c51ba66d6c328a402b9"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-weak2-16/mobrami-awakened-weak2-16-runtime220.webp",
+      "bytes": 1701700,
+      "sha256": "49f5de9c34c9455ec1fc1173c0618ede3de9c94c62e9ca9af6eb405641975e3d"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-weak3-16/mobrami-awakened-weak3-16-runtime220.webp",
+      "bytes": 1732320,
+      "sha256": "ed52c9b18543a1054cacd353521156c0dee3d2dbcfcfeb33b987bc7e8cbecf8e"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakened-weak4-16/mobrami-awakened-weak4-16-runtime220.webp",
+      "bytes": 1777412,
+      "sha256": "3f5b24b181b60f635c67b72fbc89def37870b5ce2f51166a4466decd0deea4cd"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakening-end-16/mobrami-awakening-end-16-runtime220.webp",
+      "bytes": 1209500,
+      "sha256": "29476bcb1494f7b386fbdc05218bee89a524dee855ded94377084dcce859d8c3"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-awakening-start-16/mobrami-awakening-start-16-runtime220.webp",
+      "bytes": 1343702,
+      "sha256": "6241bf4ecca6d5fa4ba50e9b9f2b7bc2d2a969cbad378c79c9332dfdb23a4023"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-blow-16/mobrami-blow-16-runtime220.webp",
+      "bytes": 937946,
+      "sha256": "43f1b33d0d40ed3fd80fb33527cf1f74c35b76c21496041e4e2c283a5b3423eb"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp",
+      "bytes": 2151682,
+      "sha256": "05e3e45ebc8ce44d3585a7610db6153bf6f5e0207885869a3aea699b18934ce6"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-crouch-16/mobrami-crouch-16-runtime220.webp",
+      "bytes": 985350,
+      "sha256": "0dfdb3f252fbb5bf06fe1437549a120d26f35bccf5f463f26929ffb3eb1ebd8f"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-damage-16/mobrami-damage-16-runtime220.webp",
+      "bytes": 1161594,
+      "sha256": "3301b503bb5c366c2ae0571908ea3a0ef6647e7dc9bbfd35820a244e62af8d87"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp",
+      "bytes": 1194946,
+      "sha256": "ea2270003643dfdf15d841e4d2257c45762ae8202773eb6db8e748fbc2407552"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-death-16/mobrami-death-16-runtime220.webp",
+      "bytes": 818142,
+      "sha256": "4dcad18266970a048bc19fc7928713db7257a92acc64614813f7c6c3ad929638"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-awakening-aura-16/mobrami-fx-awakening-aura-16-runtime220.json",
+      "bytes": 6459,
+      "sha256": "591af0d67839699ba4dce90b6b1fd8a21b00614199123880825c47565e6725da"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-awakening-aura-16/mobrami-fx-awakening-aura-16-runtime220.webp",
+      "bytes": 1255998,
+      "sha256": "1a3039bacacead228d74cc08f332aab7c6026a6da74120f2b1b06ad91f7d3714"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-awakening-burst-16/mobrami-fx-awakening-burst-16-runtime220.json",
+      "bytes": 6744,
+      "sha256": "b579140b6fad813ced25feccf2d99d79bb6182a48d469dacafa93af166946dcc"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-awakening-burst-16/mobrami-fx-awakening-burst-16-runtime220.webp",
+      "bytes": 709438,
+      "sha256": "ab7ffdd36ce6d4238a99092ad320aca7937d3b00520e9cdad1272232f077806d"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-charge-16/mobrami-fx-charge-16-runtime220.json",
+      "bytes": 6459,
+      "sha256": "5069d9eb5a06b64ef1212b28a880d62c5ab8f06835c7b02584ff420dbbf174ee"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-charge-16/mobrami-fx-charge-16-runtime220.webp",
+      "bytes": 937722,
+      "sha256": "f6f92431e59ac52428449b283821975639c28d180e28e4a1903ee9afe5e081b8"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-hit-heavy-16/mobrami-fx-hit-heavy-16-runtime220.json",
+      "bytes": 6450,
+      "sha256": "21933b3388ce5c7e133cc7e47b7a61bea60d7c324604116e83142c5354a31086"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-hit-heavy-16/mobrami-fx-hit-heavy-16-runtime220.webp",
+      "bytes": 690138,
+      "sha256": "59d14bccef0e5f1e0db718552d08db8a5becfd229251013603bc3c7c00eab20e"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-hit-light-16/mobrami-fx-hit-light-16-runtime220.json",
+      "bytes": 6107,
+      "sha256": "e166f56c20ababd023626e2ebac53f4f57f09d57b9f278d0046631f9a709d0f9"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-hit-light-16/mobrami-fx-hit-light-16-runtime220.webp",
+      "bytes": 484818,
+      "sha256": "ac5c65153981b2130f3feb23ecaecb78b655e0137e372eb878c6aa79a1eb351f"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-launch-16/mobrami-fx-launch-16-runtime220.json",
+      "bytes": 6621,
+      "sha256": "19841874a701c18dd6bcae6f4eb7ed60c89cdbaece3b7073e002a11f7394b707"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-launch-16/mobrami-fx-launch-16-runtime220.webp",
+      "bytes": 634738,
+      "sha256": "31abaeefd051345c7258df28deba4b032d053fc18ffd119a556b0710d0ee6468"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-ranged-16/mobrami-fx-ranged-16-runtime220.json",
+      "bytes": 6200,
+      "sha256": "d435838f162e68066e0d88c04e4d7134a282191110000c053923d052c063eea8"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-ranged-16/mobrami-fx-ranged-16-runtime220.webp",
+      "bytes": 548312,
+      "sha256": "52487c4827249efb4fe80846cca8515bd490daa3fcaacfe27afc57f94cdaba68"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-rush-trail-16/mobrami-fx-rush-trail-16-runtime220.json",
+      "bytes": 6322,
+      "sha256": "dfff39d6ec65035abe59cfc6e0c55d81d64415ee9b5c7f513a8180842047fa55"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-rush-trail-16/mobrami-fx-rush-trail-16-runtime220.webp",
+      "bytes": 613856,
+      "sha256": "e005e18b941e40b52c9e73eff052eaff57610826a6f3e0562d00b3e2f93407b8"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-slam-16/mobrami-fx-slam-16-runtime220.json",
+      "bytes": 6375,
+      "sha256": "e5836edb5ef9755dc0c4cdfa968f53c5f66f8c62ac3c41ddc149a1d5982f20fa"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-slam-16/mobrami-fx-slam-16-runtime220.webp",
+      "bytes": 727304,
+      "sha256": "991722061b902e060dede2970c5b481bc6000e009c539341a906c7397ca63611"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-special1-aura-16/mobrami-fx-special1-aura-16-runtime220.json",
+      "bytes": 6452,
+      "sha256": "70f34c3a6cb944c2786bbd982dd993ab99f82ec8e765e355bb81aea2fda14646"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-special1-aura-16/mobrami-fx-special1-aura-16-runtime220.webp",
+      "bytes": 1073470,
+      "sha256": "1f793baedc9791bf420b3472e5d9fd030c0e9d2d39c43df020938370f4713a34"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-special2-splash-16/mobrami-fx-special2-splash-16-runtime220.json",
+      "bytes": 6358,
+      "sha256": "e08e1700fa3a558eb09903390213d1c37c771dd112b4184d6ef23789f000cc47"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-special2-splash-16/mobrami-fx-special2-splash-16-runtime220.webp",
+      "bytes": 613434,
+      "sha256": "dceb9ad8141d4ce07a70ee8f4b7b7f55f318fd9f9a9e0d3e1baadc27148019d8"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-special2-water-16/mobrami-fx-special2-water-16-runtime220.json",
+      "bytes": 6348,
+      "sha256": "980963d7d833ce0fc7a353c25c26ac713ea7dd89268b87926a5c33074f11204a"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-fx-special2-water-16/mobrami-fx-special2-water-16-runtime220.webp",
+      "bytes": 562276,
+      "sha256": "57ace5188977159e112419e9719fac1fcc792983ab8701a402bb516605fc0eb6"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp",
+      "bytes": 1146178,
+      "sha256": "306334b9d766310643a3737ed1b3a80580dc46b02619277b55a8645fbbc54e6f"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-idle-16/mobrami-idle-16-runtime220.webp",
+      "bytes": 1232130,
+      "sha256": "2b27acd49fe57ad708fe36080542abf917eaf155282f555e41350686711445e0"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-jump-16/mobrami-jump-16-runtime220.webp",
+      "bytes": 924204,
+      "sha256": "e3ef9d36589f4e47f71e0a8cfcfd6db1a0ebe1e9714eec5fa29f76dcdb8b0fcf"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp",
+      "bytes": 992742,
+      "sha256": "2017297034d7dd1441748fca4d16547eca1967aa2cba31ce38f6256299df5788"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-ranged-16/mobrami-ranged-16-runtime220.webp",
+      "bytes": 1080546,
+      "sha256": "5560c10434975e286ad2dcaf0267069254e4de2120baa3e0cdef8ca6af2de785"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-recovery-16/mobrami-recovery-16-runtime220.webp",
+      "bytes": 937540,
+      "sha256": "3dbaeb35a785d30ad6b07ac8f1c7394c3febcb009cb27a646d6f22f564e9fd07"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-rush-16/mobrami-rush-16-runtime220.webp",
+      "bytes": 1003962,
+      "sha256": "c949dfeaf8031af40754b48e76ada04bed388d16d124828853c2f2c87c156e1e"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-slam-16/mobrami-slam-16-runtime220.webp",
+      "bytes": 1151282,
+      "sha256": "1aa0f153adaaf59f3a509622f32b889e149f11a3a5d82fec371cf043c442bfe6"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-special1-dance-16/mobrami-special1-dance-16-runtime220.webp",
+      "bytes": 1279228,
+      "sha256": "0b6149334c4ed5bb7033132ea54c3ea8a3829b51dafa8936123b4a0b92f1f30a"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-special1-rush-16/mobrami-special1-rush-16-runtime220.webp",
+      "bytes": 1074390,
+      "sha256": "a7cf7ab899c1e3abe1504a93613a8b2e9fcc10f3687e52a1e89994ba36f2252f"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp",
+      "bytes": 1040720,
+      "sha256": "9a65bf46788b738ac4296865439faf9f458076461d03e1b64fd9be7feb3f3004"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp",
+      "bytes": 1033498,
+      "sha256": "2d64b06cf10a46f5f603ec8168c018b5b48640b030c5ea89d155d19d57248022"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-weak1-16/mobrami-weak1-16-runtime220.webp",
+      "bytes": 1429590,
+      "sha256": "ac8a049d68756750f779f6ac0eee0c6c1d48157afa39a524be4c464688df5757"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-weak2-16/mobrami-weak2-16-runtime220.webp",
+      "bytes": 1275322,
+      "sha256": "19a7e4faefe8a4247089699c0e61c6e3d94b845c629ebc2522d50854e658fc2a"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-weak3-16/mobrami-weak3-16-runtime220.webp",
+      "bytes": 1286958,
+      "sha256": "52ea1608c83704f526f1e0f350c224ab8ec383b5e886d72f65cdebb34a49ef7d"
+    },
+    {
+      "path": "combat/hero/clips/mobrami-weak4-16/mobrami-weak4-16-runtime220.webp",
+      "bytes": 1295464,
+      "sha256": "8e2f8255523ffd64c0956b351a312f5457ffd65cc3ba3c920817bb2d5f3da6be"
+    },
+    {
+      "path": "combat/hero/clips/walk-sequence/walk-sequence-runtime220.webp",
+      "bytes": 1135782,
+      "sha256": "fcd9a22d3bc833979d56696fbf3c290607e23236bb64625bf62987fc43316168"
+    },
+    {
+      "path": "combat/hero/references/approved-awakened-07.png",
+      "bytes": 2017554,
+      "sha256": "b205c73b6f81d0096083a47a880e23b85651f7473f3e9002ac20cdb3811b1c35"
+    },
+    {
+      "path": "combat/hero/references/approved-normal-v7.png",
+      "bytes": 1408402,
+      "sha256": "159a263a2c79dc1073c90919b72551e0830e8970101312768703ddc437b9a44f"
+    },
+    {
+      "path": "combat/hero/runtime-validation.json",
+      "bytes": 21893,
+      "sha256": "80f4b46c7c048dcb3355d2783ce7b306217b695b06cf38f8c2dbfcff2c644666"
+    },
+    {
+      "path": "combat/hero-manifest.json",
+      "bytes": 11074,
+      "sha256": "eb82080d34e34ac03c33893864390506d601f3f59bc7ac8bb1f7d69bb4dbfb7a"
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "character": "nyoro",
+  "animation": "light3",
+  "kind": "body",
+  "src": "nyoro-body-light3-runtime220.webp",
+  "bodyHeight": 186,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        539,
+        317,
+        255,
+        273
+      ],
+      "pivot": [
+        131,
+        268
+      ],
+      "duration": 0.05,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "nyoro/body/light3/01",
+      "sourceVisibleRgbaSha256": "1e9c348b71f9b46fc7d668537cfe6dafc2e4aca278fc0bd8d9d1d2fd5b064eaf"
+    },
+    {
+      "rect": [
+        1126,
+        200,
+        243,
+        199
+      ],
+      "pivot": [
+        124,
+        194
+      ],
+      "duration": 0.03,
+      "phase": "lower-load",
+      "sourceFrame": 2,
+      "sourceDrawingId": "nyoro/body/light3/02",
+      "sourceVisibleRgbaSha256": "7ca8ae1a731d35e64daf41f16fed49645a89f7168f7c598f66100df90cc3f6f7"
+    },
+    {
+      "rect": [
+        1126,
+        8,
+        253,
+        176
+      ],
+      "pivot": [
+        149,
+        168
+      ],
+      "duration": 0.03,
+      "phase": "waist-load",
+      "sourceFrame": 3,
+      "sourceDrawingId": "nyoro/body/light3/03",
+      "sourceVisibleRgbaSha256": "c310b09ea37a22ba27dabacdfc06b649589ee9f9deffbb225b2dc86f60c40c37"
+    },
+    {
+      "rect": [
+        1126,
+        415,
+        239,
+        172
+      ],
+      "pivot": [
+        144,
+        163
+      ],
+      "duration": 0.04,
+      "phase": "deep-load",
+      "sourceFrame": 4,
+      "sourceDrawingId": "nyoro/body/light3/04",
+      "sourceVisibleRgbaSha256": "f0aa2729e51bf221a20df40cb548984124b702e265698358c403a1efcc44410b"
+    },
+    {
+      "rect": [
+        1126,
+        603,
+        234,
+        195
+      ],
+      "pivot": [
+        131,
+        183
+      ],
+      "duration": 0.03,
+      "phase": "push",
+      "sourceFrame": 5,
+      "sourceDrawingId": "nyoro/body/light3/05",
+      "sourceVisibleRgbaSha256": "544392671566ac41a0f6e3e60a32e9cdbaef451862cdb8d0eaeb36eaa87adc7e"
+    },
+    {
+      "rect": [
+        305,
+        621,
+        278,
+        202
+      ],
+      "pivot": [
+        131,
+        196
+      ],
+      "duration": 0.025,
+      "phase": "rising-low",
+      "sourceFrame": 6,
+      "sourceDrawingId": "nyoro/body/light3/06",
+      "sourceVisibleRgbaSha256": "e0804a19185d82786cdfc595d9b1f8cd50d405a193786719e271c386cf07c996"
+    },
+    {
+      "rect": [
+        8,
+        629,
+        281,
+        212
+      ],
+      "pivot": [
+        122,
+        206
+      ],
+      "duration": 0.025,
+      "phase": "rising-chest",
+      "sourceFrame": 7,
+      "sourceDrawingId": "nyoro/body/light3/07",
+      "sourceVisibleRgbaSha256": "117f59565ce8462e2d690c05a42d0a23883e9767e83012aa2dc2b4f5468f6e5e"
+    },
+    {
+      "rect": [
+        8,
+        319,
+        265,
+        294
+      ],
+      "pivot": [
+        126,
+        288
+      ],
+      "duration": 0.055,
+      "phase": "high-contact",
+      "sourceFrame": 8,
+      "sourceDrawingId": "nyoro/body/light3/08",
+      "sourceVisibleRgbaSha256": "5e935c31bdb10f056e7e22fa5e913dba95a182a5ba913a48b88320c72572b6ce"
+    },
+    {
+      "rect": [
+        272,
+        8,
+        269,
+        293
+      ],
+      "pivot": [
+        117,
+        286
+      ],
+      "duration": 0.04,
+      "phase": "high-overshoot",
+      "sourceFrame": 9,
+      "sourceDrawingId": "nyoro/body/light3/09",
+      "sourceVisibleRgbaSha256": "1b2ffb585b96965109abdbc7531bb6136a648ea78c8e04fa4374f783f7b727db"
+    },
+    {
+      "rect": [
+        289,
+        317,
+        234,
+        288
+      ],
+      "pivot": [
+        125,
+        282
+      ],
+      "duration": 0.035,
+      "phase": "overhead",
+      "sourceFrame": 10,
+      "sourceDrawingId": "nyoro/body/light3/10",
+      "sourceVisibleRgbaSha256": "cd6c0c0518138b5b0869d88978c4c74850e3508bbb1a4410189e2c2c7b8d70b4"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        248,
+        295
+      ],
+      "pivot": [
+        147,
+        289
+      ],
+      "duration": 0.035,
+      "phase": "unwind",
+      "sourceFrame": 11,
+      "sourceDrawingId": "nyoro/body/light3/11",
+      "sourceVisibleRgbaSha256": "ecb3b3ceab908d35b0ed226c143d93ff5a8a5f0a8c12832d31ea0c7fa0e478ff"
+    },
+    {
+      "rect": [
+        810,
+        292,
+        243,
+        268
+      ],
+      "pivot": [
+        142,
+        262
+      ],
+      "duration": 0.035,
+      "phase": "deceleration",
+      "sourceFrame": 12,
+      "sourceDrawingId": "nyoro/body/light3/12",
+      "sourceVisibleRgbaSha256": "900d8bc4bd919321149f6605f180347f6c43c4162bf1af2be5e5996e2740ae5e"
+    },
+    {
+      "rect": [
+        557,
+        8,
+        253,
+        268
+      ],
+      "pivot": [
+        126,
+        263
+      ],
+      "duration": 0.04,
+      "phase": "lower-guard",
+      "sourceFrame": 13,
+      "sourceDrawingId": "nyoro/body/light3/13",
+      "sourceVisibleRgbaSha256": "7f35ce8e834b7cc000085ba801ebc0932e4dbe467ea7b487dd3ba4dacb36e439"
+    },
+    {
+      "rect": [
+        599,
+        606,
+        249,
+        269
+      ],
+      "pivot": [
+        122,
+        263
+      ],
+      "duration": 0.045,
+      "phase": "weight-return",
+      "sourceFrame": 14,
+      "sourceDrawingId": "nyoro/body/light3/14",
+      "sourceVisibleRgbaSha256": "d7d9b08ce0da82b225d3af7cf8d08efc2d5fa04349c8690a3474d13a1aaf2667"
+    },
+    {
+      "rect": [
+        864,
+        576,
+        246,
+        259
+      ],
+      "pivot": [
+        120,
+        253
+      ],
+      "duration": 0.05,
+      "phase": "near-ready",
+      "sourceFrame": 15,
+      "sourceDrawingId": "nyoro/body/light3/15",
+      "sourceVisibleRgbaSha256": "95b9db0c16a50868e713b1c54f30e1f9acf34bb7657a791b05c4110a53d13780"
+    },
+    {
+      "rect": [
+        826,
+        8,
+        248,
+        263
+      ],
+      "pivot": [
+        124,
+        257
+      ],
+      "duration": 0.06,
+      "phase": "settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "nyoro/body/light3/16",
+      "sourceVisibleRgbaSha256": "4c864f26d275514f0c2ff54c1e61c94e5c94eb82e78564859da4e56beda87e9b"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "nyoro/light3-rising/candidate-v1/manifest.json",
+    "atlas": "nyoro/light3-rising/candidate-v1/nyoro-light3-body-atlas.png",
+    "status": null,
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        89,
+        172,
+        344,
+        445
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 67
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        96,
+        246,
+        339,
+        445
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 67
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        71,
+        272,
+        324,
+        448
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 64
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        76,
+        277,
+        315,
+        449
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 63
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        89,
+        257,
+        323,
+        452
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 60
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        89,
+        244,
+        367,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        98,
+        234,
+        379,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        94,
+        152,
+        359,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        103,
+        154,
+        372,
+        447
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 65
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        95,
+        158,
+        329,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        73,
+        151,
+        321,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        78,
+        178,
+        321,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        94,
+        177,
+        347,
+        445
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 67
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        98,
+        177,
+        347,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        100,
+        187,
+        346,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        96,
+        183,
+        344,
+        446
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 66
+    }
+  ],
+  "runtimeExport": {
+    "scale": 1,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 186,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "1b3da3ab8f385be692a182e033143d15fa17ff55e014a59c5b468db0398a4d50",
+  "runtimeMeasurement": {
+    "action": "nyoro-body-light3",
+    "frames": 16,
+    "scale": 1,
+    "uniformAtlasPixels": 4194304,
+    "trimmedAtlas": [
+      1408,
+      896
+    ],
+    "trimmedPixels": 1261568,
+    "rgbaMiB": 4.8125,
+    "fileBytes": 1112702,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.625,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

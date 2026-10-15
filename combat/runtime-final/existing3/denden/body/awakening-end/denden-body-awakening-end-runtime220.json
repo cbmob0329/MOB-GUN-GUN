@@ -1,0 +1,524 @@
+{
+  "character": "denden",
+  "animation": "awakening-end",
+  "kind": "body",
+  "src": "denden-body-awakening-end-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        482,
+        245,
+        225
+      ],
+      "pivot": [
+        117.7741935483871,
+        221.5806451612903
+      ],
+      "duration": 0.06,
+      "phase": "powered-ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "denden/body/awakening-end/01",
+      "sourceVisibleRgbaSha256": "21c1e8575db40065e8890e76987ca4f650fc8bf8e5fb072e086513d81c945ad3"
+    },
+    {
+      "rect": [
+        527,
+        480,
+        227,
+        223
+      ],
+      "pivot": [
+        113.7741935483871,
+        219.5806451612903
+      ],
+      "duration": 0.055,
+      "phase": "release-shoulders",
+      "sourceFrame": 2,
+      "sourceDrawingId": "denden/body/awakening-end/02",
+      "sourceVisibleRgbaSha256": "a56dc1c83df132d26f3bd2ce24fd055d430a53e09b1d28540f99ae0c50b74659"
+    },
+    {
+      "rect": [
+        515,
+        720,
+        227,
+        224
+      ],
+      "pivot": [
+        105.7741935483871,
+        220.5806451612903
+      ],
+      "duration": 0.055,
+      "phase": "head-dip",
+      "sourceFrame": 3,
+      "sourceDrawingId": "denden/body/awakening-end/03",
+      "sourceVisibleRgbaSha256": "e84c450c28ca57876a92e39344a9767c3beca665f19ae7e852535169ad5e22e4"
+    },
+    {
+      "rect": [
+        770,
+        480,
+        219,
+        219
+      ],
+      "pivot": [
+        110.7741935483871,
+        215.5806451612903
+      ],
+      "duration": 0.06,
+      "phase": "exhale",
+      "sourceFrame": 4,
+      "sourceDrawingId": "denden/body/awakening-end/04",
+      "sourceVisibleRgbaSha256": "7d357c42dcec237e4f05fb2ffa223812418ee74cbb17eed7275093be123d149c"
+    },
+    {
+      "rect": [
+        776,
+        8,
+        229,
+        216
+      ],
+      "pivot": [
+        113.7741935483871,
+        212.5806451612903
+      ],
+      "duration": 0.06,
+      "phase": "head-low",
+      "sourceFrame": 5,
+      "sourceDrawingId": "denden/body/awakening-end/05",
+      "sourceVisibleRgbaSha256": "f554cfdb492498ec7b216ba7bd4883ca4fdcec885ab732670e14b37d849c4654"
+    },
+    {
+      "rect": [
+        279,
+        8,
+        234,
+        219
+      ],
+      "pivot": [
+        111.7741935483871,
+        215.5806451612903
+      ],
+      "duration": 0.07,
+      "phase": "shoulders-slump",
+      "sourceFrame": 6,
+      "sourceDrawingId": "denden/body/awakening-end/06",
+      "sourceVisibleRgbaSha256": "76393932af45dcb90594909988a78022ddd4574906e281dc6f271efb87200224"
+    },
+    {
+      "rect": [
+        529,
+        8,
+        231,
+        209
+      ],
+      "pivot": [
+        104.7741935483871,
+        206.5806451612903
+      ],
+      "duration": 0.06,
+      "phase": "rear-weight",
+      "sourceFrame": 7,
+      "sourceDrawingId": "denden/body/awakening-end/07",
+      "sourceVisibleRgbaSha256": "d9669adc5750a3536824cb4e6e525aad2742e63dde1a6f24f0aa9e5474928ea2"
+    },
+    {
+      "rect": [
+        269,
+        720,
+        230,
+        228
+      ],
+      "pivot": [
+        97.7741935483871,
+        224.5806451612903
+      ],
+      "duration": 0.07,
+      "phase": "tired-head-tilt",
+      "sourceFrame": 8,
+      "sourceDrawingId": "denden/body/awakening-end/08",
+      "sourceVisibleRgbaSha256": "1952af16a40335d29aeadcf9c15fc2c066cdefd744dcfd08e6fcb00fa9d3d68f"
+    },
+    {
+      "rect": [
+        271,
+        245,
+        239,
+        221
+      ],
+      "pivot": [
+        113.7741935483871,
+        217.5806451612903
+      ],
+      "duration": 0.06,
+      "phase": "head-lift",
+      "sourceFrame": 9,
+      "sourceDrawingId": "denden/body/awakening-end/09",
+      "sourceVisibleRgbaSha256": "3a94a03db718f26b2d950beab72a9b7c980aaed0220e352fef0f890fa27f06f6"
+    },
+    {
+      "rect": [
+        758,
+        719,
+        224,
+        217
+      ],
+      "pivot": [
+        106.7741935483871,
+        213.5806451612903
+      ],
+      "duration": 0.055,
+      "phase": "recenter",
+      "sourceFrame": 10,
+      "sourceDrawingId": "denden/body/awakening-end/10",
+      "sourceVisibleRgbaSha256": "4ad9de9a4ce4aff469358d45969722d9562147d4f00c6664852e5f412f508549"
+    },
+    {
+      "rect": [
+        526,
+        243,
+        231,
+        221
+      ],
+      "pivot": [
+        111.7741935483871,
+        217.5806451612903
+      ],
+      "duration": 0.055,
+      "phase": "straighten",
+      "sourceFrame": 11,
+      "sourceDrawingId": "denden/body/awakening-end/11",
+      "sourceVisibleRgbaSha256": "8a403e162900a6f36e4034d9755707ce885f5807b7363ae139fe282448d7b2f8"
+    },
+    {
+      "rect": [
+        773,
+        240,
+        219,
+        217
+      ],
+      "pivot": [
+        110.7741935483871,
+        213.5806451612903
+      ],
+      "duration": 0.055,
+      "phase": "knees-rise",
+      "sourceFrame": 12,
+      "sourceDrawingId": "denden/body/awakening-end/12",
+      "sourceVisibleRgbaSha256": "ed309e7a70c760832bd5a215c793c1d3ef0465a989511f818b069ce5f40cbb2b"
+    },
+    {
+      "rect": [
+        8,
+        723,
+        245,
+        223
+      ],
+      "pivot": [
+        111.7741935483871,
+        219.5806451612903
+      ],
+      "duration": 0.055,
+      "phase": "wrists-ready",
+      "sourceFrame": 13,
+      "sourceDrawingId": "denden/body/awakening-end/13",
+      "sourceVisibleRgbaSha256": "3bb12f1c3b40ac3a715bbe9d1f46baf85a20e154b7c8f738ebc23701cb1a20ef"
+    },
+    {
+      "rect": [
+        8,
+        245,
+        247,
+        221
+      ],
+      "pivot": [
+        117.7741935483871,
+        217.5806451612903
+      ],
+      "duration": 0.06,
+      "phase": "foot-adjust",
+      "sourceFrame": 14,
+      "sourceDrawingId": "denden/body/awakening-end/14",
+      "sourceVisibleRgbaSha256": "4e17a218ba2296d2a0a235ecb397420d1bd32c31c8f16b0c7e25ac14b2353a56"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        255,
+        221
+      ],
+      "pivot": [
+        127.7741935483871,
+        217.5806451612903
+      ],
+      "duration": 0.06,
+      "phase": "tail-settle",
+      "sourceFrame": 15,
+      "sourceDrawingId": "denden/body/awakening-end/15",
+      "sourceVisibleRgbaSha256": "3df874acb710a164859be6bd791cf3ddd89a2b02f67232af5eddd816c1f6bf48"
+    },
+    {
+      "rect": [
+        269,
+        482,
+        242,
+        222
+      ],
+      "pivot": [
+        121.7741935483871,
+        218.5806451612903
+      ],
+      "duration": 0.07,
+      "phase": "normal-ready",
+      "sourceFrame": 16,
+      "sourceDrawingId": "denden/body/awakening-end/16",
+      "sourceVisibleRgbaSha256": "6e13178675b2f600693de77bc0d3d192ef159af13fb94a41aa81b741a6ae1e95"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/awakening-end/denden-awakening-end-16.json",
+    "atlas": "denden/awakening-end/denden-awakening-end-16-atlas.png",
+    "status": "16-cel static-review candidate; in-engine acceptance pending",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        118,
+        171,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        173,
+        377,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        172,
+        386,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        178,
+        371,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        181,
+        379,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        178,
+        387,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        188,
+        392,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        140,
+        168,
+        398,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        175,
+        391,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        180,
+        382,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        175,
+        384,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        180,
+        372,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        173,
+        400,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        118,
+        176,
+        395,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        107,
+        175,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        113,
+        174,
+        385,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8870967741935484,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "82d3a34af81469c5d8019653fdbdefc369690be3a86cf7aa78dd4832ac2baa74",
+  "runtimeMeasurement": {
+    "action": "denden-body-awakening-end",
+    "frames": 16,
+    "scale": 0.8870967741935484,
+    "uniformAtlasPixels": 3301489,
+    "trimmedAtlas": [
+      1024,
+      960
+    ],
+    "trimmedPixels": 983040,
+    "rgbaMiB": 3.75,
+    "fileBytes": 871564,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.96,
+  "artTimingRecommendations": {
+    "phaseRanges": {}
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

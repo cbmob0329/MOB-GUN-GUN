@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "character": "モブラミ / Mob Rami",
+  "status": "integration-candidate-runtime-QA-required",
+  "animations": {
+    "idle": {
+      "adapter": "hero/adapters/idle.json"
+    },
+    "walk": {
+      "adapter": "hero/adapters/walk.json"
+    },
+    "dash": {
+      "adapter": "hero/adapters/dash.json"
+    },
+    "jump": {
+      "adapter": "hero/adapters/jump.json"
+    },
+    "guard": {
+      "adapter": "hero/adapters/guard.json"
+    },
+    "crouch": {
+      "adapter": "hero/adapters/crouch.json"
+    },
+    "light1": {
+      "adapter": "hero/adapters/light1.json"
+    },
+    "light2": {
+      "adapter": "hero/adapters/light2.json"
+    },
+    "light3": {
+      "adapter": "hero/adapters/light3.json"
+    },
+    "light4": {
+      "adapter": "hero/adapters/light4.json"
+    },
+    "charge-cycle": {
+      "adapter": "hero/adapters/charge-cycle.json"
+    },
+    "charge-start": {
+      "adapter": "hero/adapters/charge-start.json"
+    },
+    "charge-hold": {
+      "adapter": "hero/adapters/charge-hold.json"
+    },
+    "blow": {
+      "adapter": "hero/adapters/blow.json"
+    },
+    "launch": {
+      "adapter": "hero/adapters/launch.json"
+    },
+    "ranged": {
+      "adapter": "hero/adapters/ranged.json",
+      "releaseSocket": [
+        0.3076923076923077,
+        -0.43846153846153846
+      ],
+      "releaseFrame": 7
+    },
+    "rush": {
+      "adapter": "hero/adapters/rush.json"
+    },
+    "air1": {
+      "adapter": "hero/adapters/air1.json"
+    },
+    "air2": {
+      "adapter": "hero/adapters/air2.json"
+    },
+    "air3": {
+      "adapter": "hero/adapters/air3.json"
+    },
+    "slam": {
+      "adapter": "hero/adapters/slam.json"
+    },
+    "damage": {
+      "adapter": "hero/adapters/damage.json"
+    },
+    "death": {
+      "adapter": "hero/adapters/death.json"
+    },
+    "recovery": {
+      "adapter": "hero/adapters/recovery.json"
+    },
+    "awakening-start": {
+      "adapter": "hero/adapters/awakening-start.json"
+    },
+    "special1": {
+      "adapter": "hero/adapters/special1.json"
+    },
+    "special2": {
+      "adapter": "hero/adapters/special2.json"
+    },
+    "special2-active": {
+      "adapter": "hero/adapters/special2-active.json",
+      "releaseSocket": [
+        0.17058823529411765,
+        -0.18823529411764706
+      ],
+      "releaseFrame": 3
+    },
+    "water": {
+      "adapter": "hero/adapters/special2-active.json",
+      "releaseSocket": [
+        0.17058823529411765,
+        -0.18823529411764706
+      ],
+      "releaseFrame": 3
+    },
+    "awakened-idle": {
+      "adapter": "hero/adapters/awakened-idle.json"
+    },
+    "awakened-walk": {
+      "adapter": "hero/adapters/awakened-walk.json"
+    },
+    "awakened-dash": {
+      "adapter": "hero/adapters/awakened-dash.json"
+    },
+    "awakened-jump": {
+      "adapter": "hero/adapters/awakened-jump.json"
+    },
+    "awakened-guard": {
+      "adapter": "hero/adapters/awakened-guard.json"
+    },
+    "awakened-crouch": {
+      "adapter": "hero/adapters/awakened-crouch.json"
+    },
+    "awakened-light1": {
+      "adapter": "hero/adapters/awakened-light1.json"
+    },
+    "awakened-light2": {
+      "adapter": "hero/adapters/awakened-light2.json"
+    },
+    "awakened-light3": {
+      "adapter": "hero/adapters/awakened-light3.json"
+    },
+    "awakened-light4": {
+      "adapter": "hero/adapters/awakened-light4.json"
+    },
+    "awakened-charge-cycle": {
+      "adapter": "hero/adapters/awakened-charge-cycle.json"
+    },
+    "awakened-charge-start": {
+      "adapter": "hero/adapters/awakened-charge-start.json"
+    },
+    "awakened-charge-hold": {
+      "adapter": "hero/adapters/awakened-charge-hold.json"
+    },
+    "awakened-blow": {
+      "adapter": "hero/adapters/awakened-blow.json"
+    },
+    "awakened-launch": {
+      "adapter": "hero/adapters/awakened-launch.json"
+    },
+    "awakened-ranged": {
+      "adapter": "hero/adapters/awakened-ranged.json",
+      "releaseSocket": [
+        0.3314285714285714,
+        -0.5142857142857142
+      ],
+      "releaseFrame": 7
+    },
+    "awakened-rush": {
+      "adapter": "hero/adapters/awakened-rush.json"
+    },
+    "awakened-air1": {
+      "adapter": "hero/adapters/awakened-air1.json"
+    },
+    "awakened-air2": {
+      "adapter": "hero/adapters/awakened-air2.json"
+    },
+    "awakened-air3": {
+      "adapter": "hero/adapters/awakened-air3.json"
+    },
+    "awakened-slam": {
+      "adapter": "hero/adapters/awakened-slam.json"
+    },
+    "awakened-damage": {
+      "adapter": "hero/adapters/awakened-damage.json"
+    },
+    "awakened-death": {
+      "adapter": "hero/adapters/awakened-death.json"
+    },
+    "awakened-recovery": {
+      "adapter": "hero/adapters/awakened-recovery.json"
+    },
+    "awakened-awakening-end": {
+      "adapter": "hero/adapters/awakened-awakening-end.json"
+    },
+    "awakened-special1": {
+      "adapter": "hero/adapters/awakened-special1.json"
+    },
+    "awakened-special2": {
+      "adapter": "hero/adapters/awakened-special2.json"
+    },
+    "awakened-special2-active": {
+      "adapter": "hero/adapters/awakened-special2-active.json",
+      "releaseSocket": [
+        0.3323529411764706,
+        -0.3088235294117647
+      ],
+      "releaseFrame": 3
+    },
+    "awakened-water": {
+      "adapter": "hero/adapters/awakened-special2-active.json",
+      "releaseSocket": [
+        0.3323529411764706,
+        -0.3088235294117647
+      ],
+      "releaseFrame": 3
+    },
+    "hero/effects/hit-light": {
+      "adapter": "hero/clips/mobrami-fx-hit-light-16/mobrami-fx-hit-light-16-runtime220.json"
+    },
+    "hero/effects/hit-heavy": {
+      "adapter": "hero/clips/mobrami-fx-hit-heavy-16/mobrami-fx-hit-heavy-16-runtime220.json"
+    },
+    "hero/effects/charge": {
+      "adapter": "hero/clips/mobrami-fx-charge-16/mobrami-fx-charge-16-runtime220.json"
+    },
+    "hero/effects/launch": {
+      "adapter": "hero/clips/mobrami-fx-launch-16/mobrami-fx-launch-16-runtime220.json"
+    },
+    "hero/effects/slam": {
+      "adapter": "hero/clips/mobrami-fx-slam-16/mobrami-fx-slam-16-runtime220.json"
+    },
+    "hero/effects/ranged": {
+      "adapter": "hero/clips/mobrami-fx-ranged-16/mobrami-fx-ranged-16-runtime220.json"
+    },
+    "hero/effects/rush-trail": {
+      "adapter": "hero/clips/mobrami-fx-rush-trail-16/mobrami-fx-rush-trail-16-runtime220.json"
+    },
+    "hero/effects/special1-aura": {
+      "adapter": "hero/clips/mobrami-fx-special1-aura-16/mobrami-fx-special1-aura-16-runtime220.json"
+    },
+    "hero/effects/special2-water": {
+      "adapter": "hero/clips/mobrami-fx-special2-water-16/mobrami-fx-special2-water-16-runtime220.json"
+    },
+    "hero/effects/special2-splash": {
+      "adapter": "hero/clips/mobrami-fx-special2-splash-16/mobrami-fx-special2-splash-16-runtime220.json"
+    },
+    "hero/effects/awakening-aura": {
+      "adapter": "hero/clips/mobrami-fx-awakening-aura-16/mobrami-fx-awakening-aura-16-runtime220.json"
+    },
+    "hero/effects/awakening-burst": {
+      "adapter": "hero/clips/mobrami-fx-awakening-burst-16/mobrami-fx-awakening-burst-16-runtime220.json"
+    }
+  },
+  "aliases": {
+    "charge": {
+      "clip": "charge-hold"
+    },
+    "special1-startup": {
+      "clip": "special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "special1-active": {
+      "clip": "special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "special1-recovery": {
+      "clip": "special1",
+      "range": [
+        27,
+        32
+      ]
+    },
+    "dance": {
+      "clip": "special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "specialRush": {
+      "clip": "special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "special2-startup": {
+      "clip": "special2",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "special2-recovery": {
+      "clip": "special2",
+      "range": [
+        24,
+        32
+      ]
+    },
+    "awakened-charge": {
+      "clip": "awakened-charge-hold"
+    },
+    "awakened-special1-startup": {
+      "clip": "awakened-special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "awakened-special1-active": {
+      "clip": "awakened-special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "awakened-special1-recovery": {
+      "clip": "awakened-special1",
+      "range": [
+        27,
+        32
+      ]
+    },
+    "awakened-dance": {
+      "clip": "awakened-special1",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "awakened-specialRush": {
+      "clip": "awakened-special1",
+      "range": [
+        16,
+        27
+      ]
+    },
+    "awakened-special2-startup": {
+      "clip": "awakened-special2",
+      "range": [
+        0,
+        16
+      ]
+    },
+    "awakened-special2-recovery": {
+      "clip": "awakened-special2",
+      "range": [
+        24,
+        32
+      ]
+    },
+    "charge-release": {
+      "clip": "blow"
+    },
+    "awakened-charge-release": {
+      "clip": "awakened-blow"
+    },
+    "awakening-end": {
+      "clip": "awakened-awakening-end"
+    },
+    "awakened-awakening-start": {
+      "clip": "awakening-start"
+    },
+    "hero/effects/awakened-hit-light": {
+      "clip": "hero/effects/hit-light"
+    },
+    "hero/effects/awakened-hit-heavy": {
+      "clip": "hero/effects/hit-heavy"
+    },
+    "hero/effects/awakened-charge": {
+      "clip": "hero/effects/charge"
+    },
+    "hero/effects/awakened-launch": {
+      "clip": "hero/effects/launch"
+    },
+    "hero/effects/awakened-slam": {
+      "clip": "hero/effects/slam"
+    },
+    "hero/effects/awakened-ranged": {
+      "clip": "hero/effects/ranged"
+    },
+    "hero/effects/awakened-rush-trail": {
+      "clip": "hero/effects/rush-trail"
+    },
+    "hero/effects/awakened-special1-aura": {
+      "clip": "hero/effects/special1-aura"
+    },
+    "hero/effects/awakened-special2-water": {
+      "clip": "hero/effects/special2-water"
+    },
+    "hero/effects/awakened-special2-splash": {
+      "clip": "hero/effects/special2-splash"
+    },
+    "hero/effects/awakened-awakening-aura": {
+      "clip": "hero/effects/awakening-aura"
+    },
+    "hero/effects/awakened-awakening-burst": {
+      "clip": "hero/effects/awakening-burst"
+    }
+  },
+  "documentation": {
+    "standaloneMinimumCels": 16,
+    "bodyAuthoredCels": 896,
+    "detachedFxAuthoredCels": 192,
+    "phaseRule": "Short special phase adapters and aliases select timing windows from complete32-cel authored sequences. They do not claim separately authored standalone motions.",
+    "spatialTier": "Nominal220px body runtime copies, spatially downsampled; static lossless WebP encoding. Original full-resolution masters preserved separately and not included in this runtime pack.",
+    "coordinates": "rect and pivot are runtime texture pixels; duration seconds; bodyHeight runtime pixels; releaseSocket, displaySize and socketOffset are normalized to displayed body height.",
+    "paths": "adapter relative this manifest; source/frame.src relative adapter; aliases use exact engine keys; body keys unprefixed, FX keys hero/effects/.",
+    "integration": "Load with loadCartoonArt(pack,manifestURL). Actual game integration and mobile/device QA not yet completed."
+  }
+}

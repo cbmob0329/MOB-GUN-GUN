@@ -1,0 +1,274 @@
+{
+  "character": "mobdesert",
+  "clip": "launch",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 219.99999999999997,
+  "displayBodyHeight": 110,
+  "recommendedDisplayBodyHeight": 110,
+  "knownIssues": [
+    "Final user/runtime approval pending.",
+    "Virtual origins are source-row ground registrations; exact gameplay travel and air-height timing still need runtime review.",
+    "Sword length has source perspective foreshortening; exact weapon sockets pending."
+  ],
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        8,
+        1039,
+        276,
+        222
+      ],
+      "duration": 0.05,
+      "pivot": [
+        155.2,
+        214.6
+      ],
+      "phase": "ready",
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        8,
+        1277,
+        264,
+        207
+      ],
+      "duration": 0.055,
+      "pivot": [
+        159.13333333333333,
+        199.9333333333333
+      ],
+      "phase": "lower",
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        8,
+        833,
+        284,
+        190
+      ],
+      "duration": 0.055,
+      "pivot": [
+        161.79999999999998,
+        179.39999999999998
+      ],
+      "phase": "deep squat",
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        8,
+        8,
+        302,
+        191
+      ],
+      "duration": 0.06,
+      "pivot": [
+        150.79999999999998,
+        183.79999999999998
+      ],
+      "phase": "rear load",
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        8,
+        2447,
+        242,
+        228
+      ],
+      "duration": 0.045,
+      "pivot": [
+        104.86666666666666,
+        219.99999999999997
+      ],
+      "phase": "scoop begins",
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        8,
+        1500,
+        234,
+        261
+      ],
+      "duration": 0.04,
+      "pivot": [
+        119.99999999999999,
+        260.3333333333333
+      ],
+      "phase": "rising step",
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        240,
+        528,
+        263,
+        281
+      ],
+      "duration": 0.035,
+      "pivot": [
+        125.13333333333333,
+        285.26666666666665
+      ],
+      "phase": "takeoff",
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        8,
+        215,
+        265,
+        297
+      ],
+      "duration": 0.055,
+      "pivot": [
+        119.99999999999999,
+        296.7333333333333
+      ],
+      "phase": "upward strike",
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        289,
+        215,
+        214,
+        295
+      ],
+      "duration": 0.06,
+      "pivot": [
+        114.13333333333333,
+        305.79999999999995
+      ],
+      "phase": "apex",
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        8,
+        528,
+        216,
+        289
+      ],
+      "duration": 0.05,
+      "pivot": [
+        109.99999999999999,
+        298.46666666666664
+      ],
+      "phase": "turn at apex",
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        258,
+        1500,
+        242,
+        236
+      ],
+      "duration": 0.05,
+      "pivot": [
+        129.53333333333333,
+        243.9333333333333
+      ],
+      "phase": "descend",
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        8,
+        2691,
+        240,
+        227
+      ],
+      "duration": 0.05,
+      "pivot": [
+        125.6,
+        224.39999999999998
+      ],
+      "phase": "touch down",
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        8,
+        2223,
+        255,
+        208
+      ],
+      "duration": 0.055,
+      "pivot": [
+        134.66666666666666,
+        209.46666666666664
+      ],
+      "phase": "landing compress",
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        264,
+        2691,
+        239,
+        203
+      ],
+      "duration": 0.055,
+      "pivot": [
+        131.0,
+        205.06666666666666
+      ],
+      "phase": "rise",
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        8,
+        2006,
+        256,
+        201
+      ],
+      "duration": 0.06,
+      "pivot": [
+        135.66666666666666,
+        199.2
+      ],
+      "phase": "guard return",
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        8,
+        1777,
+        258,
+        213
+      ],
+      "duration": 0.07,
+      "pivot": [
+        133.2,
+        210.9333333333333
+      ],
+      "phase": "settle",
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/mobdesert/launch/mobdesert-launch-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 300,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.7333333333333333,
+    "actualBodyPixels": 219.99999999999997,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/mobdesert/launch/clip.json"
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "character": "denden",
+  "animation": "slam",
+  "kind": "body",
+  "src": "denden-body-slam-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        3277,
+        8,
+        227,
+        205
+      ],
+      "pivot": [
+        125.12350597609563,
+        227.1274900398406
+      ],
+      "duration": 0.045,
+      "phase": "air-tuck",
+      "sourceFrame": 1,
+      "sourceDrawingId": "denden/body/slam/01",
+      "sourceVisibleRgbaSha256": "3d4372313716a74700f79a302926ef4c19c817577dc956d3ae84fa3570977a7c"
+    },
+    {
+      "rect": [
+        3520,
+        8,
+        227,
+        205
+      ],
+      "pivot": [
+        137.12350597609563,
+        227.1274900398406
+      ],
+      "duration": 0.04,
+      "phase": "air-compress",
+      "sourceFrame": 2,
+      "sourceDrawingId": "denden/body/slam/02",
+      "sourceVisibleRgbaSha256": "3619ef5a5f2281b1d4c31680eee71c843a1129cb6851d3a4e5fd7375c41c3436"
+    },
+    {
+      "rect": [
+        1806,
+        8,
+        232,
+        223
+      ],
+      "pivot": [
+        142.12350597609563,
+        241.1274900398406
+      ],
+      "duration": 0.035,
+      "phase": "legs-extend",
+      "sourceFrame": 3,
+      "sourceDrawingId": "denden/body/slam/03",
+      "sourceVisibleRgbaSha256": "bbfdbcc34ac6530ef123999d8bfb473adb72eafecf3a76b96afd13bc6598106c"
+    },
+    {
+      "rect": [
+        2300,
+        8,
+        229,
+        226
+      ],
+      "pivot": [
+        137.12350597609563,
+        239.1274900398406
+      ],
+      "duration": 0.03,
+      "phase": "descent-stretch",
+      "sourceFrame": 4,
+      "sourceDrawingId": "denden/body/slam/04",
+      "sourceVisibleRgbaSha256": "b5baeb923e5e538f175d03ab7fb7a193026a5b520e6803db819ef2b0678fe7da"
+    },
+    {
+      "rect": [
+        2545,
+        8,
+        229,
+        214
+      ],
+      "pivot": [
+        127.12350597609563,
+        227.1274900398406
+      ],
+      "duration": 0.03,
+      "phase": "approach",
+      "sourceFrame": 5,
+      "sourceDrawingId": "denden/body/slam/05",
+      "sourceVisibleRgbaSha256": "8ab515ddada9ae0f5078add974eec049b610e990685dc74ad5fd41d8e54d73ff"
+    },
+    {
+      "rect": [
+        3763,
+        8,
+        225,
+        222
+      ],
+      "pivot": [
+        126.12350597609563,
+        233.1274900398406
+      ],
+      "duration": 0.025,
+      "phase": "feet-ready",
+      "sourceFrame": 6,
+      "sourceDrawingId": "denden/body/slam/06",
+      "sourceVisibleRgbaSha256": "d9a9f406e1eca5c0875fe31e07aad2ae946ce8a1887a99ac4addcdd699f8778b"
+    },
+    {
+      "rect": [
+        2790,
+        8,
+        228,
+        221
+      ],
+      "pivot": [
+        111.12350597609563,
+        217.1274900398406
+      ],
+      "duration": 0.035,
+      "phase": "first-contact",
+      "sourceFrame": 7,
+      "sourceDrawingId": "denden/body/slam/07",
+      "sourceVisibleRgbaSha256": "13286c6dd17e877aed6ccc45037c43e384d996cf0708e7920b30d56783a95c0c"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        253,
+        189
+      ],
+      "pivot": [
+        140.12350597609563,
+        186.1274900398406
+      ],
+      "duration": 0.04,
+      "phase": "impact-compress",
+      "sourceFrame": 8,
+      "sourceDrawingId": "denden/body/slam/08",
+      "sourceVisibleRgbaSha256": "2548e73f8e6cecd27f6ea1ffe460960c464d7281e5d4b5912fb898e099959fe8"
+    },
+    {
+      "rect": [
+        277,
+        8,
+        245,
+        163
+      ],
+      "pivot": [
+        128.12350597609563,
+        160.1274900398406
+      ],
+      "duration": 0.055,
+      "phase": "deepest-impact",
+      "sourceFrame": 9,
+      "sourceDrawingId": "denden/body/slam/09",
+      "sourceVisibleRgbaSha256": "4e40612bd2d4eb647c92de6525ce112c7e8b3179a040306e9a6c3ab2e0488b9e"
+    },
+    {
+      "rect": [
+        795,
+        8,
+        239,
+        198
+      ],
+      "pivot": [
+        113.12350597609563,
+        195.1274900398406
+      ],
+      "duration": 0.045,
+      "phase": "rebound-low",
+      "sourceFrame": 10,
+      "sourceDrawingId": "denden/body/slam/10",
+      "sourceVisibleRgbaSha256": "787f51cbe89d2ab32bfab040c6f054aba115dd029502415fdf38bdb5d5476356"
+    },
+    {
+      "rect": [
+        3034,
+        8,
+        227,
+        208
+      ],
+      "pivot": [
+        112.12350597609563,
+        205.1274900398406
+      ],
+      "duration": 0.045,
+      "phase": "rebound-rise",
+      "sourceFrame": 11,
+      "sourceDrawingId": "denden/body/slam/11",
+      "sourceVisibleRgbaSha256": "8596bb0c8dc1709d6c2c8c9b2c0474fd7f39b3d28f402019711bfaa20bcaae8b"
+    },
+    {
+      "rect": [
+        1556,
+        8,
+        234,
+        216
+      ],
+      "pivot": [
+        108.12350597609563,
+        213.1274900398406
+      ],
+      "duration": 0.045,
+      "phase": "balance",
+      "sourceFrame": 12,
+      "sourceDrawingId": "denden/body/slam/12",
+      "sourceVisibleRgbaSha256": "746b1c51b217cef27e221c5c79d9946125dd1317fc8d06c58310b18f4b5e97f3"
+    },
+    {
+      "rect": [
+        1050,
+        8,
+        237,
+        225
+      ],
+      "pivot": [
+        112.12350597609563,
+        222.1274900398406
+      ],
+      "duration": 0.045,
+      "phase": "ready-lift",
+      "sourceFrame": 13,
+      "sourceDrawingId": "denden/body/slam/13",
+      "sourceVisibleRgbaSha256": "3decabb696324326129fb2d73aeab1c52ab08aa0681b6400f6f96110cc531595"
+    },
+    {
+      "rect": [
+        2054,
+        8,
+        230,
+        222
+      ],
+      "pivot": [
+        117.12350597609563,
+        219.1274900398406
+      ],
+      "duration": 0.05,
+      "phase": "shoulders-settle",
+      "sourceFrame": 14,
+      "sourceDrawingId": "denden/body/slam/14",
+      "sourceVisibleRgbaSha256": "c4b5773cd9b37dd1aa8b8ef68e2243d4e95d760bf4b4a06e330663ec8b08ec54"
+    },
+    {
+      "rect": [
+        538,
+        8,
+        241,
+        222
+      ],
+      "pivot": [
+        118.12350597609563,
+        219.1274900398406
+      ],
+      "duration": 0.05,
+      "phase": "hands-ready",
+      "sourceFrame": 15,
+      "sourceDrawingId": "denden/body/slam/15",
+      "sourceVisibleRgbaSha256": "beca73c1667e8883a2bbde62cce6f168c0a78c09130e4ecfccb75b0c4f90d8fc"
+    },
+    {
+      "rect": [
+        1303,
+        8,
+        237,
+        222
+      ],
+      "pivot": [
+        120.12350597609563,
+        219.1274900398406
+      ],
+      "duration": 0.06,
+      "phase": "ready",
+      "sourceFrame": 16,
+      "sourceDrawingId": "denden/body/slam/16",
+      "sourceVisibleRgbaSha256": "426980aa434942ef09760dcf221c8e55bc3fd21950589e2c09476ed914fb2f23"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/slam/denden-slam-16.json",
+    "atlas": "denden/slam/denden-slam-16-atlas.png",
+    "status": "16-cel static-review candidate; in-engine acceptance pending",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        108,
+        161,
+        365,
+        394
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 108
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        94,
+        161,
+        352,
+        394
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 94
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        88,
+        145,
+        352,
+        399
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        94,
+        148,
+        354,
+        404
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 94
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        106,
+        161,
+        365,
+        404
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 106
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        107,
+        154,
+        362,
+        406
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 106
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        173,
+        382,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        91,
+        208,
+        378,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        104,
+        238,
+        382,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        198,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        123,
+        186,
+        380,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        127,
+        177,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        123,
+        167,
+        392,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        117,
+        170,
+        378,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        116,
+        170,
+        390,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        113,
+        170,
+        383,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8764940239043825,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "48eb57964c0bd5e9b33fa88ccbb75fc182976e332454b5fd3b44ec04d8966a13",
+  "runtimeMeasurement": {
+    "action": "denden-body-slam",
+    "frames": 16,
+    "scale": 0.8764940239043825,
+    "uniformAtlasPixels": 3222025,
+    "trimmedAtlas": [
+      4032,
+      256
+    ],
+    "trimmedPixels": 1032192,
+    "rgbaMiB": 3.9375,
+    "fileBytes": 813326,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.675,
+  "artTimingRecommendations": {
+    "events": [
+      {
+        "event": "first-ground-contact",
+        "frame": 7,
+        "timeSeconds": 0.205
+      },
+      {
+        "event": "deepest-compression",
+        "frame": 9,
+        "timeSeconds": 0.28
+      }
+    ],
+    "phaseRanges": {
+      "airborne": [
+        1,
+        6
+      ],
+      "ground-contact": [
+        7,
+        9
+      ],
+      "recovery": [
+        10,
+        16
+      ]
+    }
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

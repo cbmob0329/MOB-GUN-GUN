@@ -1,0 +1,520 @@
+{
+  "character": "nyoro",
+  "scope": "Existing3 required art and runtime copies only. Not all6 game completion.",
+  "actualGameAccepted": false,
+  "requiredBodyDrawings": 496,
+  "requiredEffectDrawings": 192,
+  "normalAwakenedBodyReuse": "All31 normal16-cel tracks reused by awakened aliases; no separate awakened body drawings counted. Separate16-cel character aura included.",
+  "knownVisualReviewFlags": [
+    "Special1 uses a newly drawn aura-propelled leap/glide active sequence, not a running loop. Failed run sheets and rejected fixes are excluded.",
+    "Special1 joins16→17 and32→33 show head/body mass drift; active11–12 have long leg extension, recovery has pronounced canopy turns, final neutral is about6% smaller.",
+    "Special2 join16→17 changes canopy/face mass; final neutral is about7% smaller than startup; landing40→41 has strong rebound.",
+    "Special2 family scale is fixed at bodyHeight175 for all48cels, including active source phase whose separate annotation is203. Do not rescale the phases independently.",
+    "Charge-start and charge-hold share nominalbodyHeight201. Recovery standing height differs from death neutral. Known source-pose variation remains exposed.",
+    "Current aura runtime is centered on the midpoint foot root. Earlier approved light1 uses a rear-foot root and its aura alignment needs in-game review; no accepted body cels are shifted or repainted."
+  ],
+  "reviewMethod": "Source/contact and decoded-file/coordinate validation; not an in-engine gameplay approval.",
+  "sourceRecords": [
+    {
+      "action": "special2-startup",
+      "kind": "body",
+      "metadata": "nyoro/special2/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate; not production approved",
+        "runtimeNotes": [
+          "World x/y motion must be supplied by runtime separately from pose animation. Airborne poses use measured pelvis roots; foot baseline is not forced onto tucked airborne feet.",
+          "Phase-generated head/body proportions are not perfectly matched. Fixed family scale deliberately preserves visible phase-join discontinuities for review.",
+          "Static per-cel inspection and decoded animation-file checks performed; this worker has not observed real-time playback."
+        ],
+        "normalAwakened": "Shared body drawings permitted; separate aura layers owned elsewhere.",
+        "bodyHeightMethod": "Single fixed family reference from startup neutral; manual head/ear to foot estimate excluding umbrella/tail. No per-frame or per-phase fit."
+      }
+    },
+    {
+      "action": "air2",
+      "kind": "body",
+      "metadata": "nyoro/air2/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Air2 is backhand swing with broader rear windup and leg counter-rotation than air1. Final extended-shaft silhouette is similar, so runtime distinction needs review."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "ranged",
+      "kind": "body",
+      "metadata": "nyoro/ranged/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Projectile/impact FX are separate and not included. Suggested release body08 at0.295s; body09 is recoil."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "charge-hold",
+      "kind": "body",
+      "metadata": "nyoro/charge-hold/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Runtime reference bodyHeight201 uses charge-start neutral reference; charge-hold first drawn loaded pose is185px, intentionally lower. Use shared scale across charge-start/hold boundary; do not fit individual poses."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "shared charge-start neutral reference201px; held/crouched pose first frame185px. Do not normalize to crouched pose."
+      }
+    },
+    {
+      "action": "crouch",
+      "kind": "body",
+      "metadata": "nyoro/crouch/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Full16 clip includes enter/low-hold/release. Source08is lowest;09rises slightly within low hold. Do not fit-normalize the crouch height."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "blow",
+      "kind": "body",
+      "metadata": "nyoro/blow/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "jump",
+      "kind": "body",
+      "metadata": "nyoro/jump/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate awakened aura owned by another artist and not included",
+        "bodyHeightMethod": "manual visible anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "light2",
+      "kind": "body",
+      "metadata": "nyoro/light2-backhand/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "normalAwakened": "same body reuse permitted, but no awakened aura delivered here"
+      }
+    },
+    {
+      "action": "damage",
+      "kind": "body",
+      "metadata": "nyoro/damage/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Source02 includes separate disconnected notice marks. They are excluded from body component extraction, not counted toward FX coverage. No impact FX included."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "special1-startup",
+      "kind": "body",
+      "metadata": "nyoro/special1/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate; not production approved",
+        "runtimeNotes": [
+          "World x/y motion must be supplied by runtime separately from pose animation. Airborne poses use measured pelvis roots; foot baseline is not forced onto tucked airborne feet.",
+          "Phase-generated head/body proportions are not perfectly matched. Fixed family scale deliberately preserves visible phase-join discontinuities for review.",
+          "Static per-cel inspection and decoded animation-file checks performed; this worker has not observed real-time playback."
+        ],
+        "normalAwakened": "Shared body drawings permitted; separate aura layers owned elsewhere.",
+        "bodyHeightMethod": "Single fixed family reference from startup neutral; manual head/ear to foot estimate excluding umbrella/tail. No per-frame or per-phase fit."
+      }
+    },
+    {
+      "action": "walk",
+      "kind": "body",
+      "metadata": "nyoro/walk-loop/candidate-v2/manifest.json",
+      "recordedReview": {
+        "status": "candidate, not production-approved; source scale corrected; anatomy and gait need playback review"
+      }
+    },
+    {
+      "action": "launch",
+      "kind": "body",
+      "metadata": "nyoro/launch/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "rush",
+      "kind": "body",
+      "metadata": "nyoro/rush/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Runtime x displacement belongs to movement physics; source already has16 distinct lunge/sweep/brake poses. Do not count translation as drawings. Low umbrella tips08–11 excluded from bodyHeight/ground estimate."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "air1",
+      "kind": "body",
+      "metadata": "nyoro/air1/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "All16 poses airborne. Constant pelvis reference[220,360] in512cell; world-x/y belongs to runtime physics. No duplicate or translated copies count as drawings. Suggested contact08."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "special2-active",
+      "kind": "body",
+      "metadata": "nyoro/special2/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate; not production approved",
+        "runtimeNotes": [
+          "World x/y motion must be supplied by runtime separately from pose animation. Airborne poses use measured pelvis roots; foot baseline is not forced onto tucked airborne feet.",
+          "Phase-generated head/body proportions are not perfectly matched. Fixed family scale deliberately preserves visible phase-join discontinuities for review.",
+          "Static per-cel inspection and decoded animation-file checks performed; this worker has not observed real-time playback."
+        ],
+        "normalAwakened": "Shared body drawings permitted; separate aura layers owned elsewhere.",
+        "bodyHeightMethod": "Single fixed family reference from startup neutral; manual head/ear to foot estimate excluding umbrella/tail. No per-frame or per-phase fit."
+      }
+    },
+    {
+      "action": "dash",
+      "kind": "body",
+      "metadata": "nyoro/dash-loop/candidate-v2/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate awakened aura owned by another artist and not included",
+        "bodyHeightMethod": "manual visible anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "awakening-end",
+      "kind": "body",
+      "metadata": "nyoro/awakening-end/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Body-only ending, no baked fading aura. The same one umbrella stays gripped while free paw adjusts glasses05–07. Shared normal/awakened identity."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "light4",
+      "kind": "body",
+      "metadata": "nyoro/light4-cleave/candidate-v2/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "normalAwakened": "shared body permitted; separate16-frame awakened aura remains pending"
+      }
+    },
+    {
+      "action": "special2-recovery",
+      "kind": "body",
+      "metadata": "nyoro/special2/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate; not production approved",
+        "runtimeNotes": [
+          "World x/y motion must be supplied by runtime separately from pose animation. Airborne poses use measured pelvis roots; foot baseline is not forced onto tucked airborne feet.",
+          "Phase-generated head/body proportions are not perfectly matched. Fixed family scale deliberately preserves visible phase-join discontinuities for review.",
+          "Static per-cel inspection and decoded animation-file checks performed; this worker has not observed real-time playback."
+        ],
+        "normalAwakened": "Shared body drawings permitted; separate aura layers owned elsewhere.",
+        "bodyHeightMethod": "Single fixed family reference from startup neutral; manual head/ear to foot estimate excluding umbrella/tail. No per-frame or per-phase fit."
+      }
+    },
+    {
+      "action": "slam",
+      "kind": "body",
+      "metadata": "nyoro/slam/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "01–08 airborne,09impact and09–16 grounded. Runtime world-y must interpolate fall toward ground; pose preview is root-stationary and does not demonstrate physical travel. Slam body09contact; FX separate. BodyHeight170 uses final standing16approximation; airborne raised-arm poses not fit-normalized."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "light1",
+      "kind": "body",
+      "metadata": "nyoro/proof-light1/metadata.json",
+      "recordedReview": {
+        "status": "candidate proof, pending art/motion review"
+      }
+    },
+    {
+      "action": "air3",
+      "kind": "body",
+      "metadata": "nyoro/air3/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "All16 airborne.04source repair restores clear top margin around raised canopy. Weapon tips08–11 excluded from anatomical bodyHeight."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "awakening-start",
+      "kind": "body",
+      "metadata": "nyoro/awakening-start/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Body-only activation; normal costume unchanged. Aura/burst supplied separately by another artist. Peak09suggested aura synchronization."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "death",
+      "kind": "body",
+      "metadata": "nyoro/death/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "One-shot collapse ending fallen. Rest16 may be held at runtime but repeat holds are not extra drawings. Ground root uses pelvis x to preserve forward falling body extension."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "special1-recovery",
+      "kind": "body",
+      "metadata": "nyoro/special1/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate; not production approved",
+        "runtimeNotes": [
+          "World x/y motion must be supplied by runtime separately from pose animation. Airborne poses use measured pelvis roots; foot baseline is not forced onto tucked airborne feet.",
+          "Phase-generated head/body proportions are not perfectly matched. Fixed family scale deliberately preserves visible phase-join discontinuities for review.",
+          "Static per-cel inspection and decoded animation-file checks performed; this worker has not observed real-time playback."
+        ],
+        "normalAwakened": "Shared body drawings permitted; separate aura layers owned elsewhere.",
+        "bodyHeightMethod": "Single fixed family reference from startup neutral; manual head/ear to foot estimate excluding umbrella/tail. No per-frame or per-phase fit."
+      }
+    },
+    {
+      "action": "special1-active",
+      "kind": "body",
+      "metadata": "nyoro/special1/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate; not production approved",
+        "runtimeNotes": [
+          "World x/y motion must be supplied by runtime separately from pose animation. Airborne poses use measured pelvis roots; foot baseline is not forced onto tucked airborne feet.",
+          "Phase-generated head/body proportions are not perfectly matched. Fixed family scale deliberately preserves visible phase-join discontinuities for review.",
+          "Static per-cel inspection and decoded animation-file checks performed; this worker has not observed real-time playback."
+        ],
+        "normalAwakened": "Shared body drawings permitted; separate aura layers owned elsewhere.",
+        "bodyHeightMethod": "Single fixed family reference from startup neutral; manual head/ear to foot estimate excluding umbrella/tail. No per-frame or per-phase fit."
+      }
+    },
+    {
+      "action": "light3",
+      "kind": "body",
+      "metadata": "nyoro/light3-rising/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "normalAwakened": "shared body permitted; separate16-frame awakened aura remains pending"
+      }
+    },
+    {
+      "action": "charge-start",
+      "kind": "body",
+      "metadata": "nyoro/charge-start/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "guard",
+      "kind": "body",
+      "metadata": "nyoro/guard/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Full16 clip is enter/block/release. If runtime has sustained guard, choose a documented body subset or re-time all poses; do not count duplicate holds as additional drawings."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "idle",
+      "kind": "body",
+      "metadata": "nyoro/idle-loop/candidate-v2/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate awakened aura owned by another artist and not included",
+        "bodyHeightMethod": "manual visible anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "recovery",
+      "kind": "body",
+      "metadata": "nyoro/recovery/candidate-v1/manifest.json",
+      "recordedReview": {
+        "status": "review candidate, not production approved",
+        "runtimeNotes": [
+          "Recovery source is1312x1199, generated independently from death. Standing final anatomy is taller than original death ready; one reference scale per clip exposes this drift. First fallen pose transition needs runtime comparison; no per-frame normalization."
+        ],
+        "normalAwakened": "same16 body drawings may be reused, faster playback pending runtime decision; separate aura not included",
+        "bodyHeightMethod": "manual anatomical head/ear to drawn sole baseline, excluding canopy/tail; ±8px estimate"
+      }
+    },
+    {
+      "action": "ranged",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/ranged/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "rush-trail",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/rush-trail/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "awakening-burst",
+      "kind": "effects",
+      "metadata": "awakening-fx/nyoro/activation-burst/metadata.json",
+      "recordedReview": {
+        "status": "packaged_art_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "charge",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/charge/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "launch",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/launch/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "hit-heavy",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/hit-heavy/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "special2-splash",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/special2-splash/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "awakening-aura",
+      "kind": "effects",
+      "metadata": "awakening-fx/nyoro/aura-loop/metadata.json",
+      "recordedReview": {
+        "status": "packaged_art_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "hit-light",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/hit-light/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "slam",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/slam/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "special2-water",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/special2-water/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    },
+    {
+      "action": "special1-aura",
+      "kind": "effects",
+      "metadata": "canonical-fx/nyoro/special1-aura/metadata.json",
+      "recordedReview": {
+        "status": "static_review_candidate_not_user_approved"
+      }
+    }
+  ],
+  "sourceEdgeCaveat": "Some Nyoro/Tetsu FX source cell edges retain faint alpha up to16/255. Runtime export preserves these source pixels; all8px runtime gutters are transparent. This is source haze, not runtime crop loss.",
+  "releaseSocketContract": "Actual projectile releaseSocket and zero-based local releaseFrame are exported on the emitting BODY animation manifest entry, alongside adapter; moving projectile FX socketOffset is zero. Manual measurements retain several source-pixel uncertainty and require gameplay visual confirmation.",
+  "additionalStaticReadabilitySeverity": {
+    "blockingFindings": [],
+    "moderatePolishGroups": [
+      {
+        "character": "nyoro",
+        "actions": [
+          "special1-startup",
+          "special1-active",
+          "special1-recovery"
+        ],
+        "finding": "Dance, crouched launch, airborne leg/tail counter-motion and brake are intelligible. Phase body mass and final-neutral scale drift; leg extension and canopy turns need actual-speed review."
+      },
+      {
+        "character": "nyoro",
+        "actions": [
+          "special2-startup",
+          "special2-active",
+          "special2-recovery"
+        ],
+        "finding": "Jump and free-hand downward cast are readable. Phase canopy/face drift, final-neutral size and strong rebound can pop."
+      }
+    ],
+    "scopeAndLimit": "Inspected6 evenly spaced poses (1,4,7,10,13,16) for16 body tracks per character,48 tracks total. Full16 enlarged sheets additionally inspected for Tetsu special1-startup and special2-active, Denden charge-hold, Nyoro charge-hold. Prior independent review covers all12 weak tracks, Nyoro special1 full48 and Denden special1 active16. Source artists retained their per-track reviews.",
+    "gameplayAcceptance": false
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "character": "tetsu",
+  "animation": "crouch",
+  "kind": "body",
+  "src": "tetsu-body-crouch-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        227,
+        250,
+        242
+      ],
+      "pivot": [
+        77.5185185185185,
+        238.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/crouch/01",
+      "sourceVisibleRgbaSha256": "b3869d21dc4c41b730497932f22790d36f4141311d8e5e07752e96efb66402ee"
+    },
+    {
+      "rect": [
+        274,
+        393,
+        246,
+        225
+      ],
+      "pivot": [
+        73.5185185185185,
+        222.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "knees_unlock",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/crouch/02",
+      "sourceVisibleRgbaSha256": "cc4939d0ef04ac22d59043a773550d0c4017f2aa8c10c6b733a9bdf4a24b9dfd"
+    },
+    {
+      "rect": [
+        554,
+        8,
+        252,
+        210
+      ],
+      "pivot": [
+        73.5185185185185,
+        206.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "hips_lower",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/crouch/03",
+      "sourceVisibleRgbaSha256": "2cc51f0bf506b3111fa84e26d4d75612fc05eb6ae9571d11a99364fa111f8055"
+    },
+    {
+      "rect": [
+        244,
+        1018,
+        215,
+        190
+      ],
+      "pivot": [
+        76.5185185185185,
+        187.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "knees_bend",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/crouch/04",
+      "sourceVisibleRgbaSha256": "1c48ee8ad3e24fe8a6957ebdbb0f04bc08facb79391e0df75865b2083469599e"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        261,
+        203
+      ],
+      "pivot": [
+        83.5185185185185,
+        200.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "heels_gather",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/crouch/05",
+      "sourceVisibleRgbaSha256": "b3216a39feb8866f152be78e9ca4e1bfd85dc3ca0d1c51a1dd5f394defe34d61"
+    },
+    {
+      "rect": [
+        285,
+        8,
+        253,
+        184
+      ],
+      "pivot": [
+        82.5185185185185,
+        181.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "deep_duck",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/crouch/06",
+      "sourceVisibleRgbaSha256": "91ba6bfa47b9a45433eb572250467d4d9a5f0dfc786b5ea71525c537022529a2"
+    },
+    {
+      "rect": [
+        285,
+        208,
+        252,
+        169
+      ],
+      "pivot": [
+        80.5185185185185,
+        166.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "lowest_crouch",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/crouch/07",
+      "sourceVisibleRgbaSha256": "7cf522f1600b6c69c16e2c33ef16d16ff96d180173b356fd6c56a436fae65b5d"
+    },
+    {
+      "rect": [
+        258,
+        825,
+        224,
+        177
+      ],
+      "pivot": [
+        82.5185185185185,
+        174.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "low_front_shift",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/crouch/08",
+      "sourceVisibleRgbaSha256": "3a2abca80dbb6263fcb91316ae2d56af22157f4914c81477d5a51e2286faaa77"
+    },
+    {
+      "rect": [
+        513,
+        673,
+        233,
+        176
+      ],
+      "pivot": [
+        74.5185185185185,
+        172.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "low_center_shift",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/crouch/09",
+      "sourceVisibleRgbaSha256": "7fb0839ad2f2be4bd7ba600ad1fbcc263f5090a9f89d4c70a60699a2fdae84b6"
+    },
+    {
+      "rect": [
+        262,
+        634,
+        235,
+        175
+      ],
+      "pivot": [
+        90.5185185185185,
+        171.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "low_rear_shift",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/crouch/10",
+      "sourceVisibleRgbaSha256": "8f7e4b66661a195a45b10928e999d4b9589a0ef486adf85a4a9208004093fcb9"
+    },
+    {
+      "rect": [
+        553,
+        234,
+        247,
+        195
+      ],
+      "pivot": [
+        79.5185185185185,
+        191.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "rise_begin",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/crouch/11",
+      "sourceVisibleRgbaSha256": "cd11e28c7589c900093a7a8ceb162a72a6227101a995b312e60042a979dfd4b3"
+    },
+    {
+      "rect": [
+        498,
+        865,
+        216,
+        198
+      ],
+      "pivot": [
+        77.5185185185185,
+        194.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "hips_rise",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/crouch/12",
+      "sourceVisibleRgbaSha256": "b6f57d6cd6732cf200477615743b4209b560f4277aad2ab6a2556a31457fd622"
+    },
+    {
+      "rect": [
+        536,
+        445,
+        235,
+        212
+      ],
+      "pivot": [
+        77.5185185185185,
+        208.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "chest_straighten",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/crouch/13",
+      "sourceVisibleRgbaSha256": "7412997e50fa1ea3fa6698c3b437081e2ea2855702e40a92d2f56f3ce56425fb"
+    },
+    {
+      "rect": [
+        8,
+        710,
+        234,
+        207
+      ],
+      "pivot": [
+        81.5185185185185,
+        204.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "almost_standing",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/crouch/14",
+      "sourceVisibleRgbaSha256": "0c5a41c41d802ccbc38f1f074d440ee345a15f96c6cf6082d4eccbee4002df4d"
+    },
+    {
+      "rect": [
+        8,
+        485,
+        238,
+        209
+      ],
+      "pivot": [
+        75.5185185185185,
+        206.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "shoulders_settle",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/crouch/15",
+      "sourceVisibleRgbaSha256": "a2114b59e3d1b51e64f55afb4c67dde5daa6ef9afdb232b9c6b3b40decfa4da6"
+    },
+    {
+      "rect": [
+        8,
+        933,
+        220,
+        220
+      ],
+      "pivot": [
+        74.5185185185185,
+        217.22222222222223
+      ],
+      "duration": 0.045,
+      "phase": "ready_settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/crouch/16",
+      "sourceVisibleRgbaSha256": "0c1d6a79d73549994f8416942cf7995e211d3fa93326e5a90b38357d441f3e76"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/crouch/tetsu-crouch-16.json",
+    "atlas": "tetsu/crouch/tetsu-crouch-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Deep knee folding and low weight shifts are distinct, but early cel4\u21925 has a small posture rebound before the deepest duck.",
+      "Standing body height varies from first to final cel; actual-size scale/continuity needs review. The head is not artificially rescaled during packaging.",
+      "Real-time and in-engine playback not visually verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        128,
+        435,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 77
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        135,
+        147,
+        435,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 77
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        134,
+        168,
+        443,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 69
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        190,
+        394,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        174,
+        442,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        123,
+        198,
+        433,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 79
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        216,
+        434,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 78
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        124,
+        206,
+        398,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        209,
+        418,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        113,
+        210,
+        401,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        185,
+        430,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 82
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        182,
+        394,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        165,
+        417,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        125,
+        170,
+        411,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        168,
+        424,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        133,
+        153,
+        402,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8148148148148148,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "ab33fdb1fbd57f3b4e365f2d154e78c272355b41ec31f7968e7da152caf78a25",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-crouch",
+    "frames": 16,
+    "scale": 0.8148148148148148,
+    "uniformAtlasPixels": 2785561,
+    "trimmedAtlas": [
+      832,
+      1216
+    ],
+    "trimmedPixels": 1011712,
+    "rgbaMiB": 3.859375,
+    "fileBytes": 544438,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.72,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

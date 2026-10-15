@@ -1,0 +1,559 @@
+{
+  "character": "tetsu",
+  "animation": "special1-recovery",
+  "kind": "body",
+  "src": "tetsu-body-special1-recovery-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        8,
+        284,
+        210
+      ],
+      "pivot": [
+        97.25490196078431,
+        206.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:brake_lean",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/special1-recovery/01",
+      "sourceVisibleRgbaSha256": "8c271544875ad90d9ca119d1834ccf168e21339b45e0c78b6d0589580208f638"
+    },
+    {
+      "rect": [
+        299,
+        234,
+        272,
+        209
+      ],
+      "pivot": [
+        89.25490196078431,
+        205.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:absorb",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/special1-recovery/02",
+      "sourceVisibleRgbaSha256": "801adf896f7cb449d825eaf90a1fa863dada616bb60cfc46e45fb2a240019667"
+    },
+    {
+      "rect": [
+        1136,
+        251,
+        254,
+        214
+      ],
+      "pivot": [
+        83.25490196078431,
+        210.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:rear_swing",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/special1-recovery/03",
+      "sourceVisibleRgbaSha256": "820f69dade02ebcdb2af95c630e7984da922f41cd6f206b0edc093ad3bcc6a2e"
+    },
+    {
+      "rect": [
+        1921,
+        245,
+        222,
+        218
+      ],
+      "pivot": [
+        74.25490196078431,
+        214.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:pass_under",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/special1-recovery/04",
+      "sourceVisibleRgbaSha256": "205dd2dcc5416a534473ed3d738073f4089417a82abe27992ce482aa84a9ff51"
+    },
+    {
+      "rect": [
+        587,
+        8,
+        263,
+        219
+      ],
+      "pivot": [
+        85.25490196078431,
+        215.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:balance",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/special1-recovery/05",
+      "sourceVisibleRgbaSha256": "a7695dc7469879c2a68bbba02b8bf8dbd5311f7f5f7a3a1f9a5149646cb95eb8"
+    },
+    {
+      "rect": [
+        308,
+        8,
+        261,
+        209
+      ],
+      "pivot": [
+        84.25490196078431,
+        205.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:hand_returns",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/special1-recovery/06",
+      "sourceVisibleRgbaSha256": "f0bd222641d51fa083098fc69349332524a4602586d8b01b354bfc3236ca7560"
+    },
+    {
+      "rect": [
+        587,
+        243,
+        262,
+        215
+      ],
+      "pivot": [
+        91.25490196078431,
+        211.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:blade_lift",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/special1-recovery/07",
+      "sourceVisibleRgbaSha256": "26c8047372713cc2d46919d51a6888eab94488a6f40476d3bb7a3ce813655ddf"
+    },
+    {
+      "rect": [
+        1667,
+        258,
+        238,
+        233
+      ],
+      "pivot": [
+        84.25490196078431,
+        229.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:rise_half",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/special1-recovery/08",
+      "sourceVisibleRgbaSha256": "052aadaab518a0e4a969042a3d730edb52c2145c04414575db9b97c64b8edc26"
+    },
+    {
+      "rect": [
+        8,
+        234,
+        275,
+        217
+      ],
+      "pivot": [
+        79.25490196078431,
+        213.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:counter_step",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/special1-recovery/09",
+      "sourceVisibleRgbaSha256": "28ad6992e991fc25fe4f2e7b3339161cd10eceeccb95631d082d9ba032c34b7b"
+    },
+    {
+      "rect": [
+        866,
+        8,
+        254,
+        218
+      ],
+      "pivot": [
+        65.25490196078431,
+        215.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:foot_sets",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/special1-recovery/10",
+      "sourceVisibleRgbaSha256": "738c7b303a6bd5e4f665896169696c1b7e0db79681a6e819997f17ff6292b19b"
+    },
+    {
+      "rect": [
+        1136,
+        8,
+        254,
+        227
+      ],
+      "pivot": [
+        77.25490196078431,
+        224.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:shoulder_turn",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/special1-recovery/11",
+      "sourceVisibleRgbaSha256": "8226bc55371c46752b13478654a37bad89889cebae29583d956e47a3943faa40"
+    },
+    {
+      "rect": [
+        1672,
+        8,
+        226,
+        230
+      ],
+      "pivot": [
+        79.25490196078431,
+        227.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:knee_extend",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/special1-recovery/12",
+      "sourceVisibleRgbaSha256": "1b06271c3f249c75db61d1e67eff4af7d00e70918e6e31f947f0c77b8355b08b"
+    },
+    {
+      "rect": [
+        1406,
+        8,
+        250,
+        234
+      ],
+      "pivot": [
+        69.25490196078431,
+        230.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:upright",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/special1-recovery/13",
+      "sourceVisibleRgbaSha256": "71ead72d33035ed06b4fb077d002d37c0abd88edc428ad96106db6cc87515a88"
+    },
+    {
+      "rect": [
+        865,
+        243,
+        255,
+        225
+      ],
+      "pivot": [
+        72.25490196078431,
+        221.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:breath",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/special1-recovery/14",
+      "sourceVisibleRgbaSha256": "674d504a77b101badc507e28be324eeb302cccf7d09eca391680406a9fc72860"
+    },
+    {
+      "rect": [
+        1406,
+        258,
+        245,
+        226
+      ],
+      "pivot": [
+        73.25490196078431,
+        222.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:heel_set",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/special1-recovery/15",
+      "sourceVisibleRgbaSha256": "3207732be9201715a06da61ef098d4c2766fab02e1bd706f1bfd254005b260e1"
+    },
+    {
+      "rect": [
+        1914,
+        8,
+        230,
+        221
+      ],
+      "pivot": [
+        80.25490196078431,
+        217.3529411764706
+      ],
+      "duration": 0.05,
+      "phase": "recovery:settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/special1-recovery/16",
+      "sourceVisibleRgbaSha256": "cc983fdf474208f7f2244ac7928207678bf063652d6d001152399e1e61c222bf"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/special1/tetsu-special1-48.json",
+    "atlas": "tetsu/special1/tetsu-special1-registered-48.png",
+    "status": "48_drawn_cels_static_review_candidate_not_production_approved",
+    "runtimeNotes": [
+      "Cels12,14,16 receive localized imagegen blade repairs. Other thirteen source cels are unchanged.",
+      "One-handed transition appears briefly at cel12, returns two-handed13-15, then frees the rear arm16 for the rush.",
+      "Real-time and in-engine playback not visually verified.",
+      "Leg silhouettes alternate, but stride spacing is uneven and leg occlusion near cels7-10 needs actual-size playback review. This is not yet an accepted polished run loop.",
+      "Root translations only; engine supplies travel. No aura or trail is baked into body.",
+      "Blade angles make several small corrective swings during recovery rather than a perfectly monotonic return.",
+      "Manual registration aligns foot/hip roots without changing source scale.",
+      "Source neighboring silhouettes are disjoint but crop rectangles overlap; exact nearest-component ownership mask removes only unrelated neighbors.",
+      "Projected body height changes at16-to17 launch and32-to33 braking boundaries. Head/weapon proportions vary mildly across source sheets; review these transitions in engine."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        112,
+        181,
+        439,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 73
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        120,
+        183,
+        435,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 77
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        176,
+        421,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        138,
+        172,
+        395,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        170,
+        430,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 82
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        182,
+        428,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 84
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        119,
+        175,
+        422,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        154,
+        402,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        173,
+        451,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 61
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        149,
+        170,
+        442,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        134,
+        160,
+        429,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 83
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        156,
+        394,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        144,
+        153,
+        433,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 79
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        140,
+        164,
+        435,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 77
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        139,
+        163,
+        423,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        131,
+        168,
+        397,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8627450980392157,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "3e99f729a1da9ef167c0579f75c3ac54fc3ccaa258c889581e08fed00ecf65a1",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-special1-recovery",
+    "frames": 16,
+    "scale": 0.8627450980392157,
+    "uniformAtlasPixels": 9366867,
+    "trimmedAtlas": [
+      2176,
+      512
+    ],
+    "trimmedPixels": 1114112,
+    "rgbaMiB": 4.25,
+    "fileBytes": 608856,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.8,
+  "artTimingRecommendations": {
+    "events": [
+      {
+        "name": "rush_start",
+        "time": 0.8,
+        "frame": 17
+      },
+      {
+        "name": "rush_end_recovery_start",
+        "time": 1.52,
+        "frame": 33
+      }
+    ],
+    "phaseRanges": {
+      "startup": [
+        0,
+        15
+      ],
+      "active": [
+        16,
+        31
+      ],
+      "recovery": [
+        32,
+        47
+      ]
+    }
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

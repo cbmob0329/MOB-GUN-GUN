@@ -1,0 +1,83 @@
+{
+  "format": "MOB GUN GUN partial cartoon runtime pack",
+  "version": 1,
+  "scope": [
+    "nyoro"
+  ],
+  "status": "Full required source art coverage; actual-game acceptance pending",
+  "animations": {
+    "nyoro/air3": {
+      "adapter": "nyoro/body/air3/nyoro-body-air3-runtime220.json"
+    },
+    "nyoro/blow": {
+      "adapter": "nyoro/body/blow/nyoro-body-blow-runtime220.json"
+    },
+    "nyoro/charge-start": {
+      "adapter": "nyoro/body/charge-start/nyoro-body-charge-start-runtime220.json"
+    },
+    "nyoro/crouch": {
+      "adapter": "nyoro/body/crouch/nyoro-body-crouch-runtime220.json"
+    },
+    "nyoro/dash": {
+      "adapter": "nyoro/body/dash/nyoro-body-dash-runtime220.json"
+    },
+    "nyoro/effects/awakening-aura": {
+      "adapter": "nyoro/effects/awakening-aura/nyoro-effects-awakening-aura-runtime220.json"
+    },
+    "nyoro/effects/ranged": {
+      "adapter": "nyoro/effects/ranged/nyoro-effects-ranged-runtime220.json"
+    },
+    "nyoro/effects/slam": {
+      "adapter": "nyoro/effects/slam/nyoro-effects-slam-runtime220.json"
+    },
+    "nyoro/effects/special2-splash": {
+      "adapter": "nyoro/effects/special2-splash/nyoro-effects-special2-splash-runtime220.json"
+    },
+    "nyoro/jump": {
+      "adapter": "nyoro/body/jump/nyoro-body-jump-runtime220.json"
+    },
+    "nyoro/launch": {
+      "adapter": "nyoro/body/launch/nyoro-body-launch-runtime220.json"
+    },
+    "nyoro/slam": {
+      "adapter": "nyoro/body/slam/nyoro-body-slam-runtime220.json"
+    },
+    "nyoro/special1-active": {
+      "adapter": "nyoro/body/special1-active/nyoro-body-special1-active-runtime220.json"
+    },
+    "nyoro/special1-recovery": {
+      "adapter": "nyoro/body/special1-recovery/nyoro-body-special1-recovery-runtime220.json"
+    }
+  },
+  "aliases": {
+    "nyoro/awakened-air3": "nyoro/air3",
+    "nyoro/awakened-blow": "nyoro/blow",
+    "nyoro/awakened-charge-start": "nyoro/charge-start",
+    "nyoro/awakened-crouch": "nyoro/crouch",
+    "nyoro/awakened-dash": "nyoro/dash",
+    "nyoro/effects/awakened-awakening-aura": "nyoro/effects/awakening-aura",
+    "nyoro/effects/awakened-ranged": "nyoro/effects/ranged",
+    "nyoro/effects/awakened-slam": "nyoro/effects/slam",
+    "nyoro/effects/awakened-special2-splash": "nyoro/effects/special2-splash",
+    "nyoro/awakened-jump": "nyoro/jump",
+    "nyoro/awakened-launch": "nyoro/launch",
+    "nyoro/awakened-slam": "nyoro/slam",
+    "nyoro/awakened-special1-active": "nyoro/special1-active",
+    "nyoro/awakened-special1-recovery": "nyoro/special1-recovery",
+    "nyoro/specialRush": "nyoro/special1-active",
+    "nyoro/awakened-specialRush": "nyoro/special1-active"
+  },
+  "awakenedReuse": "Existing character normal and awakened aliases share all16 source body cels. Separate character-specific16-cel aura supplies form change. Not separately drawn awakened artwork.",
+  "sourceCoordinateContract": {
+    "rect": "atlas pixels",
+    "pivot": "frame-local runtime pixels",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height; added to existing FX anchor",
+    "releaseSocket": "body manifest entry: x,y normalized by displayed body height from player virtual feet; actual projectile spawn and collider, x follows facing, y positive down",
+    "releaseFrame": "body manifest entry: zero-based LOCAL frame index in the emitting runtime phase; global special cel23 maps to active local index6",
+    "orientationMode": "velocity: atan2(vy,vx)-nativeAngleRadians, no mirror; facing: horizontal mirror; fixed: no rotation or mirror"
+  },
+  "masterPolicy": "All PNG artwork masters unchanged. Runtime copies are uniformly downsampled at most to220 source body pixels, then alpha-trimmed with8px transparent gutters and lossless static WebP encoding. Spatial downsampling itself is lossy.",
+  "playbackRequirement": "Every animation and awakened alias must present all16 distinct source cels. No skipped-cel speedups or shortened action clocks; engine verification pending."
+}

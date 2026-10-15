@@ -1,0 +1,259 @@
+{
+  "character": "mobdesert",
+  "clip": "special2-startup",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 220.0,
+  "displayBodyHeight": 110,
+  "recommendedDisplayBodyHeight": 110,
+  "bodyHeightExcludesHat": false,
+  "bodyHeightDefinition": "Neutral head-and-body height; excludes weapon, cape/scarf extensions and Manny hat. Source-normalized metric.",
+  "knownIssues": [
+    "User and integrated runtime review pending.",
+    "Source sheet registration preserves drawn body motion and stepping; per-sheet uniform normalization is not counted as animation."
+  ],
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        578,
+        612,
+        284,
+        233
+      ],
+      "duration": 0.045,
+      "pivot": [
+        131.06382978723406,
+        232.17021276595744
+      ],
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        1372,
+        8,
+        271,
+        229
+      ],
+      "duration": 0.045,
+      "pivot": [
+        111.40425531914894,
+        229.36170212765958
+      ],
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        1144,
+        300,
+        272,
+        209
+      ],
+      "duration": 0.045,
+      "pivot": [
+        110.46808510638299,
+        208.76595744680853
+      ],
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        1414,
+        525,
+        220,
+        232
+      ],
+      "duration": 0.045,
+      "pivot": [
+        87.06382978723404,
+        231.2340425531915
+      ],
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        8,
+        8,
+        302,
+        194
+      ],
+      "duration": 0.045,
+      "pivot": [
+        132.93617021276597,
+        197.53191489361703
+      ],
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        264,
+        218,
+        287,
+        224
+      ],
+      "duration": 0.045,
+      "pivot": [
+        108.59574468085107,
+        225.5531914893617
+      ],
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        845,
+        307,
+        283,
+        242
+      ],
+      "duration": 0.04,
+      "pivot": [
+        121.70212765957447,
+        241.46808510638297
+      ],
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        1157,
+        525,
+        241,
+        267
+      ],
+      "duration": 0.04,
+      "pivot": [
+        106.72340425531915,
+        265.8085106382979
+      ],
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        845,
+        8,
+        283,
+        283
+      ],
+      "duration": 0.04,
+      "pivot": [
+        123.57446808510639,
+        282.6595744680851
+      ],
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        283,
+        458,
+        279,
+        286
+      ],
+      "duration": 0.04,
+      "pivot": [
+        115.14893617021276,
+        288.27659574468083
+      ],
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        878,
+        565,
+        263,
+        279
+      ],
+      "duration": 0.035,
+      "pivot": [
+        103.91489361702128,
+        277.9148936170213
+      ],
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        8,
+        218,
+        240,
+        293
+      ],
+      "duration": 0.035,
+      "pivot": [
+        100.17021276595744,
+        291.0851063829787
+      ],
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        8,
+        527,
+        259,
+        288
+      ],
+      "duration": 0.035,
+      "pivot": [
+        109.53191489361703,
+        291.1489361702128
+      ],
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        567,
+        8,
+        262,
+        286
+      ],
+      "duration": 0.035,
+      "pivot": [
+        98.29787234042553,
+        290.21276595744683
+      ],
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        578,
+        310,
+        251,
+        286
+      ],
+      "duration": 0.035,
+      "pivot": [
+        103.91489361702128,
+        291.1489361702128
+      ],
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        1144,
+        8,
+        212,
+        276
+      ],
+      "duration": 0.035,
+      "pivot": [
+        78.57446808510639,
+        276.17021276595744
+      ],
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/mobdesert/special2-startup/mobdesert-special2-startup-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 235,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.9361702127659575,
+    "actualBodyPixels": 220.0,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/mobdesert/special2-startup/clip.json"
+  }
+}

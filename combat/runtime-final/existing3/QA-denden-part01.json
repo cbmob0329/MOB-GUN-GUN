@@ -1,0 +1,376 @@
+[
+  {
+    "key": "denden/awakening-start",
+    "adapter": "denden/body/awakening-start/denden-body-awakening-start-runtime220.json",
+    "texture": "denden/body/awakening-start/denden-body-awakening-start-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4177920,
+    "textureSize": [
+      1088,
+      960
+    ],
+    "textureBytes": 883420,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "e8756408e617b648e7af3b55a44c3855c5f7a8a2603fa034eb09da218363594f",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/blow",
+    "adapter": "denden/body/blow/denden-body-blow-runtime220.json",
+    "texture": "denden/body/blow/denden-body-blow-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5013504,
+    "textureSize": [
+      576,
+      2176
+    ],
+    "textureBytes": 969444,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "71304248ed1b8a50b123c60ce33d0c8baa7def309877acc90e8b6e25b333f8cb",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/charge-hold",
+    "adapter": "denden/body/charge-hold/denden-body-charge-hold-runtime220.json",
+    "texture": "denden/body/charge-hold/denden-body-charge-hold-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4276224,
+    "textureSize": [
+      576,
+      1856
+    ],
+    "textureBytes": 859714,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "436dcdf88323eb9a0d368b9101ccff73d668f7b0ab1e7c9d7c3b2d0c3550a76b",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/charge-start",
+    "adapter": "denden/body/charge-start/denden-body-charge-start-runtime220.json",
+    "texture": "denden/body/charge-start/denden-body-charge-start-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4128768,
+    "textureSize": [
+      4032,
+      256
+    ],
+    "textureBytes": 849098,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "3891ef6d63f970fa0dca714d59be871417767c2471e9f5adebbbffa62038a2de",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/crouch",
+    "adapter": "denden/body/crouch/denden-body-crouch-runtime220.json",
+    "texture": "denden/body/crouch/denden-body-crouch-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 3801088,
+    "textureSize": [
+      512,
+      1856
+    ],
+    "textureBytes": 819160,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "9f0b4f40b401e32757844ea505b6f777224d77af84fc9c24e9656e3802c7a669",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/damage",
+    "adapter": "denden/body/damage/denden-body-damage-runtime220.json",
+    "texture": "denden/body/damage/denden-body-damage-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4718592,
+    "textureSize": [
+      1152,
+      1024
+    ],
+    "textureBytes": 960706,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "8b5084bcc4aebc368f4dd8a641b60e69ef0d081f98f450bf573278bb0572bafc",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/dash",
+    "adapter": "denden/body/dash/denden-body-dash-runtime220.json",
+    "texture": "denden/body/dash/denden-body-dash-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4571136,
+    "textureSize": [
+      576,
+      1984
+    ],
+    "textureBytes": 873624,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "2243ae00e6f7ab6af54d16b09fa6f928009747db9d6a92da96c7f6a4a3950c0a",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/death",
+    "adapter": "denden/body/death/denden-body-death-runtime220.json",
+    "texture": "denden/body/death/denden-body-death-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 3014656,
+    "textureSize": [
+      512,
+      1472
+    ],
+    "textureBytes": 684372,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "46078d99440fbdfcce655b43fe5a959f81fa851bcc6d493fd72cb767cd8e06ff",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/effects/awakening-burst",
+    "adapter": "denden/effects/awakening-burst/denden-effects-awakening-burst-runtime220.json",
+    "texture": "denden/effects/awakening-burst/denden-effects-awakening-burst-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7225344,
+    "textureSize": [
+      1344,
+      1344
+    ],
+    "textureBytes": 845798,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "9fced82c3e4b9cd5c255e65d52a4d53e9966eeb0070783101b1410b6b2918f23",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/effects/charge",
+    "adapter": "denden/effects/charge/denden-effects-charge-runtime220.json",
+    "texture": "denden/effects/charge/denden-effects-charge-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 3784704,
+    "textureSize": [
+      2112,
+      448
+    ],
+    "textureBytes": 393154,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "e94a06fcea677e6ac5f75dab4d3133aeecca28213c2fafc38508823aa9019d9d",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/effects/hit-light",
+    "adapter": "denden/effects/hit-light/denden-effects-hit-light-runtime220.json",
+    "texture": "denden/effects/hit-light/denden-effects-hit-light-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 2293760,
+    "textureSize": [
+      448,
+      1280
+    ],
+    "textureBytes": 133186,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "a5a6a577ec034d7ecaecf4bcbb790595868ec9215d395cbde4915edd3fc7170b",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/effects/ranged",
+    "adapter": "denden/effects/ranged/denden-effects-ranged-runtime220.json",
+    "texture": "denden/effects/ranged/denden-effects-ranged-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 6488064,
+    "textureSize": [
+      768,
+      2112
+    ],
+    "textureBytes": 652068,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "0d7267c10836584528e8575814e2f3d0f2fe21884bbdbdadfa26b5e68978f49c",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/effects/rush-trail",
+    "adapter": "denden/effects/rush-trail/denden-effects-rush-trail-runtime220.json",
+    "texture": "denden/effects/rush-trail/denden-effects-rush-trail-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7864320,
+    "textureSize": [
+      3072,
+      640
+    ],
+    "textureBytes": 898554,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "3861344f3daf839cb30ac52e8b0062a72d7f0e5c1f083843aae6f3081f4434ca",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/effects/special1-aura",
+    "adapter": "denden/effects/special1-aura/denden-effects-special1-aura-runtime220.json",
+    "texture": "denden/effects/special1-aura/denden-effects-special1-aura-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7667712,
+    "textureSize": [
+      832,
+      2304
+    ],
+    "textureBytes": 1069174,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "77146cc456df77514913d7617ad76c1c908cd654c620ca84b4374c0ef15dcb1f",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/effects/special2-splash",
+    "adapter": "denden/effects/special2-splash/denden-effects-special2-splash-runtime220.json",
+    "texture": "denden/effects/special2-splash/denden-effects-special2-splash-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 7667712,
+    "textureSize": [
+      832,
+      2304
+    ],
+    "textureBytes": 894960,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "7a746e626dca2a55dcc54586eabfb07c35bbfb4bfeb3a512f7285b7150ca1c14",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/jump",
+    "adapter": "denden/body/jump/denden-body-jump-runtime220.json",
+    "texture": "denden/body/jump/denden-body-jump-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4194304,
+    "textureSize": [
+      4096,
+      256
+    ],
+    "textureBytes": 822998,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "9455fdd0d4dfbc26c9d63f02a092060df1bb0e2fdef95bdf2162fc42e79de6fc",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/light1",
+    "adapter": "denden/body/light1/denden-body-light1-runtime220.json",
+    "texture": "denden/body/light1/denden-body-light1-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 5111808,
+    "textureSize": [
+      2496,
+      512
+    ],
+    "textureBytes": 989402,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "b395bdbaf8beaa1ef97b3259e4e8fd946cab53942497a251bc48c788c0e5a8d3",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/rush",
+    "adapter": "denden/body/rush/denden-body-rush-runtime220.json",
+    "texture": "denden/body/rush/denden-body-rush-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4685824,
+    "textureSize": [
+      1664,
+      704
+    ],
+    "textureBytes": 922820,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "b2eb765086d5b683b07e6028eef1e2e6ec3bf2e1faea47ed6ce3770819e226ad",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/special1-active",
+    "adapter": "denden/body/special1-active/denden-body-special1-active-runtime220.json",
+    "texture": "denden/body/special1-active/denden-body-special1-active-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4358144,
+    "textureSize": [
+      1216,
+      896
+    ],
+    "textureBytes": 863812,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "2e0866711e426e78df71a6bedcdb14846c287326d675902f34949b4711d10c0b",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/special2-active",
+    "adapter": "denden/body/special2-active/denden-body-special2-active-runtime220.json",
+    "texture": "denden/body/special2-active/denden-body-special2-active-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4128768,
+    "textureSize": [
+      4032,
+      256
+    ],
+    "textureBytes": 767850,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "b850a2ab3a70516b92df3057113eda45e2f63d6899b62fd022d8f792d8aeb6a6",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/special2-recovery",
+    "adapter": "denden/body/special2-recovery/denden-body-special2-recovery-runtime220.json",
+    "texture": "denden/body/special2-recovery/denden-body-special2-recovery-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 4194304,
+    "textureSize": [
+      512,
+      2048
+    ],
+    "textureBytes": 829774,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "3eafcb36bcd4fccc7db9ed3cac93f3a0304ba1ca9d82a087cfc05423a476e0e8",
+    "runtimeAccepted": false
+  },
+  {
+    "key": "denden/walk",
+    "adapter": "denden/body/walk/denden-body-walk-runtime220.json",
+    "texture": "denden/body/walk/denden-body-walk-runtime220.webp",
+    "frames": 16,
+    "uniqueVisibleFrames": 16,
+    "decodedBytes": 3932160,
+    "textureSize": [
+      512,
+      1920
+    ],
+    "textureBytes": 742932,
+    "staticLosslessWebp": true,
+    "gutter8Verified": true,
+    "sha256": "8aada0db937fa8630671abefbe1ee89bbf5b7cb6824a587122e7de7d0a2da9dd",
+    "runtimeAccepted": false
+  }
+]

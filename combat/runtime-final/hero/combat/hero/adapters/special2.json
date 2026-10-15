@@ -1,0 +1,490 @@
+{
+  "frames": [
+    {
+      "rect": [
+        750,
+        8,
+        206,
+        256
+      ],
+      "duration": 0.03,
+      "pivot": [
+        115.1764705882353,
+        253.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        306,
+        8,
+        211,
+        268
+      ],
+      "duration": 0.032,
+      "pivot": [
+        114.1764705882353,
+        264.5882352941177
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        972,
+        8,
+        206,
+        242
+      ],
+      "duration": 0.034,
+      "pivot": [
+        119.1764705882353,
+        237.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        237,
+        292,
+        243,
+        194
+      ],
+      "duration": 0.042,
+      "pivot": [
+        141.1764705882353,
+        189.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        251,
+        213,
+        244
+      ],
+      "duration": 0.024,
+      "pivot": [
+        114.1764705882353,
+        239.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        533,
+        8,
+        201,
+        260
+      ],
+      "duration": 0.024,
+      "pivot": [
+        111.1764705882353,
+        265.5882352941177
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        496,
+        292,
+        223,
+        190
+      ],
+      "duration": 0.028,
+      "pivot": [
+        131.1764705882353,
+        204.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        282,
+        227
+      ],
+      "duration": 0.028,
+      "pivot": [
+        170.1764705882353,
+        212.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        750,
+        280,
+        185,
+        222
+      ],
+      "duration": 0.03,
+      "pivot": [
+        121.1764705882353,
+        232.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        1625,
+        258,
+        214,
+        218
+      ],
+      "duration": 0.032,
+      "pivot": [
+        123.1764705882353,
+        231.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        1194,
+        264,
+        196,
+        240
+      ],
+      "duration": 0.034,
+      "pivot": [
+        98.1764705882353,
+        245.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        1616,
+        8,
+        194,
+        234
+      ],
+      "duration": 0.036,
+      "pivot": [
+        96.1764705882353,
+        242.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        1414,
+        8,
+        186,
+        236
+      ],
+      "duration": 0.036,
+      "pivot": [
+        113.1764705882353,
+        253.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        1194,
+        8,
+        204,
+        240
+      ],
+      "duration": 0.038,
+      "pivot": [
+        117.1764705882353,
+        254.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        1406,
+        264,
+        203,
+        236
+      ],
+      "duration": 0.04,
+      "pivot": [
+        112.1764705882353,
+        252.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        972,
+        266,
+        204,
+        237
+      ],
+      "duration": 0.05,
+      "pivot": [
+        118.1764705882353,
+        250.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        425,
+        261,
+        178,
+        235
+      ],
+      "duration": 0.03,
+      "pivot": [
+        115.1764705882353,
+        235.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        259,
+        753,
+        189,
+        234
+      ],
+      "duration": 0.024,
+      "pivot": [
+        118.1764705882353,
+        239.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        527,
+        203,
+        239
+      ],
+      "duration": 0.02,
+      "pivot": [
+        117.1764705882353,
+        242.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        268,
+        195,
+        243
+      ],
+      "duration": 0.036,
+      "pivot": [
+        106.1764705882353,
+        252.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        414,
+        8,
+        204,
+        237
+      ],
+      "duration": 0.04,
+      "pivot": [
+        119.1764705882353,
+        245.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        219,
+        266,
+        190,
+        239
+      ],
+      "duration": 0.03,
+      "pivot": [
+        121.1764705882353,
+        249.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        184,
+        244
+      ],
+      "duration": 0.032,
+      "pivot": [
+        101.1764705882353,
+        255.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        208,
+        8,
+        190,
+        242
+      ],
+      "duration": 0.034,
+      "pivot": [
+        104.1764705882353,
+        256.5882352941177
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        720,
+        8,
+        224,
+        222
+      ],
+      "duration": 0.036,
+      "pivot": [
+        126.1764705882353,
+        216.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        619,
+        261,
+        219,
+        222
+      ],
+      "duration": 0.034,
+      "pivot": [
+        123.1764705882353,
+        216.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        720,
+        499,
+        206,
+        222
+      ],
+      "duration": 0.032,
+      "pivot": [
+        131.1764705882353,
+        216.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        713,
+        750,
+        183,
+        220
+      ],
+      "duration": 0.034,
+      "pivot": [
+        113.1764705882353,
+        214.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        478,
+        512,
+        226,
+        222
+      ],
+      "duration": 0.036,
+      "pivot": [
+        114.1764705882353,
+        217.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        227,
+        521,
+        235,
+        216
+      ],
+      "duration": 0.038,
+      "pivot": [
+        119.1764705882353,
+        211.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        464,
+        753,
+        233,
+        217
+      ],
+      "duration": 0.04,
+      "pivot": [
+        131.1764705882353,
+        212.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        782,
+        235,
+        219
+      ],
+      "duration": 0.05,
+      "pivot": [
+        135.1764705882353,
+        214.58823529411768
+      ],
+      "src": "../clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "status": "runtime-export-awaiting-integration-review",
+  "name": "モブラミ / Mob Rami",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "rootNote": "Ground frames boot baseline650; airborne pelvis530. Virtual root450,650; game controls vertical movement.",
+  "events": [
+    {
+      "frame": 5,
+      "event": "jump-start"
+    },
+    {
+      "frame": 19,
+      "event": "downward-water-cast"
+    },
+    {
+      "frame": 24,
+      "event": "landing"
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.6470588235294118,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "completeSequenceId": "special2",
+  "authoredCelCount": 32,
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/special2-startup/pilot/mobrami-special2-startup-16.json",
+    "rebuild16/special2-release/pilot/mobrami-special2-release-16.json"
+  ]
+}

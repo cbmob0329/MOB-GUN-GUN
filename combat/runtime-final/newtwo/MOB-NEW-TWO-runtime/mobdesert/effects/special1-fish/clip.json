@@ -1,0 +1,373 @@
+{
+  "character": "mobdesert",
+  "clip": "special1-fish",
+  "status": "drawn16-FX-internal-review-candidate",
+  "src": "atlas.webp",
+  "frameCount": 16,
+  "bodyHeight": 54.99998945686902,
+  "displayBodyHeight": 110,
+  "orientationMode": "velocity",
+  "nativeAngleRadians": 0,
+  "socketOffset": [
+    0,
+    0
+  ],
+  "frames": [
+    {
+      "rect": [
+        527,
+        180,
+        157,
+        148
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        69.49998495207669
+      ],
+      "displaySize": [
+        1.4272732735987104,
+        1.3454550604624786
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        526,
+        516,
+        156,
+        153
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        74.99998562300321
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.3909098106020197
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        352,
+        523,
+        156,
+        153
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        74.49998571884986
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.3909092666279743
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        354,
+        180,
+        157,
+        155
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        76.49998495207669
+      ],
+      "displaySize": [
+        1.4272732735987104,
+        1.4090914484573256
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        181,
+        8,
+        157,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.4272732735987104,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        527,
+        344,
+        156,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        354,
+        351,
+        156,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        354,
+        8,
+        157,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.4272732735987104,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        527,
+        8,
+        157,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.4272732735987104,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        180,
+        352,
+        156,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        354,
+        156,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        181,
+        180,
+        157,
+        156
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        78.24998500000001
+      ],
+      "displaySize": [
+        1.4272732735987104,
+        1.418181818181818
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        8,
+        157,
+        157
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        78.49998495207669
+      ],
+      "displaySize": [
+        1.4272732735987104,
+        1.4272732735987104
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        181,
+        156,
+        157
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        78.49998495207669
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.4272732735987104
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        180,
+        524,
+        156,
+        150
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.24998500000001,
+        78.49998495207669
+      ],
+      "displaySize": [
+        1.418181818181818,
+        1.3636368856038634
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        526,
+        155,
+        148
+      ],
+      "duration": 0.065,
+      "pivot": [
+        78.49998495207669,
+        78.49998495207669
+      ],
+      "displaySize": [
+        1.4090913598569494,
+        1.3454550604624786
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    }
+  ],
+  "knownIssues": [
+    "Internal and runtime review pending.",
+    "Runtime displaySize normalized to character displayBodyHeight, with socketOffset zero because event positions already include launch offsets."
+  ],
+  "displaySizeUnits": "normalized to displayBodyHeight",
+  "sourceBodyHeight": 110,
+  "sourcePixelsPreserved": false,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.4999999041533547,
+    "actualBodyPixels": 54.99998945686902,
+    "nominalBodyPixels": null,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "packed/mobdesert/effects/special1-fish/special1-fish-16.json"
+  }
+}

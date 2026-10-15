@@ -1,0 +1,278 @@
+{
+  "character": "mobdesert",
+  "clip": "special1-recovery",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 220.0,
+  "displayBodyHeight": 110,
+  "recommendedDisplayBodyHeight": 110,
+  "bodyHeightExcludesHat": false,
+  "bodyHeightDefinition": "Neutral head-and-body height; excludes weapon, cape/scarf extensions and Manny hat. Source-normalized metric.",
+  "knownIssues": [
+    "User and integrated runtime review pending.",
+    "Source sheet registration preserves drawn body motion and stepping; per-sheet uniform normalization is not counted as animation."
+  ],
+  "registrationNotes": "A separate registered root altitude accompanies each independently drawn airborne cel; no transformed duplicates are counted.",
+  "authoredRootLiftUnits": "normalized bodyHeight",
+  "authoredRootLiftInterpretation": "Positive means authored image is raised above the fixed ground root. Diagnostic metadata only; source pivots are unchanged. If runtime physics already provides this displacement, compensate once, including releaseSocket at its event frame.",
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        8,
+        280,
+        295,
+        241
+      ],
+      "duration": 0.045,
+      "pivot": [
+        122.63829787234043,
+        248.0212765957447
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        317,
+        799,
+        290,
+        260
+      ],
+      "duration": 0.045,
+      "pivot": [
+        116.08510638297872,
+        264.0
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        895,
+        503,
+        248,
+        203
+      ],
+      "duration": 0.045,
+      "pivot": [
+        112.34042553191489,
+        202.2127659574468
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        600,
+        301,
+        263,
+        215
+      ],
+      "duration": 0.045,
+      "pivot": [
+        124.51063829787235,
+        210.63829787234042
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        8,
+        8,
+        321,
+        256
+      ],
+      "duration": 0.045,
+      "pivot": [
+        117.95744680851064,
+        258.3191489361702
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        8,
+        537,
+        294,
+        246
+      ],
+      "duration": 0.045,
+      "pivot": [
+        119.76595744680851,
+        248.95744680851064
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        883,
+        788,
+        243,
+        250
+      ],
+      "duration": 0.05,
+      "pivot": [
+        127.31914893617022,
+        249.95744680851064
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        345,
+        8,
+        255,
+        277
+      ],
+      "duration": 0.05,
+      "pivot": [
+        111.40425531914894,
+        277.1063829787234
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        616,
+        8,
+        268,
+        271
+      ],
+      "duration": 0.05,
+      "pivot": [
+        116.08510638297872,
+        271.48936170212767
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        623,
+        788,
+        244,
+        261
+      ],
+      "duration": 0.05,
+      "pivot": [
+        129.19148936170214,
+        261.1914893617021
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        318,
+        537,
+        283,
+        235
+      ],
+      "duration": 0.05,
+      "pivot": [
+        117.95744680851064,
+        234.04255319148936
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        319,
+        301,
+        265,
+        207
+      ],
+      "duration": 0.05,
+      "pivot": [
+        129.12765957446808,
+        211.5744680851064
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        8,
+        799,
+        293,
+        241
+      ],
+      "duration": 0.055,
+      "pivot": [
+        125.4468085106383,
+        242.40425531914894
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        900,
+        8,
+        265,
+        233
+      ],
+      "duration": 0.06,
+      "pivot": [
+        106.65957446808511,
+        236.85106382978725
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        900,
+        257,
+        257,
+        230
+      ],
+      "duration": 0.065,
+      "pivot": [
+        116.95744680851064,
+        235.91489361702128
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        617,
+        532,
+        262,
+        240
+      ],
+      "duration": 0.075,
+      "pivot": [
+        128.25531914893617,
+        241.46808510638297
+      ],
+      "authoredRootLift": 0.0,
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/mobdesert/special1-recovery/mobdesert-special1-recovery-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 235,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.9361702127659575,
+    "actualBodyPixels": 220.0,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/mobdesert/special1-recovery/clip.json"
+  }
+}

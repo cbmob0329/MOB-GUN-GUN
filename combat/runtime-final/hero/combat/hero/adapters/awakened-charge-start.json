@@ -1,0 +1,271 @@
+{
+  "frames": [
+    {
+      "rect": [
+        335,
+        1020,
+        309,
+        234
+      ],
+      "duration": 0.035,
+      "pivot": [
+        175.82857142857142,
+        230.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        368,
+        8,
+        323,
+        206
+      ],
+      "duration": 0.035,
+      "pivot": [
+        181.82857142857142,
+        203.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        366,
+        504,
+        315,
+        223
+      ],
+      "duration": 0.035,
+      "pivot": [
+        196.82857142857142,
+        219.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1010,
+        311,
+        234
+      ],
+      "duration": 0.035,
+      "pivot": [
+        202.82857142857142,
+        231.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        327,
+        1771,
+        292,
+        247
+      ],
+      "duration": 0.035,
+      "pivot": [
+        198.82857142857142,
+        243.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1260,
+        308,
+        217
+      ],
+      "duration": 0.035,
+      "pivot": [
+        189.82857142857142,
+        213.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        505,
+        331,
+        236
+      ],
+      "duration": 0.035,
+      "pivot": [
+        216.82857142857142,
+        232.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        328,
+        1535,
+        303,
+        220
+      ],
+      "duration": 0.035,
+      "pivot": [
+        196.82857142857142,
+        216.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        355,
+        743,
+        314,
+        261
+      ],
+      "duration": 0.035,
+      "pivot": [
+        208.82857142857142,
+        257.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        332,
+        1270,
+        305,
+        249
+      ],
+      "duration": 0.035,
+      "pivot": [
+        210.82857142857142,
+        245.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        757,
+        311,
+        237
+      ],
+      "duration": 0.035,
+      "pivot": [
+        203.82857142857142,
+        233.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1741,
+        303,
+        239
+      ],
+      "duration": 0.035,
+      "pivot": [
+        195.82857142857142,
+        235.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        344,
+        235
+      ],
+      "duration": 0.035,
+      "pivot": [
+        228.82857142857142,
+        231.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        366,
+        259,
+        329,
+        229
+      ],
+      "duration": 0.035,
+      "pivot": [
+        220.82857142857142,
+        226.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        259,
+        342,
+        230
+      ],
+      "duration": 0.035,
+      "pivot": [
+        231.82857142857142,
+        227.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "rect": [
+        8,
+        1493,
+        304,
+        232
+      ],
+      "duration": 0.035,
+      "pivot": [
+        197.82857142857142,
+        228.85714285714283
+      ],
+      "src": "../clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    }
+  ],
+  "bodyHeight": 220.0,
+  "action": "awakened.charge-start",
+  "status": "runtime-export-awaiting-integration-review",
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "authoredCelCount": 16,
+  "reusablePhase": true,
+  "loop": false,
+  "segments": {
+    "start": {
+      "first": 0,
+      "last": 15,
+      "loop": false
+    }
+  },
+  "events": [
+    {
+      "frame": 15,
+      "name": "enterChargeHold",
+      "next": "awakened.charge-hold"
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.6285714285714286,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "completeSequenceId": "awakened-charge-cycle",
+  "phaseWindowOnly": false,
+  "sources": [
+    "rebuild16/awakened-combat/charge-start/review/mobrami-awakened-charge-start-16.json",
+    "rebuild16/awakened-combat/charge-hold/review/mobrami-awakened-charge-hold-16.json"
+  ],
+  "sourceFrameRange": [
+    0,
+    16
+  ]
+}

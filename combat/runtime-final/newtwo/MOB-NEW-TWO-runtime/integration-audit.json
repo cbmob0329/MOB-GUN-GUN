@@ -1,0 +1,1208 @@
+{
+  "timeUTC": "2026-10-15T10:36:23.567545+00:00",
+  "animations": 81,
+  "aliases": 102,
+  "clips": [
+    {
+      "key": "manny/idle",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2688,
+        704
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "8acd0fb8fe4913d6e9fdd83a68da13278f5c230acb465e8cba7e6dd8b649857a"
+    },
+    {
+      "key": "manny/walk",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2368,
+        704
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "5537f3ec18874badc0a9fd9a93af12fe4171e7375ef982cde2143ecff10fbc24"
+    },
+    {
+      "key": "manny/dash",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        3648,
+        704
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "1f856d56c7b0e62d05adb454c962c090f0fc8024aa821ab460b78d7b64c7b999"
+    },
+    {
+      "key": "manny/jump",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1920
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "82737f4c24b30fd60f68f6028f4b5f7ffe9871e280146c41a6437a6bd6446e60"
+    },
+    {
+      "key": "manny/light1",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "3b743f3dbab4c80899b22452bd638d97ab9f41ea3ca9cbd9def1e34aa2b820fb"
+    },
+    {
+      "key": "manny/light2",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1920
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "e1cb7b0839ce1d4c51361375c7ccf52c04b4f47eb216ce4d29594fd845e4f37b"
+    },
+    {
+      "key": "manny/light3",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2816
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "3874ae9c66d5ca378dc5a0534f73fa2cbe851c6548124f1817f515c6d1dc6704"
+    },
+    {
+      "key": "manny/light4",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1536,
+        1280
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "7a62ff57c97936e111a001a71699075dcc2b4fd5c5b5988112b09960d9dfbd45"
+    },
+    {
+      "key": "manny/charge-start",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "b815a1a7c3c3b53570de22b8225e9cbad61dddccd2f3e87d355b64be2555e6ff"
+    },
+    {
+      "key": "manny/charge-hold",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2816
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "5a39300dab5ad2fbb619f88bd1d0de11c243dc19f76dc6af4b1f496cd433bf29"
+    },
+    {
+      "key": "manny/blow",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        2176
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "5c69fc4626141e2cfd308d24c45e5564bffca6fcff52f8629e62b0c213b11b1b"
+    },
+    {
+      "key": "manny/launch",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        3584,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "7f075b7196eadcab9f5c6d0d90fa0141c32e71b774549271d84eb8e649aadf40"
+    },
+    {
+      "key": "manny/ranged",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.725,
+        -0.68
+      ],
+      "sha256": "ffaa918df3d87a1c64eb1b96a58909e5d1535703cb9fa03d1b0551b0d11344c4"
+    },
+    {
+      "key": "manny/rush",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1536,
+        1920
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "2a19fc7eb712774a994af437991f3d1d23316ed1bdc4434ef9c9693ade974eb9"
+    },
+    {
+      "key": "manny/air1",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1536,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "7df8e36276a5ed4f9a1e695fa5cea0c531648141d21673626f5fb8ac32644382"
+    },
+    {
+      "key": "manny/air2",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        2432
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "6cff9643940c1aa0a314a548b297a33565753773dd5df45f408cd48016279e51"
+    },
+    {
+      "key": "manny/air3",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        2304
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "05c20e776576fdd000f93abe5f307e7f34d1a4a7b185e8546d03ee93c99a2679"
+    },
+    {
+      "key": "manny/slam",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        3072,
+        896
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "4e78bd8a7218e50f6746f3ea0268e297d60ccf00dd9648140f6c0514915ad25c"
+    },
+    {
+      "key": "manny/damage",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "f8e709d87e0c47f2e09d9142fe77dc3dfd57f1332c77eb2b4ea475301d294feb"
+    },
+    {
+      "key": "manny/death",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2560
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "97b879aa669411161408504090da77cb195cf020fc4213c47350968116092aa8"
+    },
+    {
+      "key": "manny/recovery",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1920
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "5005a4faf61eafedd2c630898b9368ef207c99772ee4a48827341d1869ca7050"
+    },
+    {
+      "key": "manny/awakening-start",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2816
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "c23b1d961d1b7a9418932dc97c1a23dadaecff5261da82b30be07d09386a16a2"
+    },
+    {
+      "key": "manny/awakening-end",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2560,
+        640
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "e855afbeb618cf402f9a8a0c0abccdfa1f87e2894ec23800969f0f82fb4d8012"
+    },
+    {
+      "key": "manny/guard",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2688
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "1f3ab22db7a7bf5def26d37b8055e07761b617b875abd6404921590395830fe2"
+    },
+    {
+      "key": "manny/crouch",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2048,
+        1024
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.00000000000003,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "65d81d8aefb139721d321222dced95d4500a6ff000e68d26cb4439d63bd38cb2"
+    },
+    {
+      "key": "manny/special1-startup",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1280
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "3048f7a7a766121c0adc7990e80c8d6ac9808b15e29591b700d4c193fffc730e"
+    },
+    {
+      "key": "manny/special1-active",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1536
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6321428571428571,
+        -0.6523809523809524
+      ],
+      "sha256": "50c839c2440ba7d445fb8759a07e16257fc80b3eeb9547bf140e567d4320a958"
+    },
+    {
+      "key": "manny/special1-recovery",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2560,
+        640
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "8e3f08ea16f20377689beffd75cf8f859aac7b9c35838d707da6da1a99964ba5"
+    },
+    {
+      "key": "manny/special2-startup",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2560,
+        896
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "e86b79547b3a89357584283d4a94017efdfa8f3bad0ae6383fb6efe83976a7d3"
+    },
+    {
+      "key": "manny/special2-active",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        3072
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6784999999999999,
+        -2.408333333333333
+      ],
+      "sha256": "528ad4a16417b17929092ab477117e7f78a6d0543491f452d6e37f95a152b14a"
+    },
+    {
+      "key": "manny/special2-recovery",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2816
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "f57e8b9e48dc411a8fcfbe356742674e14f5062346b2037c3371cfeaef544a7d"
+    },
+    {
+      "key": "mobdesert/idle",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "a429f0bee5d150d500d6fa56aea4eb0bdecfdf6320a91fba4141a9ec92f53ba6"
+    },
+    {
+      "key": "mobdesert/walk",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1664
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "2cd518eb0113eb512ba7c0fd18f090a8a216d291b3c6200df4e596aca09eb59c"
+    },
+    {
+      "key": "mobdesert/dash",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1152
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "3ac254bb366e7e4a9e6e838a00270bf07f27b1b8e268bef76e40ad40d7cbb217"
+    },
+    {
+      "key": "mobdesert/jump",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1024
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "7645bda73bd4461ae22f96b92573adda2713a1ec7d2fbcd4bc9756a5ce5fdbf6"
+    },
+    {
+      "key": "mobdesert/light1",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1280
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "558282df9cdf27373632017ad4c8e2f32157dc206b64923cf403477c5f689541"
+    },
+    {
+      "key": "mobdesert/light2",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1536
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "589d1732397cc8e509c73693c56511201f378446ff6f7c04bdc4355cb219afd8"
+    },
+    {
+      "key": "mobdesert/light3",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1792,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "565a75db1492a8c5f2a2440d53c70e7306e4c237390efbf7ad692c9691091d08"
+    },
+    {
+      "key": "mobdesert/light4",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "56e04b4fbceeaf0d2a5c05315d2d48f7e9d83b196e5516ffd9d27e6ad949666b"
+    },
+    {
+      "key": "mobdesert/charge-start",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2048,
+        512
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "ccb880c9ebb6a9ac8b90ab51d0b34ca8cf732f0e2ba204b538c16da508caa6c2"
+    },
+    {
+      "key": "mobdesert/charge-hold",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        256,
+        3968
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "1a7a89add2ea272fb8f4967d55ec428c8c6d69ff7ae40a556896e9b93efc5bca"
+    },
+    {
+      "key": "mobdesert/blow",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        1280
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "99c6db2b0b1b2301202ed581117068e4bd75def7efedad8ba6f4d09a1c09d39c"
+    },
+    {
+      "key": "mobdesert/launch",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        2944
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "81a75b6e91ef88bdd54aafcd99d8c1d5965e94b1d94c0daaa40c291fa0995767"
+    },
+    {
+      "key": "mobdesert/ranged",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1024
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.5016949152542373,
+        -0.5457627118644067
+      ],
+      "sha256": "cd6f111a9c1a69604894b333e176c102646fa082e661e158da431ca3ac97f8c2"
+    },
+    {
+      "key": "mobdesert/rush",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1024
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "73b7b1f60e583d63cefa9a9171dac0c3a364ed3d508a6cdf53c8862a34826cae"
+    },
+    {
+      "key": "mobdesert/air1",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        2176
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "8733ae15dfc1c147f872f01a6f0443b008a78de812dbad57081613da0f80083f"
+    },
+    {
+      "key": "mobdesert/air2",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1792,
+        896
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "6c3a69cdeba9e7477d226eb07bc811638a59310a54903969aaea56bfe91ac6ca"
+    },
+    {
+      "key": "mobdesert/air3",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1536
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "00d599d3194f2d1cd1091564145fb1bc42b8517ecb8abe64247c6db3b7ece92b"
+    },
+    {
+      "key": "mobdesert/slam",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2560,
+        640
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 219.99999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "7ba56e9c3f7e95681b547bdeef523190813adbba3803f3f87f5bf54977eabba0"
+    },
+    {
+      "key": "mobdesert/damage",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "5035db01f098b615fa78a0d164e7f6c83d7cbbf359c11e1af932eff5e3c8eb31"
+    },
+    {
+      "key": "mobdesert/death",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "e35be0bce465f3874718947c318b3f5692a19aa43e45afbe2ac1784f62bb3609"
+    },
+    {
+      "key": "mobdesert/recovery",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        256,
+        3200
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "c1cf683c1bd05740b782dd3fd923b019e912a7c1a04a84fe928e0b2e878c9428"
+    },
+    {
+      "key": "mobdesert/awakening-start",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        2048
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "65733b58071f6854e8ef339f4e01738687cb753bb232e76e9c7717375ba6201c"
+    },
+    {
+      "key": "mobdesert/awakening-end",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        3584,
+        256
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "82a7191e88411d999a08b727c2d45af27b43da7e78dd1b704589e728115efdcd"
+    },
+    {
+      "key": "mobdesert/guard",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        1920
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "338ab3aacc964830c4decd867462411aca5679c32d298e6ab9a9551c08cedcff"
+    },
+    {
+      "key": "mobdesert/crouch",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        1664
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "a9ae6bbf986d9d889fe8808ffccfdcdf6672417c786d28393e1343a9cc832684"
+    },
+    {
+      "key": "mobdesert/special1-startup",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1536
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "0b23ba5361599b908e1833ad916bd016d463053066d7d63c2a57d40667a1405e"
+    },
+    {
+      "key": "mobdesert/special1-active",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1664
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.6031914893617021,
+        -0.07234042553191489
+      ],
+      "sha256": "fe22a9dcf57061e7df399cecc63b16abb131602b763c4194a14c0def101e2102"
+    },
+    {
+      "key": "mobdesert/special1-recovery",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1152
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "58f29d2b975b63d38840422f86affd84d31fb9e675564532a6c2b11f00cc1979"
+    },
+    {
+      "key": "mobdesert/special2-startup",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1792,
+        896
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "a1f3eecfb2f6b7d1542cfd752946c006375081946f37f360325d53c5c60d5bbd"
+    },
+    {
+      "key": "mobdesert/special2-active",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        1152
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.5908163265306122,
+        -1.0489795918367346
+      ],
+      "sha256": "e998901c4b0b677f1f9aa31281ea757b44b80bbb26f1f15a52bc62ef0c1d5267"
+    },
+    {
+      "key": "mobdesert/special2-recovery",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1280
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 220.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "0a4ebfe470d37e3fa621e78cf568ddd53632cff8dc0ed2cee16052bd46b67c78"
+    },
+    {
+      "key": "manny/effects/special1-bomb-pink",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        256
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 14.399999999999999,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "f3726dabddc37372d475bcfaa9cb1ffbe38010390a1077dbd03c61e65cf7b3aa"
+    },
+    {
+      "key": "manny/effects/special1-bomb-cyan",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        128,
+        512
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 10.8,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "37eff4d5960b21767b67b6e0af4944c897e624d0d9800531882cceb6a738ea8e"
+    },
+    {
+      "key": "manny/effects/special1-bomb-green",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        128,
+        896
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 12.799999999999997,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "3b85bdf0aaba34ee9f4542abfaa1c6cca75d1c5bd0538c6962b72dd04d9c0d6c"
+    },
+    {
+      "key": "manny/effects/special1-bomb-orange",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        256
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 16.8,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "1c501f0dbcfac8bbef82b1f193c284fc7736f721eb19c55e32eb5ac04c62ffd0"
+    },
+    {
+      "key": "manny/effects/special1-bomb-purple",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        256
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 13.599999999999998,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "fa301c5c5cb36a481c1940f9936332ae89292159ca1704fdd8c14129320c84be"
+    },
+    {
+      "key": "manny/effects/special2-orb",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        1920
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 57.59999999999999,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "893344652ae7323e99cb8ae0534d4446e36c3f13245703bcf6635e62552ed2ba"
+    },
+    {
+      "key": "manny/effects/awakening-aura",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        2048,
+        640
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 45.599999999999994,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "efc30b7970c0c5c0c3659ec751828d1c2e4670589cf46f2b274cd4edd74caa8c"
+    },
+    {
+      "key": "manny/effects/awakening-burst",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        640
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 35.99999999999999,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "6646e841cab3fbc70acbc51332662bb48ad221530e4695322022377445c4679d"
+    },
+    {
+      "key": "mobdesert/effects/special1-fish",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 54.99998945686902,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "a704bdb400e76969c95368238a3bdc82fa8a52db939be6e51dd480b21b7bb0b5"
+    },
+    {
+      "key": "mobdesert/effects/special2-dragon",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1024,
+        1920
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 110.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "d7d1ecb31c072a71dec6c10a47ce170b52a235ea418943e23c2febd5323bff96"
+    },
+    {
+      "key": "mobdesert/effects/awakening-aura",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        1280,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 73.7,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "aed9886febb047423a7d19e423446f0b6fa9a2fbecbea3381614f4acecf6bfe0"
+    },
+    {
+      "key": "mobdesert/effects/awakening-burst",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        1280
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 55.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "462088dab960faedad360402c1a5d52aac6cf8a7dfcd7ffb29185918e95aff53"
+    },
+    {
+      "key": "shared/effects/hit-light",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        128,
+        1408
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 110.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "285d7f21b1476760af673ff4817535832bd0114055b255e31dae82ba03440158"
+    },
+    {
+      "key": "shared/effects/hit-heavy",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 110.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "bb7085399f072c94071c9537cecbb48d67615ba7c55578ec448e48eac4c0089c"
+    },
+    {
+      "key": "shared/effects/charge",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        640
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 110.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "aa8ee119eba7b1e3c01bb93493621ea1783ec6e3991a17620e8601b9323748fb"
+    },
+    {
+      "key": "shared/effects/launch",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        640
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 110.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "cc1c1177b248e8299a87f4884d9f2749271437fb145eb52833b6ea4eaea459b0"
+    },
+    {
+      "key": "shared/effects/slam",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 91.42857142857143,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "0dfaf6e5585e38e90ffb7d7a3629cdfdb293c1a0106975adcf317a7a743c1922"
+    },
+    {
+      "key": "shared/effects/ranged",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        512,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 110.0,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "39ec57a754e06336f5b831bce8f4cccee788d95ff1bbfad1ce9beb55b75aeb46"
+    },
+    {
+      "key": "shared/effects/rush-trail",
+      "frames": 16,
+      "uniqueDecodedRgba": 16,
+      "atlasDimensions": [
+        768,
+        768
+      ],
+      "transparentGutterPixels": 8,
+      "bodyHeight": 94.81481481481481,
+      "releaseFrame": null,
+      "releaseSocket": null,
+      "sha256": "d118b4dff9f2e774673e31160d5c70d95e48082df912d8239512dd3bf9fb0d8d"
+    }
+  ],
+  "runtimeAccepted": false,
+  "sceneBudget": {
+    "bodyMaxPerCharacter": {
+      "manny": {
+        "key": "manny/air1",
+        "kind": "body",
+        "frames": 16,
+        "uniqueSourceCrops": 16,
+        "uniqueCompactCels": 16,
+        "scale": 1.1,
+        "atlasSize": [
+          1536,
+          2048
+        ],
+        "rgbaMiB": 12.0,
+        "fileBytes": 2400744,
+        "bodyHeight": 220.00000000000003,
+        "losslessDecodedRgbaVerified": true,
+        "gutterPixels": 8,
+        "inputFingerprint": "170709222993c6e363ddb13a570c57c5f444e3c437c08b8bd79ef0d2beffe0dc"
+      },
+      "mobdesert": {
+        "key": "mobdesert/walk",
+        "kind": "body",
+        "frames": 16,
+        "uniqueSourceCrops": 16,
+        "uniqueCompactCels": 16,
+        "scale": 0.6376811594202898,
+        "atlasSize": [
+          1024,
+          1664
+        ],
+        "rgbaMiB": 6.5,
+        "fileBytes": 883476,
+        "bodyHeight": 219.99999999999997,
+        "losslessDecodedRgbaVerified": true,
+        "gutterPixels": 8,
+        "inputFingerprint": "b2935410758db43172ae28b3ae89a5d872e225066869b1d46aa3d7b3a17450c6"
+      }
+    },
+    "allNineteenDistinctFxAtlasesMiB": 42.625,
+    "twoMaximumBodyAtlasesPlusAllFxMiB": 61.125,
+    "limitMiB": 64,
+    "passes": true,
+    "assumption": "One active body atlas per character, every distinct new/shared FX atlas resident simultaneously. Reused/awakened aliases share the same decoded texture. Unused body clips evicted/not all predecoded."
+  },
+  "allPathsSelfContained": true,
+  "allAliasesResolve": true,
+  "allRequiredClips16Distinct": true
+}

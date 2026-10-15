@@ -1,0 +1,730 @@
+{
+  "character": "nyoro",
+  "animation": "ranged",
+  "kind": "effects",
+  "src": "nyoro-effects-ranged-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        280,
+        741,
+        241,
+        210
+      ],
+      "pivot": [
+        136.80114207650274,
+        94.94865027322406
+      ],
+      "duration": 0.035,
+      "phase": "seed",
+      "sourceFrame": 1,
+      "displaySize": [
+        1.0954545454545455,
+        0.9545454545454545
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/01",
+      "sourceVisibleRgbaSha256": "c50a9879cb88a08eadee384c36f96ea89b1dec2265ed4ec93c00378d68808999"
+    },
+    {
+      "rect": [
+        280,
+        258,
+        256,
+        218
+      ],
+      "pivot": [
+        171.800043715847,
+        104.86391256830602
+      ],
+      "duration": 0.035,
+      "phase": "seed splits",
+      "sourceFrame": 2,
+      "displaySize": [
+        1.1636363636363636,
+        0.990909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/02",
+      "sourceVisibleRgbaSha256": "003119fb396f83b5a1458aed2b975b684adfc30ea90444d8119436276dec63e5"
+    },
+    {
+      "rect": [
+        824,
+        257,
+        255,
+        227
+      ],
+      "pivot": [
+        183.33637704918036,
+        114.26556284153007
+      ],
+      "duration": 0.03,
+      "phase": "first growth",
+      "sourceFrame": 3,
+      "displaySize": [
+        1.159090909090909,
+        1.031818181818182
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/03",
+      "sourceVisibleRgbaSha256": "c882e66404246a9e4cc1a55f89328b9ff800c6b4f5041f4ea70b54dc860bdcf6"
+    },
+    {
+      "rect": [
+        551,
+        506,
+        251,
+        215
+      ],
+      "pivot": [
+        176.25179781420766,
+        104.66374316939891
+      ],
+      "duration": 0.03,
+      "phase": "branch growth",
+      "sourceFrame": 4,
+      "displaySize": [
+        1.1409090909090909,
+        0.9772727272727273
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/04",
+      "sourceVisibleRgbaSha256": "01b875b5987c2da3d4d9efff19ccb0b69ca6af3213471ba2ea8d6410e738506d"
+    },
+    {
+      "rect": [
+        813,
+        738,
+        238,
+        234
+      ],
+      "pivot": [
+        180.6918579234973,
+        122.1102786885246
+      ],
+      "duration": 0.03,
+      "phase": "build",
+      "sourceFrame": 5,
+      "displaySize": [
+        1.081818181818182,
+        1.0636363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/05",
+      "sourceVisibleRgbaSha256": "63ff232dff0ed19ed971a96e21d8deb938db159ca180a55a680bb38a87a6f393"
+    },
+    {
+      "rect": [
+        552,
+        8,
+        256,
+        233
+      ],
+      "pivot": [
+        203.03968306010933,
+        116.47020218579237
+      ],
+      "duration": 0.03,
+      "phase": "expansion",
+      "sourceFrame": 6,
+      "displaySize": [
+        1.1636363636363636,
+        1.059090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/06",
+      "sourceVisibleRgbaSha256": "653baa06cc5b387da6bca77425c9040d94b6f447e656170cc6ddbfbaa6595e5f"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        256,
+        234
+      ],
+      "pivot": [
+        222.89792896174868,
+        115.80968306010931
+      ],
+      "duration": 0.035,
+      "phase": "near peak",
+      "sourceFrame": 7,
+      "displaySize": [
+        1.1636363636363636,
+        1.0636363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/07",
+      "sourceVisibleRgbaSha256": "ec77a1c5a0afdb086fc9d149c9018ec3a51ad36947bab88ce8c1bbdbb13698ce"
+    },
+    {
+      "rect": [
+        8,
+        258,
+        256,
+        234
+      ],
+      "pivot": [
+        216.788,
+        116.93883606557378
+      ],
+      "duration": 0.04,
+      "phase": "peak",
+      "sourceFrame": 8,
+      "displaySize": [
+        1.1636363636363636,
+        1.0636363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/08",
+      "sourceVisibleRgbaSha256": "32fc1a05ed9bafd89c23e15bb515f75196840ea3fd0473c2b6309fd2b74c68f4"
+    },
+    {
+      "rect": [
+        551,
+        737,
+        246,
+        233
+      ],
+      "pivot": [
+        197.67272677595628,
+        121.22492896174863
+      ],
+      "duration": 0.04,
+      "phase": "breakup begins",
+      "sourceFrame": 9,
+      "displaySize": [
+        1.1181818181818182,
+        1.059090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/09",
+      "sourceVisibleRgbaSha256": "8e9f1b297cee3e0bac334ca07b1e0a050fec5570b79de2b7a16070f844a7a74e"
+    },
+    {
+      "rect": [
+        824,
+        8,
+        256,
+        233
+      ],
+      "pivot": [
+        219.13773224043717,
+        122.14934972677598
+      ],
+      "duration": 0.035,
+      "phase": "fragments split",
+      "sourceFrame": 10,
+      "displaySize": [
+        1.1636363636363636,
+        1.059090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/10",
+      "sourceVisibleRgbaSha256": "d6c9a500569c3ea875128476528bf502264a6fc87a5345fab47dfe34a166ba68"
+    },
+    {
+      "rect": [
+        552,
+        257,
+        256,
+        233
+      ],
+      "pivot": [
+        221.0975355191257,
+        125.1789180327869
+      ],
+      "duration": 0.035,
+      "phase": "separation",
+      "sourceFrame": 11,
+      "displaySize": [
+        1.1636363636363636,
+        1.059090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/11",
+      "sourceVisibleRgbaSha256": "cbd78bff4650c697d0c45943c4f5065ae3c297f6f0603b927f4debd8e960088a"
+    },
+    {
+      "rect": [
+        280,
+        492,
+        255,
+        233
+      ],
+      "pivot": [
+        220.2653224043716,
+        126.61360655737707
+      ],
+      "duration": 0.035,
+      "phase": "thin fragments",
+      "sourceFrame": 12,
+      "displaySize": [
+        1.159090909090909,
+        1.059090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/12",
+      "sourceVisibleRgbaSha256": "06d62c31bd2ff52d003bab4073f98cc78b9b1a68310d500c0c99e65d7d6a8e1a"
+    },
+    {
+      "rect": [
+        8,
+        508,
+        256,
+        234
+      ],
+      "pivot": [
+        227.59348633879782,
+        118.50245901639346
+      ],
+      "duration": 0.04,
+      "phase": "small remnants",
+      "sourceFrame": 13,
+      "displaySize": [
+        1.1636363636363636,
+        1.0636363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/13",
+      "sourceVisibleRgbaSha256": "19630ee99849c5cadb8915f7166dd41c6be20ad1c59feb37e63cf5c474aa8cd1"
+    },
+    {
+      "rect": [
+        8,
+        758,
+        256,
+        234
+      ],
+      "pivot": [
+        204.23369398907107,
+        116.48326775956286
+      ],
+      "duration": 0.045,
+      "phase": "last remnants",
+      "sourceFrame": 14,
+      "displaySize": [
+        1.1636363636363636,
+        1.0636363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/14",
+      "sourceVisibleRgbaSha256": "77299ff7d730b2a55adbe054410af6bea9809a689facda7177df8dd133a7ba67"
+    },
+    {
+      "rect": [
+        280,
+        8,
+        256,
+        234
+      ],
+      "pivot": [
+        215.98860655737704,
+        109.13556830601095
+      ],
+      "duration": 0.05,
+      "phase": "tiny residue",
+      "sourceFrame": 15,
+      "displaySize": [
+        1.1636363636363636,
+        1.0636363636363635
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/15",
+      "sourceVisibleRgbaSha256": "e5ed29a4514c43bf7a8e18ccb5187f5399123ca668bc4ff09959806d57c0ebb9"
+    },
+    {
+      "rect": [
+        824,
+        500,
+        251,
+        222
+      ],
+      "pivot": [
+        196.03346448087433,
+        114.01397814207652
+      ],
+      "duration": 0.055,
+      "phase": "final residual",
+      "sourceFrame": 16,
+      "displaySize": [
+        1.1409090909090909,
+        1.009090909090909
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/ranged/16",
+      "sourceVisibleRgbaSha256": "986f1200f4fbfda0cb72c681c32b2e92a49c5bfa08f2fe68bb8184926fbf5edf"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "canonical-fx/nyoro/ranged/metadata.json",
+    "atlas": "canonical-fx/nyoro/ranged/nyoro-ranged-16-atlas.png",
+    "status": "static_review_candidate_not_user_approved",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        19,
+        31,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        20,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        9,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        25,
+        322,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        23,
+        0,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        1,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        13,
+        0,
+        328,
+        299
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        328,
+        299
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        328,
+        299
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        327,
+        299
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        328,
+        300
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        322,
+        284
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    }
+  ],
+  "gameBinding": {
+    "socketReference": "moving-projectile",
+    "existingHookOffsetPxAtBody110": [
+      0,
+      0
+    ],
+    "socketOffsetMode": "Zero offset from actual moving projectile; body releaseSocket sets actual spawn position.",
+    "nativeDirectionRadians": 0,
+    "mirrorPixelsWithFacing": false,
+    "mirrorSocketXWithFacing": true,
+    "legacySpawnFallbackFromFeetPxAt110": [
+      36,
+      -55
+    ]
+  },
+  "orientationMode": "velocity",
+  "nativeAngleRadians": 0,
+  "runtimeExport": {
+    "scale": 0.7814207650273225,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "71ae9b77e9ff2142b67c76aee78615601ce763984aa0e095066a5e7b04249be9",
+  "runtimeMeasurement": {
+    "action": "nyoro-effects-ranged",
+    "frames": 16,
+    "scale": 0.7814207650273225,
+    "uniformAtlasPixels": 1050625,
+    "trimmedAtlas": [
+      1088,
+      1024
+    ],
+    "trimmedPixels": 1114112,
+    "rgbaMiB": 4.25,
+    "fileBytes": 449118,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.6,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

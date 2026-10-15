@@ -1,0 +1,526 @@
+{
+  "character": "tetsu",
+  "animation": "charge-hold",
+  "kind": "body",
+  "src": "tetsu-body-charge-hold-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        252,
+        270,
+        216
+      ],
+      "pivot": [
+        104.96721311475409,
+        211.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "low_guard",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/charge-hold/01",
+      "sourceVisibleRgbaSha256": "1dcd693e5cb0152ae6f83140c1157363c931fe5e238b9cc56f9228af9d431c46"
+    },
+    {
+      "rect": [
+        8,
+        1704,
+        266,
+        219
+      ],
+      "pivot": [
+        100.96721311475409,
+        214.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "inhale_begin",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/charge-hold/02",
+      "sourceVisibleRgbaSha256": "9b7dad96bbae6d0d86200c2b85d801fc683ee58e8d61f7de0e9c218c6494f544"
+    },
+    {
+      "rect": [
+        8,
+        1217,
+        267,
+        222
+      ],
+      "pivot": [
+        102.96721311475409,
+        217.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "chest_expands",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/charge-hold/03",
+      "sourceVisibleRgbaSha256": "0c05b9fe406354d634951bdce74014792ee21f6d38bfd1b21dfeb80d124a9a5e"
+    },
+    {
+      "rect": [
+        295,
+        8,
+        271,
+        225
+      ],
+      "pivot": [
+        104.96721311475409,
+        220.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "shoulders_lift",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/charge-hold/04",
+      "sourceVisibleRgbaSha256": "851ac89c1be7aa973442acebef52026155e8d459697f2b4c17c9e4c00a911db9"
+    },
+    {
+      "rect": [
+        291,
+        984,
+        267,
+        226
+      ],
+      "pivot": [
+        102.96721311475409,
+        221.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "elbows_open",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/charge-hold/05",
+      "sourceVisibleRgbaSha256": "661b47dabd6f2ad738946cdb00b1bc89cc046d992ff2fecb8427d0b2318d41a6"
+    },
+    {
+      "rect": [
+        295,
+        249,
+        270,
+        229
+      ],
+      "pivot": [
+        104.96721311475409,
+        224.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "weight_rear",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/charge-hold/06",
+      "sourceVisibleRgbaSha256": "6326cc2b8539171327b992031acec3185eb87ca156a36db33b8f3ce79378556f"
+    },
+    {
+      "rect": [
+        8,
+        971,
+        267,
+        230
+      ],
+      "pivot": [
+        103.96721311475409,
+        225.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "high_guard",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/charge-hold/07",
+      "sourceVisibleRgbaSha256": "b1ff9045da62b3a0f9bafa02879d50eef64f99cb5783ac241d5c0c1119c54071"
+    },
+    {
+      "rect": [
+        8,
+        1455,
+        266,
+        233
+      ],
+      "pivot": [
+        101.96721311475409,
+        230.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "breath_crest",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/charge-hold/08",
+      "sourceVisibleRgbaSha256": "318ef03d80129c7beb103d3b2e1e9a41cd82543fea6bd6d9cded5111ec861b78"
+    },
+    {
+      "rect": [
+        290,
+        1464,
+        266,
+        233
+      ],
+      "pivot": [
+        103.96721311475409,
+        228.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "exhale_begin",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/charge-hold/09",
+      "sourceVisibleRgbaSha256": "cbd549cb2aa049fb7b5d2a86671b61e1941e8b8b5fd5054724e6539ef256306e"
+    },
+    {
+      "rect": [
+        8,
+        484,
+        268,
+        233
+      ],
+      "pivot": [
+        105.96721311475409,
+        228.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "pelvis_forward",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/charge-hold/10",
+      "sourceVisibleRgbaSha256": "8ae6029edf64e1f87ed0f57a5f6fcc1aa216ea6b63786525a34c4868d26ed208"
+    },
+    {
+      "rect": [
+        292,
+        737,
+        267,
+        231
+      ],
+      "pivot": [
+        104.96721311475409,
+        226.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "shoulders_lower",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/charge-hold/11",
+      "sourceVisibleRgbaSha256": "ea1268347f05045f02bc177190db38ac0740a9b9939325ab5e59bcd667c46a80"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        271,
+        228
+      ],
+      "pivot": [
+        104.96721311475409,
+        223.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "wrists_settle",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/charge-hold/12",
+      "sourceVisibleRgbaSha256": "c0e40faefeb962bd347177b74c1e20172671cad23fbffdc1d8b4085f84cdd87b"
+    },
+    {
+      "rect": [
+        292,
+        494,
+        268,
+        227
+      ],
+      "pivot": [
+        103.96721311475409,
+        222.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "knees_soften",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/charge-hold/13",
+      "sourceVisibleRgbaSha256": "741783a7ebe5d5bf3b7ff6095b31c91438d03b7213eb3b7ecf791bcc7aca206c"
+    },
+    {
+      "rect": [
+        8,
+        733,
+        268,
+        222
+      ],
+      "pivot": [
+        102.96721311475409,
+        217.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "low_breath",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/charge-hold/14",
+      "sourceVisibleRgbaSha256": "6ea42a8aa2617b9a84342f2e620947599b39bb86384a473c18a1c9c73ab102b8"
+    },
+    {
+      "rect": [
+        291,
+        1226,
+        267,
+        222
+      ],
+      "pivot": [
+        102.96721311475409,
+        217.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "cloth_settle",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/charge-hold/15",
+      "sourceVisibleRgbaSha256": "46afb8e20b9a6b7d6ccac459eb91a8fd7756d16e5a85c33df50430d062bc3a20"
+    },
+    {
+      "rect": [
+        290,
+        1713,
+        265,
+        215
+      ],
+      "pivot": [
+        102.96721311475409,
+        210.68852459016392
+      ],
+      "duration": 0.075,
+      "phase": "wrap_to_guard",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/charge-hold/16",
+      "sourceVisibleRgbaSha256": "cb3450c1b2c92d85a3c1c127b7351e6b52c5d473e9011a586c43316aaad65719"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/charge-hold/tetsu-charge-hold-16.json",
+    "atlas": "tetsu/charge-hold/tetsu-charge-hold-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Six original cels 6/7/8/14/15/16 are replaced by imagegen-corrected compact anatomical poses. Other ten source drawings are retained exactly.",
+      "The sixteen distinct drawings are curated into one smooth height progression rather than claiming the original sheet order was a smooth loop. Source-cel order is [13, 11, 9, 14, 2, 7, 3, 5, 4, 16, 8, 15, 6, 1, 10, 12].",
+      "Ear-tip-to-foot range is 231\u2013253 px; this charge breathing movement is more visible than a perfectly still hold.",
+      "Minor stripe and hand contour drift remains. Real-time and in-engine playback not visually verified."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        108,
+        186,
+        407,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        112,
+        182,
+        406,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        110,
+        178,
+        406,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        108,
+        175,
+        407,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        110,
+        174,
+        405,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        108,
+        171,
+        407,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        169,
+        404,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        111,
+        164,
+        406,
+        422
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 90
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        166,
+        403,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        107,
+        166,
+        403,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        108,
+        168,
+        403,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        108,
+        172,
+        407,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        109,
+        173,
+        406,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        110,
+        179,
+        407,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        110,
+        179,
+        405,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        110,
+        187,
+        403,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.9016393442622951,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "e9d5ef4774a9ae89511bfae2c7bb2006947ae222dc0183fffb604810420ece78",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-charge-hold",
+    "frames": 16,
+    "scale": 0.9016393442622951,
+    "uniformAtlasPixels": 3411409,
+    "trimmedAtlas": [
+      576,
+      1984
+    ],
+    "trimmedPixels": 1142784,
+    "rgbaMiB": 4.359375,
+    "fileBytes": 742982,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": true,
+  "durationSeconds": 1.2,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

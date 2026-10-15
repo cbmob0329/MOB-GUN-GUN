@@ -1,0 +1,730 @@
+{
+  "character": "nyoro",
+  "animation": "special2-water",
+  "kind": "effects",
+  "src": "nyoro-effects-special2-water-runtime220.webp",
+  "bodyHeight": 184.375,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        1934,
+        319,
+        287,
+        287
+      ],
+      "pivot": [
+        128.368,
+        36.961
+      ],
+      "duration": 0.035,
+      "phase": "seed",
+      "sourceFrame": 1,
+      "displaySize": [
+        1.5566101694915255,
+        1.5566101694915255
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/01",
+      "sourceVisibleRgbaSha256": "17c7195edbd18ec1317fa6d2a9023543052ce0d5533d13bab80e0d368179f0b8"
+    },
+    {
+      "rect": [
+        1289,
+        332,
+        311,
+        281
+      ],
+      "pivot": [
+        152.868,
+        30.961
+      ],
+      "duration": 0.035,
+      "phase": "seed splits",
+      "sourceFrame": 2,
+      "displaySize": [
+        1.6867796610169492,
+        1.5240677966101694
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/02",
+      "sourceVisibleRgbaSha256": "6d06da44934d917322fa63cc3ec1f0f987c319531792912780edafb2ed1595b6"
+    },
+    {
+      "rect": [
+        1924,
+        8,
+        301,
+        295
+      ],
+      "pivot": [
+        154.368,
+        44.961
+      ],
+      "duration": 0.03,
+      "phase": "first growth",
+      "sourceFrame": 3,
+      "displaySize": [
+        1.6325423728813562,
+        1.6
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/03",
+      "sourceVisibleRgbaSha256": "1e07a9fcd90f6f19999c206310d7d39dfd0be886a29ea6bc32ad2515dcae8a84"
+    },
+    {
+      "rect": [
+        2237,
+        324,
+        287,
+        281
+      ],
+      "pivot": [
+        150.868,
+        40.961
+      ],
+      "duration": 0.03,
+      "phase": "branch growth",
+      "sourceFrame": 4,
+      "displaySize": [
+        1.5566101694915255,
+        1.5240677966101694
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/04",
+      "sourceVisibleRgbaSha256": "218487eefc4fb6ae3c2b9b9ce50bac4d16cbf011668e2215b093d5f13e2cde2d"
+    },
+    {
+      "rect": [
+        335,
+        342,
+        281,
+        318
+      ],
+      "pivot": [
+        130.368,
+        63.461
+      ],
+      "duration": 0.03,
+      "phase": "build",
+      "sourceFrame": 5,
+      "displaySize": [
+        1.5240677966101694,
+        1.7247457627118647
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/05",
+      "sourceVisibleRgbaSha256": "ff21421c82f868ed609001c14abe3c8d2a66cd054fdecbecc1d55f0ee23a57ff"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        313,
+        318
+      ],
+      "pivot": [
+        154.868,
+        63.461
+      ],
+      "duration": 0.03,
+      "phase": "expansion",
+      "sourceFrame": 6,
+      "displaySize": [
+        1.697627118644068,
+        1.7247457627118647
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/06",
+      "sourceVisibleRgbaSha256": "44b940d7c7c91ebc285ead1fcd170bd70e00eb66f220a04ec311b4eaad66196c"
+    },
+    {
+      "rect": [
+        8,
+        342,
+        311,
+        318
+      ],
+      "pivot": [
+        154.368,
+        63.461
+      ],
+      "duration": 0.035,
+      "phase": "near peak",
+      "sourceFrame": 7,
+      "displaySize": [
+        1.6867796610169492,
+        1.7247457627118647
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/07",
+      "sourceVisibleRgbaSha256": "ad595ab04e8d377e62b9d561b3d40dad25270816034af0a7ed85f6955c9ed5fa"
+    },
+    {
+      "rect": [
+        2241,
+        8,
+        293,
+        300
+      ],
+      "pivot": [
+        152.868,
+        47.461
+      ],
+      "duration": 0.04,
+      "phase": "peak",
+      "sourceFrame": 8,
+      "displaySize": [
+        1.5891525423728814,
+        1.6271186440677967
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/08",
+      "sourceVisibleRgbaSha256": "949bacf45fc4f526a9e140ae816ed06e10e06e02d1344b9a243c51968406d9d7"
+    },
+    {
+      "rect": [
+        1293,
+        8,
+        297,
+        308
+      ],
+      "pivot": [
+        138.368,
+        58.961
+      ],
+      "duration": 0.04,
+      "phase": "breakup begins",
+      "sourceFrame": 9,
+      "displaySize": [
+        1.6108474576271188,
+        1.6705084745762713
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/09",
+      "sourceVisibleRgbaSha256": "9f0ca214f3b81b703a17c2d4838f7919fcc7891eaf013d98b5bb094721d7628d"
+    },
+    {
+      "rect": [
+        960,
+        338,
+        313,
+        308
+      ],
+      "pivot": [
+        154.868,
+        58.961
+      ],
+      "duration": 0.035,
+      "phase": "fragments split",
+      "sourceFrame": 10,
+      "displaySize": [
+        1.697627118644068,
+        1.6705084745762713
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/10",
+      "sourceVisibleRgbaSha256": "fc3adccd0d27f184aa47d4515f865a5c2cf9fa4692b3c0d88aef90958a5661dc"
+    },
+    {
+      "rect": [
+        965,
+        8,
+        312,
+        308
+      ],
+      "pivot": [
+        154.368,
+        58.961
+      ],
+      "duration": 0.035,
+      "phase": "separation",
+      "sourceFrame": 11,
+      "displaySize": [
+        1.6922033898305087,
+        1.6705084745762713
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/11",
+      "sourceVisibleRgbaSha256": "98adc1854c8ab76c5142567b1c9165b344e2d780760bc6f2fb1c91e0466c6b7c"
+    },
+    {
+      "rect": [
+        1616,
+        325,
+        302,
+        291
+      ],
+      "pivot": [
+        155.868,
+        48.961
+      ],
+      "duration": 0.035,
+      "phase": "thin fragments",
+      "sourceFrame": 12,
+      "displaySize": [
+        1.6379661016949152,
+        1.5783050847457627
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/12",
+      "sourceVisibleRgbaSha256": "5f9828d0d91f8590423df560cb4e265b5679c1547797196a101ff66a2552e9f8"
+    },
+    {
+      "rect": [
+        666,
+        8,
+        283,
+        314
+      ],
+      "pivot": [
+        124.368,
+        64.461
+      ],
+      "duration": 0.04,
+      "phase": "small remnants",
+      "sourceFrame": 13,
+      "displaySize": [
+        1.5349152542372884,
+        1.7030508474576271
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/13",
+      "sourceVisibleRgbaSha256": "07d01b68940a490472d16694af2a9021213d2588e37eac7104db6ee746cec2dc"
+    },
+    {
+      "rect": [
+        337,
+        8,
+        313,
+        314
+      ],
+      "pivot": [
+        154.868,
+        64.461
+      ],
+      "duration": 0.045,
+      "phase": "last remnants",
+      "sourceFrame": 14,
+      "displaySize": [
+        1.697627118644068,
+        1.7030508474576271
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/14",
+      "sourceVisibleRgbaSha256": "4c09814852042ce4716cd64b9b2d92898e462d9ba2e5e3e2cad538a18bc05f91"
+    },
+    {
+      "rect": [
+        632,
+        338,
+        312,
+        314
+      ],
+      "pivot": [
+        154.368,
+        64.461
+      ],
+      "duration": 0.05,
+      "phase": "tiny residue",
+      "sourceFrame": 15,
+      "displaySize": [
+        1.6922033898305087,
+        1.7030508474576271
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/15",
+      "sourceVisibleRgbaSha256": "8032a2f7c6dea5e2d79ee17dba4b38880b1b0852c21c9ea33c9a5feae0bbfef0"
+    },
+    {
+      "rect": [
+        1606,
+        8,
+        302,
+        301
+      ],
+      "pivot": [
+        155.868,
+        51.461
+      ],
+      "duration": 0.055,
+      "phase": "final residual",
+      "sourceFrame": 16,
+      "displaySize": [
+        1.6379661016949152,
+        1.6325423728813562
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "authoredSocketOffset": [
+        0,
+        0
+      ],
+      "sourceDrawingId": "nyoro/effects/special2-water/16",
+      "sourceVisibleRgbaSha256": "20679f7ab2830f111ee5972ef2e5a7b21d934d7c8e4f0b6a3ddcb9a7f28ef39d"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "canonical-fx/nyoro/special2-water/metadata.json",
+    "atlas": "canonical-fx/nyoro/special2-water/nyoro-special2-water-16-atlas.png",
+    "status": "static_review_candidate_not_user_approved",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        27,
+        27,
+        314,
+        314
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 4
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        2,
+        33,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 2
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        19,
+        302,
+        314
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 1
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        5,
+        23,
+        292,
+        304
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 5
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        25,
+        0,
+        306,
+        318
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        318
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        312,
+        318
+      ],
+      "masterEdgeAlphaMax": 4,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        3,
+        16,
+        296,
+        316
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 2
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        17,
+        0,
+        314,
+        308
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        308
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        313,
+        308
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        10,
+        302,
+        301
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        31,
+        0,
+        314,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        0,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        1,
+        0,
+        313,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        0,
+        13,
+        302,
+        314
+      ],
+      "masterEdgeAlphaMax": 1,
+      "sourceMarginPx": 0
+    }
+  ],
+  "gameBinding": {
+    "socketReference": "moving-projectile",
+    "existingHookOffsetPxAtBody110": [
+      0,
+      0
+    ],
+    "socketOffsetMode": "Zero offset from actual moving projectile; body releaseSocket sets actual spawn position.",
+    "nativeDirectionRadians": 1.5707963267948966,
+    "mirrorPixelsWithFacing": false,
+    "mirrorSocketXWithFacing": true,
+    "legacySpawnFallbackFromFeetPxAt110": [
+      36,
+      -55
+    ]
+  },
+  "orientationMode": "velocity",
+  "nativeAngleRadians": 1.5707963267948966,
+  "runtimeExport": {
+    "scale": 1,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 184.375,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "c0eeff7c034dbc92ebbb660edea6da409bbcf5369a8147fee151b29c9b0dc8ef",
+  "runtimeMeasurement": {
+    "action": "nyoro-effects-special2-water",
+    "frames": 16,
+    "scale": 1,
+    "uniformAtlasPixels": 1617984,
+    "trimmedAtlas": [
+      2560,
+      704
+    ],
+    "trimmedPixels": 1802240,
+    "rgbaMiB": 6.875,
+    "fileBytes": 590990,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 0.6,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

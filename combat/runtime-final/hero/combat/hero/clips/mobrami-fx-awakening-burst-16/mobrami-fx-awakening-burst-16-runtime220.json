@@ -1,0 +1,365 @@
+{
+  "src": "mobrami-fx-awakening-burst-16-runtime220.webp",
+  "frames": [
+    {
+      "rect": [
+        799,
+        277,
+        235,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        108.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.4954545454545454,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        808,
+        8,
+        253,
+        233
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        106.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.4827272727272727
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        797,
+        546,
+        253,
+        236
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        109.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.5018181818181817
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        805,
+        798,
+        249,
+        238
+      ],
+      "duration": 0.025,
+      "pivot": [
+        127.64705882352942,
+        111.64705882352942
+      ],
+      "displaySize": [
+        1.5845454545454545,
+        1.5145454545454544
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        8,
+        818,
+        253,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        259,
+        548,
+        253,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        265,
+        278,
+        253,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        534,
+        277,
+        249,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        127.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.5845454545454545,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        546,
+        816,
+        243,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        116.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.5463636363636362,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        277,
+        8,
+        253,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        277,
+        817,
+        253,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        546,
+        8,
+        246,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        127.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.5654545454545454,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        8,
+        548,
+        235,
+        254
+      ],
+      "duration": 0.025,
+      "pivot": [
+        108.64705882352942,
+        127.64705882352942
+      ],
+      "displaySize": [
+        1.4954545454545454,
+        1.6163636363636362
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        8,
+        8,
+        253,
+        254
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        127.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.6163636363636362
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        528,
+        547,
+        253,
+        253
+      ],
+      "duration": 0.025,
+      "pivot": [
+        126.64705882352942,
+        126.64705882352942
+      ],
+      "displaySize": [
+        1.6099999999999999,
+        1.6099999999999999
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    },
+    {
+      "rect": [
+        8,
+        278,
+        241,
+        254
+      ],
+      "duration": 0.025,
+      "pivot": [
+        127.64705882352942,
+        127.64705882352942
+      ],
+      "displaySize": [
+        1.5336363636363635,
+        1.6163636363636362
+      ],
+      "socketOffset": [
+        0,
+        0.45454545454545453
+      ]
+    }
+  ],
+  "bodyHeight": 220.0,
+  "status": "runtime-export-awaiting-integration-review",
+  "loop": false,
+  "durationUnits": "seconds",
+  "pivotUnits": "pixels within frame",
+  "anchor": "Projectile or impact center",
+  "frameCount": 16,
+  "coordinateUnits": "All rect and pivot values are source texture pixels. Durations are seconds.",
+  "fxOnly": true,
+  "authoring": "16 independently imagegen-authored fluid cels. No character art in this sheet.",
+  "runtimeExport": {
+    "scale": 0.6470588235294118,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "character": "モブラミ / Mob Rami",
+  "orientationMode": "facing",
+  "intendedSizeFactor": 1.4,
+  "socketOffsetNote": "Offset adds to current engine anchor. Ground effects compensate existing upward anchor so ground-pivot art meets actor feet. Projectiles have zero offset."
+}

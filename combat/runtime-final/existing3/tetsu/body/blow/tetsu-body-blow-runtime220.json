@@ -1,0 +1,555 @@
+{
+  "character": "tetsu",
+  "animation": "blow",
+  "kind": "body",
+  "src": "tetsu-body-blow-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        8,
+        978,
+        298,
+        227
+      ],
+      "pivot": [
+        88.81355932203388,
+        223.52542372881356
+      ],
+      "duration": 0.08,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "sourceDrawingId": "tetsu/body/blow/01",
+      "sourceVisibleRgbaSha256": "f93b62331e8bd6f1d095e9417611e022c7459e57c9f35d1fb540a7563d7ecb00"
+    },
+    {
+      "rect": [
+        350,
+        977,
+        207,
+        297
+      ],
+      "pivot": [
+        112.81355932203388,
+        293.52542372881356
+      ],
+      "duration": 0.08,
+      "phase": "overhead_coil",
+      "sourceFrame": 2,
+      "sourceDrawingId": "tetsu/body/blow/02",
+      "sourceVisibleRgbaSha256": "5ff20a00d67ffde9333d7b2fb8747e255699ea77fc92e253a0b00562a4d22194"
+    },
+    {
+      "rect": [
+        8,
+        425,
+        220,
+        330
+      ],
+      "pivot": [
+        81.81355932203388,
+        326.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "overhead_cut",
+      "sourceFrame": 3,
+      "sourceDrawingId": "tetsu/body/blow/03",
+      "sourceVisibleRgbaSha256": "8b4d86c84ab7908b2e389c09b78d5d61cc87fb83428c0fd7fb64f2622c4c2b91"
+    },
+    {
+      "rect": [
+        8,
+        1915,
+        270,
+        216
+      ],
+      "pivot": [
+        89.81355932203388,
+        212.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "descending_acceleration",
+      "sourceFrame": 4,
+      "sourceDrawingId": "tetsu/body/blow/04",
+      "sourceVisibleRgbaSha256": "4447ff0fa0c5d7bdb871856f5b20bb19d5ee7eddeb3b595f95f98b26ffaf3812"
+    },
+    {
+      "rect": [
+        244,
+        425,
+        321,
+        219
+      ],
+      "pivot": [
+        99.81355932203388,
+        215.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "horizontal_cut",
+      "sourceFrame": 5,
+      "sourceDrawingId": "tetsu/body/blow/05",
+      "sourceVisibleRgbaSha256": "77ef4763184f8b2a12b1a2c2714ceccf512a98dc98a26222b3bbdfeb0f6477ce"
+    },
+    {
+      "rect": [
+        8,
+        1440,
+        283,
+        205
+      ],
+      "pivot": [
+        97.81355932203388,
+        201.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "low_follow",
+      "sourceFrame": 6,
+      "sourceDrawingId": "tetsu/body/blow/06",
+      "sourceVisibleRgbaSha256": "e3a76d0b86707d51d64ad9e58ea92366826f0b7acea306dbf158ac5d5ee4d629"
+    },
+    {
+      "rect": [
+        350,
+        660,
+        203,
+        301
+      ],
+      "pivot": [
+        87.81355932203388,
+        297.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "rising_vertical_cut",
+      "sourceFrame": 7,
+      "sourceDrawingId": "tetsu/body/blow/07",
+      "sourceVisibleRgbaSha256": "b32fead14987d9f59b9a00dc130d623ff1d63e25de3ed358a0dbf41b12bc60db"
+    },
+    {
+      "rect": [
+        371,
+        8,
+        169,
+        304
+      ],
+      "pivot": [
+        83.81355932203388,
+        301.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "high_reversal",
+      "sourceFrame": 8,
+      "sourceDrawingId": "tetsu/body/blow/08",
+      "sourceVisibleRgbaSha256": "70eb4c21ed1dd6620d657bb19423ddb165d885cee62f63e973572bb754a2fe5f"
+    },
+    {
+      "rect": [
+        8,
+        1661,
+        277,
+        238
+      ],
+      "pivot": [
+        99.81355932203388,
+        234.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "broad_diagonal_cut",
+      "sourceFrame": 9,
+      "sourceDrawingId": "tetsu/body/blow/09",
+      "sourceVisibleRgbaSha256": "0eab9f252b9187e34346fd6fce768862938e7bca2c171f482432c334185bf8ff"
+    },
+    {
+      "rect": [
+        8,
+        771,
+        326,
+        191
+      ],
+      "pivot": [
+        102.81355932203388,
+        187.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "diagonal_follow",
+      "sourceFrame": 10,
+      "sourceDrawingId": "tetsu/body/blow/10",
+      "sourceVisibleRgbaSha256": "85e52204778507e993fa914f1f5f7ad1d52f9eaf8f67596a9cf488513677c721"
+    },
+    {
+      "rect": [
+        8,
+        1221,
+        288,
+        203
+      ],
+      "pivot": [
+        104.81355932203388,
+        198.52542372881356
+      ],
+      "duration": 0.03,
+      "phase": "crouched_rotation",
+      "sourceFrame": 11,
+      "sourceDrawingId": "tetsu/body/blow/11",
+      "sourceVisibleRgbaSha256": "3fc3f658a19f5259bfdb65678410107933ac822317f8c330a665cd17fe649d1a"
+    },
+    {
+      "rect": [
+        301,
+        1889,
+        265,
+        185
+      ],
+      "pivot": [
+        94.81355932203388,
+        181.52542372881356
+      ],
+      "duration": 0.03,
+      "phase": "thrust_gather",
+      "sourceFrame": 12,
+      "sourceDrawingId": "tetsu/body/blow/12",
+      "sourceVisibleRgbaSha256": "79d7326fd43b44f6a80e96b6ad00a3f42d3ae6eca080f31a2d605b0416141884"
+    },
+    {
+      "rect": [
+        8,
+        209,
+        345,
+        200
+      ],
+      "pivot": [
+        95.81355932203388,
+        196.52542372881356
+      ],
+      "duration": 0.08,
+      "phase": "finishing_thrust",
+      "sourceFrame": 13,
+      "sourceDrawingId": "tetsu/body/blow/13",
+      "sourceVisibleRgbaSha256": "437297e75d0ffbd053fe925aa81b1680514517914cde6fea3d084c7bfaee3883"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        347,
+        185
+      ],
+      "pivot": [
+        102.81355932203388,
+        181.52542372881356
+      ],
+      "duration": 0.1,
+      "phase": "thrust_decay",
+      "sourceFrame": 14,
+      "sourceDrawingId": "tetsu/body/blow/14",
+      "sourceVisibleRgbaSha256": "5bbaa5081ab341ea4aa1e82b25f5deae7ff0479c3aa829bde2d41649d6bc5f4a"
+    },
+    {
+      "rect": [
+        312,
+        1290,
+        239,
+        217
+      ],
+      "pivot": [
+        89.81355932203388,
+        213.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "recovery",
+      "sourceFrame": 15,
+      "sourceDrawingId": "tetsu/body/blow/15",
+      "sourceVisibleRgbaSha256": "7be5ea8cd9f8feca704bc37880ff494e862ac7559777e370fdac2e481a8e42d6"
+    },
+    {
+      "rect": [
+        301,
+        1661,
+        266,
+        212
+      ],
+      "pivot": [
+        85.81355932203388,
+        208.52542372881356
+      ],
+      "duration": 0.06,
+      "phase": "settle",
+      "sourceFrame": 16,
+      "sourceDrawingId": "tetsu/body/blow/16",
+      "sourceVisibleRgbaSha256": "d7ef9d05eeb9e142438f15a9cccfc034090621b262293c55836ada866ad6a9e8"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "tetsu/mob-slash-body/tetsu-mob-slash-body-16.json",
+    "atlas": "tetsu/mob-slash-body/tetsu-mob-slash-body-registered-16.png",
+    "status": "drawn_16_cels_for_playback_review_not_production_approved",
+    "runtimeNotes": [
+      "Source8-action landmarks are remade with16 separately drawn phases; the original frame11 attachment and frame14 short-blade defects were locally redrawn via imagegen.",
+      "Minor hood/stripe/body silhouette drift and sword projected-length variation remain; actual-speed review is needed.",
+      "Corrected frame11 keeps the original crouched rotating-sweep function but uses a visibly attached up-right katana rather than the candidate's disconnected upper-left blade.",
+      "No real-time playback or in-engine acceptance has been visually verified by this artist."
+    ]
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        180,
+        449,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 63
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        103,
+        105,
+        325,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        136,
+        70,
+        372,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 70
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        192,
+        418,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        117,
+        189,
+        461,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 51
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        119,
+        204,
+        423,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        130,
+        101,
+        348,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        135,
+        97,
+        315,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        117,
+        169,
+        414,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        219,
+        463,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 49
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        112,
+        208,
+        420,
+        425
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 87
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        122,
+        226,
+        406,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        121,
+        210,
+        492,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 20
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        226,
+        486,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 26
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        191,
+        384,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        197,
+        417,
+        424
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 88
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.9322033898305084,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "ffc199a1f5203f840c7f3298423018b15930f54c29b9ef98689ee60ca9235724",
+  "runtimeMeasurement": {
+    "action": "tetsu-body-blow",
+    "frames": 16,
+    "scale": 0.9322033898305084,
+    "uniformAtlasPixels": 3644281,
+    "trimmedAtlas": [
+      576,
+      2176
+    ],
+    "trimmedPixels": 1253376,
+    "rgbaMiB": 4.78125,
+    "fileBytes": 661648,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": false,
+  "durationSeconds": 1.0,
+  "artTimingRecommendations": {
+    "events": [
+      {
+        "time": 0.16,
+        "end": 0.34,
+        "phase": "M",
+        "hitIndex": 1
+      },
+      {
+        "time": 0.34,
+        "end": 0.52,
+        "phase": "MO",
+        "hitIndex": 2
+      },
+      {
+        "time": 0.52,
+        "end": 0.7,
+        "phase": "MOB",
+        "hitIndex": 3
+      },
+      {
+        "time": 0.7,
+        "end": 0.88,
+        "phase": "MOB_burst",
+        "hitIndex": 4,
+        "knockback": true
+      }
+    ]
+  },
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

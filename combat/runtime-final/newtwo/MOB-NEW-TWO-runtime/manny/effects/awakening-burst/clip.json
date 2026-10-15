@@ -1,0 +1,374 @@
+{
+  "character": "manny",
+  "clip": "awakening-burst",
+  "status": "drawn16-review-candidate",
+  "src": "atlas.webp",
+  "bodyHeight": 35.99999999999999,
+  "displayBodyHeight": 80,
+  "frameCount": 16,
+  "orientationMode": "fixed",
+  "nativeAngleRadians": 0,
+  "socketOffset": [
+    0,
+    0
+  ],
+  "displaySizeUnits": "normalized displayBodyHeight",
+  "frames": [
+    {
+      "rect": [
+        438,
+        8,
+        200,
+        195
+      ],
+      "pivot": [
+        99.89999999999998,
+        95.29999999999998
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.5000000000000004,
+        2.4375000000000004
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        654,
+        8,
+        199,
+        194
+      ],
+      "pivot": [
+        99.67499999999998,
+        93.84999999999998
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        2.4250000000000007
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        420,
+        257,
+        199,
+        200
+      ],
+      "pivot": [
+        99.67499999999998,
+        99.89999999999998
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        2.5000000000000004
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        1065,
+        171,
+        193,
+        196
+      ],
+      "pivot": [
+        99.89999999999998,
+        96.29999999999998
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.412500000000001,
+        2.4500000000000006
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        635,
+        219,
+        200,
+        188
+      ],
+      "pivot": [
+        99.89999999999998,
+        99.44999999999997
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.5000000000000004,
+        2.35
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        635,
+        423,
+        199,
+        192
+      ],
+      "pivot": [
+        99.67499999999998,
+        99.44999999999997
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        2.4
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        850,
+        423,
+        199,
+        189
+      ],
+      "pivot": [
+        99.67499999999998,
+        99.44999999999997
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        2.3625000000000003
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        1065,
+        383,
+        195,
+        191
+      ],
+      "pivot": [
+        99.89999999999998,
+        99.44999999999997
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4375000000000004,
+        2.3875
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        223,
+        257,
+        181,
+        228
+      ],
+      "pivot": [
+        80.89999999999998,
+        123.99999999999997
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.2625000000000006,
+        2.850000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        8,
+        199,
+        243
+      ],
+      "pivot": [
+        99.67499999999998,
+        134.99999999999997
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        3.037500000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        267,
+        199,
+        236
+      ],
+      "pivot": [
+        99.67499999999998,
+        127.94999999999996
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        2.950000000000001
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        223,
+        8,
+        199,
+        233
+      ],
+      "pivot": [
+        99.89999999999998,
+        125.24999999999997
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        2.9125000000000005
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        869,
+        8,
+        180,
+        140
+      ],
+      "pivot": [
+        91.89999999999998,
+        69.24999999999999
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.2500000000000004,
+        1.7500000000000002
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        1065,
+        8,
+        199,
+        147
+      ],
+      "pivot": [
+        99.67499999999998,
+        74.24999999999999
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        1.8375000000000004
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        420,
+        473,
+        199,
+        148
+      ],
+      "pivot": [
+        99.67499999999998,
+        74.24999999999999
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.4875000000000003,
+        1.8500000000000003
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        851,
+        218,
+        187,
+        152
+      ],
+      "pivot": [
+        99.89999999999998,
+        74.24999999999999
+      ],
+      "duration": 0.045,
+      "displaySize": [
+        2.3375,
+        1.9000000000000004
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    }
+  ],
+  "anchorDefinition": "central burst emitter",
+  "knownIssues": [
+    "Runtime anchor/compositing review pending.",
+    "Master source art preserved; only documented uniform normalization on three replacement aura cels."
+  ],
+  "sourceBodyHeight": 80,
+  "sourcePixelsPreserved": false,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.4499999999999999,
+    "actualBodyPixels": 35.99999999999999,
+    "nominalBodyPixels": null,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "packed/manny/effects/awakening-burst/awakening-burst-16.json"
+  }
+}

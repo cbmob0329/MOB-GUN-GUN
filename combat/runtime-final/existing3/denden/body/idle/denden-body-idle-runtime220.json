@@ -1,0 +1,521 @@
+{
+  "character": "denden",
+  "animation": "idle",
+  "kind": "body",
+  "src": "denden-body-idle-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frameCount": 16,
+  "sourceDrawingCount": 16,
+  "uniqueVisibleRgbaFrames": 16,
+  "frames": [
+    {
+      "rect": [
+        806,
+        745,
+        241,
+        225
+      ],
+      "pivot": [
+        106.48979591836735,
+        221.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "breath begins",
+      "sourceFrame": 1,
+      "sourceDrawingId": "denden/body/idle/01",
+      "sourceVisibleRgbaSha256": "999135b7504287e354b0f166956f36f5ac690454286468db60e2924fd4c6356a"
+    },
+    {
+      "rect": [
+        548,
+        8,
+        247,
+        227
+      ],
+      "pivot": [
+        110.48979591836735,
+        224.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "shoulders lift",
+      "sourceFrame": 2,
+      "sourceDrawingId": "denden/body/idle/02",
+      "sourceVisibleRgbaSha256": "bc454262b8fd03ac8c3be331bccdc0fb071dcfc1372331fb5f4d9d591d4fb608"
+    },
+    {
+      "rect": [
+        807,
+        499,
+        244,
+        230
+      ],
+      "pivot": [
+        121.48979591836735,
+        227.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "chest rises",
+      "sourceFrame": 3,
+      "sourceDrawingId": "denden/body/idle/03",
+      "sourceVisibleRgbaSha256": "d149e382e78b2b7b607ba1bb530dab5ade16429a2b77d6b4637a8e1902ebd957"
+    },
+    {
+      "rect": [
+        807,
+        252,
+        245,
+        231
+      ],
+      "pivot": [
+        121.48979591836735,
+        228.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "tail curls",
+      "sourceFrame": 4,
+      "sourceDrawingId": "denden/body/idle/04",
+      "sourceVisibleRgbaSha256": "b1e5c6e407a6b6984dcaa458f7484d40e45e0c24b5c29320c29fb2c53f488d9e"
+    },
+    {
+      "rect": [
+        8,
+        757,
+        250,
+        233
+      ],
+      "pivot": [
+        116.48979591836735,
+        230.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "inhale",
+      "sourceFrame": 5,
+      "sourceDrawingId": "denden/body/idle/05",
+      "sourceVisibleRgbaSha256": "562c3286f97a44b0780701b2463468307fa436d96a2104b9428d701054237d61"
+    },
+    {
+      "rect": [
+        8,
+        507,
+        253,
+        234
+      ],
+      "pivot": [
+        122.48979591836735,
+        230.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "chest expands",
+      "sourceFrame": 6,
+      "sourceDrawingId": "denden/body/idle/06",
+      "sourceVisibleRgbaSha256": "1bf72b38bf56dbdc95f04e5cfc3903522eb4b5b94dcab455193612596b665ec3"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        260,
+        234
+      ],
+      "pivot": [
+        122.48979591836735,
+        231.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "breath peak",
+      "sourceFrame": 7,
+      "sourceDrawingId": "denden/body/idle/07",
+      "sourceVisibleRgbaSha256": "62095c8e731e1552a8f54d03a3e90813e3fb65a1c56f60ec362bd527d2766d76"
+    },
+    {
+      "rect": [
+        8,
+        258,
+        255,
+        233
+      ],
+      "pivot": [
+        123.48979591836735,
+        230.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "held soft knee bend",
+      "sourceFrame": 8,
+      "sourceDrawingId": "denden/body/idle/08",
+      "sourceVisibleRgbaSha256": "94b575175d0e83ca326e5c67052178942288cb30d7068f668704fa159648c32c"
+    },
+    {
+      "rect": [
+        284,
+        8,
+        248,
+        231
+      ],
+      "pivot": [
+        109.48979591836735,
+        227.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "exhale begins",
+      "sourceFrame": 9,
+      "sourceDrawingId": "denden/body/idle/09",
+      "sourceVisibleRgbaSha256": "264c3e5b7c1799fafb43a9e750dd1a7f46e4a8c85ad4999e8e627e37775d0fe1"
+    },
+    {
+      "rect": [
+        540,
+        752,
+        247,
+        231
+      ],
+      "pivot": [
+        109.48979591836735,
+        227.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "shoulders relax",
+      "sourceFrame": 10,
+      "sourceDrawingId": "denden/body/idle/10",
+      "sourceVisibleRgbaSha256": "37ba341494bd999f019ebaf440586c8a260af34022f0f52378a411747e7cffac"
+    },
+    {
+      "rect": [
+        811,
+        8,
+        246,
+        228
+      ],
+      "pivot": [
+        110.48979591836735,
+        224.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "belly settles",
+      "sourceFrame": 11,
+      "sourceDrawingId": "denden/body/idle/11",
+      "sourceVisibleRgbaSha256": "b02a867fd20a86800093ceca03750ba91ef6fa7069110019b8a223346fdecbf9"
+    },
+    {
+      "rect": [
+        543,
+        504,
+        247,
+        231
+      ],
+      "pivot": [
+        111.48979591836735,
+        227.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "tail lowers",
+      "sourceFrame": 12,
+      "sourceDrawingId": "denden/body/idle/12",
+      "sourceVisibleRgbaSha256": "ef834f184bf17d4b9c0089d58aa5fae685c074aec2db22d2d36b54e6faa27dde"
+    },
+    {
+      "rect": [
+        544,
+        255,
+        247,
+        231
+      ],
+      "pivot": [
+        118.48979591836735,
+        228.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "weight centers",
+      "sourceFrame": 13,
+      "sourceDrawingId": "denden/body/idle/13",
+      "sourceVisibleRgbaSha256": "1e381a4da22974a67efa008ec8cb19bd7df291ab40952388262dd32656909940"
+    },
+    {
+      "rect": [
+        279,
+        258,
+        249,
+        230
+      ],
+      "pivot": [
+        119.48979591836735,
+        227.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "wrists settle",
+      "sourceFrame": 14,
+      "sourceDrawingId": "denden/body/idle/14",
+      "sourceVisibleRgbaSha256": "2150df514ca1388bbb8e08843043f482a4def3f568453e3ede8575e0652ebff2"
+    },
+    {
+      "rect": [
+        274,
+        757,
+        250,
+        229
+      ],
+      "pivot": [
+        119.48979591836735,
+        226.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "breath eases",
+      "sourceFrame": 15,
+      "sourceDrawingId": "denden/body/idle/15",
+      "sourceVisibleRgbaSha256": "e55e87f1d48f18dc2ba223a707e92834896565465d6969d3250fdc874528d6ac"
+    },
+    {
+      "rect": [
+        277,
+        507,
+        250,
+        229
+      ],
+      "pivot": [
+        119.48979591836735,
+        226.14285714285717
+      ],
+      "duration": 0.09,
+      "phase": "cycle approaches ready",
+      "sourceFrame": 16,
+      "sourceDrawingId": "denden/body/idle/16",
+      "sourceVisibleRgbaSha256": "fdd3b06034d759ebc02196de9d80fea99b0e875bd274618a993f08d63cc7d8d6"
+    }
+  ],
+  "masterProvenance": {
+    "metadata": "denden/idle/denden-idle-16.json",
+    "atlas": "denden/idle/denden-idle-16-atlas.png",
+    "status": "16-cel candidate; pending actual-size in-game motion acceptance",
+    "runtimeNotes": []
+  },
+  "coordinateUnits": {
+    "rect": "runtime atlas pixels x,y,width,height",
+    "pivot": "frame-local runtime pixels; may be outside trimmed rect",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height, additive to existing FX hook"
+  },
+  "runtimeApproved": false,
+  "sourceAudit": [
+    {
+      "frame": 1,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        132,
+        174,
+        399,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 2,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        171,
+        401,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 3,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        115,
+        168,
+        386,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 4,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        115,
+        166,
+        387,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 5,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        121,
+        164,
+        398,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 6,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        164,
+        395,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 7,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        114,
+        163,
+        402,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 8,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        113,
+        164,
+        396,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 9,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        167,
+        404,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 10,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        129,
+        168,
+        402,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 11,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        128,
+        171,
+        400,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 12,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        126,
+        168,
+        400,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 13,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        119,
+        166,
+        392,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 14,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        117,
+        167,
+        393,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 15,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        118,
+        169,
+        394,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    },
+    {
+      "frame": 16,
+      "sourceRectWithinAtlas": true,
+      "alphaBounds": [
+        118,
+        169,
+        395,
+        423
+      ],
+      "masterEdgeAlphaMax": 0,
+      "sourceMarginPx": 89
+    }
+  ],
+  "runtimeExport": {
+    "scale": 0.8979591836734694,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "inputSha256": "b1a173cabb5b8b02872eba6232fa903ba7434975e29956d068dcbffeeb32ad12",
+  "runtimeMeasurement": {
+    "action": "denden-body-idle",
+    "frames": 16,
+    "scale": 0.8979591836734694,
+    "uniformAtlasPixels": 3381921,
+    "trimmedAtlas": [
+      1088,
+      1024
+    ],
+    "trimmedPixels": 1114112,
+    "rgbaMiB": 4.25,
+    "fileBytes": 995936,
+    "exactScaledVisiblePixelsVerified": true,
+    "framePadding": 8
+  },
+  "loop": true,
+  "durationSeconds": 1.44,
+  "integrationReviewFlagsFile": "../../integration-review-flags.json"
+}

@@ -1,0 +1,109 @@
+{
+  "format": "MOB GUN GUN partial cartoon runtime pack",
+  "version": 1,
+  "scope": [
+    "tetsu"
+  ],
+  "status": "Full required source art coverage; actual-game acceptance pending",
+  "animations": {
+    "tetsu/air3": {
+      "adapter": "tetsu/body/air3/tetsu-body-air3-runtime220.json"
+    },
+    "tetsu/awakening-end": {
+      "adapter": "tetsu/body/awakening-end/tetsu-body-awakening-end-runtime220.json"
+    },
+    "tetsu/dash": {
+      "adapter": "tetsu/body/dash/tetsu-body-dash-runtime220.json"
+    },
+    "tetsu/effects/awakening-aura": {
+      "adapter": "tetsu/effects/awakening-aura/tetsu-effects-awakening-aura-runtime220.json"
+    },
+    "tetsu/effects/awakening-burst": {
+      "adapter": "tetsu/effects/awakening-burst/tetsu-effects-awakening-burst-runtime220.json"
+    },
+    "tetsu/effects/charge": {
+      "adapter": "tetsu/effects/charge/tetsu-effects-charge-runtime220.json"
+    },
+    "tetsu/effects/hit-heavy": {
+      "adapter": "tetsu/effects/hit-heavy/tetsu-effects-hit-heavy-runtime220.json"
+    },
+    "tetsu/effects/hit-light": {
+      "adapter": "tetsu/effects/hit-light/tetsu-effects-hit-light-runtime220.json"
+    },
+    "tetsu/effects/launch": {
+      "adapter": "tetsu/effects/launch/tetsu-effects-launch-runtime220.json"
+    },
+    "tetsu/effects/mob-slash-letters": {
+      "adapter": "tetsu/effects/mob-slash-letters/tetsu-effects-mob-slash-letters-runtime220.json"
+    },
+    "tetsu/effects/rush-trail": {
+      "adapter": "tetsu/effects/rush-trail/tetsu-effects-rush-trail-runtime220.json"
+    },
+    "tetsu/effects/special2-splash": {
+      "adapter": "tetsu/effects/special2-splash/tetsu-effects-special2-splash-runtime220.json"
+    },
+    "tetsu/guard": {
+      "adapter": "tetsu/body/guard/tetsu-body-guard-runtime220.json"
+    },
+    "tetsu/jump": {
+      "adapter": "tetsu/body/jump/tetsu-body-jump-runtime220.json"
+    },
+    "tetsu/light1": {
+      "adapter": "tetsu/body/light1/tetsu-body-light1-runtime220.json"
+    },
+    "tetsu/light3": {
+      "adapter": "tetsu/body/light3/tetsu-body-light3-runtime220.json"
+    },
+    "tetsu/rush": {
+      "adapter": "tetsu/body/rush/tetsu-body-rush-runtime220.json"
+    },
+    "tetsu/slam": {
+      "adapter": "tetsu/body/slam/tetsu-body-slam-runtime220.json"
+    },
+    "tetsu/special2-recovery": {
+      "adapter": "tetsu/body/special2-recovery/tetsu-body-special2-recovery-runtime220.json"
+    },
+    "tetsu/special2-startup": {
+      "adapter": "tetsu/body/special2-startup/tetsu-body-special2-startup-runtime220.json"
+    },
+    "tetsu/walk": {
+      "adapter": "tetsu/body/walk/tetsu-body-walk-runtime220.json"
+    }
+  },
+  "aliases": {
+    "tetsu/awakened-air3": "tetsu/air3",
+    "tetsu/awakened-awakening-end": "tetsu/awakening-end",
+    "tetsu/awakened-dash": "tetsu/dash",
+    "tetsu/effects/awakened-awakening-aura": "tetsu/effects/awakening-aura",
+    "tetsu/effects/awakened-awakening-burst": "tetsu/effects/awakening-burst",
+    "tetsu/effects/awakened-charge": "tetsu/effects/charge",
+    "tetsu/effects/awakened-hit-heavy": "tetsu/effects/hit-heavy",
+    "tetsu/effects/awakened-hit-light": "tetsu/effects/hit-light",
+    "tetsu/effects/awakened-launch": "tetsu/effects/launch",
+    "tetsu/effects/awakened-mob-slash-letters": "tetsu/effects/mob-slash-letters",
+    "tetsu/effects/awakened-rush-trail": "tetsu/effects/rush-trail",
+    "tetsu/effects/awakened-special2-splash": "tetsu/effects/special2-splash",
+    "tetsu/awakened-guard": "tetsu/guard",
+    "tetsu/awakened-jump": "tetsu/jump",
+    "tetsu/awakened-light1": "tetsu/light1",
+    "tetsu/awakened-light3": "tetsu/light3",
+    "tetsu/awakened-rush": "tetsu/rush",
+    "tetsu/awakened-slam": "tetsu/slam",
+    "tetsu/awakened-special2-recovery": "tetsu/special2-recovery",
+    "tetsu/awakened-special2-startup": "tetsu/special2-startup",
+    "tetsu/awakened-walk": "tetsu/walk"
+  },
+  "awakenedReuse": "Existing character normal and awakened aliases share all16 source body cels. Separate character-specific16-cel aura supplies form change. Not separately drawn awakened artwork.",
+  "sourceCoordinateContract": {
+    "rect": "atlas pixels",
+    "pivot": "frame-local runtime pixels",
+    "duration": "seconds",
+    "displaySize": "width,height normalized by displayed body height",
+    "socketOffset": "x,y normalized by displayed body height; added to existing FX anchor",
+    "releaseSocket": "body manifest entry: x,y normalized by displayed body height from player virtual feet; actual projectile spawn and collider, x follows facing, y positive down",
+    "releaseFrame": "body manifest entry: zero-based LOCAL frame index in the emitting runtime phase; global special cel23 maps to active local index6",
+    "orientationMode": "velocity: atan2(vy,vx)-nativeAngleRadians, no mirror; facing: horizontal mirror; fixed: no rotation or mirror"
+  },
+  "masterPolicy": "All PNG artwork masters unchanged. Runtime copies are uniformly downsampled at most to220 source body pixels, then alpha-trimmed with8px transparent gutters and lossless static WebP encoding. Spatial downsampling itself is lossy.",
+  "playbackRequirement": "Every animation and awakened alias must present all16 distinct source cels. No skipped-cel speedups or shortened action clocks; engine verification pending."
+}

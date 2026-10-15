@@ -1,0 +1,751 @@
+{
+  "status": "static-schema-path-pixel-bounds-pass; actual game-loader and visual runtime review pending",
+  "animationEntries": 70,
+  "aliases": 32,
+  "referencedStaticAtlases": 67,
+  "referencedFrameEntriesIncludingPhaseWindows": 1184,
+  "uniqueBodyAuthoredCels": 896,
+  "uniqueFxAuthoredCels": 192,
+  "staticAtlasBytes": 80140530,
+  "maxAtlasDecodedMiB": 7.75,
+  "largestDimension": 3904,
+  "files": [
+    {
+      "width": 1344,
+      "height": 768,
+      "bytes": 1232130,
+      "rgbaMiB": 3.9375,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "2b27acd49fe57ad708fe36080542abf917eaf155282f555e41350686711445e0",
+      "path": "hero/clips/mobrami-idle-16/mobrami-idle-16-runtime220.webp"
+    },
+    {
+      "width": 1344,
+      "height": 1024,
+      "bytes": 1135782,
+      "rgbaMiB": 5.25,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "fcd9a22d3bc833979d56696fbf3c290607e23236bb64625bf62987fc43316168",
+      "path": "hero/clips/walk-sequence/walk-sequence-runtime220.webp"
+    },
+    {
+      "width": 1216,
+      "height": 960,
+      "bytes": 1194946,
+      "rgbaMiB": 4.453125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "ea2270003643dfdf15d841e4d2257c45762ae8202773eb6db8e748fbc2407552",
+      "path": "hero/clips/mobrami-dash-16/mobrami-dash-16-runtime220.webp"
+    },
+    {
+      "width": 1856,
+      "height": 448,
+      "bytes": 924204,
+      "rgbaMiB": 3.171875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "e3ef9d36589f4e47f71e0a8cfcfd6db1a0ebe1e9714eec5fa29f76dcdb8b0fcf",
+      "path": "hero/clips/mobrami-jump-16/mobrami-jump-16-runtime220.webp"
+    },
+    {
+      "width": 896,
+      "height": 1088,
+      "bytes": 1146178,
+      "rgbaMiB": 3.71875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "306334b9d766310643a3737ed1b3a80580dc46b02619277b55a8645fbbc54e6f",
+      "path": "hero/clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp"
+    },
+    {
+      "width": 832,
+      "height": 1152,
+      "bytes": 985350,
+      "rgbaMiB": 3.65625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "0dfdb3f252fbb5bf06fe1437549a120d26f35bccf5f463f26929ffb3eb1ebd8f",
+      "path": "hero/clips/mobrami-crouch-16/mobrami-crouch-16-runtime220.webp"
+    },
+    {
+      "width": 3648,
+      "height": 512,
+      "bytes": 1429590,
+      "rgbaMiB": 7.125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "ac8a049d68756750f779f6ac0eee0c6c1d48157afa39a524be4c464688df5757",
+      "path": "hero/clips/mobrami-weak1-16/mobrami-weak1-16-runtime220.webp"
+    },
+    {
+      "width": 1728,
+      "height": 768,
+      "bytes": 1275322,
+      "rgbaMiB": 5.0625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "19a7e4faefe8a4247089699c0e61c6e3d94b845c629ebc2522d50854e658fc2a",
+      "path": "hero/clips/mobrami-weak2-16/mobrami-weak2-16-runtime220.webp"
+    },
+    {
+      "width": 2496,
+      "height": 576,
+      "bytes": 1286958,
+      "rgbaMiB": 5.484375,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "52ea1608c83704f526f1e0f350c224ab8ec383b5e886d72f65cdebb34a49ef7d",
+      "path": "hero/clips/mobrami-weak3-16/mobrami-weak3-16-runtime220.webp"
+    },
+    {
+      "width": 896,
+      "height": 1536,
+      "bytes": 1295464,
+      "rgbaMiB": 5.25,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "8e2f8255523ffd64c0956b351a312f5457ffd65cc3ba3c920817bb2d5f3da6be",
+      "path": "hero/clips/mobrami-weak4-16/mobrami-weak4-16-runtime220.webp"
+    },
+    {
+      "width": 1024,
+      "height": 1984,
+      "bytes": 2151682,
+      "rgbaMiB": 7.75,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "05e3e45ebc8ce44d3585a7610db6153bf6f5e0207885869a3aea699b18934ce6",
+      "path": "hero/clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp"
+    },
+    {
+      "width": 576,
+      "height": 1728,
+      "bytes": 937946,
+      "rgbaMiB": 3.796875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "43f1b33d0d40ed3fd80fb33527cf1f74c35b76c21496041e4e2c283a5b3423eb",
+      "path": "hero/clips/mobrami-blow-16/mobrami-blow-16-runtime220.webp"
+    },
+    {
+      "width": 768,
+      "height": 1408,
+      "bytes": 992742,
+      "rgbaMiB": 4.125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "2017297034d7dd1441748fca4d16547eca1967aa2cba31ce38f6256299df5788",
+      "path": "hero/clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp"
+    },
+    {
+      "width": 576,
+      "height": 1984,
+      "bytes": 1080546,
+      "rgbaMiB": 4.359375,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "5560c10434975e286ad2dcaf0267069254e4de2120baa3e0cdef8ca6af2de785",
+      "path": "hero/clips/mobrami-ranged-16/mobrami-ranged-16-runtime220.webp"
+    },
+    {
+      "width": 832,
+      "height": 1280,
+      "bytes": 1003962,
+      "rgbaMiB": 4.0625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "c949dfeaf8031af40754b48e76ada04bed388d16d124828853c2f2c87c156e1e",
+      "path": "hero/clips/mobrami-rush-16/mobrami-rush-16-runtime220.webp"
+    },
+    {
+      "width": 576,
+      "height": 1856,
+      "bytes": 1023516,
+      "rgbaMiB": 4.078125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "5a7cf472a5ecd9d6f09cc7b0d610368ed469b40e2497e996c0fdfda225fe0d1e",
+      "path": "hero/clips/mobrami-air1-16/mobrami-air1-16-runtime220.webp"
+    },
+    {
+      "width": 512,
+      "height": 2048,
+      "bytes": 972842,
+      "rgbaMiB": 4.0,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "1047f253746fd29455500b396d5fe3d54a7d19ed148a065e4a65add27fe88fcd",
+      "path": "hero/clips/mobrami-air2-16/mobrami-air2-16-runtime220.webp"
+    },
+    {
+      "width": 768,
+      "height": 1344,
+      "bytes": 949276,
+      "rgbaMiB": 3.9375,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "d38917613895ef5930ec20f296f8a24c6d4da97707e700dc4e8b97046122c23e",
+      "path": "hero/clips/mobrami-air3-16/mobrami-air3-16-runtime220.webp"
+    },
+    {
+      "width": 2368,
+      "height": 512,
+      "bytes": 1151282,
+      "rgbaMiB": 4.625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "1aa0f153adaaf59f3a509622f32b889e149f11a3a5d82fec371cf043c442bfe6",
+      "path": "hero/clips/mobrami-slam-16/mobrami-slam-16-runtime220.webp"
+    },
+    {
+      "width": 3776,
+      "height": 256,
+      "bytes": 1161594,
+      "rgbaMiB": 3.6875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "3301b503bb5c366c2ae0571908ea3a0ef6647e7dc9bbfd35820a244e62af8d87",
+      "path": "hero/clips/mobrami-damage-16/mobrami-damage-16-runtime220.webp"
+    },
+    {
+      "width": 512,
+      "height": 1536,
+      "bytes": 818142,
+      "rgbaMiB": 3.0,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "4dcad18266970a048bc19fc7928713db7257a92acc64614813f7c6c3ad929638",
+      "path": "hero/clips/mobrami-death-16/mobrami-death-16-runtime220.webp"
+    },
+    {
+      "width": 1024,
+      "height": 896,
+      "bytes": 937540,
+      "rgbaMiB": 3.5,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "3dbaeb35a785d30ad6b07ac8f1c7394c3febcb009cb27a646d6f22f564e9fd07",
+      "path": "hero/clips/mobrami-recovery-16/mobrami-recovery-16-runtime220.webp"
+    },
+    {
+      "width": 960,
+      "height": 1024,
+      "bytes": 1343702,
+      "rgbaMiB": 3.75,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "6241bf4ecca6d5fa4ba50e9b9f2b7bc2d2a969cbad378c79c9332dfdb23a4023",
+      "path": "hero/clips/mobrami-awakening-start-16/mobrami-awakening-start-16-runtime220.webp"
+    },
+    {
+      "width": 768,
+      "height": 1600,
+      "bytes": 1279228,
+      "rgbaMiB": 4.6875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "0b6149334c4ed5bb7033132ea54c3ea8a3829b51dafa8936123b4a0b92f1f30a",
+      "path": "hero/clips/mobrami-special1-dance-16/mobrami-special1-dance-16-runtime220.webp"
+    },
+    {
+      "width": 320,
+      "height": 3520,
+      "bytes": 1074390,
+      "rgbaMiB": 4.296875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "a7cf7ab899c1e3abe1504a93613a8b2e9fcc10f3687e52a1e89994ba36f2252f",
+      "path": "hero/clips/mobrami-special1-rush-16/mobrami-special1-rush-16-runtime220.webp"
+    },
+    {
+      "width": 1920,
+      "height": 512,
+      "bytes": 1033498,
+      "rgbaMiB": 3.75,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "2d64b06cf10a46f5f603ec8168c018b5b48640b030c5ea89d155d19d57248022",
+      "path": "hero/clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp"
+    },
+    {
+      "width": 960,
+      "height": 1024,
+      "bytes": 1040720,
+      "rgbaMiB": 3.75,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "9a65bf46788b738ac4296865439faf9f458076461d03e1b64fd9be7feb3f3004",
+      "path": "hero/clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp"
+    },
+    {
+      "width": 3904,
+      "height": 256,
+      "bytes": 1379192,
+      "rgbaMiB": 3.8125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "76bd23124edc636540425232fa0f7cb91aad45ed1a95d56804b1b5b5e520eff9",
+      "path": "hero/clips/mobrami-awakened-idle-16/mobrami-awakened-idle-16-runtime220.webp"
+    },
+    {
+      "width": 576,
+      "height": 1920,
+      "bytes": 1224018,
+      "rgbaMiB": 4.21875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "2eb6b85a404362953d4b8a006141e433b8f533530eb72dee4842820addc2e1dc",
+      "path": "hero/clips/mobrami-awakened-walk-16/mobrami-awakened-walk-16-runtime220.webp"
+    },
+    {
+      "width": 2240,
+      "height": 448,
+      "bytes": 1183082,
+      "rgbaMiB": 3.828125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "96b1c7c38f3192c34b12cad38d9aa6d3048be27295f269d8ccf8f7a6de327a11",
+      "path": "hero/clips/mobrami-awakened-dash-16/mobrami-awakened-dash-16-runtime220.webp"
+    },
+    {
+      "width": 1024,
+      "height": 960,
+      "bytes": 1163534,
+      "rgbaMiB": 3.75,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "8741e019b9b23dd742cf95d5f37da07019359e499246da6646f5e964705d7ea8",
+      "path": "hero/clips/mobrami-awakened-jump-16/mobrami-awakened-jump-16-runtime220.webp"
+    },
+    {
+      "width": 1856,
+      "height": 512,
+      "bytes": 1264810,
+      "rgbaMiB": 3.625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "4e87bf63e773b5bff2e3cd536d9853fd6605ca3edb2855428ac0506dcdbecad9",
+      "path": "hero/clips/mobrami-awakened-guard-16/mobrami-awakened-guard-16-runtime220.webp"
+    },
+    {
+      "width": 832,
+      "height": 1280,
+      "bytes": 1136350,
+      "rgbaMiB": 4.0625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "964288720e8a5c9bfda266b58ac3dd1f77776e65bea9373de6d3f4d2641a8c96",
+      "path": "hero/clips/mobrami-awakened-crouch-16/mobrami-awakened-crouch-16-runtime220.webp"
+    },
+    {
+      "width": 832,
+      "height": 1920,
+      "bytes": 1641478,
+      "rgbaMiB": 6.09375,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "054c3a86afa495202f55bfcb82d0798e8bdb870f8ae65c51ba66d6c328a402b9",
+      "path": "hero/clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp"
+    },
+    {
+      "width": 1152,
+      "height": 1472,
+      "bytes": 1701700,
+      "rgbaMiB": 6.46875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "49f5de9c34c9455ec1fc1173c0618ede3de9c94c62e9ca9af6eb405641975e3d",
+      "path": "hero/clips/mobrami-awakened-weak2-16/mobrami-awakened-weak2-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1600,
+      "bytes": 1732320,
+      "rgbaMiB": 6.640625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "ed52c9b18543a1054cacd353521156c0dee3d2dbcfcfeb33b987bc7e8cbecf8e",
+      "path": "hero/clips/mobrami-awakened-weak3-16/mobrami-awakened-weak3-16-runtime220.webp"
+    },
+    {
+      "width": 832,
+      "height": 2048,
+      "bytes": 1777412,
+      "rgbaMiB": 6.5,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "3f5b24b181b60f635c67b72fbc89def37870b5ce2f51166a4466decd0deea4cd",
+      "path": "hero/clips/mobrami-awakened-weak4-16/mobrami-awakened-weak4-16-runtime220.webp"
+    },
+    {
+      "width": 704,
+      "height": 2048,
+      "bytes": 1771104,
+      "rgbaMiB": 5.5,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "dbf27cd3341a0b434e3b2689909f08c3c73050f1554403e6330feb5a24b27ce2",
+      "path": "hero/clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp"
+    },
+    {
+      "width": 704,
+      "height": 2112,
+      "bytes": 1919544,
+      "rgbaMiB": 5.671875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "7cbe01a674270c802ae0c49d132e72ee86c360ca9cc5b4d545a1b7f9a56d97e8",
+      "path": "hero/clips/mobrami-awakened-charge-hold-16/mobrami-awakened-charge-hold-16-runtime220.webp"
+    },
+    {
+      "width": 3008,
+      "height": 512,
+      "bytes": 1699378,
+      "rgbaMiB": 5.875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "246ed478b836b67282e10f934f06c0398c9c031ac757c65ce1c5b9209d7fc9dc",
+      "path": "hero/clips/mobrami-awakened-blow-16/mobrami-awakened-blow-16-runtime220.webp"
+    },
+    {
+      "width": 1280,
+      "height": 1408,
+      "bytes": 1796286,
+      "rgbaMiB": 6.875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "393484799e09260d4f2aa089c018873b2dca2cade66f4d34f9caffdb7879a935",
+      "path": "hero/clips/mobrami-awakened-launch-16/mobrami-awakened-launch-16-runtime220.webp"
+    },
+    {
+      "width": 3008,
+      "height": 512,
+      "bytes": 1707298,
+      "rgbaMiB": 5.875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "624acd05eb8c692dd5b24d076e915d12e3687926e3ced2c02232e01eb63e76a9",
+      "path": "hero/clips/mobrami-awakened-ranged-16/mobrami-awakened-ranged-16-runtime220.webp"
+    },
+    {
+      "width": 704,
+      "height": 2048,
+      "bytes": 1590818,
+      "rgbaMiB": 5.5,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "dbb85941f9d9488feed71c13c0b5998910191d6943f4d9b5a3de719fc7c841b7",
+      "path": "hero/clips/mobrami-awakened-rush-16/mobrami-awakened-rush-16-runtime220.webp"
+    },
+    {
+      "width": 896,
+      "height": 1344,
+      "bytes": 1253276,
+      "rgbaMiB": 4.59375,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "2ceed4a9730bc9fb3a02960bdc1fc1f58e8948bfaabbc0ec41e35b0f1dd631b7",
+      "path": "hero/clips/mobrami-awakened-air1-16/mobrami-awakened-air1-16-runtime220.webp"
+    },
+    {
+      "width": 768,
+      "height": 1408,
+      "bytes": 1178410,
+      "rgbaMiB": 4.125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "fcd6855e81eb2ab3a571ec659008d2d5432bd5b960bd3b3ef80dd3aa5500eee8",
+      "path": "hero/clips/mobrami-awakened-air2-16/mobrami-awakened-air2-16-runtime220.webp"
+    },
+    {
+      "width": 832,
+      "height": 1408,
+      "bytes": 1218616,
+      "rgbaMiB": 4.46875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "88747abc920dc1f65b3a7120aa0731b9af99e73d6c46c4c38d3b75bf3bb49835",
+      "path": "hero/clips/mobrami-awakened-air3-16/mobrami-awakened-air3-16-runtime220.webp"
+    },
+    {
+      "width": 576,
+      "height": 1856,
+      "bytes": 1217266,
+      "rgbaMiB": 4.078125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "8b2630ab6cf3d3561404396940ca5fb2a268d7817651345e416cfbc1252fc01e",
+      "path": "hero/clips/mobrami-awakened-slam-16/mobrami-awakened-slam-16-runtime220.webp"
+    },
+    {
+      "width": 640,
+      "height": 2048,
+      "bytes": 1608478,
+      "rgbaMiB": 5.0,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "375aa00845aab74294e1682522462f4e7f1aee354d20224646221e87aa259215",
+      "path": "hero/clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp"
+    },
+    {
+      "width": 960,
+      "height": 1024,
+      "bytes": 1095496,
+      "rgbaMiB": 3.75,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "6f36c407ce4e5a9dcb69f9e07d45f952d24145ccd8de50bc3f58e1b6c3360daa",
+      "path": "hero/clips/mobrami-awakened-death-16/mobrami-awakened-death-16-runtime220.webp"
+    },
+    {
+      "width": 960,
+      "height": 1408,
+      "bytes": 1484532,
+      "rgbaMiB": 5.15625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "861fef5294f6316faf298cfc12c22cadbb89e62dd39092bb27901705444d53d2",
+      "path": "hero/clips/mobrami-awakened-recovery-16/mobrami-awakened-recovery-16-runtime220.webp"
+    },
+    {
+      "width": 1856,
+      "height": 512,
+      "bytes": 1209500,
+      "rgbaMiB": 3.625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "29476bcb1494f7b386fbdc05218bee89a524dee855ded94377084dcce859d8c3",
+      "path": "hero/clips/mobrami-awakening-end-16/mobrami-awakening-end-16-runtime220.webp"
+    },
+    {
+      "width": 896,
+      "height": 1472,
+      "bytes": 1496802,
+      "rgbaMiB": 5.03125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "5b15f7fbf2e885a7178c61e3f48c60371477a612da5ad8f3eb31822f7d0e0bb1",
+      "path": "hero/clips/mobrami-awakened-special1-dance-16/mobrami-awakened-special1-dance-16-runtime220.webp"
+    },
+    {
+      "width": 960,
+      "height": 1152,
+      "bytes": 1183564,
+      "rgbaMiB": 4.21875,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "4774bf21bb2c06b057473b61e8615fc9a8b32be6f4ccf4d934ce1ae49ef00652",
+      "path": "hero/clips/mobrami-awakened-special1-rush-16/mobrami-awakened-special1-rush-16-runtime220.webp"
+    },
+    {
+      "width": 640,
+      "height": 1856,
+      "bytes": 1420472,
+      "rgbaMiB": 4.53125,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "61d04c9e2d439fae6f34f96fd95f8a7b6212c4a8c6a25020a88e3713f91c72e9",
+      "path": "hero/clips/mobrami-awakened-special2-startup-16/mobrami-awakened-special2-startup-16-runtime220.webp"
+    },
+    {
+      "width": 2176,
+      "height": 512,
+      "bytes": 1375758,
+      "rgbaMiB": 4.25,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "bc7227c6fa3ed395b59c4b26e6fcfb2c9f7fdbbbaa0e15e7665a6eda5d57cb5b",
+      "path": "hero/clips/mobrami-awakened-special2-release-16/mobrami-awakened-special2-release-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 484818,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "ac5c65153981b2130f3feb23ecaecb78b655e0137e372eb878c6aa79a1eb351f",
+      "path": "hero/clips/mobrami-fx-hit-light-16/mobrami-fx-hit-light-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 690138,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "59d14bccef0e5f1e0db718552d08db8a5becfd229251013603bc3c7c00eab20e",
+      "path": "hero/clips/mobrami-fx-hit-heavy-16/mobrami-fx-hit-heavy-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 937722,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "f6f92431e59ac52428449b283821975639c28d180e28e4a1903ee9afe5e081b8",
+      "path": "hero/clips/mobrami-fx-charge-16/mobrami-fx-charge-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 634738,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "31abaeefd051345c7258df28deba4b032d053fc18ffd119a556b0710d0ee6468",
+      "path": "hero/clips/mobrami-fx-launch-16/mobrami-fx-launch-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 727304,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "991722061b902e060dede2970c5b481bc6000e009c539341a906c7397ca63611",
+      "path": "hero/clips/mobrami-fx-slam-16/mobrami-fx-slam-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 548312,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "52487c4827249efb4fe80846cca8515bd490daa3fcaacfe27afc57f94cdaba68",
+      "path": "hero/clips/mobrami-fx-ranged-16/mobrami-fx-ranged-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 613856,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "e005e18b941e40b52c9e73eff052eaff57610826a6f3e0562d00b3e2f93407b8",
+      "path": "hero/clips/mobrami-fx-rush-trail-16/mobrami-fx-rush-trail-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 1073470,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "1f793baedc9791bf420b3472e5d9fd030c0e9d2d39c43df020938370f4713a34",
+      "path": "hero/clips/mobrami-fx-special1-aura-16/mobrami-fx-special1-aura-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 562276,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "57ace5188977159e112419e9719fac1fcc792983ab8701a402bb516605fc0eb6",
+      "path": "hero/clips/mobrami-fx-special2-water-16/mobrami-fx-special2-water-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 613434,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "dceb9ad8141d4ce07a70ee8f4b7b7f55f318fd9f9a9e0d3e1baadc27148019d8",
+      "path": "hero/clips/mobrami-fx-special2-splash-16/mobrami-fx-special2-splash-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 1255998,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "1a3039bacacead228d74cc08f332aab7c6026a6da74120f2b1b06ad91f7d3714",
+      "path": "hero/clips/mobrami-fx-awakening-aura-16/mobrami-fx-awakening-aura-16-runtime220.webp"
+    },
+    {
+      "width": 1088,
+      "height": 1088,
+      "bytes": 709438,
+      "rgbaMiB": 4.515625,
+      "chunks": [
+        "VP8L"
+      ],
+      "sha256": "ab7ffdd36ce6d4238a99092ad320aca7937d3b00520e9cdad1272232f077806d",
+      "path": "hero/clips/mobrami-fx-awakening-burst-16/mobrami-fx-awakening-burst-16-runtime220.webp"
+    }
+  ]
+}

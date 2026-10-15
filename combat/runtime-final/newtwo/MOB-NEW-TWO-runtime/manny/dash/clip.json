@@ -1,0 +1,355 @@
+{
+  "character": "manny",
+  "clip": "dash",
+  "status": "trimmed_review_candidate",
+  "frameCount": 16,
+  "bodyHeight": 220.0,
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "knownIssues": [
+    "User and runtime review pending.",
+    "Frames07–10 heads enlarged relative to unchanged boots and torso, preserving near foreground leg back-left and far rear leg forward-right, normalized uniformly0.70.",
+    "Exact anatomical bounds and sockets pending."
+  ],
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        1874,
+        365,
+        428,
+        328
+      ],
+      "duration": 0.045,
+      "pivot": [
+        152.53191489361703,
+        335.0851063829787
+      ],
+      "headBodyBounds": [
+        44.87234042553192,
+        105.72340425531915,
+        278.9148936170213,
+        325.72340425531917
+      ],
+      "sourceFrame": 1
+    },
+    {
+      "rect": [
+        2748,
+        362,
+        412,
+        333
+      ],
+      "duration": 0.045,
+      "pivot": [
+        174.06382978723406,
+        326.6595744680851
+      ],
+      "headBodyBounds": [
+        66.40425531914894,
+        106.65957446808511,
+        300.4468085106383,
+        326.6595744680851
+      ],
+      "sourceFrame": 2
+    },
+    {
+      "rect": [
+        3176,
+        350,
+        398,
+        328
+      ],
+      "duration": 0.045,
+      "pivot": [
+        204.0212765957447,
+        324.7872340425532
+      ],
+      "headBodyBounds": [
+        96.36170212765958,
+        104.7872340425532,
+        330.40425531914894,
+        324.7872340425532
+      ],
+      "sourceFrame": 3
+    },
+    {
+      "rect": [
+        2783,
+        8,
+        412,
+        326
+      ],
+      "duration": 0.045,
+      "pivot": [
+        179.68085106382978,
+        330.40425531914894
+      ],
+      "headBodyBounds": [
+        72.02127659574468,
+        101.04255319148936,
+        306.06382978723406,
+        321.0425531914894
+      ],
+      "sourceFrame": 4
+    },
+    {
+      "rect": [
+        3211,
+        8,
+        408,
+        315
+      ],
+      "duration": 0.045,
+      "pivot": [
+        177.8085106382979,
+        336.02127659574467
+      ],
+      "headBodyBounds": [
+        70.14893617021276,
+        92.61702127659575,
+        304.1914893617021,
+        312.6170212765958
+      ],
+      "sourceFrame": 5
+    },
+    {
+      "rect": [
+        2318,
+        365,
+        414,
+        313
+      ],
+      "duration": 0.045,
+      "pivot": [
+        195.59574468085106,
+        334.1489361702128
+      ],
+      "headBodyBounds": [
+        87.93617021276596,
+        86.06382978723404,
+        321.97872340425533,
+        306.06382978723406
+      ],
+      "sourceFrame": 6
+    },
+    {
+      "rect": [
+        500,
+        8,
+        446,
+        339
+      ],
+      "duration": 0.045,
+      "pivot": [
+        195.59574468085106,
+        350.1276595744681
+      ],
+      "headBodyBounds": [
+        87.93617021276596,
+        116.08510638297872,
+        321.97872340425533,
+        336.0851063829787
+      ],
+      "sourceFrame": 7
+    },
+    {
+      "rect": [
+        932,
+        365,
+        440,
+        330
+      ],
+      "duration": 0.045,
+      "pivot": [
+        196.59574468085106,
+        327.6595744680851
+      ],
+      "headBodyBounds": [
+        88.93617021276596,
+        107.65957446808511,
+        322.97872340425533,
+        327.6595744680851
+      ],
+      "sourceFrame": 8
+    },
+    {
+      "rect": [
+        8,
+        359,
+        451,
+        327
+      ],
+      "duration": 0.045,
+      "pivot": [
+        203.14893617021278,
+        323.9148936170213
+      ],
+      "headBodyBounds": [
+        95.48936170212767,
+        103.91489361702128,
+        329.531914893617,
+        323.9148936170213
+      ],
+      "sourceFrame": 9
+    },
+    {
+      "rect": [
+        1421,
+        360,
+        437,
+        325
+      ],
+      "duration": 0.045,
+      "pivot": [
+        196.59574468085106,
+        328.59574468085106
+      ],
+      "headBodyBounds": [
+        88.93617021276596,
+        101.1063829787234,
+        322.97872340425533,
+        321.1063829787234
+      ],
+      "sourceFrame": 10
+    },
+    {
+      "rect": [
+        2333,
+        8,
+        434,
+        338
+      ],
+      "duration": 0.045,
+      "pivot": [
+        201.2127659574468,
+        348.1914893617021
+      ],
+      "headBodyBounds": [
+        93.55319148936171,
+        114.14893617021276,
+        327.59574468085106,
+        334.1489361702128
+      ],
+      "sourceFrame": 11
+    },
+    {
+      "rect": [
+        1421,
+        8,
+        443,
+        336
+      ],
+      "duration": 0.045,
+      "pivot": [
+        200.3404255319149,
+        357.5531914893617
+      ],
+      "headBodyBounds": [
+        92.68085106382979,
+        114.14893617021276,
+        326.72340425531917,
+        334.1489361702128
+      ],
+      "sourceFrame": 12
+    },
+    {
+      "rect": [
+        8,
+        8,
+        476,
+        335
+      ],
+      "duration": 0.045,
+      "pivot": [
+        224.68085106382978,
+        355.74468085106383
+      ],
+      "headBodyBounds": [
+        117.02127659574468,
+        112.34042553191489,
+        351.06382978723406,
+        332.3404255319149
+      ],
+      "sourceFrame": 13
+    },
+    {
+      "rect": [
+        475,
+        363,
+        441,
+        299
+      ],
+      "duration": 0.045,
+      "pivot": [
+        190.04255319148936,
+        323.9148936170213
+      ],
+      "headBodyBounds": [
+        82.38297872340425,
+        75.82978723404256,
+        316.4255319148936,
+        295.82978723404256
+      ],
+      "sourceFrame": 14
+    },
+    {
+      "rect": [
+        962,
+        8,
+        443,
+        341
+      ],
+      "duration": 0.045,
+      "pivot": [
+        202.14893617021278,
+        342.5744680851064
+      ],
+      "headBodyBounds": [
+        94.48936170212767,
+        111.34042553191489,
+        328.531914893617,
+        331.3404255319149
+      ],
+      "sourceFrame": 15
+    },
+    {
+      "rect": [
+        1880,
+        8,
+        437,
+        341
+      ],
+      "duration": 0.045,
+      "pivot": [
+        183.4255319148936,
+        332.3404255319149
+      ],
+      "headBodyBounds": [
+        75.76595744680851,
+        112.34042553191489,
+        309.8085106382979,
+        332.3404255319149
+      ],
+      "sourceFrame": 16
+    }
+  ],
+  "sourceAdapter": "packed/manny/dash-v3/manny-dash-v3-16.json",
+  "sourcePixelsPreserved": false,
+  "packing": "lossless alpha-bound trim with fixed source pivot translated by crop origin",
+  "sourceBodyHeight": 235,
+  "runtimeApproved": false,
+  "runtimeExport": {
+    "scale": 0.9361702127659575,
+    "actualBodyPixels": 220.0,
+    "nominalBodyPixels": 220,
+    "spatialResampling": "uniform per-clip Lanczos; masters unchanged",
+    "encoding": "static lossless WebP exact RGBA",
+    "trim": "all alpha>0 pixels retained",
+    "paddingPixels": 8,
+    "maxAtlasDimension": 4096,
+    "mastersUnchanged": true,
+    "sourceAdapter": "runtime-candidates/manny/dash/clip.json"
+  }
+}
