@@ -642,5 +642,506 @@
       },
       "errors": []
     }
-  ]
+  ],
+  "orbFollowUp": {
+    "cases": [
+      {
+        "awake": false,
+        "dir": -1,
+        "distance": 35,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 0.9333333333333333,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 0,
+          "peak": 37044224,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": false,
+        "dir": -1,
+        "distance": 80,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 0.9333333333333333,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 0,
+          "peak": 37044224,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": false,
+        "dir": -1,
+        "distance": 350,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 1.275,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 0,
+          "peak": 37044224,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": false,
+        "dir": -1,
+        "distance": 700,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 2.1083333333333334,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 0,
+          "peak": 37044224,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": false,
+        "dir": 1,
+        "distance": 35,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 0.9333333333333333,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 0,
+          "peak": 37044224,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": false,
+        "dir": 1,
+        "distance": 80,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 0.9333333333333333,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 0,
+          "peak": 37044224,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": false,
+        "dir": 1,
+        "distance": 350,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 1.275,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 8388608,
+          "peak": 45432832,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": false,
+        "dir": 1,
+        "distance": 700,
+        "enemyHeight": 24,
+        "damage": 70,
+        "hitAt": 2.1083333333333334,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 37044224,
+          "reserved": 8388608,
+          "peak": 45432832,
+          "budget": 67108864,
+          "cached": 5,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": -1,
+        "distance": 35,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 0.675,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 0,
+          "peak": 45432832,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 7,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": -1,
+        "distance": 80,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 0.675,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 0,
+          "peak": 45432832,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": -1,
+        "distance": 350,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 1.0166666666666666,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 0,
+          "peak": 45432832,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": -1,
+        "distance": 700,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 1.85,
+        "origin": {
+          "x": 1345.72,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1344.3866666666668,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 417.8866666666695,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 0,
+          "peak": 45432832,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": 1,
+        "distance": 35,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 0.675,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 6668288,
+          "peak": 45563904,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": 1,
+        "distance": 80,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 0.675,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 6668288,
+          "peak": 45563904,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": 1,
+        "distance": 350,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 1.0166666666666666,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 6668288,
+          "peak": 45563904,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        }
+      },
+      {
+        "awake": true,
+        "dir": 1,
+        "distance": 700,
+        "enemyHeight": 24,
+        "damage": 94.5,
+        "hitAt": 1.85,
+        "origin": {
+          "x": 1454.28,
+          "y": 355.33333333333337
+        },
+        "first": {
+          "x": 1455.6133333333332,
+          "y": 356.39583333333337
+        },
+        "last": {
+          "x": 2382.1133333333305,
+          "y": 436,
+          "r": 94
+        },
+        "memory": {
+          "bytes": 38895616,
+          "reserved": 6668288,
+          "peak": 45563904,
+          "budget": 67108864,
+          "cached": 6,
+          "queued": 8,
+          "inFlight": 1,
+          "failures": 0
+        }
+      }
+    ],
+    "pageErrors": []
+  }
 }

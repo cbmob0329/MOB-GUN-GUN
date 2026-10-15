@@ -1,5 +1,21 @@
 # Cartoon combat integration (2026-10-15)
 
+## Orb and party portrait follow-up (2026-10-15)
+
+Manny orb keeps its exact release socket, frame7, fixed FX orientation and80px body. It now starts at vx=direction*160,vy=120, accelerates down at900px/s², and skims at groundY-112 with vx=direction*420. Lifetime remains2.4s. Collision radius94 is inside the roughly112px visible orb radius and shares the exact FX center; normal/awakened visual scale is identical, with the existing1.35x awakened damage retained. The previous high-horizontal-only limitation below is superseded. No remote collision extension or socket shift.
+
+Hero/Manny/Desert party slots now use100x100 transparent portraits cropped from approved normal idle frame1. No redrawing or atlas changes; the existing86px portrait fit, party status overlays and down-state grayscale apply. These three small HUD images do not enter the combat atlas LRU.
+
+New tests/cartoon-orb.test.cjs:16 real-engine collision cases,24px-tall target at distances35/80/350/700, both directions and both forms; each target takes exactly one hit. All3 portrait images decode. Existing combat desktop/mobile377 assertions each pass without the former tall-target workaround. Final-assets878/root-lift303/FX113 also pass. Physical mobile/Safari remain untested.
+
+Source pose review (frame numbers below are1-based within each phase):
+- Denden special1-active8→9 and11→12: frames9–11 have narrower hood/head and changed forward pistol placement; fixed bodyHeight220 throughout. Not a pivot/scale jump.
+- Nyoro special1 startup16→active1 and active16→recovery1: canopy/head/body mass changes at joins; active11–12 extend legs. Family bodyHeight194 across all3 phases.
+- Nyoro special2 startup16→active1: canopy/face mass changes. Recovery8→9 (complete48-cel sequence40→41): strong crouch-to-rise rebound. Family bodyHeight175 across all3 phases, preserving approved family scale rather than the obsolete active-only203 annotation.
+- Tetsu special1-active7–10: uneven stride/leg spacing with fixed bodyHeight220 and foot baseline.
+All remain source-drawing variations; no evidence supports changing per-frame pivot or fit scale to repair them. Existing authoredRootLift correction covers Manny jump and Desert jump/special1 while leaving release sockets unchanged. Diagnostic20-frame comparison is in the task gungun-finish/body-review.png.
+
+
 ## Final 18-ZIP asset integration (2026-10-15)
 
 This section supersedes older pending-art notes below. All 18 delivered ZIP sizes and SHA-256 hashes matched the supplied delivery manifest. Only the final existing3 seven parts, Rami runtime16-v2 five parts, and new-two six parts were installed under combat/runtime-final. Their originals remain unchanged. The combined cartoon-manifest.json resolves 282 source entries and 289 aliases (571 keys), with 279 static lossless WebP atlases, at most 4096px. Every full source sequence has at least 16 independently addressed frames. Awakened body drawings for existing3 and newtwo intentionally reuse normal cels; Rami has separate awakened sequences.
