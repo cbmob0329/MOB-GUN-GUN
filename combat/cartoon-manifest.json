@@ -1,0 +1,5 @@
+{
+  "idle": {"src": null,"columns":1,"rows":1,"frames":1,"fps":12},
+  "walk": {"src":null,"columns":4,"rows":4,"frames":16,"fps":12},
+  "awakened": {"src":null,"columns":1,"rows":1,"frames":1,"fps":12}
+}

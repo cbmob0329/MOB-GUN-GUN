@@ -1,0 +1,387 @@
+{
+  "version": 2,
+  "minimumIndependentFrameAddressesPerSourceClip": 16,
+  "maximumTextureDimension": 4096,
+  "characters": {
+    "hero": "モブラミ",
+    "denden": "モブデンデン",
+    "nyoro": "モブニョロ",
+    "tetsu": "モブテツ",
+    "manny": "モブマニー",
+    "mobdesert": "モブデザート"
+  },
+  "forms": [
+    "normal",
+    "awakened"
+  ],
+  "body": [
+    "idle",
+    "walk",
+    "dash",
+    "jump",
+    "guard",
+    "crouch",
+    "light1",
+    "light2",
+    "light3",
+    "light4",
+    "charge-start",
+    "charge-hold",
+    "blow",
+    "launch",
+    "ranged",
+    "rush",
+    "air1",
+    "air2",
+    "air3",
+    "slam",
+    "damage",
+    "death",
+    "recovery",
+    "awakening-start",
+    "awakening-end",
+    "special1-startup",
+    "special1-active",
+    "special1-recovery",
+    "special2-startup",
+    "special2-active",
+    "special2-recovery"
+  ],
+  "compatibilityAliases": {
+    "charge": "charge-hold",
+    "dance": "special1-startup",
+    "specialRush": "special1-active",
+    "water": "special2-active"
+  },
+  "effects": [
+    "hit-light",
+    "hit-heavy",
+    "charge",
+    "launch",
+    "slam",
+    "ranged",
+    "rush-trail",
+    "special1-aura",
+    "special2-water",
+    "special2-splash",
+    "awakening-aura",
+    "awakening-burst"
+  ],
+  "notRequired": [
+    "charge-release"
+  ],
+  "semantics": {
+    "air3": "Third aerial light hit; automatically followed by a separate slam action.",
+    "slam": "Downward strike after air3; separate damage event and downward launch.",
+    "special1-startup": "Invincible dance.",
+    "special1-active": "Aura rush.",
+    "special1-recovery": "Rush recovery.",
+    "special2-startup": "Jump and aim.",
+    "special2-active": "Diagonal downward energy release.",
+    "special2-recovery": "Descent and landing.",
+    "chargeRelease": "Transitions directly into blow/launch/ranged/rush; no additional cancel action.",
+    "tetsu/blow": "Standalone charged strong only: original MOB slash, 1.0 action seconds; four active windows [0.16,0.34), [0.34,0.52), [0.52,0.70), [0.70,0.88). Body is separate from M/MO/MOB/burst FX. FX playback spans 0.72 seconds; phase boundaries at 0.18 second intervals. Normal and awakened clips each require 16+ independent frames."
+  },
+  "addressing": "hero normal keys are unprefixed; other characters use denden/, nyoro/, tetsu/. Awakened keys add awakened- before the motion name. FX use hero/effects/, denden/effects/, etc.; shared fallback is effects/.",
+  "frameFormat": {
+    "rect": [
+      0,
+      0,
+      256,
+      256
+    ],
+    "pivot": [
+      128,
+      240
+    ],
+    "duration": 0.05,
+    "page": 0
+  },
+  "clipFormat": "{src or pages:[relative URLs],frames:[16+ entries],bodyHeight:sourcePixels,loop:boolean,phaseRanges:{startup:[start,endExclusive],active:[start,endExclusive],recovery:[start,endExclusive]}}",
+  "manifestFormat": "{animations:{key:clip or {adapter:relativeJSON}},aliases:{key:targetKey or {clip:targetKey,phase:phaseName} or {clip:targetKey,range:[start,endExclusive]}}}",
+  "notes": [
+    "Phase aliases share the same full 16+ frame source clip; no duplicated textures are required.",
+    "Frame duration is seconds; rect, pivot and bodyHeight are pixels.",
+    "Sources inside an adapter resolve relative to that adapter JSON.",
+    "Combat timing, hit detection, damage, movement and release events are game-owned, not inferred from pixels.",
+    "Frame-address checks do not prove unique drawings or final visual quality; inspect supplied pixels.",
+    "Old six ZIPs and legacy pixel art are not approved final cartoon animation."
+  ],
+  "characterSpecificEffects": {
+    "tetsu": [
+      "mob-slash-trail",
+      "mob-slash-letters",
+      "awakened-mob-slash-trail",
+      "awakened-mob-slash-letters"
+    ],
+    "manny": [
+      "special1-bomb",
+      "special2-orb",
+      "awakened-special1-bomb",
+      "awakened-special2-orb",
+      "special1-bomb-pink",
+      "awakened-special1-bomb-pink",
+      "special1-bomb-cyan",
+      "awakened-special1-bomb-cyan",
+      "special1-bomb-green",
+      "awakened-special1-bomb-green",
+      "special1-bomb-orange",
+      "awakened-special1-bomb-orange",
+      "special1-bomb-purple",
+      "awakened-special1-bomb-purple"
+    ],
+    "mobdesert": [
+      "special1-fish",
+      "special2-dragon",
+      "awakened-special1-fish",
+      "awakened-special2-dragon"
+    ]
+  },
+  "mobSlashLayers": {
+    "body": "tetsu/blow (or tetsu/awakened-blow), without baked blade trail or letters",
+    "trail": {
+      "key": "tetsu/effects/mob-slash-trail",
+      "anchor": "player feet",
+      "duration": 1,
+      "defaultSize": 120
+    },
+    "letters": {
+      "key": "tetsu/effects/mob-slash-letters",
+      "anchor": "player feet + [direction*155,-57]",
+      "windows": [
+        [
+          0.16,
+          0.34
+        ],
+        [
+          0.34,
+          0.52
+        ],
+        [
+          0.52,
+          0.7
+        ],
+        [
+          0.7,
+          0.88
+        ]
+      ],
+      "phaseRanges": {
+        "m": [
+          0,
+          4
+        ],
+        "mo": [
+          4,
+          8
+        ],
+        "mob": [
+          8,
+          12
+        ],
+        "burst": [
+          12,
+          16
+        ]
+      },
+      "defaultSize": [
+        290,
+        290,
+        290,
+        330
+      ]
+    },
+    "rules": [
+      "Each layer and awakened variant needs 16+ independent frame addresses and transparency.",
+      "Letters playback is restricted to the current combat phase; burst begins at action age .70, with the fourth hit and launch.",
+      "Provide phaseRanges m/mo/mob/burst for other frame counts; absent ranges default to four equal index partitions.",
+      "Frame pivot is in source pixels. Optional clip socket:{offset:[x,y],size:N} uses logical game pixels relative to the stated anchor; x mirrors with facing. Socket size overrides the default longest dimension.",
+      "Socket is a fixed attachment offset, not a per-frame skeletal bone. Body scale is 110 logical pixels high.",
+      "Do not combine these layers into generic hit-heavy or the superseded mob-slash key.",
+      "Legacy body/letters remain provisional fallbacks until complete layer sets arrive."
+    ]
+  },
+  "newCharacters": {
+    "manny": {
+      "bodyHeight": "Required source-pixel body height EXCLUDING hat; approved measurement 275px. Per-character displayBodyHeight=80 logical px. Keep source measurement unchanged; hat may extend above it. Missing bodyHeight renders placeholder.",
+      "design": "Green-trim black witch hat, gold round glasses, black face, pink paw staff",
+      "special1": "Floating colored bombs, 5 normal / 8 awakened",
+      "special2": "Raise staff and release giant red-blue energy orb",
+      "sourceBodyHeight": 275,
+      "displayBodyHeight": 80
+    },
+    "mobdesert": {
+      "design": "Beige wrapped clothes, red scarf and sneakers, gold round glasses, black face, curved sword",
+      "special1": "Jump spin slash plus purple fish, 4 normal / 7 awakened",
+      "special2": "Raise sword and summon huge purple smoke dragon",
+      "sourceBodyHeight": 350,
+      "displayBodyHeight": 110,
+      "rejectedAssets": {
+        "light1": "Previous weak1 artwork rejected for unnatural arm anatomy. Do not connect as final artwork; replacement 16-frame shoulder/elbow/wrist/grip correction pending."
+      }
+    },
+    "bodyKeys": "manny/<motion>, mobdesert/<motion>; awakened- prefix. Same 16+ frame requirement for every source motion and independent FX. Special body phases use special1-startup/active/recovery and special2-startup/active/recovery. No stage changes.",
+    "displaySizing": "Runtime profile displayBodyHeight overrides default 110; Manny=80, other characters=110. Source bodyHeight is measured independently and must not be altered to tune display scale."
+  },
+  "textureMemory": {
+    "budgetBytes": 67108864,
+    "accounting": "width*height*4 decoded RGBA, plus 256x256 retained-pose canvas and in-flight reservation; not total browser/GPU/process memory",
+    "concurrentDecode": 1,
+    "priority": [
+      "selected character/form idle and current motion",
+      "walk, light1-4, dash, jump, charge-start/hold; first page only",
+      "other pages and FX on demand"
+    ],
+    "eviction": "Demand LRU; speculative prefetch never evicts decoded assets; context switch aborts requests, closes old ImageBitmaps and discards retained pose.",
+    "runtimeFormat": "Static PNG or lossless WebP: RIFF/VP8L, VP8X containing VP8L; dimensions verified before decode. Lossy VP8, animated WebP, malformed chunks, inconsistent dimensions and oversized files fail closed. Encoded size<=64MiB, chunks<=1024, dimensions<=4096, decoded atlas<=64MiB minus retained-pose allowance.",
+    "failure": "30s backoff; at most3 attempts per retained failure record; failure map128, diagnostics50; no unresolved image promises kept",
+    "packing": "Trim per frame, 4-8px padding, arbitrary rects and per-frame pivots supported. Keep16+ addresses. Scale rect/pivot/bodyHeight to the same runtime-pixel coordinate system; displayBodyHeight remains game units.",
+    "fallback": "Decoded idle or one 256x256 same-character/form last pose while demanded frame loads; existing provisional renderer if no pose has loaded. No seamless final-art guarantee before asset/device tests."
+  },
+  "fxFrameLayout": {
+    "displaySize": {
+      "type": "[width,height]",
+      "unit": "multiples of selected character displayBodyHeight (Manny80, other110)",
+      "validation": "both finite, >0 and <=32",
+      "fallback": "clip socket.size or effect caller size, using legacy longest-edge scaling"
+    },
+    "socketOffset": {
+      "type": "[x,y]",
+      "unit": "multiples of selected character displayBodyHeight, relative to effect call anchor",
+      "validation": "both finite with absolute value<=32; negative allowed",
+      "orientation": "X mirrors with facing; Y unchanged and positive down",
+      "fallback": "clip socket.offset in logical game px, otherwise [0,0]"
+    },
+    "pivot": "trimmed rect-local runtime pixels; outside-rect values supported; scaled separately by display width/rect width and display height/rect height",
+    "aspect": "displaySize sets exact width and height. Export ratio matching rect width/height to preserve aspect; engine does not infer original untrimmed canvas size.",
+    "scope": "FX rendering only. Normalized per-frame fields survive pages and aliases. Each property overrides independently only when present.",
+    "example": {
+      "src": "compact-fx.webp",
+      "socket": {
+        "offset": [
+          0,
+          0
+        ],
+        "size": 120
+      },
+      "frames": [
+        {
+          "rect": [
+            8,
+            8,
+            160,
+            200
+          ],
+          "pivot": [
+            80,
+            180
+          ],
+          "duration": 0.05,
+          "displaySize": [
+            0.8,
+            1
+          ],
+          "socketOffset": [
+            0.25,
+            -0.5
+          ]
+        }
+      ]
+    },
+    "exampleNote": "Example shows one frame; real source requires16+ independently addressed frames."
+  },
+  "fxOrientation": {
+    "orientationMode": "Optional clip field: velocity | facing | fixed. Omitted: binding default (moving shots velocity, ground splash and Manny orb fixed, others facing). Explicit fixed bindings override clip metadata.",
+    "nativeAngleRadians": "Optional clip field, default0; finite abs<=2PI. Native image travel direction in image coordinates (+X right,+Y down), positive clockwise. Used only in velocity mode.",
+    "velocity": "rotate(atan2(vy,vx)-nativeAngleRadians) around pivot; NO additional mirror. vx sign determines socket X direction; if vx=0 use stored shot direction. Zero velocity: no rotation.",
+    "facing": "horizontal mirror by supplied event/action/player direction, no rotation; ignores nativeAngleRadians.",
+    "fixed": "no rotation or mirror. Splash and Manny orb locked fixed.",
+    "transformOrder": "World anchor + [dir*socketOffsetX, socketOffsetY], then rotation OR mirror, then draw with pivot subtracted. Socket axes stay world-facing, not rotated; Y unchanged. Pivot maps exactly to the offset anchor.",
+    "nativeExamples": {
+      "hero/effects/ranged": 0,
+      "hero/effects/special2-water": 1.5707963267948966,
+      "denden/effects/ranged": 0,
+      "denden/effects/special2-water": 0.7853981633974483,
+      "nyoro/effects/special2-water": 1.5707963267948966,
+      "tetsu/effects/special2-water": 1.5707963267948966,
+      "mobdesert/effects/special1-fish": 0
+    },
+    "dragon": "Exporter supplies measured left/left-down nativeAngleRadians; no guessed constant or position-offset substitution.",
+    "heroGroundOffsets": "Caller anchors unchanged. Exporter may use bottom-center pivot and socketOffsetY charge50/110, launch45/110, slam15/110, aura55/110, burst50/110, splash0. Do not apply compensation again in binding."
+  },
+  "bombVariants": {
+    "order": [
+      "pink",
+      "cyan",
+      "green",
+      "orange",
+      "purple"
+    ],
+    "keys": "manny/effects/special1-bomb-<color>; awakened-special1-bomb-<color> for awakened",
+    "selection": "spawn index modulo5: normal5 once each, awakened8 cycles pink/cyan/green",
+    "fallback": "Same-form special1-bomb generic if variant metadata absent or texture not yet loaded. Character-specific key then shared effects key for each variant/generic.",
+    "art": "Separate actual drawings per color,16+ independent frame addresses per track. No runtime tint or whole-group sprite duplicated onto each projectile."
+  },
+  "releaseBinding": {
+    "schemaLocation": "Body clip metadata: ranged; special2-active (water); special1-active/special2-active for unique specials. Same character/form prefix as body. If active phase clip absent, action-type body clip is fallback.",
+    "releaseSocket": "Optional [x,y] in displayBodyHeight units; finite abs<=32. Actual projectile origin = event-time feet + [action.dir*x*height,y*height]. height=Manny80, others110. Not a visual-only offset.",
+    "releaseFrame": "Optional zero-based source frame index, integer0..frames.length-1. Export actual source index, not one-based sheet cell label. Maps body playback to that frame at game-owned release time; phase aliases must include that source frame to apply synchronization.",
+    "releaseTimes": {
+      "ranged": 0.09,
+      "water": 0.36,
+      "mannyBombs": 0.35,
+      "mannyOrb": 0.55,
+      "desertSpin": 0.16,
+      "desertDragon": 0.6
+    },
+    "multiprojectile": "All projectiles in one emission share the specified socket when present; speed differences/delays retained. Without metadata all old per-projectile origins/formations stay unchanged.",
+    "fx": "Projectile FX socketOffset should be [0,0]; anchor is actual projectile position. No automatic compensation or changes to existing assets.",
+    "example": {
+      "animations": {
+        "denden/ranged": {
+          "adapter": "denden/ranged.json",
+          "releaseSocket": [
+            0.7792207792207793,
+            -0.5367965367965368
+          ],
+          "releaseFrame": 7
+        },
+        "denden/special2-active": {
+          "adapter": "denden/special2-downcast.json",
+          "releaseSocket": [
+            0.7338709677419355,
+            0.0967741935483871
+          ],
+          "releaseFrame": 4
+        }
+      }
+    },
+    "dendenDowncastReference": {
+      "virtualRoot": [
+        250,
+        420
+      ],
+      "muzzle": [
+        432,
+        444
+      ],
+      "sourceBodyHeight": 248,
+      "muzzleToleranceSourcePixels": 4,
+      "note": "Socket relative to virtual root mapped to world player P, not visible airborne feet or ground."
+    },
+    "dendenFrameNumbering": "Confirmed sheet cells are one-based: ranged cell8 -> releaseFrame7; downcast cell5 -> releaseFrame4."
+  },
+  "mobSlashTiming": {
+    "letters": "0.16-.88 action seconds; four phase ranges0.16/.34/.52/.70; per-phase elapsed = actionAge-boundary, duration.18. 16 frames duration.045 each,4 per phase. Hidden before.16 and from.88.",
+    "bodyTrail": "actionAge0..1, duration1",
+    "boundaryRule": "Shared explicit comparisons for damage/FX, avoiding floor rounding at.70."
+  },
+  "authoredRootLift": {
+    "scope": "Optional body-frame metadata; not clip-level and ignored by FX rendering.",
+    "unit": "Signed ratio of display body height (manny 80 logical px, others 110), not atlas pixels.",
+    "formula": "drawY = player.y + (frame.authoredRootLift ?? 0) * displayBodyHeight",
+    "meaning": "Positive means upward displacement baked into the image relative to a fixed ground baseline; move the body image down to cancel it. Negative moves it up.",
+    "validation": "Finite number from -32 through 32 inclusive; absent means zero. Invalid values reject the animation.",
+    "invariants": "Independent of facing and grounded state; preserve in cached fallback pose. Never modify physics, collision or releaseSocket/projectile coordinates."
+  }
+}

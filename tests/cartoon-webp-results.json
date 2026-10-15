@@ -1,0 +1,45 @@
+{
+  "fixture": "Pillow-generated transparent lossless WebP (VP8L and VP8X), no final character art",
+  "atlas": {
+    "width": 2656,
+    "height": 1992,
+    "bytes": 21163008
+  },
+  "formats": [
+    "WebP VP8L",
+    "WebP VP8X/VP8L"
+  ],
+  "rejectedBeforeDecode": 21,
+  "afterDemand": {
+    "bytes": 63489024,
+    "reserved": 0,
+    "peak": 63489024,
+    "budget": 67108864,
+    "cached": 3,
+    "queued": 0,
+    "inFlight": 0,
+    "failures": 0
+  },
+  "compact": {
+    "bytes": 60948480,
+    "reserved": 0,
+    "peak": 63489024,
+    "budget": 67108864,
+    "cached": 8,
+    "queued": 0,
+    "inFlight": 0,
+    "failures": 0
+  },
+  "final": {
+    "bytes": 0,
+    "reserved": 0,
+    "peak": 63489024,
+    "budget": 67108864,
+    "cached": 0,
+    "queued": 0,
+    "inFlight": 0,
+    "failures": 22
+  },
+  "closedBitmaps": 21,
+  "sha256": "a4c292d5056b7a365274edae375998db1657e181849083f582f98e8f066f27ef"
+}

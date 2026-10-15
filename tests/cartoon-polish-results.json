@@ -1,0 +1,267 @@
+{
+  "environment": "Local Windows, headless Microsoft Edge; mobile viewport/DPR emulation, not physical mobile",
+  "workload": "24 stunned high-HP tank enemies, original pixel sprites, provisional FX; zero new atlases loaded",
+  "sampleFramesPerViewport": 180,
+  "warmupFrames": 30,
+  "codeSha256": "402e8809aa60dd584f0c853300ea2a000e4038d40851443d177f13d73e1bb1b6",
+  "measurements": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "logicAssertions": 25,
+      "geometry": [
+        {
+          "id": "#shoot",
+          "x": 1045.890625,
+          "y": 588.8125,
+          "w": 84.234375,
+          "h": 102.390625
+        },
+        {
+          "id": "#cartoon-strong",
+          "x": 940.8125,
+          "y": 578.578125,
+          "w": 92.28125,
+          "h": 112.625
+        },
+        {
+          "id": "#jump",
+          "x": 1142.921875,
+          "y": 578.578125,
+          "w": 92.28125,
+          "h": 112.625
+        },
+        {
+          "id": "#dive",
+          "x": 853.78125,
+          "y": 606.734375,
+          "w": 74.234375,
+          "h": 74.234375
+        },
+        {
+          "id": "#cartoon-guard",
+          "x": 805.203125,
+          "y": 528.015625,
+          "w": 52,
+          "h": 48
+        },
+        {
+          "id": "#cartoon-crouch",
+          "x": 863.203125,
+          "y": 528.015625,
+          "w": 52,
+          "h": 48
+        },
+        {
+          "id": ".skill[data-skill=\"0\"]",
+          "x": 998.4375,
+          "y": 491.546875,
+          "w": 72.953125,
+          "h": 72.953125
+        },
+        {
+          "id": ".skill[data-skill=\"1\"]",
+          "x": 1080.34375,
+          "y": 491.546875,
+          "w": 72.953125,
+          "h": 72.953125
+        },
+        {
+          "id": ".skill[data-skill=\"2\"]",
+          "x": 1162.25,
+          "y": 491.546875,
+          "w": 72.953125,
+          "h": 72.953125
+        }
+      ],
+      "perf": {
+        "sampleFrames": 180,
+        "updateAndDrawP50Ms": 2.300000000745058,
+        "updateAndDrawP95Ms": 2.900000002235174,
+        "rafP50Ms": 13.30000000000291,
+        "rafP95Ms": 13.400000000001455,
+        "framesOver20ms": 1,
+        "handlerResponseMs": [
+          0.8000000007450581,
+          0
+        ],
+        "textureBytes": 0,
+        "effects": 6
+      }
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "logicAssertions": 25,
+      "geometry": [
+        {
+          "id": "#shoot",
+          "x": 642.21875,
+          "y": 318.953125,
+          "w": 44.875,
+          "h": 55.453125
+        },
+        {
+          "id": "#cartoon-strong",
+          "x": 584.9375,
+          "y": 313.40625,
+          "w": 48.84375,
+          "h": 61
+        },
+        {
+          "id": "#jump",
+          "x": 695.53125,
+          "y": 313.40625,
+          "w": 48.859375,
+          "h": 61
+        },
+        {
+          "id": "#dive",
+          "x": 534,
+          "y": 324.875,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "id": "#cartoon-guard",
+          "x": 461.0625,
+          "y": 264.015625,
+          "w": 52,
+          "h": 48
+        },
+        {
+          "id": "#cartoon-crouch",
+          "x": 519.0625,
+          "y": 264.015625,
+          "w": 52,
+          "h": 48
+        },
+        {
+          "id": ".skill[data-skill=\"0\"]",
+          "x": 602.703125,
+          "y": 261.78125,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "id": ".skill[data-skill=\"1\"]",
+          "x": 651.546875,
+          "y": 261.78125,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "id": ".skill[data-skill=\"2\"]",
+          "x": 700.390625,
+          "y": 261.78125,
+          "w": 44,
+          "h": 44
+        }
+      ],
+      "perf": {
+        "sampleFrames": 180,
+        "updateAndDrawP50Ms": 2.2999999970197678,
+        "updateAndDrawP95Ms": 5.899999998509884,
+        "rafP50Ms": 13.30000000000291,
+        "rafP95Ms": 13.5,
+        "framesOver20ms": 0,
+        "handlerResponseMs": [
+          0.30000000074505806,
+          0.09999999776482582
+        ],
+        "textureBytes": 0,
+        "effects": 6
+      }
+    },
+    {
+      "viewport": {
+        "width": 667,
+        "height": 375
+      },
+      "logicAssertions": 25,
+      "geometry": [
+        {
+          "id": "#shoot",
+          "x": 544.8125,
+          "y": 306.671875,
+          "w": 44.046875,
+          "h": 53.328125
+        },
+        {
+          "id": "#cartoon-strong",
+          "x": 490.171875,
+          "y": 301.34375,
+          "w": 47.984375,
+          "h": 58.65625
+        },
+        {
+          "id": "#jump",
+          "x": 595.515625,
+          "y": 301.34375,
+          "w": 47.984375,
+          "h": 58.65625
+        },
+        {
+          "id": "#dive",
+          "x": 439.515625,
+          "y": 310.671875,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "id": "#cartoon-guard",
+          "x": 366.84375,
+          "y": 252.015625,
+          "w": 52,
+          "h": 48
+        },
+        {
+          "id": "#cartoon-crouch",
+          "x": 424.84375,
+          "y": 252.015625,
+          "w": 52,
+          "h": 48
+        },
+        {
+          "id": ".skill[data-skill=\"0\"]",
+          "x": 502.1875,
+          "y": 250.015625,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "id": ".skill[data-skill=\"1\"]",
+          "x": 550.84375,
+          "y": 250.015625,
+          "w": 44,
+          "h": 44
+        },
+        {
+          "id": ".skill[data-skill=\"2\"]",
+          "x": 599.5,
+          "y": 250.015625,
+          "w": 44,
+          "h": 44
+        }
+      ],
+      "perf": {
+        "sampleFrames": 180,
+        "updateAndDrawP50Ms": 2.3000000044703484,
+        "updateAndDrawP95Ms": 6.699999999254942,
+        "rafP50Ms": 13.30000000000291,
+        "rafP95Ms": 13.5,
+        "framesOver20ms": 0,
+        "handlerResponseMs": [
+          0.09999999776482582,
+          0
+        ],
+        "textureBytes": 0,
+        "effects": 6
+      }
+    }
+  ]
+}
