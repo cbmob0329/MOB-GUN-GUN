@@ -1,0 +1,90 @@
+{
+  "body": {
+    "idle": "loop",
+    "walk": 1.2,
+    "dash": 0.64,
+    "jump": "physics ~.711",
+    "light1": 0.64,
+    "light2": 0.68,
+    "light3": 0.72,
+    "light4": 0.82,
+    "charge-start": 0.2,
+    "charge-hold": "loop",
+    "blow": 0.6,
+    "launch": 0.48,
+    "ranged": 0.64,
+    "rush": 0.72,
+    "air1": 0.32,
+    "air2": 0.32,
+    "air3": 0.32,
+    "slam": 0.36,
+    "special1": 0.64,
+    "special2": 2.5,
+    "guard": "loop",
+    "crouch": "loop",
+    "damage": 0.24,
+    "recovery": 0.2,
+    "death": "one-shot"
+  },
+  "events": {
+    "light": [
+      0.28,
+      0.48
+    ],
+    "blow": [
+      0.24,
+      0.44
+    ],
+    "launch": [
+      0.18,
+      0.34
+    ],
+    "ranged": 0.24,
+    "rush": [
+      0.24,
+      0.54
+    ],
+    "air": [
+      0.08,
+      0.24
+    ],
+    "slam": [
+      0.09,
+      0.23
+    ],
+    "special1": 0.24,
+    "special2": [
+      0.2,
+      2.2
+    ]
+  },
+  "sockets": {
+    "magic": {
+      "forward": 90,
+      "y": "supportFloorAt(x, player.y-50)",
+      "pivot": "bottom-center",
+      "displayHeight": 160,
+      "duration": 0.4
+    },
+    "charge": {
+      "forward": 0,
+      "up": 50
+    },
+    "launch": {
+      "forward": 0,
+      "up": 45
+    },
+    "rush-trail": {
+      "forward": 0,
+      "up": 45
+    },
+    "slam": {
+      "forward": 0,
+      "up": 15
+    },
+    "impact": "actual enemy contact"
+  },
+  "status": "legacy 8-cel fallback, dedicated 16-cel art pending",
+  "displayBodyHeight": 80,
+  "nativeFacing": "required per clip"
+}

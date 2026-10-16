@@ -1,0 +1,369 @@
+{
+  "src": "fx-strong-rush.webp",
+  "bodyHeight": 220,
+  "frames": [
+    {
+      "rect": [
+        2285,
+        269,
+        332,
+        210
+      ],
+      "pivot": [
+        151,
+        89
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.509090909090909,
+        0.9545454545454546
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        1180,
+        266,
+        354,
+        227
+      ],
+      "pivot": [
+        171,
+        106
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.6090909090909091,
+        1.0318181818181817
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        1550,
+        266,
+        352,
+        225
+      ],
+      "pivot": [
+        181,
+        104
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.6,
+        1.0227272727272727
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        1918,
+        246,
+        351,
+        206
+      ],
+      "pivot": [
+        181,
+        88
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.5954545454545455,
+        0.9363636363636364
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        1556,
+        8,
+        352,
+        222
+      ],
+      "pivot": [
+        169,
+        108
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.6,
+        1.009090909090909
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        799,
+        267,
+        365,
+        237
+      ],
+      "pivot": [
+        182,
+        121
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.6590909090909092,
+        1.0772727272727274
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        8,
+        261,
+        376,
+        237
+      ],
+      "pivot": [
+        182,
+        121
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.709090909090909,
+        1.0772727272727274
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        8,
+        8,
+        385,
+        237
+      ],
+      "pivot": [
+        213,
+        121
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.75,
+        1.0772727272727274
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        2647,
+        8,
+        334,
+        249
+      ],
+      "pivot": [
+        156,
+        127
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.518181818181818,
+        1.1318181818181818
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        409,
+        8,
+        374,
+        249
+      ],
+      "pivot": [
+        187,
+        127
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.7,
+        1.1318181818181818
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        1180,
+        8,
+        360,
+        242
+      ],
+      "pivot": [
+        178,
+        120
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.6363636363636365,
+        1.1
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        2285,
+        8,
+        346,
+        245
+      ],
+      "pivot": [
+        182,
+        127
+      ],
+      "duration": 0.04,
+      "displaySize": [
+        1.5727272727272728,
+        1.1136363636363635
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        1924,
+        8,
+        338,
+        221
+      ],
+      "pivot": [
+        155,
+        113
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.5363636363636364,
+        1.0045454545454546
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        799,
+        8,
+        365,
+        243
+      ],
+      "pivot": [
+        182,
+        122
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.6590909090909092,
+        1.1045454545454545
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        400,
+        273,
+        365,
+        213
+      ],
+      "pivot": [
+        182,
+        122
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.6590909090909092,
+        0.9681818181818181
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "rect": [
+        2633,
+        273,
+        279,
+        185
+      ],
+      "pivot": [
+        181,
+        121
+      ],
+      "duration": 0.035,
+      "displaySize": [
+        1.268181818181818,
+        0.8409090909090909
+      ],
+      "socketOffset": [
+        0.6,
+        -0.4
+      ]
+    }
+  ],
+  "loop": false,
+  "nativeFacing": 1,
+  "authoredCelCount": 16,
+  "status": "revised-art-awaiting-in-game-visual-review",
+  "durationUnits": "seconds",
+  "pivotUnits": "runtime pixels within frame rectangle",
+  "spatialScaleNote": "Body downsampling from retained masters; lossless WebP encoding. Transparent trimming preserves scaled visible pixels.",
+  "phaseWindows": {
+    "anticipation": [
+      0,
+      4
+    ],
+    "active": [
+      4,
+      12
+    ],
+    "settle": [
+      12,
+      16
+    ]
+  },
+  "orientationMode": "facing",
+  "nativeAngleRadians": 0,
+  "drawLayer": "in-front-of-body",
+  "anchorContract": "Actor feet origin. socketOffset is normalized display body height.",
+  "sharedArtwork": "special-rush",
+  "fxOnly": true
+}

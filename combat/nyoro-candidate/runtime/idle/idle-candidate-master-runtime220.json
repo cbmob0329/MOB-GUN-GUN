@@ -1,0 +1,254 @@
+{
+  "src": "idle-candidate-master-runtime220.webp",
+  "bodyHeight": 220.0,
+  "frames": [
+    {
+      "rect": [
+        683,
+        235,
+        204,
+        211
+      ],
+      "pivot": [
+        122.33672714546805,
+        208.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        469,
+        464,
+        207,
+        212
+      ],
+      "pivot": [
+        127.33672714546805,
+        209.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        240,
+        8,
+        215,
+        211
+      ],
+      "pivot": [
+        128.33672714546805,
+        208.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        682,
+        692,
+        203,
+        212
+      ],
+      "pivot": [
+        125.33672714546805,
+        209.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        231,
+        700,
+        213,
+        214
+      ],
+      "pivot": [
+        133.33672714546805,
+        211.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        231,
+        238,
+        212,
+        215
+      ],
+      "pivot": [
+        127.33672714546805,
+        211.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        8,
+        8,
+        216,
+        214
+      ],
+      "pivot": [
+        128.33672714546805,
+        211.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        8,
+        700,
+        207,
+        215
+      ],
+      "pivot": [
+        128.33672714546805,
+        211.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        471,
+        8,
+        205,
+        211
+      ],
+      "pivot": [
+        122.33672714546805,
+        208.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        459,
+        235,
+        208,
+        213
+      ],
+      "pivot": [
+        122.33672714546805,
+        210.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        8,
+        470,
+        215,
+        214
+      ],
+      "pivot": [
+        127.33672714546805,
+        210.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        460,
+        694,
+        206,
+        213
+      ],
+      "pivot": [
+        124.33672714546805,
+        210.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        239,
+        469,
+        214,
+        209
+      ],
+      "pivot": [
+        131.33672714546805,
+        206.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        692,
+        8,
+        210,
+        208
+      ],
+      "pivot": [
+        125.33672714546805,
+        205.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        8,
+        238,
+        207,
+        216
+      ],
+      "pivot": [
+        124.33672714546805,
+        206.2153129274627
+      ],
+      "duration": 0.1
+    },
+    {
+      "rect": [
+        692,
+        462,
+        204,
+        209
+      ],
+      "pivot": [
+        125.33672714546805,
+        206.2153129274627
+      ],
+      "duration": 0.1
+    }
+  ],
+  "anatomicalBodyHeightInMasterPixels": 191,
+  "bodyHeightMeaning": "Fixed render-reference height in this master resolution, from approved-neutral full-canopy height and the near spectacle rim diameter. NOT anatomical body height.",
+  "renderScaleCalibration": {
+    "approvedNeutralFullHeightPixels": 1097,
+    "approvedNeutralNearRimPixels": [
+      148,
+      159
+    ],
+    "neutralGeometricRimPixels": 153.40143415235727,
+    "clipFixedRimPixels": 44.49719092257398,
+    "fixedRenderReferenceHeightMasterPixels": 318.207054006956,
+    "intendedDisplayBodyHeightGamePixels": 110,
+    "perFrameSilhouetteFit": false
+  },
+  "_status": "Candidate for actual game-size review; not in-engine accepted. All16 source poses retained. Read README.",
+  "fullHeightInMasterPixels": {
+    "range": [
+      295,
+      302
+    ],
+    "definition": "Actual opaque/antialiased silhouette including canopy; varies naturally by pose."
+  },
+  "runtimeExport": {
+    "scale": 0.6913737367845743,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  },
+  "anatomicalBodyHeightInRuntimePixels": 132.05238372585367,
+  "fullHeightInRuntimePixels": {
+    "range": [
+      203.95525235144942,
+      208.79486850894142
+    ],
+    "definition": "Full silhouette including canopy, not a per-frame fit."
+  }
+}

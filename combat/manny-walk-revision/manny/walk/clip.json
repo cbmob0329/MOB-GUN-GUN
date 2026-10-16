@@ -1,0 +1,261 @@
+{
+  "character": "manny",
+  "clip": "walk",
+  "status": "integration_candidate_parent_static_contact_reviewed_continuous_runtime_review_pending",
+  "frameCount": 16,
+  "bodyHeight": 220,
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "bodyHeightDefinition": "Nominal registered source head-and-body height excluding witch hat, staff and cape extent. Calibrated to the approved compact Manny model; not a per-frame bounding-box fit.",
+  "nativeFacing": "right",
+  "src": "atlas.webp",
+  "frames": [
+    {
+      "rect": [
+        8,
+        8,
+        348,
+        346
+      ],
+      "duration": 0.08,
+      "pivot": [
+        183,
+        338
+      ],
+      "sourceFrame": 1,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        470,
+        8,
+        369,
+        357
+      ],
+      "duration": 0.08,
+      "pivot": [
+        215,
+        350
+      ],
+      "sourceFrame": 2,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        932,
+        8,
+        329,
+        341
+      ],
+      "duration": 0.08,
+      "pivot": [
+        172,
+        338
+      ],
+      "sourceFrame": 3,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        1394,
+        8,
+        330,
+        342
+      ],
+      "duration": 0.08,
+      "pivot": [
+        196,
+        338
+      ],
+      "sourceFrame": 4,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        8,
+        385,
+        310,
+        340
+      ],
+      "duration": 0.08,
+      "pivot": [
+        172,
+        338
+      ],
+      "sourceFrame": 5,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        470,
+        385,
+        339,
+        344
+      ],
+      "duration": 0.08,
+      "pivot": [
+        195,
+        340
+      ],
+      "sourceFrame": 6,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        932,
+        385,
+        354,
+        360
+      ],
+      "duration": 0.08,
+      "pivot": [
+        192,
+        349
+      ],
+      "sourceFrame": 7,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        1394,
+        385,
+        357,
+        338
+      ],
+      "duration": 0.08,
+      "pivot": [
+        233,
+        337
+      ],
+      "sourceFrame": 8,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        8,
+        762,
+        357,
+        347
+      ],
+      "duration": 0.08,
+      "pivot": [
+        201,
+        337
+      ],
+      "sourceFrame": 9,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        470,
+        762,
+        365,
+        356
+      ],
+      "duration": 0.08,
+      "pivot": [
+        219,
+        340
+      ],
+      "sourceFrame": 10,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        932,
+        762,
+        329,
+        358
+      ],
+      "duration": 0.08,
+      "pivot": [
+        204,
+        343
+      ],
+      "sourceFrame": 11,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        1394,
+        762,
+        325,
+        361
+      ],
+      "duration": 0.08,
+      "pivot": [
+        200,
+        353
+      ],
+      "sourceFrame": 12,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        8,
+        1139,
+        329,
+        331
+      ],
+      "duration": 0.08,
+      "pivot": [
+        204,
+        329
+      ],
+      "sourceFrame": 13,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        470,
+        1139,
+        310,
+        336
+      ],
+      "duration": 0.08,
+      "pivot": [
+        183,
+        331
+      ],
+      "sourceFrame": 14,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        932,
+        1139,
+        305,
+        347
+      ],
+      "duration": 0.08,
+      "pivot": [
+        175,
+        335
+      ],
+      "sourceFrame": 15,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        1394,
+        1139,
+        446,
+        341
+      ],
+      "duration": 0.08,
+      "pivot": [
+        252,
+        337
+      ],
+      "sourceFrame": 16,
+      "authoredRootLift": 0
+    }
+  ],
+  "cycleSeconds": 1.28,
+  "knownIssues": [
+    "Parent reviewed all16 static contact: alternating near/far legs read; full continuous in-game approval is still pending.",
+    "Watch 06-to-07 boot width, 11-to-12 passing interval and 16-to-01 seam at actual80px.",
+    "Cadence1.28sec is review timing, not final game cadence; synchronize world travel and two-step cycle in the PC implementation."
+  ]
+}

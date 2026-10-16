@@ -15,16 +15,16 @@ function cartoonPosture(){if(!cartoonActive()||!player?.grounded||player.hp<=0||
 function cartoonReady(){return cartoonActive()&&state==='playing'&&player?.hp>0&&!bossIntro()&&!ropeRide&&!dive&&!cartoonPosture();}
 function cartoonHold(type,source,down){if(!cartoonHolds[type])return;if(!down){cartoonHolds[type].delete(source);return;}if(cartoonActive()&&state==='playing'&&!bossIntro()&&player.hp>0)cartoonHolds[type].add(source);}
 function cartoonSpeed(){return cartoon.awake>0?CARTOON.attackBoost:1;}
-const cartoonTiming={light:[.065,.17],air:[.055,.17],slam:[.07,.20],launch:[.06,.19],blow:[.10,.22],rush:[.14,.46],specialRush:[.08,.47],water:[.36,.55],ranged:[.09,.16],dance:[1.05,1.05]};
+const cartoonTiming={light:[.065,.17],air:[.055,.17],slam:[.07,.20],launch:[.06,.19],blow:[.10,.22],rush:[.14,.46],specialRush:[.08,.47],water:[.36,.55],ranged:[.09,.16],dance:[1.28,1.28]};
 Object.assign(cartoonTiming,{mannyBombs:[.35,1.1],mannyOrb:[.55,.8],desertSpin:[.16,.9],desertDragon:[.6,.95]});
-function cartoonPhase(a){const [start,end]=a.mobSlash?[CARTOON_MOB_SLASH.start,CARTOON_MOB_SLASH.end]:cartoonTiming[a.type]||[.07,.18];return a.age<start?'startup':a.age<end?'active':'recovery';}
+function cartoonPhase(a){const [start,end]=a.timing|| (a.mobSlash?[CARTOON_MOB_SLASH.start,CARTOON_MOB_SLASH.end]:cartoonTiming[a.type]||[.07,.18]);return a.age<start?'startup':a.age<end?'active':'recovery';}
 function cartoonAction(type,opts={}){cartoon.action={type,age:0,dir:player.dir,duration:.3,hit:new Set(),phase:'startup',...opts};cartoon.queued=false;cartoon.buffer=0;}
 function cartoonWeak(){
  if(!cartoonReady()||cartoon.charge)return false;
- if(cartoon.action){if(['light','air','launch'].includes(cartoon.action.type)&&!(cartoon.action.type==='air'&&cartoon.action.index===3)){cartoon.queued=true;cartoon.buffer=.30;}return false;}
+ if(cartoon.action){if(['light','air','launch'].includes(cartoon.action.type)&&!(cartoon.action.type==='air'&&cartoon.action.index===3)){cartoon.queued=true;cartoon.buffer=selectedCharacter==='hero'?cartoon.action.duration-cartoon.action.age+1:.30;}return false;}
  if(!player.grounded){if(cartoon.airLeft<=0||cartoon.air>=3)return false;cartoon.air++;cartoon.airLeft=1;player.vy=-220;cartoonAction('air',{index:cartoon.air,duration:.23});return true;}
  cartoon.combo=cartoon.window>0?cartoon.combo%4+1:1;cartoon.window=CARTOON.comboWindow;
- cartoonAction('light',{index:cartoon.combo,duration:cartoon.combo===4?.36:.25});return true;
+ cartoonAction('light',{index:cartoon.combo,duration:selectedCharacter==='hero'?[0,.56,.595,.63,.7175][cartoon.combo]:cartoon.combo===4?.36:.25,...(selectedCharacter==='hero'?{timing:[.245,.42]}:{})});return true;
 }
 function cartoonCharge(source){if(!cartoonReady()||!player.grounded||cartoon.charge)return false;if(cartoon.action&&cartoon.action.type!=='light')return false;cartoon.charge={age:0,branch:cartoon.combo%4,source};cartoon.queued=false;return true;}
 function cartoonRelease(source,cancel=false){
@@ -36,8 +36,8 @@ function cartoonRelease(source,cancel=false){
  if(type==='launch'){player.grounded=false;player.coyote=0;player.vy=-650;player.jumpsUsed=2;cartoon.air=0;cartoon.airLeft=1.35;}
  return true;
 }
-function cartoonSpecial(index){if(!cartoonReady()||cartoon.action||cartoon.charge||cartoon.cooldowns[index]>0)return false;cartoon.combo=0;cartoon.cooldowns[index]=index?10:8;if(['manny','mobdesert'].includes(selectedCharacter)){const type=(selectedCharacter==='manny'?['mannyBombs','mannyOrb']:['desertSpin','desertDragon'])[index];cartoonAction(type,{duration:index?1.3:1.4,empowered:cartoon.awake>0,specialIndex:index,unique:true});if(type==='desertSpin'){player.grounded=false;player.coyote=0;player.vy=-580;player.jumpsUsed=2;}return true;}cartoonAction(index?'water':'dance',{duration:index?1.05:1.05,empowered:cartoon.awake>0});if(index){player.grounded=false;player.coyote=0;player.vy=-800;player.jumpsUsed=2;}return true;}
-function cartoonAwaken(){if(!cartoonReady()||cartoon.awakeCooldown>0||cartoon.awake>0)return false;cartoon.awake=CARTOON.awakeDuration;cartoon.awakeCooldown=CARTOON.awakeCooldown;return true;}
+function cartoonSpecial(index){if(!cartoonReady()||cartoon.action||cartoon.charge||cartoon.cooldowns[index]>0)return false;cartoon.combo=0;cartoon.cooldowns[index]=index?10:8;if(['manny','mobdesert'].includes(selectedCharacter)){const type=(selectedCharacter==='manny'?['mannyBombs','mannyOrb']:['desertSpin','desertDragon'])[index];cartoonAction(type,{duration:index?1.3:1.4,empowered:cartoon.awake>0,specialIndex:index,unique:true});if(type==='desertSpin'){player.grounded=false;player.coyote=0;player.vy=-580;player.jumpsUsed=2;}return true;}cartoonAction(index?'water':'dance',{duration:index?1.05:1.28,empowered:cartoon.awake>0});if(index){player.grounded=false;player.coyote=0;player.vy=-800;player.jumpsUsed=2;}return true;}
+function cartoonAwaken(){if(selectedCharacter!=='hero'||!cartoonReady()||cartoon.awakeCooldown>0||cartoon.awake>0)return false;cartoon.awake=CARTOON.awakeDuration;cartoon.awakeCooldown=CARTOON.awakeCooldown;return true;}
 function cartoonCancel(){if(!cartoon)return;cartoon.charge=null;cartoon.action=null;cartoon.combo=0;cartoon.window=0;cartoon.air=0;cartoon.airLeft=0;cartoon.queued=false;cartoon.buffer=0;cartoon.hitStop=0;for(const button of cartoonBindings.values())button.classList.remove('pressed');cartoonBindings.clear();}
 function cartoonImpact(x,y,heavy=false,dir=player.dir){
  cartoon.hitStop=Math.max(cartoon.hitStop,heavy?.075:.04);cartoon.shake=Math.max(cartoon.shake,heavy?.16:.09);cartoon.flash=heavy?.09:.035;
@@ -85,7 +85,43 @@ function cartoonReleasePose(art,a,age,duration){
  if(age<localEvent&&index>first)return cartoonFrame({...art,frameRange:[first,index],loop:false},age,Math.max(.000001,localEvent));
  return cartoonFrame({...art,frameRange:[index,last],loop:false},Math.max(0,age-localEvent),Math.max(.000001,duration-localEvent));
 }
-function cartoonShot(a,water=false){const origin=cartoonReleaseOrigin(a)||{x:player.x+a.dir*36,y:player.y-55};cartoon.shots.push({x:origin.x,y:origin.y,vx:a.dir*(water?650:900),vy:water?750:0,r:water?(a.empowered?90:64):26,life:1.7,age:0,damage:water?(a.empowered?80:52):30,hit:new Set(),water,dir:a.dir});}
+function cartoonShot(a,water=false){const origin=cartoonReleaseOrigin(a)||{x:player.x+a.dir*36,y:player.y-55};cartoon.shots.push({...(!water&&selectedCharacter==='manny'?{fx:'strong-projectile',impactFX:'strong-impact'}:{}),x:origin.x,y:origin.y,vx:a.dir*(water?650:900),vy:water?750:0,r:water?(a.empowered?90:64):26,life:1.7,age:0,damage:water?(a.empowered?80:52):30,hit:new Set(),water,dir:a.dir});}
+// One complete 16-cel attack, not each special phase, owns this presentation clock.
+function cartoonPresentedFrame(art,a,age){return cartoonReleasePose(art,{...a,age},age,a.duration);}
+function cartoonPresentedBoundary(art,a,index){
+ const release=art.releaseFrame;
+ if(Number.isInteger(release)&&release>=0&&release<art.frames.length&&cartoonTiming[a.type]){
+  const event=cartoonReleaseTime(a),offset=release?art.ends[release-1]:0;
+  return index<release?event*art.ends[index]/offset:event+(a.duration-event)*(art.ends[index]-offset)/(art.duration-offset);
+ }
+ return art.ends[index]/art.duration*a.duration;
+}
+function cartoonPresentedAdvance(a,dt,requested){
+ if(!['light','air','slam','launch','blow','rush','ranged'].includes(a.type)||a.mobSlash)return requested;
+ const motion=a.type==='light'?'light'+a.index:a.type==='air'?'air'+a.index:a.type;
+ const key=(selectedCharacter==='hero'?'':selectedCharacter+'/')+(cartoon.awake>0?'awakened-':'')+motion,art=cartoonArt[key];
+ if(!art||art.frames.length!==16||art.frameRange)return requested;
+ if(a.clockArt!==art){a.clockArt=art;a.visualAge=a.age;a.presentedAge=-1;a.clockCredit=0;a.firstPresented=false;}
+ const rate=Math.min(requested/dt,a.duration/.32);
+ a.clockCredit=Math.min(a.clockCredit+dt*rate,a.duration);
+ let advance=0;
+ if(a.presentedAge>=a.age&&a.firstPresented){advance=Math.max(0,a.presentedAge-a.age);a.clockCredit=Math.max(0,a.clockCredit-advance);}
+ const committed=a.age+advance;
+ const frame=cartoonPresentedFrame(art,a,committed),index=art.frames.indexOf(frame);
+ const next=index===15?a.duration:cartoonPresentedBoundary(art,a,index)+1e-9;
+ a.visualAge=a.firstPresented?Math.min(a.duration,committed+a.clockCredit,next):a.age;
+ const wanted=cartoonPresentedFrame(art,a,a.visualAge);
+ if(!cartoonTexture(wanted.src)){
+  a.assetWait=(a.assetWait||0)+dt;
+  // Do not accumulate a burst of simulation time while an atlas is unavailable.
+  a.clockCredit=0;
+  if(a.assetWait>3){cartoonCancel();cartoon.assetNotice='攻撃画像を読み込めませんでした。再入力してください';return 0;}
+ }else{a.assetWait=0;cartoon.assetNotice='';}
+ // Keep the one-input queue and aerial follow-up opportunity while the clock waits.
+ if(cartoon.queued)cartoon.buffer+=Math.max(0,dt-advance/Math.max(rate,.0001));
+ if(!player.grounded)cartoon.airLeft+=Math.max(0,dt-advance/Math.max(rate,.0001));
+ return advance;
+}
 function cartoonStep(dt){
  if(!cartoonActive())return;
  if(player!==cartoonPlayer){cartoonReset();cartoonPlayer=player;}
@@ -98,13 +134,17 @@ function cartoonStep(dt){
  if(cartoon.charge)cartoon.charge.age+=dt;
  const a=cartoon.action;
  if(a){
-  a.age+=dt*cartoonSpeed();
+  // Keep the two spin revolutions readable in both forms; rush still accelerates.
+  let advance=dt*(a.type==='dance'?1:cartoonSpeed());
+  advance=cartoonPresentedAdvance(a,dt,advance);
+  if(cartoon.action!==a)return;
+  a.age+=advance;
   a.phase=cartoonPhase(a);
   if(a.type==='dance'&&a.age>=a.duration){cartoonAction('specialRush',{duration:.65,empowered:a.empowered});}
   else {
-   const speed=a.unique?0:a.mobSlash?(a.phase==='recovery'?10:35):a.type==='rush'?(a.phase==='active'?680:25):a.type==='specialRush'?(a.phase==='active'?(a.empowered?1050:800):20):a.type==='dance'?0:a.phase==='recovery'?15:85;
-   cartoonMove(a.dir*speed*dt*cartoonSpeed());
-   if(a.phase==='active'){
+   const speed=['pinkMagic','pinkShield'].includes(a.type)?0:['hero','pink'].includes(selectedCharacter)&&a.type==='light'?(a.phase==='recovery'?10:30):a.unique?0:a.mobSlash?(a.phase==='recovery'?10:35):a.type==='rush'?(a.phase==='active'?680:25):a.type==='specialRush'?(a.phase==='active'?(a.empowered?1050:800):20):a.type==='dance'?0:a.phase==='recovery'?15:85;
+   cartoonMove(a.dir*speed*advance);
+   if(a.phase==='active'&&advance>0){
     if(a.unique)cartoonUniqueSpecial(a);
     if(a.type==='light')cartoonHit(a,90,[0,12,14,16,24][a.index],a.index===4?-220:0);
     if(a.type==='air')cartoonHit(a,115,a.index===3?18:14,-220);
@@ -114,16 +154,17 @@ function cartoonStep(dt){
     if(a.type==='rush')cartoonHit(a,155,42,-260);
     if(a.type==='specialRush')cartoonHit(a,a.empowered?190:135,a.empowered?88:60,-400);
    }
-   if((a.type==='ranged'&&a.age>=.09||a.type==='water'&&a.age>=cartoonReleaseTime(a))&&!a.fired){a.fired=true;cartoonShot(a,a.type==='water');}
-   if(a.age>=a.duration){if(a.type==='air'&&a.index===3){cartoonAction('slam',{duration:.32});player.vy=850;}else{const queue=cartoon.queued&&cartoon.buffer>0;cartoon.action=null;cartoon.queued=false;if(a.type==='light')cartoon.window=CARTOON.comboWindow;if(queue&&!cartoon.charge)cartoonWeak();}}
+   if((a.type==='ranged'&&a.age>=(a.timing?.[0]??.09)||a.type==='water'&&a.age>=cartoonReleaseTime(a))&&!a.fired){a.fired=true;cartoonShot(a,a.type==='water');}
+   if(a.age>=a.duration){if(a.type==='air'&&a.index===3){cartoonAction('slam',{duration:.32});player.vy=850;}else{const queue=cartoon.queued&&cartoon.buffer>0;cartoon.action=null;cartoon.queued=false;if(a.type==='light')cartoon.window=selectedCharacter==='hero'?1:CARTOON.comboWindow;if(queue&&!cartoon.charge)cartoonWeak();}}
   }
  }
  for(const s of cartoon.shots){
-  const oldX=s.x,oldY=s.y;s.age+=dt;if(!s.delay||s.age>=s.delay){if(s.orb&&!s.rolling)s.vy+=900*dt;s.x+=s.vx*dt;s.y+=s.vy*dt;if(s.orb&&s.y>=CONFIG.groundY-112){s.y=CONFIG.groundY-112;s.vy=0;s.vx=s.dir*420;s.rolling=true;}}s.life-=dt;
+  const oldX=s.x,oldY=s.y;s.age+=dt;if(!s.delay||s.age>=s.delay){if(s.orb&&!s.rolling)s.vy+=900*dt;s.x+=s.vx*dt;s.y+=s.vy*dt;if(s.orb&&s.y>=CONFIG.groundY-(s.floorOffset||112)){s.y=CONFIG.groundY-(s.floorOffset||112);s.vy=0;s.vx=s.dir*420;s.rolling=true;}}s.life-=dt;
   for(const e of combatTargets()){
    if(e.death>=0||s.hit.has(e)||s.delay&&s.age<s.delay)continue;
    if(Math.max(oldX,s.x)+s.r<e.x-e.w/2||Math.min(oldX,s.x)-s.r>e.x+e.w/2||Math.max(oldY,s.y)+s.r<e.y-e.h||Math.min(oldY,s.y)-s.r>e.y)continue;
    s.hit.add(e);hitEnemy(e,s.damage,s.dir);launchEnemy(e,s.dir*220,-200,0);cartoonImpact(e.x,e.y-e.h*.5,s.water,Math.sign(s.vx)||s.dir);
+   if(s.impactFX){const life=s.orb?1.344:.672;cartoon.effects.push({kind:'spell-impact',fx:s.impactFX,x:s.x,y:s.y,dir:s.dir,life,maxLife:life,r:s.orb?240:88});s.life=0;break;}
   }
   if(s.water&&s.y>=CONFIG.groundY){cartoon.effects.push({kind:'splash',dir:Math.sign(s.vx)||s.dir,x:s.x,y:CONFIG.groundY,r:s.r*2,life:.35,maxLife:.35});s.life=0;}
  }
@@ -137,14 +178,16 @@ function cartoonDrawFX(){
  if(!cartoonActive()||!player)return;
  const color=cartoonProfiles[selectedCharacter].color;
  ctx.save();
- for(const s of cartoon.shots){const dir=Math.sign(s.vx)||s.dir,orientation={mode:s.fx==='special2-orb'?'fixed':'velocity',angle:s.vx||s.vy?Math.atan2(s.vy,s.vx):undefined};if(cartoonDrawEffect(s.fx||(s.water?'special2-water':'ranged'),s.x,s.y,s.r*2,s.age,undefined,dir,null,orientation))continue;ctx.save();ctx.translate(s.x-camera,s.y);cartoonFXOrient({},dir,orientation);if(s.fx){ctx.fillStyle=s.color;ctx.beginPath();ctx.ellipse(0,0,s.r,s.r*.8,0,0,Math.PI*2);ctx.fill();}else ctx.drawImage(cartoonFX.water,-s.r*1.4,-s.r,s.r*2.8,s.r*2);ctx.restore();}
- for(const f of cartoon.effects){ctx.globalAlpha=f.life/(f.maxLife||.35);if(cartoonDrawEffect(f.kind==='impact'?(f.r>40?'hit-heavy':'hit-light'):'special2-splash',f.x,f.y,f.r*2,(f.maxLife||.35)-f.life,f.maxLife,f.dir||1,null,{mode:f.kind==='impact'?'facing':'fixed'}))continue;if(f.kind==='impact'){ctx.strokeStyle='#fff3c1';ctx.lineWidth=4;const r=f.r*(1.2-f.life/.22);ctx.beginPath();for(let i=0;i<8;i++){const a=i*Math.PI/4;ctx.moveTo(f.x-camera+Math.cos(a)*r*.4,f.y+Math.sin(a)*r*.4);ctx.lineTo(f.x-camera+Math.cos(a)*r,f.y+Math.sin(a)*r);}ctx.stroke();}else ctx.drawImage(cartoonFX.water,f.x-camera-f.r,f.y-f.r/2,f.r*2,f.r);}
+ for(const s of cartoon.shots){const dir=Math.sign(s.vx)||s.dir,orientation={mode:s.fx==='special2-orb'?'fixed':'velocity',angle:s.vx||s.vy?Math.atan2(s.vy,s.vx):undefined};cartoonDrawEffect(s.fx||(s.water?'special2-water':'ranged'),s.x,s.y,s.r*2,s.age,undefined,dir,null,orientation);}
+ for(const f of cartoon.effects){ctx.globalAlpha=f.fx?1:f.life/(f.maxLife||.35);cartoonDrawEffect(f.fx||(f.kind==='impact'?(f.r>40?'hit-heavy':'hit-light'):'special2-splash'),f.x,f.y,f.r*2,(f.maxLife||.35)-f.life,f.maxLife,f.dir||1,null,{mode:f.kind==='impact'?'facing':'fixed'});}
  ctx.globalAlpha=1;
- if(cartoon.awake>0||cartoon.action?.type==='specialRush'){ctx.globalAlpha=.48+.12*Math.sin(elapsed*16);if(!cartoonDrawEffect(cartoon.action?.type==='specialRush'?'special1-aura':'awakening-aura',player.x,player.y-55,120,elapsed,undefined,cartoon.action?.type==='specialRush'?cartoon.action.dir:player.dir)){ctx.save();ctx.translate(player.x-camera,player.y-55);ctx.scale(cartoon.action?.type==='specialRush'?cartoon.action.dir:player.dir,1);ctx.drawImage(cartoonFX[selectedCharacter],-64,-55,128,120);ctx.restore();}ctx.globalAlpha=1;}
+ if(cartoon.awake>0||cartoon.action?.type==='specialRush'){ctx.globalAlpha=.48+.12*Math.sin(elapsed*16);if(!cartoonDrawEffect(cartoon.action?.type==='specialRush'?'special1-aura':'awakening-aura',player.x,player.y-55,120,elapsed,undefined,cartoon.action?.type==='specialRush'?cartoon.action.dir:player.dir)){/* Dedicated sprite pending: no geometric substitute. */}ctx.globalAlpha=1;}
  if(cartoon.charge){const r=Math.min(1,cartoon.charge.age/CARTOON.chargeTime);rounded(player.x-camera-35,player.y-125,70,8,4,'#142c45');rounded(player.x-camera-34,player.y-124,68*r,6,3,color);text(['吹き飛ばし','打ち上げ','遠距離','広範囲突進'][cartoon.charge.branch],player.x-camera,player.y-136,13);}
  if(cartoon.action){const a=cartoon.action;text(a.type==='dance'?'DANCE / 無敵':a.type==='air'?`AIR ${a.index}/3`:a.type==='light'?`COMBO ${a.index}/4`:'',player.x-camera,player.y-110,15,color);}
  if(cartoon.hits>1)text(`${cartoon.hits} HIT`,clamp(player.x-camera+100,70,W-70),Math.max(140,player.y-160),22,color);
- const a=cartoon.action;
+ const current=cartoon.action;
+ const a=current?.clockArt?{...current,age:Math.max(0,current.presentedAge)}:current;
+ if(a?.clockArt)a.phase=cartoonPhase(a);
  if(a?.mobSlash)cartoonDrawEffect('mob-slash-trail',player.x,player.y,120,a.age,a.duration,a.dir);
  if(a?.mobSlash&&cartoonMobPhase(a.age)>=0){
   const phase=cartoonMobPhase(a.age),size=phase===3?330:290;
@@ -153,10 +196,14 @@ function cartoonDrawFX(){
  if(a&&['dance','water','specialRush'].includes(a.type)){
   ctx.fillStyle='#0b173126';ctx.fillRect(0,cameraY,W,36);ctx.fillRect(0,cameraY+H-36,W,36);
   text(a.type==='dance'?'DANCE → RUSH':a.type==='water'?'WATER BURST':'AURA RUSH',W/2,cameraY+145,18,color);
-  if(a.phase==='startup'){ctx.strokeStyle=color;ctx.lineWidth=3;ctx.beginPath();ctx.ellipse(player.x-camera,player.y-42,48+Math.sin(a.age*18)*7,62,0,0,Math.PI*2);ctx.stroke();}
+  // Startup is represented by the authored body and dedicated FX only.
  }
+ if(a?.type==='specialRush'&&selectedCharacter==='hero')cartoonDrawEffect('special1-rush',player.x,player.y,220,a.age,a.duration,a.dir);
  if(cartoon.charge)cartoonDrawEffect('charge',player.x,player.y-50,110,cartoon.charge.age,undefined,player.dir);
- if(a?.phase==='active'&&['launch','rush','specialRush'].includes(a.type))cartoonDrawEffect(a.type==='launch'?'launch':'rush-trail',player.x,player.y-45,150,a.age,a.duration,a.dir);
+ const strongKey=a&&({blow:'strong-blow',launch:'strong-launch',rush:'strong-rush'})[a.type];
+ const dedicatedStrong=selectedCharacter==='hero'&&strongKey&&cartoonEffectArt(strongKey);
+ if(dedicatedStrong&&(!a.clockArt||a.firstPresented))cartoonDrawEffect(strongKey,player.x,player.y,220,a.age,a.duration,a.dir);
+ if(!dedicatedStrong&&a?.phase==='active'&&['launch','rush','specialRush'].includes(a.type))cartoonDrawEffect(a.type==='launch'?'launch':'rush-trail',player.x,player.y-45,150,a.age,a.duration,a.dir);
  if(a?.type==='slam')cartoonDrawEffect('slam',player.x,player.y-15,145,a.age,a.duration,a.dir);
  if(cartoon.awakeningStart>0)cartoonDrawEffect('awakening-burst',player.x,player.y-50,180,.4-cartoon.awakeningStart,.4,cartoon.awakeningDir||player.dir);
  if(cartoon.flash>0&&!cartoonReducedMotion){ctx.fillStyle=`rgba(255,244,208,${Math.min(.08,cartoon.flash)})`;ctx.fillRect(0,cameraY,W,H);}
@@ -166,7 +213,7 @@ function cartoonUI(){
  const active=cartoonActive();if($('cartoon-strong'))$('cartoon-strong').hidden=!active;if(!active)return;
  if($('shoot').dataset.cartoon!=='1'||!$('shoot').textContent.includes('弱')){$('shoot').innerHTML='<span>J</span>弱';$('shoot').dataset.cartoon='1';}
  $('ammo').hidden=true;
- skillButtons.forEach((b,i)=>{b.hidden=false;const label=['必殺1 ダンス突進','必殺2 水エネルギー','覚醒'][i];if(b.getAttribute('aria-label')!==label)b.setAttribute('aria-label',label);const cd=i===2?cartoon.awakeCooldown:cartoon.cooldowns[i];const value=i===2?(cartoon.awake>0?'覚醒 '+cartoon.awake.toFixed(1):cd>0?cd.toFixed(1):'覚醒 E'):(cd>0?cd.toFixed(1):'必殺 '+(i+1));const small=b.querySelector('small');if(small.textContent!==value)small.textContent=value;b.classList.toggle('cooling',cd>0);b.setAttribute('aria-disabled',String(cd>0));});
+ skillButtons.forEach((b,i)=>{b.hidden=i===2&&selectedCharacter!=='hero';const label=['必殺1 ダンス突進','必殺2 水エネルギー','覚醒'][i];if(b.getAttribute('aria-label')!==label)b.setAttribute('aria-label',label);const cd=i===2?cartoon.awakeCooldown:cartoon.cooldowns[i];const value=i===2?(cartoon.awake>0?'覚醒 '+cartoon.awake.toFixed(1):cd>0?cd.toFixed(1):'覚醒 E'):(cd>0?cd.toFixed(1):'必殺 '+(i+1));const small=b.querySelector('small');if(small.textContent!==value)small.textContent=value;b.classList.toggle('cooling',cd>0);b.setAttribute('aria-disabled',String(cd>0));});
  const help='A D 移動 / SPACE 跳ぶ / J 弱 / K 強HOLD / L ガード / C しゃがむ / S DIVE / 1・2 必殺 / E 覚醒';const el=document.querySelector('.keyboard-help');if(el.textContent!==help)el.textContent=help;
  const copy='弱1→強: 打ち上げ・空中弱3 / 弱2→強: 遠距離 / 弱3→強: 広範囲突進';if($('character-copy').textContent!==copy)$('character-copy').textContent=copy;
 }
@@ -179,7 +226,7 @@ if(cartoonEnabled){
  const baseHUD=updateHUD;updateHUD=function(){baseHUD();cartoonUI();};
  const baseUI=updateCharacterUI;updateCharacterUI=function(){baseUI();cartoonUI();};
  const baseFX=drawSkills;drawSkills=function(){baseFX();cartoonDrawFX();};
- const baseDraw=drawPlayer;drawPlayer=function(){if(!cartoonActive())return baseDraw();ctx.save();if(cartoon.awake>0){ctx.shadowColor=cartoonProfiles[selectedCharacter].color;ctx.shadowBlur=22;}if(cartoon.action?.type==='dance'){ctx.translate(player.x-camera,player.y);ctx.rotate(Math.sin(cartoon.action.age*28)*.18);ctx.translate(-player.x+camera,-player.y);}if(['hero','manny','mobdesert'].includes(selectedCharacter))cartoonDrawHero();else if(selectedCharacter==='tetsu'&&cartoon.action){const f=tetsuFrames.NA[Math.floor(cartoon.action.age*18)%tetsuFrames.NA.length];paintTetsu(f,player.x,player.y,player.dir);}else baseDraw();ctx.restore();};
+ const baseDraw=drawPlayer;drawPlayer=function(){if(!cartoonActive())return baseDraw();ctx.save();if(cartoon.awake>0){ctx.shadowColor=cartoonProfiles[selectedCharacter].color;ctx.shadowBlur=22;}if(['hero','manny','mobdesert'].includes(selectedCharacter))cartoonDrawHero();else if(selectedCharacter==='tetsu'&&cartoon.action){const f=tetsuFrames.NA[Math.floor(cartoon.action.age*18)%tetsuFrames.NA.length];paintTetsu(f,player.x,player.y,player.dir);}else baseDraw();ctx.restore();};
  const strong=document.createElement('button');strong.id='cartoon-strong';strong.innerHTML='<span>K</span>強 HOLD';strong.setAttribute('aria-label','強攻撃 長押しして放す');document.querySelector('.buttons').prepend(strong);
  function actionFor(target){if(target.closest('#cartoon-strong'))return 'strong';if(target.closest('#shoot'))return 'weak';const b=target.closest('[data-skill]');return b?['special0','special1','awake'][Number(b.dataset.skill)]:null;}
  function input(action,source,release,cancel){if(action==='strong'){if(release)cartoonRelease(source,cancel);else cartoonCharge(source);}else if(!release){if(action==='weak')cartoonWeak();else if(action==='awake')cartoonAwaken();else cartoonSpecial(Number(action.slice(-1)));}}
@@ -252,19 +299,23 @@ function cartoonPrefetch(force=false){
  if(context!==cartoonTextureContext){cartoonTextureContext=context;cartoonTextureEpoch++;cartoonTexturePlan='';if(cartoonPoseFallback){cartoonPoseFallback.image.width=cartoonPoseFallback.image.height=0;cartoonPoseFallback=null;}cartoonTextureQueue.clear();for(const controller of cartoonLoading.values())controller.abort();for(const src of [...cartoonTextures.keys()])cartoonDisposeTexture(src);}
  const a=cartoon.action,prefix=selectedCharacter==='hero'?'':selectedCharacter+'/',form=cartoon.awake>0?'awakened-':'',motion=cartoon.charge?'charge-hold':a?(a.type==='light'?'light'+a.index:a.type==='air'?'air'+a.index:a.unique?'special'+(a.specialIndex+1)+'-'+a.phase:a.type):'idle',plan=context+':'+motion;
  if(!force&&plan===cartoonTexturePlan)return;cartoonTexturePlan=plan;
+ const extra=selectedCharacter==='manny'?(a?.type==='mannyOrb'?['manny/special2-active','manny/effects/special2-orb','manny/effects/special2-orb-blast']:a?.type==='ranged'?['manny/effects/strong-projectile','manny/effects/strong-impact']:[]):selectedCharacter==='hero'&&a?.type==='dance'?['hero/effects/'+form+'special1-spin-back','hero/effects/'+form+'special1-spin-front']:[];
+ for(const name of extra){const art=cartoonArt[name];if(art)for(const src of new Set(art.frames.map(f=>f.src)))cartoonTextureRequest(src,1);}
+
  for(const name of [...new Set(['idle',motion,'walk','light1','light2','light3','light4','dash','jump','charge-start','charge-hold'])]){const art=cartoonArt[prefix+form+name];if(art){const frame=art.frames[art.frameRange?.[0]||0];cartoonTextureRequest(frame.src,name==='idle'||name===motion?0:1);}}
 }
 function cartoonRememberPose(art,f,image){
  if(cartoonPoseFallback?.frame===f)return;
  if(!cartoonPoseFallback){if(cartoonTextureBytes()+cartoonTextureReserved+256*256*4>cartoonTextureBudget)return;const canvas=document.createElement('canvas');canvas.width=canvas.height=256;cartoonPoseFallback={image:canvas};}
  const canvas=cartoonPoseFallback.image,c=canvas.getContext('2d'),k=256/Math.max(f.rect[2],f.rect[3]);c.clearRect(0,0,256,256);c.drawImage(image,...f.rect,0,0,f.rect[2]*k,f.rect[3]*k);
- Object.assign(cartoonPoseFallback,{frame:f,art:{bodyHeight:(art.bodyHeight||f.rect[3])*k},f:{rect:[0,0,f.rect[2]*k,f.rect[3]*k],pivot:f.pivot.map(n=>n*k),authoredRootLift:f.authoredRootLift||0}});cartoonTexturePeak=Math.max(cartoonTexturePeak,cartoonTextureBytes()+cartoonTextureReserved);
+ Object.assign(cartoonPoseFallback,{frame:f,art:{bodyHeight:(art.bodyHeight||f.rect[3])*k,nativeFacing:art.nativeFacing||1},f:{rect:[0,0,f.rect[2]*k,f.rect[3]*k],pivot:f.pivot.map(n=>n*k),authoredRootLift:f.authoredRootLift||0}});cartoonTexturePeak=Math.max(cartoonTexturePeak,cartoonTextureBytes()+cartoonTextureReserved);
 }
 function cartoonFrame(art,age,actionDuration){
  const [first,last]=art.frameRange||[0,art.frames.length],offset=first?art.ends[first-1]:0,duration=art.ends[last-1]-offset;let time=offset+(actionDuration?Math.min(.999999,Math.max(0,age/actionDuration))*duration:art.loop?age%duration:Math.min(age,duration-.000001));
  let index=last-1;for(let i=first;i<last;i++){if(time<art.ends[i]){index=i;break;}}return art.frames[index];
 }
 function cartoonNormalizeArt(value,base){
+ if(value.nativeFacing!==undefined&&![1,-1].includes(value.nativeFacing))throw Error('Invalid nativeFacing');
  if(value.orientationMode!==undefined&&!['velocity','facing','fixed'].includes(value.orientationMode))throw Error('Invalid orientationMode');
  if(value.nativeAngleRadians!==undefined&&(!Number.isFinite(value.nativeAngleRadians)||Math.abs(value.nativeAngleRadians)>Math.PI*2))throw Error('Invalid nativeAngleRadians');
  const pair=(v,name,positive,limit)=>{if(!Array.isArray(v)||v.length!==2||[0,1].some(i=>!Number.isFinite(v[i])||(positive?v[i]<=0:false)||Math.abs(v[i])>limit))throw Error('Invalid '+name);return [...v];};
@@ -289,6 +340,24 @@ async function loadCartoonArt(manifest,base=new URL('combat/cartoon-manifest.jso
  }
  cartoonPrefetch(true);
 }
+function cartoonEffectArt(key){
+ const form=cartoon.awake>0?'awakened-':'';
+ return cartoonArt[selectedCharacter+'/effects/'+form+key]||cartoonArt['effects/'+form+key];
+}
+function cartoonSpinLayers(a){
+ if(selectedCharacter!=='hero'||a?.type!=='dance')return null;
+ const ready=key=>{const art=cartoonEffectArt(key);if(!art)return false;const f=cartoonFrame(art,a.age,1.28),image=cartoonTexture(f.src);return !!image&&f.rect[0]+f.rect[2]<=image.width&&f.rect[1]+f.rect[3]<=image.height;};
+ // Request both before choosing; never show a half-loaded pair or double the single layer.
+ const back=ready('special1-spin-back'),front=ready('special1-spin-front');
+ if(back&&front)return {back:'special1-spin-back',front:'special1-spin-front',age:a.age,dir:a.dir};
+ return ready('special1-spin')?{front:'special1-spin',age:a.age,dir:a.dir}:null;
+}
+function cartoonDrawSpinLayer(plan,layer){
+ if(!plan?.[layer])return;
+ const height=cartoonProfiles[selectedCharacter].displayBodyHeight||110;
+ // The shared pivot is anchored 45px above the foot root at a 110px body height.
+ cartoonDrawEffect(plan[layer],player.x,player.y-45*height/110,220,plan.age,1.28,plan.dir);
+}
 function cartoonDrawCharacter(){
  cartoonPrefetch();
  let key=cartoon.charge?'charge':cartoon.action?(cartoon.action.type==='light'?`light${cartoon.action.index}`:cartoon.action.type==='air'?`air${cartoon.action.index}`:cartoon.action.type):!player.grounded?'jump':Math.abs(player.vx)>1?(running?'dash':'walk'):'idle';
@@ -303,14 +372,35 @@ function cartoonDrawCharacter(){
  else if(cartoon.hurtAge>0){phaseKey='damage';phaseAge=.24-cartoon.hurtAge;phaseDuration=.24;}
  else if(cartoon.awakeningStart>0){phaseKey='awakening-start';phaseAge=.4-cartoon.awakeningStart;phaseDuration=.4;}
  else if(cartoon.awakeningEnd>0){phaseKey='awakening-end';phaseAge=.4-cartoon.awakeningEnd;phaseDuration=.4;}
- else if(cartoon.recoveryAge>0&&!cartoonPosture()){phaseKey='recovery';phaseAge=.2-cartoon.recoveryAge;phaseDuration=.2;}
+ else if(!a&&cartoon.recoveryAge>0&&player.grounded&&Math.abs(player.vx)<1&&!cartoonPosture()){phaseKey='recovery';phaseAge=.2-cartoon.recoveryAge;phaseDuration=.2;}
  if(phaseKey&&cartoonArt[prefix+form+phaseKey])key=phaseKey;else{phaseAge=a?.age??player.anim;phaseDuration=a?.duration;}
- let art=cartoonArt[prefix+form+key],f=art&&cartoonReleasePose(art,a,phaseAge,phaseDuration),image=f&&cartoonTexture(f.src);
+ if(a||cartoon.charge)cartoon.motionKey=null;
+ if(!a&&!cartoon.charge&&(!phaseKey||phaseKey==='recovery'&&(!player.grounded||Math.abs(player.vx)>1))){
+  if(cartoon.motionKey!==key){const prior=cartoon.motionKey,oldPhase=cartoon.motionPhase||0;cartoon.motionKey=key;cartoon.motionStart=player.anim;cartoon.motionDistance=0;cartoon.motionX=player.x;
+   if(selectedCharacter==='manny'&&['walk','dash'].includes(prior)&&['walk','dash'].includes(key)){const map=key==='dash'?[15,0,1,1,2,3,5,7,8,8,9,10,12,13,14,15]:[1,2,4,5,5,6,6,7,8,10,11,11,12,13,14,15];const next=cartoonArt[prefix+form+key];if(next?.strideDistance)cartoon.motionDistance=map[Math.min(15,Math.floor(oldPhase*16))]/16*next.strideDistance;}}
+
+  cartoon.motionDistance=(cartoon.motionDistance||0)+Math.abs(player.x-(cartoon.motionX??player.x));cartoon.motionX=player.x;
+  if(key==='jump'){phaseAge=player.jumpAge;phaseDuration=2*CONFIG.jumpForce/CONFIG.gravity;}
+  else phaseAge=player.anim-(cartoon.motionStart||0);
+ }
+ let art=cartoonArt[prefix+form+key];
+ if(['walk','dash'].includes(key)&&art?.strideDistance){cartoon.motionPhase=((cartoon.motionDistance||0)/art.strideDistance)%1;phaseAge=cartoon.motionPhase*art.duration;phaseDuration=undefined;}
+ if(a&&a.clockArt===art)phaseAge=a.visualAge;
+ // Only a replacement explicitly authored as one spin cycle loops twice.
+ if(a?.type==='dance'&&art?.spinCycleDuration===.64){phaseAge=a.age%.64;phaseDuration=.64;}
+ let f=art&&(a&&a.clockArt===art?cartoonPresentedFrame(art,a,phaseAge):cartoonReleasePose(art,a,phaseAge,phaseDuration)),image=f&&cartoonTexture(f.src);
+ if(!image&&cartoonPoseFallback){({art,f,image}=cartoonPoseFallback);}
  if(!image){const idle=cartoonArt[prefix+form+'idle'];const fallback=idle&&cartoonFrame(idle,player.anim),cached=fallback&&cartoonTextures.get(fallback.src);if(cached){art=idle;f=fallback;image=cached.image;}else if(cartoonPoseFallback){({art,f,image}=cartoonPoseFallback);}else return false;}
  if(f.rect[0]+f.rect[2]>image.width||f.rect[1]+f.rect[3]>image.height)return false;
  if(selectedCharacter==='manny'&&(!Number.isFinite(art.bodyHeight)||art.bodyHeight<=0))return false;
  if(image!==cartoonPoseFallback?.image)cartoonRememberPose(art,f,image);
- const k=(cartoonProfiles[selectedCharacter].displayBodyHeight||110)/(art.bodyHeight||f.rect[3]);ctx.save();ctx.translate(player.x-camera,player.y+(f.authoredRootLift||0)*(cartoonProfiles[selectedCharacter].displayBodyHeight||110));ctx.scale(player.dir,1);ctx.drawImage(image,...f.rect,-f.pivot[0]*k,-f.pivot[1]*k,f.rect[2]*k,f.rect[3]*k);ctx.restore();return true;
+ const spin=a?.type==='dance'?cartoonSpinLayers(a):null;
+ if(spin)cartoonDrawSpinLayer(spin,'back');
+ const k=(cartoonProfiles[selectedCharacter].displayBodyHeight||110)/(art.bodyHeight||f.rect[3]);ctx.save();ctx.translate(player.x-camera,player.y+(f.authoredRootLift||0)*(cartoonProfiles[selectedCharacter].displayBodyHeight||110));ctx.scale(player.dir*(art.nativeFacing||1),1);ctx.drawImage(image,...f.rect,-f.pivot[0]*k,-f.pivot[1]*k,f.rect[2]*k,f.rect[3]*k);ctx.restore();
+ if(spin)cartoonDrawSpinLayer(spin,'front');
+ // A fallback or an unloaded atlas never acknowledges an attack pose.
+ if(a&&a.clockArt===art&&image!==cartoonPoseFallback?.image){a.presentedAge=a.visualAge;a.firstPresented=true;}
+ return true;
 }
 const cartoonReducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
 function cartoonDrawEffect(key,x,y,size,age,duration,dir=1,phase=null,orientation={mode:'facing'}){
@@ -331,6 +421,13 @@ if(cartoonEnabled){
    cartoon.shake=Math.max(0,cartoon.shake-dt);cartoon.flash=Math.max(0,cartoon.flash-dt);
    if(cartoon.hitStop>0){cartoon.hitStop=Math.max(0,cartoon.hitStop-dt);return;}
   }
+  if(cartoonActive()&&['hero','pink'].includes(selectedCharacter)){
+   const moving=Math.abs(axis)>.35||['KeyA','KeyD','ArrowLeft','ArrowRight'].some(k=>keys.has(k));
+   if(moving||jumpRequest>0){
+    cartoon.combo=0;cartoon.window=0;cartoon.queued=false;cartoon.buffer=0;
+    if(cartoon.action?.type==='light'&&cartoon.action.phase==='recovery'){cartoon.action=null;cartoon.recoveryAge=0;}
+   }
+  }
   const locked=cartoonActive()&&(cartoon.action||cartoon.charge||cartoonPosture()),oldAxis=axis,held=[];
   if(locked){for(const key of ['KeyA','KeyD','ArrowLeft','ArrowRight'])if(keys.delete(key))held.push(key);axis=0;jumpRequest=0;}
   try{combatTick(dt);}finally{if(locked&&state==='playing'){axis=oldAxis;for(const key of held)keys.add(key);}}
@@ -348,7 +445,7 @@ if(cartoonEnabled){
  draw=cartoonCameraImpulse(draw,true);drawSkills=cartoonCameraImpulse(drawSkills);
  const oldDamage=damagePlayer;damagePlayer=function(...args){const hp=player.hp;oldDamage(...args);if(cartoonActive()&&player.hp<hp)cartoon.hurtAge=.24;};
  const oldAwaken=cartoonAwaken;cartoonAwaken=function(){const result=oldAwaken();if(result){cartoon.awakeningStart=.4;cartoon.awakeningDir=player.dir;}return result;};
- const oldStep=cartoonStep;cartoonStep=function(dt){const active=cartoon.action,awake=cartoon.awake;oldStep(dt);if(active&&!cartoon.action)cartoon.recoveryAge=.2;if(awake>0&&cartoon.awake===0)cartoon.awakeningEnd=.4;};
+ const oldStep=cartoonStep;cartoonStep=function(dt){const awake=cartoon.awake;oldStep(dt);if(awake>0&&cartoon.awake===0)cartoon.awakeningEnd=.4;};
  const legacyDraw=drawPlayer;drawPlayer=function(){if(cartoonActive()&&selectedCharacter!=='hero'&&cartoonDrawCharacter())return;legacyDraw();};
  const legacySkillHUD=updateSkillHUD;updateSkillHUD=function(){if(cartoonActive())cartoonUI();else legacySkillHUD();};
  const style=document.createElement('style');style.textContent=`
@@ -390,7 +487,7 @@ function cartoonUniqueSpecial(a){
  if(a.fired||a.age<cartoonReleaseTime(a))return;a.fired=true;const x=player.x,y=player.y-55;
  if(a.type==='mannyBombs'){const n=a.empowered?8:5;for(let i=0;i<n;i++)emit('special1-bomb-'+['pink','cyan','green','orange','purple'][i%5],x+a.dir*(35+i*17),y-20-Math.sin(i/(n-1)*Math.PI)*55,a.dir*(240+i*30),65,18,12,['#ff83bb','#78edff','#8de985','#ffaa55','#bd89ff'][i%5],.12*i);}
  // Preserve the approved overhead socket; arc down, then skim at the visible orb's lower edge.
- if(a.type==='mannyOrb'){emit('special2-orb',x+a.dir*70,y-20,a.dir*160,120,94,70,'#c76cff');cartoon.shots.at(-1).orb=true;}
+ if(a.type==='mannyOrb'){emit('special2-orb',x+a.dir*70,y-20,a.dir*160,120,94,70,'#c76cff');Object.assign(cartoon.shots.at(-1),{orb:true,floorOffset:180,r:170,impactFX:'special2-orb-blast'});}
  if(a.type==='desertSpin'){for(let i=0;i<(a.empowered?7:4);i++)emit('special1-fish',x+a.dir*40,y,a.dir*(380+i*25),90+i*35,22,10,'#b588ff');}
  if(a.type==='desertDragon')emit('special2-dragon',x+a.dir*85,y-10,a.dir*470,0,a.empowered?105:80,82,'#a877d9');
 }
@@ -401,4 +498,33 @@ if(cartoonEnabled){
  const oldNewUI=cartoonUI;cartoonUI=function(){oldNewUI();if(!['manny','mobdesert'].includes(selectedCharacter))return;const names=selectedCharacter==='manny'?['浮遊ボム群','巨大エネルギー球']:['回転斬り・魚群','紫煙の龍'];skillButtons.forEach((b,i)=>{if(i<2){b.title=names[i];b.setAttribute('aria-label',names[i]);if(cartoon.cooldowns[i]<=0)b.querySelector('small').textContent=names[i];const img=b.querySelector('img');if(img)img.hidden=true;}});};
  const sharedNewUI=updateCharacterUI;updateCharacterUI=function(){for(const b of skillButtons){const img=b.querySelector('img');if(img)img.hidden=false;}sharedNewUI();};
  const layout=document.createElement('style');layout.textContent='#party{max-width:52%;overflow-x:auto;flex-wrap:nowrap}.party-slot{flex-shrink:0}';document.head.append(layout);
+}
+
+// Opt-in Rami review room. Campaign stage data is retained.
+const cartoonLab=new URLSearchParams(location.search).has('combat-lab');
+if(cartoonEnabled&&cartoonLab){
+ const originalReset=reset;reset=function(){selectedCharacter='hero';areaIndex=0;biomeIndex=0;originalReset();platforms=[];props=[];ropes=[];gaps=[];bridges=[];ramps=[];crumbles=[];trampolines=[];arenas=[];crates=[];coins=[];enemies=[];pink.enabled=false;player.x=300;player.y=CONFIG.groundY;for(const x of [520,850,1200])spawnGrassEnemy('tank',x);};
+ finishGrassArea=function(){};
+ const restart=document.createElement('button');restart.textContent='RAMI TEST / 再戦';restart.style.cssText='position:absolute;top:95px;left:16px;z-index:20';restart.onclick=()=>{reset();state='playing';$('overlay').hidden=true;};document.querySelector('main').append(restart);
+ const background=drawBackground;drawBackground=function(){background();rounded(20,cameraY+140,510,56,10,'#17363be6');text('RAMI TEST — 原画修復待ち / 操作確認',35,cameraY+164,18,'#fff','left');text('J 弱 / SHIFT+D 走る / SPACE 跳ぶ / 1 ダンス',35,cameraY+184,14,'#fff','left');};
+}
+
+// Restore original skills, including their original body/FX clocks, until replacement art matches them.
+function cartoonOriginalSkill(){return selectedCharacter==='tetsu'&&!!tetsuAction||selectedCharacter==='nyoro'&&!!nyoroAction||selectedCharacter==='denden'&&(skillState.charging||skillState.releaseAge<.48||thunderLocked());}
+if(cartoonEnabled){
+ const ready=cartoonReady;cartoonReady=function(){return ready()&&!cartoonOriginalSkill();};
+ const special=cartoonSpecial;cartoonSpecial=function(index){
+  if(!['denden','nyoro','tetsu'].includes(selectedCharacter))return special(index);
+  if(!cartoonReady()||cartoon.action||cartoon.charge||index<0||index>1)return false;
+  cartoon.combo=0;cartoon.window=0;
+  if(selectedCharacter==='denden'){if(skillState.cooldowns[index]>0)return false;if(index===0)beginCharge('cartoon');else castThunder();}
+  else if(selectedCharacter==='nyoro'){if(nyoroCooldowns[index]>0)return false;castNyoro(index);}
+  else {if(tetsuCooldowns[index+1]>0)return false;castTetsu(index+1);}
+  return true;
+ };
+ const body=drawPlayer;drawPlayer=function(){if(cartoonActive()&&cartoonOriginalSkill()){drawPlayerBody();return;}body();};
+ const ui=cartoonUI;cartoonUI=function(){ui();if(!cartoonActive())return;
+  const config={denden:{names:['トリック・ザ・デンデン','サンダーボルト'],cd:skillState.cooldowns},nyoro:{names:['ヒノフルカヨウ','炎列・大隕石'],cd:nyoroCooldowns},tetsu:{names:['モブテツ一閃','超吹き飛ばし'],cd:tetsuCooldowns.slice(1)}}[selectedCharacter];
+  if(!config)return;skillButtons.forEach((b,i)=>{if(i>1){b.hidden=true;return;}b.title=config.names[i];b.setAttribute('aria-label',config.names[i]);b.querySelector('small').textContent=config.cd[i]>0?config.cd[i].toFixed(1)+'s':config.names[i];b.classList.toggle('cooling',config.cd[i]>0);b.setAttribute('aria-disabled',String(config.cd[i]>0||cartoonOriginalSkill()));});
+ };
 }

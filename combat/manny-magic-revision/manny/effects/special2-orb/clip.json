@@ -1,0 +1,373 @@
+{
+  "character": "manny",
+  "clip": "special2-orb",
+  "status": "master_reexport_360px_runtime_review_pending",
+  "src": "atlas.webp",
+  "frameCount": 16,
+  "bodyHeight": 68.66666666666667,
+  "displayBodyHeight": 80,
+  "orientationMode": "fixed",
+  "nativeAngleRadians": 0,
+  "socketOffset": [
+    0,
+    0
+  ],
+  "frames": [
+    {
+      "rect": [
+        8,
+        323,
+        314,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        157.0
+      ],
+      "displaySize": [
+        4.572815533980583,
+        4.572815533980583
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        332,
+        1983,
+        313,
+        305
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        148.0
+      ],
+      "displaySize": [
+        4.558252427184465,
+        4.441747572815534
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        2312,
+        312,
+        295
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        138.0
+      ],
+      "displaySize": [
+        4.543689320388349,
+        4.296116504854369
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        336,
+        2304,
+        302,
+        305
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        148.0
+      ],
+      "displaySize": [
+        4.398058252427184,
+        4.441747572815534
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        653,
+        314,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        156.5
+      ],
+      "displaySize": [
+        4.572815533980583,
+        4.558252427184465
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        324,
+        1325,
+        313,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        156.5
+      ],
+      "displaySize": [
+        4.558252427184465,
+        4.558252427184465
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        1654,
+        313,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        156.5
+      ],
+      "displaySize": [
+        4.558252427184465,
+        4.558252427184465
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        338,
+        666,
+        314,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        156.5
+      ],
+      "displaySize": [
+        4.572815533980583,
+        4.558252427184465
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        8,
+        330,
+        299
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157,
+        142
+      ],
+      "displaySize": [
+        4.805825242718447,
+        4.354368932038835
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        354,
+        8,
+        316,
+        312
+      ],
+      "duration": 0.065,
+      "pivot": [
+        169,
+        159
+      ],
+      "displaySize": [
+        4.601941747572815,
+        4.543689320388349
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        337,
+        1654,
+        313,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        156.5
+      ],
+      "displaySize": [
+        4.558252427184465,
+        4.558252427184465
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        1983,
+        308,
+        313
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        156.5
+      ],
+      "displaySize": [
+        4.485436893203883,
+        4.558252427184465
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        338,
+        336,
+        314,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        157.0
+      ],
+      "displaySize": [
+        4.572815533980583,
+        4.572815533980583
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        982,
+        313,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        157.0
+      ],
+      "displaySize": [
+        4.558252427184465,
+        4.572815533980583
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        337,
+        995,
+        313,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        156.5,
+        157.0
+      ],
+      "displaySize": [
+        4.558252427184465,
+        4.572815533980583
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    },
+    {
+      "rect": [
+        8,
+        1312,
+        300,
+        314
+      ],
+      "duration": 0.065,
+      "pivot": [
+        157.0,
+        157.0
+      ],
+      "displaySize": [
+        4.368932038834951,
+        4.572815533980583
+      ],
+      "socketOffset": [
+        0,
+        0
+      ]
+    }
+  ],
+  "knownIssues": [
+    "Internal and runtime review pending.",
+    "Runtime displaySize normalized to character displayBodyHeight, with socketOffset zero because event positions already include launch offsets.",
+    "Source cels09\u201310 replaced by two newly drawn isolated cels to avoid merged soft glow/smoke; source normalization documented."
+  ],
+  "displaySizeUnits": "normalized to displayBodyHeight",
+  "sourceArtworkUnchanged": true,
+  "sourcePixelsPreserved": true,
+  "sourceMaster": "packed/manny/effects/special2-orb/special2-orb-16.webp",
+  "sourcePeakVisibleExtentPixels": 309,
+  "displayPeakVisibleExtentPixels": 360,
+  "sourceToDisplayScale": 1.1650485436893203,
+  "displayScaleFactorVsPrevious": 1.6181229773462782,
+  "runtimeExport": {
+    "encoding": "static lossless WebP exact RGBA",
+    "gutterPixels": 8,
+    "masterCropPixelsPreserved": true,
+    "masterSpatialResampling": "none",
+    "note": "Native master peak is 309px; 360px display is 1.165049x native, not newly invented resolution."
+  }
+}

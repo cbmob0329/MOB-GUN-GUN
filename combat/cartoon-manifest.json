@@ -204,7 +204,8 @@
       "adapter": "runtime-final/existing3/nyoro/body/guard/nyoro-body-guard-runtime220.json"
     },
     "nyoro/idle": {
-      "adapter": "runtime-final/existing3/nyoro/body/idle/nyoro-body-idle-runtime220.json"
+      "adapter": "nyoro-candidate/runtime/idle/idle-candidate-master-runtime220.json",
+      "status": "candidate-not-in-engine-accepted"
     },
     "nyoro/light1": {
       "adapter": "runtime-final/existing3/nyoro/body/light1/nyoro-body-light1-runtime220.json"
@@ -277,7 +278,9 @@
       "adapter": "runtime-final/existing3/nyoro/body/special2-startup/nyoro-body-special2-startup-runtime220.json"
     },
     "nyoro/walk": {
-      "adapter": "runtime-final/existing3/nyoro/body/walk/nyoro-body-walk-runtime220.json"
+      "adapter": "nyoro-candidate/runtime/walk/walk-candidate-master-runtime220.json",
+      "status": "candidate-not-in-engine-accepted",
+      "strideDistance": 100
     },
     "tetsu/air3": {
       "adapter": "runtime-final/existing3/tetsu/body/air3/tetsu-body-air3-runtime220.json"
@@ -425,16 +428,18 @@
       ]
     },
     "idle": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/idle.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/idle.json",
+      "nativeFacing": -1
     },
     "walk": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/walk.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/walk.json",
+      "nativeFacing": 1
     },
     "dash": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/dash.json"
+      "adapter": "hero-revision/dash.json"
     },
     "jump": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/jump.json"
+      "adapter": "hero-revision/jump.json"
     },
     "guard": {
       "adapter": "runtime-final/hero/combat/hero/adapters/guard.json"
@@ -458,13 +463,15 @@
       "adapter": "runtime-final/hero/combat/hero/adapters/charge-cycle.json"
     },
     "charge-start": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/charge-start.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/charge-start.json",
+      "nativeFacing": 1
     },
     "charge-hold": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/charge-hold.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/charge-hold.json",
+      "nativeFacing": 1
     },
     "blow": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/blow.json"
+      "adapter": "hero-revision/blow.json"
     },
     "launch": {
       "adapter": "runtime-final/hero/combat/hero/adapters/launch.json"
@@ -499,13 +506,16 @@
       "adapter": "runtime-final/hero/combat/hero/adapters/death.json"
     },
     "recovery": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/recovery.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/recovery.json",
+      "nativeFacing": 1
     },
     "awakening-start": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakening-start.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakening-start.json",
+      "nativeFacing": -1
     },
     "special1": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/special1.json"
+      "adapter": "hero-revision/special1.json",
+      "spinCycleDuration": 0.64
     },
     "special2": {
       "adapter": "runtime-final/hero/combat/hero/adapters/special2.json"
@@ -535,16 +545,19 @@
       ]
     },
     "awakened-idle": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-idle.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-idle.json",
+      "nativeFacing": -1
     },
     "awakened-walk": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-walk.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-walk.json",
+      "nativeFacing": 1
     },
     "awakened-dash": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-dash.json"
+      "adapter": "hero-revision/awakened-dash.json"
     },
     "awakened-jump": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-jump.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-jump.json",
+      "nativeFacing": 1
     },
     "awakened-guard": {
       "adapter": "runtime-final/hero/combat/hero/adapters/awakened-guard.json"
@@ -568,13 +581,16 @@
       "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-cycle.json"
     },
     "awakened-charge-start": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-start.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-start.json",
+      "nativeFacing": 1
     },
     "awakened-charge-hold": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-hold.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-charge-hold.json",
+      "nativeFacing": 1
     },
     "awakened-blow": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-blow.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-blow.json",
+      "nativeFacing": 1
     },
     "awakened-launch": {
       "adapter": "runtime-final/hero/combat/hero/adapters/awakened-launch.json"
@@ -609,13 +625,16 @@
       "adapter": "runtime-final/hero/combat/hero/adapters/awakened-death.json"
     },
     "awakened-recovery": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-recovery.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-recovery.json",
+      "nativeFacing": 1
     },
     "awakened-awakening-end": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-awakening-end.json"
+      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-awakening-end.json",
+      "nativeFacing": -1
     },
     "awakened-special1": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special1.json"
+      "adapter": "hero-revision/awakened-special1.json",
+      "spinCycleDuration": 0.64
     },
     "awakened-special2": {
       "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special2.json"
@@ -684,10 +703,14 @@
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/idle/clip.json"
     },
     "manny/walk": {
-      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/walk/clip.json"
+      "adapter": "manny-walk-revision/manny/walk/clip.json",
+      "strideDistance": 99,
+      "nativeFacing": 1
     },
     "manny/dash": {
-      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/dash/clip.json"
+      "adapter": "manny-dash-revision/manny/dash/clip.json",
+      "nativeFacing": 1,
+      "strideDistance": 160
     },
     "manny/jump": {
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/jump/clip.json"
@@ -778,12 +801,27 @@
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-startup/clip.json"
     },
     "manny/special2-active": {
-      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-active/clip.json",
+      "adapter": "manny-magic-revision/manny/special2-active/clip.json",
       "releaseFrame": 7,
       "releaseSocket": [
         0.6784999999999999,
-        -2.408333333333333
-      ]
+        -3.0703430420711975
+      ],
+      "sourceBodyArtworkUnchanged": true,
+      "sourceBodyAtlasSHA256": "528ad4a16417b17929092ab477117e7f78a6d0543491f452d6e37f95a152b14a",
+      "releaseMeasurement": {
+        "staffTipSocket": [
+          0.6784999999999999,
+          -1.3373333333333333
+        ],
+        "orbSeedOffsetBelowCenterPixels": 138.64077669902912,
+        "displayBodyHeight": 80,
+        "rawPreviousReleaseSocket": [
+          0.6784999999999999,
+          -2.408333333333333
+        ],
+        "explanation": "Orb center is staff tip minus enlarged first-cel seed offset. Body pixels and fixed central FX pivot unchanged; physics/collider must use this same releaseSocket."
+      }
     },
     "manny/special2-recovery": {
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-recovery/clip.json"
@@ -912,7 +950,7 @@
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-purple/clip.json"
     },
     "manny/effects/special2-orb": {
-      "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special2-orb/clip.json"
+      "adapter": "manny-magic-revision/manny/effects/special2-orb/clip.json"
     },
     "manny/effects/awakening-aura": {
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/awakening-aura/clip.json"
@@ -952,6 +990,137 @@
     },
     "shared/effects/rush-trail": {
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/rush-trail/clip.json"
+    },
+    "hero/effects/special1-spin-back": {
+      "adapter": "hero-revision/fx-special1-spin-back.json"
+    },
+    "hero/effects/special1-spin-front": {
+      "adapter": "hero-revision/fx-special1-spin-front.json"
+    },
+    "hero/effects/special1-spin": {
+      "adapter": "hero-revision/fx-special1-spin.json"
+    },
+    "hero/effects/strong-blow": {
+      "adapter": "hero-revision/fx-strong-blow.json"
+    },
+    "hero/effects/strong-launch": {
+      "adapter": "hero-revision/fx-strong-launch.json"
+    },
+    "hero/effects/strong-rush": {
+      "adapter": "hero-revision/fx-strong-rush.json"
+    },
+    "hero/effects/special1-rush": {
+      "adapter": "hero-revision/fx-special1-rush.json"
+    },
+    "manny/effects/strong-projectile": {
+      "adapter": "manny-magic-revision/manny/effects/strong-projectile/clip.json"
+    },
+    "manny/effects/strong-impact": {
+      "adapter": "manny-magic-revision/manny/effects/strong-impact/clip.json"
+    },
+    "manny/effects/special2-orb-blast": {
+      "adapter": "manny-magic-revision/manny/effects/special2-orb-blast/clip.json"
+    },
+    "tetsu/special1": {
+      "adapter": "tetsu-original-revision/tetsu/body/special1/tetsu-special1-review-adapter-runtime220.json",
+      "releaseFrame": 2,
+      "phaseRanges": {
+        "anticipation": [
+          0,
+          2
+        ],
+        "dash": [
+          2,
+          12
+        ],
+        "brakeRecovery": [
+          12,
+          16
+        ]
+      },
+      "nativeFacing": 1
+    },
+    "tetsu/special2": {
+      "adapter": "tetsu-original-revision/tetsu/body/special2/tetsu-special2-review-adapter-runtime220.json",
+      "releaseFrame": 6,
+      "phaseRanges": {
+        "intro": [
+          0,
+          1
+        ],
+        "charge": [
+          1,
+          6
+        ],
+        "releaseRaise": [
+          6,
+          9
+        ],
+        "releaseCut": [
+          9,
+          12
+        ],
+        "lowBrace": [
+          12,
+          14
+        ],
+        "recovery": [
+          14,
+          16
+        ]
+      },
+      "nativeFacing": 1
+    },
+    "tetsu/effects/special1-slash": {
+      "adapter": "tetsu-original-revision/tetsu/effects/special1-slash/tetsu-special1-slash-16-compact.json",
+      "nativeFacing": 1
+    },
+    "tetsu/effects/special2-blast": {
+      "adapter": "tetsu-original-revision/tetsu/effects/special2-blast/tetsu-special2-blast-16-compact.json",
+      "nativeFacing": 1
+    },
+    "tetsu/effects/special2-charge-aura": {
+      "adapter": "tetsu-original-revision/tetsu/effects/special2-charge-aura/tetsu-special2-charge-aura-16-compact.json",
+      "activeIntervalSeconds": [
+        0.1,
+        1.1
+      ],
+      "layer": "behind-body",
+      "nativeFacing": 1
+    },
+    "tetsu/effects/special2-charge-eye": {
+      "adapter": "tetsu-original-revision/tetsu/effects/special2-charge-eye/tetsu-special2-charge-eye-16-compact.json",
+      "activeIntervalSeconds": [
+        0.1,
+        1.97
+      ],
+      "layer": "in-front-of-body",
+      "nativeFacing": 1
+    },
+    "pink/idle": {
+      "adapter": "pink-base8/idle/clip.json"
+    },
+    "pink/walk": {
+      "adapter": "pink-base8/walk/clip.json",
+      "strideDistance": 64
+    },
+    "pink/dash": {
+      "adapter": "pink-base8/dash/clip.json"
+    },
+    "pink/jump": {
+      "adapter": "pink-base8/jump/clip.json"
+    },
+    "pink/light1": {
+      "adapter": "pink-base8/weak1/clip.json"
+    },
+    "pink/light2": {
+      "adapter": "pink-base8/weak2/clip.json"
+    },
+    "pink/light3": {
+      "adapter": "pink-base8/weak3/clip.json"
+    },
+    "pink/light4": {
+      "adapter": "pink-base8/weak4/clip.json"
     }
   },
   "aliases": {
@@ -1124,14 +1293,14 @@
       "clip": "special1",
       "range": [
         16,
-        27
+        31
       ]
     },
     "special1-recovery": {
       "clip": "special1",
       "range": [
-        27,
-        32
+        31,
+        36
       ]
     },
     "dance": {
@@ -1145,7 +1314,7 @@
       "clip": "special1",
       "range": [
         16,
-        27
+        31
       ]
     },
     "special2-startup": {
@@ -1176,14 +1345,14 @@
       "clip": "awakened-special1",
       "range": [
         16,
-        27
+        31
       ]
     },
     "awakened-special1-recovery": {
       "clip": "awakened-special1",
       "range": [
-        27,
-        32
+        31,
+        36
       ]
     },
     "awakened-dance": {
@@ -1197,7 +1366,7 @@
       "clip": "awakened-special1",
       "range": [
         16,
-        27
+        31
       ]
     },
     "awakened-special2-startup": {
@@ -1363,6 +1532,22 @@
     "mobdesert/effects/awakened-special1-fish": "mobdesert/effects/special1-fish",
     "mobdesert/effects/awakened-special2-dragon": "mobdesert/effects/special2-dragon",
     "mobdesert/effects/awakened-awakening-aura": "mobdesert/effects/awakening-aura",
-    "mobdesert/effects/awakened-awakening-burst": "mobdesert/effects/awakening-burst"
+    "mobdesert/effects/awakened-awakening-burst": "mobdesert/effects/awakening-burst",
+    "hero/effects/awakened-special1-spin-back": "hero/effects/special1-spin-back",
+    "hero/effects/awakened-special1-spin-front": "hero/effects/special1-spin-front",
+    "hero/effects/awakened-special1-spin": "hero/effects/special1-spin",
+    "hero/effects/awakened-strong-blow": "hero/effects/strong-blow",
+    "hero/effects/awakened-strong-launch": "hero/effects/strong-launch",
+    "hero/effects/awakened-strong-rush": "hero/effects/strong-rush",
+    "hero/effects/awakened-special1-rush": "hero/effects/special1-rush",
+    "manny/effects/awakened-strong-projectile": "manny/effects/strong-projectile",
+    "manny/effects/awakened-strong-impact": "manny/effects/strong-impact",
+    "manny/effects/awakened-special2-orb-blast": "manny/effects/special2-orb-blast",
+    "tetsu/awakened-special1": "tetsu/special1",
+    "tetsu/awakened-special2": "tetsu/special2",
+    "tetsu/effects/awakened-special1-slash": "tetsu/effects/special1-slash",
+    "tetsu/effects/awakened-special2-blast": "tetsu/effects/special2-blast",
+    "tetsu/effects/awakened-special2-charge-aura": "tetsu/effects/special2-charge-aura",
+    "tetsu/effects/awakened-special2-charge-eye": "tetsu/effects/special2-charge-eye"
   }
 }

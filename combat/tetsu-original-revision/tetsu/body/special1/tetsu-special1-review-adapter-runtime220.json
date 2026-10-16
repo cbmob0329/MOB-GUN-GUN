@@ -1,0 +1,294 @@
+{
+  "character": "tetsu",
+  "kind": "body",
+  "animation": "special1",
+  "key": "tetsu/special1",
+  "src": "tetsu-special1-review-adapter-runtime220.webp",
+  "nativeFacing": "right",
+  "bodyHeight": 217,
+  "displayHeight": 110,
+  "durationSeconds": 0.72,
+  "phaseRanges": {
+    "anticipation": [
+      0,
+      2
+    ],
+    "dash": [
+      2,
+      12
+    ],
+    "brake_recovery": [
+      12,
+      16
+    ]
+  },
+  "frames": [
+    {
+      "rect": [
+        8,
+        8,
+        321,
+        225
+      ],
+      "pivot": [
+        107,
+        221
+      ],
+      "duration": 0.04,
+      "phase": "ready",
+      "sourceFrame": 1,
+      "rgba_sha256": "15a70eaceda147697ca74342fcd57a300e294ea849b4143dff5cc49269a48812"
+    },
+    {
+      "rect": [
+        8,
+        249,
+        311,
+        199
+      ],
+      "pivot": [
+        105,
+        196
+      ],
+      "duration": 0.04,
+      "phase": "load",
+      "sourceFrame": 2,
+      "rgba_sha256": "08f154a893faa0935756398a6b99d99626ee275802bf74bece9a2008f46b8d15"
+    },
+    {
+      "rect": [
+        327,
+        960,
+        281,
+        199
+      ],
+      "pivot": [
+        102,
+        196
+      ],
+      "duration": 0.048,
+      "phase": "push_off",
+      "sourceFrame": 3,
+      "rgba_sha256": "fc4c9c701d014fe80d4d8c42976c64a3bc193658c037b79e946a273f0c7623cd"
+    },
+    {
+      "rect": [
+        653,
+        604,
+        299,
+        205
+      ],
+      "pivot": [
+        128,
+        202
+      ],
+      "duration": 0.048,
+      "phase": "launch",
+      "sourceFrame": 4,
+      "rgba_sha256": "f118468a6a8f5e51918691ecfadfd6c2b93f59e2f2276793a37793a630034ca2"
+    },
+    {
+      "rect": [
+        345,
+        8,
+        313,
+        196
+      ],
+      "pivot": [
+        133,
+        203
+      ],
+      "duration": 0.048,
+      "phase": "glide_entry",
+      "sourceFrame": 5,
+      "rgba_sha256": "4bd9eefd33ef2d5c806591b3325adc4c30a0d2964e4eef0fe2b8173b539a076d"
+    },
+    {
+      "rect": [
+        345,
+        220,
+        313,
+        164
+      ],
+      "pivot": [
+        130,
+        188
+      ],
+      "duration": 0.048,
+      "phase": "glide_tuck",
+      "sourceFrame": 6,
+      "rgba_sha256": "be97aff96e335eead7628f25110d7c74183c84f2554b366dd391f8a3f1767250"
+    },
+    {
+      "rect": [
+        335,
+        400,
+        308,
+        188
+      ],
+      "pivot": [
+        130,
+        187
+      ],
+      "duration": 0.048,
+      "phase": "glide_knee",
+      "sourceFrame": 7,
+      "rgba_sha256": "11abd4cb66d4105a14545f36cf1f2c72af4610908165ae28ff37d37326d3c54b"
+    },
+    {
+      "rect": [
+        624,
+        1047,
+        260,
+        189
+      ],
+      "pivot": [
+        119,
+        193
+      ],
+      "duration": 0.048,
+      "phase": "glide_trail",
+      "sourceFrame": 8,
+      "rgba_sha256": "9f976f9efedb9bb5485d4d5fc98f0bf59f94cd389e7c7b8ad54fe336e57007b2"
+    },
+    {
+      "rect": [
+        331,
+        604,
+        306,
+        151
+      ],
+      "pivot": [
+        132,
+        170
+      ],
+      "duration": 0.048,
+      "phase": "lowest_glide",
+      "sourceFrame": 9,
+      "rgba_sha256": "38fa8ba765f988e72915edfdd561783ba90aeab66d26372223ebbc616cff7350"
+    },
+    {
+      "rect": [
+        328,
+        771,
+        294,
+        173
+      ],
+      "pivot": [
+        123,
+        187
+      ],
+      "duration": 0.048,
+      "phase": "prepare_contact",
+      "sourceFrame": 10,
+      "rgba_sha256": "14a23e586bef8955959598e39e650254a77f9486ce354b99f197b1c65b136a0c"
+    },
+    {
+      "rect": [
+        638,
+        825,
+        291,
+        206
+      ],
+      "pivot": [
+        127,
+        203
+      ],
+      "duration": 0.048,
+      "phase": "extend_front_foot",
+      "sourceFrame": 11,
+      "rgba_sha256": "c3cd4606c3aa7642041af9e0d00432326192cc5b5fbe606bb90e26569d13135b"
+    },
+    {
+      "rect": [
+        8,
+        913,
+        303,
+        205
+      ],
+      "pivot": [
+        120,
+        201
+      ],
+      "duration": 0.048,
+      "phase": "braking_contact",
+      "sourceFrame": 12,
+      "rgba_sha256": "d82024db8b1513a8a08d9e0b177479ff765a05aff80e727ce8e60d3b97a47281"
+    },
+    {
+      "rect": [
+        674,
+        8,
+        278,
+        218
+      ],
+      "pivot": [
+        108,
+        214
+      ],
+      "duration": 0.04,
+      "phase": "planted_brake",
+      "sourceFrame": 13,
+      "rgba_sha256": "52b7a34c65f1369a0a606d946db1952f437b0f2e6bc4f8634758899e5e867f9f"
+    },
+    {
+      "rect": [
+        8,
+        464,
+        307,
+        210
+      ],
+      "pivot": [
+        111,
+        206
+      ],
+      "duration": 0.04,
+      "phase": "settle",
+      "sourceFrame": 14,
+      "rgba_sha256": "30c35413b3e3966e174a2f9c6459f8f259f1d91dff9e2c3ed74eb1f1801cd530"
+    },
+    {
+      "rect": [
+        8,
+        690,
+        304,
+        207
+      ],
+      "pivot": [
+        112,
+        203
+      ],
+      "duration": 0.04,
+      "phase": "ease_ready",
+      "sourceFrame": 15,
+      "rgba_sha256": "6317a9881cdc40a570f9f3001c534132036e90cd4067dd5e4b81fa4cde8e3b12"
+    },
+    {
+      "rect": [
+        674,
+        242,
+        274,
+        207
+      ],
+      "pivot": [
+        111,
+        203
+      ],
+      "duration": 0.04,
+      "phase": "ready_recovery",
+      "sourceFrame": 16,
+      "rgba_sha256": "f4dc85a72c074282b0867df35132edb26f178799ae0ae9878e0a60e2d25bd54d"
+    }
+  ],
+  "status": "Visually audited art proof. Parent/user and in-engine acceptance pending.",
+  "runtimeExport": {
+    "scale": 1,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 217,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  }
+}

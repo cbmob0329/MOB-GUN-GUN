@@ -1,0 +1,614 @@
+{
+  "key": "tetsu/effects/special2-blast",
+  "character": "tetsu",
+  "kind": "effects",
+  "animation": "special2-blast",
+  "status": "source_faithful_drawn16_internal_proof_pending_parent_and_game_review",
+  "src": "tetsu-special2-blast-16-compact.webp",
+  "source": "tetsu-special2-blast-source-16-v1.png",
+  "size": [
+    1408,
+    1408
+  ],
+  "frameCount": 16,
+  "durationSeconds": 0.8,
+  "nativeFacing": "right",
+  "orientationMode": "facing",
+  "displayHeightBasis": 110,
+  "sourceMaxDimensionGamePixels": 340.0,
+  "sourceExistingAnchorGamePixels": [
+    140,
+    -60
+  ],
+  "sourceActiveIntervalSeconds": [
+    1.1,
+    1.9
+  ],
+  "socketOffsetNote": "Offsets are normalized by110 and ADDED to existing anchor. All zero: do not add source anchor twice.",
+  "frames": [
+    {
+      "index": 1,
+      "rect": [
+        600,
+        832,
+        229,
+        216
+      ],
+      "pivot": [
+        114.5,
+        108.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        2.915442635966653
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        58,
+        55,
+        229,
+        216
+      ],
+      "sourceCellRect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "rgba_sha256": "42bf00e244aefbb5d26e6d6545de5e286f83f8fdcf88a7dcc959f03debba99d8",
+      "file": "frames/tetsu-special2-blast-01.png"
+    },
+    {
+      "index": 2,
+      "rect": [
+        882,
+        818,
+        253,
+        251
+      ],
+      "pivot": [
+        126.5,
+        125.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        3.0664750269493353
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        354,
+        31,
+        253,
+        251
+      ],
+      "sourceCellRect": [
+        314,
+        0,
+        313,
+        314
+      ],
+      "rgba_sha256": "3e8b63f2babd985d60a40e435720eac6bcbfc241a3a7275dbd901d52adb1db35",
+      "file": "frames/tetsu-special2-blast-02.png"
+    },
+    {
+      "index": 3,
+      "rect": [
+        600,
+        291,
+        271,
+        261
+      ],
+      "pivot": [
+        135.5,
+        130.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        2.9768534048976854
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        649,
+        23,
+        271,
+        261
+      ],
+      "sourceCellRect": [
+        627,
+        0,
+        313,
+        314
+      ],
+      "rgba_sha256": "578bbba32a9426f5b256a0c895ed597e6f191b5cd2421af74e6ae445df7c1187",
+      "file": "frames/tetsu-special2-blast-03.png"
+    },
+    {
+      "index": 4,
+      "rect": [
+        888,
+        8,
+        273,
+        269
+      ],
+      "pivot": [
+        136.5,
+        134.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        3.0456210456210457
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        961,
+        22,
+        273,
+        269
+      ],
+      "sourceCellRect": [
+        940,
+        0,
+        314,
+        314
+      ],
+      "rgba_sha256": "ae32227e33c9be6e6460d32171e2b884dd8420597032c467d6e3f2123c5849b7",
+      "file": "frames/tetsu-special2-blast-04.png"
+    },
+    {
+      "index": 5,
+      "rect": [
+        882,
+        570,
+        255,
+        232
+      ],
+      "pivot": [
+        127.5,
+        115.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        2.812121212121212
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        41,
+        361,
+        255,
+        233
+      ],
+      "sourceCellRect": [
+        0,
+        314,
+        314,
+        313
+      ],
+      "rgba_sha256": "19fb0d076be66dd41650ec2943b31c26288e3fc9534c3d046765db329b9cdb03",
+      "file": "frames/tetsu-special2-blast-05.png"
+    },
+    {
+      "index": 6,
+      "rect": [
+        600,
+        568,
+        266,
+        248
+      ],
+      "pivot": [
+        133.0,
+        124.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        2.88174982911825
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        340,
+        352,
+        266,
+        248
+      ],
+      "sourceCellRect": [
+        314,
+        314,
+        313,
+        313
+      ],
+      "rgba_sha256": "dab3aed4afbe108278369cc91ce274311ce27004d7d5ca75212a944d7f027221",
+      "file": "frames/tetsu-special2-blast-06.png"
+    },
+    {
+      "index": 7,
+      "rect": [
+        887,
+        293,
+        271,
+        261
+      ],
+      "pivot": [
+        135.5,
+        130.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        2.9768534048976854
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        651,
+        346,
+        271,
+        261
+      ],
+      "sourceCellRect": [
+        627,
+        314,
+        313,
+        313
+      ],
+      "rgba_sha256": "b0afc54d0f163a5e1e131b21e098eae26cdcea8094c51d44d4f15950853f91b8",
+      "file": "frames/tetsu-special2-blast-07.png"
+    },
+    {
+      "index": 8,
+      "rect": [
+        306,
+        933,
+        278,
+        271
+      ],
+      "pivot": [
+        139.0,
+        135.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        3.013080444735121
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        959,
+        340,
+        278,
+        271
+      ],
+      "sourceCellRect": [
+        940,
+        314,
+        314,
+        313
+      ],
+      "rgba_sha256": "3ee0d959c4b0de4a5a55ed1c34f372051e282447b38ab4c79524039a9aae17e8",
+      "file": "frames/tetsu-special2-blast-08.png"
+    },
+    {
+      "index": 9,
+      "rect": [
+        8,
+        939,
+        282,
+        264
+      ],
+      "pivot": [
+        141.0,
+        132.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        2.8936170212765955
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        32,
+        650,
+        282,
+        264
+      ],
+      "sourceCellRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "rgba_sha256": "20a037a0c8f3e174b4f1d2f363c5012e8b166a03f0b34411e1610fe7a3778a00",
+      "file": "frames/tetsu-special2-blast-09.png"
+    },
+    {
+      "index": 10,
+      "rect": [
+        305,
+        8,
+        275,
+        276
+      ],
+      "pivot": [
+        137.5,
+        138.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.079710144927536,
+        3.090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        335,
+        641,
+        275,
+        276
+      ],
+      "sourceCellRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "rgba_sha256": "0fc0a5f00217098b4681a4124484b5546e74c04ff3442461039e00daa5d7e2db",
+      "file": "frames/tetsu-special2-blast-10.png"
+    },
+    {
+      "index": 11,
+      "rect": [
+        299,
+        635,
+        283,
+        282
+      ],
+      "pivot": [
+        141.5,
+        141.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.0909090909090904,
+        3.0799871506585283
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        636,
+        640,
+        283,
+        282
+      ],
+      "sourceCellRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "rgba_sha256": "c774eda8a07064a43a8876e9adb73495185e379d9ece1f09751c2c2477dda742",
+      "file": "frames/tetsu-special2-blast-11.png"
+    },
+    {
+      "index": 12,
+      "rect": [
+        304,
+        322,
+        277,
+        276
+      ],
+      "pivot": [
+        138.5,
+        138.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        3.079750574335412
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        957,
+        647,
+        277,
+        276
+      ],
+      "sourceCellRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "rgba_sha256": "6d80a2f2b5d8aac0e41c98890c853d2c41e803d93ef190cca59397963064de47",
+      "file": "frames/tetsu-special2-blast-12.png"
+    },
+    {
+      "index": 13,
+      "rect": [
+        596,
+        8,
+        276,
+        267
+      ],
+      "pivot": [
+        138.0,
+        133.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        3.090909090909091,
+        2.9901185770750986
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        25,
+        950,
+        276,
+        267
+      ],
+      "sourceCellRect": [
+        0,
+        940,
+        314,
+        314
+      ],
+      "rgba_sha256": "ad0ac1d02b90f5a73041b4c0939a4be9a39104a86af0f439e4313be148485e70",
+      "file": "frames/tetsu-special2-blast-13.png"
+    },
+    {
+      "index": 14,
+      "rect": [
+        8,
+        635,
+        275,
+        288
+      ],
+      "pivot": [
+        137.5,
+        144.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        2.951388888888889,
+        3.090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        336,
+        945,
+        275,
+        288
+      ],
+      "sourceCellRect": [
+        314,
+        940,
+        313,
+        314
+      ],
+      "rgba_sha256": "d03024840b626eb1ef34ac18eed4a6d085ba9df6e7b73e9931962f7fc819a816",
+      "file": "frames/tetsu-special2-blast-14.png"
+    },
+    {
+      "index": 15,
+      "rect": [
+        8,
+        322,
+        280,
+        297
+      ],
+      "pivot": [
+        140.0,
+        148.5
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        2.9139883685338233,
+        3.090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        640,
+        941,
+        280,
+        297
+      ],
+      "sourceCellRect": [
+        627,
+        940,
+        313,
+        314
+      ],
+      "rgba_sha256": "dfb5d5e19bcb5a98810ee682c03fb95213a58ebd2dd5a8131abea52c2b6aec27",
+      "file": "frames/tetsu-special2-blast-15.png"
+    },
+    {
+      "index": 16,
+      "rect": [
+        8,
+        8,
+        281,
+        298
+      ],
+      "pivot": [
+        140.5,
+        149.0
+      ],
+      "duration": 0.05,
+      "displaySize": [
+        2.9145820622330687,
+        3.090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        952,
+        941,
+        281,
+        298
+      ],
+      "sourceCellRect": [
+        940,
+        940,
+        314,
+        314
+      ],
+      "rgba_sha256": "aad1ae65d3126a15095e544f569552d59e1d9bdbccaca3283b5735cf829033aa",
+      "file": "frames/tetsu-special2-blast-16.png"
+    }
+  ],
+  "processing": "Rectangular whole-cel extraction and integer packing. Preserved retained source RGBA. No duplicated or synthesized cels. Runtime PNG/static lossless WebP unchanged resolution; previews alone are normalized to280px maximum.",
+  "runtimeExport": {
+    "spatialScale": 1,
+    "encoding": "static lossless WebP",
+    "trim": "alpha>0; displaySize adjusted per frame to preserve exact world-space scale",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  }
+}

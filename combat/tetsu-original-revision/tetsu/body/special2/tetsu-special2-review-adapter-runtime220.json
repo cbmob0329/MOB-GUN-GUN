@@ -1,0 +1,306 @@
+{
+  "character": "tetsu",
+  "kind": "body",
+  "animation": "special2",
+  "key": "tetsu/special2",
+  "src": "tetsu-special2-review-adapter-runtime220.webp",
+  "nativeFacing": "right",
+  "bodyHeight": 220.0,
+  "displayHeight": 110,
+  "durationSeconds": 2.12,
+  "phaseRanges": {
+    "intro": [
+      0,
+      1
+    ],
+    "charge": [
+      1,
+      6
+    ],
+    "release_raise": [
+      6,
+      9
+    ],
+    "release_cut": [
+      9,
+      12
+    ],
+    "low_brace": [
+      12,
+      14
+    ],
+    "recovery": [
+      14,
+      16
+    ]
+  },
+  "frames": [
+    {
+      "rect": [
+        8,
+        348,
+        327,
+        227
+      ],
+      "pivot": [
+        104.62222222222222,
+        222.93333333333334
+      ],
+      "duration": 0.1,
+      "phase": "intro_ready",
+      "sourceFrame": 1,
+      "rgba_sha256": "72f6b67e90bd0a56dccd2b647257d95cedf0748bca7ed6948b83574a28b3bae8"
+    },
+    {
+      "rect": [
+        8,
+        1269,
+        283,
+        216
+      ],
+      "pivot": [
+        101.68888888888888,
+        212.17777777777778
+      ],
+      "duration": 0.2,
+      "phase": "charge_load",
+      "sourceFrame": 2,
+      "rgba_sha256": "e137181723a5474c3ce8104b561bd9b6f0ef2172cf9315990247d56178e696fe"
+    },
+    {
+      "rect": [
+        322,
+        1006,
+        290,
+        203
+      ],
+      "pivot": [
+        101.68888888888888,
+        199.46666666666667
+      ],
+      "duration": 0.2,
+      "phase": "charge_deepen",
+      "sourceFrame": 3,
+      "rgba_sha256": "fbf727033fcf9efaf6196e491b8a59b25555d1cd86e0f9aa0d7f468bf1853689"
+    },
+    {
+      "rect": [
+        300,
+        1716,
+        265,
+        224
+      ],
+      "pivot": [
+        104.62222222222222,
+        220.0
+      ],
+      "duration": 0.2,
+      "phase": "charge_pulse",
+      "sourceFrame": 4,
+      "rgba_sha256": "b049edf6f55bc28501bc70f0183db71c77b28e575884472954e31de2906a9a93"
+    },
+    {
+      "rect": [
+        307,
+        1466,
+        280,
+        234
+      ],
+      "pivot": [
+        107.55555555555556,
+        231.73333333333332
+      ],
+      "duration": 0.2,
+      "phase": "charge_coil",
+      "sourceFrame": 5,
+      "rgba_sha256": "4fc389b6c8a67dba598dba1e32833436de2cbe72f5aaa5d1c278b83c6187149a"
+    },
+    {
+      "rect": [
+        8,
+        1036,
+        286,
+        217
+      ],
+      "pivot": [
+        110.48888888888888,
+        214.13333333333333
+      ],
+      "duration": 0.2,
+      "phase": "charge_tension",
+      "sourceFrame": 6,
+      "rgba_sha256": "6096455c60dc10a53615d471ad0fe8f36706a6bb90fc22d3a5de26ad84103942"
+    },
+    {
+      "rect": [
+        8,
+        1796,
+        276,
+        224
+      ],
+      "pivot": [
+        106.57777777777777,
+        220.0
+      ],
+      "duration": 0.053,
+      "phase": "draw_up",
+      "sourceFrame": 7,
+      "rgba_sha256": "7bc8b5e8b3dfaafc81d2fda185895f1104a838f9abc1fa42b38fe09564eef05d"
+    },
+    {
+      "rect": [
+        434,
+        8,
+        252,
+        275
+      ],
+      "pivot": [
+        105.6,
+        271.8222222222222
+      ],
+      "duration": 0.054,
+      "phase": "raise_back",
+      "sourceFrame": 8,
+      "rgba_sha256": "c1090768f19b91f28528426d9c5e2ed54198c6fdea370c5753c5bdaf65ae6bb2"
+    },
+    {
+      "rect": [
+        8,
+        1501,
+        271,
+        279
+      ],
+      "pivot": [
+        110.48888888888888,
+        274.75555555555553
+      ],
+      "duration": 0.053,
+      "phase": "maximum_coil",
+      "sourceFrame": 9,
+      "rgba_sha256": "084e493bba41cdaebd20718205fabab176204adcbe653fac725fff9651920b00"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        410,
+        324
+      ],
+      "pivot": [
+        115.37777777777778,
+        322.66666666666663
+      ],
+      "duration": 0.053,
+      "phase": "forward_high_cut",
+      "sourceFrame": 10,
+      "rgba_sha256": "c36de850ed6d6083c21c112a7eb63d8f45cb0bc6d93a0fdfce68af385b4a2176"
+    },
+    {
+      "rect": [
+        351,
+        556,
+        311,
+        213
+      ],
+      "pivot": [
+        108.53333333333333,
+        209.24444444444444
+      ],
+      "duration": 0.054,
+      "phase": "cut_down",
+      "sourceFrame": 11,
+      "rgba_sha256": "0225960c05e63f0f58489a7422593af4475a4c6ba561eede6f4706c342419fc2"
+    },
+    {
+      "rect": [
+        8,
+        822,
+        298,
+        198
+      ],
+      "pivot": [
+        112.44444444444444,
+        194.57777777777778
+      ],
+      "duration": 0.053,
+      "phase": "low_cut_finish",
+      "sourceFrame": 12,
+      "rgba_sha256": "8dff4d1fb7e88071231dd06aa35b38ad977b86e67baf1d15761ef9b166e4ae84"
+    },
+    {
+      "rect": [
+        351,
+        348,
+        318,
+        192
+      ],
+      "pivot": [
+        114.39999999999999,
+        188.7111111111111
+      ],
+      "duration": 0.2,
+      "phase": "low_brace",
+      "sourceFrame": 13,
+      "rgba_sha256": "2840786768903add928a1a14a17b3b74bef732be085523affb8e953442477682"
+    },
+    {
+      "rect": [
+        325,
+        785,
+        300,
+        205
+      ],
+      "pivot": [
+        109.5111111111111,
+        202.4
+      ],
+      "duration": 0.2,
+      "phase": "brace_settle",
+      "sourceFrame": 14,
+      "rgba_sha256": "023bd07447957bc858148e9038529a6d296e27f7492ca1894bf002b3983b36a0"
+    },
+    {
+      "rect": [
+        310,
+        1225,
+        285,
+        225
+      ],
+      "pivot": [
+        108.53333333333333,
+        222.93333333333334
+      ],
+      "duration": 0.15,
+      "phase": "recovery_lift",
+      "sourceFrame": 15,
+      "rgba_sha256": "f24aeea74b6e924c04d4bea46740d990b3ca0b85fa4cc239dc2e67cd6be3c9a2"
+    },
+    {
+      "rect": [
+        8,
+        591,
+        301,
+        215
+      ],
+      "pivot": [
+        110.48888888888888,
+        213.15555555555554
+      ],
+      "duration": 0.15,
+      "phase": "ready_recovery",
+      "sourceFrame": 16,
+      "rgba_sha256": "89904eed373ad3c0ff78c8936743867a927901c8688e513a2495d2b507a0787a"
+    }
+  ],
+  "status": "Visually audited art proof. Parent/user and in-engine acceptance pending.",
+  "runtimeExport": {
+    "scale": 0.9777777777777777,
+    "nominalBodyPixels": 220,
+    "actualBodyPixels": 220.0,
+    "spatialDownsampling": "lossy",
+    "encoding": "lossless WebP",
+    "trim": "Alpha>0 bounding box, all visible pixels retained",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  }
+}

@@ -1,0 +1,628 @@
+{
+  "character": "tetsu",
+  "kind": "effects",
+  "key": "tetsu/effects/special2-charge-aura",
+  "animation": "special2-charge-aura",
+  "src": "tetsu-special2-charge-aura-16-compact.webp",
+  "nativeFacing": "right",
+  "orientationMode": "facing",
+  "socketReference": "player-feet",
+  "sourceExistingAnchorGamePixels": [
+    0,
+    0
+  ],
+  "displayHeightBasis": 110,
+  "frames": [
+    {
+      "rect": [
+        735,
+        807,
+        189,
+        230
+      ],
+      "pivot": [
+        93.0,
+        228
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        0.9603658536585366,
+        1.16869918699187
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "short left crescent",
+      "originalFrame": 1,
+      "originalAtlasRect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "rgba_sha256": "6daaec0d5662022c3b15ee52fa85463552c36881a9ea2d0eba5068bb3ef8f0da"
+    },
+    {
+      "rect": [
+        510,
+        807,
+        209,
+        246
+      ],
+      "pivot": [
+        107.0,
+        239
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.0619918699186992,
+        1.25
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "left crescent rises",
+      "originalFrame": 2,
+      "originalAtlasRect": [
+        314,
+        0,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        314,
+        0,
+        313,
+        314
+      ],
+      "rgba_sha256": "e679f41aad07b1bd654ad53e9301cb2942c7939c7fb835f151ca46ee6df1d53e"
+    },
+    {
+      "rect": [
+        260,
+        544,
+        220,
+        251
+      ],
+      "pivot": [
+        110.0,
+        243
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1178861788617886,
+        1.2754065040650406
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "left arc splits",
+      "originalFrame": 3,
+      "originalAtlasRect": [
+        628,
+        0,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        627,
+        0,
+        313,
+        314
+      ],
+      "rgba_sha256": "c0ad6688bedc49cdf2bde82ebd40b82c3171fc8b5d4219f0a4988fc7f7ce62e7"
+    },
+    {
+      "rect": [
+        749,
+        8,
+        226,
+        252
+      ],
+      "pivot": [
+        111.0,
+        243
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1483739837398375,
+        1.2804878048780488
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "paired left arc",
+      "originalFrame": 4,
+      "originalAtlasRect": [
+        942,
+        0,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        940,
+        0,
+        314,
+        314
+      ],
+      "rgba_sha256": "05e07f4bc39896daf435997177c5163fd290b1f177ce64623bd91128fc279507"
+    },
+    {
+      "rect": [
+        751,
+        276,
+        236,
+        239
+      ],
+      "pivot": [
+        100.0,
+        236
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1991869918699187,
+        1.214430894308943
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "left diamond release",
+      "originalFrame": 5,
+      "originalAtlasRect": [
+        0,
+        314,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        0,
+        314,
+        314,
+        313
+      ],
+      "rgba_sha256": "f4e077926ae1a196cebe5e92b06f3ac5e8f100144c9ef87c0af7fbea1689c1c8"
+    },
+    {
+      "rect": [
+        8,
+        569,
+        236,
+        253
+      ],
+      "pivot": [
+        99.0,
+        243
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1991869918699187,
+        1.285569105691057
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "right arc renews",
+      "originalFrame": 6,
+      "originalAtlasRect": [
+        314,
+        314,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        314,
+        314,
+        313,
+        313
+      ],
+      "rgba_sha256": "a95f8cab919de3c122b85fba0c5fb051b95a6cca65b36a145e4142933f24ea4c"
+    },
+    {
+      "rect": [
+        8,
+        294,
+        236,
+        259
+      ],
+      "pivot": [
+        96.0,
+        245
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1991869918699187,
+        1.3160569105691056
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "right crescent grows",
+      "originalFrame": 7,
+      "originalAtlasRect": [
+        628,
+        314,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        627,
+        314,
+        313,
+        313
+      ],
+      "rgba_sha256": "61b8f8563a800875551a2c1b2aa950f1902ba17ebcfd31853838ad2ec6b4c7e6"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        200,
+        270
+      ],
+      "pivot": [
+        70.0,
+        255
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.0162601626016259,
+        1.371951219512195
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "right arc lengthens",
+      "originalFrame": 8,
+      "originalAtlasRect": [
+        942,
+        314,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        940,
+        314,
+        314,
+        313
+      ],
+      "rgba_sha256": "5d00612258a66ac4b5dff5fe4c9f08f1c7a27ee556b64385deeb45ae7e9d2a1e"
+    },
+    {
+      "rect": [
+        502,
+        276,
+        233,
+        247
+      ],
+      "pivot": [
+        96.0,
+        244
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1839430894308942,
+        1.2550813008130082
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "right paired blades",
+      "originalFrame": 9,
+      "originalAtlasRect": [
+        0,
+        628,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "rgba_sha256": "e5fdf342c48e8e5e93cae237bef16bfddb1f168149e4d11ed77a81ad50506cf9"
+    },
+    {
+      "rect": [
+        8,
+        838,
+        251,
+        232
+      ],
+      "pivot": [
+        109.0,
+        233
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.2754065040650406,
+        1.178861788617886
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "right blade split",
+      "originalFrame": 10,
+      "originalAtlasRect": [
+        314,
+        628,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "rgba_sha256": "18ef0262c143a7d6c4d0d4106892001d5301409a13f0c7f70d173a7f63859245"
+    },
+    {
+      "rect": [
+        481,
+        8,
+        252,
+        252
+      ],
+      "pivot": [
+        113.0,
+        249
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.2804878048780488,
+        1.2804878048780488
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "left arc returns",
+      "originalFrame": 11,
+      "originalAtlasRect": [
+        628,
+        628,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "rgba_sha256": "e1259bb4ca4a5a22fdb4b5f29edcce55df436bda986d80a04f5da0b3f4ea80b4"
+    },
+    {
+      "rect": [
+        496,
+        544,
+        236,
+        247
+      ],
+      "pivot": [
+        107.0,
+        249
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1991869918699187,
+        1.2550813008130082
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "balanced crescents",
+      "originalFrame": 12,
+      "originalAtlasRect": [
+        942,
+        628,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "rgba_sha256": "cb7e690ecfc5fbc441d73a6f519102f691a31a8f0af4e08abd5a0ff47b9684e9"
+    },
+    {
+      "rect": [
+        224,
+        8,
+        241,
+        253
+      ],
+      "pivot": [
+        115.0,
+        253
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.2245934959349594,
+        1.285569105691057
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "left arc renews",
+      "originalFrame": 13,
+      "originalAtlasRect": [
+        0,
+        942,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        0,
+        940,
+        314,
+        314
+      ],
+      "rgba_sha256": "223430c6044f140fc4f64d9264ef45045a826e072e89f3915994fd9b586c7314"
+    },
+    {
+      "rect": [
+        275,
+        811,
+        219,
+        251
+      ],
+      "pivot": [
+        108.0,
+        250
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1128048780487805,
+        1.2754065040650406
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "right shards taper",
+      "originalFrame": 14,
+      "originalAtlasRect": [
+        314,
+        942,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        314,
+        940,
+        313,
+        314
+      ],
+      "rgba_sha256": "d400c4761e0a094168a924f12276c63bc90db1e210f30c78e11b9bfa579eb391"
+    },
+    {
+      "rect": [
+        260,
+        277,
+        226,
+        251
+      ],
+      "pivot": [
+        108.0,
+        248
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.1483739837398375,
+        1.2754065040650406
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "left crescent peak",
+      "originalFrame": 15,
+      "originalAtlasRect": [
+        628,
+        942,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-source-16.png",
+      "originalSourceRect": [
+        627,
+        940,
+        313,
+        314
+      ],
+      "rgba_sha256": "4a207f7bff6b7f96b3cc0bf1c644f58738b5e9965fedf3aaa0d967e39c7d860c"
+    },
+    {
+      "rect": [
+        751,
+        531,
+        232,
+        229
+      ],
+      "pivot": [
+        113.0,
+        240
+      ],
+      "duration": 0.0625,
+      "displaySize": [
+        1.178861788617886,
+        1.1636178861788617
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "phase": "split left transition",
+      "originalFrame": 16,
+      "originalAtlasRect": [
+        942,
+        942,
+        314,
+        314
+      ],
+      "originalSourceFile": "sources/tetsu-aura-loop-frame16-correction-source.png",
+      "originalSourceRect": [
+        940,
+        940,
+        314,
+        314
+      ],
+      "rgba_sha256": "18014688fad6eed18365df2084fcbd983437be98dc114c44962fafacd8432b30"
+    }
+  ],
+  "frameCount": 16,
+  "durationSeconds": 1.0,
+  "status": "Visually reviewed source-faithful overlay proof; in-engine acceptance pending",
+  "sourceActiveIntervalSeconds": [
+    0.1,
+    1.1
+  ],
+  "layer": "behind-body",
+  "sourceProvenance": "Copied16 distinct Tetsu aura-loop drawings from output/existing-combat-16/awakening-fx/tetsu/aura-loop. Source sheet and frame16 correction master preserved in reused-original/sources. Retimed from.8s to1.0s without duplicated frames.",
+  "sourceMatchRationale": "PS002–003 violet curved blade-energy slivers and detached purple fragments around hood/limbs; open center preserves full body silhouette. Generic symmetric charge and directional special1 aura rejected.",
+  "visibleAuraHeightToBodyHeight": 1.25,
+  "processing": "Whole-cel rectangular extraction/integer packing only. No pixel edits. Display scale metadata reduced from previous1.4 visible body-height target to1.25 to match source charge envelope.",
+  "runtimeExport": {
+    "spatialScale": 1,
+    "encoding": "static lossless WebP",
+    "trim": "alpha>0; displaySize adjusted per frame to preserve exact world-space scale",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  }
+}

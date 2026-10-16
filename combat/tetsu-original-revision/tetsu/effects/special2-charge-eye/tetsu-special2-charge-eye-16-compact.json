@@ -1,0 +1,965 @@
+{
+  "character": "tetsu",
+  "kind": "effects",
+  "key": "tetsu/effects/special2-charge-eye",
+  "animation": "special2-charge-eye",
+  "src": "tetsu-special2-charge-eye-16-compact.webp",
+  "nativeFacing": "right",
+  "orientationMode": "facing",
+  "socketReference": "player-feet",
+  "sourceExistingAnchorGamePixels": [
+    0,
+    0
+  ],
+  "displayHeightBasis": 110,
+  "frames": [
+    {
+      "rect": [
+        8,
+        1392,
+        153,
+        162
+      ],
+      "pivot": [
+        85.5,
+        89.5
+      ],
+      "duration": 0.1,
+      "displaySize": [
+        0.22054054054054054,
+        0.2335135135135135
+      ],
+      "socketOffset": [
+        0.35555555555555557,
+        -0.4888888888888889
+      ],
+      "sourceBodyFrame": 2,
+      "bodyGoldEyeBounds": [
+        266,
+        292,
+        294,
+        328
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        129,
+        211,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.32432432432432434,
+      "occludedBySword": false,
+      "rgba_sha256": "1a4922784bd4b0f6472f098a3212ac49e11b0c2d432df2985261e2ed447b9409"
+    },
+    {
+      "rect": [
+        190,
+        1191,
+        161,
+        172
+      ],
+      "pivot": [
+        87.0,
+        99.5
+      ],
+      "duration": 0.1,
+      "displaySize": [
+        0.2279646017699115,
+        0.24353982300884955
+      ],
+      "socketOffset": [
+        0.35555555555555557,
+        -0.4888888888888889
+      ],
+      "sourceBodyFrame": 2,
+      "bodyGoldEyeBounds": [
+        266,
+        292,
+        294,
+        328
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        314,
+        0,
+        313,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        125,
+        128,
+        211,
+        241
+      ],
+      "sourceCoreScaleToBodyPixels": 0.3185840707964602,
+      "occludedBySword": false,
+      "rgba_sha256": "107a22d3bf5afe19d62e6abf346fe2c871c426dbcd6de7265ad7fb943db73dd7"
+    },
+    {
+      "rect": [
+        8,
+        1014,
+        166,
+        176
+      ],
+      "pivot": [
+        90.0,
+        103.0
+      ],
+      "duration": 0.1,
+      "displaySize": [
+        0.22396825396825393,
+        0.23746031746031743
+      ],
+      "socketOffset": [
+        0.4066666666666667,
+        -0.4266666666666667
+      ],
+      "sourceBodyFrame": 3,
+      "bodyGoldEyeBounds": [
+        277,
+        307,
+        306,
+        341
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        627,
+        0,
+        313,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        128,
+        212,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.30357142857142855,
+      "occludedBySword": false,
+      "rgba_sha256": "3c5fa07bcf232fb4c53607792a66b30560b6ca6d3d4c52a85c66d227be9a7086"
+    },
+    {
+      "rect": [
+        261,
+        8,
+        179,
+        185
+      ],
+      "pivot": [
+        87.0,
+        111.5
+      ],
+      "duration": 0.1,
+      "displaySize": [
+        0.2393706981317601,
+        0.24739429695181908
+      ],
+      "socketOffset": [
+        0.4066666666666667,
+        -0.4266666666666667
+      ],
+      "sourceBodyFrame": 3,
+      "bodyGoldEyeBounds": [
+        277,
+        307,
+        306,
+        341
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        940,
+        0,
+        314,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        128,
+        212,
+        241
+      ],
+      "sourceCoreScaleToBodyPixels": 0.3008849557522124,
+      "occludedBySword": false,
+      "rgba_sha256": "207ca8fe77a23e72743f79b5a77d709f9c267bd793d8f9ef5acc82dbd0458e25"
+    },
+    {
+      "rect": [
+        215,
+        811,
+        188,
+        175
+      ],
+      "pivot": [
+        86.5,
+        102.0
+      ],
+      "duration": 0.2,
+      "displaySize": [
+        0.2611111111111111,
+        0.24305555555555555
+      ],
+      "socketOffset": [
+        0.32222222222222224,
+        -0.5355555555555556
+      ],
+      "sourceBodyFrame": 4,
+      "bodyGoldEyeBounds": [
+        259,
+        282,
+        286,
+        317
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        0,
+        314,
+        314,
+        313
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        128,
+        211,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.3125,
+      "occludedBySword": false,
+      "rgba_sha256": "aefc27224cda64adaa85c98bbff04f0fec94c0d256b13f25185f65cc1acecf2b"
+    },
+    {
+      "rect": [
+        227,
+        433,
+        195,
+        176
+      ],
+      "pivot": [
+        88.0,
+        103.0
+      ],
+      "duration": 0.2,
+      "displaySize": [
+        0.2785714285714286,
+        0.25142857142857145
+      ],
+      "socketOffset": [
+        0.3688888888888889,
+        -0.5911111111111111
+      ],
+      "sourceBodyFrame": 5,
+      "bodyGoldEyeBounds": [
+        269,
+        269,
+        297,
+        305
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        314,
+        314,
+        313,
+        313
+      ],
+      "sourceEyeCoreBounds": [
+        125,
+        128,
+        211,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.32142857142857145,
+      "occludedBySword": false,
+      "rgba_sha256": "7f0c7c943512857f3372dff5c73564f8cc2f80d4c3c2748f3b6d8c0b654b3ae2"
+    },
+    {
+      "rect": [
+        8,
+        428,
+        203,
+        181
+      ],
+      "pivot": [
+        83.0,
+        109.0
+      ],
+      "duration": 0.2,
+      "displaySize": [
+        0.28194444444444444,
+        0.2513888888888889
+      ],
+      "socketOffset": [
+        0.3466666666666667,
+        -0.5311111111111111
+      ],
+      "sourceBodyFrame": 6,
+      "bodyGoldEyeBounds": [
+        264,
+        283,
+        292,
+        318
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        627,
+        314,
+        313,
+        313
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        128,
+        212,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.3125,
+      "occludedBySword": false,
+      "rgba_sha256": "bacdfd945e9da824548cb7d8cca8a4e00e989e4acd53645e12ee940e5abc8b41"
+    },
+    {
+      "rect": [
+        8,
+        8,
+        237,
+        200
+      ],
+      "pivot": [
+        99.0,
+        128.0
+      ],
+      "duration": 0.053,
+      "displaySize": [
+        0.25392857142857145,
+        0.2142857142857143
+      ],
+      "socketOffset": [
+        0.3244444444444444,
+        -0.5444444444444444
+      ],
+      "sourceBodyFrame": 7,
+      "bodyGoldEyeBounds": [
+        259,
+        284,
+        287,
+        311
+      ],
+      "sourceFile": "eye08-occluded-native.png",
+      "sourceRect": [
+        0,
+        0,
+        237,
+        200
+      ],
+      "sourceEyeCoreBounds": [
+        44,
+        72,
+        154,
+        184
+      ],
+      "sourceCoreScaleToBodyPixels": 0.24107142857142858,
+      "occludedBySword": true,
+      "rgba_sha256": "25843c9abfc7d114c521822835bf7d7dc527577cfeb87aae86da5f5e30129195"
+    },
+    {
+      "rect": [
+        215,
+        625,
+        191,
+        170
+      ],
+      "pivot": [
+        94.5,
+        97.0
+      ],
+      "duration": 0.054,
+      "displaySize": [
+        0.2576984126984127,
+        0.22936507936507938
+      ],
+      "socketOffset": [
+        0.2688888888888889,
+        -0.5511111111111111
+      ],
+      "sourceBodyFrame": 8,
+      "bodyGoldEyeBounds": [
+        247,
+        279,
+        274,
+        313
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        128,
+        211,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.30357142857142855,
+      "occludedBySword": false,
+      "rgba_sha256": "8a54ab337c0e53b5a351af496f1d49cfa479a44c0fe077938c442f9f51563a57"
+    },
+    {
+      "rect": [
+        8,
+        224,
+        208,
+        188
+      ],
+      "pivot": [
+        103.0,
+        115.0
+      ],
+      "duration": 0.053,
+      "displaySize": [
+        0.2888888888888889,
+        0.2611111111111111
+      ],
+      "socketOffset": [
+        0.35333333333333333,
+        -0.5711111111111111
+      ],
+      "sourceBodyFrame": 9,
+      "bodyGoldEyeBounds": [
+        266,
+        274,
+        293,
+        309
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "sourceEyeCoreBounds": [
+        125,
+        128,
+        211,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.3125,
+      "occludedBySword": false,
+      "rgba_sha256": "7598e3fbe36679c68a6ee3d877133c4404c03593cacd9d35ec558aa7399438bd"
+    },
+    {
+      "rect": [
+        232,
+        224,
+        204,
+        193
+      ],
+      "pivot": [
+        101.0,
+        120.0
+      ],
+      "duration": 0.053,
+      "displaySize": [
+        0.24285714285714283,
+        0.22976190476190475
+      ],
+      "socketOffset": [
+        0.3088888888888889,
+        -0.5911111111111111
+      ],
+      "sourceBodyFrame": 10,
+      "bodyGoldEyeBounds": [
+        256,
+        272,
+        283,
+        302
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        128,
+        212,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.26785714285714285,
+      "occludedBySword": false,
+      "rgba_sha256": "f0eb4fd7ad9b3628808c21637cbcd553a8d865ca467ddbeb4b5183db3b625167"
+    },
+    {
+      "rect": [
+        203,
+        1002,
+        178,
+        173
+      ],
+      "pivot": [
+        89.0,
+        100.0
+      ],
+      "duration": 0.054,
+      "displaySize": [
+        0.23309523809523808,
+        0.22654761904761903
+      ],
+      "socketOffset": [
+        0.3377777777777778,
+        -0.4777777777777778
+      ],
+      "sourceBodyFrame": 11,
+      "bodyGoldEyeBounds": [
+        262,
+        296,
+        290,
+        329
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        128,
+        212,
+        240
+      ],
+      "sourceCoreScaleToBodyPixels": 0.29464285714285715,
+      "occludedBySword": false,
+      "rgba_sha256": "82c8bf412d7f517f0879068897010c5d02e9d05e04fe5a13d9489584107eadd9"
+    },
+    {
+      "rect": [
+        8,
+        625,
+        191,
+        181
+      ],
+      "pivot": [
+        92.5,
+        108.0
+      ],
+      "duration": 0.053,
+      "displaySize": [
+        0.25011904761904763,
+        0.23702380952380953
+      ],
+      "socketOffset": [
+        0.3377777777777778,
+        -0.4288888888888889
+      ],
+      "sourceBodyFrame": 12,
+      "bodyGoldEyeBounds": [
+        261,
+        307,
+        291,
+        340
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        0,
+        940,
+        314,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        126,
+        103,
+        211,
+        215
+      ],
+      "sourceCoreScaleToBodyPixels": 0.29464285714285715,
+      "occludedBySword": false,
+      "rgba_sha256": "a45973881f3df796acea65fe589e509e1fa84ca6af826bd719cc14809e44b45a"
+    },
+    {
+      "rect": [
+        8,
+        822,
+        179,
+        176
+      ],
+      "pivot": [
+        92.0,
+        103.0
+      ],
+      "duration": 0.2,
+      "displaySize": [
+        0.2344047619047619,
+        0.23047619047619047
+      ],
+      "socketOffset": [
+        0.3111111111111111,
+        -0.4111111111111111
+      ],
+      "sourceBodyFrame": 13,
+      "bodyGoldEyeBounds": [
+        256,
+        311,
+        284,
+        344
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        314,
+        940,
+        313,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        125,
+        104,
+        213,
+        216
+      ],
+      "sourceCoreScaleToBodyPixels": 0.29464285714285715,
+      "occludedBySword": false,
+      "rgba_sha256": "31c962e9188f828090c9ac99d7134d74e3cb5bb7f9bac74b5635a626d9f8c224"
+    },
+    {
+      "rect": [
+        8,
+        1206,
+        161,
+        170
+      ],
+      "pivot": [
+        91.5,
+        97.0
+      ],
+      "duration": 0.2,
+      "displaySize": [
+        0.20444444444444446,
+        0.2158730158730159
+      ],
+      "socketOffset": [
+        0.2777777777777778,
+        -0.4888888888888889
+      ],
+      "sourceBodyFrame": 14,
+      "bodyGoldEyeBounds": [
+        249,
+        294,
+        276,
+        326
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        627,
+        940,
+        313,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        127,
+        104,
+        214,
+        216
+      ],
+      "sourceCoreScaleToBodyPixels": 0.2857142857142857,
+      "occludedBySword": false,
+      "rgba_sha256": "3ce69e870d4e5cc51d3999a109c8e66d96b6c4b430f80122f3bdff97a64acc15"
+    },
+    {
+      "rect": [
+        177,
+        1392,
+        155,
+        156
+      ],
+      "pivot": [
+        85.0,
+        83.0
+      ],
+      "duration": 0.15,
+      "displaySize": [
+        0.2091269841269841,
+        0.21047619047619046
+      ],
+      "socketOffset": [
+        0.3288888888888889,
+        -0.56
+      ],
+      "sourceBodyFrame": 15,
+      "bodyGoldEyeBounds": [
+        260,
+        277,
+        288,
+        311
+      ],
+      "sourceFile": "tetsu-special2-charge-eye-source-16-v1.png",
+      "sourceRect": [
+        940,
+        940,
+        314,
+        314
+      ],
+      "sourceEyeCoreBounds": [
+        127,
+        104,
+        215,
+        216
+      ],
+      "sourceCoreScaleToBodyPixels": 0.30357142857142855,
+      "occludedBySword": false,
+      "rgba_sha256": "bcf0a999dc5e973e56c8bf77bd06f2be8678e0bfbabf689e1d1a7d954cb61d2d"
+    }
+  ],
+  "frameCount": 16,
+  "durationSeconds": 1.87,
+  "status": "Visually reviewed source-faithful overlay proof; in-engine acceptance pending",
+  "sourceActiveIntervalSeconds": [
+    0.1,
+    1.97
+  ],
+  "layer": "in-front-of-body",
+  "timingNote": "Purple eye starts atPS002 .1s and remains throughPS007, returning gold atPS0081.97s. Eye-cel boundaries align with corresponding body-cel changes, so fixed per-frame offsets remain attached.",
+  "sourceProvenance": "16 new built-in imagegen eye cels; one source-faithful occluded-eye redraw replaces cel8 to keep the raised katana in front of the eye. Both high-resolution sources and prompt files retained.",
+  "processing": "Whole-cel extraction/integer packing, with one uniform spatial normalization of the independently drawn partial-eye correction. No recoloring of body artwork, duplicate padding or generated in-betweens.",
+  "bodyEyeSocketMeasurements": {
+    "2": {
+      "center": [
+        280.0,
+        310.0
+      ],
+      "normalizedFromFeet": [
+        0.35555555555555557,
+        -0.4888888888888889
+      ],
+      "goldBounds": [
+        266,
+        292,
+        294,
+        328
+      ]
+    },
+    "3": {
+      "center": [
+        291.5,
+        324.0
+      ],
+      "normalizedFromFeet": [
+        0.4066666666666667,
+        -0.4266666666666667
+      ],
+      "goldBounds": [
+        277,
+        307,
+        306,
+        341
+      ]
+    },
+    "4": {
+      "center": [
+        272.5,
+        299.5
+      ],
+      "normalizedFromFeet": [
+        0.32222222222222224,
+        -0.5355555555555556
+      ],
+      "goldBounds": [
+        259,
+        282,
+        286,
+        317
+      ]
+    },
+    "5": {
+      "center": [
+        283.0,
+        287.0
+      ],
+      "normalizedFromFeet": [
+        0.3688888888888889,
+        -0.5911111111111111
+      ],
+      "goldBounds": [
+        269,
+        269,
+        297,
+        305
+      ]
+    },
+    "6": {
+      "center": [
+        278.0,
+        300.5
+      ],
+      "normalizedFromFeet": [
+        0.3466666666666667,
+        -0.5311111111111111
+      ],
+      "goldBounds": [
+        264,
+        283,
+        292,
+        318
+      ]
+    },
+    "7": {
+      "center": [
+        273.0,
+        297.5
+      ],
+      "normalizedFromFeet": [
+        0.3244444444444444,
+        -0.5444444444444444
+      ],
+      "goldBounds": [
+        259,
+        284,
+        287,
+        311
+      ]
+    },
+    "8": {
+      "center": [
+        260.5,
+        296.0
+      ],
+      "normalizedFromFeet": [
+        0.2688888888888889,
+        -0.5511111111111111
+      ],
+      "goldBounds": [
+        247,
+        279,
+        274,
+        313
+      ]
+    },
+    "9": {
+      "center": [
+        279.5,
+        291.5
+      ],
+      "normalizedFromFeet": [
+        0.35333333333333333,
+        -0.5711111111111111
+      ],
+      "goldBounds": [
+        266,
+        274,
+        293,
+        309
+      ]
+    },
+    "10": {
+      "center": [
+        269.5,
+        287.0
+      ],
+      "normalizedFromFeet": [
+        0.3088888888888889,
+        -0.5911111111111111
+      ],
+      "goldBounds": [
+        256,
+        272,
+        283,
+        302
+      ]
+    },
+    "11": {
+      "center": [
+        276.0,
+        312.5
+      ],
+      "normalizedFromFeet": [
+        0.3377777777777778,
+        -0.4777777777777778
+      ],
+      "goldBounds": [
+        262,
+        296,
+        290,
+        329
+      ]
+    },
+    "12": {
+      "center": [
+        276.0,
+        323.5
+      ],
+      "normalizedFromFeet": [
+        0.3377777777777778,
+        -0.4288888888888889
+      ],
+      "goldBounds": [
+        261,
+        307,
+        291,
+        340
+      ]
+    },
+    "13": {
+      "center": [
+        270.0,
+        327.5
+      ],
+      "normalizedFromFeet": [
+        0.3111111111111111,
+        -0.4111111111111111
+      ],
+      "goldBounds": [
+        256,
+        311,
+        284,
+        344
+      ]
+    },
+    "14": {
+      "center": [
+        262.5,
+        310.0
+      ],
+      "normalizedFromFeet": [
+        0.2777777777777778,
+        -0.4888888888888889
+      ],
+      "goldBounds": [
+        249,
+        294,
+        276,
+        326
+      ]
+    },
+    "15": {
+      "center": [
+        274.0,
+        294.0
+      ],
+      "normalizedFromFeet": [
+        0.3288888888888889,
+        -0.56
+      ],
+      "goldBounds": [
+        260,
+        277,
+        288,
+        311
+      ]
+    }
+  },
+  "runtimeExport": {
+    "spatialScale": 1,
+    "encoding": "static lossless WebP",
+    "trim": "alpha>0; displaySize adjusted per frame to preserve exact world-space scale",
+    "paddingPixels": 8,
+    "mastersUnchanged": true
+  }
+}
