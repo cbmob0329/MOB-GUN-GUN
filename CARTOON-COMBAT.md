@@ -296,3 +296,116 @@ Denden必殺1/2はbeginCharge/castThunder、NyoroはcastNyoro(0/1)、Tetsuはcas
 - effects/special1-spin-back/frontの両画像が描画可能な時だけ、背面→本体→前面。同時刻・同方向・同座標。片方未読込なら互換effects/special1-spinを前面へ1回だけ、互換もなければ表示なし。通常/覚醒に対応。
 - effects/strong-blow、strong-launch、strong-rushは技開始から終了まで、player.x/player.y（足元）に追従し、本体の実描画確認時刻と同期。hit-heavyへの割当はしていない。専用キーがあれば旧launch/rush-trailは重複表示しない。通常の命中フィードバックは別処理として維持。
 - 新画像未到着のため現在のゲームでは新FXは表示されない。実装ロジック検証156チェック、既存描画補正312チェック通過。新画像の顔への重なり・実見た目・新メモリピークは素材到着後に確認。
+
+## 2026-10-16 再接続後の統合結果（過去の未反映記録より優先）
+実行環境は復旧。権限上の拒否/保留/結果不明なし。公開・push・commitは実行していない。作業中に外部更新でHEADがa2795f5 upへ進み、統合ファイルがコミット済みになったことを観測。巻き戻していない。
+611キー読込エラー0。ラミ/マニー歩行・魔法を保持し、マニーdash、ピンク基本8、テツ元必殺2技とFX、ニョロidle/walk候補を部分置換。未完成REVIEW必殺は未導入。
+マニー歩行99px/周期、dash160px/周期を移動距離に同期。walk/dashは同じ脚の位相対応表で接続。ピンクwalk64px/周期、ニョロwalk100px/周期へ仮調整し左右再生を再確認。移動速度自体は変更していない。
+接地診断: 最下端alpha画素のYはマニーwalk -0.73〜-0.36px、ニョロwalk -0.44〜+0.06px、ピンクwalk -1〜0px。関節追跡ではない。横滑りは未解決で、マニーwalk2→3の接地点候補が+3.09px戻るため一定速度だけでは吸収できない。帽子dash4→5/13→14、下降14→15、walk6→7/11→12/16→1を原画と合わせて継続評価。全身fitや旧絵への差戻しで隠していない。
+実ブラウザー連続キー操作: ピンク弱4段それぞれ16/16、ラミ通常/覚醒×左右でstartup16枚2周（wrap1回）から突進・終了、テツHSP/PS左右命中54/96と終了。テツ新背面オーラ0.1〜1.1、前面眼光0.1〜1.97、新斬撃/残像を既存戦闘時計へ接続。
+巨大orbの接地代入に旧112pxが残っていた不具合を修正し180pxへ統一。高さ24px敵×距離35/80/350/700×左右×通常/強化=16ケースで一度だけ命中。
+回帰: 攻撃32ケースの60/30fps全16/16と中断12ケース、画像遅延時hit0/move0/age0、root-lift312、二層FX156、素材参照878通過。現行キャッシュpeak 63.57813MiB/64MiB、失敗0。既存全テストを網羅したという意味ではない。
+実行中Downloads/file/receivedへのリクエスト0件。HTML/JSにもDownloads実行参照なし。下記7ZIPは必要素材をcombat以下へコピー済みで、実行時には不要。候補の再調整/復元用バックアップとして保管は推奨するが、Downloadsに置き続ける必要はない。ファイル削除はしていない。MOB-RAMI-START.cmdはZIPと別の起動用ファイルとして保持。参照先のtask/gungun-quality-repair/start-rami.ps1とserve.cjsも保持。
+- MOB-RAMI-REPAIR-20261015-runtime.zip | 13877138bytes | SHA256 5258dfa76a9af907b72f24729e9e93482aa80f00ec605f8ff948f6a298a9b05c
+- MOB-MANNY-MAGIC-FX-REVISION-20261015-v2.zip | 8753450bytes | SHA256 dbec35cc0f9eeaf8db1c444681a567007dc7c17655c45b036645462287da64b6
+- MOB-MANNY-WALK-REVISION-20261015-v1.zip | 6464087bytes | SHA256 cb6b12a1a4469a318b8bc968488675b27be84c7fc6b0b37af8bf46e1483ab1b6
+- MOB-MANNY-DASH-REVISION-20261015-v1.zip | 6163718bytes | SHA256 18a2e75aa4f340d7319f9f758c2d55f9cbbf000045d304bf95ad97fbfb2d4065
+- MOB-PINK-PLAYABLE-16-runtime-base8.zip | 1544725bytes | SHA256 89745c54247f70224783f1c8e64e31706c9bc50f609284d2c6857a789b809418
+- MOB-TETSU-original-specials-16-runtime.zip | 5027333bytes | SHA256 6b67d1a9b3ad4724c3dc63242b62a6d9fc34f3207077cebd6d0b9125a23fd138
+- MOB-NYORO-approved-model-idle-walk-CANDIDATE.zip | 12300492bytes | SHA256 8020448c65d411799c82e6c10d1f1e995e75980d69d99c250b03cba23a6b6d67
+最初の4ZIPは受領済み期待SHA256と一致。後半3ZIPは受領ファイルのSHA256を採取。テツ同梱チェックサム15件、ニョロ24件も一致。
+元FX資料: Downloads/MOB-ORIGINAL-FX-MEASUREMENTS-20261016.zip、3944852bytes、SHA256 0981d4fca08b75063deff03eafcabf4ecbd0d29df03461424854c9233e2d8709。元PNGは無改変、測定JSON同梱。
+デンデン033/034/035/036 raw=116x70/287x167/324x208/231x62、trim=114x68/285x165/322x207/229x60。地上波drawImageは140x120、左上(x-70,y-120)、底辺中央(x,y)基準。旧3連波にも115x80.5、175x122.5、245x171.5で使用。
+デンデンenergy017〜024は中心基準、高116、幅順137.75/127.74/131.95/121.47/117.69/126.48/122.12/122.91。溜め36→116高、発射0.25秒、現行root+(dir*48,-47)。新socket候補は未反映。雷86〜89は底辺中央、高360、幅231.51/267.69/272.08/308.50。
+ニョロ01〜03 raw=80x99/209x210/254x226、trim=78x97/207x208/253x224。小炎は中心基準・最大辺28（22.52x28/27.87x28/28x24.79）、燃焼は最大辺35、隕石前炎は最大辺63でイベント点からY-15。04雨=92x79.75、05隕石=190x166、どちらも弾の中心基準。原画像04=338x293、05=285x249。着弾リング/破片/雲と電気泡爆発は旧コード描画で元スプライトなし。
+未完成: デンデン/ニョロ必殺の新素材、ピンク強・必殺・被弾等、移動候補の完全な接地滑り解消と原画最終受入。旧絵表示の残存は完成扱いにしない。
+証跡: task/gungun-quality-repair/resume-qa-results.json、resume-poses.json、movement-final-results.json、sole-trajectories.json、saved-zip-audit.json。
+
+## 2026-10-16 実プレイ不具合の修正（resident-1）
+
+基点 HEAD a2795f5。既存の未コミット CARTOON-COMBAT.md と tests/cartoon-resume-assets.test.cjs を保持。push/公開なし。画面左下のビルド表示は 20261016-resident-1。ローカル配信は127.0.0.1:4173。ユーザー自身の開いているタブは接続ツールの初期化エラーで確認できず、「古い版が原因」とは断定していない。検証ブラウザーはservice worker登録0。
+
+確定原因と変更:
+- 64MiBキャッシュにラミ337.625MiB/71ページ、マニー324.181MiB/49ページ等をオンデマンドで出し入れ。従来のラミ・マニー12技切替約11秒でデコード43回/退避41回。未読の16コマ攻撃は描画承認まで時計と移動を止めていた。
+- combat-loading.js はキャラの全ページ（ラミは通常＋覚醒）を開始前に準備。原画を変更せず、均一縮小デコードして世界座標・pivot・キャラ比率を保持。常駐分目標60MiB、同時ロード上限2、メタデータ同時取得上限8。表示解像度はラミ0.422倍、マニー0.430倍、他は0.483～1倍。これはGPU/ブラウザー全メモリではなく管理対象キャッシュの上限。原解像度のまま全ページを64MiBに常駐させることはできない。
+- 16枚全部の描画を待つ時計を廃止。アクション時刻で描画と当たり判定を進め、低fpsでコマが飛んでも入力を停止しない。キャラ切替の準備は一時停止した選択画面で完了させる。
+- 普通のジャンプから弱を入力するとairLeft=0で拒否されていた。初回空中攻撃を許可し、3回上限・3段目の叩き落とし・着地リセットを維持。
+- デンデンのスキル3本体は残っていたが、共通UIが非表示、Digit3が覚醒へ横取り。デンデン3=サンダーバレットを復旧。ニョロ3=炎の城、テツ3=MOB斬りも復旧。覚醒Eはラミのみ。
+- ニョロの旧アトラスはモーションごとにbodyHeight164～212等とばらついていた。基本基準220へ統一。旧dashのみ元モデルの拡大された頭部を合わせる固定基準330（暫定、全16コマ同じ倍率）。新idle/walk=220を維持。旧必殺は旧ニュートラル1番を固定基準とし、毎コマbbox fitしない。
+- デンデン旧必殺の88px基準を通常110pxに合わせ、旧素材の系列ごとにニュートラル1枚から固定倍率を使用。新しいデザインとの一致は未達。
+- ラミ水必殺の専用透過FXは幅71.06/高83.98px指定で体より小さかった。既存水流・飛沫の表示を4倍（最初の水流284.24×335.92px）にし、通常半径110/覚醒135、速度(+/-650,750)を使用。円の代用品は追加していない。既存元PNG/WebPは不変。
+
+検証:
+- tests/cartoon-resident-play.test.cjs: 7キャラ、実キー左右移動→idle、SPACE→J、既存3キャラのDigit3、各攻撃表示。戦闘中の追加デコード0、追加LongTask0、失敗0、最大63,072,652bytes=60.1517MiB（64MiB以内）。全7キャラの左右比較画像を目視。
+- tests/cartoon-presentation-clock.test.cjs: 新しい実時間時計の15/30/60fps×通常/覚醒×4分岐24ケース、地上4連撃、空中3回→slam、4回目拒否、着地リセット、被弾中断、追加デコード0。
+- tests/cartoon-unit.test.cjs と cartoon-final-assets.test.cjs: 効果の位相/左右ソケット、878契約チェック、611キーを確認。
+- 実パーティ交代hero→manny→nyoroと被撃破からdendenへの自動交代、ラミ2番の斜め下水流を確認。初回起動15.385秒、キャラ準備1.051～2.181秒（このPC、ローカルサーバー）。起動時の既存全素材処理には長いメインスレッドタスクが残る。
+
+原画待ち（完成扱いしない）:
+- デンデンwalk/dash全16コマ: 脚が長いのは原画の形状。短い胴・短い脚へ描き直し、足裏pivot/左右の支持脚を保持。技1/2/3の本体は旧絵が残る。新モデルでチャージ/放出、雷詠唱、3連雷弾の全動作が必要。元の雷/エネルギー発動時刻と範囲を保持する。
+- ニョロ: 新モデルはidle/walkのみ。他のdash/jump/light1-4/charge/4強分岐/air1-3/slam/guard/crouch/damage/death/recoveryと固有3技は旧モデル。固定基準を直しても顔・胴・傘・脚のモデル差は解消しない。承認モデル、原画基準220、足裏pivot、傘を含めたbboxで身長を合わせない条件で差し替えが必要。
+- ラミ必殺2の意図は跳躍→斜め下への巨大水エネルギー→着水飛沫。現素材はruntime-final/hero/combat/hero/adapters/special2.jsonとmobrami-fx-special2-water-16 / special2-splash-16。最新hero-revisionは必殺1中心で、必殺2の改訂本体は未提供。新規は本体の跳躍予備/空中溜め/武器から放出/反動着地を短胴短脚の承認モデルで描く。body220/display110、両足の基準pivot、通常/覚醒各版。水流は身体を含まない透過16コマ、下向きnativeAngle=PI/2、実表示約280×336以上の太い水柱、噴出元pivotと武器socketを明記。着水飛沫は別透過16コマ・接地点pivot。発射は通常約0.417秒/覚醒用素材約0.425秒のアクション時刻。現在は既存FXの縮小指定を修正した段階で、原画の最終品質承認ではない。
+
+既存の三国無双型入力体系は変更していない。今後は初回の旧素材一括ロードと原画統一を続ける。ユーザーの実タブ、スマホ実機、全20ステージの長時間再走は今回未検証。
+
+## 2026-10-16 段階ロード staged-2 と原画引渡し契約
+
+ビルド: 20261016-staged-2。HEAD a2795f5を維持。game-staging.jsが初回の全素材一括読込を置き換える（legacy=1では従来一括読込を維持）。coreは草原共通物と支援ピンク、選択キャラは必要な旧動作を含めて準備、世界はその背景/小物/2種類の敵のみ、ボスはArea4、シャーティーは砂漠Area2だけ。選択画面は画像全体の準備前から操作可能。開始・世界遷移・交代は必要素材が揃ってから進み、戦闘中に準備を隠さない。素材準備中のESC/再開も制限。未準備世界への切替中にdrawが旧シーンを新しいbiomeArtで描こうとする不具合を回帰で発見し、描画ガードを追加した。
+
+ローカル冷起動2回平均（保存した修正前ファイルを検証ブラウザーへ配信、同じゲーム/操作/PC。ネットワークや端末で変動）:
+選択操作可能: 13.803秒 -> 2.344秒。
+ナビゲーション開始から戦闘準備完了: 15.835秒 -> 4.059秒。
+ラミ交代: 2.367秒 -> 2.196秒。
+テツ交代: 1.572秒 -> 2.298秒。
+ニョロ交代: 1.672秒 -> 3.382秒。
+起動+この3交代の合計: 21.446秒 -> 11.935秒。未選択の旧ボディ読込を交代画面へ移す分、テツ/ニョロの交代準備は増加したが、合計でも短縮。初回戦闘までのLongTaskは71～87件 ->6～7件、最大230～275ms ->128～160ms。これらはキャッシュ管理分64MiBとブラウザー全メモリを同一視していない。
+
+検証: 全20エリアで必要背景/敵/ボスを準備して描画、ミラモブ別ボス、次世界への遷移、通常交代3種、自動交代、戦闘中追加デコードなし、pageerror0。878アセット契約チェック、FX位相/左右ソケット、地面波140x120と雷弾3サイズのcaller指定優先を確認。計測JSONとテスト画像は一時作業フォルダーに保存。
+
+Library引渡し:
+- 現行デンデン: libfile_28e251ce9f5c819194cb9149669c48da / file_000000005fc48230a35335a6c45f5db7 / MOB-DENDEN-CURRENT-REFERENCE-20261016.zip /10,699,958bytes。現行idle/walk/dashのatlas+adapter、旧denden025、スキル3旧033～040、skill033～036と86～89、SHA256一覧。元画像無改変。現行idleを参照用に同梱したが、独立した承認済み立ち絵は見つからず、承認済みとは記載していない。
+- マニー接地監査: libfile_8999183cc3fc81919498a732eb73ec1c / file_00000000431881fd905aab5d08214c63 / MOB-MANNY-GAIT-AUDIT-20261016.zip /3,437bytes。manny-gait-contact-audit.csv + manny-gait-audit-notes.txt。下端alpha測定は足の個体IDを保証しないため、曖昧なコマの注記を必ず読む。
+
+ラミ必殺2（現行値、新原画の承認仕様ではない）:
+- 通常/覚醒32コマ、startup[0,16)、active[16,24)、recovery[24,32)。技時計0～.36/.36～.55/.55～1.05秒。発射global index19（20枚目=active4枚目）。通常発射.4171544715秒、覚醒.4253393665秒。覚醒攻撃時計1.65倍なので実時間.2577814343秒、全体.6363636364秒。通常全体1.05秒。
+- 発動時vy=-800、重力1800、足元rootが跳躍に従って動く。通常socket=[.1705882353,-.1882352941]×110、覚醒=[.3323529412,-.3088235294]×110。世界座標は通常(x+dir*18.76470588,y-20.70588235)、覚醒(x+dir*36.55882353,y-33.97058824)。左右はdir=+1/-1。新原画の武器口が変わる場合は原画側から新socketを明示し、統合時に合わせる。
+- 速度(vx,vy)=(dir*650,750)、寿命1.7秒または地面到達まで。敵ごとに1回、通常52/覚醒80ダメージ、半径110/135。衝突後も水流は地面まで進む。着水時の飛沫は.35秒の表示、追加範囲ダメージなし。水必殺自体の無敵はなし（踊りとは別）。
+- 既存の水流は下向き原画nativeAngle=PI/2を速度角に回転。現表示幅284.24～344.08、高310.08～345.44px。着水飛沫幅597.5～652.5、高537.5～632.5px、地面pivot。通常/覚醒で同じ水流/飛沫原画・表示寸法、違いは本体姿/攻撃速度/ダメージ/判定径。円の代用品なし。
+- body基準220/display110、足元pivotは各コマadapterが正本。先頭pivot通常(115.17647,253.58824)、覚醒(95.17647,239.58824)。元ゲームでこのruntime以外のラミ固有水技原画は発見していない。残す要素は跳躍、斜め下へ武器から放出、巨大水流、独立した着水飛沫、短胴短脚と固有武器。承認モデルで腰をひねって押し出す新本体、水流と飛沫は独立透過画像。旧runtimeを完成扱いしない。
+
+デンデン/ニョロの本体基準:
+- デンデン16コマ案は全てbodyHeight220/display110、右向き原画をdirで反転、足元は各コマpivot。idle/walk/dash先頭pivotは(106.489796,221.142857)/(135.333333,215)/(164.290749,220.048458)。この16コマ案も脚長等の未承認問題あり。
+- デンデン固有技1～3は旧本体描画。通常旧原画基準sprites025高さ294→110、技1系skill001高さ304→110、技3trim済033高さ981→110の固定倍率。各画像下中央を足元rootに置く（毎コマbbox fitなし）。技3の8コマは.075秒ずつ、最後を.72秒まで保持。
+- ニョロ新idle/walkは220→110、先頭pivot(122.336727,208.215313)/(143.668810,202.870096)。旧基本モーションも220、旧dashだけ暫定330→110（先頭pivot183.971831,313.408451）。旧必殺原画はneutral001のtrim高359を固定基準に110/359、下中央pivot。旧モデルを新モデルとみなさない。
+- 共通16コマスロット一覧: idle,walk,dash,jump,light1～4,air1～3,slam,charge-start,charge-hold,blow,launch,ranged,rush,guard,crouch,damage,death,recovery,awakening-start/end,special1-startup/active/recovery,special2-startup/active/recovery。ニョロはidle/walkだけ新モデル候補、それ以外は未承認旧モデル。固有技描画はこのspecialスロットより旧技ルートが優先される。ニョロ技1は旧032/033、技2は旧034～042、技3は旧031→039等。デンデン/ニョロの覚醒スロットは共通schema用で、現操作の覚醒はラミだけ。
+
+デンデン技3・放電hook:
+- 技3発射.24/.37/.50秒。足元rootからdir*95/225/395の地面位置。バースト寿命.40秒、攻撃判定最初.22秒、ダメージ36/48/60、CD10秒。表示115x80.5/175x122.5/245x171.5、下中央pivot。
+- groundBoltsは別用途で140x120、16fps、寿命.75秒、水平500px/s、下中央pivot。元033～036は水色/青輪郭の地面ジグザグ放電+黄色小火花。86～89の黄色縦雷と混同しない。
+- cartoonDrawEffectAtSize(key,x,y,w,h,age,duration,dir)がcallerのw/hをart.displaySizeより優先。denden/effects/ground-wave と denden/effects/thunder-burst を別aliasにできる。原画は共通でもよい。pivotを下中央・socketOffset=[0,0]にする。新texture追加時はtexture-catalog.jsonにも実寸を登録し、開始前常駐プランへ入れる。現在は新wave未受領のため旧FXへフォールバックしている。
+
+## 2026-10-16: seven saved runtime packs (20261016-sevenpacks-1)
+
+Integrated locally from user-saved Downloads ZIPs; no Library transfer workaround, commits, push or publication. Pre-integration JS/HTML/docs/manifest/catalog are retained at C:/Users/CB-Me/Documents/Codex/2026-10-15/task/gungun-quality-repair/before-six-packs. Existing uncommitted changes are retained.
+
+- Rami water v3: normal/awake sixteen-cell full bodies and range aliases, leading-front water and separate splash. The supplied three-cell active files are represented as [6,9) windows of full bodies; the sixteen-cell validation guard is unchanged. Release clocks .417154/.425339, normalized muzzle sockets, physics650/750, damage52/80, radii110/135, origin-based ground contact and .35s splash retained. No jump enlargement or landing wait.
+- Denden: short-leg walk and newly saved short-leg dash, plus original skills1/2 and skill3 bodies/FX. Charge sockets follow body frames0–5, release uses the dedicated socket once. Energy charge sizing36–116 is caller-controlled; impact .65s fade retained. Lightning height360/aspect preserved with original falling/contact clocks. Skill3 retains .24/.37/.50, .72s duration, original positions and damage; muzzle uses the whole body clock.
+- Nyoro: rain/meteor bodies, projectiles, flame and illustrated impact. Rain body loops until its own five shots expire; meteor .85s and impact1.1s unchanged. Dedicated impact uses caller terminal alpha. Ordinary actions other than existing idle/walk remain older model work; not declared complete.
+- Manny: body80, speeds190/340, distance cycles99/160. New gait metadata explicitly maps to engine strideDistance and loop:true. Both transition directions select the old cell using cumulative durations and enter the mapped new cell at its cumulative start. No root correction or per-frame size fitting.
+- All imported string nativeFacing values are mapped to the engine numeric convention in the merged manifest; source adapters stay unchanged. Alias chains are flattened to canonical full clips so loading is independent of alias ordering. Selected-character resident loading and bounded decoder remain in place.
+
+Validation: 32 special/render cases at30/60fps and both directions; 16 actual gait cases (both characters, directions, rates, walk/dash); 6 actual enemy-impact cases; 24 shared-combat timing cases; 8 skill3 clock cases; 712 metadata/phase checks; 20 campaign areas plus boss/next-world/voluntary and forced-party transitions. Seven-character real-time input regression passed. No asset/page errors or combat-time decodes in these runs. Peak tracked character texture storage approximately60.14MiB of64MiB budget; this is not total browser/GPU/legacy-stage memory. Selected atlas sources are uniformly downsampled at decode, retaining world-space dimensions.
+
+Visual inspection: rendered left/right short-leg dash preserves both guns, short legs and alternating foreground/background legs; walk/idle/skills retain fixed scale. Manny60fps sampled all16 cells;30fps dash naturally sampled15 in the2s window without slowing the game. Residual anatomical foot-slip is not certified zero. Giant lightning and splash deliberately exceed body dimensions; some overlap and softened enlarged FX from the bounded texture tier remain visible. Nyoro ordinary light/dash model differences remain.
+
+Evidence: %TEMP%/gungun-six-pack-qa (timing, screenshots), %TEMP%/gungun-seven-pack-qa (gait and actual enemy impacts), %TEMP%/gungun-staged-qa, %TEMP%/gungun-resident-qa. Automated tests use Edge; the user's already-open browser tab and physical phone have not been inspected.
+
+## 2026-10-16 Nyoro dash/jump addition (20261016-nyoro-move-1)
+
+User-saved MOB-NYORO-shortleg-dash-jump16-RUNTIME-CANDIDATE.zip verified:1701502bytes, SHA256185b243d18e453bc377cb67e67794be8651beb8cf38a13df9d99ef08ebc94981. Only nyoro/dash and nyoro/jump plus their shared awakened aliases changed. Prior seven-pack files backed up under gungun-quality-repair/before-nyoro-move. Fixed draw reference220/display110; no per-frame fit or root edits. Dash .56s and speed340 retained.
+
+Existing generic jump rendering stretched the full track over flight, which would display the new landing poses while airborne. Added a Nyoro-only visual selector: airborne [3,11), actual contact starts [11,16) for its authored .24s, movement/attack interrupts landing presentation. Preparation[0,3) is preserved in the source but not forced ahead of the immediate physics jump. Physics force790, gravity1800, floor collision and control response unchanged. Lower landings hold the last air pose if needed; no mid-air landing pose or flight extension.
+
+Passed16 jump cases:30/60fps x both directions x source/destination floor combinations548/548,548/400,400/548,400/400. Actual platform collision used. Same-height flight remains approx.878s. Passed8 Nyoro gait cases at190/340 with all16 cells sampled; natural source leg alternation, both hands, umbrella and short legs inspected in rendered captures. Continuous display reference is stable against idle/walk; crouch/landing silhouette compression remains authored. Exact foot-slip zero is not claimed. Current weak attacks and other unprovided motions remain old art.
+
+Evidence:%TEMP%/gungun-nyoro-move-qa/results.json and jump screenshots; %TEMP%/gungun-seven-pack-qa/nyoro-dash-1.png and nyoro-dash--1.png. No battle-time asset decodes or page errors observed. Existing actual-phone limitation remains.

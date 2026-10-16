@@ -1,0 +1,83 @@
+{
+  "src": "awakened-special2.webp",
+  "bodyHeight": 220,
+  "frames": [
+    {
+      "duration": 0.06533900000000004,
+      "pivot": [
+        170,
+        219
+      ],
+      "sourceCel": 6,
+      "rect": [
+        1054,
+        792,
+        339,
+        284
+      ]
+    },
+    {
+      "duration": 0.06233050000000001,
+      "pivot": [
+        138,
+        248
+      ],
+      "sourceCel": 7,
+      "rect": [
+        1393,
+        8,
+        362,
+        354
+      ]
+    },
+    {
+      "duration": 0.06233050000000001,
+      "pivot": [
+        211,
+        307
+      ],
+      "sourceCel": 8,
+      "rect": [
+        387,
+        432,
+        363,
+        336
+      ]
+    }
+  ],
+  "loop": false,
+  "nativeFacing": 1,
+  "authoredCelCount": 16,
+  "durationUnits": "seconds in action clock",
+  "pivotUnits": "runtime pixels relative to trimmed rect",
+  "duration": 0.19,
+  "releaseFrame": 1,
+  "releaseSocket": [
+    0.7879761801719158,
+    0.04239584536964211
+  ],
+  "phaseRanges": {
+    "startup": [
+      0,
+      6
+    ],
+    "active": [
+      6,
+      9
+    ],
+    "recovery": [
+      9,
+      16
+    ]
+  },
+  "scaleReference": {
+    "nearGoldGlassesEquivalentDiameterRuntimePixels": 26.4,
+    "note": "Physical head/eye calibration; never fit body to varying weapon/hair rect."
+  },
+  "completeSequenceId": "awakened-special2",
+  "phaseWindowOnly": true,
+  "phaseRange": [
+    6,
+    9
+  ]
+}

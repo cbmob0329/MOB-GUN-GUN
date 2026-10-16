@@ -1,0 +1,19 @@
+{
+  "README-JA.txt": "f7d0cace4045476daab9cc1c4f1ab966a20c100c5357b6a44a18dcee5b84cfb4",
+  "manifest.json": "188ec84a4e2a924ee8bcdc3f01d078b72005dc96d46fd5d10b1a401abdac6aff",
+  "manny/dash/atlas.webp": "072cf42e3fee6e3f6a1b55586f41e593f11f1f0dbf99b589e1ca570751a338df",
+  "manny/dash/clip.json": "74a369afe7cf719e7cce992d18a1111a1104455a8e651821c9ab1fc849f10267",
+  "manny/walk/atlas.webp": "2839a0ff9102ff75812b564b2a5ceb94d26debb483d2844a52c1032844e72857",
+  "manny/walk/clip.json": "89a18c41c0c4c39c35859beecaba698c83a922de09222c494b9d307b52a187d9",
+  "qa/dash-candidate-all16.jpg": "f224e8528ceb8fd8b480f5a0a90017d108648a51acc492437b0743e07d0ee79d",
+  "qa/dash-cycle-80px.mp4": "1920963352ea508358b95c691f9e75a71b69c047bff85514dd808a4974a490ce",
+  "qa/dash-foot-landmarks-all16.jpg": "9e0d57d553f47619d6e6d16870d858f655881f3d05ad213a503e5eea3c0bc4fa",
+  "qa/foot-landmark-contract.json": "114e3f46492bf286680f8227f911b7cc655d67b822a132c7ea6800586f7a95fc",
+  "qa/foot-landmarks.csv": "6ff5a20dd7ae30782a64342dacbf53b25bea8e779d81ed084a535592ce6c0bbf",
+  "qa/gait-review-contract.json": "2c98d9b8a8b7ad6b59a87ef6b1fb546b1b5f212f40f79f36afbebc3531a1cc19",
+  "qa/join-continuity-latest.jpg": "2a59bf4b120b7b17ef0039c14b607a3b77f746b82fea03799fa00faed52c53f9",
+  "qa/walk-candidate-all16.jpg": "2663827ed5e16747c93ef96985542a7872235ed97f62b41a21d9aaadd5297805",
+  "qa/walk-cycle-80px.mp4": "7a74cda603c26e138770bbb549b5a7c5ba9cf20a75617cadd4231bce072f2373",
+  "qa/walk-foot-landmarks-all16.jpg": "14071c5472196e7b398cc743648cef6b5ff3d3420a2de0d4b7ba2a6d60b9dbf5",
+  "runtime-audit.json": "c19e977ec5ae3cd1a59cfe4bdcf142af9b62ceee95d8ef66c631581ab34823c3"
+}

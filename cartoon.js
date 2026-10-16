@@ -7,6 +7,7 @@ const cartoonProfiles={hero:{color:'#ff80cd',name:'モブラミ'},denden:{color:
 Object.assign(cartoonProfiles,{manny:{color:'#8de985',name:'モブマニー',displayBodyHeight:80},mobdesert:{color:'#c9a0ff',name:'モブデザート'}});
 let cartoon,cartoonPlayer=null,cartoonCharacter=null;
 const cartoonArt={},cartoonBindings=new Map();
+let cartoonArtReady=Promise.resolve();
 const cartoonHolds={guard:new Set(),crouch:new Set()};
 function cartoonReset(){cartoon={action:null,combo:0,window:0,charge:null,air:0,airLeft:0,awake:0,awakeCooldown:0,cooldowns:[0,0],shots:[],effects:[],queued:false,buffer:0,hitStop:0,shake:0,flash:0,hits:0,hitWindow:0,uiClock:0};for(const button of cartoonBindings.values())button.classList.remove('pressed');cartoonBindings.clear();}
 cartoonReset();
@@ -22,7 +23,7 @@ function cartoonAction(type,opts={}){cartoon.action={type,age:0,dir:player.dir,d
 function cartoonWeak(){
  if(!cartoonReady()||cartoon.charge)return false;
  if(cartoon.action){if(['light','air','launch'].includes(cartoon.action.type)&&!(cartoon.action.type==='air'&&cartoon.action.index===3)){cartoon.queued=true;cartoon.buffer=selectedCharacter==='hero'?cartoon.action.duration-cartoon.action.age+1:.30;}return false;}
- if(!player.grounded){if(cartoon.airLeft<=0||cartoon.air>=3)return false;cartoon.air++;cartoon.airLeft=1;player.vy=-220;cartoonAction('air',{index:cartoon.air,duration:.23});return true;}
+ if(!player.grounded){if(cartoon.air===0)cartoon.airLeft=1.35;if(cartoon.airLeft<=0||cartoon.air>=3)return false;cartoon.air++;cartoon.airLeft=1;player.vy=-220;cartoonAction('air',{index:cartoon.air,duration:.23});return true;}
  cartoon.combo=cartoon.window>0?cartoon.combo%4+1:1;cartoon.window=CARTOON.comboWindow;
  cartoonAction('light',{index:cartoon.combo,duration:selectedCharacter==='hero'?[0,.56,.595,.63,.7175][cartoon.combo]:cartoon.combo===4?.36:.25,...(selectedCharacter==='hero'?{timing:[.245,.42]}:{})});return true;
 }
@@ -85,7 +86,7 @@ function cartoonReleasePose(art,a,age,duration){
  if(age<localEvent&&index>first)return cartoonFrame({...art,frameRange:[first,index],loop:false},age,Math.max(.000001,localEvent));
  return cartoonFrame({...art,frameRange:[index,last],loop:false},Math.max(0,age-localEvent),Math.max(.000001,duration-localEvent));
 }
-function cartoonShot(a,water=false){const origin=cartoonReleaseOrigin(a)||{x:player.x+a.dir*36,y:player.y-55};cartoon.shots.push({...(!water&&selectedCharacter==='manny'?{fx:'strong-projectile',impactFX:'strong-impact'}:{}),x:origin.x,y:origin.y,vx:a.dir*(water?650:900),vy:water?750:0,r:water?(a.empowered?90:64):26,life:1.7,age:0,damage:water?(a.empowered?80:52):30,hit:new Set(),water,dir:a.dir});}
+function cartoonShot(a,water=false){const origin=cartoonReleaseOrigin(a)||{x:player.x+a.dir*36,y:player.y-55};cartoon.shots.push({...(!water&&selectedCharacter==='manny'?{fx:'strong-projectile',impactFX:'strong-impact'}:{}),x:origin.x,y:origin.y,vx:a.dir*(water?650:900),vy:water?750:0,r:water?(a.empowered?135:110):26,life:1.7,age:0,damage:water?(a.empowered?80:52):30,hit:new Set(),water,dir:a.dir});}
 // One complete 16-cel attack, not each special phase, owns this presentation clock.
 function cartoonPresentedFrame(art,a,age){return cartoonReleasePose(art,{...a,age},age,a.duration);}
 function cartoonPresentedBoundary(art,a,index){
@@ -96,32 +97,7 @@ function cartoonPresentedBoundary(art,a,index){
  }
  return art.ends[index]/art.duration*a.duration;
 }
-function cartoonPresentedAdvance(a,dt,requested){
- if(!['light','air','slam','launch','blow','rush','ranged'].includes(a.type)||a.mobSlash)return requested;
- const motion=a.type==='light'?'light'+a.index:a.type==='air'?'air'+a.index:a.type;
- const key=(selectedCharacter==='hero'?'':selectedCharacter+'/')+(cartoon.awake>0?'awakened-':'')+motion,art=cartoonArt[key];
- if(!art||art.frames.length!==16||art.frameRange)return requested;
- if(a.clockArt!==art){a.clockArt=art;a.visualAge=a.age;a.presentedAge=-1;a.clockCredit=0;a.firstPresented=false;}
- const rate=Math.min(requested/dt,a.duration/.32);
- a.clockCredit=Math.min(a.clockCredit+dt*rate,a.duration);
- let advance=0;
- if(a.presentedAge>=a.age&&a.firstPresented){advance=Math.max(0,a.presentedAge-a.age);a.clockCredit=Math.max(0,a.clockCredit-advance);}
- const committed=a.age+advance;
- const frame=cartoonPresentedFrame(art,a,committed),index=art.frames.indexOf(frame);
- const next=index===15?a.duration:cartoonPresentedBoundary(art,a,index)+1e-9;
- a.visualAge=a.firstPresented?Math.min(a.duration,committed+a.clockCredit,next):a.age;
- const wanted=cartoonPresentedFrame(art,a,a.visualAge);
- if(!cartoonTexture(wanted.src)){
-  a.assetWait=(a.assetWait||0)+dt;
-  // Do not accumulate a burst of simulation time while an atlas is unavailable.
-  a.clockCredit=0;
-  if(a.assetWait>3){cartoonCancel();cartoon.assetNotice='攻撃画像を読み込めませんでした。再入力してください';return 0;}
- }else{a.assetWait=0;cartoon.assetNotice='';}
- // Keep the one-input queue and aerial follow-up opportunity while the clock waits.
- if(cartoon.queued)cartoon.buffer+=Math.max(0,dt-advance/Math.max(rate,.0001));
- if(!player.grounded)cartoon.airLeft+=Math.max(0,dt-advance/Math.max(rate,.0001));
- return advance;
-}
+function cartoonPresentedAdvance(a,dt,requested){return requested;}
 function cartoonStep(dt){
  if(!cartoonActive())return;
  if(player!==cartoonPlayer){cartoonReset();cartoonPlayer=player;}
@@ -228,9 +204,9 @@ if(cartoonEnabled){
  const baseFX=drawSkills;drawSkills=function(){baseFX();cartoonDrawFX();};
  const baseDraw=drawPlayer;drawPlayer=function(){if(!cartoonActive())return baseDraw();ctx.save();if(cartoon.awake>0){ctx.shadowColor=cartoonProfiles[selectedCharacter].color;ctx.shadowBlur=22;}if(['hero','manny','mobdesert'].includes(selectedCharacter))cartoonDrawHero();else if(selectedCharacter==='tetsu'&&cartoon.action){const f=tetsuFrames.NA[Math.floor(cartoon.action.age*18)%tetsuFrames.NA.length];paintTetsu(f,player.x,player.y,player.dir);}else baseDraw();ctx.restore();};
  const strong=document.createElement('button');strong.id='cartoon-strong';strong.innerHTML='<span>K</span>強 HOLD';strong.setAttribute('aria-label','強攻撃 長押しして放す');document.querySelector('.buttons').prepend(strong);
- function actionFor(target){if(target.closest('#cartoon-strong'))return 'strong';if(target.closest('#shoot'))return 'weak';const b=target.closest('[data-skill]');return b?['special0','special1','awake'][Number(b.dataset.skill)]:null;}
+ function actionFor(target){if(target.closest('#cartoon-strong'))return 'strong';if(target.closest('#shoot'))return 'weak';const b=target.closest('[data-skill]');return b?['special0','special1',selectedCharacter==='hero'?'awake':'special2'][Number(b.dataset.skill)]:null;}
  function input(action,source,release,cancel){if(action==='strong'){if(release)cartoonRelease(source,cancel);else cartoonCharge(source);}else if(!release){if(action==='weak')cartoonWeak();else if(action==='awake')cartoonAwaken();else cartoonSpecial(Number(action.slice(-1)));}}
- for(const event of ['keydown','keyup'])window.addEventListener(event,e=>{if(!cartoonActive()||e.target.closest?.('input,textarea,select'))return;const action={KeyJ:'weak',KeyK:'strong',Digit1:'special0',Digit2:'special1',Digit3:'awake',KeyE:'awake'}[e.code];if(!action)return;e.preventDefault();e.stopImmediatePropagation();if(!e.repeat)input(action,'keyboard',event==='keyup',false);},true);
+ for(const event of ['keydown','keyup'])window.addEventListener(event,e=>{if(!cartoonActive()||e.target.closest?.('input,textarea,select'))return;const action={KeyJ:'weak',KeyK:'strong',Digit1:'special0',Digit2:'special1',Digit3:selectedCharacter==='hero'?'awake':'special2',KeyE:'awake'}[e.code];if(!action)return;e.preventDefault();e.stopImmediatePropagation();if(!e.repeat)input(action,'keyboard',event==='keyup',false);},true);
  for(const event of ['pointerdown','pointerup','pointercancel','lostpointercapture'])document.addEventListener(event,e=>{if(!cartoonActive())return;const action=actionFor(e.target);if(!action)return;e.preventDefault();e.stopImmediatePropagation();const button=e.target.closest('button');if(event==='pointerdown'){if(!cartoonReady())return;button.setPointerCapture(e.pointerId);cartoonBindings.set(e.pointerId,button);button.classList.add('pressed');input(action,`p${e.pointerId}`,false,false);}else{cartoonBindings.delete(e.pointerId);if(![...cartoonBindings.values()].includes(button))button.classList.remove('pressed');input(action,`p${e.pointerId}`,true,event!=='pointerup');}},true);
  document.addEventListener('visibilitychange',()=>{if(document.hidden)cartoonCancel();});
  window.addEventListener('blur',cartoonCancel);
@@ -307,14 +283,19 @@ function cartoonPrefetch(force=false){
 function cartoonRememberPose(art,f,image){
  if(cartoonPoseFallback?.frame===f)return;
  if(!cartoonPoseFallback){if(cartoonTextureBytes()+cartoonTextureReserved+256*256*4>cartoonTextureBudget)return;const canvas=document.createElement('canvas');canvas.width=canvas.height=256;cartoonPoseFallback={image:canvas};}
- const canvas=cartoonPoseFallback.image,c=canvas.getContext('2d'),k=256/Math.max(f.rect[2],f.rect[3]);c.clearRect(0,0,256,256);c.drawImage(image,...f.rect,0,0,f.rect[2]*k,f.rect[3]*k);
+ const canvas=cartoonPoseFallback.image,c=canvas.getContext('2d'),k=256/Math.max(f.rect[2],f.rect[3]);c.clearRect(0,0,256,256);combatBlit(c,image,f.rect,0,0,f.rect[2]*k,f.rect[3]*k);
  Object.assign(cartoonPoseFallback,{frame:f,art:{bodyHeight:(art.bodyHeight||f.rect[3])*k,nativeFacing:art.nativeFacing||1},f:{rect:[0,0,f.rect[2]*k,f.rect[3]*k],pivot:f.pivot.map(n=>n*k),authoredRootLift:f.authoredRootLift||0}});cartoonTexturePeak=Math.max(cartoonTexturePeak,cartoonTextureBytes()+cartoonTextureReserved);
+}
+function cartoonTransitionPhase(previous,next,phase,map){
+ const time=phase*previous.duration;let index=previous.ends.findIndex(end=>time<end);if(index<0)index=previous.frames.length-1;
+ const target=map[index];return (target?next.ends[target-1]:0)/next.duration;
 }
 function cartoonFrame(art,age,actionDuration){
  const [first,last]=art.frameRange||[0,art.frames.length],offset=first?art.ends[first-1]:0,duration=art.ends[last-1]-offset;let time=offset+(actionDuration?Math.min(.999999,Math.max(0,age/actionDuration))*duration:art.loop?age%duration:Math.min(age,duration-.000001));
  let index=last-1;for(let i=first;i<last;i++){if(time<art.ends[i]){index=i;break;}}return art.frames[index];
 }
 function cartoonNormalizeArt(value,base){
+ if(value.displayScale!==undefined&&(!Number.isFinite(value.displayScale)||value.displayScale<=0||value.displayScale>8))throw Error('Invalid display scale');
  if(value.nativeFacing!==undefined&&![1,-1].includes(value.nativeFacing))throw Error('Invalid nativeFacing');
  if(value.orientationMode!==undefined&&!['velocity','facing','fixed'].includes(value.orientationMode))throw Error('Invalid orientationMode');
  if(value.nativeAngleRadians!==undefined&&(!Number.isFinite(value.nativeAngleRadians)||Math.abs(value.nativeAngleRadians)>Math.PI*2))throw Error('Invalid nativeAngleRadians');
@@ -329,10 +310,11 @@ function cartoonNormalizeArt(value,base){
  let duration=0;const ends=frames.map(f=>(duration+=f.duration));return {...value,frames,duration,ends};
 }
 async function loadCartoonArt(manifest,base=new URL('combat/cartoon-manifest.json',location.href).href){
- for(const [key,value] of Object.entries(manifest.animations||manifest)){
+ const entries=Object.entries(manifest.animations||manifest);let cursor=0;
+ await Promise.all(Array.from({length:8},async()=>{while(cursor<entries.length){const [key,value]=entries[cursor++];
   if(!value||typeof value!=='object'||(!value.src&&!value.adapter&&!value.pages))continue;
-  try{let data=value,url=base;if(value.adapter){url=new URL(value.adapter,base).href;const response=await fetch(url);if(!response.ok)throw Error('Adapter HTTP '+response.status);data={...await response.json(),...value};}cartoonArt[key]=cartoonNormalizeArt(data,url);}catch(error){cartoonAssetErrors.push(`${key}: ${error.message}`);}
- }
+  try{let data=value,url=base;if(value.adapter){url=new URL(value.adapter,base).href;const response=await fetch(url,{cache:'no-cache'});if(!response.ok)throw Error('Adapter HTTP '+response.status);data={...await response.json(),...value};}cartoonArt[key]=cartoonNormalizeArt(data,url);}catch(error){cartoonAssetErrors.push(`${key}: ${error.message}`);}
+ }}));
  for(const [key,alias] of Object.entries(manifest.aliases||{})){
   const target=cartoonArt[typeof alias==='string'?alias:alias.clip],range=typeof alias==='string'?null:alias.range||(alias.phase&&target?.phaseRanges?.[alias.phase]);
   if(!target||range&&(!Array.isArray(range)||range.length!==2||!range.every(Number.isInteger)||range[0]<0||range[1]>target.frames.length||range[0]>=range[1])){cartoonAssetErrors.push(`${key}: invalid alias or phase range`);continue;}
@@ -346,7 +328,7 @@ function cartoonEffectArt(key){
 }
 function cartoonSpinLayers(a){
  if(selectedCharacter!=='hero'||a?.type!=='dance')return null;
- const ready=key=>{const art=cartoonEffectArt(key);if(!art)return false;const f=cartoonFrame(art,a.age,1.28),image=cartoonTexture(f.src);return !!image&&f.rect[0]+f.rect[2]<=image.width&&f.rect[1]+f.rect[3]<=image.height;};
+ const ready=key=>{const art=cartoonEffectArt(key);if(!art)return false;const f=cartoonFrame(art,a.age,1.28),image=cartoonTexture(f.src);return !!image&&combatContains(image,f.rect);};
  // Request both before choosing; never show a half-loaded pair or double the single layer.
  const back=ready('special1-spin-back'),front=ready('special1-spin-front');
  if(back&&front)return {back:'special1-spin-back',front:'special1-spin-front',age:a.age,dir:a.dir};
@@ -377,7 +359,7 @@ function cartoonDrawCharacter(){
  if(a||cartoon.charge)cartoon.motionKey=null;
  if(!a&&!cartoon.charge&&(!phaseKey||phaseKey==='recovery'&&(!player.grounded||Math.abs(player.vx)>1))){
   if(cartoon.motionKey!==key){const prior=cartoon.motionKey,oldPhase=cartoon.motionPhase||0;cartoon.motionKey=key;cartoon.motionStart=player.anim;cartoon.motionDistance=0;cartoon.motionX=player.x;
-   if(selectedCharacter==='manny'&&['walk','dash'].includes(prior)&&['walk','dash'].includes(key)){const map=key==='dash'?[15,0,1,1,2,3,5,7,8,8,9,10,12,13,14,15]:[1,2,4,5,5,6,6,7,8,10,11,11,12,13,14,15];const next=cartoonArt[prefix+form+key];if(next?.strideDistance)cartoon.motionDistance=map[Math.min(15,Math.floor(oldPhase*16))]/16*next.strideDistance;}}
+   if(selectedCharacter==='manny'&&['walk','dash'].includes(prior)&&['walk','dash'].includes(key)){const map=key==='dash'?[15,0,1,1,2,3,5,7,8,8,9,10,12,13,14,15]:[1,2,4,5,5,6,6,7,8,10,11,11,12,13,14,15];const next=cartoonArt[prefix+form+key];if(next?.strideDistance)cartoon.motionDistance=cartoonTransitionPhase(cartoonArt[prefix+form+prior],next,oldPhase,map)*next.strideDistance;}}
 
   cartoon.motionDistance=(cartoon.motionDistance||0)+Math.abs(player.x-(cartoon.motionX??player.x));cartoon.motionX=player.x;
   if(key==='jump'){phaseAge=player.jumpAge;phaseDuration=2*CONFIG.jumpForce/CONFIG.gravity;}
@@ -391,12 +373,12 @@ function cartoonDrawCharacter(){
  let f=art&&(a&&a.clockArt===art?cartoonPresentedFrame(art,a,phaseAge):cartoonReleasePose(art,a,phaseAge,phaseDuration)),image=f&&cartoonTexture(f.src);
  if(!image&&cartoonPoseFallback){({art,f,image}=cartoonPoseFallback);}
  if(!image){const idle=cartoonArt[prefix+form+'idle'];const fallback=idle&&cartoonFrame(idle,player.anim),cached=fallback&&cartoonTextures.get(fallback.src);if(cached){art=idle;f=fallback;image=cached.image;}else if(cartoonPoseFallback){({art,f,image}=cartoonPoseFallback);}else return false;}
- if(f.rect[0]+f.rect[2]>image.width||f.rect[1]+f.rect[3]>image.height)return false;
+ if(!combatContains(image,f.rect))return false;
  if(selectedCharacter==='manny'&&(!Number.isFinite(art.bodyHeight)||art.bodyHeight<=0))return false;
  if(image!==cartoonPoseFallback?.image)cartoonRememberPose(art,f,image);
  const spin=a?.type==='dance'?cartoonSpinLayers(a):null;
  if(spin)cartoonDrawSpinLayer(spin,'back');
- const k=(cartoonProfiles[selectedCharacter].displayBodyHeight||110)/(art.bodyHeight||f.rect[3]);ctx.save();ctx.translate(player.x-camera,player.y+(f.authoredRootLift||0)*(cartoonProfiles[selectedCharacter].displayBodyHeight||110));ctx.scale(player.dir*(art.nativeFacing||1),1);ctx.drawImage(image,...f.rect,-f.pivot[0]*k,-f.pivot[1]*k,f.rect[2]*k,f.rect[3]*k);ctx.restore();
+ const k=(cartoonProfiles[selectedCharacter].displayBodyHeight||110)/(art.bodyHeight||f.rect[3]);ctx.save();ctx.translate(player.x-camera,player.y+(f.authoredRootLift||0)*(cartoonProfiles[selectedCharacter].displayBodyHeight||110));ctx.scale(player.dir*(art.nativeFacing||1),1);combatBlit(ctx,image,f.rect,-f.pivot[0]*k,-f.pivot[1]*k,f.rect[2]*k,f.rect[3]*k);ctx.restore();
  if(spin)cartoonDrawSpinLayer(spin,'front');
  // A fallback or an unloaded atlas never acknowledges an attack pose.
  if(a&&a.clockArt===art&&image!==cartoonPoseFallback?.image){a.presentedAge=a.visualAge;a.firstPresented=true;}
@@ -406,9 +388,10 @@ const cartoonReducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matche
 function cartoonDrawEffect(key,x,y,size,age,duration,dir=1,phase=null,orientation={mode:'facing'}){
  const form=cartoon.awake>0?'awakened-':'',generic=/^special1-bomb-(pink|cyan|green|orange|purple)$/.test(key)?'special1-bomb':null;let art=cartoonArt[selectedCharacter+'/effects/'+form+key]||cartoonArt['effects/'+form+key];if(!art&&generic)return cartoonDrawEffect(generic,x,y,size,age,duration,dir,phase,orientation);if(!art)return false;
  if(phase){const index=['m','mo','mob','burst'].indexOf(phase);if(index<0)return false;const range=art.phaseRanges?.[phase]||[Math.floor(index*art.frames.length/4),Math.floor((index+1)*art.frames.length/4)];art={...art,frameRange:range,loop:false};}
- const f=cartoonFrame(art,age,duration),image=cartoonTexture(f.src);if(!image)return generic?cartoonDrawEffect(generic,x,y,size,age,duration,dir,phase,orientation):false;if(f.rect[0]+f.rect[2]>image.width||f.rect[1]+f.rect[3]>image.height)return false;
- const bodyHeight=cartoonProfiles[selectedCharacter]?.displayBodyHeight||110,offset=f.socketOffset?f.socketOffset.map(n=>n*bodyHeight):art.socket?.offset||[0,0],legacyScale=(art.socket?.size||size)/Math.max(f.rect[2],f.rect[3]),width=f.displaySize?f.displaySize[0]*bodyHeight:f.rect[2]*legacyScale,height=f.displaySize?f.displaySize[1]*bodyHeight:f.rect[3]*legacyScale;ctx.save();ctx.translate(x-camera+offset[0]*dir,y+offset[1]);cartoonFXOrient(art,dir,orientation);ctx.drawImage(image,...f.rect,-f.pivot[0]*width/f.rect[2],-f.pivot[1]*height/f.rect[3],width,height);ctx.restore();return true;
+ const f=cartoonFrame(art,age,duration),image=cartoonTexture(f.src);if(!image)return generic?cartoonDrawEffect(generic,x,y,size,age,duration,dir,phase,orientation):false;if(!combatContains(image,f.rect))return false;
+ const bodyHeight=cartoonProfiles[selectedCharacter]?.displayBodyHeight||110,offset=f.socketOffset?f.socketOffset.map(n=>n*bodyHeight):art.socket?.offset||[0,0],legacyScale=(art.socket?.size||size)/Math.max(f.rect[2],f.rect[3]),width=orientation.displaySize?.[0]??(f.displaySize?f.displaySize[0]*bodyHeight*(art.displayScale||1):f.rect[2]*legacyScale),height=orientation.displaySize?.[1]??(f.displaySize?f.displaySize[1]*bodyHeight*(art.displayScale||1):f.rect[3]*legacyScale);ctx.save();ctx.translate(x-camera+offset[0]*dir,y+offset[1]);cartoonFXOrient(art,dir,orientation);combatBlit(ctx,image,f.rect,-f.pivot[0]*width/f.rect[2],-f.pivot[1]*height/f.rect[3],width,height);ctx.restore();return true;
 }
+function cartoonDrawEffectAtSize(key,x,y,width,height,age,duration,dir){if(!cartoonEnabled||![width,height].every(n=>Number.isFinite(n)&&n>0&&n<=4096))return false;return cartoonDrawEffect(key,x,y,Math.max(width,height),age,duration,dir,null,{mode:'facing',displaySize:[width,height]});}
 function cartoonFXOrient(art,dir,orientation){
  const mode=orientation.mode==='fixed'?'fixed':art.orientationMode||orientation.mode||'facing';
  if(mode==='velocity'&&Number.isFinite(orientation.angle))ctx.rotate(orientation.angle-(art.nativeAngleRadians||0));
@@ -437,7 +420,7 @@ if(cartoonEnabled){
  const hero=document.createElement('button');hero.dataset.character='hero';hero.textContent='モブラミ';hero.setAttribute('aria-pressed','false');hero.onclick=()=>selectCharacter('hero');document.querySelector('.character-options').prepend(hero);
  partyInfo.hero={name:'モブラミ',short:'モブラミ',line:'',color:'#ff80cd'};
  const baseParty=resetParty;resetParty=function(){baseParty();party.hero={hp:CONFIG.maxHP,regen:0,revive:0};const b=document.createElement('button');b.className='party-slot';b.dataset.party='hero';b.innerHTML='<img src="combat/portraits/hero.png" width="100" height="100" alt=""><span class="party-name">モブラミ</span><small></small>';b.onclick=()=>switchParty('hero');$('party').prepend(b);};
- fetch('combat/cartoon-manifest.json').then(r=>r.json()).then(loadCartoonArt).catch(()=>{});
+ cartoonArtReady=fetch('combat/cartoon-manifest.json?v=20261016-nyoro-move-1',{cache:'no-cache'}).then(r=>r.json()).then(loadCartoonArt);
 }
 // Keep world and combat sprites aligned during a small, opt-out camera impulse.
 function cartoonCameraImpulse(fn,refresh=false){return function(...args){if(!cartoonActive()||cartoonReducedMotion||cartoon.shake<=0)return fn(...args);if(refresh)cartoon.cameraOffset=Math.sin(performance.now()*.07)*Math.min(4,cartoon.shake*25);const old=camera;camera+=cartoon.cameraOffset||0;try{return fn(...args);}finally{camera=old;}};}
@@ -505,26 +488,26 @@ const cartoonLab=new URLSearchParams(location.search).has('combat-lab');
 if(cartoonEnabled&&cartoonLab){
  const originalReset=reset;reset=function(){selectedCharacter='hero';areaIndex=0;biomeIndex=0;originalReset();platforms=[];props=[];ropes=[];gaps=[];bridges=[];ramps=[];crumbles=[];trampolines=[];arenas=[];crates=[];coins=[];enemies=[];pink.enabled=false;player.x=300;player.y=CONFIG.groundY;for(const x of [520,850,1200])spawnGrassEnemy('tank',x);};
  finishGrassArea=function(){};
- const restart=document.createElement('button');restart.textContent='RAMI TEST / 再戦';restart.style.cssText='position:absolute;top:95px;left:16px;z-index:20';restart.onclick=()=>{reset();state='playing';$('overlay').hidden=true;};document.querySelector('main').append(restart);
+ const restart=document.createElement('button');restart.textContent='RAMI TEST / 再戦';restart.style.cssText='position:absolute;top:95px;left:16px;z-index:20';restart.onclick=()=>startGrassArea();document.querySelector('main').append(restart);
  const background=drawBackground;drawBackground=function(){background();rounded(20,cameraY+140,510,56,10,'#17363be6');text('RAMI TEST — 原画修復待ち / 操作確認',35,cameraY+164,18,'#fff','left');text('J 弱 / SHIFT+D 走る / SPACE 跳ぶ / 1 ダンス',35,cameraY+184,14,'#fff','left');};
 }
 
 // Restore original skills, including their original body/FX clocks, until replacement art matches them.
-function cartoonOriginalSkill(){return selectedCharacter==='tetsu'&&!!tetsuAction||selectedCharacter==='nyoro'&&!!nyoroAction||selectedCharacter==='denden'&&(skillState.charging||skillState.releaseAge<.48||thunderLocked());}
+function cartoonOriginalSkill(){return selectedCharacter==='tetsu'&&!!tetsuAction||selectedCharacter==='nyoro'&&!!nyoroAction||selectedCharacter==='denden'&&(skillState.charging||skillState.releaseAge<.48||thunderLocked()||!!thunderBullet);}
 if(cartoonEnabled){
  const ready=cartoonReady;cartoonReady=function(){return ready()&&!cartoonOriginalSkill();};
  const special=cartoonSpecial;cartoonSpecial=function(index){
-  if(!['denden','nyoro','tetsu'].includes(selectedCharacter))return special(index);
-  if(!cartoonReady()||cartoon.action||cartoon.charge||index<0||index>1)return false;
+  if(!['denden','nyoro','tetsu'].includes(selectedCharacter))return index<2?special(index):false;
+  if(!cartoonReady()||cartoon.action||cartoon.charge||index<0||index>2)return false;
   cartoon.combo=0;cartoon.window=0;
-  if(selectedCharacter==='denden'){if(skillState.cooldowns[index]>0)return false;if(index===0)beginCharge('cartoon');else castThunder();}
+  if(selectedCharacter==='denden'){if((index===2?thunderBulletCooldown:skillState.cooldowns[index])>0)return false;if(index===0)beginCharge('cartoon');else if(index===1)castThunder();else castThunderBullet();}
   else if(selectedCharacter==='nyoro'){if(nyoroCooldowns[index]>0)return false;castNyoro(index);}
-  else {if(tetsuCooldowns[index+1]>0)return false;castTetsu(index+1);}
+  else {const mapped=index===2?0:index+1;if(tetsuCooldowns[mapped]>0)return false;castTetsu(mapped);}
   return true;
  };
  const body=drawPlayer;drawPlayer=function(){if(cartoonActive()&&cartoonOriginalSkill()){drawPlayerBody();return;}body();};
  const ui=cartoonUI;cartoonUI=function(){ui();if(!cartoonActive())return;
   const config={denden:{names:['トリック・ザ・デンデン','サンダーボルト'],cd:skillState.cooldowns},nyoro:{names:['ヒノフルカヨウ','炎列・大隕石'],cd:nyoroCooldowns},tetsu:{names:['モブテツ一閃','超吹き飛ばし'],cd:tetsuCooldowns.slice(1)}}[selectedCharacter];
-  if(!config)return;skillButtons.forEach((b,i)=>{if(i>1){b.hidden=true;return;}b.title=config.names[i];b.setAttribute('aria-label',config.names[i]);b.querySelector('small').textContent=config.cd[i]>0?config.cd[i].toFixed(1)+'s':config.names[i];b.classList.toggle('cooling',config.cd[i]>0);b.setAttribute('aria-disabled',String(config.cd[i]>0||cartoonOriginalSkill()));});
+  if(!config)return;skillButtons.forEach((b,i)=>{if(i>1){b.hidden=false;const label=selectedCharacter==='denden'?'デンデン・サンダー・バレット':selectedCharacter==='nyoro'?'炎の城':'MOB斬り',cd=selectedCharacter==='denden'?thunderBulletCooldown:selectedCharacter==='nyoro'?nyoroCooldowns[2]:tetsuCooldowns[0];b.title=label;b.setAttribute('aria-label',label);b.querySelector('small').textContent=cd>0?cd.toFixed(1)+'s':label;b.classList.toggle('cooling',cd>0);return;}b.title=config.names[i];b.setAttribute('aria-label',config.names[i]);b.querySelector('small').textContent=config.cd[i]>0?config.cd[i].toFixed(1)+'s':config.names[i];b.classList.toggle('cooling',config.cd[i]>0);b.setAttribute('aria-disabled',String(config.cd[i]>0||cartoonOriginalSkill()));});
  };
 }

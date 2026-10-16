@@ -1,0 +1,303 @@
+{
+  "bodyHeight": 220,
+  "orientationMode": "facing",
+  "src": "page-00.webp",
+  "frames": [
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        239
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        8,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        239
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        388,
+        8,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        240
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        768,
+        8,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        240
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1148,
+        8,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        240
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        279,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        241
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        388,
+        279,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        241
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        768,
+        279,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        245
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1148,
+        279,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        245
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        550,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        244
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        388,
+        550,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        245
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        768,
+        550,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        243
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1148,
+        550,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        246
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        821,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        247
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        388,
+        821,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        247
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        768,
+        821,
+        364,
+        255
+      ]
+    },
+    {
+      "duration": 0.046875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "pivot": [
+        180,
+        242
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1148,
+        821,
+        364,
+        255
+      ]
+    }
+  ],
+  "sourceFrameCount": 16,
+  "runtimeSpatialScale": 1,
+  "framesHavePerFrameSrc": true,
+  "runtimeExport": "Static lossless WebP, trimmed with8px external gutters; source master unchanged. Uniform spatial downsample where stated.",
+  "duration": 0.75,
+  "loop": false,
+  "normalisedProgress": "Clamp(effectAge/.75,0,1),16 genuinely drawn cels across original lifetime. Do not extend lifetime or stall gameplay at low fps.",
+  "callerSizePolicy": "cartoonDrawEffectAtSize explicit caller width+height; same fixed viewport for all16. Do not per-frame silhouette fit or use frame displaySize to override caller."
+}

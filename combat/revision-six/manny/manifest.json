@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "packageVersion": "MOB-MANNY-GAIT-REPAIR-20261016-v2",
+  "status": "integration_candidate_targeted_art_repair_PC_timing_and_playback_review_pending",
+  "animations": {
+    "manny/walk": {
+      "adapter": "manny/walk/clip.json"
+    },
+    "manny/dash": {
+      "adapter": "manny/dash/clip.json"
+    }
+  },
+  "aliases": {
+    "manny/awakened-walk": "manny/walk",
+    "manny/awakened-dash": "manny/dash"
+  },
+  "runtimeTier": {
+    "encoding": "static lossless WebP",
+    "maxAtlasDimension": 4096,
+    "gutterPixels": 8,
+    "displayBodyHeight": {
+      "manny": 80
+    },
+    "sourceBodyHeight": 220,
+    "decodedBodyAtlasMiB": 18.16580581665039
+  },
+  "scope": "Merge only listed manny walk/dash and awakened aliases. Preserve every other character, action, FX and original archive.",
+  "artAuthorship": {
+    "newlyRedrawnCels": 3,
+    "retainedDistinctCels": 29,
+    "totalRuntimeCels": 32,
+    "changedFramesOneBased": {
+      "walk": [
+        3,
+        7
+      ],
+      "dash": [
+        16
+      ]
+    },
+    "noDuplicatePadding": true
+  },
+  "timingIntegrationRequired": "Normal playback already supports cumulative duration (PC confirmed). walk/dash transitions still use floor(oldPhase*16) and tableCell/16 and MUST be updated to cumulative boundaries when integrating this package. phaseStartsNormalized exactly equals normalized cumulative duration; it is diagnostic metadata, not currently read by PC. World movement speed is unchanged."
+}

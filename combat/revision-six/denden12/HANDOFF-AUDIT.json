@@ -1,0 +1,17 @@
+{
+  "all8ManifestEntriesHave16SourceFrames": {
+    "denden/special1": 16,
+    "denden/special2": 16,
+    "denden/effects/special1-energy": 16,
+    "denden/effects/special2-fall": 16,
+    "denden/effects/special2-ground": 16,
+    "denden/effects/special1-impact": 16,
+    "denden/effects/special1-charge": 16,
+    "denden/effects/ground-wave": 16
+  },
+  "runtimePathAndBounds": true,
+  "uniqueTexturePages": 7,
+  "allPackDecodedMiB": 39.45915603637695,
+  "textureMaxDimension": 2048,
+  "requiresActualGameQA": true
+}

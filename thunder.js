@@ -10,6 +10,6 @@ function updateGiantThunder(dt){const g=giantThunder;if(g){g.age+=dt;
  }
  for(const b of groundBolts){b.age+=dt;b.x+=b.dir*500*dt;const y=supportFloorAt(b.x,b.y-35);if(Number.isFinite(y))b.y=y;for(const e of combatTargets()){if(e.death>=0||b.hit.has(e)||Math.abs(e.x-b.x)>55+e.w/2||e.y<b.y-115||e.y-e.h>b.y+15)continue;b.hit.add(e);if((e.groundBoltNext||0)>elapsed)continue;e.groundBoltNext=elapsed+.35;hitEnemy(e,12,b.dir);if(e.type!=='crate'){e.electric=.45;e.stun=e.type==='miramob'?.15:.35;}}}groundBolts=groundBolts.filter(b=>b.age<.75);
 }
-function drawGiantThunder(){const g=giantThunder;if(g){const i=g.landed?1+Math.floor(g.groundAge*12)%3:0,f=giantThunderFrames[i];if(f){const h=360,w=h*f.width/f.height;ctx.save();ctx.shadowColor='#93f5ff';ctx.shadowBlur=22;ctx.drawImage(f,g.x-camera-w/2,g.y-h,w,h);ctx.restore();}}
- for(const b of groundBolts){const f=thunderBurstFrames[Math.floor(b.age*16)%4];if(!f)continue;ctx.save();ctx.globalAlpha=Math.min(1,(.75-b.age)*5);ctx.drawImage(f,b.x-camera-70,b.y-120,140,120);ctx.restore();}
+function drawGiantThunder(){const g=giantThunder;if(g){const i=g.landed?1+Math.floor(g.groundAge*12)%3:0,f=giantThunderFrames[i];if(f&&!(typeof cartoonThunderArt==='function'&&cartoonThunderArt(g))){const h=360,w=h*f.width/f.height;ctx.save();ctx.shadowColor='#93f5ff';ctx.shadowBlur=22;ctx.drawImage(f,g.x-camera-w/2,g.y-h,w,h);ctx.restore();}}
+ for(const b of groundBolts){if(typeof cartoonDrawEffectAtSize==='function'&&cartoonDrawEffectAtSize('ground-wave',b.x,b.y,140,120,b.age,.75,b.dir))continue;const f=thunderBurstFrames[Math.floor(b.age*16)%4];if(!f)continue;ctx.save();ctx.globalAlpha=Math.min(1,(.75-b.age)*5);ctx.drawImage(f,b.x-camera-70,b.y-120,140,120);ctx.restore();}
 }

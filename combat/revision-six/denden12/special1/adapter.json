@@ -1,0 +1,287 @@
+{
+  "bodyHeight": 220.0,
+  "fullHeight": 268,
+  "phases": {
+    "startup": [
+      0,
+      6
+    ],
+    "active": [
+      6,
+      8
+    ],
+    "recovery": [
+      8,
+      16
+    ]
+  },
+  "releaseSocket": [
+    0.636968215899483,
+    -0.42976168783579577
+  ],
+  "releaseFrame": 6,
+  "releaseTime": 0.25,
+  "bodyHeightMeaning": "Fixed draw reference by face/goggle calibration; not anatomical height. No per-frame fit.",
+  "nativeFacing": "right",
+  "loop": false,
+  "duration": 0.73,
+  "originalBodySource": "Denden original skill001-016",
+  "status": "Source choreography retained; body size head-calibrated. Candidate pending actual game inspection.",
+  "src": "page-00.webp",
+  "frames": [
+    {
+      "duration": 0.041666666666666664,
+      "pivot": [
+        125.16019111152917,
+        232.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        277,
+        8,
+        268,
+        236
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "pivot": [
+        119.16019111152917,
+        214.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        1246,
+        269,
+        219
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "pivot": [
+        123.16019111152917,
+        224.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        585,
+        512,
+        264,
+        229
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "pivot": [
+        118.16019111152917,
+        234.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        8,
+        253,
+        239
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "pivot": [
+        121.16019111152917,
+        224.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        553,
+        758,
+        257,
+        228
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "pivot": [
+        130.16019111152917,
+        226.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        298,
+        512,
+        271,
+        230
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        120.16019111152917,
+        223.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        512,
+        274,
+        230
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        122.16019111152917,
+        228.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        561,
+        8,
+        240,
+        235
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        153.16019111152917,
+        229.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        565,
+        263,
+        249,
+        232
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        150.16019111152917,
+        226.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        263,
+        271,
+        233
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        114.16019111152917,
+        223.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        758,
+        252,
+        229
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        122.16019111152917,
+        226.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        295,
+        263,
+        254,
+        232
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        117.16019111152917,
+        224.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        281,
+        1003,
+        253,
+        227
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        122.16019111152917,
+        224.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        276,
+        758,
+        261,
+        228
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        120.16019111152917,
+        219.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        550,
+        1003,
+        278,
+        222
+      ]
+    },
+    {
+      "duration": 0.048,
+      "pivot": [
+        122.16019111152917,
+        224.01941294747792
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        1003,
+        257,
+        227
+      ]
+    }
+  ],
+  "sourceFrameCount": 16,
+  "runtimeSpatialScale": 0.8441747439631703,
+  "framesHavePerFrameSrc": true,
+  "runtimeExport": "Static lossless WebP, trimmed with8px external gutters; source master unchanged. Uniform spatial downsample where stated.",
+  "chargeSockets": [
+    [
+      0.5947594787013245,
+      -0.42592452990869045
+    ],
+    [
+      0.6139452683368511,
+      -0.3913901085647426
+    ],
+    [
+      0.5794108469929032,
+      -0.42208737198158514
+    ],
+    [
+      0.5487135835760607,
+      -0.4144130561273745
+    ],
+    [
+      0.5410392677218501,
+      -0.42208737198158514
+    ],
+    [
+      0.575573689065798,
+      -0.4451103195442171
+    ]
+  ]
+}

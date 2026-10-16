@@ -1,0 +1,111 @@
+{
+  "schema": "flat animations + explicit range aliases",
+  "revision": "mobrami-water-20261016-v3",
+  "character": "Mob Rami / モブラミ",
+  "status": "parent-reviewed art candidate; actual game integration unverified",
+  "animations": {
+    "special2": {
+      "adapter": "hero-water-revision/special2.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.7871140160595552,
+        0.020410305381180216
+      ]
+    },
+    "special2-active": {
+      "adapter": "hero-water-revision/special2-active.json",
+      "releaseFrame": 1,
+      "releaseSocket": [
+        0.7871140160595552,
+        0.020410305381180216
+      ]
+    },
+    "water": {
+      "adapter": "hero-water-revision/special2-active.json",
+      "releaseFrame": 1,
+      "releaseSocket": [
+        0.7871140160595552,
+        0.020410305381180216
+      ]
+    },
+    "awakened-special2": {
+      "adapter": "hero-water-revision/awakened-special2.json",
+      "releaseFrame": 7,
+      "releaseSocket": [
+        0.7879761801719158,
+        0.04239584536964211
+      ]
+    },
+    "awakened-special2-active": {
+      "adapter": "hero-water-revision/awakened-special2-active.json",
+      "releaseFrame": 1,
+      "releaseSocket": [
+        0.7879761801719158,
+        0.04239584536964211
+      ]
+    },
+    "awakened-water": {
+      "adapter": "hero-water-revision/awakened-special2-active.json",
+      "releaseFrame": 1,
+      "releaseSocket": [
+        0.7879761801719158,
+        0.04239584536964211
+      ]
+    },
+    "hero/effects/special2-water": {
+      "adapter": "hero-water-revision/fx-special2-water.json",
+      "orientationMode": "velocity",
+      "nativeAngleRadians": 1.5707963267948966
+    },
+    "hero/effects/awakened-special2-water": {
+      "adapter": "hero-water-revision/fx-special2-water.json",
+      "orientationMode": "velocity",
+      "nativeAngleRadians": 1.5707963267948966
+    },
+    "hero/effects/special2-splash": {
+      "adapter": "hero-water-revision/fx-special2-splash.json",
+      "orientationMode": "fixed",
+      "nativeAngleRadians": 0
+    },
+    "hero/effects/awakened-special2-splash": {
+      "adapter": "hero-water-revision/fx-special2-splash.json",
+      "orientationMode": "fixed",
+      "nativeAngleRadians": 0
+    }
+  },
+  "aliases": {
+    "special2-startup": {
+      "clip": "special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "special2-recovery": {
+      "clip": "special2",
+      "range": [
+        9,
+        16
+      ]
+    },
+    "awakened-special2-startup": {
+      "clip": "awakened-special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "awakened-special2-recovery": {
+      "clip": "awakened-special2",
+      "range": [
+        9,
+        16
+      ]
+    }
+  },
+  "notes": [
+    "Body action has16 genuinely drawn cels per form; startup/active/recovery are phase windows of that one action.",
+    "Water and splash each have16 separately drawn cels. Frame-rate skipping is normal; do not freeze or stretch time to expose every cel.",
+    "Legacy previous water art is superseded only by this revision. Source art remains preserved separately."
+  ]
+}

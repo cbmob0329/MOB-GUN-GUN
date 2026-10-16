@@ -14,7 +14,7 @@ function resetParty(){
  for(const id of Object.keys(party)){
   const button=document.createElement('button');button.type='button';button.className='party-slot';button.dataset.party=id;button.title=partyInfo[id].name;button.setAttribute('aria-label',partyInfo[id].name+'に切り替え');
   const portrait=document.createElement('canvas');portrait.width=100;portrait.height=100;portrait.setAttribute('aria-hidden','true');const c=portrait.getContext('2d');
-  if(id==='tetsu'){const f=tetsuFrames.CS[0],k=86/f.h;c.drawImage(f.img,f.sx,f.sy,f.w,f.h,50-f.w*k/2,95-f.h*k,f.w*k,f.h*k);}else{const f=id==='denden'?sprites[24]:id==='nyoro'?nyoroFrames[1]:miraFrames[1],k=86/f.height;c.drawImage(f,50-f.width*k/2,95-f.height*k,f.width*k,f.height*k);}
+  if(id==='tetsu'){const f=tetsuFrames.CS?.[0];if(f){const k=86/f.h;c.drawImage(f.img,f.sx,f.sy,f.w,f.h,50-f.w*k/2,95-f.h*k,f.w*k,f.h*k);}}else{const f=id==='denden'?sprites[24]:id==='nyoro'?nyoroFrames[1]:miraFrames[1];if(f){const k=86/f.height;c.drawImage(f,50-f.width*k/2,95-f.height*k,f.width*k,f.height*k);}}
   const name=document.createElement('span');name.className='party-name';name.textContent=partyInfo[id].short;const status=document.createElement('small');button.append(portrait,name,status);button.onclick=()=>switchParty(id);bar.append(button);
  }
 }

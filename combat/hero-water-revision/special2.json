@@ -1,0 +1,259 @@
+{
+  "src": "special2.webp",
+  "bodyHeight": 220,
+  "frames": [
+    {
+      "duration": 0.06,
+      "pivot": [
+        125,
+        266
+      ],
+      "sourceCel": 0,
+      "rect": [
+        8,
+        705,
+        224,
+        270
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        140,
+        259
+      ],
+      "sourceCel": 1,
+      "rect": [
+        1516,
+        385,
+        261,
+        288
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        146,
+        212
+      ],
+      "sourceCel": 2,
+      "rect": [
+        555,
+        705,
+        309,
+        229
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        136,
+        212
+      ],
+      "sourceCel": 3,
+      "rect": [
+        240,
+        705,
+        307,
+        238
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        166,
+        280
+      ],
+      "sourceCel": 4,
+      "rect": [
+        953,
+        385,
+        312,
+        297
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        100,
+        285
+      ],
+      "sourceCel": 5,
+      "rect": [
+        8,
+        8,
+        295,
+        369
+      ]
+    },
+    {
+      "duration": 0.05715400000000004,
+      "pivot": [
+        192,
+        236
+      ],
+      "sourceCel": 6,
+      "rect": [
+        1312,
+        8,
+        369,
+        318
+      ]
+    },
+    {
+      "duration": 0.06642300000000001,
+      "pivot": [
+        120,
+        231
+      ],
+      "sourceCel": 7,
+      "rect": [
+        311,
+        8,
+        314,
+        339
+      ]
+    },
+    {
+      "duration": 0.06642300000000001,
+      "pivot": [
+        157,
+        276
+      ],
+      "sourceCel": 8,
+      "rect": [
+        633,
+        8,
+        301,
+        339
+      ]
+    },
+    {
+      "duration": 0.14,
+      "pivot": [
+        113,
+        272
+      ],
+      "sourceCel": 9,
+      "rect": [
+        315,
+        385,
+        303,
+        308
+      ]
+    },
+    {
+      "duration": 0.1988888889,
+      "pivot": [
+        200,
+        236
+      ],
+      "sourceCel": 10,
+      "rect": [
+        942,
+        8,
+        362,
+        319
+      ]
+    },
+    {
+      "duration": 0.04,
+      "pivot": [
+        112,
+        190
+      ],
+      "sourceCel": 11,
+      "rect": [
+        626,
+        385,
+        319,
+        300
+      ]
+    },
+    {
+      "duration": 0.04,
+      "pivot": [
+        149,
+        258
+      ],
+      "sourceCel": 12,
+      "rect": [
+        1689,
+        8,
+        320,
+        312
+      ]
+    },
+    {
+      "duration": 0.03,
+      "pivot": [
+        131,
+        279
+      ],
+      "sourceCel": 13,
+      "rect": [
+        8,
+        385,
+        299,
+        312
+      ]
+    },
+    {
+      "duration": 0.02555555555,
+      "pivot": [
+        135,
+        265
+      ],
+      "sourceCel": 14,
+      "rect": [
+        1273,
+        385,
+        235,
+        290
+      ]
+    },
+    {
+      "duration": 0.02555555555,
+      "pivot": [
+        173,
+        263
+      ],
+      "sourceCel": 15,
+      "rect": [
+        1785,
+        385,
+        242,
+        278
+      ]
+    }
+  ],
+  "loop": false,
+  "nativeFacing": 1,
+  "authoredCelCount": 16,
+  "durationUnits": "seconds in action clock",
+  "pivotUnits": "runtime pixels relative to trimmed rect",
+  "duration": 1.05,
+  "releaseFrame": 7,
+  "releaseSocket": [
+    0.7871140160595552,
+    0.020410305381180216
+  ],
+  "phaseRanges": {
+    "startup": [
+      0,
+      6
+    ],
+    "active": [
+      6,
+      9
+    ],
+    "recovery": [
+      9,
+      16
+    ]
+  },
+  "scaleReference": {
+    "nearGoldGlassesEquivalentDiameterRuntimePixels": 26.4,
+    "note": "Physical head/eye calibration; never fit body to varying weapon/hair rect."
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "special1": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 971,
+        "height": 845,
+        "decodedBytes": 3281980,
+        "sha256": "aef26898083a68e765cad1db7a31df429052cd026eb99b5a75434e462cc2d3eb"
+      }
+    ],
+    "totalDecodedBytes": 3281980,
+    "scale": 0.6836486481012579,
+    "fixedCrop": null,
+    "maxOutsideAlphaDiscarded": 0,
+    "sourceMasterSHA256": "287287591e526db845936fe4912fcc555c2d3b6b86e61a5c096272f05f5c0afd",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "special2": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 927,
+        "height": 1448,
+        "decodedBytes": 5369184,
+        "sha256": "d5c6e2dc2995b6a0b0154203cf933068733d08c5bfc65a40179a8903e8212e18"
+      }
+    ],
+    "totalDecodedBytes": 5369184,
+    "scale": 0.8429335906539254,
+    "fixedCrop": null,
+    "maxOutsideAlphaDiscarded": 0,
+    "sourceMasterSHA256": "ad82ba3466e0784092620bbab0b692097cb21e346c4784c262aefdc9fb49b1c8",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "special1-rain": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 1520,
+        "height": 1324,
+        "decodedBytes": 8049920,
+        "sha256": "b5db45584c29e9dda6a5679aa3865a50a2fb831ee3205715ce819761f40e3a37"
+      }
+    ],
+    "totalDecodedBytes": 8049920,
+    "scale": 1,
+    "fixedCrop": [
+      136,
+      97,
+      500,
+      412
+    ],
+    "maxOutsideAlphaDiscarded": 1,
+    "sourceMasterSHA256": "3a3cb1f5a164b7bf675525c4225f89ac62b1ec07a7f3099e96a40abd28c1df74",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "special2-meteor": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 1428,
+        "height": 1256,
+        "decodedBytes": 7174272,
+        "sha256": "9f1a6760a9e5b67d24efe70478744d8dd69870df29a44712dc68c752a6552cc1"
+      }
+    ],
+    "totalDecodedBytes": 7174272,
+    "scale": 1,
+    "fixedCrop": [
+      115,
+      113,
+      456,
+      411
+    ],
+    "maxOutsideAlphaDiscarded": 1,
+    "sourceMasterSHA256": "6bc8d8cc3af12b52df475ab68d0102a5bd237c71a069b702aa576c7648ab8dc7",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "special2-flame": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 1506,
+        "height": 753,
+        "decodedBytes": 4536072,
+        "sha256": "7b316558c6b4b2c72f20547f09fd622480064e4933b1b2beacbc7abfe5560eb3"
+      }
+    ],
+    "totalDecodedBytes": 4536072,
+    "scale": 0.8,
+    "fixedCrop": [
+      76,
+      98,
+      370,
+      392
+    ],
+    "maxOutsideAlphaDiscarded": 1,
+    "sourceMasterSHA256": "da099ea9a1120aaf65693e85c8d329550d51f2c3ecd30d119a7b45a76a48b9cd",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "special2-impact": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 1528,
+        "height": 1256,
+        "decodedBytes": 7676672,
+        "sha256": "20a8c4f4cc08649204880ddcdaf47257d8b1479d49409765331e240884eda1dc"
+      }
+    ],
+    "totalDecodedBytes": 7676672,
+    "scale": 1,
+    "fixedCrop": [
+      67,
+      165,
+      433,
+      463
+    ],
+    "maxOutsideAlphaDiscarded": 1,
+    "sourceMasterSHA256": "521c719766b6e0a328b805153d5136c6bfd8dff8982cd8bbd2a836ca3c03ac45",
+    "decodedVisibleRGBAExactToResizedCels": true
+  }
+}

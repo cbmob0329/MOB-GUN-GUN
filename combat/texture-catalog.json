@@ -1,0 +1,1306 @@
+{
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-idle-16/mobrami-idle-16-runtime220.webp": {
+    "width": 1344,
+    "height": 768
+  },
+  "combat/runtime-final/hero/combat/hero/clips/walk-sequence/walk-sequence-runtime220.webp": {
+    "width": 1344,
+    "height": 1024
+  },
+  "combat/hero-revision/dash.webp": {
+    "width": 576,
+    "height": 1856
+  },
+  "combat/hero-revision/jump.webp": {
+    "width": 256,
+    "height": 3584
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-guard-16/mobrami-guard-16-runtime220.webp": {
+    "width": 896,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-crouch-16/mobrami-crouch-16-runtime220.webp": {
+    "width": 832,
+    "height": 1152
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-weak1-16/mobrami-weak1-16-runtime220.webp": {
+    "width": 3648,
+    "height": 512
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-weak2-16/mobrami-weak2-16-runtime220.webp": {
+    "width": 1728,
+    "height": 768
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-weak3-16/mobrami-weak3-16-runtime220.webp": {
+    "width": 2496,
+    "height": 576
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-weak4-16/mobrami-weak4-16-runtime220.webp": {
+    "width": 896,
+    "height": 1536
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-charge-start-hold-32/mobrami-charge-start-hold-32-runtime220.webp": {
+    "width": 1024,
+    "height": 1984
+  },
+  "combat/hero-revision/blow.webp": {
+    "width": 832,
+    "height": 1408
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-launch-16/mobrami-launch-16-runtime220.webp": {
+    "width": 768,
+    "height": 1408
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-ranged-16/mobrami-ranged-16-runtime220.webp": {
+    "width": 576,
+    "height": 1984
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-rush-16/mobrami-rush-16-runtime220.webp": {
+    "width": 832,
+    "height": 1280
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-air1-16/mobrami-air1-16-runtime220.webp": {
+    "width": 576,
+    "height": 1856
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-air2-16/mobrami-air2-16-runtime220.webp": {
+    "width": 512,
+    "height": 2048
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-air3-16/mobrami-air3-16-runtime220.webp": {
+    "width": 768,
+    "height": 1344
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-slam-16/mobrami-slam-16-runtime220.webp": {
+    "width": 2368,
+    "height": 512
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-damage-16/mobrami-damage-16-runtime220.webp": {
+    "width": 3776,
+    "height": 256
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-death-16/mobrami-death-16-runtime220.webp": {
+    "width": 512,
+    "height": 1536
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-recovery-16/mobrami-recovery-16-runtime220.webp": {
+    "width": 1024,
+    "height": 896
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakening-start-16/mobrami-awakening-start-16-runtime220.webp": {
+    "width": 960,
+    "height": 1024
+  },
+  "combat/hero-revision/special1.webp": {
+    "width": 2624,
+    "height": 896
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-special2-startup-16/mobrami-special2-startup-16-runtime220.webp": {
+    "width": 1920,
+    "height": 512
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-special2-release-16/mobrami-special2-release-16-runtime220.webp": {
+    "width": 960,
+    "height": 1024
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-idle-16/mobrami-awakened-idle-16-runtime220.webp": {
+    "width": 3904,
+    "height": 256
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-walk-16/mobrami-awakened-walk-16-runtime220.webp": {
+    "width": 576,
+    "height": 1920
+  },
+  "combat/hero-revision/awakened-dash.webp": {
+    "width": 1152,
+    "height": 896
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-jump-16/mobrami-awakened-jump-16-runtime220.webp": {
+    "width": 1024,
+    "height": 960
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-guard-16/mobrami-awakened-guard-16-runtime220.webp": {
+    "width": 1856,
+    "height": 512
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-crouch-16/mobrami-awakened-crouch-16-runtime220.webp": {
+    "width": 832,
+    "height": 1280
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-weak1-16/mobrami-awakened-weak1-16-runtime220.webp": {
+    "width": 832,
+    "height": 1920
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-weak2-16/mobrami-awakened-weak2-16-runtime220.webp": {
+    "width": 1152,
+    "height": 1472
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-weak3-16/mobrami-awakened-weak3-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1600
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-weak4-16/mobrami-awakened-weak4-16-runtime220.webp": {
+    "width": 832,
+    "height": 2048
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-charge-start-16/mobrami-awakened-charge-start-16-runtime220.webp": {
+    "width": 704,
+    "height": 2048
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-charge-hold-16/mobrami-awakened-charge-hold-16-runtime220.webp": {
+    "width": 704,
+    "height": 2112
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-blow-16/mobrami-awakened-blow-16-runtime220.webp": {
+    "width": 3008,
+    "height": 512
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-launch-16/mobrami-awakened-launch-16-runtime220.webp": {
+    "width": 1280,
+    "height": 1408
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-ranged-16/mobrami-awakened-ranged-16-runtime220.webp": {
+    "width": 3008,
+    "height": 512
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-rush-16/mobrami-awakened-rush-16-runtime220.webp": {
+    "width": 704,
+    "height": 2048
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-air1-16/mobrami-awakened-air1-16-runtime220.webp": {
+    "width": 896,
+    "height": 1344
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-air2-16/mobrami-awakened-air2-16-runtime220.webp": {
+    "width": 768,
+    "height": 1408
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-air3-16/mobrami-awakened-air3-16-runtime220.webp": {
+    "width": 832,
+    "height": 1408
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-slam-16/mobrami-awakened-slam-16-runtime220.webp": {
+    "width": 576,
+    "height": 1856
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-damage-16/mobrami-awakened-damage-16-runtime220.webp": {
+    "width": 640,
+    "height": 2048
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-death-16/mobrami-awakened-death-16-runtime220.webp": {
+    "width": 960,
+    "height": 1024
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-recovery-16/mobrami-awakened-recovery-16-runtime220.webp": {
+    "width": 960,
+    "height": 1408
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakening-end-16/mobrami-awakening-end-16-runtime220.webp": {
+    "width": 1856,
+    "height": 512
+  },
+  "combat/hero-revision/awakened-special1.webp": {
+    "width": 1600,
+    "height": 1536
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-special2-startup-16/mobrami-awakened-special2-startup-16-runtime220.webp": {
+    "width": 640,
+    "height": 1856
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-awakened-special2-release-16/mobrami-awakened-special2-release-16-runtime220.webp": {
+    "width": 2176,
+    "height": 512
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-hit-light-16/mobrami-fx-hit-light-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-hit-heavy-16/mobrami-fx-hit-heavy-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-charge-16/mobrami-fx-charge-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-launch-16/mobrami-fx-launch-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-slam-16/mobrami-fx-slam-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-ranged-16/mobrami-fx-ranged-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-rush-trail-16/mobrami-fx-rush-trail-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-special1-aura-16/mobrami-fx-special1-aura-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-special2-water-16/mobrami-fx-special2-water-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-special2-splash-16/mobrami-fx-special2-splash-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-awakening-aura-16/mobrami-fx-awakening-aura-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/runtime-final/hero/combat/hero/clips/mobrami-fx-awakening-burst-16/mobrami-fx-awakening-burst-16-runtime220.webp": {
+    "width": 1088,
+    "height": 1088
+  },
+  "combat/hero-revision/fx-special1-spin-back.webp": {
+    "width": 640,
+    "height": 1024
+  },
+  "combat/hero-revision/fx-special1-spin-front.webp": {
+    "width": 640,
+    "height": 1216
+  },
+  "combat/hero-revision/fx-special1-spin.webp": {
+    "width": 704,
+    "height": 2048
+  },
+  "combat/hero-revision/fx-strong-blow.webp": {
+    "width": 1088,
+    "height": 1216
+  },
+  "combat/hero-revision/fx-strong-launch.webp": {
+    "width": 640,
+    "height": 2176
+  },
+  "combat/hero-revision/fx-strong-rush.webp": {
+    "width": 3008,
+    "height": 512
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/idle/atlas.webp": {
+    "width": 2688,
+    "height": 704
+  },
+  "combat/manny-walk-revision/manny/walk/atlas.webp": {
+    "width": 1848,
+    "height": 1508
+  },
+  "combat/manny-dash-revision/manny/dash/atlas.webp": {
+    "width": 1768,
+    "height": 1416
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/jump/atlas.webp": {
+    "width": 1280,
+    "height": 1920
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light1/atlas.webp": {
+    "width": 1024,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light2/atlas.webp": {
+    "width": 1280,
+    "height": 1920
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light3/atlas.webp": {
+    "width": 768,
+    "height": 2816
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/light4/atlas.webp": {
+    "width": 1536,
+    "height": 1280
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/charge-start/atlas.webp": {
+    "width": 1024,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/charge-hold/atlas.webp": {
+    "width": 768,
+    "height": 2816
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/blow/atlas.webp": {
+    "width": 1024,
+    "height": 2176
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/launch/atlas.webp": {
+    "width": 3584,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/ranged/atlas.webp": {
+    "width": 1024,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/rush/atlas.webp": {
+    "width": 1536,
+    "height": 1920
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/air1/atlas.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/air2/atlas.webp": {
+    "width": 1280,
+    "height": 2432
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/air3/atlas.webp": {
+    "width": 1280,
+    "height": 2304
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/slam/atlas.webp": {
+    "width": 3072,
+    "height": 896
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/damage/atlas.webp": {
+    "width": 1024,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/death/atlas.webp": {
+    "width": 768,
+    "height": 2560
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/recovery/atlas.webp": {
+    "width": 1024,
+    "height": 1920
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/awakening-start/atlas.webp": {
+    "width": 768,
+    "height": 2816
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/awakening-end/atlas.webp": {
+    "width": 2560,
+    "height": 640
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/guard/atlas.webp": {
+    "width": 768,
+    "height": 2688
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/crouch/atlas.webp": {
+    "width": 2048,
+    "height": 1024
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special1-startup/atlas.webp": {
+    "width": 1280,
+    "height": 1280
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special1-active/atlas.webp": {
+    "width": 1280,
+    "height": 1536
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special1-recovery/atlas.webp": {
+    "width": 2560,
+    "height": 640
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-startup/atlas.webp": {
+    "width": 2560,
+    "height": 896
+  },
+  "combat/manny-magic-revision/manny/special2-active/atlas.webp": {
+    "width": 768,
+    "height": 3072
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/special2-recovery/atlas.webp": {
+    "width": 768,
+    "height": 2816
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-pink/atlas.webp": {
+    "width": 512,
+    "height": 256
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-cyan/atlas.webp": {
+    "width": 128,
+    "height": 512
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-green/atlas.webp": {
+    "width": 128,
+    "height": 896
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-orange/atlas.webp": {
+    "width": 512,
+    "height": 256
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/special1-bomb-purple/atlas.webp": {
+    "width": 512,
+    "height": 256
+  },
+  "combat/manny-magic-revision/manny/effects/special2-orb/atlas.webp": {
+    "width": 768,
+    "height": 2624
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/awakening-aura/atlas.webp": {
+    "width": 2048,
+    "height": 640
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/effects/awakening-burst/atlas.webp": {
+    "width": 1280,
+    "height": 640
+  },
+  "combat/manny-magic-revision/manny/effects/strong-projectile/atlas.webp": {
+    "width": 192,
+    "height": 1408
+  },
+  "combat/manny-magic-revision/manny/effects/strong-impact/atlas.webp": {
+    "width": 768,
+    "height": 576
+  },
+  "combat/manny-magic-revision/manny/effects/special2-orb-blast/atlas.webp": {
+    "width": 1792,
+    "height": 3328
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/hit-light/atlas.webp": {
+    "width": 128,
+    "height": 1408
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/hit-heavy/atlas.webp": {
+    "width": 512,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/charge/atlas.webp": {
+    "width": 512,
+    "height": 640
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/launch/atlas.webp": {
+    "width": 768,
+    "height": 640
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/slam/atlas.webp": {
+    "width": 768,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/ranged/atlas.webp": {
+    "width": 512,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/shared/effects/rush-trail/atlas.webp": {
+    "width": 768,
+    "height": 768
+  },
+  "combat/runtime-final/existing3/denden/body/awakening-start/denden-body-awakening-start-runtime220.webp": {
+    "width": 1088,
+    "height": 960
+  },
+  "combat/runtime-final/existing3/denden/body/blow/denden-body-blow-runtime220.webp": {
+    "width": 576,
+    "height": 2176
+  },
+  "combat/runtime-final/existing3/denden/body/charge-hold/denden-body-charge-hold-runtime220.webp": {
+    "width": 576,
+    "height": 1856
+  },
+  "combat/runtime-final/existing3/denden/body/charge-start/denden-body-charge-start-runtime220.webp": {
+    "width": 4032,
+    "height": 256
+  },
+  "combat/runtime-final/existing3/denden/body/crouch/denden-body-crouch-runtime220.webp": {
+    "width": 512,
+    "height": 1856
+  },
+  "combat/runtime-final/existing3/denden/body/damage/denden-body-damage-runtime220.webp": {
+    "width": 1152,
+    "height": 1024
+  },
+  "combat/runtime-final/existing3/denden/body/dash/denden-body-dash-runtime220.webp": {
+    "width": 576,
+    "height": 1984
+  },
+  "combat/runtime-final/existing3/denden/body/death/denden-body-death-runtime220.webp": {
+    "width": 512,
+    "height": 1472
+  },
+  "combat/runtime-final/existing3/denden/effects/awakening-burst/denden-effects-awakening-burst-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/denden/effects/charge/denden-effects-charge-runtime220.webp": {
+    "width": 2112,
+    "height": 448
+  },
+  "combat/runtime-final/existing3/denden/effects/hit-light/denden-effects-hit-light-runtime220.webp": {
+    "width": 448,
+    "height": 1280
+  },
+  "combat/runtime-final/existing3/denden/effects/ranged/denden-effects-ranged-runtime220.webp": {
+    "width": 768,
+    "height": 2112
+  },
+  "combat/runtime-final/existing3/denden/effects/rush-trail/denden-effects-rush-trail-runtime220.webp": {
+    "width": 3072,
+    "height": 640
+  },
+  "combat/runtime-final/existing3/denden/effects/special1-aura/denden-effects-special1-aura-runtime220.webp": {
+    "width": 832,
+    "height": 2304
+  },
+  "combat/runtime-final/existing3/denden/effects/special2-splash/denden-effects-special2-splash-runtime220.webp": {
+    "width": 832,
+    "height": 2304
+  },
+  "combat/runtime-final/existing3/denden/body/jump/denden-body-jump-runtime220.webp": {
+    "width": 4096,
+    "height": 256
+  },
+  "combat/runtime-final/existing3/denden/body/light1/denden-body-light1-runtime220.webp": {
+    "width": 2496,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/denden/body/rush/denden-body-rush-runtime220.webp": {
+    "width": 1664,
+    "height": 704
+  },
+  "combat/runtime-final/existing3/denden/body/special1-active/denden-body-special1-active-runtime220.webp": {
+    "width": 1216,
+    "height": 896
+  },
+  "combat/runtime-final/existing3/denden/body/special2-active/denden-body-special2-active-runtime220.webp": {
+    "width": 4032,
+    "height": 256
+  },
+  "combat/runtime-final/existing3/denden/body/special2-recovery/denden-body-special2-recovery-runtime220.webp": {
+    "width": 512,
+    "height": 2048
+  },
+  "combat/runtime-final/existing3/denden/body/walk/denden-body-walk-runtime220.webp": {
+    "width": 512,
+    "height": 1920
+  },
+  "combat/runtime-final/existing3/denden/body/air1/denden-body-air1-runtime220.webp": {
+    "width": 1088,
+    "height": 960
+  },
+  "combat/runtime-final/existing3/denden/body/air2/denden-body-air2-runtime220.webp": {
+    "width": 576,
+    "height": 1984
+  },
+  "combat/runtime-final/existing3/denden/body/air3/denden-body-air3-runtime220.webp": {
+    "width": 576,
+    "height": 1920
+  },
+  "combat/runtime-final/existing3/denden/body/awakening-end/denden-body-awakening-end-runtime220.webp": {
+    "width": 1024,
+    "height": 960
+  },
+  "combat/runtime-final/existing3/denden/effects/awakening-aura/denden-effects-awakening-aura-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/denden/effects/hit-heavy/denden-effects-hit-heavy-runtime220.webp": {
+    "width": 1280,
+    "height": 896
+  },
+  "combat/runtime-final/existing3/denden/effects/launch/denden-effects-launch-runtime220.webp": {
+    "width": 704,
+    "height": 2176
+  },
+  "combat/runtime-final/existing3/denden/effects/slam/denden-effects-slam-runtime220.webp": {
+    "width": 832,
+    "height": 2304
+  },
+  "combat/runtime-final/existing3/denden/effects/special2-water/denden-effects-special2-water-runtime220.webp": {
+    "width": 768,
+    "height": 2368
+  },
+  "combat/runtime-final/existing3/denden/body/guard/denden-body-guard-runtime220.webp": {
+    "width": 512,
+    "height": 2048
+  },
+  "combat/runtime-final/existing3/denden/body/idle/denden-body-idle-runtime220.webp": {
+    "width": 1088,
+    "height": 1024
+  },
+  "combat/runtime-final/existing3/denden/body/launch/denden-body-launch-runtime220.webp": {
+    "width": 576,
+    "height": 1920
+  },
+  "combat/runtime-final/existing3/denden/body/light2/denden-body-light2-runtime220.webp": {
+    "width": 4096,
+    "height": 256
+  },
+  "combat/runtime-final/existing3/denden/body/light3/denden-body-light3-runtime220.webp": {
+    "width": 832,
+    "height": 1536
+  },
+  "combat/runtime-final/existing3/denden/body/light4/denden-body-light4-runtime220.webp": {
+    "width": 512,
+    "height": 2368
+  },
+  "combat/runtime-final/existing3/denden/body/ranged/denden-body-ranged-runtime220.webp": {
+    "width": 2368,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/denden/body/recovery/denden-body-recovery-runtime220.webp": {
+    "width": 2304,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/denden/body/slam/denden-body-slam-runtime220.webp": {
+    "width": 4032,
+    "height": 256
+  },
+  "combat/runtime-final/existing3/denden/body/special1-recovery/denden-body-special1-recovery-runtime220.webp": {
+    "width": 640,
+    "height": 2048
+  },
+  "combat/runtime-final/existing3/denden/body/special1-startup/denden-body-special1-startup-runtime220.webp": {
+    "width": 832,
+    "height": 1472
+  },
+  "combat/runtime-final/existing3/denden/body/special2-startup/denden-body-special2-startup-runtime220.webp": {
+    "width": 1024,
+    "height": 960
+  },
+  "combat/runtime-final/existing3/nyoro/body/air3/nyoro-body-air3-runtime220.webp": {
+    "width": 832,
+    "height": 1728
+  },
+  "combat/runtime-final/existing3/nyoro/body/blow/nyoro-body-blow-runtime220.webp": {
+    "width": 640,
+    "height": 2240
+  },
+  "combat/runtime-final/existing3/nyoro/body/charge-start/nyoro-body-charge-start-runtime220.webp": {
+    "width": 2240,
+    "height": 640
+  },
+  "combat/runtime-final/existing3/nyoro/body/crouch/nyoro-body-crouch-runtime220.webp": {
+    "width": 640,
+    "height": 1984
+  },
+  "combat/runtime-final/existing3/nyoro/body/dash/nyoro-body-dash-runtime220.webp": {
+    "width": 1408,
+    "height": 1408
+  },
+  "combat/runtime-final/existing3/nyoro/effects/awakening-aura/nyoro-effects-awakening-aura-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/nyoro/effects/ranged/nyoro-effects-ranged-runtime220.webp": {
+    "width": 1088,
+    "height": 1024
+  },
+  "combat/runtime-final/existing3/nyoro/effects/slam/nyoro-effects-slam-runtime220.webp": {
+    "width": 1280,
+    "height": 1152
+  },
+  "combat/runtime-final/existing3/nyoro/effects/special2-splash/nyoro-effects-special2-splash-runtime220.webp": {
+    "width": 640,
+    "height": 2560
+  },
+  "combat/runtime-final/existing3/nyoro/body/jump/nyoro-body-jump-runtime220.webp": {
+    "width": 576,
+    "height": 2240
+  },
+  "combat/runtime-final/existing3/nyoro/body/launch/nyoro-body-launch-runtime220.webp": {
+    "width": 832,
+    "height": 1600
+  },
+  "combat/runtime-final/existing3/nyoro/body/slam/nyoro-body-slam-runtime220.webp": {
+    "width": 896,
+    "height": 1664
+  },
+  "combat/runtime-final/existing3/nyoro/body/special1-active/nyoro-body-special1-active-runtime220.webp": {
+    "width": 768,
+    "height": 2176
+  },
+  "combat/runtime-final/existing3/nyoro/body/special1-recovery/nyoro-body-special1-recovery-runtime220.webp": {
+    "width": 640,
+    "height": 2432
+  },
+  "combat/runtime-final/existing3/nyoro/body/air2/nyoro-body-air2-runtime220.webp": {
+    "width": 768,
+    "height": 1792
+  },
+  "combat/runtime-final/existing3/nyoro/body/awakening-start/nyoro-body-awakening-start-runtime220.webp": {
+    "width": 640,
+    "height": 2368
+  },
+  "combat/runtime-final/existing3/nyoro/body/charge-hold/nyoro-body-charge-hold-runtime220.webp": {
+    "width": 2432,
+    "height": 640
+  },
+  "combat/runtime-final/existing3/nyoro/body/damage/nyoro-body-damage-runtime220.webp": {
+    "width": 640,
+    "height": 2112
+  },
+  "combat/runtime-final/existing3/nyoro/effects/rush-trail/nyoro-effects-rush-trail-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/nyoro/effects/special2-water/nyoro-effects-special2-water-runtime220.webp": {
+    "width": 2560,
+    "height": 704
+  },
+  "combat/runtime-final/existing3/nyoro/body/guard/nyoro-body-guard-runtime220.webp": {
+    "width": 1280,
+    "height": 1216
+  },
+  "combat/nyoro-candidate/runtime/idle/idle-candidate-master-runtime220.webp": {
+    "width": 960,
+    "height": 960
+  },
+  "combat/runtime-final/existing3/nyoro/body/light1/nyoro-body-light1-runtime220.webp": {
+    "width": 640,
+    "height": 1792
+  },
+  "combat/runtime-final/existing3/nyoro/body/light3/nyoro-body-light3-runtime220.webp": {
+    "width": 1408,
+    "height": 896
+  },
+  "combat/runtime-final/existing3/nyoro/body/ranged/nyoro-body-ranged-runtime220.webp": {
+    "width": 1216,
+    "height": 1280
+  },
+  "combat/runtime-final/existing3/nyoro/body/recovery/nyoro-body-recovery-runtime220.webp": {
+    "width": 384,
+    "height": 3968
+  },
+  "combat/runtime-final/existing3/nyoro/body/rush/nyoro-body-rush-runtime220.webp": {
+    "width": 640,
+    "height": 2368
+  },
+  "combat/runtime-final/existing3/nyoro/body/special2-recovery/nyoro-body-special2-recovery-runtime220.webp": {
+    "width": 896,
+    "height": 1536
+  },
+  "combat/runtime-final/existing3/nyoro/body/air1/nyoro-body-air1-runtime220.webp": {
+    "width": 896,
+    "height": 1600
+  },
+  "combat/runtime-final/existing3/nyoro/body/awakening-end/nyoro-body-awakening-end-runtime220.webp": {
+    "width": 576,
+    "height": 2304
+  },
+  "combat/runtime-final/existing3/nyoro/body/death/nyoro-body-death-runtime220.webp": {
+    "width": 704,
+    "height": 1920
+  },
+  "combat/runtime-final/existing3/nyoro/effects/awakening-burst/nyoro-effects-awakening-burst-runtime220.webp": {
+    "width": 704,
+    "height": 2560
+  },
+  "combat/runtime-final/existing3/nyoro/effects/charge/nyoro-effects-charge-runtime220.webp": {
+    "width": 768,
+    "height": 2368
+  },
+  "combat/runtime-final/existing3/nyoro/effects/hit-heavy/nyoro-effects-hit-heavy-runtime220.webp": {
+    "width": 1152,
+    "height": 1216
+  },
+  "combat/runtime-final/existing3/nyoro/effects/hit-light/nyoro-effects-hit-light-runtime220.webp": {
+    "width": 384,
+    "height": 1408
+  },
+  "combat/runtime-final/existing3/nyoro/effects/launch/nyoro-effects-launch-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/nyoro/effects/special1-aura/nyoro-effects-special1-aura-runtime220.webp": {
+    "width": 2624,
+    "height": 704
+  },
+  "combat/runtime-final/existing3/nyoro/body/light2/nyoro-body-light2-runtime220.webp": {
+    "width": 2432,
+    "height": 576
+  },
+  "combat/runtime-final/existing3/nyoro/body/light4/nyoro-body-light4-runtime220.webp": {
+    "width": 896,
+    "height": 1664
+  },
+  "combat/runtime-final/existing3/nyoro/body/special1-startup/nyoro-body-special1-startup-runtime220.webp": {
+    "width": 1280,
+    "height": 1280
+  },
+  "combat/runtime-final/existing3/nyoro/body/special2-active/nyoro-body-special2-active-runtime220.webp": {
+    "width": 1280,
+    "height": 1216
+  },
+  "combat/runtime-final/existing3/nyoro/body/special2-startup/nyoro-body-special2-startup-runtime220.webp": {
+    "width": 576,
+    "height": 2240
+  },
+  "combat/nyoro-candidate/runtime/walk/walk-candidate-master-runtime220.webp": {
+    "width": 960,
+    "height": 1536
+  },
+  "combat/runtime-final/existing3/tetsu/body/air3/tetsu-body-air3-runtime220.webp": {
+    "width": 1024,
+    "height": 1024
+  },
+  "combat/runtime-final/existing3/tetsu/body/awakening-end/tetsu-body-awakening-end-runtime220.webp": {
+    "width": 1152,
+    "height": 960
+  },
+  "combat/runtime-final/existing3/tetsu/body/dash/tetsu-body-dash-runtime220.webp": {
+    "width": 3904,
+    "height": 256
+  },
+  "combat/runtime-final/existing3/tetsu/effects/awakening-aura/tetsu-effects-awakening-aura-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/tetsu/effects/awakening-burst/tetsu-effects-awakening-burst-runtime220.webp": {
+    "width": 1280,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/tetsu/effects/charge/tetsu-effects-charge-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/tetsu/effects/hit-heavy/tetsu-effects-hit-heavy-runtime220.webp": {
+    "width": 960,
+    "height": 1024
+  },
+  "combat/runtime-final/existing3/tetsu/effects/hit-light/tetsu-effects-hit-light-runtime220.webp": {
+    "width": 640,
+    "height": 640
+  },
+  "combat/runtime-final/existing3/tetsu/effects/launch/tetsu-effects-launch-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/tetsu/effects/mob-slash-letters/tetsu-effects-mob-slash-letters-runtime220.webp": {
+    "width": 2560,
+    "height": 2560
+  },
+  "combat/runtime-final/existing3/tetsu/effects/rush-trail/tetsu-effects-rush-trail-runtime220.webp": {
+    "width": 704,
+    "height": 2624
+  },
+  "combat/runtime-final/existing3/tetsu/effects/special2-splash/tetsu-effects-special2-splash-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/tetsu/body/guard/tetsu-body-guard-runtime220.webp": {
+    "width": 1472,
+    "height": 768
+  },
+  "combat/runtime-final/existing3/tetsu/body/jump/tetsu-body-jump-runtime220.webp": {
+    "width": 1088,
+    "height": 1024
+  },
+  "combat/runtime-final/existing3/tetsu/body/light1/tetsu-body-light1-runtime220.webp": {
+    "width": 768,
+    "height": 1472
+  },
+  "combat/runtime-final/existing3/tetsu/body/light3/tetsu-body-light3-runtime220.webp": {
+    "width": 2368,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/tetsu/body/rush/tetsu-body-rush-runtime220.webp": {
+    "width": 832,
+    "height": 1472
+  },
+  "combat/runtime-final/existing3/tetsu/body/slam/tetsu-body-slam-runtime220.webp": {
+    "width": 1920,
+    "height": 576
+  },
+  "combat/runtime-final/existing3/tetsu/body/special2-recovery/tetsu-body-special2-recovery-runtime220.webp": {
+    "width": 576,
+    "height": 1792
+  },
+  "combat/runtime-final/existing3/tetsu/body/special2-startup/tetsu-body-special2-startup-runtime220.webp": {
+    "width": 2176,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/tetsu/body/walk/tetsu-body-walk-runtime220.webp": {
+    "width": 1792,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/tetsu/body/air1/tetsu-body-air1-runtime220.webp": {
+    "width": 2048,
+    "height": 448
+  },
+  "combat/runtime-final/existing3/tetsu/body/air2/tetsu-body-air2-runtime220.webp": {
+    "width": 2176,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/tetsu/body/awakening-start/tetsu-body-awakening-start-runtime220.webp": {
+    "width": 1088,
+    "height": 1024
+  },
+  "combat/runtime-final/existing3/tetsu/body/blow/tetsu-body-blow-runtime220.webp": {
+    "width": 576,
+    "height": 2176
+  },
+  "combat/runtime-final/existing3/tetsu/body/charge-hold/tetsu-body-charge-hold-runtime220.webp": {
+    "width": 576,
+    "height": 1984
+  },
+  "combat/runtime-final/existing3/tetsu/body/charge-start/tetsu-body-charge-start-runtime220.webp": {
+    "width": 576,
+    "height": 1920
+  },
+  "combat/runtime-final/existing3/tetsu/body/crouch/tetsu-body-crouch-runtime220.webp": {
+    "width": 832,
+    "height": 1216
+  },
+  "combat/runtime-final/existing3/tetsu/body/damage/tetsu-body-damage-runtime220.webp": {
+    "width": 576,
+    "height": 1984
+  },
+  "combat/runtime-final/existing3/tetsu/body/death/tetsu-body-death-runtime220.webp": {
+    "width": 576,
+    "height": 1536
+  },
+  "combat/runtime-final/existing3/tetsu/effects/mob-slash-trail/tetsu-effects-mob-slash-trail-runtime220.webp": {
+    "width": 576,
+    "height": 1536
+  },
+  "combat/runtime-final/existing3/tetsu/effects/ranged/tetsu-effects-ranged-runtime220.webp": {
+    "width": 704,
+    "height": 1984
+  },
+  "combat/runtime-final/existing3/tetsu/effects/slam/tetsu-effects-slam-runtime220.webp": {
+    "width": 1344,
+    "height": 960
+  },
+  "combat/runtime-final/existing3/tetsu/effects/special1-aura/tetsu-effects-special1-aura-runtime220.webp": {
+    "width": 1344,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/tetsu/effects/special2-water/tetsu-effects-special2-water-runtime220.webp": {
+    "width": 640,
+    "height": 2496
+  },
+  "combat/runtime-final/existing3/tetsu/body/idle/tetsu-body-idle-runtime220.webp": {
+    "width": 256,
+    "height": 3904
+  },
+  "combat/runtime-final/existing3/tetsu/body/launch/tetsu-body-launch-runtime220.webp": {
+    "width": 960,
+    "height": 1344
+  },
+  "combat/runtime-final/existing3/tetsu/body/light2/tetsu-body-light2-runtime220.webp": {
+    "width": 832,
+    "height": 1472
+  },
+  "combat/runtime-final/existing3/tetsu/body/light4/tetsu-body-light4-runtime220.webp": {
+    "width": 896,
+    "height": 1472
+  },
+  "combat/runtime-final/existing3/tetsu/body/ranged/tetsu-body-ranged-runtime220.webp": {
+    "width": 640,
+    "height": 2112
+  },
+  "combat/runtime-final/existing3/tetsu/body/recovery/tetsu-body-recovery-runtime220.webp": {
+    "width": 576,
+    "height": 1856
+  },
+  "combat/runtime-final/existing3/tetsu/body/special1-active/tetsu-body-special1-active-runtime220.webp": {
+    "width": 2176,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/tetsu/body/special1-recovery/tetsu-body-special1-recovery-runtime220.webp": {
+    "width": 2176,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/tetsu/body/special1-startup/tetsu-body-special1-startup-runtime220.webp": {
+    "width": 2432,
+    "height": 512
+  },
+  "combat/runtime-final/existing3/tetsu/body/special2-active/tetsu-body-special2-active-runtime220.webp": {
+    "width": 1856,
+    "height": 512
+  },
+  "combat/tetsu-original-revision/tetsu/body/special1/tetsu-special1-review-adapter-runtime220.webp": {
+    "width": 960,
+    "height": 1280
+  },
+  "combat/tetsu-original-revision/tetsu/body/special2/tetsu-special2-review-adapter-runtime220.webp": {
+    "width": 704,
+    "height": 2048
+  },
+  "combat/tetsu-original-revision/tetsu/effects/special1-slash/tetsu-special1-slash-16-compact.webp": {
+    "width": 1216,
+    "height": 896
+  },
+  "combat/tetsu-original-revision/tetsu/effects/special2-blast/tetsu-special2-blast-16-compact.webp": {
+    "width": 1216,
+    "height": 1216
+  },
+  "combat/tetsu-original-revision/tetsu/effects/special2-charge-aura/tetsu-special2-charge-aura-16-compact.webp": {
+    "width": 1024,
+    "height": 1088
+  },
+  "combat/tetsu-original-revision/tetsu/effects/special2-charge-eye/tetsu-special2-charge-eye-16-compact.webp": {
+    "width": 448,
+    "height": 1600
+  },
+  "combat/pink-base8/idle/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/pink-base8/walk/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/pink-base8/dash/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/pink-base8/jump/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/pink-base8/weak1/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/pink-base8/weak2/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/pink-base8/weak3/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/pink-base8/weak4/atlas.png": {
+    "width": 512,
+    "height": 512
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/idle/atlas.webp": {
+    "width": 512,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/walk/atlas.webp": {
+    "width": 1024,
+    "height": 1664
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/dash/atlas.webp": {
+    "width": 1280,
+    "height": 1152
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/jump/atlas.webp": {
+    "width": 1280,
+    "height": 1024
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light1/atlas.webp": {
+    "width": 1280,
+    "height": 1280
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light2/atlas.webp": {
+    "width": 1024,
+    "height": 1536
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light3/atlas.webp": {
+    "width": 1792,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/light4/atlas.webp": {
+    "width": 768,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/charge-start/atlas.webp": {
+    "width": 2048,
+    "height": 512
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/charge-hold/atlas.webp": {
+    "width": 256,
+    "height": 3968
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/blow/atlas.webp": {
+    "width": 768,
+    "height": 1280
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/launch/atlas.webp": {
+    "width": 512,
+    "height": 2944
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/ranged/atlas.webp": {
+    "width": 1024,
+    "height": 1024
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/rush/atlas.webp": {
+    "width": 1280,
+    "height": 1024
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/air1/atlas.webp": {
+    "width": 768,
+    "height": 2176
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/air2/atlas.webp": {
+    "width": 1792,
+    "height": 896
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/air3/atlas.webp": {
+    "width": 1024,
+    "height": 1536
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/slam/atlas.webp": {
+    "width": 2560,
+    "height": 640
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/damage/atlas.webp": {
+    "width": 512,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/death/atlas.webp": {
+    "width": 1280,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/recovery/atlas.webp": {
+    "width": 256,
+    "height": 3200
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/awakening-start/atlas.webp": {
+    "width": 512,
+    "height": 2048
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/awakening-end/atlas.webp": {
+    "width": 3584,
+    "height": 256
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/guard/atlas.webp": {
+    "width": 512,
+    "height": 1920
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/crouch/atlas.webp": {
+    "width": 768,
+    "height": 1664
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special1-startup/atlas.webp": {
+    "width": 1024,
+    "height": 1536
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special1-active/atlas.webp": {
+    "width": 1024,
+    "height": 1664
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special1-recovery/atlas.webp": {
+    "width": 1280,
+    "height": 1152
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special2-startup/atlas.webp": {
+    "width": 1792,
+    "height": 896
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special2-active/atlas.webp": {
+    "width": 1280,
+    "height": 1152
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/special2-recovery/atlas.webp": {
+    "width": 1024,
+    "height": 1280
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/special1-fish/atlas.webp": {
+    "width": 768,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/special2-dragon/atlas.webp": {
+    "width": 1024,
+    "height": 1920
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/awakening-aura/atlas.webp": {
+    "width": 1280,
+    "height": 768
+  },
+  "combat/runtime-final/newtwo/MOB-NEW-TWO-runtime/mobdesert/effects/awakening-burst/atlas.webp": {
+    "width": 768,
+    "height": 1280
+  },
+  "combat/revision-six/denden-walk/walk/page-00.webp": {
+    "width": 846,
+    "height": 1461
+  },
+  "combat/revision-six/denden12/ground-wave/page-00.webp": {
+    "width": 1520,
+    "height": 1084
+  },
+  "combat/revision-six/denden12/special1/page-00.webp": {
+    "width": 857,
+    "height": 1473
+  },
+  "combat/revision-six/denden12/special1-energy/page-00.webp": {
+    "width": 1324,
+    "height": 1068
+  },
+  "combat/revision-six/denden12/special1-impact/page-00.webp": {
+    "width": 1506,
+    "height": 1150
+  },
+  "combat/revision-six/denden12/special2/page-00.webp": {
+    "width": 936,
+    "height": 1479
+  },
+  "combat/revision-six/denden12/special2-fall/page-00.webp": {
+    "width": 1392,
+    "height": 909
+  },
+  "combat/revision-six/denden12/special2-ground/page-00.webp": {
+    "width": 1272,
+    "height": 1288
+  },
+  "combat/revision-six/denden3/body/page-00.webp": {
+    "width": 907,
+    "height": 1460
+  },
+  "combat/revision-six/denden3/ground-wave/page-00.webp": {
+    "width": 1520,
+    "height": 1084
+  },
+  "combat/revision-six/denden3/muzzle/page-00.webp": {
+    "width": 1019,
+    "height": 565
+  },
+  "combat/revision-six/manny/manny/dash/atlas.webp": {
+    "width": 842,
+    "height": 2746
+  },
+  "combat/revision-six/manny/manny/walk/atlas.webp": {
+    "width": 1075,
+    "height": 2279
+  },
+  "combat/revision-six/nyoro12/special1/page-00.webp": {
+    "width": 971,
+    "height": 845
+  },
+  "combat/revision-six/nyoro12/special1-rain/page-00.webp": {
+    "width": 1520,
+    "height": 1324
+  },
+  "combat/revision-six/nyoro12/special2/page-00.webp": {
+    "width": 927,
+    "height": 1448
+  },
+  "combat/revision-six/nyoro12/special2-flame/page-00.webp": {
+    "width": 1506,
+    "height": 753
+  },
+  "combat/revision-six/nyoro12/special2-impact/page-00.webp": {
+    "width": 1528,
+    "height": 1256
+  },
+  "combat/revision-six/nyoro12/special2-meteor/page-00.webp": {
+    "width": 1428,
+    "height": 1256
+  },
+  "combat/hero-water-revision/awakened-special2.webp": {
+    "width": 2016,
+    "height": 1104
+  },
+  "combat/hero-water-revision/fx-special2-splash.webp": {
+    "width": 1920,
+    "height": 2240
+  },
+  "combat/hero-water-revision/fx-special2-water.webp": {
+    "width": 2048,
+    "height": 768
+  },
+  "combat/hero-water-revision/special2.webp": {
+    "width": 2048,
+    "height": 992
+  },
+  "combat/revision-six/denden-dash/dash/page-00.webp": {
+    "width": 1009,
+    "height": 1172
+  },
+  "combat/revision-six/nyoro-movement/dash/page-00.webp": {
+    "width": 1012,
+    "height": 1446
+  },
+  "combat/revision-six/nyoro-movement/jump/page-00.webp": {
+    "width": 934,
+    "height": 920
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "bodyHeight": 220.0,
+  "bodyHeightMeaning": "Fixed drawing reference calibrated by head lens diameter; NOT anatomical total height. Uniform resolution normalisation per generated quarter, no per-frame fit.",
+  "loop": true,
+  "duration": 0.96,
+  "nativeFacing": "right",
+  "status": "Candidate only; gait and boundaries awaiting visual QA",
+  "src": "page-00.webp",
+  "frames": [
+    {
+      "duration": 0.06,
+      "pivot": [
+        145.56092649825828,
+        221.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        310,
+        514,
+        269,
+        228
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        139.56092649825828,
+        221.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        572,
+        8,
+        263,
+        238
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        145.56092649825828,
+        229.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        8,
+        271,
+        239
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        139.56092649825828,
+        233.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        295,
+        8,
+        261,
+        239
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        128.56092649825828,
+        220.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        759,
+        244,
+        226
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        126.56092649825828,
+        219.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        542,
+        759,
+        242,
+        225
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        136.56092649825828,
+        209.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        536,
+        1001,
+        249,
+        215
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        128.56092649825828,
+        216.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        1001,
+        260,
+        222
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        145.56092649825828,
+        223.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        553,
+        263,
+        277,
+        230
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        152.56092649825828,
+        223.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        514,
+        286,
+        229
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        131.56092649825828,
+        226.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        284,
+        263,
+        253,
+        231
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        133.56092649825828,
+        229.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        263,
+        260,
+        235
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        138.56092649825828,
+        219.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        268,
+        759,
+        258,
+        225
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        126.56092649825828,
+        221.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        595,
+        514,
+        243,
+        227
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        120.56092649825828,
+        212.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        284,
+        1001,
+        236,
+        218
+      ]
+    },
+    {
+      "duration": 0.06,
+      "pivot": [
+        126.56092649825828,
+        208.63860982294858
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        1239,
+        235,
+        214
+      ]
+    }
+  ],
+  "sourceFrameCount": 16,
+  "runtimeSpatialScale": 0.35944401511222857,
+  "framesHavePerFrameSrc": true,
+  "runtimeExport": "Static lossless WebP, trimmed with8px external gutters; source master unchanged. Uniform spatial downsample where stated."
+}

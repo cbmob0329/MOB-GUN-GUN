@@ -1,0 +1,372 @@
+{
+  "bodyHeight": 220,
+  "orientationMode": "fixed",
+  "loop": false,
+  "duration": 1.1,
+  "anchor": "Impact event point, ground ring center; retain original floor or enemy-hit height.",
+  "artChoreography": "Initial central flash strongest then shrinks; small initial ground ring grows; smoke spreads and breaks apart. Dedicated16 illustrations, original1.1s fade applied externally. No exact procedural pixel-recreation claim.",
+  "frameClock": "Clamp(age/1.1,0,1),16 drawn cels; original external alpha1-age/1.1 MUST reach0 before despawn. No completion wait.",
+  "viewportPolicy": "Same fixed crop and uniform physical scale all16. Initial large light contracts, initial small ground ring spreads, smoke disperses. Preserves original look/timing, not pixel-identical procedural formula.",
+  "impactAnchor": "Actual original impact(f.x,f.y): floorY for floor; enemy hit=min(projectileY,enemyFootY-20). No additional ground snap.",
+  "maxVisibleWidthAt110": 674.9,
+  "knownCaveat": "A few low-alpha halo pixels touch raw sheet crop edges in cels8/9; no opaque core/lines cut. Original soft alpha retained. Final ring requires caller fade to avoid abrupt disappearance.",
+  "src": "page-00.webp",
+  "frames": [
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        8,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        390,
+        8,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        772,
+        8,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1154,
+        8,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        322,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        390,
+        322,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        772,
+        322,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1154,
+        322,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        636,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        390,
+        636,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        772,
+        636,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1154,
+        636,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        950,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        390,
+        950,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        772,
+        950,
+        366,
+        298
+      ]
+    },
+    {
+      "duration": 0.06875,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        6.888271054099274,
+        5.608482989403234
+      ],
+      "pivot": [
+        189,
+        235
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        1154,
+        950,
+        366,
+        298
+      ]
+    }
+  ],
+  "sourceFrameCount": 16,
+  "runtimeSpatialScale": 1,
+  "framesHavePerFrameSrc": true,
+  "runtimeExport": "Static lossless WebP, trimmed with8px external gutters; source master unchanged. Uniform spatial downsample where stated."
+}

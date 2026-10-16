@@ -1,0 +1,272 @@
+{
+  "bodyHeight": 220.0,
+  "bodyHeightMeaning": "Fixed draw reference calibrated by median near brown lens diameter to approved idle; not anatomical full height. No per-frame body or head fit.",
+  "nativeFacing": "right",
+  "loop": false,
+  "duration": 0.785,
+  "jumpPoseRangesDocumentation": {
+    "indexUnits": "zero-based, end-exclusive; documentation for physics-phase integration",
+    "preparation": [
+      0,
+      3
+    ],
+    "airborne": [
+      3,
+      11
+    ],
+    "landingRecovery": [
+      11,
+      16
+    ],
+    "playbackRule": "Synchronize airborne poses to actual physics air phase; .785s is source pose-track duration, not forced real jump duration. Source per-cel phase names retained."
+  },
+  "rootPolicy": "Ground: midpoint of two contact soles. Air: neutral chest-to-root offset follows torso/pelvis, not eye position. Game owns worldY jump arc.",
+  "status": "Candidate awaiting independent visual QA and in-game jump/root checks.",
+  "src": "page-00.webp",
+  "frames": [
+    {
+      "duration": 0.06,
+      "phase": "ready",
+      "pivot": [
+        111.25449556538791,
+        214.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        468,
+        8,
+        217,
+        218
+      ]
+    },
+    {
+      "duration": 0.04,
+      "phase": "crouch",
+      "pivot": [
+        121.25449556538791,
+        197.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        709,
+        228,
+        203
+      ]
+    },
+    {
+      "duration": 0.06,
+      "phase": "deep-crouch",
+      "pivot": [
+        91.25449556538791,
+        176.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        713,
+        709,
+        213,
+        183
+      ]
+    },
+    {
+      "duration": 0.035,
+      "phase": "early-lift",
+      "pivot": [
+        111.25449556538791,
+        209.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        231,
+        480,
+        191,
+        212
+      ]
+    },
+    {
+      "duration": 0.04,
+      "phase": "takeoff",
+      "pivot": [
+        115.25449556538791,
+        205.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        236,
+        247,
+        209,
+        216
+      ]
+    },
+    {
+      "duration": 0.045,
+      "phase": "rise-fold",
+      "pivot": [
+        122.25449556538791,
+        209.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        8,
+        222,
+        223
+      ]
+    },
+    {
+      "duration": 0.05,
+      "phase": "rise-tuck",
+      "pivot": [
+        117.25449556538791,
+        211.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        461,
+        247,
+        218,
+        215
+      ]
+    },
+    {
+      "duration": 0.06,
+      "phase": "apex-in",
+      "pivot": [
+        116.25449556538791,
+        195.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        701,
+        8,
+        212,
+        217
+      ]
+    },
+    {
+      "duration": 0.06,
+      "phase": "apex-out",
+      "pivot": [
+        115.25449556538791,
+        204.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        681,
+        480,
+        214,
+        207
+      ]
+    },
+    {
+      "duration": 0.05,
+      "phase": "descent-start",
+      "pivot": [
+        128.2544955653879,
+        202.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        438,
+        480,
+        227,
+        210
+      ]
+    },
+    {
+      "duration": 0.045,
+      "phase": "descent-extend",
+      "pivot": [
+        112.25449556538791,
+        206.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        247,
+        212,
+        217
+      ]
+    },
+    {
+      "duration": 0.04,
+      "phase": "first-land",
+      "pivot": [
+        116.25449556538791,
+        206.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        695,
+        247,
+        215,
+        213
+      ]
+    },
+    {
+      "duration": 0.03,
+      "phase": "compress",
+      "pivot": [
+        107.25449556538791,
+        180.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        488,
+        709,
+        209,
+        184
+      ]
+    },
+    {
+      "duration": 0.06,
+      "phase": "deep-landing",
+      "pivot": [
+        98.25449556538791,
+        191.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        252,
+        709,
+        220,
+        197
+      ]
+    },
+    {
+      "duration": 0.05,
+      "phase": "recover",
+      "pivot": [
+        104.25449556538791,
+        215.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        246,
+        8,
+        206,
+        222
+      ]
+    },
+    {
+      "duration": 0.06,
+      "phase": "settle",
+      "pivot": [
+        110.25449556538791,
+        206.88174334808184
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        480,
+        207,
+        213
+      ]
+    }
+  ],
+  "sourceFrameCount": 16,
+  "runtimeSpatialScale": 0.7375149852179597,
+  "framesHavePerFrameSrc": true,
+  "runtimeExport": "Static lossless WebP, trimmed with8px external gutters; source master unchanged. Uniform spatial downsample where stated."
+}

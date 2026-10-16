@@ -1,0 +1,68 @@
+{
+  "body": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 907,
+        "height": 1460,
+        "decodedBytes": 5296880,
+        "sha256": "90f4383fbcf09e07531f809e11092951dcb383f4d63625215371a0bfd0056427"
+      }
+    ],
+    "totalDecodedBytes": 5296880,
+    "scale": 0.8908489173882368,
+    "fixedCrop": null,
+    "maxOutsideAlphaDiscarded": 0,
+    "sourceMasterSHA256": "6ac73bcc73f2377793742b0ed65d457b60193a2d953a3499fb176683b0d51c7c",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "muzzle": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 1019,
+        "height": 565,
+        "decodedBytes": 2302940,
+        "sha256": "c4c6be2204ede05c1126da7282552ea0a05af90f95c0809f2a89b3f531d8eb1c"
+      }
+    ],
+    "totalDecodedBytes": 2302940,
+    "scale": 0.5,
+    "fixedCrop": null,
+    "maxOutsideAlphaDiscarded": 0,
+    "sourceMasterSHA256": "082716f4922704a129e3b5e2a77b948069de6e08fc0744718ffb8b8290285c35",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "sharedWave": {
+    "frameCount": 16,
+    "uniqueVisibleSourceRGBA": 16,
+    "pages": [
+      {
+        "src": "page-00.webp",
+        "width": 1520,
+        "height": 1084,
+        "decodedBytes": 6590720,
+        "sha256": "af8a41d25efe010b59923960119204f6c1b18977e49515366d0a3dca4cebd320"
+      }
+    ],
+    "totalDecodedBytes": 6590720,
+    "scale": 1,
+    "fixedCrop": [
+      76,
+      173,
+      440,
+      428
+    ],
+    "maxOutsideAlphaDiscarded": 1,
+    "sourceMasterSHA256": "5c3fa0b49710f3db9d02be1737ea5769699d5a79216bdbc1bcd8f3171b071873",
+    "decodedVisibleRGBAExactToResizedCels": true
+  },
+  "uniqueDrawnTracks": 3,
+  "uniqueDrawnCels": 48,
+  "allResidentDecodedMiB": 13.533153533935547,
+  "scope": "Denden special3 body/muzzle and shared ground wave only. Does not replace unfinished walk/dash or other specials."
+}

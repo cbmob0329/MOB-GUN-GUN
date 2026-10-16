@@ -1,0 +1,14 @@
+{
+  "animations": {
+    "nyoro/dash": {
+      "adapter": "dash/adapter.json"
+    },
+    "nyoro/jump": {
+      "adapter": "jump/adapter.json"
+    }
+  },
+  "aliases": {
+    "nyoro/awakened-dash": "nyoro/dash",
+    "nyoro/awakened-jump": "nyoro/jump"
+  }
+}

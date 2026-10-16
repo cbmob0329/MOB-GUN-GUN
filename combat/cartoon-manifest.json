@@ -20,7 +20,8 @@
       "adapter": "runtime-final/existing3/denden/body/damage/denden-body-damage-runtime220.json"
     },
     "denden/dash": {
-      "adapter": "runtime-final/existing3/denden/body/dash/denden-body-dash-runtime220.json"
+      "adapter": "revision-six/denden-dash/dash/adapter.json",
+      "nativeFacing": 1
     },
     "denden/death": {
       "adapter": "runtime-final/existing3/denden/body/death/denden-body-death-runtime220.json"
@@ -55,22 +56,9 @@
     "denden/rush": {
       "adapter": "runtime-final/existing3/denden/body/rush/denden-body-rush-runtime220.json"
     },
-    "denden/special1-active": {
-      "adapter": "runtime-final/existing3/denden/body/special1-active/denden-body-special1-active-runtime220.json"
-    },
-    "denden/special2-active": {
-      "adapter": "runtime-final/existing3/denden/body/special2-active/denden-body-special2-active-runtime220.json",
-      "releaseFrame": 4,
-      "releaseSocket": [
-        0.7338709677419355,
-        0.0967741935483871
-      ]
-    },
-    "denden/special2-recovery": {
-      "adapter": "runtime-final/existing3/denden/body/special2-recovery/denden-body-special2-recovery-runtime220.json"
-    },
     "denden/walk": {
-      "adapter": "runtime-final/existing3/denden/body/walk/denden-body-walk-runtime220.json"
+      "adapter": "revision-six/denden-walk/walk/adapter.json",
+      "nativeFacing": 1
     },
     "denden/air1": {
       "adapter": "runtime-final/existing3/denden/body/air1/denden-body-air1-runtime220.json"
@@ -131,29 +119,25 @@
     "denden/slam": {
       "adapter": "runtime-final/existing3/denden/body/slam/denden-body-slam-runtime220.json"
     },
-    "denden/special1-recovery": {
-      "adapter": "runtime-final/existing3/denden/body/special1-recovery/denden-body-special1-recovery-runtime220.json"
-    },
-    "denden/special1-startup": {
-      "adapter": "runtime-final/existing3/denden/body/special1-startup/denden-body-special1-startup-runtime220.json"
-    },
-    "denden/special2-startup": {
-      "adapter": "runtime-final/existing3/denden/body/special2-startup/denden-body-special2-startup-runtime220.json"
-    },
     "nyoro/air3": {
-      "adapter": "runtime-final/existing3/nyoro/body/air3/nyoro-body-air3-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/air3/nyoro-body-air3-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/blow": {
-      "adapter": "runtime-final/existing3/nyoro/body/blow/nyoro-body-blow-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/blow/nyoro-body-blow-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/charge-start": {
-      "adapter": "runtime-final/existing3/nyoro/body/charge-start/nyoro-body-charge-start-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/charge-start/nyoro-body-charge-start-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/crouch": {
-      "adapter": "runtime-final/existing3/nyoro/body/crouch/nyoro-body-crouch-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/crouch/nyoro-body-crouch-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/dash": {
-      "adapter": "runtime-final/existing3/nyoro/body/dash/nyoro-body-dash-runtime220.json"
+      "adapter": "revision-six/nyoro-movement/dash/adapter.json",
+      "nativeFacing": 1
     },
     "nyoro/effects/awakening-aura": {
       "adapter": "runtime-final/existing3/nyoro/effects/awakening-aura/nyoro-effects-awakening-aura-runtime220.json"
@@ -168,31 +152,32 @@
       "adapter": "runtime-final/existing3/nyoro/effects/special2-splash/nyoro-effects-special2-splash-runtime220.json"
     },
     "nyoro/jump": {
-      "adapter": "runtime-final/existing3/nyoro/body/jump/nyoro-body-jump-runtime220.json"
+      "adapter": "revision-six/nyoro-movement/jump/adapter.json",
+      "nativeFacing": 1
     },
     "nyoro/launch": {
-      "adapter": "runtime-final/existing3/nyoro/body/launch/nyoro-body-launch-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/launch/nyoro-body-launch-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/slam": {
-      "adapter": "runtime-final/existing3/nyoro/body/slam/nyoro-body-slam-runtime220.json"
-    },
-    "nyoro/special1-active": {
-      "adapter": "runtime-final/existing3/nyoro/body/special1-active/nyoro-body-special1-active-runtime220.json"
-    },
-    "nyoro/special1-recovery": {
-      "adapter": "runtime-final/existing3/nyoro/body/special1-recovery/nyoro-body-special1-recovery-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/slam/nyoro-body-slam-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/air2": {
-      "adapter": "runtime-final/existing3/nyoro/body/air2/nyoro-body-air2-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/air2/nyoro-body-air2-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/awakening-start": {
-      "adapter": "runtime-final/existing3/nyoro/body/awakening-start/nyoro-body-awakening-start-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/awakening-start/nyoro-body-awakening-start-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/charge-hold": {
-      "adapter": "runtime-final/existing3/nyoro/body/charge-hold/nyoro-body-charge-hold-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/charge-hold/nyoro-body-charge-hold-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/damage": {
-      "adapter": "runtime-final/existing3/nyoro/body/damage/nyoro-body-damage-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/damage/nyoro-body-damage-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/effects/rush-trail": {
       "adapter": "runtime-final/existing3/nyoro/effects/rush-trail/nyoro-effects-rush-trail-runtime220.json"
@@ -201,17 +186,21 @@
       "adapter": "runtime-final/existing3/nyoro/effects/special2-water/nyoro-effects-special2-water-runtime220.json"
     },
     "nyoro/guard": {
-      "adapter": "runtime-final/existing3/nyoro/body/guard/nyoro-body-guard-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/guard/nyoro-body-guard-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/idle": {
       "adapter": "nyoro-candidate/runtime/idle/idle-candidate-master-runtime220.json",
-      "status": "candidate-not-in-engine-accepted"
+      "status": "candidate-not-in-engine-accepted",
+      "bodyHeight": 220
     },
     "nyoro/light1": {
-      "adapter": "runtime-final/existing3/nyoro/body/light1/nyoro-body-light1-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/light1/nyoro-body-light1-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/light3": {
-      "adapter": "runtime-final/existing3/nyoro/body/light3/nyoro-body-light3-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/light3/nyoro-body-light3-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/ranged": {
       "adapter": "runtime-final/existing3/nyoro/body/ranged/nyoro-body-ranged-runtime220.json",
@@ -219,25 +208,28 @@
       "releaseSocket": [
         0.7922705314009661,
         -0.6570048309178744
-      ]
+      ],
+      "bodyHeight": 220
     },
     "nyoro/recovery": {
-      "adapter": "runtime-final/existing3/nyoro/body/recovery/nyoro-body-recovery-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/recovery/nyoro-body-recovery-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/rush": {
-      "adapter": "runtime-final/existing3/nyoro/body/rush/nyoro-body-rush-runtime220.json"
-    },
-    "nyoro/special2-recovery": {
-      "adapter": "runtime-final/existing3/nyoro/body/special2-recovery/nyoro-body-special2-recovery-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/rush/nyoro-body-rush-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/air1": {
-      "adapter": "runtime-final/existing3/nyoro/body/air1/nyoro-body-air1-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/air1/nyoro-body-air1-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/awakening-end": {
-      "adapter": "runtime-final/existing3/nyoro/body/awakening-end/nyoro-body-awakening-end-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/awakening-end/nyoro-body-awakening-end-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/death": {
-      "adapter": "runtime-final/existing3/nyoro/body/death/nyoro-body-death-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/death/nyoro-body-death-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/effects/awakening-burst": {
       "adapter": "runtime-final/existing3/nyoro/effects/awakening-burst/nyoro-effects-awakening-burst-runtime220.json"
@@ -258,29 +250,18 @@
       "adapter": "runtime-final/existing3/nyoro/effects/special1-aura/nyoro-effects-special1-aura-runtime220.json"
     },
     "nyoro/light2": {
-      "adapter": "runtime-final/existing3/nyoro/body/light2/nyoro-body-light2-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/light2/nyoro-body-light2-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/light4": {
-      "adapter": "runtime-final/existing3/nyoro/body/light4/nyoro-body-light4-runtime220.json"
-    },
-    "nyoro/special1-startup": {
-      "adapter": "runtime-final/existing3/nyoro/body/special1-startup/nyoro-body-special1-startup-runtime220.json"
-    },
-    "nyoro/special2-active": {
-      "adapter": "runtime-final/existing3/nyoro/body/special2-active/nyoro-body-special2-active-runtime220.json",
-      "releaseFrame": 6,
-      "releaseSocket": [
-        0.6171428571428571,
-        -0.4228571428571429
-      ]
-    },
-    "nyoro/special2-startup": {
-      "adapter": "runtime-final/existing3/nyoro/body/special2-startup/nyoro-body-special2-startup-runtime220.json"
+      "adapter": "runtime-final/existing3/nyoro/body/light4/nyoro-body-light4-runtime220.json",
+      "bodyHeight": 220
     },
     "nyoro/walk": {
       "adapter": "nyoro-candidate/runtime/walk/walk-candidate-master-runtime220.json",
       "status": "candidate-not-in-engine-accepted",
-      "strideDistance": 100
+      "strideDistance": 100,
+      "bodyHeight": 220
     },
     "tetsu/air3": {
       "adapter": "runtime-final/existing3/tetsu/body/air3/tetsu-body-air3-runtime220.json"
@@ -518,30 +499,11 @@
       "spinCycleDuration": 0.64
     },
     "special2": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/special2.json"
-    },
-    "special2-active": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/special2.json",
+      "adapter": "hero-water-revision/special2.json",
+      "releaseFrame": 7,
       "releaseSocket": [
-        0.17058823529411765,
-        -0.18823529411764706
-      ],
-      "releaseFrame": 19,
-      "frameRange": [
-        16,
-        24
-      ]
-    },
-    "water": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/special2.json",
-      "releaseSocket": [
-        0.17058823529411765,
-        -0.18823529411764706
-      ],
-      "releaseFrame": 19,
-      "frameRange": [
-        16,
-        24
+        0.7871140160595552,
+        0.020410305381180216
       ]
     },
     "awakened-idle": {
@@ -637,30 +599,11 @@
       "spinCycleDuration": 0.64
     },
     "awakened-special2": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special2.json"
-    },
-    "awakened-special2-active": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special2.json",
+      "adapter": "hero-water-revision/awakened-special2.json",
+      "releaseFrame": 7,
       "releaseSocket": [
-        0.3323529411764706,
-        -0.3088235294117647
-      ],
-      "releaseFrame": 19,
-      "frameRange": [
-        16,
-        24
-      ]
-    },
-    "awakened-water": {
-      "adapter": "runtime-final/hero/combat/hero/adapters/awakened-special2.json",
-      "releaseSocket": [
-        0.3323529411764706,
-        -0.3088235294117647
-      ],
-      "releaseFrame": 19,
-      "frameRange": [
-        16,
-        24
+        0.7879761801719158,
+        0.04239584536964211
       ]
     },
     "hero/effects/hit-light": {
@@ -688,10 +631,14 @@
       "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-special1-aura-16/mobrami-fx-special1-aura-16-runtime220.json"
     },
     "hero/effects/special2-water": {
-      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-special2-water-16/mobrami-fx-special2-water-16-runtime220.json"
+      "adapter": "hero-water-revision/fx-special2-water.json",
+      "orientationMode": "velocity",
+      "nativeAngleRadians": 1.5707963267948966
     },
     "hero/effects/special2-splash": {
-      "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-special2-splash-16/mobrami-fx-special2-splash-16-runtime220.json"
+      "adapter": "hero-water-revision/fx-special2-splash.json",
+      "orientationMode": "fixed",
+      "nativeAngleRadians": 0
     },
     "hero/effects/awakening-aura": {
       "adapter": "runtime-final/hero/combat/hero/clips/mobrami-fx-awakening-aura-16/mobrami-fx-awakening-aura-16-runtime220.json"
@@ -703,13 +650,15 @@
       "adapter": "runtime-final/newtwo/MOB-NEW-TWO-runtime/manny/idle/clip.json"
     },
     "manny/walk": {
-      "adapter": "manny-walk-revision/manny/walk/clip.json",
-      "strideDistance": 99,
-      "nativeFacing": 1
+      "adapter": "revision-six/manny/manny/walk/clip.json",
+      "nativeFacing": 1,
+      "loop": true,
+      "strideDistance": 99
     },
     "manny/dash": {
-      "adapter": "manny-dash-revision/manny/dash/clip.json",
+      "adapter": "revision-six/manny/manny/dash/clip.json",
       "nativeFacing": 1,
+      "loop": true,
       "strideDistance": 160
     },
     "manny/jump": {
@@ -1121,6 +1070,120 @@
     },
     "pink/light4": {
       "adapter": "pink-base8/weak4/clip.json"
+    },
+    "denden/special3": {
+      "adapter": "revision-six/denden3/body/adapter.json",
+      "sourceDuration": 0.72,
+      "eventFrames": [
+        6,
+        9,
+        12
+      ],
+      "eventTimes": [
+        0.24,
+        0.37,
+        0.5
+      ],
+      "nativeFacing": 1
+    },
+    "denden/effects/special3-muzzle": {
+      "adapter": "revision-six/denden3/muzzle/adapter.json",
+      "nativeFacing": 1
+    },
+    "denden/effects/ground-wave": {
+      "adapter": "revision-six/denden12/ground-wave/adapter.json"
+    },
+    "denden/effects/thunder-burst": {
+      "adapter": "revision-six/denden3/thunder-burst/adapter.json"
+    },
+    "hero/effects/awakened-special2-water": {
+      "adapter": "hero-water-revision/fx-special2-water.json",
+      "orientationMode": "velocity",
+      "nativeAngleRadians": 1.5707963267948966
+    },
+    "hero/effects/awakened-special2-splash": {
+      "adapter": "hero-water-revision/fx-special2-splash.json",
+      "orientationMode": "fixed",
+      "nativeAngleRadians": 0
+    },
+    "denden/special1": {
+      "adapter": "revision-six/denden12/special1/adapter.json",
+      "releaseSocket": [
+        0.636968215899483,
+        -0.42976168783579577
+      ],
+      "releaseFrame": 6,
+      "releaseTime": 0.25,
+      "chargeSockets": [
+        [
+          0.5947594787013245,
+          -0.42592452990869045
+        ],
+        [
+          0.6139452683368511,
+          -0.3913901085647426
+        ],
+        [
+          0.5794108469929032,
+          -0.42208737198158514
+        ],
+        [
+          0.5487135835760607,
+          -0.4144130561273745
+        ],
+        [
+          0.5410392677218501,
+          -0.42208737198158514
+        ],
+        [
+          0.575573689065798,
+          -0.4451103195442171
+        ]
+      ],
+      "chargeSocketFrameConvention": "Zero-based source body frame0-5; body draw reference normalized. Foot origin, X facing mirrored, Y down.",
+      "nativeFacing": 1
+    },
+    "denden/special2": {
+      "adapter": "revision-six/denden12/special2/adapter.json",
+      "nativeFacing": 1
+    },
+    "denden/effects/special1-energy": {
+      "adapter": "revision-six/denden12/special1-energy/adapter.json"
+    },
+    "denden/effects/special2-fall": {
+      "adapter": "revision-six/denden12/special2-fall/adapter.json"
+    },
+    "denden/effects/special2-ground": {
+      "adapter": "revision-six/denden12/special2-ground/adapter.json"
+    },
+    "denden/effects/special1-impact": {
+      "adapter": "revision-six/denden12/special1-impact/adapter.json"
+    },
+    "denden/effects/special1-charge": {
+      "adapter": "revision-six/denden12/special1-charge/adapter.json"
+    },
+    "nyoro/special1": {
+      "adapter": "revision-six/nyoro12/special1/adapter.json",
+      "nativeFacing": 1
+    },
+    "nyoro/special2": {
+      "adapter": "revision-six/nyoro12/special2/adapter.json",
+      "nativeFacing": 1
+    },
+    "nyoro/effects/special1-rain": {
+      "adapter": "revision-six/nyoro12/special1-rain/adapter.json"
+    },
+    "nyoro/effects/special2-meteor": {
+      "adapter": "revision-six/nyoro12/special2-meteor/adapter.json"
+    },
+    "nyoro/effects/special2-flame": {
+      "adapter": "revision-six/nyoro12/special2-flame/adapter.json"
+    },
+    "nyoro/effects/special1-impact": {
+      "adapter": "revision-six/nyoro12/special1-impact/adapter.json"
+    },
+    "nyoro/effects/special2-impact": {
+      "adapter": "revision-six/nyoro12/special2-impact/adapter.json"
     }
   },
   "aliases": {
@@ -1142,16 +1205,58 @@
     "denden/awakened-jump": "denden/jump",
     "denden/awakened-light1": "denden/light1",
     "denden/awakened-rush": "denden/rush",
-    "denden/awakened-special1-active": "denden/special1-active",
-    "denden/awakened-special2-active": "denden/special2-active",
-    "denden/awakened-special2-recovery": "denden/special2-recovery",
+    "denden/awakened-special1-active": {
+      "clip": "denden/special1",
+      "range": [
+        6,
+        8
+      ]
+    },
+    "denden/awakened-special2-active": {
+      "clip": "denden/special2",
+      "range": [
+        6,
+        12
+      ]
+    },
+    "denden/awakened-special2-recovery": {
+      "clip": "denden/special2",
+      "range": [
+        12,
+        16
+      ]
+    },
     "denden/awakened-walk": "denden/walk",
     "denden/charge": "denden/charge-hold",
     "denden/awakened-charge": "denden/charge-hold",
-    "denden/specialRush": "denden/special1-active",
-    "denden/awakened-specialRush": "denden/special1-active",
-    "denden/water": "denden/special2-active",
-    "denden/awakened-water": "denden/special2-active",
+    "denden/specialRush": {
+      "clip": "denden/special1",
+      "range": [
+        6,
+        8
+      ]
+    },
+    "denden/awakened-specialRush": {
+      "clip": "denden/special1",
+      "range": [
+        6,
+        8
+      ]
+    },
+    "denden/water": {
+      "clip": "denden/special2",
+      "range": [
+        6,
+        12
+      ]
+    },
+    "denden/awakened-water": {
+      "clip": "denden/special2",
+      "range": [
+        6,
+        12
+      ]
+    },
     "denden/awakened-air1": "denden/air1",
     "denden/awakened-air2": "denden/air2",
     "denden/awakened-air3": "denden/air3",
@@ -1170,11 +1275,41 @@
     "denden/awakened-ranged": "denden/ranged",
     "denden/awakened-recovery": "denden/recovery",
     "denden/awakened-slam": "denden/slam",
-    "denden/awakened-special1-recovery": "denden/special1-recovery",
-    "denden/awakened-special1-startup": "denden/special1-startup",
-    "denden/awakened-special2-startup": "denden/special2-startup",
-    "denden/dance": "denden/special1-startup",
-    "denden/awakened-dance": "denden/special1-startup",
+    "denden/awakened-special1-recovery": {
+      "clip": "denden/special1",
+      "range": [
+        8,
+        16
+      ]
+    },
+    "denden/awakened-special1-startup": {
+      "clip": "denden/special1",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/awakened-special2-startup": {
+      "clip": "denden/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/dance": {
+      "clip": "denden/special1",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/awakened-dance": {
+      "clip": "denden/special1",
+      "range": [
+        0,
+        6
+      ]
+    },
     "nyoro/awakened-air3": "nyoro/air3",
     "nyoro/awakened-blow": "nyoro/blow",
     "nyoro/awakened-charge-start": "nyoro/charge-start",
@@ -1187,10 +1322,34 @@
     "nyoro/awakened-jump": "nyoro/jump",
     "nyoro/awakened-launch": "nyoro/launch",
     "nyoro/awakened-slam": "nyoro/slam",
-    "nyoro/awakened-special1-active": "nyoro/special1-active",
-    "nyoro/awakened-special1-recovery": "nyoro/special1-recovery",
-    "nyoro/specialRush": "nyoro/special1-active",
-    "nyoro/awakened-specialRush": "nyoro/special1-active",
+    "nyoro/awakened-special1-active": {
+      "clip": "nyoro/special1",
+      "range": [
+        2,
+        14
+      ]
+    },
+    "nyoro/awakened-special1-recovery": {
+      "clip": "nyoro/special1",
+      "range": [
+        14,
+        16
+      ]
+    },
+    "nyoro/specialRush": {
+      "clip": "nyoro/special1",
+      "range": [
+        2,
+        14
+      ]
+    },
+    "nyoro/awakened-specialRush": {
+      "clip": "nyoro/special1",
+      "range": [
+        2,
+        14
+      ]
+    },
     "nyoro/awakened-air2": "nyoro/air2",
     "nyoro/awakened-awakening-start": "nyoro/awakening-start",
     "nyoro/awakened-charge-hold": "nyoro/charge-hold",
@@ -1204,7 +1363,13 @@
     "nyoro/awakened-ranged": "nyoro/ranged",
     "nyoro/awakened-recovery": "nyoro/recovery",
     "nyoro/awakened-rush": "nyoro/rush",
-    "nyoro/awakened-special2-recovery": "nyoro/special2-recovery",
+    "nyoro/awakened-special2-recovery": {
+      "clip": "nyoro/special2",
+      "range": [
+        13,
+        16
+      ]
+    },
     "nyoro/charge": "nyoro/charge-hold",
     "nyoro/awakened-charge": "nyoro/charge-hold",
     "nyoro/awakened-air1": "nyoro/air1",
@@ -1218,14 +1383,56 @@
     "nyoro/effects/awakened-special1-aura": "nyoro/effects/special1-aura",
     "nyoro/awakened-light2": "nyoro/light2",
     "nyoro/awakened-light4": "nyoro/light4",
-    "nyoro/awakened-special1-startup": "nyoro/special1-startup",
-    "nyoro/awakened-special2-active": "nyoro/special2-active",
-    "nyoro/awakened-special2-startup": "nyoro/special2-startup",
+    "nyoro/awakened-special1-startup": {
+      "clip": "nyoro/special1",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "nyoro/awakened-special2-active": {
+      "clip": "nyoro/special2",
+      "range": [
+        6,
+        13
+      ]
+    },
+    "nyoro/awakened-special2-startup": {
+      "clip": "nyoro/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
     "nyoro/awakened-walk": "nyoro/walk",
-    "nyoro/dance": "nyoro/special1-startup",
-    "nyoro/awakened-dance": "nyoro/special1-startup",
-    "nyoro/water": "nyoro/special2-active",
-    "nyoro/awakened-water": "nyoro/special2-active",
+    "nyoro/dance": {
+      "clip": "nyoro/special1",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "nyoro/awakened-dance": {
+      "clip": "nyoro/special1",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "nyoro/water": {
+      "clip": "nyoro/special2",
+      "range": [
+        6,
+        13
+      ]
+    },
+    "nyoro/awakened-water": {
+      "clip": "nyoro/special2",
+      "range": [
+        6,
+        13
+      ]
+    },
     "tetsu/awakened-air3": "tetsu/air3",
     "tetsu/awakened-awakening-end": "tetsu/awakening-end",
     "tetsu/awakened-dash": "tetsu/dash",
@@ -1279,9 +1486,7 @@
     "tetsu/awakened-specialRush": "tetsu/special1-active",
     "tetsu/water": "tetsu/special2-active",
     "tetsu/awakened-water": "tetsu/special2-active",
-    "charge": {
-      "clip": "charge-hold"
-    },
+    "charge": "charge-hold",
     "special1-startup": {
       "clip": "special1",
       "range": [
@@ -1321,19 +1526,17 @@
       "clip": "special2",
       "range": [
         0,
-        16
+        6
       ]
     },
     "special2-recovery": {
       "clip": "special2",
       "range": [
-        24,
-        32
+        9,
+        16
       ]
     },
-    "awakened-charge": {
-      "clip": "awakened-charge-hold"
-    },
+    "awakened-charge": "awakened-charge-hold",
     "awakened-special1-startup": {
       "clip": "awakened-special1",
       "range": [
@@ -1373,64 +1576,30 @@
       "clip": "awakened-special2",
       "range": [
         0,
-        16
+        6
       ]
     },
     "awakened-special2-recovery": {
       "clip": "awakened-special2",
       "range": [
-        24,
-        32
+        9,
+        16
       ]
     },
-    "charge-release": {
-      "clip": "blow"
-    },
-    "awakened-charge-release": {
-      "clip": "awakened-blow"
-    },
-    "awakening-end": {
-      "clip": "awakened-awakening-end"
-    },
-    "awakened-awakening-start": {
-      "clip": "awakening-start"
-    },
-    "hero/effects/awakened-hit-light": {
-      "clip": "hero/effects/hit-light"
-    },
-    "hero/effects/awakened-hit-heavy": {
-      "clip": "hero/effects/hit-heavy"
-    },
-    "hero/effects/awakened-charge": {
-      "clip": "hero/effects/charge"
-    },
-    "hero/effects/awakened-launch": {
-      "clip": "hero/effects/launch"
-    },
-    "hero/effects/awakened-slam": {
-      "clip": "hero/effects/slam"
-    },
-    "hero/effects/awakened-ranged": {
-      "clip": "hero/effects/ranged"
-    },
-    "hero/effects/awakened-rush-trail": {
-      "clip": "hero/effects/rush-trail"
-    },
-    "hero/effects/awakened-special1-aura": {
-      "clip": "hero/effects/special1-aura"
-    },
-    "hero/effects/awakened-special2-water": {
-      "clip": "hero/effects/special2-water"
-    },
-    "hero/effects/awakened-special2-splash": {
-      "clip": "hero/effects/special2-splash"
-    },
-    "hero/effects/awakened-awakening-aura": {
-      "clip": "hero/effects/awakening-aura"
-    },
-    "hero/effects/awakened-awakening-burst": {
-      "clip": "hero/effects/awakening-burst"
-    },
+    "charge-release": "blow",
+    "awakened-charge-release": "awakened-blow",
+    "awakening-end": "awakened-awakening-end",
+    "awakened-awakening-start": "awakening-start",
+    "hero/effects/awakened-hit-light": "hero/effects/hit-light",
+    "hero/effects/awakened-hit-heavy": "hero/effects/hit-heavy",
+    "hero/effects/awakened-charge": "hero/effects/charge",
+    "hero/effects/awakened-launch": "hero/effects/launch",
+    "hero/effects/awakened-slam": "hero/effects/slam",
+    "hero/effects/awakened-ranged": "hero/effects/ranged",
+    "hero/effects/awakened-rush-trail": "hero/effects/rush-trail",
+    "hero/effects/awakened-special1-aura": "hero/effects/special1-aura",
+    "hero/effects/awakened-awakening-aura": "hero/effects/awakening-aura",
+    "hero/effects/awakened-awakening-burst": "hero/effects/awakening-burst",
     "manny/awakened-idle": "manny/idle",
     "manny/awakened-walk": "manny/walk",
     "manny/awakened-dash": "manny/dash",
@@ -1548,6 +1717,137 @@
     "tetsu/effects/awakened-special1-slash": "tetsu/effects/special1-slash",
     "tetsu/effects/awakened-special2-blast": "tetsu/effects/special2-blast",
     "tetsu/effects/awakened-special2-charge-aura": "tetsu/effects/special2-charge-aura",
-    "tetsu/effects/awakened-special2-charge-eye": "tetsu/effects/special2-charge-eye"
+    "tetsu/effects/awakened-special2-charge-eye": "tetsu/effects/special2-charge-eye",
+    "denden/awakened-special3": "denden/special3",
+    "denden/effects/awakened-special3-muzzle": "denden/effects/special3-muzzle",
+    "denden/effects/awakened-ground-wave": "denden/effects/ground-wave",
+    "denden/effects/awakened-thunder-burst": "denden/effects/thunder-burst",
+    "denden/effects/special2-wave": "denden/effects/ground-wave",
+    "denden/awakened-special1": "denden/special1",
+    "denden/awakened-special2": "denden/special2",
+    "denden/effects/awakened-special1-energy": "denden/effects/special1-energy",
+    "denden/effects/awakened-special2-fall": "denden/effects/special2-fall",
+    "denden/effects/awakened-special2-ground": "denden/effects/special2-ground",
+    "denden/effects/awakened-special1-impact": "denden/effects/special1-impact",
+    "denden/effects/awakened-special1-charge": "denden/effects/special1-charge",
+    "denden/special1-startup": {
+      "clip": "denden/special1",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/special1-active": {
+      "clip": "denden/special1",
+      "range": [
+        6,
+        8
+      ]
+    },
+    "denden/special1-recovery": {
+      "clip": "denden/special1",
+      "range": [
+        8,
+        16
+      ]
+    },
+    "denden/special2-startup": {
+      "clip": "denden/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/special2-active": {
+      "clip": "denden/special2",
+      "range": [
+        6,
+        12
+      ]
+    },
+    "denden/special2-recovery": {
+      "clip": "denden/special2",
+      "range": [
+        12,
+        16
+      ]
+    },
+    "nyoro/awakened-special1": "nyoro/special1",
+    "nyoro/awakened-special2": "nyoro/special2",
+    "nyoro/effects/awakened-special1-rain": "nyoro/effects/special1-rain",
+    "nyoro/effects/awakened-special2-meteor": "nyoro/effects/special2-meteor",
+    "nyoro/effects/awakened-special2-flame": "nyoro/effects/special2-flame",
+    "nyoro/effects/awakened-special1-impact": "nyoro/effects/special1-impact",
+    "nyoro/effects/awakened-special2-impact": "nyoro/effects/special2-impact",
+    "nyoro/special1-startup": {
+      "clip": "nyoro/special1",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "nyoro/special1-active": {
+      "clip": "nyoro/special1",
+      "range": [
+        2,
+        14
+      ]
+    },
+    "nyoro/special1-recovery": {
+      "clip": "nyoro/special1",
+      "range": [
+        14,
+        16
+      ]
+    },
+    "nyoro/special2-startup": {
+      "clip": "nyoro/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "nyoro/special2-active": {
+      "clip": "nyoro/special2",
+      "range": [
+        6,
+        13
+      ]
+    },
+    "nyoro/special2-recovery": {
+      "clip": "nyoro/special2",
+      "range": [
+        13,
+        16
+      ]
+    },
+    "special2-active": {
+      "clip": "special2",
+      "range": [
+        6,
+        9
+      ]
+    },
+    "water": {
+      "clip": "special2",
+      "range": [
+        6,
+        9
+      ]
+    },
+    "awakened-special2-active": {
+      "clip": "awakened-special2",
+      "range": [
+        6,
+        9
+      ]
+    },
+    "awakened-water": {
+      "clip": "awakened-special2",
+      "range": [
+        6,
+        9
+      ]
+    }
   }
 }

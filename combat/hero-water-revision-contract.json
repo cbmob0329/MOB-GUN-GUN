@@ -1,0 +1,137 @@
+{
+  "status": "runtime integration candidate, not a recorded game test",
+  "root": "actor world feet. Do not bake ground into body animation. World jump motion stays engine driven.",
+  "displayBodyHeight": 110,
+  "sourceBodyHeight": 220,
+  "nativeFacing": 1,
+  "bodyPhaseRangesZeroBasedEndExclusive": {
+    "startup": [
+      0,
+      6
+    ],
+    "active": [
+      6,
+      9
+    ],
+    "recovery": [
+      9,
+      16
+    ]
+  },
+  "release": {
+    "normal": {
+      "fullClipFrameZeroBased": 7,
+      "activePhaseFrameZeroBased": 1,
+      "actionClockSeconds": 0.417154,
+      "realSeconds": 0.417154,
+      "socketNormalizedBodyHeight": [
+        0.7871140160595552,
+        0.020410305381180216
+      ],
+      "rightOffsetAtBody110": [
+        86.58254176655107,
+        2.245133591929824
+      ],
+      "leftOffsetAtBody110": [
+        -86.58254176655107,
+        2.245133591929824
+      ],
+      "doNotDelayReleaseForFrame": true
+    },
+    "awakened": {
+      "fullClipFrameZeroBased": 7,
+      "activePhaseFrameZeroBased": 1,
+      "actionClockSeconds": 0.425339,
+      "realSeconds": 0.25778121212121213,
+      "socketNormalizedBodyHeight": [
+        0.7879761801719158,
+        0.04239584536964211
+      ],
+      "rightOffsetAtBody110": [
+        86.67737981891074,
+        4.663542990660632
+      ],
+      "leftOffsetAtBody110": [
+        -86.67737981891074,
+        4.663542990660632
+      ],
+      "doNotDelayReleaseForFrame": true
+    }
+  },
+  "physics": {
+    "verticalVelocity": -800,
+    "gravity": 1800,
+    "projectileVelocityRight": [
+      650,
+      750
+    ],
+    "projectileVelocityLeft": [
+      -650,
+      750
+    ],
+    "groundCollision": "after movement, projectile origin s.y>=CONFIG.groundY; no image-bound or radius change",
+    "enemyHit": "projectile continues to ground",
+    "normalDamage": 52,
+    "awakenedDamage": 80,
+    "normalRadius": 110,
+    "awakenedRadius": 135,
+    "splashLifeRealSeconds": 0.35,
+    "splashExtraDamage": 0
+  },
+  "water": {
+    "nativeAngleRadians": 1.5707963267948966,
+    "orientationMode": "velocity",
+    "noMirrorInVelocityMode": true,
+    "pivot": "moving leading front. Water tail extends backward from this point.",
+    "firstDisplaySizeAtBody110": [
+      150,
+      45
+    ],
+    "peakDisplaySizeAtBody110": [
+      330,
+      340
+    ],
+    "growthFrameSeconds": 0.025,
+    "sequenceSeconds": 0.4,
+    "loop": false,
+    "afterSequence": "hold last cel until projectile deleted. Do not restart small tail.",
+    "socketOffset": [
+      0,
+      0
+    ]
+  },
+  "splash": {
+    "orientationMode": "fixed",
+    "pivot": "ground contact center",
+    "peakTargetDisplaySizeAtBody110": [
+      620,
+      560
+    ],
+    "nativeFootprintFluctuatesWithDrawnCrest": true,
+    "sequenceSeconds": 0.35,
+    "frameSeconds": 0.021875,
+    "loop": false,
+    "socketOffset": [
+      0,
+      0
+    ]
+  },
+  "endCondition": {
+    "actionClockEnd": 1.05,
+    "normalRate": 1,
+    "awakenedRate": 1.65,
+    "noWaitForGround": true,
+    "ifAirborneAtEnd": "jump or awakened-jump",
+    "normalLevelGroundLandingApproxSeconds": 0.8888888888888888,
+    "awakeActionEndRealSeconds": 0.6363636363636365,
+    "awakeExpectedRemainingFlightSeconds": 0.2525252525252524,
+    "existingJumpArtChanged": false
+  },
+  "renderNotes": [
+    "Effects behind body in proof so face remains readable; huge splash overlaps body bounds briefly. Actual game layer review required.",
+    "Broad water front may cross the horizontal ground visually at its edge shortly before center-origin impact; do not alter hitbox or timing for drawing.",
+    "Source cels are individually imagegen-authored. Runtime resizing/registration is spatially lossy; WebP encoding itself is lossless.",
+    "No code-drawn combat effects, no duplicate-frame padding.",
+    "Low frame rate may skip cels; projectile and damage use the same continuous action clock."
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "src": "fx-special2-water.webp",
+  "bodyHeight": 220,
+  "frames": [
+    {
+      "duration": 0.025,
+      "pivot": [
+        73.83953898062165,
+        44.402654867256636
+      ],
+      "displaySize": [
+        1.3636363636363635,
+        0.4090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 0,
+      "rect": [
+        792,
+        634,
+        150,
+        45
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        103.36837294332724,
+        69.36363636363636
+      ],
+      "displaySize": [
+        1.9090909090909092,
+        0.6363636363636364
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 1,
+      "rect": [
+        574,
+        634,
+        210,
+        70
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        98.78157525651436,
+        94.40501043841336
+      ],
+      "displaySize": [
+        2.3636363636363638,
+        0.8636363636363636
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 2,
+      "rect": [
+        306,
+        634,
+        260,
+        95
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        148.57781401951013,
+        119.17098445595855
+      ],
+      "displaySize": [
+        2.6363636363636362,
+        1.0909090909090908
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 3,
+      "rect": [
+        8,
+        634,
+        290,
+        120
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        152.18704664657963,
+        143.93643031784842
+      ],
+      "displaySize": [
+        2.8181818181818183,
+        1.3181818181818181
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 4,
+      "rect": [
+        1688,
+        356,
+        310,
+        145
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        140.43066858767182,
+        168.9484536082474
+      ],
+      "displaySize": [
+        2.909090909090909,
+        1.5454545454545454
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 5,
+      "rect": [
+        1360,
+        356,
+        320,
+        170
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        159.324604743083,
+        193.659793814433
+      ],
+      "displaySize": [
+        3.0,
+        1.7727272727272727
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 6,
+      "rect": [
+        1022,
+        356,
+        330,
+        195
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        164.93870238628432,
+        218.90547263681592
+      ],
+      "displaySize": [
+        3.0,
+        2.0
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 7,
+      "rect": [
+        684,
+        356,
+        330,
+        220
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        176.1711434786721,
+        243.2624113475177
+      ],
+      "displaySize": [
+        3.0,
+        2.227272727272727
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 8,
+      "rect": [
+        346,
+        356,
+        330,
+        245
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        172.89074315514995,
+        268.0952380952381
+      ],
+      "displaySize": [
+        3.0,
+        2.4545454545454546
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 9,
+      "rect": [
+        8,
+        356,
+        330,
+        270
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        139.35532133582285,
+        287.7820267686424
+      ],
+      "displaySize": [
+        3.0,
+        2.6363636363636362
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 10,
+      "rect": [
+        1698,
+        8,
+        330,
+        290
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        143.39665653495442,
+        307.66917293233087
+      ],
+      "displaySize": [
+        3.0,
+        2.8181818181818183
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 11,
+      "rect": [
+        1360,
+        8,
+        330,
+        310
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        156.21701954397395,
+        322.6950354609929
+      ],
+      "displaySize": [
+        3.0,
+        2.9545454545454546
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 12,
+      "rect": [
+        1022,
+        8,
+        330,
+        325
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        186.9814207650273,
+        332.64499121265374
+      ],
+      "displaySize": [
+        3.0,
+        3.0454545454545454
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 13,
+      "rect": [
+        684,
+        8,
+        330,
+        335
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        178.50061149612716,
+        338.125
+      ],
+      "displaySize": [
+        3.0,
+        3.090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 14,
+      "rect": [
+        8,
+        8,
+        330,
+        340
+      ]
+    },
+    {
+      "duration": 0.025,
+      "pivot": [
+        144.5315271730366,
+        337.50458715596335
+      ],
+      "displaySize": [
+        3.0,
+        3.090909090909091
+      ],
+      "socketOffset": [
+        0,
+        0
+      ],
+      "sourceCel": 15,
+      "rect": [
+        346,
+        8,
+        330,
+        340
+      ]
+    }
+  ],
+  "loop": false,
+  "authoredCelCount": 16,
+  "durationUnits": "real seconds",
+  "pivotUnits": "runtime pixels relative to trimmed rect",
+  "orientationMode": "velocity",
+  "nativeAngleRadians": 1.5707963267948966,
+  "anchor": "moving projectile leading front; tail extends backward",
+  "socketOffset": [
+    0,
+    0
+  ],
+  "spatialScaleNote": "Source PNGs unchanged. Every water cel is independently drawn, then spatially registered to the growing physical footprint: first150x45, peak330x340 at body110. This includes aspect normalization; it is not a claim of lossless spatial transformation. Splash uses one fixed XY scale for its confirmed620x560 peak.",
+  "endBehavior": "hold final cel while projectile exists"
+}

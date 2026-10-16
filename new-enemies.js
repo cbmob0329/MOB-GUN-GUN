@@ -10,15 +10,15 @@ const NEW_ENEMIES={
  mag:{name:'モブマグトカゲ',hp:96,damage:6,speed:48,height:80,actions:['walk','slash','guard','backstep']}
 };
 let golemPunchFrames=[];const newEnemyArt={};let newEnemyShots=[],newEnemyFX=[];
-async function loadNewEnemies(){golemPunchFrames=await loadBiomeAtlas('enemy/expansion/golem_punch_effect.png');await Promise.all(Object.entries(NEW_ENEMIES).flatMap(([type,c])=>c.actions.map(async action=>{
+async function loadNewEnemies(types=Object.keys(NEW_ENEMIES)){if(types.includes('golem'))golemPunchFrames=await loadBiomeAtlas('enemy/expansion/golem_punch_effect.png');await Promise.all(Object.entries(NEW_ENEMIES).filter(([type])=>types.includes(type)).flatMap(([type,c])=>c.actions.map(async action=>{
  const img=await loadImage(`enemy/expansion/${type}_${action}.png`),canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;
  const g=canvas.getContext('2d',{willReadFrequently:true});g.drawImage(img,0,0);
  const frames=(type==='poison'&&action==='defeat'||type==='kairo')?isolateCharacterBodies(img,16):c.actions.includes('defeat')?await loadBiomeAtlas(`enemy/expansion/${type}_${action}.png`):isolateDragonBodies(g.getImageData(0,0,img.width,img.height).data,img.width,img.height);
  for(const f of frames)f.scale=c.height/frames[0].h;
  newEnemyArt[type+'_'+action]=frames;
 })));
- for(const [type,c] of Object.entries(NEW_ENEMIES)){if(!c.actions.includes('defeat'))continue;for(const action of c.actions){const frames=newEnemyArt[type+'_'+action];const reference=Math.max(frames[0].h,frames[1].h);for(const f of frames){f.scale=c.height/reference;f.anchorX=f.w/2;}}}
- normalizeKairo();
+ for(const [type,c] of Object.entries(NEW_ENEMIES)){if(!types.includes(type)||!c.actions.includes('defeat'))continue;for(const action of c.actions){const frames=newEnemyArt[type+'_'+action];const reference=Math.max(frames[0].h,frames[1].h);for(const f of frames){f.scale=c.height/reference;f.anchorX=f.w/2;}}}
+ if(types.includes('kairo'))normalizeKairo();
 }
 function spawnNewEnemy(type,x,y=548){if(y===548){for(const h of sandHills)if(!h.gone&&x>=h.x&&x<=h.x+h.w)y=Math.min(y,548-Math.sin((x-h.x)/h.w*Math.PI)*h.h);}const e=spawnGrassEnemy(type,x,y,170);Object.assign(e,{h:NEW_ENEMIES[type].height,w:type==='golem'?64:36,hoverY:y-108,action:null,age:0,cooldown:1+Math.random(),vy:0,grounded:true,sequence:0});return e;}
 const BIOME_ENEMIES=[['lime','tende'],['miira','poison'],['knife','dancer'],['naga','kairo'],['mag','golem']];

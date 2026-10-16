@@ -1,0 +1,10 @@
+{
+  "animations": {
+    "denden/walk": {
+      "adapter": "walk/adapter.json"
+    }
+  },
+  "aliases": {
+    "denden/awakened-walk": "denden/walk"
+  }
+}

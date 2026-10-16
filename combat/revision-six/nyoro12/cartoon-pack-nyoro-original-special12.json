@@ -1,0 +1,118 @@
+{
+  "animations": {
+    "nyoro/special1": {
+      "adapter": "special1/adapter.json"
+    },
+    "nyoro/special2": {
+      "adapter": "special2/adapter.json"
+    },
+    "nyoro/effects/special1-rain": {
+      "adapter": "special1-rain/adapter.json"
+    },
+    "nyoro/effects/special2-meteor": {
+      "adapter": "special2-meteor/adapter.json"
+    },
+    "nyoro/effects/special2-flame": {
+      "adapter": "special2-flame/adapter.json"
+    },
+    "nyoro/effects/special1-impact": {
+      "adapter": "special1-impact/adapter.json"
+    },
+    "nyoro/effects/special2-impact": {
+      "adapter": "special2-impact/adapter.json"
+    }
+  },
+  "aliases": {
+    "nyoro/awakened-special1": "nyoro/special1",
+    "nyoro/awakened-special2": "nyoro/special2",
+    "nyoro/effects/awakened-special1-rain": "nyoro/effects/special1-rain",
+    "nyoro/effects/awakened-special2-meteor": "nyoro/effects/special2-meteor",
+    "nyoro/effects/awakened-special2-flame": "nyoro/effects/special2-flame",
+    "nyoro/effects/awakened-special1-impact": "nyoro/effects/special1-impact",
+    "nyoro/effects/awakened-special2-impact": "nyoro/effects/special2-impact",
+    "nyoro/special1-startup": {
+      "clip": "nyoro/special1",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "nyoro/awakened-special1-startup": {
+      "clip": "nyoro/special1",
+      "range": [
+        0,
+        2
+      ]
+    },
+    "nyoro/special1-active": {
+      "clip": "nyoro/special1",
+      "range": [
+        2,
+        14
+      ]
+    },
+    "nyoro/awakened-special1-active": {
+      "clip": "nyoro/special1",
+      "range": [
+        2,
+        14
+      ]
+    },
+    "nyoro/special1-recovery": {
+      "clip": "nyoro/special1",
+      "range": [
+        14,
+        16
+      ]
+    },
+    "nyoro/awakened-special1-recovery": {
+      "clip": "nyoro/special1",
+      "range": [
+        14,
+        16
+      ]
+    },
+    "nyoro/special2-startup": {
+      "clip": "nyoro/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "nyoro/awakened-special2-startup": {
+      "clip": "nyoro/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "nyoro/special2-active": {
+      "clip": "nyoro/special2",
+      "range": [
+        6,
+        13
+      ]
+    },
+    "nyoro/awakened-special2-active": {
+      "clip": "nyoro/special2",
+      "range": [
+        6,
+        13
+      ]
+    },
+    "nyoro/special2-recovery": {
+      "clip": "nyoro/special2",
+      "range": [
+        13,
+        16
+      ]
+    },
+    "nyoro/awakened-special2-recovery": {
+      "clip": "nyoro/special2",
+      "range": [
+        13,
+        16
+      ]
+    }
+  }
+}

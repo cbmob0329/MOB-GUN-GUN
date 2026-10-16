@@ -20,7 +20,7 @@ async function loadBiomeAtlas(path){
   const frame=document.createElement('canvas');frame.width=r-l;frame.height=b-t;frame.getContext('2d').drawImage(img,l,t,r-l,b-t,0,0,r-l,b-t);return{img:frame,w:r-l,h:b-t};
  });});
 }
-async function loadBiomes(){townStoneFloor=await loadImage('stage/expansion/town_stone.png');await Promise.all(BIOMES.slice(1).map(async(b,i)=>{
+async function loadBiomes(only){if(only===undefined||only===2)townStoneFloor=await loadImage('stage/expansion/town_stone.png');await Promise.all(BIOMES.slice(1).map(async(b,i)=>{if(only!==undefined&&only!==i+1)return;
  const [terrain,props,bg]=await Promise.all([loadBiomeAtlas(`stage/expansion/${b.id}_terrain.png`),loadBiomeAtlas(`stage/expansion/${b.id}_props.png`),loadImage(`stage/00${i+2}.png`)]);biomeArt[b.id]={terrain,props};biomeBackgrounds[b.id]=bg;
 }));}
 function biomeSprite(group,frame,x,y,w,h){const f=biomeArt[BIOMES[biomeIndex].id]?.[group]?.[frame];if(!f)return;ctx.save();ctx.imageSmoothingEnabled=false;ctx.drawImage(f.img,x,y,w,h);ctx.restore();}

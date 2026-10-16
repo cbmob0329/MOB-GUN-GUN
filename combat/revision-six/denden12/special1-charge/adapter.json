@@ -1,0 +1,389 @@
+{
+  "bodyHeight": 220,
+  "orientationMode": "facing",
+  "loop": true,
+  "duration": 0.6666666666666666,
+  "visualLoopPeriod": 0.6666666666666666,
+  "anchor": "Body muzzle during charge; per-body-frame sockets supplied separately",
+  "frameClock": "Time based; (visualAge+age)%visualLoopPeriod for energy, local phase age for lightning.16 source cels. Never stall gameplay, wait for playback, or extend existing lifetime.",
+  "sourceViewport": [
+    94,
+    127,
+    409,
+    378
+  ],
+  "displayWidthAt110": 145.5776892430279,
+  "displayHeightAt110": 116,
+  "gameplayContract": {
+    "chargeDuration": 0.25,
+    "chargeHeightRange": [
+      36,
+      116
+    ],
+    "flightSpeed": 850,
+    "maxFlightLifetime": 2,
+    "earlyDespawnOnCollision": true,
+    "visualPhaseInheritedAtRelease": true,
+    "projectileOrigin": "Emitting body manifest releaseSocket; do not add old48,-47 again."
+  },
+  "callerSizing": "Charge visual full viewport height36->116; original .25s charge, phase uses player animation clock. Do not wait for16 cels.",
+  "src": "../special1-energy/page-00.webp",
+  "frames": [
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        8,
+        8,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        339,
+        8,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        670,
+        8,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        1001,
+        8,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        8,
+        275,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        339,
+        275,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        670,
+        275,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        1001,
+        275,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        8,
+        542,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        339,
+        542,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        670,
+        542,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        1001,
+        542,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        8,
+        809,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        339,
+        809,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        670,
+        809,
+        315,
+        251
+      ]
+    },
+    {
+      "duration": 0.041666666666666664,
+      "socketOffset": [
+        0,
+        0
+      ],
+      "displaySize": [
+        1.3234335385729807,
+        1.0545454545454545
+      ],
+      "pivot": [
+        157.5,
+        125.5
+      ],
+      "src": "../special1-energy/page-00.webp",
+      "rect": [
+        1001,
+        809,
+        315,
+        251
+      ]
+    }
+  ],
+  "sourceFrameCount": 16,
+  "runtimeSpatialScale": 1,
+  "framesHavePerFrameSrc": true,
+  "runtimeExport": "Static lossless WebP, trimmed with8px external gutters; source master unchanged. Uniform spatial downsample where stated."
+}

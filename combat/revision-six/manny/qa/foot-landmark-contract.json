@@ -1,0 +1,1326 @@
+{
+  "status": "diagnostic hand annotation; not a runtime root correction or a final no-slip certificate",
+  "coordinateSpace": "source frame 600x520; fixed root [256,420]; bodyHeight 220",
+  "nearFarMeaning": "camera-near versus camera-far leg, not anatomical left/right; mirror coordinates for native left display",
+  "uncertainty": "Flat-sole landmarks roughly +/-6 source pixels. Tilted or airborne landmarks are illustrative and do not bound ground slip",
+  "pointDefinition": "heel and toe are approximate visible outsole contour landmarks. Tilted soles change contact location; do not interpret their midpoint as a planted pivot during roll/air.",
+  "footPivotContract": "Render at fixed root only. These foot landmarks are diagnostics. Do not translate the body or adjust physics from these coordinates. During high-confidence flat stance compare the SAME heel/toe landmark, allowing ~2.2 display px annotation uncertainty.",
+  "frames": {
+    "walk": [
+      {
+        "sourceFrame": 1,
+        "phase": "near heel contact; far release",
+        "near": {
+          "heel": [
+            298,
+            417
+          ],
+          "toe": [
+            361,
+            365
+          ],
+          "heelNormalized": [
+            0.19090909090909092,
+            -0.013636363636363636
+          ],
+          "toeNormalized": [
+            0.4772727272727273,
+            -0.25
+          ]
+        },
+        "far": {
+          "heel": [
+            140,
+            376
+          ],
+          "toe": [
+            180,
+            407
+          ],
+          "heelNormalized": [
+            -0.5272727272727272,
+            -0.2
+          ],
+          "toeNormalized": [
+            -0.34545454545454546,
+            -0.05909090909090909
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 2,
+        "phase": "near flat support",
+        "near": {
+          "heel": [
+            248,
+            418
+          ],
+          "toe": [
+            328,
+            412
+          ],
+          "heelNormalized": [
+            -0.03636363636363636,
+            -0.00909090909090909
+          ],
+          "toeNormalized": [
+            0.32727272727272727,
+            -0.03636363636363636
+          ]
+        },
+        "far": {
+          "heel": [
+            144,
+            374
+          ],
+          "toe": [
+            193,
+            406
+          ],
+          "heelNormalized": [
+            -0.509090909090909,
+            -0.20909090909090908
+          ],
+          "toeNormalized": [
+            -0.2863636363636364,
+            -0.06363636363636363
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 3,
+        "phase": "near flat support",
+        "near": {
+          "heel": [
+            229,
+            415
+          ],
+          "toe": [
+            303,
+            411
+          ],
+          "heelNormalized": [
+            -0.12272727272727273,
+            -0.022727272727272728
+          ],
+          "toeNormalized": [
+            0.21363636363636362,
+            -0.04090909090909091
+          ]
+        },
+        "far": {
+          "heel": [
+            180,
+            359
+          ],
+          "toe": [
+            207,
+            392
+          ],
+          "heelNormalized": [
+            -0.34545454545454546,
+            -0.2772727272727273
+          ],
+          "toeNormalized": [
+            -0.22272727272727272,
+            -0.12727272727272726
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 4,
+        "phase": "near flat support",
+        "near": {
+          "heel": [
+            226,
+            413
+          ],
+          "toe": [
+            301,
+            409
+          ],
+          "heelNormalized": [
+            -0.13636363636363635,
+            -0.031818181818181815
+          ],
+          "toeNormalized": [
+            0.20454545454545456,
+            -0.05
+          ]
+        },
+        "far": {
+          "heel": [
+            193,
+            372
+          ],
+          "toe": [
+            221,
+            398
+          ],
+          "heelNormalized": [
+            -0.2863636363636364,
+            -0.21818181818181817
+          ],
+          "toeNormalized": [
+            -0.1590909090909091,
+            -0.1
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 5,
+        "phase": "near support; far passing",
+        "near": {
+          "heel": [
+            224,
+            414
+          ],
+          "toe": [
+            296,
+            413
+          ],
+          "heelNormalized": [
+            -0.14545454545454545,
+            -0.02727272727272727
+          ],
+          "toeNormalized": [
+            0.18181818181818182,
+            -0.031818181818181815
+          ]
+        },
+        "far": {
+          "heel": [
+            287,
+            358
+          ],
+          "toe": [
+            304,
+            372
+          ],
+          "heelNormalized": [
+            0.1409090909090909,
+            -0.2818181818181818
+          ],
+          "toeNormalized": [
+            0.21818181818181817,
+            -0.21818181818181817
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 6,
+        "phase": "near support; far reach",
+        "near": {
+          "heel": [
+            179,
+            402
+          ],
+          "toe": [
+            249,
+            416
+          ],
+          "heelNormalized": [
+            -0.35,
+            -0.08181818181818182
+          ],
+          "toeNormalized": [
+            -0.031818181818181815,
+            -0.01818181818181818
+          ]
+        },
+        "far": {
+          "heel": [
+            292,
+            391
+          ],
+          "toe": [
+            363,
+            355
+          ],
+          "heelNormalized": [
+            0.16363636363636364,
+            -0.1318181818181818
+          ],
+          "toeNormalized": [
+            0.4863636363636364,
+            -0.29545454545454547
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 7,
+        "phase": "near toe support; far reach",
+        "near": {
+          "heel": [
+            140,
+            395
+          ],
+          "toe": [
+            221,
+            415
+          ],
+          "heelNormalized": [
+            -0.5272727272727272,
+            -0.11363636363636363
+          ],
+          "toeNormalized": [
+            -0.1590909090909091,
+            -0.022727272727272728
+          ]
+        },
+        "far": {
+          "heel": [
+            296,
+            390
+          ],
+          "toe": [
+            365,
+            356
+          ],
+          "heelNormalized": [
+            0.18181818181818182,
+            -0.13636363636363635
+          ],
+          "toeNormalized": [
+            0.4954545454545455,
+            -0.2909090909090909
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 8,
+        "phase": "near toe support; far lowering, landing uncertain",
+        "near": {
+          "heel": [
+            118,
+            362
+          ],
+          "toe": [
+            190,
+            415
+          ],
+          "heelNormalized": [
+            -0.6272727272727273,
+            -0.2636363636363636
+          ],
+          "toeNormalized": [
+            -0.3,
+            -0.022727272727272728
+          ]
+        },
+        "far": {
+          "heel": [
+            274,
+            403
+          ],
+          "toe": [
+            355,
+            400
+          ],
+          "heelNormalized": [
+            0.08181818181818182,
+            -0.07727272727272727
+          ],
+          "toeNormalized": [
+            0.45,
+            -0.09090909090909091
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 9,
+        "phase": "near toe release; far lowering, handover uncertain",
+        "near": {
+          "heel": [
+            112,
+            365
+          ],
+          "toe": [
+            190,
+            415
+          ],
+          "heelNormalized": [
+            -0.6545454545454545,
+            -0.25
+          ],
+          "toeNormalized": [
+            -0.3,
+            -0.022727272727272728
+          ]
+        },
+        "far": {
+          "heel": [
+            281,
+            411
+          ],
+          "toe": [
+            360,
+            409
+          ],
+          "heelNormalized": [
+            0.11363636363636363,
+            -0.04090909090909091
+          ],
+          "toeNormalized": [
+            0.4727272727272727,
+            -0.05
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 10,
+        "phase": "far flat support; near lifted",
+        "near": {
+          "heel": [
+            135,
+            343
+          ],
+          "toe": [
+            178,
+            403
+          ],
+          "heelNormalized": [
+            -0.55,
+            -0.35
+          ],
+          "toeNormalized": [
+            -0.35454545454545455,
+            -0.07727272727272727
+          ]
+        },
+        "far": {
+          "heel": [
+            264,
+            415
+          ],
+          "toe": [
+            346,
+            414
+          ],
+          "heelNormalized": [
+            0.03636363636363636,
+            -0.022727272727272728
+          ],
+          "toeNormalized": [
+            0.4090909090909091,
+            -0.02727272727272727
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 11,
+        "phase": "far support; near swing",
+        "near": {
+          "heel": [
+            161,
+            345
+          ],
+          "toe": [
+            204,
+            397
+          ],
+          "heelNormalized": [
+            -0.4318181818181818,
+            -0.3409090909090909
+          ],
+          "toeNormalized": [
+            -0.23636363636363636,
+            -0.10454545454545454
+          ]
+        },
+        "far": {
+          "heel": [
+            226,
+            411
+          ],
+          "toe": [
+            312,
+            415
+          ],
+          "heelNormalized": [
+            -0.13636363636363635,
+            -0.04090909090909091
+          ],
+          "toeNormalized": [
+            0.2545454545454545,
+            -0.022727272727272728
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 12,
+        "phase": "far support; near passing in front",
+        "near": {
+          "heel": [
+            224,
+            354
+          ],
+          "toe": [
+            266,
+            390
+          ],
+          "heelNormalized": [
+            -0.14545454545454545,
+            -0.3
+          ],
+          "toeNormalized": [
+            0.045454545454545456,
+            -0.13636363636363635
+          ]
+        },
+        "far": {
+          "heel": [
+            196,
+            411
+          ],
+          "toe": [
+            275,
+            416
+          ],
+          "heelNormalized": [
+            -0.2727272727272727,
+            -0.04090909090909091
+          ],
+          "toeNormalized": [
+            0.08636363636363636,
+            -0.01818181818181818
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 13,
+        "phase": "far support; near high swing",
+        "near": {
+          "heel": [
+            234,
+            358
+          ],
+          "toe": [
+            282,
+            394
+          ],
+          "heelNormalized": [
+            -0.1,
+            -0.2818181818181818
+          ],
+          "toeNormalized": [
+            0.11818181818181818,
+            -0.11818181818181818
+          ]
+        },
+        "far": {
+          "heel": [
+            184,
+            411
+          ],
+          "toe": [
+            267,
+            415
+          ],
+          "heelNormalized": [
+            -0.32727272727272727,
+            -0.04090909090909091
+          ],
+          "toeNormalized": [
+            0.05,
+            -0.022727272727272728
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 14,
+        "phase": "far support; near forward swing",
+        "near": {
+          "heel": [
+            239,
+            357
+          ],
+          "toe": [
+            294,
+            392
+          ],
+          "heelNormalized": [
+            -0.07727272727272727,
+            -0.2863636363636364
+          ],
+          "toeNormalized": [
+            0.17272727272727273,
+            -0.12727272727272726
+          ]
+        },
+        "far": {
+          "heel": [
+            169,
+            405
+          ],
+          "toe": [
+            248,
+            415
+          ],
+          "heelNormalized": [
+            -0.39545454545454545,
+            -0.06818181818181818
+          ],
+          "toeNormalized": [
+            -0.03636363636363636,
+            -0.022727272727272728
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 15,
+        "phase": "far support; near approaching heel contact",
+        "near": {
+          "heel": [
+            292,
+            419
+          ],
+          "toe": [
+            359,
+            378
+          ],
+          "heelNormalized": [
+            0.16363636363636364,
+            -0.004545454545454545
+          ],
+          "toeNormalized": [
+            0.4681818181818182,
+            -0.19090909090909092
+          ]
+        },
+        "far": {
+          "heel": [
+            144,
+            401
+          ],
+          "toe": [
+            211,
+            412
+          ],
+          "heelNormalized": [
+            -0.509090909090909,
+            -0.08636363636363636
+          ],
+          "toeNormalized": [
+            -0.20454545454545456,
+            -0.03636363636363636
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 16,
+        "phase": "far support; near heel lowering, seam uncertain",
+        "near": {
+          "heel": [
+            307,
+            410
+          ],
+          "toe": [
+            365,
+            360
+          ],
+          "heelNormalized": [
+            0.2318181818181818,
+            -0.045454545454545456
+          ],
+          "toeNormalized": [
+            0.4954545454545455,
+            -0.2727272727272727
+          ]
+        },
+        "far": {
+          "heel": [
+            119,
+            402
+          ],
+          "toe": [
+            204,
+            415
+          ],
+          "heelNormalized": [
+            -0.6227272727272727,
+            -0.08181818181818182
+          ],
+          "toeNormalized": [
+            -0.23636363636363636,
+            -0.022727272727272728
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      }
+    ],
+    "dash": [
+      {
+        "sourceFrame": 1,
+        "phase": "near loaded contact",
+        "near": {
+          "heel": [
+            260,
+            416
+          ],
+          "toe": [
+            323,
+            413
+          ],
+          "heelNormalized": [
+            0.01818181818181818,
+            -0.01818181818181818
+          ],
+          "toeNormalized": [
+            0.30454545454545456,
+            -0.031818181818181815
+          ]
+        },
+        "far": {
+          "heel": [
+            143,
+            345
+          ],
+          "toe": [
+            157,
+            391
+          ],
+          "heelNormalized": [
+            -0.5136363636363637,
+            -0.3409090909090909
+          ],
+          "toeNormalized": [
+            -0.45,
+            -0.1318181818181818
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 2,
+        "phase": "near stance",
+        "near": {
+          "heel": [
+            247,
+            416
+          ],
+          "toe": [
+            307,
+            413
+          ],
+          "heelNormalized": [
+            -0.04090909090909091,
+            -0.01818181818181818
+          ],
+          "toeNormalized": [
+            0.2318181818181818,
+            -0.031818181818181815
+          ]
+        },
+        "far": {
+          "heel": [
+            141,
+            330
+          ],
+          "toe": [
+            154,
+            371
+          ],
+          "heelNormalized": [
+            -0.5227272727272727,
+            -0.4090909090909091
+          ],
+          "toeNormalized": [
+            -0.4636363636363636,
+            -0.22272727272727272
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 3,
+        "phase": "near release; airborne transition",
+        "near": {
+          "heel": [
+            202,
+            405
+          ],
+          "toe": [
+            258,
+            407
+          ],
+          "heelNormalized": [
+            -0.24545454545454545,
+            -0.06818181818181818
+          ],
+          "toeNormalized": [
+            0.00909090909090909,
+            -0.05909090909090909
+          ]
+        },
+        "far": {
+          "heel": [
+            180,
+            350
+          ],
+          "toe": [
+            210,
+            381
+          ],
+          "heelNormalized": [
+            -0.34545454545454546,
+            -0.3181818181818182
+          ],
+          "toeNormalized": [
+            -0.20909090909090908,
+            -0.17727272727272728
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 4,
+        "phase": "air; far passing, leg identity partly occluded",
+        "near": {
+          "heel": [
+            169,
+            341
+          ],
+          "toe": [
+            181,
+            386
+          ],
+          "heelNormalized": [
+            -0.39545454545454545,
+            -0.35909090909090907
+          ],
+          "toeNormalized": [
+            -0.3409090909090909,
+            -0.15454545454545454
+          ]
+        },
+        "far": {
+          "heel": [
+            218,
+            355
+          ],
+          "toe": [
+            241,
+            384
+          ],
+          "heelNormalized": [
+            -0.17272727272727273,
+            -0.29545454545454547
+          ],
+          "toeNormalized": [
+            -0.06818181818181818,
+            -0.16363636363636364
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 5,
+        "phase": "air; far gather",
+        "near": {
+          "heel": [
+            163,
+            350
+          ],
+          "toe": [
+            185,
+            384
+          ],
+          "heelNormalized": [
+            -0.42272727272727273,
+            -0.3181818181818182
+          ],
+          "toeNormalized": [
+            -0.32272727272727275,
+            -0.16363636363636364
+          ]
+        },
+        "far": {
+          "heel": [
+            248,
+            361
+          ],
+          "toe": [
+            274,
+            393
+          ],
+          "heelNormalized": [
+            -0.03636363636363636,
+            -0.2681818181818182
+          ],
+          "toeNormalized": [
+            0.08181818181818182,
+            -0.12272727272727273
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 6,
+        "phase": "air; far reach",
+        "near": {
+          "heel": [
+            145,
+            315
+          ],
+          "toe": [
+            158,
+            358
+          ],
+          "heelNormalized": [
+            -0.5045454545454545,
+            -0.4772727272727273
+          ],
+          "toeNormalized": [
+            -0.44545454545454544,
+            -0.2818181818181818
+          ]
+        },
+        "far": {
+          "heel": [
+            333,
+            388
+          ],
+          "toe": [
+            397,
+            331
+          ],
+          "heelNormalized": [
+            0.35,
+            -0.14545454545454545
+          ],
+          "toeNormalized": [
+            0.6409090909090909,
+            -0.40454545454545454
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 7,
+        "phase": "air; far descent",
+        "near": {
+          "heel": [
+            144,
+            344
+          ],
+          "toe": [
+            151,
+            386
+          ],
+          "heelNormalized": [
+            -0.509090909090909,
+            -0.34545454545454546
+          ],
+          "toeNormalized": [
+            -0.4772727272727273,
+            -0.15454545454545454
+          ]
+        },
+        "far": {
+          "heel": [
+            332,
+            401
+          ],
+          "toe": [
+            393,
+            346
+          ],
+          "heelNormalized": [
+            0.34545454545454546,
+            -0.08636363636363636
+          ],
+          "toeNormalized": [
+            0.6227272727272727,
+            -0.33636363636363636
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 8,
+        "phase": "far landing",
+        "near": {
+          "heel": [
+            135,
+            355
+          ],
+          "toe": [
+            150,
+            393
+          ],
+          "heelNormalized": [
+            -0.55,
+            -0.29545454545454547
+          ],
+          "toeNormalized": [
+            -0.4818181818181818,
+            -0.12272727272727273
+          ]
+        },
+        "far": {
+          "heel": [
+            267,
+            414
+          ],
+          "toe": [
+            346,
+            412
+          ],
+          "heelNormalized": [
+            0.05,
+            -0.02727272727272727
+          ],
+          "toeNormalized": [
+            0.4090909090909091,
+            -0.03636363636363636
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 9,
+        "phase": "far loaded contact",
+        "near": {
+          "heel": [
+            122,
+            337
+          ],
+          "toe": [
+            150,
+            385
+          ],
+          "heelNormalized": [
+            -0.6090909090909091,
+            -0.37727272727272726
+          ],
+          "toeNormalized": [
+            -0.4818181818181818,
+            -0.1590909090909091
+          ]
+        },
+        "far": {
+          "heel": [
+            260,
+            416
+          ],
+          "toe": [
+            335,
+            412
+          ],
+          "heelNormalized": [
+            0.01818181818181818,
+            -0.01818181818181818
+          ],
+          "toeNormalized": [
+            0.35909090909090907,
+            -0.03636363636363636
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 10,
+        "phase": "far support",
+        "near": {
+          "heel": [
+            132,
+            320
+          ],
+          "toe": [
+            151,
+            371
+          ],
+          "heelNormalized": [
+            -0.5636363636363636,
+            -0.45454545454545453
+          ],
+          "toeNormalized": [
+            -0.4772727272727273,
+            -0.22272727272727272
+          ]
+        },
+        "far": {
+          "heel": [
+            232,
+            407
+          ],
+          "toe": [
+            313,
+            415
+          ],
+          "heelNormalized": [
+            -0.10909090909090909,
+            -0.05909090909090909
+          ],
+          "toeNormalized": [
+            0.2590909090909091,
+            -0.022727272727272728
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      },
+      {
+        "sourceFrame": 11,
+        "phase": "far release; airborne transition",
+        "near": {
+          "heel": [
+            160,
+            329
+          ],
+          "toe": [
+            183,
+            372
+          ],
+          "heelNormalized": [
+            -0.43636363636363634,
+            -0.41363636363636364
+          ],
+          "toeNormalized": [
+            -0.33181818181818185,
+            -0.21818181818181817
+          ]
+        },
+        "far": {
+          "heel": [
+            224,
+            402
+          ],
+          "toe": [
+            307,
+            409
+          ],
+          "heelNormalized": [
+            -0.14545454545454545,
+            -0.08181818181818182
+          ],
+          "toeNormalized": [
+            0.2318181818181818,
+            -0.05
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 12,
+        "phase": "air; near passing in front",
+        "near": {
+          "heel": [
+            261,
+            329
+          ],
+          "toe": [
+            275,
+            379
+          ],
+          "heelNormalized": [
+            0.022727272727272728,
+            -0.41363636363636364
+          ],
+          "toeNormalized": [
+            0.08636363636363636,
+            -0.18636363636363637
+          ]
+        },
+        "far": {
+          "heel": [
+            211,
+            413
+          ],
+          "toe": [
+            282,
+            412
+          ],
+          "heelNormalized": [
+            -0.20454545454545456,
+            -0.031818181818181815
+          ],
+          "toeNormalized": [
+            0.11818181818181818,
+            -0.03636363636363636
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 13,
+        "phase": "air; near gather",
+        "near": {
+          "heel": [
+            284,
+            342
+          ],
+          "toe": [
+            313,
+            391
+          ],
+          "heelNormalized": [
+            0.12727272727272726,
+            -0.35454545454545455
+          ],
+          "toeNormalized": [
+            0.2590909090909091,
+            -0.1318181818181818
+          ]
+        },
+        "far": {
+          "heel": [
+            149,
+            389
+          ],
+          "toe": [
+            219,
+            405
+          ],
+          "heelNormalized": [
+            -0.4863636363636364,
+            -0.1409090909090909
+          ],
+          "toeNormalized": [
+            -0.16818181818181818,
+            -0.06818181818181818
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 14,
+        "phase": "air; near forward sole, perspective rotated",
+        "near": {
+          "heel": [
+            273,
+            326
+          ],
+          "toe": [
+            320,
+            346
+          ],
+          "heelNormalized": [
+            0.07727272727272727,
+            -0.42727272727272725
+          ],
+          "toeNormalized": [
+            0.2909090909090909,
+            -0.33636363636363636
+          ]
+        },
+        "far": {
+          "heel": [
+            157,
+            348
+          ],
+          "toe": [
+            181,
+            396
+          ],
+          "heelNormalized": [
+            -0.45,
+            -0.32727272727272727
+          ],
+          "toeNormalized": [
+            -0.3409090909090909,
+            -0.10909090909090909
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 15,
+        "phase": "air; near descending",
+        "near": {
+          "heel": [
+            313,
+            409
+          ],
+          "toe": [
+            372,
+            351
+          ],
+          "heelNormalized": [
+            0.2590909090909091,
+            -0.05
+          ],
+          "toeNormalized": [
+            0.5272727272727272,
+            -0.31363636363636366
+          ]
+        },
+        "far": {
+          "heel": [
+            143,
+            338
+          ],
+          "toe": [
+            160,
+            385
+          ],
+          "heelNormalized": [
+            -0.5136363636363637,
+            -0.37272727272727274
+          ],
+          "toeNormalized": [
+            -0.43636363636363634,
+            -0.1590909090909091
+          ]
+        },
+        "groundContactCertainty": "uncertain"
+      },
+      {
+        "sourceFrame": 16,
+        "phase": "near forward landing",
+        "near": {
+          "heel": [
+            292,
+            416
+          ],
+          "toe": [
+            370,
+            416
+          ],
+          "heelNormalized": [
+            0.16363636363636364,
+            -0.01818181818181818
+          ],
+          "toeNormalized": [
+            0.5181818181818182,
+            -0.01818181818181818
+          ]
+        },
+        "far": {
+          "heel": [
+            145,
+            341
+          ],
+          "toe": [
+            163,
+            388
+          ],
+          "heelNormalized": [
+            -0.5045454545454545,
+            -0.35909090909090907
+          ],
+          "toeNormalized": [
+            -0.42272727272727273,
+            -0.14545454545454545
+          ]
+        },
+        "groundContactCertainty": "candidate"
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "integration candidate; continuous PC acceptance pending",
+  "frames": {
+    "walk": {
+      "count": 16,
+      "unique": 16,
+      "sourceRgbaHashes": [
+        "b23870a4ac06c51a23f9033d6e4a3f9bc49cba20e63532caa6b90f30aa6aede4",
+        "fd86f0964a927b080190787157cff83d6a2b15faa616dee25885b4f0e49bd028",
+        "38d5bcf395e99a4e73278bb6ffc16ed06488363b886c4e36caac1fbe044496cb",
+        "1cb1bba8883fcc097c332fe2cf01cc534335bf48c26eaba870f61248d94a6da2",
+        "2c161fa08d95cb20f6c3a5e822491a5078529f546b4543f32110182af153825d",
+        "38ff27216e0beba285c7f8ff12eb4c170d861364e2caee7cc7aecb06793c6b04",
+        "82af85892784d13bb01523f8999fcaa852896626ef54277aa82124df055dd7e9",
+        "b500aaf31c0090e3d069c9085d4d2ec882b1c04d519d3df96433ec0a5378b968",
+        "f694103dd26b67260da35a558f4d8002110207906893703c2680602b141ee6ab",
+        "9b0ce6c931752e6c79ed905fb51ed6ffcb6f56e83ff8a27aeb73fdc0b7df0b81",
+        "b1a3400292f89b8d04b82243ac7cbf3b40c8c7d701021688771d6e8df9aa72c3",
+        "898064c98a6a29f505a0385e4c0d40c69bee28e26dd1a5d71834ff34e8f54fe1",
+        "7027ddebef8d197d3756150cfd1b9e59d5c5461ff760be4d3d7dbea537123670",
+        "12d98c7be7aa0749a472257709c8fed816959c1ea74619fe28379b09996575ec",
+        "d653eba88557904e6f0f7afa7e74a9fd82e903acb760720921ddef31565b94cb",
+        "e73eb3b28982fdbf5f9be53003a9759f6e75ef4a3be9ff4917b05f679f10c12b"
+      ],
+      "decodedPixelEqualityOnAllNontransparentPixels": true,
+      "alphaEqualityAllPixels": true,
+      "atlasDimensions": [
+        1075,
+        2279
+      ],
+      "decodedBytes": 9799700,
+      "minimumDurationSeconds": 0.016842105263157894,
+      "totalDurationSeconds": 0.5210526315789473
+    },
+    "dash": {
+      "count": 16,
+      "unique": 16,
+      "sourceRgbaHashes": [
+        "2ff298dfaf87458665b5bd61a456203710f7303a3410dc258726f550ce04d42b",
+        "77d58b09c2251a04ac0713923825ed2e2469f90ac844063978c476139d39614c",
+        "41fb85b56dcbd3bce483a57ac11dbfc840ef6754d804b032389baa806734841b",
+        "12fdc69a5f7fc9d34828fe763a3406a34bb60a36cde76ec2bfd9fdedcd943e42",
+        "d02f683735d801b526bcb999316633f41c5f65a00b13040251bce3f80f39df1c",
+        "ff9227a79a2fa0d67982e6d3c6fc0780f7c39a5bc7ff971df3837471b10d7f3d",
+        "5b352c41ad9d3b5eb7141ca9c233c76e41f7d0af7cc9aea0bb7021472fb68a3e",
+        "2d471f1f4bb2221f29d81acf5b2d6614e4de8eecdcd3086638f87369b988c360",
+        "6e54bf03eeba85234d141e3f28498d5e22047139076fe4335c4270cb3476434e",
+        "a7f3d9c8d751efa4ed2f6969cd59446c135f25db1735ec4d8ec8f61d70ae685c",
+        "2caa11c6c155db2de2002fa0fefbb72db9a7074881d85e54354270de5d35def9",
+        "2ee15f0d14756e353f267b00e6125298c8c10bfc03b1038c6b1585e9073a3c95",
+        "9a93ecc140f2a789c1fb44b86582e588d647a1bfedf436a70f33e27a4cf5e99d",
+        "1170aa122ae2a9b8abb8f7165f5f2740dd22764a3dcb4533f4f3eb3ae3ce8eae",
+        "28eccc8687dab9624050490f4837b675c4afe7746fd7a03017473c44601e4ccc",
+        "347ed7d076262099450691b165776181dccf5c2eefd8f6ad35e1e6b3355b9894"
+      ],
+      "decodedPixelEqualityOnAllNontransparentPixels": true,
+      "alphaEqualityAllPixels": true,
+      "atlasDimensions": [
+        842,
+        2746
+      ],
+      "decodedBytes": 9248528,
+      "minimumDurationSeconds": 0.01764705882352941,
+      "totalDurationSeconds": 0.47058823529411764
+    }
+  },
+  "decodedBodyAtlasBytes": 19048228,
+  "runtimeNoRootCompensation": true,
+  "nativeFacing": "right",
+  "displayBodyHeight": 80,
+  "sourceBodyHeight": 220
+}

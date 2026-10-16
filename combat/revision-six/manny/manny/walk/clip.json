@@ -1,0 +1,279 @@
+{
+  "character": "manny",
+  "clip": "walk",
+  "status": "integration_candidate",
+  "src": "atlas.webp",
+  "bodyHeight": 220,
+  "displayBodyHeight": 80,
+  "recommendedDisplayBodyHeight": 80,
+  "bodyHeightExcludesHat": true,
+  "bodyHeightDefinition": "Fixed nominal registered body height excluding hat, staff and cape. No per-cel fitting.",
+  "nativeFacing": "right",
+  "frames": [
+    {
+      "rect": [
+        0,
+        1206,
+        364,
+        362
+      ],
+      "pivot": [
+        191,
+        346
+      ],
+      "duration": 0.03684210526315789,
+      "sourceFrame": 1,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        686,
+        457,
+        385,
+        373
+      ],
+      "pivot": [
+        223,
+        358
+      ],
+      "duration": 0.026842105263157893,
+      "sourceFrame": 2,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        522,
+        0,
+        449,
+        451
+      ],
+      "pivot": [
+        223,
+        366
+      ],
+      "duration": 0.016842105263157894,
+      "sourceFrame": 3,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        719,
+        1206,
+        346,
+        358
+      ],
+      "pivot": [
+        204,
+        346
+      ],
+      "duration": 0.016842105263157894,
+      "sourceFrame": 4,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        462,
+        1568,
+        326,
+        356
+      ],
+      "pivot": [
+        180,
+        346
+      ],
+      "duration": 0.05263157894736842,
+      "sourceFrame": 5,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        364,
+        1206,
+        355,
+        360
+      ],
+      "pivot": [
+        203,
+        348
+      ],
+      "duration": 0.05263157894736842,
+      "sourceFrame": 6,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        0,
+        0,
+        522,
+        457
+      ],
+      "pivot": [
+        256,
+        387
+      ],
+      "duration": 0.03684210526315789,
+      "sourceFrame": 7,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        0,
+        1925,
+        373,
+        354
+      ],
+      "pivot": [
+        241,
+        345
+      ],
+      "duration": 0.016842105263157894,
+      "sourceFrame": 8,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        381,
+        834,
+        373,
+        363
+      ],
+      "pivot": [
+        209,
+        345
+      ],
+      "duration": 0.016842105263157894,
+      "sourceFrame": 9,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        0,
+        834,
+        381,
+        372
+      ],
+      "pivot": [
+        227,
+        348
+      ],
+      "duration": 0.05263157894736842,
+      "sourceFrame": 10,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        341,
+        457,
+        345,
+        374
+      ],
+      "pivot": [
+        212,
+        351
+      ],
+      "duration": 0.05263157894736842,
+      "sourceFrame": 11,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        0,
+        457,
+        341,
+        377
+      ],
+      "pivot": [
+        208,
+        361
+      ],
+      "duration": 0.016842105263157894,
+      "sourceFrame": 12,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        699,
+        1925,
+        345,
+        347
+      ],
+      "pivot": [
+        212,
+        337
+      ],
+      "duration": 0.03263157894736842,
+      "sourceFrame": 13,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        373,
+        1925,
+        326,
+        352
+      ],
+      "pivot": [
+        191,
+        339
+      ],
+      "duration": 0.05105263157894736,
+      "sourceFrame": 14,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        754,
+        834,
+        321,
+        363
+      ],
+      "pivot": [
+        183,
+        343
+      ],
+      "duration": 0.02526315789473684,
+      "sourceFrame": 15,
+      "authoredRootLift": 0
+    },
+    {
+      "rect": [
+        0,
+        1568,
+        462,
+        357
+      ],
+      "pivot": [
+        260,
+        345
+      ],
+      "duration": 0.016842105263157894,
+      "sourceFrame": 16,
+      "authoredRootLift": 0
+    }
+  ],
+  "gait": {
+    "cycleDistanceWorldPx": 99,
+    "referenceSpeedWorldPxPerSecond": 190,
+    "phaseStartsNormalized": [
+      0.0,
+      0.0707070707070707,
+      0.12222222222222222,
+      0.15454545454545454,
+      0.18686868686868688,
+      0.2878787878787879,
+      0.3888888888888889,
+      0.4595959595959596,
+      0.4919191919191919,
+      0.5242424242424243,
+      0.6252525252525253,
+      0.7262626262626263,
+      0.7585858585858587,
+      0.8212121212121213,
+      0.9191919191919193,
+      0.9676767676767678
+    ],
+    "phaseSelection": "distancePhase * sum(frame.duration), then cumulative duration lookup",
+    "footLandmarks": "../../qa/foot-landmark-contract.json",
+    "footLandmarksDiagnosticOnly": true
+  }
+}

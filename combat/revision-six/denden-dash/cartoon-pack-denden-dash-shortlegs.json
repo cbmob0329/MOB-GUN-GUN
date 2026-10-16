@@ -1,0 +1,10 @@
+{
+  "animations": {
+    "denden/dash": {
+      "adapter": "dash/adapter.json"
+    }
+  },
+  "aliases": {
+    "denden/awakened-dash": "denden/dash"
+  }
+}

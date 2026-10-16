@@ -1,0 +1,249 @@
+{
+  "bodyHeight": 220.0,
+  "anatomicalBodyHeightInMasterPixels": 270,
+  "bodyHeightMeaning": "Fixed draw reference calibrated using median near-goggle interior diameter to current Denden idle (reference only, not separate approval). No per-frame silhouette fit.",
+  "nativeFacing": "right",
+  "loop": false,
+  "duration": 0.72,
+  "eventTimes": [
+    0.24,
+    0.37,
+    0.5
+  ],
+  "eventFrames": [
+    6,
+    9,
+    12
+  ],
+  "src": "page-00.webp",
+  "frames": [
+    {
+      "duration": 0.04,
+      "pivot": [
+        108.98676182541209,
+        239.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        8,
+        261,
+        251
+      ]
+    },
+    {
+      "duration": 0.04,
+      "pivot": [
+        105.98676182541209,
+        217.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        311,
+        524,
+        259,
+        230
+      ]
+    },
+    {
+      "duration": 0.04,
+      "pivot": [
+        105.98676182541209,
+        218.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        301,
+        275,
+        289,
+        232
+      ]
+    },
+    {
+      "duration": 0.04,
+      "pivot": [
+        103.98676182541209,
+        228.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        285,
+        8,
+        254,
+        242
+      ]
+    },
+    {
+      "duration": 0.04,
+      "pivot": [
+        107.98676182541209,
+        216.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        606,
+        275,
+        275,
+        232
+      ]
+    },
+    {
+      "duration": 0.04,
+      "pivot": [
+        125.98676182541209,
+        213.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        524,
+        287,
+        230
+      ]
+    },
+    {
+      "duration": 0.043333333333333335,
+      "pivot": [
+        142.9867618254121,
+        227.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        555,
+        8,
+        335,
+        240
+      ]
+    },
+    {
+      "duration": 0.043333333333333335,
+      "pivot": [
+        121.98676182541209,
+        216.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        275,
+        277,
+        233
+      ]
+    },
+    {
+      "duration": 0.043333333333333335,
+      "pivot": [
+        138.9867618254121,
+        211.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        586,
+        524,
+        294,
+        227
+      ]
+    },
+    {
+      "duration": 0.043333333333333335,
+      "pivot": [
+        112.98676182541209,
+        214.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        770,
+        282,
+        225
+      ]
+    },
+    {
+      "duration": 0.043333333333333335,
+      "pivot": [
+        122.98676182541209,
+        209.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        306,
+        770,
+        279,
+        222
+      ]
+    },
+    {
+      "duration": 0.043333333333333335,
+      "pivot": [
+        102.98676182541209,
+        200.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        335,
+        1011,
+        255,
+        213
+      ]
+    },
+    {
+      "duration": 0.055,
+      "pivot": [
+        141.9867618254121,
+        210.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        1011,
+        311,
+        216
+      ]
+    },
+    {
+      "duration": 0.055,
+      "pivot": [
+        109.98676182541209,
+        204.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        606,
+        1011,
+        293,
+        210
+      ]
+    },
+    {
+      "duration": 0.055,
+      "pivot": [
+        118.98676182541209,
+        205.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        601,
+        770,
+        266,
+        221
+      ]
+    },
+    {
+      "duration": 0.055,
+      "pivot": [
+        97.98676182541209,
+        203.8886319120005
+      ],
+      "src": "page-00.webp",
+      "rect": [
+        8,
+        1243,
+        245,
+        209
+      ]
+    }
+  ],
+  "sourceFrameCount": 16,
+  "runtimeSpatialScale": 0.8908489173882368,
+  "framesHavePerFrameSrc": true,
+  "runtimeExport": "Static lossless WebP, trimmed with8px external gutters; source master unchanged. Uniform spatial downsample where stated."
+}

@@ -1,0 +1,16 @@
+{
+  "all7Entries16": {
+    "nyoro/special1": 16,
+    "nyoro/special2": 16,
+    "nyoro/effects/special1-rain": 16,
+    "nyoro/effects/special2-meteor": 16,
+    "nyoro/effects/special2-flame": 16,
+    "nyoro/effects/special1-impact": 16,
+    "nyoro/effects/special2-impact": 16
+  },
+  "6UniqueSourceTracks96Cels": true,
+  "allPathsAndRectsValid": true,
+  "allTexturesStaticLosslessWebP": true,
+  "allPackDecodedMiB": 34.41629409790039,
+  "actualGameUnverified": true
+}

@@ -1,0 +1,19 @@
+{
+  "frameCount": 16,
+  "uniqueVisibleSourceRGBA": 16,
+  "pages": [
+    {
+      "src": "page-00.webp",
+      "width": 857,
+      "height": 1473,
+      "decodedBytes": 5049444,
+      "sha256": "511660d9a73546d7ddb6a2bf37f69c36aaf477352a9f9324968cde90f331d8ea"
+    }
+  ],
+  "totalDecodedBytes": 5049444,
+  "scale": 0.8441747439631703,
+  "fixedCrop": null,
+  "maxOutsideAlphaDiscarded": 0,
+  "sourceMasterSHA256": "005196014bc37c674fa84d65c763c5dccfaefef82e39166ee35b50445053eef8",
+  "decodedVisibleRGBAExactToResizedCels": true
+}

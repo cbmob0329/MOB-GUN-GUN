@@ -1,0 +1,156 @@
+{
+  "animations": {
+    "denden/special1": {
+      "adapter": "special1/adapter.json",
+      "releaseSocket": [
+        0.636968215899483,
+        -0.42976168783579577
+      ],
+      "releaseFrame": 6,
+      "releaseTime": 0.25,
+      "chargeSockets": [
+        [
+          0.5947594787013245,
+          -0.42592452990869045
+        ],
+        [
+          0.6139452683368511,
+          -0.3913901085647426
+        ],
+        [
+          0.5794108469929032,
+          -0.42208737198158514
+        ],
+        [
+          0.5487135835760607,
+          -0.4144130561273745
+        ],
+        [
+          0.5410392677218501,
+          -0.42208737198158514
+        ],
+        [
+          0.575573689065798,
+          -0.4451103195442171
+        ]
+      ],
+      "chargeSocketFrameConvention": "Zero-based source body frame0-5; body draw reference normalized. Foot origin, X facing mirrored, Y down."
+    },
+    "denden/special2": {
+      "adapter": "special2/adapter.json"
+    },
+    "denden/effects/special1-energy": {
+      "adapter": "special1-energy/adapter.json"
+    },
+    "denden/effects/special2-fall": {
+      "adapter": "special2-fall/adapter.json"
+    },
+    "denden/effects/special2-ground": {
+      "adapter": "special2-ground/adapter.json"
+    },
+    "denden/effects/special1-impact": {
+      "adapter": "special1-impact/adapter.json"
+    },
+    "denden/effects/special1-charge": {
+      "adapter": "special1-charge/adapter.json"
+    },
+    "denden/effects/ground-wave": {
+      "adapter": "ground-wave/adapter.json"
+    }
+  },
+  "aliases": {
+    "denden/effects/special2-wave": "denden/effects/ground-wave",
+    "denden/awakened-special1": "denden/special1",
+    "denden/awakened-special2": "denden/special2",
+    "denden/effects/awakened-special1-energy": "denden/effects/special1-energy",
+    "denden/effects/awakened-special2-fall": "denden/effects/special2-fall",
+    "denden/effects/awakened-special2-ground": "denden/effects/special2-ground",
+    "denden/effects/awakened-special1-impact": "denden/effects/special1-impact",
+    "denden/effects/awakened-special1-charge": "denden/effects/special1-charge",
+    "denden/effects/awakened-ground-wave": "denden/effects/ground-wave",
+    "denden/special1-startup": {
+      "clip": "denden/special1",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/awakened-special1-startup": {
+      "clip": "denden/special1",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/special1-active": {
+      "clip": "denden/special1",
+      "range": [
+        6,
+        8
+      ]
+    },
+    "denden/awakened-special1-active": {
+      "clip": "denden/special1",
+      "range": [
+        6,
+        8
+      ]
+    },
+    "denden/special1-recovery": {
+      "clip": "denden/special1",
+      "range": [
+        8,
+        16
+      ]
+    },
+    "denden/awakened-special1-recovery": {
+      "clip": "denden/special1",
+      "range": [
+        8,
+        16
+      ]
+    },
+    "denden/special2-startup": {
+      "clip": "denden/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/awakened-special2-startup": {
+      "clip": "denden/special2",
+      "range": [
+        0,
+        6
+      ]
+    },
+    "denden/special2-active": {
+      "clip": "denden/special2",
+      "range": [
+        6,
+        12
+      ]
+    },
+    "denden/awakened-special2-active": {
+      "clip": "denden/special2",
+      "range": [
+        6,
+        12
+      ]
+    },
+    "denden/special2-recovery": {
+      "clip": "denden/special2",
+      "range": [
+        12,
+        16
+      ]
+    },
+    "denden/awakened-special2-recovery": {
+      "clip": "denden/special2",
+      "range": [
+        12,
+        16
+      ]
+    }
+  }
+}

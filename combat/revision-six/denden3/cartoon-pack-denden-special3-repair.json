@@ -1,0 +1,33 @@
+{
+  "animations": {
+    "denden/special3": {
+      "adapter": "body/adapter.json",
+      "sourceDuration": 0.72,
+      "eventFrames": [
+        6,
+        9,
+        12
+      ],
+      "eventTimes": [
+        0.24,
+        0.37,
+        0.5
+      ]
+    },
+    "denden/effects/special3-muzzle": {
+      "adapter": "muzzle/adapter.json"
+    },
+    "denden/effects/ground-wave": {
+      "adapter": "ground-wave/adapter.json"
+    },
+    "denden/effects/thunder-burst": {
+      "adapter": "thunder-burst/adapter.json"
+    }
+  },
+  "aliases": {
+    "denden/awakened-special3": "denden/special3",
+    "denden/effects/awakened-special3-muzzle": "denden/effects/special3-muzzle",
+    "denden/effects/awakened-ground-wave": "denden/effects/ground-wave",
+    "denden/effects/awakened-thunder-burst": "denden/effects/thunder-burst"
+  }
+}

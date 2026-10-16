@@ -1,0 +1,65 @@
+action,frame,leg,heelX,heelY,toeX,toeY,contactCertainty,phase
+walk,1,near,298,417,361,365,uncertain,near heel contact; far release
+walk,1,far,140,376,180,407,uncertain,near heel contact; far release
+walk,2,near,248,418,328,412,candidate,near flat support
+walk,2,far,144,374,193,406,candidate,near flat support
+walk,3,near,229,415,303,411,candidate,near flat support
+walk,3,far,180,359,207,392,candidate,near flat support
+walk,4,near,226,413,301,409,candidate,near flat support
+walk,4,far,193,372,221,398,candidate,near flat support
+walk,5,near,224,414,296,413,candidate,near support; far passing
+walk,5,far,287,358,304,372,candidate,near support; far passing
+walk,6,near,179,402,249,416,candidate,near support; far reach
+walk,6,far,292,391,363,355,candidate,near support; far reach
+walk,7,near,140,395,221,415,candidate,near toe support; far reach
+walk,7,far,296,390,365,356,candidate,near toe support; far reach
+walk,8,near,118,362,190,415,uncertain,"near toe support; far lowering, landing uncertain"
+walk,8,far,274,403,355,400,uncertain,"near toe support; far lowering, landing uncertain"
+walk,9,near,112,365,190,415,uncertain,"near toe release; far lowering, handover uncertain"
+walk,9,far,281,411,360,409,uncertain,"near toe release; far lowering, handover uncertain"
+walk,10,near,135,343,178,403,candidate,far flat support; near lifted
+walk,10,far,264,415,346,414,candidate,far flat support; near lifted
+walk,11,near,161,345,204,397,candidate,far support; near swing
+walk,11,far,226,411,312,415,candidate,far support; near swing
+walk,12,near,224,354,266,390,candidate,far support; near passing in front
+walk,12,far,196,411,275,416,candidate,far support; near passing in front
+walk,13,near,234,358,282,394,candidate,far support; near high swing
+walk,13,far,184,411,267,415,candidate,far support; near high swing
+walk,14,near,239,357,294,392,candidate,far support; near forward swing
+walk,14,far,169,405,248,415,candidate,far support; near forward swing
+walk,15,near,292,419,359,378,candidate,far support; near approaching heel contact
+walk,15,far,144,401,211,412,candidate,far support; near approaching heel contact
+walk,16,near,307,410,365,360,uncertain,"far support; near heel lowering, seam uncertain"
+walk,16,far,119,402,204,415,uncertain,"far support; near heel lowering, seam uncertain"
+dash,1,near,260,416,323,413,candidate,near loaded contact
+dash,1,far,143,345,157,391,candidate,near loaded contact
+dash,2,near,247,416,307,413,candidate,near stance
+dash,2,far,141,330,154,371,candidate,near stance
+dash,3,near,202,405,258,407,uncertain,near release; airborne transition
+dash,3,far,180,350,210,381,uncertain,near release; airborne transition
+dash,4,near,169,341,181,386,uncertain,"air; far passing, leg identity partly occluded"
+dash,4,far,218,355,241,384,uncertain,"air; far passing, leg identity partly occluded"
+dash,5,near,163,350,185,384,uncertain,air; far gather
+dash,5,far,248,361,274,393,uncertain,air; far gather
+dash,6,near,145,315,158,358,uncertain,air; far reach
+dash,6,far,333,388,397,331,uncertain,air; far reach
+dash,7,near,144,344,151,386,uncertain,air; far descent
+dash,7,far,332,401,393,346,uncertain,air; far descent
+dash,8,near,135,355,150,393,candidate,far landing
+dash,8,far,267,414,346,412,candidate,far landing
+dash,9,near,122,337,150,385,candidate,far loaded contact
+dash,9,far,260,416,335,412,candidate,far loaded contact
+dash,10,near,132,320,151,371,candidate,far support
+dash,10,far,232,407,313,415,candidate,far support
+dash,11,near,160,329,183,372,uncertain,far release; airborne transition
+dash,11,far,224,402,307,409,uncertain,far release; airborne transition
+dash,12,near,261,329,275,379,uncertain,air; near passing in front
+dash,12,far,211,413,282,412,uncertain,air; near passing in front
+dash,13,near,284,342,313,391,uncertain,air; near gather
+dash,13,far,149,389,219,405,uncertain,air; near gather
+dash,14,near,273,326,320,346,uncertain,"air; near forward sole, perspective rotated"
+dash,14,far,157,348,181,396,uncertain,"air; near forward sole, perspective rotated"
+dash,15,near,313,409,372,351,uncertain,air; near descending
+dash,15,far,143,338,160,385,uncertain,air; near descending
+dash,16,near,292,416,370,416,candidate,near forward landing
+dash,16,far,145,341,163,388,candidate,near forward landing
