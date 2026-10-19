@@ -1,0 +1,363 @@
+{
+  "frames": 17,
+  "previews": 136,
+  "report": [
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_07.webp",
+      "sha256": "f81b6ed19fba9e7ffa5a4210349a7265a97939b91b0ef72b6659ef922f81322f",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        155
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_08.webp",
+      "sha256": "d89ea5eadb295b4185aba8e972f76b1ae7b5c1f167d7a738f834ea7e0222fb9c",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        155
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_09.webp",
+      "sha256": "691fa480389e0ef96c015b5f8ff5b950066409961f0a9e0b3162251aea4bba91",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        155
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_11.webp",
+      "sha256": "3164c2e42e145e7f6c0e140e2ce31888538ad80c8139a7de7ea00ff70913ff30",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        155
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": "Original sheet ends at x=1536. Faint glow touching the edge cannot be recovered beyond the original; no pixels fabricated."
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_12.webp",
+      "sha256": "7c7daf93c8d9dfcef0aecfda7d62a2e2b850522b4c796ff61b66d153dfd27758",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        147
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_13.webp",
+      "sha256": "b2e02a8f7af065599f0fbae9ed141e7c52bcf67a6e9090d23171cb983b594b29",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        147
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_16.webp",
+      "sha256": "53bd193f98fd5a7da9b709545c32879193eefda40c7df02928c69b28fcfd0a60",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        147
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_17.webp",
+      "sha256": "08caaac7b49d30d69ec9044c1f65e8eefabea5d4c94680146df7f3cac14b1247",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        147
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": "Original sheet ends at x=1536. Faint glow touching the edge cannot be recovered beyond the original; no pixels fabricated."
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_18.webp",
+      "sha256": "01949e036fa6e389f2e02e961a2969d40653f74e4f0beff1008e4721eae90406",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        134
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_19.webp",
+      "sha256": "58c0c1935bec534ff74f76b99ec62336ba00cc4a894da28cafcb4f80fc4e0a70",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        134
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/source_recrop_v1/motion_23.webp",
+      "sha256": "b30eafe680869be152625b36302fab6fed91962c314d305484a0aafc149c17c7",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        134
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": "Original sheet ends at x=1536. Faint glow touching the edge cannot be recovered beyond the original; no pixels fabricated."
+    },
+    {
+      "path": "assets/mobtoitira/source_recrop_v1/attacks_06.webp",
+      "sha256": "986789dff2199b38d1654ad6866b5fdacf82bc6bb7c9c20fbe9b88efe4f69d00",
+      "dimensions": [
+        224,
+        224
+      ],
+      "pivot": [
+        112,
+        172
+      ],
+      "paddingShift": [
+        32,
+        32
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 8362,
+      "addedFXPixels": 395,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/mobtoitira/source_recrop_v1/attacks_10.webp",
+      "sha256": "aed3776a3cb8568f4fd155f7d4e49b7010499a6fa3dace8551cc25402552ca78",
+      "dimensions": [
+        224,
+        224
+      ],
+      "pivot": [
+        112,
+        172
+      ],
+      "paddingShift": [
+        32,
+        32
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 9653,
+      "addedFXPixels": 608,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/mobtoitira/source_recrop_v1/attacks_14.webp",
+      "sha256": "23bf4b05473b4373f8f6d689edd8e6149335a4417e60276945beec39dff4d359",
+      "dimensions": [
+        224,
+        224
+      ],
+      "pivot": [
+        112,
+        172
+      ],
+      "paddingShift": [
+        32,
+        32
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 5968,
+      "addedFXPixels": 3702,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/mobtoitira/source_recrop_v1/context_10.webp",
+      "sha256": "524b397346ab390ba9fa3b1939f9a8cbf11e732aeee1f386c9dc6d621b078065",
+      "dimensions": [
+        224,
+        224
+      ],
+      "pivot": [
+        112,
+        172
+      ],
+      "paddingShift": [
+        32,
+        32
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 4836,
+      "addedFXPixels": 7,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/recreated_v1/motion_21.webp",
+      "sha256": "08960fa9544c9b929236de71c4eb8499f16326bd0704ccf39fa78a22791fb7ab",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        134
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    },
+    {
+      "path": "assets/asamob/recreated_v1/motion_22.webp",
+      "sha256": "e1e7c52c7a3ffb338eaa4b6855c2d08731941d841c7d7e356b846d12026a3669",
+      "dimensions": [
+        224,
+        192
+      ],
+      "pivot": [
+        112,
+        134
+      ],
+      "paddingShift": [
+        32,
+        16
+      ],
+      "worldMultiplier": 1,
+      "preservedBodyPixels": 0,
+      "addedFXPixels": 0,
+      "previewChecks": 8,
+      "sourceLimit": null
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "scope": "Two newly drawn replacement sprites, parent visually approved. Not source-pixel restorations. Separate add-on to unchanged 15-frame source repair ZIP.",
+  "base_library_file_id": "libfile_a73ad05aa9dc8191a85fe97d12fbdd5f",
+  "replacements": [
+    {
+      "frame": 21,
+      "status": "parent_visually_approved_new_recreation",
+      "master_path": "/workspace/scratch/f7102a0fad56/generated_images/exec-3069e976-442e-4336-88fd-bc25acca4f6c.png",
+      "sha256": "caddd837869aa7b778279526ed472c822e413e83d8117ed17f940d6fcc3257d1",
+      "size": [
+        1566,
+        1005
+      ],
+      "alpha_zero_fraction": 0.47703436838794533,
+      "border_max_alpha": 1,
+      "preview_scale": 0.112,
+      "preview_offset": [
+        38,
+        38
+      ],
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          134
+        ],
+        "bodyHeight": 100
+      },
+      "nativeFacing": 1,
+      "notes": "New imagegen recreation using original21/22 plus adjacent20/23 as references. NOT original-pixel recovery. Full-image uniform nearest-neighbor resize and canvas placement only. Preserve existing PC direction logic; metadata applies per new path.",
+      "master_library_file_id": "libfile_b0989092df5c81919d8a920da92d75dd",
+      "old_path": "assets/asamob/v31/motion_21.webp",
+      "new_path": "assets/asamob/recreated_v1/motion_21.webp",
+      "runtime_sha256": "08960fa9544c9b929236de71c4eb8499f16326bd0704ccf39fa78a22791fb7ab",
+      "runtime_bytes": 24536,
+      "generation_attempts": 1
+    },
+    {
+      "frame": 22,
+      "status": "parent_visually_approved_new_recreation",
+      "master_path": "/workspace/scratch/f7102a0fad56/generated_images/exec-f7ca4bb0-27fb-4df0-adbb-f0aca49c340e.png",
+      "sha256": "cb9d074ebc40004e5121995d108ebba4cb8233a727694869f9305cbd54aeb9a1",
+      "size": [
+        1698,
+        926
+      ],
+      "alpha_zero_fraction": 0.6525711865312259,
+      "border_max_alpha": 1,
+      "preview_scale": 0.102,
+      "preview_offset": [
+        26,
+        49
+      ],
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          134
+        ],
+        "bodyHeight": 100
+      },
+      "nativeFacing": 1,
+      "notes": "New imagegen recreation using original21/22 plus adjacent20/23 as references. NOT original-pixel recovery. Full-image uniform nearest-neighbor resize and canvas placement only. Preserve existing PC direction logic; metadata applies per new path.",
+      "master_library_file_id": "libfile_59cdd5a183248191ab0543bfc3869a8a",
+      "old_path": "assets/asamob/v31/motion_22.webp",
+      "new_path": "assets/asamob/recreated_v1/motion_22.webp",
+      "runtime_sha256": "e1e7c52c7a3ffb338eaa4b6855c2d08731941d841c7d7e356b846d12026a3669",
+      "runtime_bytes": 14378,
+      "generation_attempts": 1
+    }
+  ],
+  "keep_direction_fix": true,
+  "nativeFacing": 1,
+  "keep_character_displayBodyHeight": 100,
+  "no_game_code_changes": true
+}

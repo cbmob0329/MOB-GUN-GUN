@@ -2,7 +2,7 @@
 
 ## 対戦版 v31e と既存ゲーム
 
-既存のラン＆ガンはルートの [index.html](index.html) に保持しています。開始メニューのリンクから、独立した [対戦版](battle-royale/index.html) へ移動できます。対戦版のタイトル画面には「元のラン＆ガンへ」のリンクがあります。
+起動入口の [index.html](index.html) は [対戦版のメイン画面](battle-royale/index.html) へ直接移動します。旧ラン＆ガンは `legacy-gungun.html` と既存の付属ファイルに保存し、通常画面の導線から除外しています。復元する場合は `legacy-gungun.html` を `index.html` へコピーしてください。
 
 対戦版は MOB GUN GUN × BREAK BATTLE v31e（20キャラクター、対戦・ストーリー・トレーニング・横スクロール冒険）です。原典参照コミットは `03b48982053e05ca09959e6972c1be9678bf8cf8`。冒険モードは別の戦闘エンジンへの移植なので、元のラン＆ガンを置き換えません。Kyoro 版は含みません。
 

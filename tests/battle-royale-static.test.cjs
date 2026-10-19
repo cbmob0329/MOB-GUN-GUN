@@ -47,7 +47,17 @@ for (const match of html.matchAll(/\b(?:src|href)=["']([^"']+)["']/g)) {
   assert(!ref.startsWith('/'), `Root-relative URL: ${ref}`);
   assert(fs.existsSync(path.resolve(root, ref.split(/[?#]/)[0])), `Missing HTML reference: ${ref}`);
 }
-assert(html.includes('href="../index.html"'), 'Missing return navigation');
+assert(!html.includes('href="../index.html"'), 'Legacy return must be absent from normal navigation');
 const original = fs.readFileSync(path.join(root, '../index.html'), 'utf8');
-assert(original.includes('href="battle-royale/index.html"'), 'Missing entry navigation');
+assert(original.includes('location.replace("battle-royale/index.html" + location.search + location.hash)'), 'Direct relative entry');
+assert(fs.existsSync(path.join(root, '../legacy-gungun.html')), 'Recoverable legacy entry');
+// These authored poses face right already; mirroring them made rightward jumps face left.
+for (const name of ['locomotion_11','locomotion_12','locomotion_13','context_11','context_12']) {
+  assert.equal(context.ARENA_ASSETS.characters.asamob.nativeFacingByFrame['assets/asamob/v18/'+name+'.webp'], 1);
+}
+assert.equal(context.ARENA_ASSETS.characters.asamob.nativeFacingByFrame['assets/asamob/v18/locomotion_10.webp'], -1, 'Keep left-facing takeoff normalization');
+for (const base of ['https://example.test/', 'https://example.test/MOB-GUN-GUN/']) {
+  const target = new URL('battle-royale/index.html', base+'index.html');
+  assert.equal(target.pathname, new URL(base).pathname+'battle-royale/index.html');
+}
 console.log(`PASS: ${scripts.length} scripts parse; 20 fighters; v31e boxes/Rami timing; ${required.size} exact-case asset references; relative navigation; no external runtime APIs.`);

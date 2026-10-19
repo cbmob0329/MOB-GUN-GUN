@@ -1,0 +1,1366 @@
+[
+  {
+    "old_path": "assets/asamob/v31/motion_07.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_07.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        155
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "f81b6ed19fba9e7ffa5a4210349a7265a97939b91b0ef72b6659ef922f81322f",
+    "bytes": 23176,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 7,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        280,
+        318,
+        568,
+        526
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -80,
+        -94
+      ],
+      "crop_paste_xy": [
+        60,
+        65
+      ],
+      "pivot_canvas_xy": [
+        112,
+        155
+      ],
+      "pivot_source_world_xy": [
+        384,
+        498
+      ],
+      "baseline_pivot": [
+        80,
+        139
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          155
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 4,
+      "protected_component_threshold": 4,
+      "own_protected_component_pixels_total": 32189,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {}
+    },
+    "verifiedBounds": [
+      60,
+      65,
+      204,
+      169
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_08.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_08.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        155
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "d89ea5eadb295b4185aba8e972f76b1ae7b5c1f167d7a738f834ea7e0222fb9c",
+    "bytes": 19722,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 8,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        564,
+        320,
+        864,
+        528
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -208,
+        -94
+      ],
+      "crop_paste_xy": [
+        74,
+        66
+      ],
+      "pivot_canvas_xy": [
+        112,
+        155
+      ],
+      "pivot_source_world_xy": [
+        640,
+        498
+      ],
+      "baseline_pivot": [
+        80,
+        139
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          155
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 3,
+      "protected_component_threshold": 4,
+      "own_protected_component_pixels_total": 26686,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {
+        "right": "between_08_09"
+      }
+    },
+    "verifiedBounds": [
+      74,
+      69,
+      220,
+      170
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_09.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_09.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        155
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "691fa480389e0ef96c015b5f8ff5b950066409961f0a9e0b3162251aea4bba91",
+    "bytes": 21494,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 9,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        784,
+        270,
+        1022,
+        516
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -336,
+        -94
+      ],
+      "crop_paste_xy": [
+        56,
+        41
+      ],
+      "pivot_canvas_xy": [
+        112,
+        155
+      ],
+      "pivot_source_world_xy": [
+        896,
+        498
+      ],
+      "baseline_pivot": [
+        80,
+        139
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          155
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 1,
+      "protected_component_threshold": 4,
+      "own_protected_component_pixels_total": 28336,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {
+        "left": "between_08_09"
+      }
+    },
+    "verifiedBounds": [
+      59,
+      41,
+      175,
+      164
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_11.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_11.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        155
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "3164c2e42e145e7f6c0e140e2ce31888538ad80c8139a7de7ea00ff70913ff30",
+    "bytes": 17534,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 11,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        1276,
+        320,
+        1536,
+        540
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -592,
+        -94
+      ],
+      "crop_paste_xy": [
+        46,
+        66
+      ],
+      "pivot_canvas_xy": [
+        112,
+        155
+      ],
+      "pivot_source_world_xy": [
+        1408,
+        498
+      ],
+      "baseline_pivot": [
+        80,
+        139
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          155
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 14,
+      "protected_component_threshold": 8,
+      "own_protected_component_pixels_total": 21232,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {
+        "left": "between_10_11"
+      },
+      "original_sheet_right_edge_alpha_max": 14,
+      "source_edge_limit": "Original sheet ends at x=1536. Faint glow touching the edge cannot be recovered beyond the original; no pixels fabricated.",
+      "fully_restored_fx": false,
+      "source_recovery_scope": "Separation preserves available original artwork. Original-edge outer glow is clipped; off-sheet extent is unknown and unrecoverable from this sheet."
+    },
+    "verifiedBounds": [
+      50,
+      66,
+      176,
+      176
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_12.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_12.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        147
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "7c7daf93c8d9dfcef0aecfda7d62a2e2b850522b4c796ff61b66d153dfd27758",
+    "bytes": 16690,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 12,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        0,
+        570,
+        238,
+        756
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        48,
+        -222
+      ],
+      "crop_paste_xy": [
+        48,
+        63
+      ],
+      "pivot_canvas_xy": [
+        112,
+        147
+      ],
+      "pivot_source_world_xy": [
+        128,
+        738
+      ],
+      "baseline_pivot": [
+        80,
+        131
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          147
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 3,
+      "protected_component_threshold": 4,
+      "own_protected_component_pixels_total": 22595,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {}
+    },
+    "verifiedBounds": [
+      48,
+      64,
+      167,
+      155
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_13.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_13.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        147
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "b2e02a8f7af065599f0fbae9ed141e7c52bcf67a6e9090d23171cb983b594b29",
+    "bytes": 18652,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 13,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        238,
+        568,
+        472,
+        756
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -80,
+        -222
+      ],
+      "crop_paste_xy": [
+        39,
+        62
+      ],
+      "pivot_canvas_xy": [
+        112,
+        147
+      ],
+      "pivot_source_world_xy": [
+        384,
+        738
+      ],
+      "baseline_pivot": [
+        80,
+        131
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          147
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 7,
+      "protected_component_threshold": 8,
+      "own_protected_component_pixels_total": 23095,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {}
+    },
+    "verifiedBounds": [
+      39,
+      62,
+      156,
+      156
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_16.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_16.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        147
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "53bd193f98fd5a7da9b709545c32879193eefda40c7df02928c69b28fcfd0a60",
+    "bytes": 18934,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 16,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        1028,
+        560,
+        1340,
+        758
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -464,
+        -222
+      ],
+      "crop_paste_xy": [
+        50,
+        58
+      ],
+      "pivot_canvas_xy": [
+        112,
+        147
+      ],
+      "pivot_source_world_xy": [
+        1152,
+        738
+      ],
+      "baseline_pivot": [
+        80,
+        131
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          147
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 1,
+      "protected_component_threshold": 8,
+      "own_protected_component_pixels_total": 22116,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {
+        "left": "between_15_16",
+        "right": "between_16_17"
+      }
+    },
+    "verifiedBounds": [
+      57,
+      58,
+      201,
+      157
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_17.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_17.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        147
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "08caaac7b49d30d69ec9044c1f65e8eefabea5d4c94680146df7f3cac14b1247",
+    "bytes": 17908,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 17,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        1240,
+        560,
+        1536,
+        758
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -592,
+        -222
+      ],
+      "crop_paste_xy": [
+        28,
+        58
+      ],
+      "pivot_canvas_xy": [
+        112,
+        147
+      ],
+      "pivot_source_world_xy": [
+        1408,
+        738
+      ],
+      "baseline_pivot": [
+        80,
+        131
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          147
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 7,
+      "protected_component_threshold": 8,
+      "own_protected_component_pixels_total": 21332,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {
+        "left": "between_16_17"
+      },
+      "original_sheet_right_edge_alpha_max": 7,
+      "source_edge_limit": "Original sheet ends at x=1536. Faint glow touching the edge cannot be recovered beyond the original; no pixels fabricated.",
+      "fully_restored_fx": false,
+      "source_recovery_scope": "Separation preserves available original artwork. Original-edge outer glow is clipped; off-sheet extent is unknown and unrecoverable from this sheet."
+    },
+    "verifiedBounds": [
+      38,
+      59,
+      176,
+      157
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_18.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_18.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        134
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "01949e036fa6e389f2e02e961a2969d40653f74e4f0beff1008e4721eae90406",
+    "bytes": 16414,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 18,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        0,
+        786,
+        212,
+        984
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        48,
+        -350
+      ],
+      "crop_paste_xy": [
+        48,
+        43
+      ],
+      "pivot_canvas_xy": [
+        112,
+        134
+      ],
+      "pivot_source_world_xy": [
+        128,
+        968
+      ],
+      "baseline_pivot": [
+        80,
+        118
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          134
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 4,
+      "protected_component_threshold": 4,
+      "own_protected_component_pixels_total": 22841,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {}
+    },
+    "verifiedBounds": [
+      48,
+      43,
+      154,
+      142
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_19.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_19.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        134
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "58c0c1935bec534ff74f76b99ec62336ba00cc4a894da28cafcb4f80fc4e0a70",
+    "bytes": 21636,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 19,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        206,
+        780,
+        488,
+        986
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -80,
+        -350
+      ],
+      "crop_paste_xy": [
+        23,
+        40
+      ],
+      "pivot_canvas_xy": [
+        112,
+        134
+      ],
+      "pivot_source_world_xy": [
+        384,
+        968
+      ],
+      "baseline_pivot": [
+        80,
+        118
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          134
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 3,
+      "protected_component_threshold": 4,
+      "own_protected_component_pixels_total": 29858,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {
+        "right": "between_19_20"
+      }
+    },
+    "verifiedBounds": [
+      23,
+      40,
+      160,
+      143
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/asamob/v31/motion_23.webp",
+    "new_path": "assets/asamob/source_recrop_v1/motion_23.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        134
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "sha256": "b30eafe680869be152625b36302fab6fed91962c314d305484a0aafc149c17c7",
+    "bytes": 16848,
+    "dimensions": [
+      224,
+      192
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 23,
+      "status": "source_recovered",
+      "nativeFacing": 1,
+      "native_facing_description": "Source artwork faces screen-right. Do not change established game direction logic.",
+      "crop_source_xyxy_exclusive": [
+        1280,
+        780,
+        1536,
+        986
+      ],
+      "source_scale": 0.5,
+      "resampling": "NEAREST, matching import_v31.py sampling phase",
+      "canvas_size": [
+        224,
+        192
+      ],
+      "source_to_canvas_offset": [
+        -592,
+        -350
+      ],
+      "crop_paste_xy": [
+        48,
+        40
+      ],
+      "pivot_canvas_xy": [
+        112,
+        134
+      ],
+      "pivot_source_world_xy": [
+        1408,
+        968
+      ],
+      "baseline_pivot": [
+        80,
+        118
+      ],
+      "baseline_to_recovered_canvas_shift": [
+        32,
+        16
+      ],
+      "bodyHeight": 100,
+      "displayBodyHeight": 100,
+      "renderer_multiplier": 1,
+      "frameMeta": {
+        "w": 224,
+        "h": 192,
+        "pivot": [
+          112,
+          134
+        ],
+        "bodyHeight": 100
+      },
+      "source_boundary_alpha_max": 9,
+      "protected_component_threshold": 16,
+      "own_protected_component_pixels_total": 19189,
+      "own_protected_component_pixels_discarded": 0,
+      "sample_rgba_preserved_exactly": true,
+      "seams": {
+        "left": "between_22_23"
+      },
+      "original_sheet_right_edge_alpha_max": 9,
+      "source_edge_limit": "Original sheet ends at x=1536. Faint glow touching the edge cannot be recovered beyond the original; no pixels fabricated.",
+      "fully_restored_fx": false,
+      "source_recovery_scope": "Separation preserves available original artwork. Original-edge outer glow is clipped; off-sheet extent is unknown and unrecoverable from this sheet.",
+      "source_edge_check": {
+        "edge_x": 1535,
+        "max_alpha": 9,
+        "max_alpha_y": 949,
+        "alpha_at_x1532_y950": 238,
+        "alpha_at_x1533_y950": 196,
+        "alpha_at_x1534_y950": 34,
+        "alpha_at_x1535_y950": 7,
+        "visual_assessment": "Bright sword tip visibly tapers inside the source border. Faint outer glow remains nonzero at the border and is source-clipped. Do not describe full FX as restored.",
+        "evidence_image": "frame23_original_right_edge.png"
+      }
+    },
+    "verifiedBounds": [
+      56,
+      40,
+      176,
+      143
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/mobtoitira/v22/attacks_06.webp",
+    "new_path": "assets/mobtoitira/source_recrop_v1/attacks_06.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 224,
+      "pivot": [
+        112,
+        172
+      ],
+      "bodyHeight": 110
+    },
+    "nativeFacing": 1,
+    "sha256": "986789dff2199b38d1654ad6866b5fdacf82bc6bb7c9c20fbe9b88efe4f69d00",
+    "bytes": 22902,
+    "dimensions": [
+      224,
+      224
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 6,
+      "source_labels": [
+        10,
+        13,
+        14
+      ],
+      "source_bbox": [
+        670,
+        309,
+        1077,
+        582
+      ],
+      "old_source_bbox": [
+        617,
+        291,
+        1032,
+        580
+      ],
+      "retained_alpha_gt30_outside_old_crop": 2885,
+      "scale": 0.37037037037037035,
+      "oldResizeDimensions": [
+        154,
+        107
+      ],
+      "effectiveSamplingScale": [
+        0.3710843373493976,
+        0.370242214532872
+      ],
+      "preservesOriginalResizeLattice": true,
+      "bodyHeight": 110,
+      "replacement_for": "assets/mobtoitira/v22/attacks_06.webp",
+      "canvas": [
+        224,
+        224
+      ],
+      "pivot": [
+        112,
+        172
+      ],
+      "sourceToCanvasTranslate": [
+        -203.5185185185185,
+        -42.77777777777777
+      ],
+      "candidate": "attacks_06_candidate.webp",
+      "no_synthesis": true,
+      "old_alpha_gt30_RGBA_mismatch": 0,
+      "source_native_facing": 1,
+      "candidate_sha256": "986789dff2199b38d1654ad6866b5fdacf82bc6bb7c9c20fbe9b88efe4f69d00",
+      "new_runtime_alpha_pixels": 893,
+      "four_pixel_gutter_clean": true
+    },
+    "verifiedBounds": [
+      45,
+      72,
+      196,
+      173
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/mobtoitira/v22/attacks_10.webp",
+    "new_path": "assets/mobtoitira/source_recrop_v1/attacks_10.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 224,
+      "pivot": [
+        112,
+        172
+      ],
+      "bodyHeight": 110
+    },
+    "nativeFacing": 1,
+    "sha256": "aed3776a3cb8568f4fd155f7d4e49b7010499a6fa3dace8551cc25402552ca78",
+    "bytes": 26170,
+    "dimensions": [
+      224,
+      224
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 10,
+      "source_labels": [
+        18,
+        17,
+        19,
+        21,
+        23
+      ],
+      "source_bbox": [
+        644,
+        621,
+        1085,
+        881
+      ],
+      "old_source_bbox": [
+        607,
+        580,
+        1032,
+        879
+      ],
+      "retained_alpha_gt30_outside_old_crop": 4389,
+      "scale": 0.37037037037037035,
+      "oldResizeDimensions": [
+        157,
+        111
+      ],
+      "effectiveSamplingScale": [
+        0.36941176470588233,
+        0.3712374581939799
+      ],
+      "preservesOriginalResizeLattice": true,
+      "bodyHeight": 110,
+      "replacement_for": "assets/mobtoitira/v22/attacks_10.webp",
+      "canvas": [
+        224,
+        224
+      ],
+      "pivot": [
+        112,
+        172
+      ],
+      "sourceToCanvasTranslate": [
+        -198.8148148148148,
+        -153.8148148148148
+      ],
+      "candidate": "attacks_10_candidate.webp",
+      "no_synthesis": true,
+      "old_alpha_gt30_RGBA_mismatch": 0,
+      "source_native_facing": 1,
+      "candidate_sha256": "aed3776a3cb8568f4fd155f7d4e49b7010499a6fa3dace8551cc25402552ca78",
+      "new_runtime_alpha_pixels": 1124,
+      "four_pixel_gutter_clean": true
+    },
+    "verifiedBounds": [
+      40,
+      76,
+      203,
+      172
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/mobtoitira/v22/attacks_14.webp",
+    "new_path": "assets/mobtoitira/source_recrop_v1/attacks_14.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 224,
+      "pivot": [
+        112,
+        172
+      ],
+      "bodyHeight": 110
+    },
+    "nativeFacing": 1,
+    "sha256": "23bf4b05473b4373f8f6d689edd8e6149335a4417e60276945beec39dff4d359",
+    "bytes": 24872,
+    "dimensions": [
+      224,
+      224
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "frame": 14,
+      "source_labels": [
+        24,
+        28,
+        29,
+        31
+      ],
+      "source_bbox": [
+        688,
+        885,
+        1096,
+        1175
+      ],
+      "old_source_bbox": [
+        657,
+        879,
+        935,
+        1199
+      ],
+      "retained_alpha_gt30_outside_old_crop": 26805,
+      "scale": 0.37037037037037035,
+      "oldResizeDimensions": [
+        103,
+        119
+      ],
+      "effectiveSamplingScale": [
+        0.37050359712230213,
+        0.371875
+      ],
+      "preservesOriginalResizeLattice": true,
+      "bodyHeight": 110,
+      "replacement_for": "assets/mobtoitira/v22/attacks_14.webp",
+      "canvas": [
+        224,
+        224
+      ],
+      "pivot": [
+        112,
+        172
+      ],
+      "sourceToCanvasTranslate": [
+        -189.33333333333331,
+        -262.55555555555554
+      ],
+      "candidate": "attacks_14_candidate.webp",
+      "no_synthesis": true,
+      "old_alpha_gt30_RGBA_mismatch": 0,
+      "source_native_facing": 1,
+      "candidate_sha256": "23bf4b05473b4373f8f6d689edd8e6149335a4417e60276945beec39dff4d359",
+      "new_runtime_alpha_pixels": 4248,
+      "four_pixel_gutter_clean": true
+    },
+    "verifiedBounds": [
+      66,
+      65,
+      217,
+      173
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "old_path": "assets/mobtoitira/v22/context_10.webp",
+    "new_path": "assets/mobtoitira/source_recrop_v1/context_10.webp",
+    "frameMeta": {
+      "w": 224,
+      "h": 224,
+      "pivot": [
+        112,
+        172
+      ],
+      "bodyHeight": 110
+    },
+    "nativeFacing": 1,
+    "sha256": "524b397346ab390ba9fa3b1939f9a8cbf11e732aeee1f386c9dc6d621b078065",
+    "bytes": 11962,
+    "dimensions": [
+      224,
+      224
+    ],
+    "four_pixel_gutter_zero": true,
+    "provenance": {
+      "existing_RGBA_pixels_unchanged": 4836,
+      "new_tip_pixels": 7,
+      "no_synthesis": true
+    },
+    "verifiedBounds": [
+      67,
+      85,
+      158,
+      175
+    ],
+    "package": "MOB_SOURCE_REPAIR_15.zip"
+  },
+  {
+    "frame": 21,
+    "status": "parent_visually_approved_new_recreation",
+    "master_path": "/workspace/scratch/f7102a0fad56/generated_images/exec-3069e976-442e-4336-88fd-bc25acca4f6c.png",
+    "sha256": "caddd837869aa7b778279526ed472c822e413e83d8117ed17f940d6fcc3257d1",
+    "size": [
+      1566,
+      1005
+    ],
+    "alpha_zero_fraction": 0.47703436838794533,
+    "border_max_alpha": 1,
+    "preview_scale": 0.112,
+    "preview_offset": [
+      38,
+      38
+    ],
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        134
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "notes": "New imagegen recreation using original21/22 plus adjacent20/23 as references. NOT original-pixel recovery. Full-image uniform nearest-neighbor resize and canvas placement only. Preserve existing PC direction logic; metadata applies per new path.",
+    "master_library_file_id": "libfile_b0989092df5c81919d8a920da92d75dd",
+    "old_path": "assets/asamob/v31/motion_21.webp",
+    "new_path": "assets/asamob/recreated_v1/motion_21.webp",
+    "runtime_sha256": "08960fa9544c9b929236de71c4eb8499f16326bd0704ccf39fa78a22791fb7ab",
+    "runtime_bytes": 24536,
+    "generation_attempts": 1,
+    "verifiedBounds": [
+      41,
+      42,
+      213,
+      149
+    ],
+    "package": "MOB_ASAMOB_21_22_RECREATED_ADDON.zip"
+  },
+  {
+    "frame": 22,
+    "status": "parent_visually_approved_new_recreation",
+    "master_path": "/workspace/scratch/f7102a0fad56/generated_images/exec-f7ca4bb0-27fb-4df0-adbb-f0aca49c340e.png",
+    "sha256": "cb9d074ebc40004e5121995d108ebba4cb8233a727694869f9305cbd54aeb9a1",
+    "size": [
+      1698,
+      926
+    ],
+    "alpha_zero_fraction": 0.6525711865312259,
+    "border_max_alpha": 1,
+    "preview_scale": 0.102,
+    "preview_offset": [
+      26,
+      49
+    ],
+    "frameMeta": {
+      "w": 224,
+      "h": 192,
+      "pivot": [
+        112,
+        134
+      ],
+      "bodyHeight": 100
+    },
+    "nativeFacing": 1,
+    "notes": "New imagegen recreation using original21/22 plus adjacent20/23 as references. NOT original-pixel recovery. Full-image uniform nearest-neighbor resize and canvas placement only. Preserve existing PC direction logic; metadata applies per new path.",
+    "master_library_file_id": "libfile_59cdd5a183248191ab0543bfc3869a8a",
+    "old_path": "assets/asamob/v31/motion_22.webp",
+    "new_path": "assets/asamob/recreated_v1/motion_22.webp",
+    "runtime_sha256": "e1e7c52c7a3ffb338eaa4b6855c2d08731941d841c7d7e356b846d12026a3669",
+    "runtime_bytes": 14378,
+    "generation_attempts": 1,
+    "verifiedBounds": [
+      28,
+      51,
+      190,
+      142
+    ],
+    "package": "MOB_ASAMOB_21_22_RECREATED_ADDON.zip"
+  }
+]
