@@ -5,9 +5,10 @@ const vm = require('node:vm');
 const assert = require('node:assert/strict');
 const root = process.argv[2] || path.resolve(__dirname, '../battle-royale');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const scripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(m => m[1]);
+const scripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)].map(m => m[1]).filter(code => code.trim());
 assert.equal(scripts.length, 28);
 scripts.forEach((code, i) => new vm.Script(code, { filename: `inline-${i}.js` }));
+new vm.Script(fs.readFileSync(path.join(root, 'adventure-stage.js'), 'utf8'), { filename: 'adventure-stage.js' });
 const context = vm.createContext({});
 context.window = context;
 // Evaluate only the engine and serialized data, never DOM/game-loop code.
