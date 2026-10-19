@@ -1,5 +1,19 @@
 # MOB GUN GUN — 草原 Area 1〜4
 
+## 対戦版 v31e と既存ゲーム
+
+既存のラン＆ガンはルートの [index.html](index.html) に保持しています。開始メニューのリンクから、独立した [対戦版](battle-royale/index.html) へ移動できます。対戦版のタイトル画面には「元のラン＆ガンへ」のリンクがあります。
+
+対戦版は MOB GUN GUN × BREAK BATTLE v31e（20キャラクター、対戦・ストーリー・トレーニング・横スクロール冒険）です。原典参照コミットは `03b48982053e05ca09959e6972c1be9678bf8cf8`。冒険モードは別の戦闘エンジンへの移植なので、元のラン＆ガンを置き換えません。Kyoro 版は含みません。
+
+リポジトリのルートを静的 HTTP サーバーで配信して、`/index.html` または `/battle-royale/index.html` を開いてください。ビルドや外部 CDN は不要です。GitHub Pages のプロジェクト配下でも使える相対リンクです。この追加作業では push・公開設定の変更は行っていません。
+
+取り込み元は v31e Part1 と v31c Part2〜6。ZIP 内の旧フォルダー名 `MOB_GUN_GUN_BATTLE_v31c` を `battle-royale/` に配置しています。[ZIP の SHA256 記録](battle-royale/PACKAGE_SHA256.json)、[更新内容](battle-royale/UPDATE_v31e_JA.txt)、[冒険モードの制限](battle-royale/ADVENTURE_README.md) を参照してください。Part1 は提供された期待ハッシュと照合済み、Part2〜6 は計算値の記録です。
+
+`node tests/battle-royale-static.test.cjs` で、全インライン JavaScript の構文、20人の定義、v31e の木箱数とラミの攻撃タイミング、画像参照の存在・大文字小文字、相互リンク、外部ランタイム依存を検査できます。ブラウザーの描画・実操作はこの検査には含みません。
+
+取り込み時、未使用のラミのポートレート情報2件を、同梱されている現行ポートレートのパスへ修正しました。過去のフレーム名をキーとする補助情報は原文のまま保持しており、画像読み込みの対象ではありません。
+
 HTML / CSS / JavaScript のみで動く、横画面のラン＆ガンです。ビルドや外部CDNは不要です。既存の `denden/`・`atk/`・`stage/` を相対パスで参照しています。既存キャラクター素材は変更せず、新しい地形・ギミック画像は `stage/grassland/` に追加しています。
 
 ## 起動

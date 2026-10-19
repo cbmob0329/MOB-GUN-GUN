@@ -1,0 +1,8 @@
+{
+  "source": "https://github.com/cbmob0329/MOB-GUN-GUN",
+  "commit": "03b48982053e05ca09959e6972c1be9678bf8cf8",
+  "terrain": "20 original area builders extracted to adventure_data.js",
+  "combat": "shared BR engine with adventure enemy adapters; not identical original Gun Gun simulation",
+  "fall": "half current HP rounded up, minimum 1, checkpoint recovery",
+  "originalModes": "unchanged defaults; adventure flag gates new outcome/world logic"
+}

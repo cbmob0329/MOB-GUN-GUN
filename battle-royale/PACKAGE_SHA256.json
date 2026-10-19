@@ -1,0 +1,50 @@
+[
+  {
+    "name": "MOB_GUN_GUN_BATTLE_v31e_Play_Part1_of6.zip",
+    "sha256": "8079d60f0f906a7dc10d1a43c36c7f92b0aac0326960da8fc4ca8b4aeb70a5f4",
+    "files": 30,
+    "roots": [
+      "MOB_GUN_GUN_BATTLE_v31c"
+    ]
+  },
+  {
+    "name": "MOB_GUN_GUN_BATTLE_v31c_Play_Part2_of6.zip",
+    "sha256": "2d0352984f9ea785e941a39f4798284c0e94d59c7ec9763e62ab0b7303938ad0",
+    "files": 150,
+    "roots": [
+      "MOB_GUN_GUN_BATTLE_v31c"
+    ]
+  },
+  {
+    "name": "MOB_GUN_GUN_BATTLE_v31c_Play_Part3_of6.zip",
+    "sha256": "86eb96cdf50bea3a3066097aaa886b83be294aa9637a95cbeb81aa8dd7c5be20",
+    "files": 203,
+    "roots": [
+      "MOB_GUN_GUN_BATTLE_v31c"
+    ]
+  },
+  {
+    "name": "MOB_GUN_GUN_BATTLE_v31c_Play_Part4_of6.zip",
+    "sha256": "f54625728abffbec6522d4e756766098373e18ac51a29f472e9c9bb874fbdc6c",
+    "files": 392,
+    "roots": [
+      "MOB_GUN_GUN_BATTLE_v31c"
+    ]
+  },
+  {
+    "name": "MOB_GUN_GUN_BATTLE_v31c_Play_Part5_of6.zip",
+    "sha256": "1b11be45ed43a4a9e7a3ef85a214b71e42adc06d2fd20a175d3ce6bcea58ddb0",
+    "files": 823,
+    "roots": [
+      "MOB_GUN_GUN_BATTLE_v31c"
+    ]
+  },
+  {
+    "name": "MOB_GUN_GUN_BATTLE_v31c_Play_Part6_of6.zip",
+    "sha256": "d2e2c527222096b1a8fc233f07e0e6d3d71152033c3915d3c543e43ec2d8a33c",
+    "files": 1615,
+    "roots": [
+      "MOB_GUN_GUN_BATTLE_v31c"
+    ]
+  }
+]
