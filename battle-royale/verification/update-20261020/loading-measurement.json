@@ -1,0 +1,15 @@
+{
+  "old": {
+    "images": 2791,
+    "bytes": 59231101,
+    "decodedPixels": 77941009,
+    "sequentialNativeDecodeMs": 3384
+  },
+  "boot": {
+    "images": 44,
+    "bytes": 3731921,
+    "decodedPixels": 4198243,
+    "sequentialNativeDecodeMs": 89
+  },
+  "note": "Local sequential native image decode, not browser/network startup time. HTML, portrait img tags, and post-boot preview not included."
+}
