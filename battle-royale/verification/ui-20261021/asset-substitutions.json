@@ -1,0 +1,723 @@
+[
+  {
+    "character": "mobmint",
+    "action": "melee1",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_06.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee1",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_07.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee1",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_08.webp",
+    "to": "assets/mobmint/v12_21.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee1",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_11.webp",
+    "to": "assets/mobmint/v12_22.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee2",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_08.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee2",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_09.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee2",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_10.webp",
+    "to": "assets/mobmint/v12_21.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee2",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_11.webp",
+    "to": "assets/mobmint/v12_22.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee3",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_06.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee3",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_07.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee3",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_08.webp",
+    "to": "assets/mobmint/v12_21.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee3",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_09.webp",
+    "to": "assets/mobmint/v12_22.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee3",
+    "index": 4,
+    "from": "assets/mobmint/v31/motion_10.webp",
+    "to": "assets/mobmint/v12_23.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee3",
+    "index": 5,
+    "from": "assets/mobmint/v31/motion_11.webp",
+    "to": "assets/mobmint/v12_24.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "strong",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_06.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "strong",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_07.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "strong",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_08.webp",
+    "to": "assets/mobmint/v12_21.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "strong",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_09.webp",
+    "to": "assets/mobmint/v12_22.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "strong",
+    "index": 4,
+    "from": "assets/mobmint/v31/motion_10.webp",
+    "to": "assets/mobmint/v12_23.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "strong",
+    "index": 5,
+    "from": "assets/mobmint/v31/motion_11.webp",
+    "to": "assets/mobmint/v12_24.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "shot",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_12.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "shot",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_13.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "shot",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_14.webp",
+    "to": "assets/mobmint/v12_21.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "shot",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_15.webp",
+    "to": "assets/mobmint/v12_22.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "shot",
+    "index": 4,
+    "from": "assets/mobmint/v31/motion_16.webp",
+    "to": "assets/mobmint/v12_23.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "shot",
+    "index": 5,
+    "from": "assets/mobmint/v31/motion_17.webp",
+    "to": "assets/mobmint/v12_24.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "special",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_18.webp",
+    "to": "assets/mobmint/v12_00.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "special",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_19.webp",
+    "to": "assets/mobmint/v12_08.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "special",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_20.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "special",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_21.webp",
+    "to": "assets/mobmint/v12_23.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "special",
+    "index": 4,
+    "from": "assets/mobmint/v31/motion_22.webp",
+    "to": "assets/mobmint/v12_24.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "special",
+    "index": 5,
+    "from": "assets/mobmint/v31/motion_23.webp",
+    "to": "assets/mobmint/v12_00.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_06.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_07.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_08.webp",
+    "to": "assets/mobmint/v12_21.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "melee",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_11.webp",
+    "to": "assets/mobmint/v12_22.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "charge",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_12.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "charge",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_13.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "dashAttack",
+    "index": 0,
+    "from": "assets/mobmint/v31/motion_18.webp",
+    "to": "assets/mobmint/v12_19.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "dashAttack",
+    "index": 1,
+    "from": "assets/mobmint/v31/motion_19.webp",
+    "to": "assets/mobmint/v12_20.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "dashAttack",
+    "index": 2,
+    "from": "assets/mobmint/v31/motion_20.webp",
+    "to": "assets/mobmint/v12_21.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "dashAttack",
+    "index": 3,
+    "from": "assets/mobmint/v31/motion_21.webp",
+    "to": "assets/mobmint/v12_22.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "dashAttack",
+    "index": 4,
+    "from": "assets/mobmint/v31/motion_22.webp",
+    "to": "assets/mobmint/v12_23.webp"
+  },
+  {
+    "character": "mobmint",
+    "action": "dashAttack",
+    "index": 5,
+    "from": "assets/mobmint/v31/motion_23.webp",
+    "to": "assets/mobmint/v12_24.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "run",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/gait_00.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "run",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/gait_01.webp",
+    "to": "assets/mobmintTransform/v12_06.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "run",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/gait_02.webp",
+    "to": "assets/mobmintTransform/v12_07.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "run",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/gait_03.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "run",
+    "index": 4,
+    "from": "assets/mobmintTransform/v31/gait_04.webp",
+    "to": "assets/mobmintTransform/v12_06.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "run",
+    "index": 5,
+    "from": "assets/mobmintTransform/v31/gait_05.webp",
+    "to": "assets/mobmintTransform/v12_07.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee1",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_06.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee1",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_07.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee1",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_08.webp",
+    "to": "assets/mobmintTransform/v12_21.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee1",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_11.webp",
+    "to": "assets/mobmintTransform/v12_22.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee2",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_08.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee2",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_09.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee2",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_10.webp",
+    "to": "assets/mobmintTransform/v12_21.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee2",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_11.webp",
+    "to": "assets/mobmintTransform/v12_22.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee3",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_06.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee3",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_07.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee3",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_08.webp",
+    "to": "assets/mobmintTransform/v12_21.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee3",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_09.webp",
+    "to": "assets/mobmintTransform/v12_22.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee3",
+    "index": 4,
+    "from": "assets/mobmintTransform/v31/motion_10.webp",
+    "to": "assets/mobmintTransform/v12_23.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee3",
+    "index": 5,
+    "from": "assets/mobmintTransform/v31/motion_11.webp",
+    "to": "assets/mobmintTransform/v12_24.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "strong",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_06.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "strong",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_07.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "strong",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_08.webp",
+    "to": "assets/mobmintTransform/v12_21.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "strong",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_09.webp",
+    "to": "assets/mobmintTransform/v12_22.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "strong",
+    "index": 4,
+    "from": "assets/mobmintTransform/v31/motion_10.webp",
+    "to": "assets/mobmintTransform/v12_23.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "strong",
+    "index": 5,
+    "from": "assets/mobmintTransform/v31/motion_11.webp",
+    "to": "assets/mobmintTransform/v12_24.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "shot",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_12.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "shot",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_13.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "shot",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_14.webp",
+    "to": "assets/mobmintTransform/v12_21.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "shot",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_15.webp",
+    "to": "assets/mobmintTransform/v12_22.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "shot",
+    "index": 4,
+    "from": "assets/mobmintTransform/v31/motion_16.webp",
+    "to": "assets/mobmintTransform/v12_23.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "shot",
+    "index": 5,
+    "from": "assets/mobmintTransform/v31/motion_17.webp",
+    "to": "assets/mobmintTransform/v12_24.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "special",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_18.webp",
+    "to": "assets/mobmintTransform/v12_00.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "special",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_19.webp",
+    "to": "assets/mobmintTransform/v12_08.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "special",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_20.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "special",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_21.webp",
+    "to": "assets/mobmintTransform/v12_23.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "special",
+    "index": 4,
+    "from": "assets/mobmintTransform/v31/motion_22.webp",
+    "to": "assets/mobmintTransform/v12_24.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "special",
+    "index": 5,
+    "from": "assets/mobmintTransform/v31/motion_23.webp",
+    "to": "assets/mobmintTransform/v12_00.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_06.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_07.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_08.webp",
+    "to": "assets/mobmintTransform/v12_21.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "melee",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_11.webp",
+    "to": "assets/mobmintTransform/v12_22.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "charge",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_12.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "charge",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_13.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "dashAttack",
+    "index": 0,
+    "from": "assets/mobmintTransform/v31/motion_18.webp",
+    "to": "assets/mobmintTransform/v12_19.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "dashAttack",
+    "index": 1,
+    "from": "assets/mobmintTransform/v31/motion_19.webp",
+    "to": "assets/mobmintTransform/v12_20.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "dashAttack",
+    "index": 2,
+    "from": "assets/mobmintTransform/v31/motion_20.webp",
+    "to": "assets/mobmintTransform/v12_21.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "dashAttack",
+    "index": 3,
+    "from": "assets/mobmintTransform/v31/motion_21.webp",
+    "to": "assets/mobmintTransform/v12_22.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "dashAttack",
+    "index": 4,
+    "from": "assets/mobmintTransform/v31/motion_22.webp",
+    "to": "assets/mobmintTransform/v12_23.webp"
+  },
+  {
+    "character": "mobmintTransform",
+    "action": "dashAttack",
+    "index": 5,
+    "from": "assets/mobmintTransform/v31/motion_23.webp",
+    "to": "assets/mobmintTransform/v12_24.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "melee1",
+    "index": 0,
+    "from": "assets/asamob/v31/motion_06.webp",
+    "to": "assets/asamob/source_recrop_v1/motion_12.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "melee2",
+    "index": 2,
+    "from": "assets/asamob/v31/motion_10.webp",
+    "to": "assets/asamob/recreated_v1/motion_21.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "melee3",
+    "index": 0,
+    "from": "assets/asamob/v31/motion_06.webp",
+    "to": "assets/asamob/source_recrop_v1/motion_12.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "melee3",
+    "index": 4,
+    "from": "assets/asamob/v31/motion_10.webp",
+    "to": "assets/asamob/recreated_v1/motion_21.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "strong",
+    "index": 0,
+    "from": "assets/asamob/v31/motion_06.webp",
+    "to": "assets/asamob/source_recrop_v1/motion_12.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "strong",
+    "index": 4,
+    "from": "assets/asamob/v31/motion_10.webp",
+    "to": "assets/asamob/recreated_v1/motion_21.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "shot",
+    "index": 2,
+    "from": "assets/asamob/v31/motion_14.webp",
+    "to": "assets/asamob/source_recrop_v1/motion_16.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "dashAttack",
+    "index": 2,
+    "from": "assets/asamob/v31/motion_20.webp",
+    "to": "assets/asamob/recreated_v1/motion_21.webp"
+  },
+  {
+    "character": "asamob",
+    "action": "melee",
+    "index": 0,
+    "from": "assets/asamob/v31/motion_06.webp",
+    "to": "assets/asamob/source_recrop_v1/motion_12.webp"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mobmint",
+    "source": "assets/mobmint/v12_00.webp",
+    "output": "assets/ui-clean-v1/mobmint.png",
+    "bounds": [
+      38,
+      75,
+      110,
+      160
+    ],
+    "padding": 8,
+    "width": 88,
+    "height": 101
+  },
+  {
+    "id": "mobmintTransform",
+    "source": "assets/mobmintTransform/v12_00.webp",
+    "output": "assets/ui-clean-v1/mobmintTransform.png",
+    "bounds": [
+      33,
+      83,
+      147,
+      160
+    ],
+    "padding": 8,
+    "width": 130,
+    "height": 93
+  },
+  {
+    "id": "asamob",
+    "source": "assets/asamob/source_recrop_v1/motion_18.webp",
+    "output": "assets/ui-clean-v1/asamob.png",
+    "bounds": [
+      48,
+      43,
+      154,
+      142
+    ],
+    "padding": 8,
+    "width": 122,
+    "height": 115
+  }
+]

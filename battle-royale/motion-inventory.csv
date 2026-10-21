@@ -285,7 +285,7 @@ mobmint,melee2,4,4,8,4
 mobmint,melee3,6,6,8,2
 mobmint,strong,6,6,10,4
 mobmint,shot,6,6,8,2
-mobmint,special,6,6,12,6
+mobmint,special,6,5,12,7
 mobmint,hit,2,2,4,2
 mobmint,airhit,3,3,4,1
 mobmint,landing,1,1,4,3
@@ -299,7 +299,7 @@ mobmint,dodge,0,0,6,6
 mobmint,charge,2,2,4,2
 mobmint,victory,0,0,8,8
 mobmintTransform,idle,2,2,8,6
-mobmintTransform,run,6,6,12,6
+mobmintTransform,run,6,3,12,9
 mobmintTransform,jump,2,2,6,4
 mobmintTransform,airAttack,3,3,8,5
 mobmintTransform,landingAttack,3,3,8,5
@@ -308,7 +308,7 @@ mobmintTransform,melee2,4,4,8,4
 mobmintTransform,melee3,6,6,8,2
 mobmintTransform,strong,6,6,10,4
 mobmintTransform,shot,6,6,8,2
-mobmintTransform,special,6,6,12,6
+mobmintTransform,special,6,5,12,7
 mobmintTransform,hit,2,2,4,2
 mobmintTransform,airhit,3,3,4,1
 mobmintTransform,landing,1,1,4,3
@@ -353,7 +353,7 @@ asamob,melee1,4,4,8,4
 asamob,melee2,4,4,8,4
 asamob,melee3,6,6,8,2
 asamob,strong,6,6,10,4
-asamob,shot,5,5,8,3
+asamob,shot,5,4,8,4
 asamob,special,6,5,12,7
 asamob,hit,2,2,4,2
 asamob,airhit,4,4,4,0
